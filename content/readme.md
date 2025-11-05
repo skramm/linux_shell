@@ -15,8 +15,8 @@ A partir de deux fichiers source:
 
 Deux étapes:
 
--1 Exécution du script [`get_type.sh`](get_type.sh)  
+1. Exécution du script [`get_type.sh`](get_type.sh)  
 Ce dernier va déterminer pour chaque commande si elle est de type "builtin" ou installée sous forme de programme (ou script), ou pas disponible sur la VM sur laquelle la CI s'exécute. Il produit en sortie un fichier `out.csv`.
--2 Compilation du programme C++ [`linux_gen.cpp`](linux_gen.cpp), qui produit le fichier `a.out`.
--3 Exécution du binaire généré (`a.out`) en prenant en entrée le fichier `out.csv`.
+2. Compilation du programme C++ [`linux_gen.cpp`](linux_gen.cpp), qui produit le fichier `a.out`.
+3. Exécution du binaire généré (`a.out`) en prenant en entrée le fichier `out.csv`.
 
