@@ -1,0 +1,224 @@
+# linux cli commands,category,description
+# categories:
+# 0: undefined at present
+
+lscpu;1;détails sur archi CPU
+lsusb;1;liste périphs USB
+lsblk;1;liste périphs stockage "bloc"
+lsdev;1;infos générales sur _hardware_
+lsof;1;_list open files_
+ss;1;_list sockets_
+lspci;1;_list all PCI devices_
+lshw;1;_list hardware_
+sensors;1;données capteurs (température, tension, etc.)
+free;1;état RAM utilisée/libre;vmstat
+vmstat;1;état mémoire virtualle;free
+
+lstopo;1;
+sudo;1;exécution d'une commande admin;su
+su;1;changement temp. d'utilisateur;sudo
+top;12;_dashboard_ système & process;htop
+htop;12;top en mieux;top
+shutdown;1;;reboot,halt
+reboot;1;;shutdown,halt
+halt;1;;shutdown,reboot
+
+pstree;12;arborescence des process;ps
+ps;12;snapshot des process;top,pstree
+pidof;12; donne le PID d'un process;ps
+kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill
+pkill;12;stoppe un process par nom;kill
+killall;12;stoppe tous les process par nom
+trap;12;interception de signal POSIX
+
+fmt;7;text formatter
+md5sum;7;calcul de hash MD5
+
+fdisk;2;
+df;2;_disk free_
+du;2;_disk usage_
+dd;2;utilitaire de copie bas niveau
+
+find;5;_search for files, folders,_ ...
+convert;7;conversion format d'image
+fc-list;7;_list available fonts_
+cron;7;planification de tâches
+
+git;6;**LE** gestionnaire de versions de fichiers source
+make;6;compilation
+gcc;6;compilation C
+g++;6;compilation C++
+strings;6;extraction de chaines dans des binaires
+gdb;6;déboggage pas à pas
+cloc;6;_Count Lines Of Code_;wc
+
+pango-view;7;_convert text to image_
+history;4;historique des commandes
+lsb_release;4;version distribution;uname
+uname;4;version noyau;lsb_release
+
+cp;11;copie fichier(s);mv
+mv;11;déplacement/renommage;cp
+rm;11;suppression fichier;rmdir
+ln;11;création de lien, symbolique ou _hardlink_
+cmp;11;comparaison de fichiers;diff
+diff;11;différences entre 2 fichiers, ligne par ligne;cmp
+
+tree;15;affiche l'arborescence d'un dossier;ls
+rmdir;15;supression dossier;rm
+mkdir;15;_make directory_
+ls;15;_list directory content_
+cd;15;_Change Directory_;pushd
+pushd;15;chgt dossier courant avec sauvegarde;popd
+popd;15;récupération dossier courant;pushd
+
+whoami;4;qui suis-je?
+who;4;qui est loggé?
+whatis;4;que fait cette commande?
+pwd;4;_print working directory_
+locate;4;localise un programme dans le système;which
+man;4;manuel;help
+help;4;liste commandes "_builtin_" et aide;man
+grep;8;recherche de chaîne;ripgrep
+ripgrep;8;(rg) grep récursif;grep
+
+wc;4;_word count_
+
+more;14;filtre d'affichage;less
+less;14;filtre d'affichage;more
+bat;14;cat en mieux;cat,tail
+stat;14;détails complets sur un fichier
+head;14;premières lignes texte;tail
+tail;14;dernières lignes texte;head
+cat;14;affiche et/ou concatene un/des fichiers
+tac;14;affiche ordre inversé;cat
+
+xxd;14;visualisation en hexa;od
+od;14;visualisation en hexa ou octal;xxd
+
+
+nano;14;éditeur console basique
+file;14;nature d'un fichier
+touch;14;création ou MAJ date d'un fichier
+
+zip;5;compression zip;unzip
+unzip;5;décompression zip;zip
+tar;5;utilitaire archivage;zip
+
+sort;5;tri de texte
+chmod;5;chgt permissions fichier
+chown;5;chgt propriétaire fichier
+chgrp;5;chgt groupe propriétaire fichier
+chage;5;_change user password expiry information_;passwd
+umask;5;permissions par défaut;chmod
+
+
+jobs;12;affichage des _jobs_ lancés
+fg;12;passage d'un _job_ au premier plan (_ForeGround_);bg
+bg;12;passage d'un _job_ en arrière plan (_BackGround_);fg
+
+read;16;saisie ligne (clavier ou fichier)
+eval;7;exécute la commande passée en argument
+time;7;chronométrage de tâche
+watch;7;exécution périodique d'une commande
+env;7;liste var. environnement
+last;7;historique des logins & boots
+
+hostname;3;nom de la machine
+ip;3;
+ping;3;
+wget;3;client http CLI;curl
+curl;3;client multiprotocoles (wget en mieux)
+dig;3;requete DNS
+netcat;3;utilitaire TCP/UDP;nc
+tcpdump;3;capture trames réseau (Wireshark en CLI)
+nc;3;alias pour netcat;netcat
+ssh;3;
+ssh-keygen;3;
+ssh-add;3;
+ssh-copy-id;3;
+ufw;3; pilote CLI de Firewall 
+nmap;3;exploration réseau
+whois;3;infos/domaine
+nslookup (_deprecated_);3;outil DNS;dig
+traceroute;3;
+netstat;3;infos/reseau, routage, etc.
+nmcli;3;pilote CLI des connexions réseau
+ftp;3;transfert de fichiers
+rsync;3;transfert de fichier (bas niveau)
+
+echo;16;affichage de texte/variable;printf
+printf;16;affichage de texte/variable formatté;echo
+alias;4;composition de commandes;unalias
+unalias;4;suppression d'un alias;alias
+apt;10;gestion paquets Debian
+apt-get;10;gestion paquets Debian (bas niveau)
+yum;10;gestion paquets RedHat
+rpm;10;gestion paquets Fedora
+dpkg;10;utilitaire paquets Debian (.deb)
+pip3;10;gestionnaire de paquets Python3
+pip;10;gestionnaire de paquets Python (2 ou 3)
+npm;10;gestionnaire de paquets Javascript
+
+nano;7;éditeur "console"
+xargs;7;
+sleep;7;attente
+tee;7;
+clear;7;effacement terminal
+uptime;7;durée fonctionnement système
+set;7;paramétrage du shell
+
+awk;8;_pattern scanning and processing language_
+tr;8;_translate or delete characters_
+sed;8; _Stream EDitor_
+cut;8;suppression de texte dans des lignes
+paste;8;fusion de lignes de texte de plusieurs fichiers
+uniq;8;suppression lignes identiques
+jq;8;traitement de chaines JSON;jo
+jo;8;génération de JSON;jq
+split;8;
+
+passwd;9;changement pwd;chage
+usermod;9;modification compte utilisateur
+userdel;9;suppression compte
+adduser;9;création utilisateur
+addgroup;9;création groupe d'utilisateurs;adduser
+useradd;9;création utilisateur (bas niveau!);adduser
+id;9;affiche les infos sur un utilisateur
+groups;9;affiche les groupes existants;id
+groupadd;9;création groupe (bas niveau!);addgroup
+
+which;7;localisation (chemin) d'un programme;locate
+type;7;indique si une commande est interne (_builtin_) ou externe
+tty;7;indique le terminal courant (`/dev/pts/XX`)
+seq;7;_print a sequence of numbers_
+
+
+depmod;13;_generates modules.dep and map files_
+insmod;13;_insert a module into the kernel_
+lsmod;13;_show the status of modules in the kernel_
+modinfo;13;_show information about a module_
+modprobe;13;_add and remove modules from the kernel_
+rmmod;13;_remove a module from the kernel_
+logger;13;écriture dans un log système
+systemctl;13;gestion des services (CLI/systemd)
+journalctl;13;outil d'accès aux logs systemd;systemctl
+dmesg;13;affichage logs kernel (buffer circulaire)
+
+yes;7;_output a string repeatedly until killed_
+hey;7;_HTTP load generator_
+
+tmux;7;multiplexeur de terminal;screen
+screen;7;multiplexeur de terminal;tmux
+date;7;affiche date & heure
+
+if;16;
+while;16;
+for;16;
+exit;16;;return
+source;16;
+return;16;;exit
+function;16;
+case;16;
+shift;16;décalage paramètres positionnels ($1, $2, ...)
+
