@@ -20,7 +20,7 @@ su;1;changement temp. d'utilisateur;sudo
 top;12;_dashboard_ système & process;htop
 htop;12;top en mieux;top
 shutdown;1;;reboot,halt
-reboot;1;;shutdown,halt
+reboot;1;reboot;shutdown,halt
 halt;1;;shutdown,reboot
 
 pstree;12;arborescence des process;ps
@@ -107,8 +107,8 @@ tar;5;utilitaire archivage;zip
 
 sort;5;tri de texte
 chmod;5;chgt permissions fichier
-chown;5;chgt propriétaire fichier
-chgrp;5;chgt groupe propriétaire fichier
+chown;5;chgt propriétaire fichier;chgrp
+chgrp;5;chgt groupe propriétaire fichier;chown
 chage;5;_change user password expiry information_;passwd
 umask;5;permissions par défaut;chmod
 
@@ -128,13 +128,13 @@ hostname;3;nom de la machine
 ip;3;
 ping;3;
 wget;3;client http CLI;curl
-curl;3;client multiprotocoles (wget en mieux)
+curl;3;client multiprotocoles (wget en mieux);wget
 dig;3;requete DNS
 netcat;3;utilitaire TCP/UDP;nc
 tcpdump;3;capture trames réseau (Wireshark en CLI)
 nc;3;alias pour netcat;netcat
-ssh;3;
-ssh-keygen;3;
+ssh;3;Connection à une machine distante
+ssh-keygen;3;Génération de clés SSH
 ssh-add;3;
 ssh-copy-id;3;
 ufw;3; pilote CLI de Firewall 
@@ -145,7 +145,7 @@ traceroute;3;
 netstat;3;infos/reseau, routage, etc.
 nmcli;3;pilote CLI des connexions réseau
 ftp;3;transfert de fichiers
-rsync;3;transfert de fichier (bas niveau)
+rsync;3;transfert/backup de fichier, local ou distant
 
 echo;16;affichage de texte/variable;printf
 printf;16;affichage de texte/variable formatté;echo
@@ -176,7 +176,7 @@ paste;8;fusion de lignes de texte de plusieurs fichiers
 uniq;8;suppression lignes identiques
 jq;8;traitement de chaines JSON;jo
 jo;8;génération de JSON;jq
-split;8;
+split;8;Découpage d'un fichier en plusieurs morceaux
 
 passwd;9;changement pwd;chage
 usermod;9;modification compte utilisateur
@@ -211,14 +211,15 @@ hey;7;_HTTP load generator_
 tmux;7;multiplexeur de terminal;screen
 screen;7;multiplexeur de terminal;tmux
 date;7;affiche date & heure
+xdg-open;7;Ouverture fichier avec application GUI associée au type par défaut
 
 if;16;
 while;16;
 for;16;
-exit;16;;return
+exit;16;Terminaison du script et renvoi  d'une valeur à l'OS;return
 source;16;
-return;16;;exit
-function;16;
+return;16;fin de fonction;exit,function
+function;16;Définition d'une fonction Bash
 case;16;
 shift;16;décalage paramètres positionnels ($1, $2, ...)
 
