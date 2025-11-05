@@ -348,4 +348,4 @@ Total: 189 commandes
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 
 
-_MAJ: 2025-11-05T22:12:29+0000_,
+_MAJ: 2025-11-05T22:14:20+0000_,
