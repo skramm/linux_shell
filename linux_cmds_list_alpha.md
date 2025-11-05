@@ -450,4 +450,4 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2025-11-05T11:47:29+0000_,
+_MAJ: 2025-11-05T22:12:29+0000_,
