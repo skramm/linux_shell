@@ -22,7 +22,7 @@ Catégories:
 * 15 - [controle des scripts](#cat16)
 * 16 - [Gestion Kernel](#cat13)
 
-Total: 188 commandes
+Total: 189 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -120,7 +120,7 @@ Total: 188 commandes
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+curl'>curl</a> | client multiprotocoles (wget en mieux) |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+curl'>curl</a> | client multiprotocoles (wget en mieux) | [wget](linux_cmds_list_alpha.md#w) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dig'>dig</a> | requete DNS |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ftp'>ftp</a> | transfert de fichiers |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hostname'>hostname</a> | nom de la machine |  | _installed_ |
@@ -132,11 +132,11 @@ Total: 188 commandes
 | <a href='https://www.google.fr/search?q=linux+nmcli'>nmcli</a> | pilote CLI des connexions réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nslookup (_deprecated_)'>nslookup (_deprecated_)</a> | outil DNS | [dig](linux_cmds_list_alpha.md#d) | NI |
 | <a href='https://www.google.fr/search?q=linux+ping'>ping</a> |  |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert de fichier (bas niveau) |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+ssh'>ssh</a> |  |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert/backup de fichier, local ou distant |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ssh'>ssh</a> | Connection à une machine distante |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-add'>ssh-add</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-copy-id'>ssh-copy-id</a> |  |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+ssh-keygen'>ssh-keygen</a> |  |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ssh-keygen'>ssh-keygen</a> | Génération de clés SSH |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tcpdump'>tcpdump</a> | capture trames réseau (Wireshark en CLI) |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+traceroute'>traceroute</a> |  |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ufw'>ufw</a> |  pilote CLI de Firewall  |  | _installed_ |
@@ -151,9 +151,9 @@ Total: 188 commandes
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+chage'>chage</a> | _change user password expiry information_ | [passwd](linux_cmds_list_alpha.md#p) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+chgrp'>chgrp</a> | chgt groupe propriétaire fichier |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+chgrp'>chgrp</a> | chgt groupe propriétaire fichier | [chown](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+chmod'>chmod</a> | chgt permissions fichier |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+chown'>chown</a> | chgt propriétaire fichier |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+chown'>chown</a> | chgt propriétaire fichier | [chgrp](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+find'>find</a> | _search for files, folders,_ ... |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tar'>tar</a> | utilitaire archivage | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
@@ -178,7 +178,7 @@ Total: 188 commandes
 | <a href='https://www.google.fr/search?q=linux+lspci'>lspci</a> | _list all PCI devices_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> |  |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lsusb'>lsusb</a> | liste périphs USB |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+reboot'>reboot</a> |  | [shutdown,halt](linux_cmds_list_alpha.md#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+reboot'>reboot</a> | reboot | [shutdown,halt](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sensors'>sensors</a> | données capteurs (température, tension, etc.) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> |  | [reboot,halt](linux_cmds_list_alpha.md#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _list sockets_ |  | _installed_ |
@@ -216,7 +216,7 @@ Total: 188 commandes
 | <a href='https://www.google.fr/search?q=linux+paste'>paste</a> | fusion de lignes de texte de plusieurs fichiers |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ripgrep'>ripgrep</a> | (rg) grep récursif | [grep](linux_cmds_list_alpha.md#g) | NI |
 | <a href='https://www.google.fr/search?q=linux+sed'>sed</a> |  _Stream EDitor_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+split'>split</a> |  |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+split'>split</a> | Découpage d'un fichier en plusieurs morceaux |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tr'>tr</a> | _translate or delete characters_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+uniq'>uniq</a> | suppression lignes identiques |  | _installed_ |
 
@@ -256,7 +256,7 @@ Total: 188 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-27 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+28 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -286,6 +286,7 @@ Total: 188 commandes
 | <a href='https://www.google.fr/search?q=linux+watch'>watch</a> | exécution périodique d'une commande |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+which'>which</a> | localisation (chemin) d'un programme | [locate](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xargs'>xargs</a> |  |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | Ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+yes'>yes</a> | _output a string repeatedly until killed_ |  | _installed_ |
 
 ## 14 - catégorie: Gestion des jobs & process
@@ -317,13 +318,13 @@ Total: 188 commandes
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+case'>case</a> |  |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+echo'>echo</a> | affichage de texte/variable | [printf](linux_cmds_list_alpha.md#p) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+exit'>exit</a> |  | [return](linux_cmds_list_alpha.md#r) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+exit'>exit</a> | Terminaison du script et renvoi  d'une valeur à l'OS | [return](linux_cmds_list_alpha.md#r) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+for'>for</a> |  |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+function'>function</a> |  |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+function'>function</a> | Définition d'une fonction Bash |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+if'>if</a> |  |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+printf'>printf</a> | affichage de texte/variable formatté | [echo](linux_cmds_list_alpha.md#e) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+read'>read</a> | saisie ligne (clavier ou fichier) |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+return'>return</a> |  | [exit](linux_cmds_list_alpha.md#e) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+return'>return</a> | fin de fonction | [exit,function](linux_cmds_list_alpha.md#e) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+shift'>shift</a> | décalage paramètres positionnels ($1, $2, ...) |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+source'>source</a> |  |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+while'>while</a> |  |  | _builtin_ |
@@ -347,4 +348,4 @@ Total: 188 commandes
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 
 
-_MAJ: 2025-11-05T10:55:47+0000_,
+_MAJ: 2025-11-05T11:47:29+0000_,
