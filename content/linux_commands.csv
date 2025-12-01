@@ -212,6 +212,7 @@ tmux;7;multiplexeur de terminal;screen
 screen;7;multiplexeur de terminal;tmux
 date;7;affiche date & heure
 xdg-open;7;Ouverture fichier avec application GUI associée au type par défaut
+uuid;7;génération de _Universally Unique IDentifier_
 
 if;16;
 while;16;
