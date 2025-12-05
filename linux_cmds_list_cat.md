@@ -22,7 +22,7 @@ Catégories:
 * 15 - [controle des scripts](#cat16)
 * 16 - [Gestion Kernel](#cat13)
 
-Total: 189 commandes
+Total: 190 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -256,7 +256,7 @@ Total: 189 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-28 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+29 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -283,6 +283,7 @@ Total: 189 commandes
 | <a href='https://www.google.fr/search?q=linux+tty'>tty</a> | indique le terminal courant (`/dev/pts/XX`) |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+type'>type</a> | indique si une commande est interne (_builtin_) ou externe |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+uptime'>uptime</a> | durée fonctionnement système |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+watch'>watch</a> | exécution périodique d'une commande |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+which'>which</a> | localisation (chemin) d'un programme | [locate](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xargs'>xargs</a> |  |  | _installed_ |
@@ -348,4 +349,4 @@ Total: 189 commandes
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 
 
-_MAJ: 2025-11-05T22:14:20+0000_,
+_MAJ: 2025-12-01T14:56:04+0000_,

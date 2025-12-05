@@ -382,6 +382,7 @@
 | <a href='https://www.google.fr/search?q=linux+useradd'>useradd</a> | création utilisateur (bas niveau!) | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [adduser](#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+userdel'>userdel</a> | suppression compte | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+usermod'>usermod</a> | modification compte utilisateur | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
 
 ## V
 <a name='v'></a>
@@ -450,4 +451,4 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2025-11-05T22:14:20+0000_,
+_MAJ: 2025-12-01T14:56:04+0000_,
