@@ -224,5 +224,6 @@ function;16;Définition d'une fonction Bash
 case;16;
 shift;16;décalage paramètres positionnels ($1, $2, ...)
 
-auditd;15;_Logging_ des actions système
+auditd;17;_Logging_ des actions système
+aa-xxx;17;ensemble de commandes de gestion de `Apparmor`
 
