@@ -21,9 +21,9 @@ Catégories:
 * 14 - [Gestion des jobs & process](#cat12)
 * 15 - [controle des scripts](#cat16)
 * 16 - [Gestion Kernel](#cat13)
-* 17 - [Sécurité](#cat15)
+* 17 - [Sécurité](#cat17)
 
-Total: 191 commandes
+Total: 192 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -102,11 +102,10 @@ Total: 191 commandes
 ## 5 - catégorie: Manipulation dossiers
 <a name='cat15'></a>
 
-8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cd'>cd</a> | _Change Directory_ | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mkdir'>mkdir</a> | _make directory_ |  | _installed_ |
@@ -351,20 +350,14 @@ Total: 191 commandes
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 
 ## 17 - catégorie: Sécurité
-<a name='cat15'></a>
+<a name='cat17'></a>
 
-8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+2 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de `Apparmor` |  | NI |
 | <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
-| <a href='https://www.google.fr/search?q=linux+cd'>cd</a> | _Change Directory_ | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+mkdir'>mkdir</a> | _make directory_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+popd'>popd</a> | récupération dossier courant | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+pushd'>pushd</a> | chgt dossier courant avec sauvegarde | [popd](linux_cmds_list_alpha.md#p) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+rmdir'>rmdir</a> | supression dossier | [rm](linux_cmds_list_alpha.md#r) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+tree'>tree</a> | affiche l'arborescence d'un dossier | [ls](linux_cmds_list_alpha.md#l) | _installed_ |
 
 
-_MAJ: 2025-12-05T10:31:23+0000_,
+_MAJ: 2025-12-05T13:17:16+0000_,

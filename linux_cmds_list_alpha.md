@@ -19,12 +19,13 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de `Apparmor` | <a href='linux_cmds_list_cat.md#cat17'>Sécurité</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+addgroup'>addgroup</a> | création groupe d'utilisateurs | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [adduser](#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+adduser'>adduser</a> | création utilisateur | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+alias'>alias</a> | composition de commandes | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [unalias](#u) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+apt'>apt</a> | gestion paquets Debian | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+apt-get'>apt-get</a> | gestion paquets Debian (bas niveau) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système | <a href='linux_cmds_list_cat.md#cat17'>Sécurité</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+awk'>awk</a> | _pattern scanning and processing language_ | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 
 ## B
@@ -244,8 +245,8 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur "console" | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur console basique | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur "console" | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nc'>nc</a> | alias pour netcat | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [netcat](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netcat'>netcat</a> | utilitaire TCP/UDP | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [nc](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netstat'>netstat</a> | infos/reseau, routage, etc. | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
@@ -452,4 +453,4 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2025-12-05T10:31:23+0000_,
+_MAJ: 2025-12-05T13:17:16+0000_,
