@@ -6,13 +6,13 @@ lscpu;1;détails sur archi CPU
 lsusb;1;liste périphs USB
 lsblk;1;liste périphs stockage "bloc"
 lsdev;1;infos générales sur _hardware_
-lsof;1;_list open files_
-ss;1;_list sockets_
+lsof;1;_list open files_;ss
+ss;1;_socket statistics_;lsof
 lspci;1;_list all PCI devices_
 lshw;1;_list hardware_
 sensors;1;données capteurs (température, tension, etc.)
 free;1;état RAM utilisée/libre;vmstat
-vmstat;1;état mémoire virtualle;free
+vmstat;1;état mémoire virtuelle;free
 
 lstopo;1;
 sudo;1;exécution d'une commande admin;su
@@ -223,4 +223,6 @@ return;16;fin de fonction;exit,function
 function;16;Définition d'une fonction Bash
 case;16;
 shift;16;décalage paramètres positionnels ($1, $2, ...)
+
+auditd;15;_Logging_ des actions système
 
