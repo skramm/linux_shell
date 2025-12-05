@@ -24,6 +24,7 @@
 | <a href='https://www.google.fr/search?q=linux+alias'>alias</a> | composition de commandes | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [unalias](#u) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+apt'>apt</a> | gestion paquets Debian | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+apt-get'>apt-get</a> | gestion paquets Debian (bas niveau) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+awk'>awk</a> | _pattern scanning and processing language_ | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 
 ## B
@@ -211,7 +212,7 @@
 | <a href='https://www.google.fr/search?q=linux+lsdev'>lsdev</a> | infos générales sur _hardware_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lshw'>lshw</a> | _list hardware_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsmod'>lsmod</a> | _show the status of modules in the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+lsof'>lsof</a> | _list open files_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+lsof'>lsof</a> | _list open files_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [ss](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lspci'>lspci</a> | _list all PCI devices_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lsusb'>lsusb</a> | liste périphs USB | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
@@ -327,7 +328,7 @@
 | <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+source'>source</a> |  | <a href='linux_cmds_list_cat.md#cat16'>controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+split'>split</a> | Découpage d'un fichier en plusieurs morceaux | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _list sockets_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _socket statistics_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [lsof](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh'>ssh</a> | Connection à une machine distante | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-add'>ssh-add</a> |  | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-copy-id'>ssh-copy-id</a> |  | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
@@ -393,7 +394,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtualle | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [free](#f) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [free](#f) | _installed_ |
 
 ## W
 <a name='w'></a>
@@ -451,4 +452,4 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2025-12-01T14:56:04+0000_,
+_MAJ: 2025-12-05T10:31:23+0000_,
