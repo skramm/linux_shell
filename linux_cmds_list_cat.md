@@ -21,8 +21,9 @@ Catégories:
 * 14 - [Gestion des jobs & process](#cat12)
 * 15 - [controle des scripts](#cat16)
 * 16 - [Gestion Kernel](#cat13)
+* 17 - [Sécurité](#cat15)
 
-Total: 190 commandes
+Total: 191 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -101,10 +102,11 @@ Total: 190 commandes
 ## 5 - catégorie: Manipulation dossiers
 <a name='cat15'></a>
 
-7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cd'>cd</a> | _Change Directory_ | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mkdir'>mkdir</a> | _make directory_ |  | _installed_ |
@@ -174,17 +176,17 @@ Total: 190 commandes
 | <a href='https://www.google.fr/search?q=linux+lscpu'>lscpu</a> | détails sur archi CPU |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsdev'>lsdev</a> | infos générales sur _hardware_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lshw'>lshw</a> | _list hardware_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+lsof'>lsof</a> | _list open files_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+lsof'>lsof</a> | _list open files_ | [ss](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lspci'>lspci</a> | _list all PCI devices_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> |  |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lsusb'>lsusb</a> | liste périphs USB |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+reboot'>reboot</a> | reboot | [shutdown,halt](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sensors'>sensors</a> | données capteurs (température, tension, etc.) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> |  | [reboot,halt](linux_cmds_list_alpha.md#r) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _list sockets_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _socket statistics_ | [lsof](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+su'>su</a> | changement temp. d'utilisateur | [sudo](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sudo'>sudo</a> | exécution d'une commande admin | [su](linux_cmds_list_alpha.md#s) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtualle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
 
 ## 9 - catégorie: Dev
 <a name='cat6'></a>
@@ -348,5 +350,21 @@ Total: 190 commandes
 | <a href='https://www.google.fr/search?q=linux+rmmod'>rmmod</a> | _remove a module from the kernel_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 
+## 17 - catégorie: Sécurité
+<a name='cat15'></a>
 
-_MAJ: 2025-12-01T14:56:04+0000_,
+8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+
+| Nom | Description | Voir aussi | Statut |
+|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cd'>cd</a> | _Change Directory_ | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+mkdir'>mkdir</a> | _make directory_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+popd'>popd</a> | récupération dossier courant | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+pushd'>pushd</a> | chgt dossier courant avec sauvegarde | [popd](linux_cmds_list_alpha.md#p) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+rmdir'>rmdir</a> | supression dossier | [rm](linux_cmds_list_alpha.md#r) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+tree'>tree</a> | affiche l'arborescence d'un dossier | [ls](linux_cmds_list_alpha.md#l) | _installed_ |
+
+
+_MAJ: 2025-12-05T10:31:23+0000_,
