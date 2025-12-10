@@ -72,8 +72,6 @@ cd;15;_Change Directory_;pushd
 pushd;15;chgt dossier courant avec sauvegarde;popd
 popd;15;récupération dossier courant;pushd
 
-whoami;4;qui suis-je?
-who;4;qui est loggé?
 whatis;4;que fait cette commande?
 pwd;4;_print working directory_
 locate;4;localise un programme dans le système;which
@@ -122,7 +120,7 @@ eval;7;exécute la commande passée en argument
 time;7;chronométrage de tâche
 watch;7;exécution périodique d'une commande
 env;7;liste var. environnement
-last;7;historique des logins & boots
+
 
 hostname;3;nom de la machine
 ip;3;
@@ -178,6 +176,8 @@ jq;8;traitement de chaines JSON;jo
 jo;8;génération de JSON;jq
 split;8;Découpage d'un fichier en plusieurs morceaux
 
+whoami;9;qui suis-je?
+who;9;qui est loggé?
 passwd;9;changement pwd;chage
 usermod;9;modification compte utilisateur
 userdel;9;suppression compte
@@ -187,6 +187,7 @@ useradd;9;création utilisateur (bas niveau!);adduser
 id;9;affiche les infos sur un utilisateur
 groups;9;affiche les groupes existants;id
 groupadd;9;création groupe (bas niveau!);addgroup
+last;9;historique des logins & boots
 
 which;7;localisation (chemin) d'un programme;locate
 type;7;indique si une commande est interne (_builtin_) ou externe
@@ -206,7 +207,6 @@ journalctl;13;outil d'accès aux logs systemd;systemctl
 dmesg;13;affichage logs kernel (buffer circulaire)
 
 yes;7;_output a string repeatedly until killed_
-hey;7;_HTTP load generator_
 
 tmux;7;multiplexeur de terminal;screen
 screen;7;multiplexeur de terminal;tmux
@@ -226,4 +226,6 @@ shift;16;décalage paramètres positionnels ($1, $2, ...)
 
 auditd;17;_Logging_ des actions système
 aa-xxx;17;ensemble de commandes de gestion de `Apparmor`
+stress;17;Génération de charge CPU
+hey;17;_HTTP load generator_
 
