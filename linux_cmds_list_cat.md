@@ -19,11 +19,11 @@ Catégories:
 * 12 - [Installation logiciels](#cat10)
 * 13 - [Divers](#cat7)
 * 14 - [Gestion des jobs & process](#cat12)
-* 15 - [controle des scripts](#cat16)
+* 15 - [Controle des scripts](#cat16)
 * 16 - [Gestion Kernel](#cat13)
-* 17 - [Sécurité](#cat17)
+* 17 - [Sécurité & Performance](#cat17)
 
-Total: 192 commandes
+Total: 193 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -34,7 +34,7 @@ Total: 192 commandes
 ## 1 - catégorie: Général
 <a name='cat4'></a>
 
-13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -49,8 +49,6 @@ Total: 192 commandes
 | <a href='https://www.google.fr/search?q=linux+uname'>uname</a> | version noyau | [lsb_release](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+wc'>wc</a> | _word count_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+whatis'>whatis</a> | que fait cette commande? |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+who'>who</a> | qui est loggé? |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+whoami'>whoami</a> | qui suis-je? |  | _installed_ |
 
 ## 2 - catégorie: Édition/visualisation fichiers
 <a name='cat14'></a>
@@ -224,7 +222,7 @@ Total: 192 commandes
 ## 11 - catégorie: Gestion utilisateurs
 <a name='cat9'></a>
 
-9 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -233,10 +231,13 @@ Total: 192 commandes
 | <a href='https://www.google.fr/search?q=linux+groupadd'>groupadd</a> | création groupe (bas niveau!) | [addgroup](linux_cmds_list_alpha.md#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+groups'>groups</a> | affiche les groupes existants | [id](linux_cmds_list_alpha.md#i) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+id'>id</a> | affiche les infos sur un utilisateur |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+last'>last</a> | historique des logins & boots |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+passwd'>passwd</a> | changement pwd | [chage](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+useradd'>useradd</a> | création utilisateur (bas niveau!) | [adduser](linux_cmds_list_alpha.md#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+userdel'>userdel</a> | suppression compte |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+usermod'>usermod</a> | modification compte utilisateur |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+who'>who</a> | qui est loggé? |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+whoami'>whoami</a> | qui suis-je? |  | _installed_ |
 
 ## 12 - catégorie: Installation logiciels
 <a name='cat10'></a>
@@ -257,7 +258,7 @@ Total: 192 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-29 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+27 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -269,8 +270,6 @@ Total: 192 commandes
 | <a href='https://www.google.fr/search?q=linux+eval'>eval</a> | exécute la commande passée en argument |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fmt'>fmt</a> | text formatter |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ |  | NI |
-| <a href='https://www.google.fr/search?q=linux+last'>last</a> | historique des logins & boots |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur "console" |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ |  | NI |
@@ -311,7 +310,7 @@ Total: 192 commandes
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+trap'>trap</a> | interception de signal POSIX |  | _builtin_ |
 
-## 15 - catégorie: controle des scripts
+## 15 - catégorie: Controle des scripts
 <a name='cat16'></a>
 
 12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -349,15 +348,18 @@ Total: 192 commandes
 | <a href='https://www.google.fr/search?q=linux+rmmod'>rmmod</a> | _remove a module from the kernel_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 
-## 17 - catégorie: Sécurité
+## 17 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
-2 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+4 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de `Apparmor` |  | NI |
 | <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
+| <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ |  | NI |
+| <a href='https://www.google.fr/search?q=linux+stress'>stress</a> | Génération de charge CPU |  | NI |
 
 
-_MAJ: 2025-12-05T13:17:16+0000_,
+_MAJ: 2025-12-10T12:57:18+0000_,
+_OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
