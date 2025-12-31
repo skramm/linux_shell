@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 197 commandes
+Total: 200 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -87,11 +87,12 @@ Total: 197 commandes
 ## 4 - catégorie: Manipulation fichiers
 <a name='cat11'></a>
 
-6 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+cmp'>cmp</a> | comparaison de fichiers | [diff](linux_cmds_list_alpha.md#d) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+cmp'>cmp</a> | comparaison de fichiers, par octet | [diff](linux_cmds_list_alpha.md#d) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+comm'>comm</a> | comparaison de fichiers, par ligne | [diff](linux_cmds_list_alpha.md#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cp'>cp</a> | copie fichier(s) | [mv](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+diff'>diff</a> | différences entre 2 fichiers, ligne par ligne | [cmp](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ln'>ln</a> | création de lien, symbolique ou _hardlink_ |  | _installed_ |
@@ -101,11 +102,12 @@ Total: 197 commandes
 ## 5 - catégorie: Manipulation dossiers
 <a name='cat15'></a>
 
-7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+cd'>cd</a> | _Change Directory_ | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+dir'>dir</a> | alias de ls | [ls](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mkdir'>mkdir</a> | _make directory_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+popd'>popd</a> | récupération dossier courant | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
@@ -259,7 +261,7 @@ Total: 197 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-27 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+28 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -277,6 +279,7 @@ Total: 197 commandes
 | <a href='https://www.google.fr/search?q=linux+screen'>screen</a> | multiplexeur de terminal | [tmux](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+set'>set</a> | paramétrage du shell |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de ligne | [sort](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tee'>tee</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+time'>time</a> | chronométrage de tâche |  | _builtin_ |
@@ -374,5 +377,5 @@ Total: 197 commandes
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
 
 
-_MAJ: 2025-12-31T10:14:37+0000_,
+_MAJ: 2025-12-31T11:25:39+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_

@@ -58,7 +58,8 @@
 | <a href='https://www.google.fr/search?q=linux+chown'>chown</a> | chgt propriétaire fichier | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [chgrp](#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+clear'>clear</a> | effacement terminal | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cloc'>cloc</a> | _Count Lines Of Code_ | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> | [wc](#w) | NI |
-| <a href='https://www.google.fr/search?q=linux+cmp'>cmp</a> | comparaison de fichiers | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+cmp'>cmp</a> | comparaison de fichiers, par octet | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+comm'>comm</a> | comparaison de fichiers, par ligne | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cp'>cp</a> | copie fichier(s) | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [mv](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
@@ -80,6 +81,7 @@
 | <a href='https://www.google.fr/search?q=linux+df'>df</a> | _disk free_ | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+diff'>diff</a> | différences entre 2 fichiers, ligne par ligne | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [cmp](#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dig'>dig</a> | requete DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+dir'>dir</a> | alias de ls | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> | [ls](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dmesg'>dmesg</a> | affichage logs kernel (buffer circulaire) | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dpkg'>dpkg</a> | utilitaire paquets Debian (.deb) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+du'>du</a> | _disk usage_ | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
@@ -326,6 +328,7 @@
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+set'>set</a> | paramétrage du shell | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+shift'>shift</a> | décalage paramètres positionnels ($1, $2, ...) | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de ligne | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [sort](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [reboot,halt](#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> |  | _installed_ |
@@ -458,5 +461,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2025-12-31T10:14:37+0000_,
+_MAJ: 2025-12-31T11:25:39+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
