@@ -22,8 +22,9 @@ Catégories:
 * 15 - [Controle des scripts](#cat16)
 * 16 - [Gestion Kernel](#cat13)
 * 17 - [Sécurité & Performance](#cat17)
+* 18 - [Interface avec bureau](#cat18)
 
-Total: 193 commandes
+Total: 197 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -333,7 +334,7 @@ Total: 193 commandes
 ## 16 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
-10 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -342,6 +343,7 @@ Total: 193 commandes
 | <a href='https://www.google.fr/search?q=linux+insmod'>insmod</a> | _insert a module into the kernel_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+journalctl'>journalctl</a> | outil d'accès aux logs systemd | [systemctl](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+loginctl'>loginctl</a> | _Control the systemd login manager_ | [systemctl](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsmod'>lsmod</a> | _show the status of modules in the kernel_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modinfo'>modinfo</a> | _show information about a module_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modprobe'>modprobe</a> | _add and remove modules from the kernel_ |  | _installed_ |
@@ -360,6 +362,17 @@ Total: 193 commandes
 | <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+stress'>stress</a> | Génération de charge CPU |  | NI |
 
+## 18 - catégorie: Interface avec bureau
+<a name='cat18'></a>
 
-_MAJ: 2025-12-10T15:29:49+0000_,
+3 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+
+| Nom | Description | Voir aussi | Statut |
+|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau |  | NI |
+| <a href='https://www.google.fr/search?q=linux+wl-paste'>wl-paste</a> | Copie presse-papier (Wayland) |  | NI |
+| <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
+
+
+_MAJ: 2025-12-31T10:14:37+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_

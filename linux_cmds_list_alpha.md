@@ -206,6 +206,7 @@
 | <a href='https://www.google.fr/search?q=linux+ln'>ln</a> | création de lien, symbolique ou _hardlink_ | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+locate'>locate</a> | localise un programme dans le système | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [which](#w) | NI |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+loginctl'>loginctl</a> | _Control the systemd login manager_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> | [systemctl](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsb_release'>lsb_release</a> | version distribution | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [uname](#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsblk'>lsblk</a> | liste périphs stockage "bloc" | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
@@ -252,6 +253,7 @@
 | <a href='https://www.google.fr/search?q=linux+netstat'>netstat</a> | infos/reseau, routage, etc. | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nmap'>nmap</a> | exploration réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nmcli'>nmcli</a> | pilote CLI des connexions réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+npm'>npm</a> | gestionnaire de paquets Javascript | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nslookup (_deprecated_)'>nslookup (_deprecated_)</a> | outil DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | NI |
 
@@ -416,6 +418,7 @@
 | <a href='https://www.google.fr/search?q=linux+who'>who</a> | qui est loggé? | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+whoami'>whoami</a> | qui suis-je? | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+whois'>whois</a> | infos/domaine | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+wl-paste'>wl-paste</a> | Copie presse-papier (Wayland) | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 
 ## X
 <a name='x'></a>
@@ -427,6 +430,7 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+xargs'>xargs</a> |  | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | Ouverture fichier avec application GUI associée au type par défaut | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xxd'>xxd</a> | visualisation en hexa | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [od](#o) | _installed_ |
 
@@ -454,5 +458,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2025-12-10T15:29:49+0000_,
+_MAJ: 2025-12-31T10:14:37+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
