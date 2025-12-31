@@ -61,13 +61,15 @@ cp;11;copie fichier(s);mv
 mv;11;déplacement/renommage;cp
 rm;11;suppression fichier;rmdir
 ln;11;création de lien, symbolique ou _hardlink_
-cmp;11;comparaison de fichiers;diff
+cmp;11;comparaison de fichiers, par octet;diff
+comm;11;comparaison de fichiers, par ligne;diff
 diff;11;différences entre 2 fichiers, ligne par ligne;cmp
 
 tree;15;affiche l'arborescence d'un dossier;ls
 rmdir;15;supression dossier;rm
 mkdir;15;_make directory_
 ls;15;_list directory content_
+dir;15;alias de ls;ls
 cd;15;_Change Directory_;pushd
 pushd;15;chgt dossier courant avec sauvegarde;popd
 popd;15;récupération dossier courant;pushd
