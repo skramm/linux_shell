@@ -165,6 +165,7 @@ tee;7;
 clear;7;effacement terminal
 uptime;7;durée fonctionnement système
 set;7;paramétrage du shell
+shuf;7;permutation aléatoire de ligne;sort
 
 awk;8;_pattern scanning and processing language_
 tr;8;_translate or delete characters_
