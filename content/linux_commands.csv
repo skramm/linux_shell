@@ -203,6 +203,7 @@ modprobe;13;_add and remove modules from the kernel_
 rmmod;13;_remove a module from the kernel_
 logger;13;écriture dans un log système
 systemctl;13;gestion des services (CLI/systemd)
+loginctl;13;_Control the systemd login manager_;systemctl
 journalctl;13;outil d'accès aux logs systemd;systemctl
 dmesg;13;affichage logs kernel (buffer circulaire)
 
@@ -228,4 +229,8 @@ auditd;17;_Logging_ des actions système
 aa-xxx;17;ensemble de commandes de gestion de `Apparmor`
 stress;17;Génération de charge CPU
 hey;17;_HTTP load generator_
+
+xclip;18;transfert vers le presse-papier X
+notify-send;18;Envoi de notification au bureau
+wl-paste;18;Copie presse-papier (Wayland)
 
