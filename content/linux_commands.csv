@@ -13,6 +13,8 @@ lshw;1;_list hardware_
 sensors;1;données capteurs (température, tension, etc.)
 free;1;état RAM utilisée/libre;vmstat
 vmstat;1;état mémoire virtuelle;free
+swapon;1;gestion mémoire _swap_;swapoff
+swapoff;1;gestion mémoire _swap_;swapon
 
 lstopo;1;
 sudo;1;exécution d'une commande admin;su
