@@ -171,6 +171,7 @@ genListAlpha(
 
 	printHeader( f );
 
+	f << cmds.size() << " commandes<br>\n";
 	std::sort( cmds.begin(), cmds.end() );
 	auto first_letter = cmds[0]._name.at(0);
 	bool start = true;

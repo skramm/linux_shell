@@ -207,7 +207,7 @@ lsmod;13;_show the status of modules in the kernel_
 modinfo;13;_show information about a module_
 modprobe;13;_add and remove modules from the kernel_
 rmmod;13;_remove a module from the kernel_
-logger;13;écriture dans un log système
+logger;17;écriture dans un log système
 systemctl;13;gestion des services (CLI/systemd)
 loginctl;13;_Control the systemd login manager_;systemctl
 journalctl;13;outil d'accès aux logs systemd;systemctl
