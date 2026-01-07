@@ -193,6 +193,7 @@ id;9;affiche les infos sur un utilisateur
 groups;9;affiche les groupes existants;id
 groupadd;9;création groupe (bas niveau!);addgroup
 last;9;historique des logins & boots
+pwgen;9;génération de _password_
 
 which;7;localisation (chemin) d'un programme;locate
 type;7;indique si une commande est interne (_builtin_) ou externe
