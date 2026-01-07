@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 202 commandes
+Total: 203 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -227,7 +227,7 @@ Total: 202 commandes
 ## 11 - catégorie: Gestion utilisateurs
 <a name='cat9'></a>
 
-12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -238,6 +238,7 @@ Total: 202 commandes
 | <a href='https://www.google.fr/search?q=linux+id'>id</a> | affiche les infos sur un utilisateur |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+last'>last</a> | historique des logins & boots |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+passwd'>passwd</a> | changement pwd | [chage](linux_cmds_list_alpha.md#c) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+pwgen'>pwgen</a> | génération de _password_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+useradd'>useradd</a> | création utilisateur (bas niveau!) | [adduser](linux_cmds_list_alpha.md#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+userdel'>userdel</a> | suppression compte |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+usermod'>usermod</a> | modification compte utilisateur |  | _installed_ |
@@ -379,5 +380,5 @@ Total: 202 commandes
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
 
 
-_MAJ: 2026-01-05T14:46:38+0000_,
+_MAJ: 2026-01-07T08:12:30+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
