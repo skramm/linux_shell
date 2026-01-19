@@ -240,3 +240,7 @@ xclip;18;transfert vers le presse-papier X
 notify-send;18;Envoi de notification au bureau
 wl-paste;18;Copie presse-papier (Wayland)
 
+losetup;1;_set up and control loop devices_;lsblk
+snap;10;utilitaire de controle des "snap"
+findmnt;1;_find a filesystem_
+
