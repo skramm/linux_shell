@@ -243,4 +243,5 @@ wl-paste;18;Copie presse-papier (Wayland)
 losetup;1;_set up and control loop devices_;lsblk
 snap;10;utilitaire de controle des "snap"
 findmnt;1;_find a filesystem_
+mount;1;"montage" de partitions
 
