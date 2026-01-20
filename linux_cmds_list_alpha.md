@@ -9,7 +9,7 @@
 - _installed_: programme installé et disponible dans l'OS local (VM Github)
 - NI (_Not Installed_): programme non installé
 
-210 commandes<br>
+209 commandes<br>
 
 ## A
 <a name='a'></a>
@@ -263,8 +263,7 @@
 | <a href='https://www.google.fr/search?q=linux+nmcli'>nmcli</a> | pilote CLI des connexions réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+npm'>npm</a> | gestionnaire de paquets Javascript | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+nslookup (_deprecated_)'>nslookup (_deprecated_)</a> | outil DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | NI |
+| <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS (_deprecated_) | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | _installed_ |
 
 ## O
 <a name='o'></a>
@@ -472,5 +471,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2026-01-20T14:24:52+0000_,
+_MAJ: 2026-01-20T14:26:23+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
