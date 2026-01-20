@@ -9,7 +9,7 @@
 - _installed_: programme installé et disponible dans l'OS local (VM Github)
 - NI (_Not Installed_): programme non installé
 
-203 commandes<br>
+207 commandes<br>
 
 ## A
 <a name='a'></a>
@@ -115,6 +115,7 @@
 | <a href='https://www.google.fr/search?q=linux+fg'>fg</a> | passage d'un _job_ au premier plan (_ForeGround_) | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [bg](#b) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+file'>file</a> | nature d'un fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+find'>find</a> | _search for files, folders,_ ... | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+findmnt'>findmnt</a> | _find a filesystem_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fmt'>fmt</a> | text formatter | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+for'>for</a> |  | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+free'>free</a> | état RAM utilisée/libre | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [vmstat](#v) | _installed_ |
@@ -210,6 +211,7 @@
 | <a href='https://www.google.fr/search?q=linux+locate'>locate</a> | localise un programme dans le système | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [which](#w) | NI |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+loginctl'>loginctl</a> | _Control the systemd login manager_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> | [systemctl](#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+losetup'>losetup</a> | _set up and control loop devices_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [lsblk](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsb_release'>lsb_release</a> | version distribution | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [uname](#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsblk'>lsblk</a> | liste périphs stockage "bloc" | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
@@ -238,6 +240,7 @@
 | <a href='https://www.google.fr/search?q=linux+modinfo'>modinfo</a> | _show information about a module_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modprobe'>modprobe</a> | _add and remove modules from the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+more'>more</a> | filtre d'affichage | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [less](#l) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | "montage" de partitions | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mv'>mv</a> | déplacement/renommage | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [cp](#c) | _installed_ |
 
 ## N
@@ -333,6 +336,7 @@
 | <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de ligne | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [sort](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [reboot,halt](#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+source'>source</a> |  | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+split'>split</a> | Découpage d'un fichier en plusieurs morceaux | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
@@ -465,5 +469,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2026-01-07T14:08:33+0000_,
+_MAJ: 2026-01-19T10:27:00+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
