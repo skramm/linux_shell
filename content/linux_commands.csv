@@ -107,7 +107,7 @@ zip;5;compression zip;unzip
 unzip;5;décompression zip;zip
 tar;5;utilitaire archivage;zip
 
-sort;5;tri de texte
+sort;8;tri de texte
 chmod;5;chgt permissions fichier
 chown;5;chgt propriétaire fichier;chgrp
 chgrp;5;chgt groupe propriétaire fichier;chown
@@ -131,7 +131,8 @@ ip;3;
 ping;3;
 wget;3;client http CLI;curl
 curl;3;client multiprotocoles (wget en mieux);wget
-dig;3;requete DNS
+dig;3;requete DNS;nslookup
+nslookup;3;requete DNS;dig
 netcat;3;utilitaire TCP/UDP;nc
 tcpdump;3;capture trames réseau (Wireshark en CLI)
 nc;3;alias pour netcat;netcat
@@ -181,6 +182,7 @@ uniq;8;suppression lignes identiques
 jq;8;traitement de chaines JSON;jo
 jo;8;génération de JSON;jq
 split;8;Découpage d'un fichier en plusieurs morceaux
+look;8;_display lines beginning with a given string_
 
 whoami;9;qui suis-je?
 who;9;qui est loggé?
