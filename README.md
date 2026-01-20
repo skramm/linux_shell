@@ -4,7 +4,9 @@
 
 Sebastien Kramm - IUT RT Rouen
 
-dépot public
+![cowsay](content/linux_cowsay_400.jpg)
+
+Dépot public
 
 * Travaillant plutot sous Debian et dérivés, la liste ici présuppose un shell Bash.
 Pour d'autres shell ou distribution, il est possible que quelques commandes diffèrent.
@@ -12,10 +14,10 @@ Pour d'autres shell ou distribution, il est possible que quelques commandes diff
 * Un tel répertoire est par nature arbitraire, aucune prétention d'exhaustivité.
 
 * Pour l'instant, une commande ne peut être référencée que dans une seule catégorie.
-Par conséquent, pour certaines commandes, un choix arbitraire a du être fait entre deux catégories possibles.
+Pour certaines commandes, un choix arbitraire a du être fait entre deux catégories possibles.
 
-* Les 2 pages ci-dessous sont générées automatiquement via une intégration continue, à partir de fichier sources
-(voir dossier content/).
+* Les 2 pages ci-dessous sont générées automatiquement via une intégration continue, à partir de fichier source
+(voir dossier [content/]().
 
 * La première colonne contient un **lien** Google sur la commande en question.
 Pensez à faire un clic-droit->"ouvrir dans un nouvel onglet" pour ne pas perdre la page d'origine.

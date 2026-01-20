@@ -1,4 +1,6 @@
 /**
+https://github.com/skramm/linux_shell/blob/main/content/linux_gen.cpp
+
 Construction d'un index de commandes Linux, à partir de deux fichiers csv:  
 - linux_cat.csv
 - linux_commands.csv
