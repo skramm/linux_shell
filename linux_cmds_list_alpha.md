@@ -9,7 +9,7 @@
 - _installed_: programme installé et disponible dans l'OS local (VM Github)
 - NI (_Not Installed_): programme non installé
 
-208 commandes<br>
+210 commandes<br>
 
 ## A
 <a name='a'></a>
@@ -82,7 +82,7 @@
 | <a href='https://www.google.fr/search?q=linux+depmod'>depmod</a> | _generates modules.dep and map files_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+df'>df</a> | _disk free_ | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+diff'>diff</a> | différences entre 2 fichiers, ligne par ligne | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [cmp](#c) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+dig'>dig</a> | requete DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+dig'>dig</a> | requete DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [nslookup](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dir'>dir</a> | alias de ls | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> | [ls](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dmesg'>dmesg</a> | affichage logs kernel (buffer circulaire) | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dpkg'>dpkg</a> | utilitaire paquets Debian (.deb) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
@@ -212,6 +212,7 @@
 | <a href='https://www.google.fr/search?q=linux+locate'>locate</a> | localise un programme dans le système | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [which](#w) | NI |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+loginctl'>loginctl</a> | _Control the systemd login manager_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> | [systemctl](#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+look'>look</a> | _display lines beginning with a given string_ | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+losetup'>losetup</a> | _set up and control loop devices_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [lsblk](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsb_release'>lsb_release</a> | version distribution | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [uname](#u) | _installed_ |
@@ -253,8 +254,8 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur console basique | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur "console" | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur console basique | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nc'>nc</a> | alias pour netcat | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [netcat](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netcat'>netcat</a> | utilitaire TCP/UDP | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [nc](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netstat'>netstat</a> | infos/reseau, routage, etc. | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
@@ -262,6 +263,7 @@
 | <a href='https://www.google.fr/search?q=linux+nmcli'>nmcli</a> | pilote CLI des connexions réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+npm'>npm</a> | gestionnaire de paquets Javascript | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nslookup (_deprecated_)'>nslookup (_deprecated_)</a> | outil DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | NI |
 
 ## O
@@ -338,7 +340,7 @@
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [reboot,halt](#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+source'>source</a> |  | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+split'>split</a> | Découpage d'un fichier en plusieurs morceaux | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _socket statistics_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [lsof](#l) | _installed_ |
@@ -470,5 +472,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2026-01-20T14:18:05+0000_,
+_MAJ: 2026-01-20T14:24:52+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_

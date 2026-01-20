@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 208 commandes
+Total: 210 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -118,12 +118,12 @@ Total: 208 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-22 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+23 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+curl'>curl</a> | client multiprotocoles (wget en mieux) | [wget](linux_cmds_list_alpha.md#w) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+dig'>dig</a> | requete DNS |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+dig'>dig</a> | requete DNS | [nslookup](linux_cmds_list_alpha.md#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ftp'>ftp</a> | transfert de fichiers |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hostname'>hostname</a> | nom de la machine |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ip'>ip</a> |  |  | _installed_ |
@@ -132,6 +132,7 @@ Total: 208 commandes
 | <a href='https://www.google.fr/search?q=linux+netstat'>netstat</a> | infos/reseau, routage, etc. |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nmap'>nmap</a> | exploration réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nmcli'>nmcli</a> | pilote CLI des connexions réseau |  | NI |
+| <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nslookup (_deprecated_)'>nslookup (_deprecated_)</a> | outil DNS | [dig](linux_cmds_list_alpha.md#d) | NI |
 | <a href='https://www.google.fr/search?q=linux+ping'>ping</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert/backup de fichier, local ou distant |  | _installed_ |
@@ -148,7 +149,7 @@ Total: 208 commandes
 ## 7 - catégorie: Fichiers & permissions
 <a name='cat5'></a>
 
-10 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+9 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -157,7 +158,6 @@ Total: 208 commandes
 | <a href='https://www.google.fr/search?q=linux+chmod'>chmod</a> | chgt permissions fichier |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+chown'>chown</a> | chgt propriétaire fichier | [chgrp](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+find'>find</a> | _search for files, folders,_ ... |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tar'>tar</a> | utilitaire archivage | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+umask'>umask</a> | permissions par défaut | [chmod](linux_cmds_list_alpha.md#c) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+unzip'>unzip</a> | décompression zip | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
@@ -211,7 +211,7 @@ Total: 208 commandes
 ## 10 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -220,9 +220,11 @@ Total: 208 commandes
 | <a href='https://www.google.fr/search?q=linux+grep'>grep</a> | recherche de chaîne | [ripgrep](linux_cmds_list_alpha.md#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+jo'>jo</a> | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | NI |
 | <a href='https://www.google.fr/search?q=linux+jq'>jq</a> | traitement de chaines JSON | [jo](linux_cmds_list_alpha.md#j) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+look'>look</a> | _display lines beginning with a given string_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+paste'>paste</a> | fusion de lignes de texte de plusieurs fichiers |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ripgrep'>ripgrep</a> | (rg) grep récursif | [grep](linux_cmds_list_alpha.md#g) | NI |
 | <a href='https://www.google.fr/search?q=linux+sed'>sed</a> |  _Stream EDitor_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+split'>split</a> | Découpage d'un fichier en plusieurs morceaux |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tr'>tr</a> | _translate or delete characters_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+uniq'>uniq</a> | suppression lignes identiques |  | _installed_ |
@@ -385,5 +387,5 @@ Total: 208 commandes
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
 
 
-_MAJ: 2026-01-20T14:18:05+0000_,
+_MAJ: 2026-01-20T14:24:52+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
