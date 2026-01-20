@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 207 commandes
+Total: 208 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -268,12 +268,13 @@ Total: 207 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-28 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+29 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+clear'>clear</a> | effacement terminal |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | cowsay |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+date'>date</a> | affiche date & heure |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement |  | _installed_ |
@@ -384,5 +385,5 @@ Total: 207 commandes
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
 
 
-_MAJ: 2026-01-19T10:27:00+0000_,
+_MAJ: 2026-01-20T14:18:05+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_

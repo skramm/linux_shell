@@ -9,7 +9,7 @@
 - _installed_: programme installé et disponible dans l'OS local (VM Github)
 - NI (_Not Installed_): programme non installé
 
-207 commandes<br>
+208 commandes<br>
 
 ## A
 <a name='a'></a>
@@ -62,6 +62,7 @@
 | <a href='https://www.google.fr/search?q=linux+cmp'>cmp</a> | comparaison de fichiers, par octet | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+comm'>comm</a> | comparaison de fichiers, par ligne | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | cowsay | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cp'>cp</a> | copie fichier(s) | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [mv](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+curl'>curl</a> | client multiprotocoles (wget en mieux) | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [wget](#w) | _installed_ |
@@ -252,8 +253,8 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur "console" | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur console basique | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur "console" | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nc'>nc</a> | alias pour netcat | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [netcat](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netcat'>netcat</a> | utilitaire TCP/UDP | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [nc](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netstat'>netstat</a> | infos/reseau, routage, etc. | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
@@ -469,5 +470,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2026-01-19T10:27:00+0000_,
+_MAJ: 2026-01-20T14:18:05+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
