@@ -16,8 +16,8 @@ Pour d'autres shell ou distribution, il est possible que quelques commandes diff
 * Pour l'instant, une commande ne peut être référencée que dans une seule catégorie.
 Pour certaines commandes, un choix arbitraire a du être fait entre deux catégories possibles.
 
-* Les 2 pages ci-dessous sont générées automatiquement via une intégration continue, à partir de fichier source
-(voir dossier [content/]().
+* Les 2 pages ci-dessous sont générées automatiquement via une intégration continue, à partir de 2 fichiers CSV
+(voir dossier [content/]()).
 
 * La première colonne contient un **lien** Google sur la commande en question.
 Pensez à faire un clic-droit->"ouvrir dans un nouvel onglet" pour ne pas perdre la page d'origine.
