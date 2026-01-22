@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 209 commandes
+Total: 208 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -54,7 +54,7 @@ Total: 209 commandes
 ## 2 - catégorie: Édition/visualisation fichiers
 <a name='cat14'></a>
 
-13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -64,7 +64,6 @@ Total: 209 commandes
 | <a href='https://www.google.fr/search?q=linux+head'>head</a> | premières lignes texte | [tail](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+less'>less</a> | filtre d'affichage | [more](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+more'>more</a> | filtre d'affichage | [less](linux_cmds_list_alpha.md#l) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur console basique |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+od'>od</a> | visualisation en hexa ou octal | [xxd](linux_cmds_list_alpha.md#x) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+stat'>stat</a> | détails complets sur un fichier |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tac'>tac</a> | affiche ordre inversé | [cat](linux_cmds_list_alpha.md#c) | _installed_ |
@@ -179,14 +178,14 @@ Total: 209 commandes
 | <a href='https://www.google.fr/search?q=linux+lshw'>lshw</a> | _list hardware_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsof'>lsof</a> | _list open files_ | [ss](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lspci'>lspci</a> | _list all PCI devices_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> |  |  | NI |
+| <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> | architecture CPU (coeurs, RAM cache, ...) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lsusb'>lsusb</a> | liste périphs USB |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | "montage" de partitions |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+reboot'>reboot</a> | reboot | [shutdown,halt](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sensors'>sensors</a> | données capteurs (température, tension, etc.) |  | NI |
-| <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> |  | [reboot,halt](linux_cmds_list_alpha.md#r) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> | Comme son nom l'indique... | [reboot,halt](linux_cmds_list_alpha.md#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _socket statistics_ | [lsof](linux_cmds_list_alpha.md#l) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+su'>su</a> | changement temp. d'utilisateur | [sudo](linux_cmds_list_alpha.md#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+su'>su</a> | changement temporaire de _user_ | [sudo](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sudo'>sudo</a> | exécution d'une commande admin | [su](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapoff'>swapoff</a> | gestion mémoire _swap_ | [swapon](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | [swapoff](linux_cmds_list_alpha.md#s) | _installed_ |
@@ -204,13 +203,13 @@ Total: 209 commandes
 | <a href='https://www.google.fr/search?q=linux+gcc'>gcc</a> | compilation C |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+gdb'>gdb</a> | déboggage pas à pas |  | NI |
 | <a href='https://www.google.fr/search?q=linux+git'>git</a> | **LE** gestionnaire de versions de fichiers source |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+make'>make</a> | compilation |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+make'>make</a> | construction d'une cible en fonction des dépendances |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+strings'>strings</a> | extraction de chaines dans des binaires |  | _installed_ |
 
 ## 10 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+14 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -223,6 +222,7 @@ Total: 209 commandes
 | <a href='https://www.google.fr/search?q=linux+paste'>paste</a> | fusion de lignes de texte de plusieurs fichiers |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ripgrep'>ripgrep</a> | (rg) grep récursif | [grep](linux_cmds_list_alpha.md#g) | NI |
 | <a href='https://www.google.fr/search?q=linux+sed'>sed</a> |  _Stream EDitor_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de lignes | [sort](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+split'>split</a> | Découpage d'un fichier en plusieurs morceaux |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tr'>tr</a> | _translate or delete characters_ |  | _installed_ |
@@ -263,19 +263,19 @@ Total: 209 commandes
 | <a href='https://www.google.fr/search?q=linux+pip'>pip</a> | gestionnaire de paquets Python (2 ou 3) |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pip3'>pip3</a> | gestionnaire de paquets Python3 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rpm'>rpm</a> | gestion paquets Fedora |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" (Ubuntu) |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+yum'>yum</a> | gestion paquets RedHat |  | NI |
 
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-29 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+28 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+clear'>clear</a> | effacement terminal |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image |  | NI |
-| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | cowsay |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+date'>date</a> | affiche date & heure |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement |  | _installed_ |
@@ -283,14 +283,13 @@ Total: 209 commandes
 | <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fmt'>fmt</a> | text formatter |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur "console" |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur en mode "console" |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+screen'>screen</a> | multiplexeur de terminal | [tmux](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+set'>set</a> | paramétrage du shell |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de ligne | [sort](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+tee'>tee</a> |  |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+tee'>tee</a> | modif redirection (stdout, stderr) |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+time'>time</a> | chronométrage de tâche |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+tmux'>tmux</a> | multiplexeur de terminal | [screen](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tty'>tty</a> | indique le terminal courant (`/dev/pts/XX`) |  | _installed_ |
@@ -386,5 +385,5 @@ Total: 209 commandes
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
 
 
-_MAJ: 2026-01-20T14:26:23+0000_,
+_MAJ: 2026-01-22T08:50:23+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_

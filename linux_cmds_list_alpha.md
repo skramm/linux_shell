@@ -9,7 +9,7 @@
 - _installed_: programme installé et disponible dans l'OS local (VM Github)
 - NI (_Not Installed_): programme non installé
 
-209 commandes<br>
+208 commandes<br>
 
 ## A
 <a name='a'></a>
@@ -62,7 +62,7 @@
 | <a href='https://www.google.fr/search?q=linux+cmp'>cmp</a> | comparaison de fichiers, par octet | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+comm'>comm</a> | comparaison de fichiers, par ligne | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
-| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | cowsay | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cp'>cp</a> | copie fichier(s) | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [mv](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+curl'>curl</a> | client multiprotocoles (wget en mieux) | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [wget](#w) | _installed_ |
@@ -223,7 +223,7 @@
 | <a href='https://www.google.fr/search?q=linux+lsmod'>lsmod</a> | _show the status of modules in the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsof'>lsof</a> | _list open files_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [ss](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lspci'>lspci</a> | _list all PCI devices_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> | architecture CPU (coeurs, RAM cache, ...) | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lsusb'>lsusb</a> | liste périphs USB | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 
 ## M
@@ -235,14 +235,14 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+make'>make</a> | compilation | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+make'>make</a> | construction d'une cible en fonction des dépendances | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+man'>man</a> | manuel | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [help](#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mkdir'>mkdir</a> | _make directory_ | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modinfo'>modinfo</a> | _show information about a module_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modprobe'>modprobe</a> | _add and remove modules from the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+more'>more</a> | filtre d'affichage | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [less](#l) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | "montage" de partitions | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mv'>mv</a> | déplacement/renommage | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [cp](#c) | _installed_ |
 
 ## N
@@ -254,8 +254,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur "console" | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur console basique | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur en mode "console" | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nc'>nc</a> | alias pour netcat | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [netcat](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netcat'>netcat</a> | utilitaire TCP/UDP | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [nc](#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netstat'>netstat</a> | infos/reseau, routage, etc. | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
@@ -335,10 +334,10 @@
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+set'>set</a> | paramétrage du shell | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+shift'>shift</a> | décalage paramètres positionnels ($1, $2, ...) | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de ligne | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [sort](#s) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [reboot,halt](#r) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de lignes | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> | [sort](#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> | Comme son nom l'indique... | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [reboot,halt](#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" (Ubuntu) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+source'>source</a> |  | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+split'>split</a> | Découpage d'un fichier en plusieurs morceaux | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
@@ -350,7 +349,7 @@
 | <a href='https://www.google.fr/search?q=linux+stat'>stat</a> | détails complets sur un fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+stress'>stress</a> | Génération de charge CPU | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+strings'>strings</a> | extraction de chaines dans des binaires | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+su'>su</a> | changement temp. d'utilisateur | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [sudo](#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+su'>su</a> | changement temporaire de _user_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [sudo](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sudo'>sudo</a> | exécution d'une commande admin | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [su](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapoff'>swapoff</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [swapon](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [swapoff](#s) | _installed_ |
@@ -369,7 +368,7 @@
 | <a href='https://www.google.fr/search?q=linux+tail'>tail</a> | dernières lignes texte | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [head](#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tar'>tar</a> | utilitaire archivage | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [zip](#z) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tcpdump'>tcpdump</a> | capture trames réseau (Wireshark en CLI) | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+tee'>tee</a> |  | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+tee'>tee</a> | modif redirection (stdout, stderr) | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+time'>time</a> | chronométrage de tâche | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+tmux'>tmux</a> | multiplexeur de terminal | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [screen](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [htop](#h) | _installed_ |
@@ -471,5 +470,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2026-01-20T14:26:23+0000_,
+_MAJ: 2026-01-22T08:50:23+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
