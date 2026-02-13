@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 208 commandes
+Total: 210 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -376,14 +376,16 @@ Total: 208 commandes
 ## 18 - catégorie: Interface avec bureau
 <a name='cat18'></a>
 
-3 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+5 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+wl-paste'>wl-paste</a> | Copie presse-papier (Wayland) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
+| <a href='https://www.google.fr/search?q=linux+xinput'>xinput</a> | _utility to configure and test X input devices_ |  | NI |
+| <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | Génération de dialogues GUI via CLI |  | NI |
 
 
-_MAJ: 2026-01-22T08:50:23+0000_,
+_MAJ: 2026-02-13T08:34:25+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
