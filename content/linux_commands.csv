@@ -36,7 +36,8 @@ trap;12;interception de signal POSIX
 fmt;7;text formatter
 md5sum;7;calcul de hash MD5
 
-fdisk;2;
+fdisk;2;_manipulate disk partition table_
+fsck;2;Vérification et correction système de fichier
 df;2;_disk free_
 du;2;_disk usage_
 dd;2;utilitaire de copie bas niveau
@@ -93,7 +94,7 @@ stat;14;détails complets sur un fichier
 head;14;premières lignes texte;tail
 tail;14;dernières lignes texte;head
 cat;14;affiche et/ou concatene un/des fichiers
-tac;14;affiche ordre inversé;cat
+tac;14;affichage fichier à l'envers;cat
 
 xxd;14;visualisation en hexa;od
 od;14;visualisation en hexa ou octal;xxd
@@ -246,5 +247,7 @@ zenity;18;Génération de dialogues GUI via CLI
 losetup;1;_set up and control loop devices_;lsblk
 snap;10;utilitaire de controle des "snap" (Ubuntu)
 findmnt;1;_find a filesystem_
-mount;1;montage de partitions
+mount;1;montage de partitions;umount
+umount;1;démontage de partitions;mount
+
 
