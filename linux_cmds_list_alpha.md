@@ -9,7 +9,7 @@
 - _installed_: programme installé et disponible dans l'OS local (VM Github)
 - NI (_Not Installed_): programme non installé
 
-212 commandes<br>
+213 commandes<br>
 
 ## A
 <a name='a'></a>
@@ -100,6 +100,7 @@
 | <a href='https://www.google.fr/search?q=linux+echo'>echo</a> | affichage de texte/variable | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [printf](#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+eval'>eval</a> | exécute la commande passée en argument | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+exiftool'>exiftool</a> | manipulation métadonnées fichier image, audio, etc. | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+exit'>exit</a> | Terminaison du script et renvoi  d'une valeur à l'OS | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [return](#r) | _builtin_ |
 
 ## F
@@ -474,5 +475,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2026-02-15T16:46:21+0000_,
+_MAJ: 2026-03-08T21:54:56+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_

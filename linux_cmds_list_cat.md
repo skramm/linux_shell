@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 212 commandes
+Total: 213 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -87,7 +87,7 @@ Total: 212 commandes
 ## 4 - catégorie: Manipulation fichiers
 <a name='cat11'></a>
 
-7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -95,6 +95,7 @@ Total: 212 commandes
 | <a href='https://www.google.fr/search?q=linux+comm'>comm</a> | comparaison de fichiers, par ligne | [diff](linux_cmds_list_alpha.md#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cp'>cp</a> | copie fichier(s) | [mv](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+diff'>diff</a> | différences entre 2 fichiers, ligne par ligne | [cmp](linux_cmds_list_alpha.md#c) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+exiftool'>exiftool</a> | manipulation métadonnées fichier image, audio, etc. |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ln'>ln</a> | création de lien, symbolique ou _hardlink_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mv'>mv</a> | déplacement/renommage | [cp](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rm'>rm</a> | suppression fichier | [rmdir](linux_cmds_list_alpha.md#r) | _installed_ |
@@ -389,5 +390,5 @@ Total: 212 commandes
 | <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | Génération de dialogues GUI via CLI |  | NI |
 
 
-_MAJ: 2026-02-15T16:46:21+0000_,
+_MAJ: 2026-03-08T21:54:56+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
