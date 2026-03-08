@@ -250,4 +250,5 @@ findmnt;1;_find a filesystem_
 mount;1;montage de partitions;umount
 umount;1;démontage de partitions;mount
 
+exiftool;11;manipulation métadonnées fichier image, audio, etc.
 
