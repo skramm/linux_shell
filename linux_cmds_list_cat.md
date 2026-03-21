@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 213 commandes
+Total: 214 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -166,7 +166,7 @@ Total: 213 commandes
 ## 8 - catégorie: Système & _Hardware_
 <a name='cat1'></a>
 
-23 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+24 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -183,6 +183,7 @@ Total: 213 commandes
 | <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> | architecture CPU (coeurs, RAM cache, ...) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lsusb'>lsusb</a> | liste périphs USB |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions | [umount](linux_cmds_list_alpha.md#u) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+nmon'>nmon</a> | _dashboard_ système | [htop](linux_cmds_list_alpha.md#h) | NI |
 | <a href='https://www.google.fr/search?q=linux+reboot'>reboot</a> | reboot | [shutdown,halt](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sensors'>sensors</a> | données capteurs (température, tension, etc.) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> | Comme son nom l'indique... | [reboot,halt](linux_cmds_list_alpha.md#r) | _installed_ |
@@ -314,7 +315,7 @@ Total: 213 commandes
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+bg'>bg</a> | passage d'un _job_ en arrière plan (_BackGround_) | [fg](linux_cmds_list_alpha.md#f) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+fg'>fg</a> | passage d'un _job_ au premier plan (_ForeGround_) | [bg](linux_cmds_list_alpha.md#b) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+htop'>htop</a> | top en mieux | [top](linux_cmds_list_alpha.md#t) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+htop'>htop</a> | top en mieux | [top,nmon](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+jobs'>jobs</a> | affichage des _jobs_ lancés |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+kill'>kill</a> | stoppe un process par PID (envoi d'un signal POSIX) | [pkill](linux_cmds_list_alpha.md#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+killall'>killall</a> | stoppe tous les process par nom |  | _installed_ |
@@ -390,5 +391,5 @@ Total: 213 commandes
 | <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | Génération de dialogues GUI via CLI |  | NI |
 
 
-_MAJ: 2026-03-08T21:54:56+0000_,
+_MAJ: 2026-03-21T09:10:18+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
