@@ -20,7 +20,7 @@ lstopo;1;architecture CPU (coeurs, RAM cache, ...)
 sudo;1;exécution d'une commande admin;su
 su;1;changement temporaire de _user_;sudo
 top;12;_dashboard_ système & process;htop
-htop;12;top en mieux;top
+htop;12;top en mieux;top,nmon
 shutdown;1;Comme son nom l'indique...;reboot,halt
 reboot;1;reboot;shutdown,halt
 halt;1;;shutdown,reboot
@@ -249,6 +249,7 @@ snap;10;utilitaire de controle des "snap" (Ubuntu)
 findmnt;1;_find a filesystem_
 mount;1;montage de partitions;umount
 umount;1;démontage de partitions;mount
+nmon;1;_dashboard_ système;htop
 
 exiftool;11;manipulation métadonnées fichier image, audio, etc.
 
