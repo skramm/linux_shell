@@ -35,6 +35,7 @@ trap;12;interception de signal POSIX
 
 fmt;7;text formatter
 md5sum;7;calcul de hash MD5
+base64;7;encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a>
 
 fdisk;2;_manipulate disk partition table_
 fsck;2;Vérification et correction système de fichier
