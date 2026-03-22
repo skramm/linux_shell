@@ -9,7 +9,7 @@
 - _installed_: programme installé et disponible dans l'OS local (VM Github)
 - NI (_Not Installed_): programme non installé
 
-214 commandes<br>
+215 commandes<br>
 
 ## A
 <a name='a'></a>
@@ -38,6 +38,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+base64'>base64</a> | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+bat'>bat</a> | cat en mieux | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [cat,tail](#c) | NI |
 | <a href='https://www.google.fr/search?q=linux+bg'>bg</a> | passage d'un _job_ en arrière plan (_BackGround_) | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [fg](#f) | _builtin_ |
 
@@ -476,5 +477,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2026-03-21T09:10:18+0000_,
+_MAJ: 2026-03-22T21:46:07+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
