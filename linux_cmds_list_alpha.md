@@ -9,7 +9,7 @@
 - _installed_: programme installé et disponible dans l'OS local (VM Github)
 - NI (_Not Installed_): programme non installé
 
-215 commandes<br>
+216 commandes<br>
 
 ## A
 <a name='a'></a>
@@ -20,7 +20,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de `Apparmor` | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+addgroup'>addgroup</a> | création groupe d'utilisateurs | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [adduser](#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+adduser'>adduser</a> | création utilisateur | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+alias'>alias</a> | composition de commandes | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [unalias](#u) | _builtin_ |
@@ -141,6 +141,7 @@
 | <a href='https://www.google.fr/search?q=linux+git'>git</a> | **LE** gestionnaire de versions de fichiers source | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+grep'>grep</a> | recherche de chaîne | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> | [ripgrep](#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+groupadd'>groupadd</a> | création groupe (bas niveau!) | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [addgroup](#a) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+groupmod'>groupmod</a> | modification d'un groupe d'utilisateurs | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+groups'>groups</a> | affiche les groupes existants | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [id](#i) | _installed_ |
 
 ## H
@@ -477,5 +478,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [unzip](#u) | _installed_ |
 
 
-_MAJ: 2026-03-22T21:46:07+0000_,
+_MAJ: 2026-03-23T16:14:39+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_

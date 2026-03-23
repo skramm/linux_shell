@@ -24,7 +24,7 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 
-Total: 215 commandes
+Total: 216 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -235,13 +235,14 @@ Total: 215 commandes
 ## 11 - catégorie: Gestion utilisateurs
 <a name='cat9'></a>
 
-13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+14 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+addgroup'>addgroup</a> | création groupe d'utilisateurs | [adduser](linux_cmds_list_alpha.md#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+adduser'>adduser</a> | création utilisateur |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+groupadd'>groupadd</a> | création groupe (bas niveau!) | [addgroup](linux_cmds_list_alpha.md#a) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+groupmod'>groupmod</a> | modification d'un groupe d'utilisateurs |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+groups'>groups</a> | affiche les groupes existants | [id](linux_cmds_list_alpha.md#i) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+id'>id</a> | affiche les infos sur un utilisateur |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+last'>last</a> | historique des logins & boots |  | _installed_ |
@@ -372,7 +373,7 @@ Total: 215 commandes
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de `Apparmor` |  | NI |
+| <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
 | <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système |  | _installed_ |
@@ -392,5 +393,5 @@ Total: 215 commandes
 | <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | Génération de dialogues GUI via CLI |  | NI |
 
 
-_MAJ: 2026-03-22T21:46:07+0000_,
+_MAJ: 2026-03-23T16:14:39+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
