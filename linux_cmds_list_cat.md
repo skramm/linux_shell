@@ -23,8 +23,9 @@ Catégories:
 * 16 - [Gestion Kernel](#cat13)
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
+* 19 - [Compression](#cat19)
 
-Total: 216 commandes
+Total: 221 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -149,7 +150,7 @@ Total: 216 commandes
 ## 7 - catégorie: Fichiers & permissions
 <a name='cat5'></a>
 
-9 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+6 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -158,10 +159,7 @@ Total: 216 commandes
 | <a href='https://www.google.fr/search?q=linux+chmod'>chmod</a> | chgt permissions fichier |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+chown'>chown</a> | chgt propriétaire fichier | [chgrp](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+find'>find</a> | _search for files, folders,_ ... |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+tar'>tar</a> | utilitaire archivage | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+umask'>umask</a> | permissions par défaut | [chmod](linux_cmds_list_alpha.md#c) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+unzip'>unzip</a> | décompression zip | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [unzip](linux_cmds_list_alpha.md#u) | _installed_ |
 
 ## 8 - catégorie: Système & _Hardware_
 <a name='cat1'></a>
@@ -274,7 +272,7 @@ Total: 216 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-29 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+30 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -291,6 +289,7 @@ Total: 216 commandes
 | <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur en mode "console" |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ |  | NI |
+| <a href='https://www.google.fr/search?q=linux+pv'>pv</a> | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+screen'>screen</a> | multiplexeur de terminal | [tmux](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+set'>set</a> | paramétrage du shell |  | _builtin_ |
@@ -392,6 +391,21 @@ Total: 216 commandes
 | <a href='https://www.google.fr/search?q=linux+xinput'>xinput</a> | _utility to configure and test X input devices_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | Génération de dialogues GUI via CLI |  | NI |
 
+## 19 - catégorie: Compression
+<a name='cat19'></a>
 
-_MAJ: 2026-03-23T16:14:39+0000_,
+7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+
+| Nom | Description | Voir aussi | Statut |
+|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+7z'>7z</a> | compression/décompression |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+bzip2'>bzip2</a> | compression |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+gunzip'>gunzip</a> | decompression zip | [gzip](linux_cmds_list_alpha.md#g) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+gzip'>gzip</a> | compression zip | [zip,gunzip](linux_cmds_list_alpha.md#z) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+tar'>tar</a> | utilitaire archivage | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+unzip'>unzip</a> | décompression zip | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [gzip,unzip](linux_cmds_list_alpha.md#g) | _installed_ |
+
+
+_MAJ: 2026-03-26T14:08:25+0000_,
 _OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
