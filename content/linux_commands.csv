@@ -104,9 +104,13 @@ od;14;visualisation en hexa ou octal;xxd
 file;14;nature d'un fichier
 touch;14;création ou MAJ date d'un fichier
 
-zip;5;compression zip;unzip
-unzip;5;décompression zip;zip
-tar;5;utilitaire archivage;zip
+zip;19;compression zip;gzip,unzip
+unzip;19;décompression zip;zip
+tar;19;utilitaire archivage;zip
+gzip;19;compression zip;zip,gunzip
+gunzip;19;decompression zip;gzip
+bzip2;19;compression
+7z;19;compression/décompression
 
 sort;8;tri de texte
 chmod;5;chgt permissions fichier
@@ -224,6 +228,7 @@ screen;7;multiplexeur de terminal;tmux
 date;7;affiche date & heure
 xdg-open;7;Ouverture fichier avec application GUI associée au type par défaut
 uuid;7;génération de _Universally Unique IDentifier_
+pv;7;_Pipe Viewer_ (monitoring de _pipe_ ou de copie)
 
 if;16;
 while;16;
