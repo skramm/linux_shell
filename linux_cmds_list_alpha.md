@@ -493,5 +493,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> | [gzip,unzip](#g) | _installed_ |
 
 
-_MAJ: 2026-03-26T14:08:25+0000_,
-_OS: Ubuntu - 24.04.3 LTS (Noble Numbat)_
+_MAJ: 2026-03-27T08:27:15+0000_,
+_OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
