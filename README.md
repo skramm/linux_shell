@@ -17,12 +17,12 @@ Pour d'autres shell ou distribution, il est possible que quelques commandes diff
 Pour certaines commandes, un choix arbitraire a du être fait entre deux catégories possibles.
 
 * Les 2 pages ci-dessous sont générées automatiquement via une intégration continue, à partir de 2 fichiers CSV
-(voir dossier [content/]()).
+(voir dossier [content/](content/)).
 
 * La première colonne contient un **lien** Google sur la commande en question.
 Pensez à faire un clic-droit->"ouvrir dans un nouvel onglet" pour ne pas perdre la page d'origine.
 
-* La dernière colonne indique s'il s'agit d'un _builtin_ (commande native du shell) ou d'un programme externe qui peut être existant ou pas sur la VM Github: _installed_ ou NI (_Not Installed_).
+* La dernière colonne indique s'il s'agit d'un _builtin_ (commande native du shell) ou d'un programme externe, qui peut alors être existant ou pas sur la VM Github: _installed_ ou NI (_Not Installed_).
 Dans ces derniers cas, cela signifie qu'il faille peut-être l'installer sur votre machine avant de pouvoir l'utiliser.
 
 
