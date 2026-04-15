@@ -25,7 +25,7 @@ Catégories:
 * 18 - [Interface avec bureau](#cat18)
 * 19 - [Compression](#cat19)
 
-Total: 221 commandes
+Total: 225 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -330,15 +330,16 @@ Total: 221 commandes
 ## 15 - catégorie: Controle des scripts
 <a name='cat16'></a>
 
-12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+break'>break</a> |  |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+case'>case</a> |  |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+echo'>echo</a> | affichage de texte/variable | [printf](linux_cmds_list_alpha.md#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+exit'>exit</a> | Terminaison du script et renvoi  d'une valeur à l'OS | [return](linux_cmds_list_alpha.md#r) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+for'>for</a> |  |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+function'>function</a> | Définition d'une fonction Bash |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+function'>function</a> | définition d'une fonction Bash |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+if'>if</a> |  |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+printf'>printf</a> | affichage de texte/variable formatté | [echo](linux_cmds_list_alpha.md#e) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+read'>read</a> | saisie ligne (clavier ou fichier) |  | _builtin_ |
@@ -350,7 +351,7 @@ Total: 221 commandes
 ## 16 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
-10 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -363,20 +364,23 @@ Total: 221 commandes
 | <a href='https://www.google.fr/search?q=linux+modinfo'>modinfo</a> | _show information about a module_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modprobe'>modprobe</a> | _add and remove modules from the kernel_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rmmod'>rmmod</a> | _remove a module from the kernel_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+strace'>strace</a> | _trace system calls and signals_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 
 ## 17 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
-5 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
+| <a href='https://www.google.fr/search?q=linux+falco'>falco</a> | _kernel monitoring and detection agent_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+stress'>stress</a> | Génération de charge CPU |  | NI |
+| <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ |  | NI |
 
 ## 18 - catégorie: Interface avec bureau
 <a name='cat18'></a>
@@ -407,5 +411,5 @@ Total: 221 commandes
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [gzip,unzip](linux_cmds_list_alpha.md#g) | _installed_ |
 
 
-_MAJ: 2026-03-27T08:27:15+0000_,
+_MAJ: 2026-04-15T08:28:39+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
