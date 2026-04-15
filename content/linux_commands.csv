@@ -32,7 +32,6 @@ pidof;12; donne le PID d'un process;ps
 kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill
 pkill;12;stoppe un process par nom;kill
 killall;12;stoppe tous les process par nom
-trap;12;interception de signal POSIX
 
 fmt;7;text formatter
 md5sum;7;calcul de hash MD5
@@ -56,6 +55,10 @@ g++;6;compilation C++
 strings;6;extraction de chaines dans des binaires
 gdb;6;déboggage pas à pas
 cloc;6;_Count Lines Of Code_;wc
+ld;6;_linker_ de binaires
+ldconfig;6;_configure dynamic linker run-time bindings_
+pkg-config;6;outil de paramétrage de compilation, renvoie les infos sur librairies installées
+cmake;6;outil de _build_ multi OS
 
 pango-view;7;_convert text to image_
 history;4;historique des commandes
@@ -236,12 +239,13 @@ if;16;
 while;16;
 for;16;
 exit;16;Terminaison du script et renvoi  d'une valeur à l'OS;return
-source;16;
+source;16;exécution d'un script dans le même shell
 return;16;fin de fonction;exit,function
 function;16;définition d'une fonction Bash
 case;16;
 shift;16;décalage paramètres positionnels ($1, $2, ...)
-break;16;for
+break;16;sortie de boucle "for";for
+trap;16;interception de signal POSIX
 
 auditd;17;_Logging_ des actions système
 aa-xxx;17;ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a>
