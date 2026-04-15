@@ -376,7 +376,11 @@
 | <a href='https://www.google.fr/search?q=linux+sudo'>sudo</a> | exécution d'une commande admin | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [su](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapoff'>swapoff</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [swapon](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [swapoff](#s) | _installed_ |
+<<<<<<< HEAD
 | <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | <a href='linux_cmds_list_cat.md#cat17'>Gestion Kernel</a> |  | NI |
+=======
+| <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | NI |
+>>>>>>> 12c60edfe301070ea773994e151f1253c6750fe7
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 ## T
@@ -497,4 +501,9 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> | [gzip,unzip](#g) | _installed_ |
 
 
+<<<<<<< HEAD
 _MAJ: 2026-04-15T11:25:15+0200_,
+=======
+_MAJ: 2026-04-15T08:28:39+0000_,
+_OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
+>>>>>>> 12c60edfe301070ea773994e151f1253c6750fe7

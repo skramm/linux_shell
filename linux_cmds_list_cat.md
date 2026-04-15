@@ -25,7 +25,11 @@ Catégories:
 * 18 - [Interface avec bureau](#cat18)
 * 19 - [Compression](#cat19)
 
+<<<<<<< HEAD
 Total: 227 commandes
+=======
+Total: 225 commandes
+>>>>>>> 12c60edfe301070ea773994e151f1253c6750fe7
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -351,7 +355,11 @@ Total: 227 commandes
 ## 16 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
+<<<<<<< HEAD
 12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+=======
+11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+>>>>>>> 12c60edfe301070ea773994e151f1253c6750fe7
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -365,13 +373,20 @@ Total: 227 commandes
 | <a href='https://www.google.fr/search?q=linux+modprobe'>modprobe</a> | _add and remove modules from the kernel_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rmmod'>rmmod</a> | _remove a module from the kernel_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+strace'>strace</a> | _trace system calls and signals_ |  | _installed_ |
+<<<<<<< HEAD
 | <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ |  | NI |
+=======
+>>>>>>> 12c60edfe301070ea773994e151f1253c6750fe7
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 
 ## 17 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
+<<<<<<< HEAD
 8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+=======
+7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+>>>>>>> 12c60edfe301070ea773994e151f1253c6750fe7
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -413,4 +428,9 @@ Total: 227 commandes
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [gzip,unzip](linux_cmds_list_alpha.md#g) | _installed_ |
 
 
+<<<<<<< HEAD
 _MAJ: 2026-04-15T11:25:15+0200_,
+=======
+_MAJ: 2026-04-15T08:28:39+0000_,
+_OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
+>>>>>>> 12c60edfe301070ea773994e151f1253c6750fe7
