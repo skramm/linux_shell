@@ -13,8 +13,7 @@ Pour d'autres shell ou distribution, il est possible que quelques commandes diff
 
 * Un tel répertoire est par nature arbitraire, aucune prétention d'exhaustivité.
 
-* Pour l'instant, une commande ne peut être référencée que dans une seule catégorie.
-Pour certaines commandes, un choix arbitraire a du être fait entre deux catégories possibles.
+* Certaines commandes apparaissent dans plusieurs catégories, ce qui explique que le nombre de commande diffère entre la liste alphabétique et la liste par catégorie.
 
 * Les 2 pages ci-dessous sont générées automatiquement via une intégration continue, à partir de 2 fichiers CSV
 (voir dossier [content/](content/)).

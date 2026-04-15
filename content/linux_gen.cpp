@@ -72,7 +72,10 @@ readCSV( std::string filename )
 }
 
 //--------------------------------------------------
-/// Read categories
+/// Read categories in category file
+/**
+\return A vector of pairs, each one holding the category index and its name
+*/
 auto
 readCSV_cat( std::string filename )
 {
@@ -92,7 +95,8 @@ readCSV_cat( std::string filename )
 /// Contenu d'une commande: nom, commentaire, catégorie, "voir aussi"
 struct Command
 {
-	int         _cat;
+//	int         _cat;
+	std::vector<int> _cats; ///< plusieurs catégories possible pour une même commande
 	std::string _name;
 	std::string _comment;
 	std::string _seealso;
@@ -104,10 +108,16 @@ struct Command
 		assert( vin.size() == 5 ); //|| vin.size() == 4 );
 //		std::cout << "0:" << vin[0] << " 1:" << vin[1]<< " 2:" << vin[2] << " 3:" << vin[3] << " 4:" << vin[4]  << '\n';
 		_name    = vin[0];
-		_cat     = stoi( vin[1] );
+//		_cat     = stoi( vin[1] );
 		_comment = vin[2];
 		_seealso = vin[3];
 		_type    = vin[4];
+
+// fill the categories
+		auto cats = split_string( vin[1], '-' );
+		assert( !cats.empty() );
+		for( const auto& c: cats )
+			_cats.emplace_back( std::stoi( c ) );
 	}
 	bool operator < ( const Command& other )
 	{
@@ -145,7 +155,8 @@ printHeader( std::ofstream& f )
 {
 	f << "**Statut**: \n- _builtin_: commande intégrée au Shell\n"
 		<< "- _installed_: programme installé et disponible dans l'OS local (VM Github)\n"
-		<< "- NI (_Not Installed_): programme non installé\n\n";
+		<< "- NI (_Not Installed_): programme non installé\n\n"
+		<< "**Note**: certaines commandes apparaissent dans plusieurs catégories\n\n";
 }
 
 //--------------------------------------------------
@@ -162,7 +173,7 @@ void
 genListAlpha(
 	std::string                                    fn,
 	std::vector<Command>                           cmds,
-	const std::vector<std::pair<int,std::string>>& cats
+	const std::vector<std::pair<int,std::string>>& categs
 )
 {
 	std::ofstream f( fn );
@@ -193,16 +204,26 @@ genListAlpha(
 			first_letter = first;
 			start = false;
 		}
-		auto cat = std::find_if(
-			cats.begin(),
-			cats.end(), 
-			[cmd](const auto& elem){ return elem.first == cmd._cat; } // lambda
+// Search the category of that command. If multiple, only the first is printed.
+	auto cat = std::find_if(
+			categs.begin(),
+			categs.end(), 
+			[cmd]                      // lambda
+			(const auto& elem)
+			{
+				for( const auto& ccat: cmd._cats )
+					if( elem.first == ccat )
+						return true;
+				return false;
+//				return elem.first == cmd._cat;
+			}
 		);
+
 		f << "| <a href='https://www.google.fr/search?q=linux+"
 			<< cmd._name << "'>" 
 			<< cmd._name << "</a> | " << cmd._comment 
 			<< " | <a href='linux_cmds_list_cat.md#cat"
-			<< cmd._cat << "'>"
+			<< cmd._cats.at(0) << "'>"
 			<< cat->second
 			<< "</a> | ";
 		if( !cmd._seealso.empty() )
@@ -216,12 +237,18 @@ genListAlpha(
 }
 
 //--------------------------------------------------
-int countCateg( int cat, const std::vector<Command>& vcmd )
+/// Returns the number of commands in a given category
+int
+countCateg( int cat, const std::vector<Command>& vcmd )
 {
 	int c=0;
 	for( const auto& cmd: vcmd )
-		if( cmd._cat == cat )
-			c++;
+		for( const auto& ccat: cmd._cats )
+			if( ccat == cat )
+				c++; 
+
+//		if( cmd._cat == cat )
+//			c++;
 	return c;
 }
 //--------------------------------------------------
@@ -245,8 +272,14 @@ genCat(
 
 	std::vector<Command> newvec;
 	for( const auto& cmd: vcmd )
-		if( cmd._cat == cat )
+	{
+		const auto& cats = cmd._cats;
+		auto f = std::find( std::begin(cats), std::end(cats), cat );
+		if( f != std::end(cats) )
 			newvec.push_back( cmd );
+//		if( cmd._cat == cat )
+//			newvec.push_back( cmd );
+	}
 	std::sort( newvec.begin(), newvec.end() );
 	
 	for( const auto& cmd: newvec )
