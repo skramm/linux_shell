@@ -25,7 +25,7 @@ Catégories:
 * 18 - [Interface avec bureau](#cat18)
 * 19 - [Compression](#cat19)
 
-Total: 227 commandes
+Total: 231 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -198,16 +198,20 @@ Total: 227 commandes
 ## 9 - catégorie: Dev
 <a name='cat6'></a>
 
-7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+cloc'>cloc</a> | _Count Lines Of Code_ | [wc](linux_cmds_list_alpha.md#w) | NI |
+| <a href='https://www.google.fr/search?q=linux+cmake'>cmake</a> | outil de _build_ multi OS |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+g++'>g++</a> | compilation C++ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+gcc'>gcc</a> | compilation C |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+gdb'>gdb</a> | déboggage pas à pas |  | NI |
 | <a href='https://www.google.fr/search?q=linux+git'>git</a> | **LE** gestionnaire de versions de fichiers source |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ld'>ld</a> | _linker_ de binaires |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ldconfig'>ldconfig</a> | _configure dynamic linker run-time bindings_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+make'>make</a> | construction d'une cible en fonction des dépendances |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+pkg-config'>pkg-config</a> | outil de paramétrage de compilation, renvoie les infos sur librairies installées |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+strings'>strings</a> | extraction de chaines dans des binaires |  | _installed_ |
 
 ## 10 - catégorie: Traitement données texte
@@ -312,7 +316,7 @@ Total: 227 commandes
 ## 14 - catégorie: Gestion des jobs & process
 <a name='cat12'></a>
 
-12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -327,16 +331,15 @@ Total: 227 commandes
 | <a href='https://www.google.fr/search?q=linux+ps'>ps</a> | snapshot des process | [top,pstree](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pstree'>pstree</a> | arborescence des process | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+trap'>trap</a> | interception de signal POSIX |  | _builtin_ |
 
 ## 15 - catégorie: Controle des scripts
 <a name='cat16'></a>
 
-13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+14 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+break'>break</a> | for |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+break'>break</a> | sortie de boucle "for" | [for](linux_cmds_list_alpha.md#f) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+case'>case</a> |  |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+echo'>echo</a> | affichage de texte/variable | [printf](linux_cmds_list_alpha.md#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+exit'>exit</a> | Terminaison du script et renvoi  d'une valeur à l'OS | [return](linux_cmds_list_alpha.md#r) | _builtin_ |
@@ -347,7 +350,8 @@ Total: 227 commandes
 | <a href='https://www.google.fr/search?q=linux+read'>read</a> | saisie ligne (clavier ou fichier) |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+return'>return</a> | fin de fonction | [exit,function](linux_cmds_list_alpha.md#e) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+shift'>shift</a> | décalage paramètres positionnels ($1, $2, ...) |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+source'>source</a> |  |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+source'>source</a> | exécution d'un script dans le même shell |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+trap'>trap</a> | interception de signal POSIX |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+while'>while</a> |  |  | _builtin_ |
 
 ## 16 - catégorie: Gestion Kernel
@@ -415,5 +419,5 @@ Total: 227 commandes
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [gzip,unzip](linux_cmds_list_alpha.md#g) | _installed_ |
 
 
-_MAJ: 2026-04-15T09:36:15+0000_,
+_MAJ: 2026-04-15T09:58:11+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
