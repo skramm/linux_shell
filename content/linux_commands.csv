@@ -231,7 +231,6 @@ yes;7;_output a string repeatedly until killed_
 tmux;7;multiplexeur de terminal;screen
 screen;7;multiplexeur de terminal;tmux
 date;7;affiche date & heure
-xdg-open;7;Ouverture fichier avec application GUI associée au type par défaut
 uuid;7;génération de _Universally Unique IDentifier_
 pv;7;_Pipe Viewer_ (monitoring de _pipe_ ou de copie)
 
@@ -259,6 +258,7 @@ notify-send;18;Envoi de notification au bureau
 wl-paste;18;Copie presse-papier (Wayland)
 xinput;18;_utility to configure and test X input devices_
 zenity;18;Génération de dialogues GUI via CLI
+xdg-open;18;Ouverture fichier avec application GUI associée au type par défaut
 
 losetup;1;_set up and control loop devices_;lsblk
 snap;10;utilitaire de controle des "snap" (Ubuntu)
