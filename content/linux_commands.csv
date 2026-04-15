@@ -220,6 +220,7 @@ systemctl;13;gestion des services (CLI/systemd)
 loginctl;13;_Control the systemd login manager_;systemctl
 journalctl;13;outil d'accès aux logs systemd;systemctl
 dmesg;13;affichage logs kernel (buffer circulaire)
+strace;13;_trace system calls and signals_
 
 yes;7;_output a string repeatedly until killed_
 
@@ -236,14 +237,17 @@ for;16;
 exit;16;Terminaison du script et renvoi  d'une valeur à l'OS;return
 source;16;
 return;16;fin de fonction;exit,function
-function;16;Définition d'une fonction Bash
+function;16;définition d'une fonction Bash
 case;16;
 shift;16;décalage paramètres positionnels ($1, $2, ...)
+break;16;
 
 auditd;17;_Logging_ des actions système
 aa-xxx;17;ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a>
 stress;17;Génération de charge CPU
 hey;17;_HTTP load generator_
+falco;17;_kernel monitoring and detection agent_
+sysdig;17;_Cloud-Native Application Protection Platform_
 
 xclip;18;transfert vers le presse-papier X
 notify-send;18;Envoi de notification au bureau
