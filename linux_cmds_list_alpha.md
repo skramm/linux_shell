@@ -474,7 +474,7 @@
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+xargs'>xargs</a> |  | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
-| <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | Ouverture fichier avec application GUI associée au type par défaut | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | Ouverture fichier avec application GUI associée au type par défaut | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xinput'>xinput</a> | _utility to configure and test X input devices_ | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xxd'>xxd</a> | visualisation en hexa | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [od](#o) | _installed_ |
 
@@ -503,5 +503,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> | [gzip,unzip](#g) | _installed_ |
 
 
-_MAJ: 2026-04-15T09:58:11+0000_,
+_MAJ: 2026-04-15T10:02:57+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

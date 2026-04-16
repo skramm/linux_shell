@@ -278,7 +278,7 @@ Total: 231 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-30 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+29 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -310,7 +310,6 @@ Total: 231 commandes
 | <a href='https://www.google.fr/search?q=linux+watch'>watch</a> | exécution périodique d'une commande |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+which'>which</a> | localisation (chemin) d'un programme | [locate](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xargs'>xargs</a> |  |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | Ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+yes'>yes</a> | _output a string repeatedly until killed_ |  | _installed_ |
 
 ## 14 - catégorie: Gestion des jobs & process
@@ -393,13 +392,14 @@ Total: 231 commandes
 ## 18 - catégorie: Interface avec bureau
 <a name='cat18'></a>
 
-5 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+6 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+wl-paste'>wl-paste</a> | Copie presse-papier (Wayland) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
+| <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | Ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xinput'>xinput</a> | _utility to configure and test X input devices_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | Génération de dialogues GUI via CLI |  | NI |
 
@@ -419,5 +419,5 @@ Total: 231 commandes
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [gzip,unzip](linux_cmds_list_alpha.md#g) | _installed_ |
 
 
-_MAJ: 2026-04-15T09:58:11+0000_,
+_MAJ: 2026-04-15T10:02:57+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
