@@ -43,8 +43,9 @@ dd;2;utilitaire de copie bas niveau
 
 find;5;_search for files, folders,_ ...
 convert;7;conversion format d'image
-fc-list;7;_list available fonts_
+fc-list;7;_list available fonts_;pango-list
 cron;7;planification de tâches
+pango-list;7;liste des polices de caractères installées;fc-list
 
 git;6;**LE** gestionnaire de versions de fichiers source
 make;6;construction d'une cible en fonction des dépendances
@@ -177,7 +178,7 @@ uptime;7;durée fonctionnement système
 set;7;paramétrage du shell
 export;7;exportation de variable dans un sous-shell
 shuf;8;permutation aléatoire de lignes;sort
-cowsay;7;[lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg)
+
 
 awk;8;_pattern scanning and processing language_
 tr;8;_translate or delete characters_
@@ -267,10 +268,11 @@ nmon;1;_dashboard_ système;htop
 
 exiftool;11;manipulation métadonnées fichier image, audio, etc.
 
-pango-view;7;_convert text to image_
+pango-view;20;_convert text to image_
 qrencode;20;génération de qrcodes
 md5sum;20;calcul de hash MD5
 base64;20;encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a>
 shasum;20;calcul de hash SHA (256,512,...);sha256sum
 sha256sum;20;calcul de hash SHA256
 jo;20;génération de JSON;jq
+cowsay;20;[lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg)
