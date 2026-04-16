@@ -26,7 +26,7 @@ Catégories:
 * 19 - [Compression](#cat19)
 * 20 - [en/de-codage, générateurs](#cat20)
 
-Total: 236 commandes
+Total: 237 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -278,22 +278,21 @@ Total: 236 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-28 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+27 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+clear'>clear</a> | effacement terminal |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image |  | NI |
-| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+date'>date</a> | affiche date & heure |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+eval'>eval</a> | exécute la commande passée en argument |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+export'>export</a> | exportation de variable dans un sous-shell |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ | [pango-list](linux_cmds_list_alpha.md#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fmt'>fmt</a> | text formatter |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur en mode "console" |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ |  | NI |
+| <a href='https://www.google.fr/search?q=linux+pango-list'>pango-list</a> | liste des polices de caractères installées | [fc-list](linux_cmds_list_alpha.md#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+pv'>pv</a> | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+screen'>screen</a> | multiplexeur de terminal | [tmux](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ |  | _installed_ |
@@ -421,17 +420,19 @@ Total: 236 commandes
 ## 20 - catégorie: en/de-codage, générateurs
 <a name='cat20'></a>
 
-6 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+base64'>base64</a> | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+jo'>jo</a> | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | NI |
 | <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+qrencode'>qrencode</a> | génération de qrcodes |  | NI |
 | <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
 
 
-_MAJ: 2026-04-16T11:23:55+0000_,
+_MAJ: 2026-04-16T12:27:13+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

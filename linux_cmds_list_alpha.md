@@ -11,7 +11,7 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-234 commandes<br>
+235 commandes<br>
 
 ## 7
 <a name='7'></a>
@@ -79,7 +79,7 @@
 | <a href='https://www.google.fr/search?q=linux+cmp'>cmp</a> | comparaison de fichiers, par octet | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+comm'>comm</a> | comparaison de fichiers, par ligne | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
-| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) | <a href='linux_cmds_list_cat.md#cat20'>en/de-codage, générateurs</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cp'>cp</a> | copie fichier(s) | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [mv](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+curl'>curl</a> | client multiprotocoles (wget en mieux) | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [wget](#w) | _installed_ |
@@ -132,7 +132,7 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+falco'>falco</a> | _kernel monitoring and detection agent_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> | [sysdig](#s) | NI |
-| <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [pango-list](#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fdisk'>fdisk</a> | _manipulate disk partition table_ | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fg'>fg</a> | passage d'un _job_ au premier plan (_ForeGround_) | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [bg](#b) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+file'>file</a> | nature d'un fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
@@ -312,7 +312,8 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+pango-list'>pango-list</a> | liste des polices de caractères installées | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [fc-list](#f) | NI |
+| <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ | <a href='linux_cmds_list_cat.md#cat20'>en/de-codage, générateurs</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+passwd'>passwd</a> | changement pwd | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [chage](#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+paste'>paste</a> | fusion de lignes de texte de plusieurs fichiers | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pidof'>pidof</a> |  donne le PID d'un process | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [ps](#p) | _installed_ |
@@ -518,5 +519,5 @@
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> | [gzip,unzip](#g) | _installed_ |
 
 
-_MAJ: 2026-04-16T11:23:55+0000_,
+_MAJ: 2026-04-16T12:27:13+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
