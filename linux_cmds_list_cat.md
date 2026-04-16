@@ -24,8 +24,9 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 * 19 - [Compression](#cat19)
+* 20 - [en/de-codage, générateurs](#cat20)
 
-Total: 231 commandes
+Total: 236 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -217,14 +218,13 @@ Total: 231 commandes
 ## 10 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-14 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+awk'>awk</a> | _pattern scanning and processing language_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cut'>cut</a> | suppression de texte dans des lignes |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+grep'>grep</a> | recherche de chaîne | [ripgrep](linux_cmds_list_alpha.md#r) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+jo'>jo</a> | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | NI |
 | <a href='https://www.google.fr/search?q=linux+jq'>jq</a> | traitement de chaines JSON | [jo](linux_cmds_list_alpha.md#j) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+look'>look</a> | _display lines beginning with a given string_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+paste'>paste</a> | fusion de lignes de texte de plusieurs fichiers |  | _installed_ |
@@ -278,11 +278,10 @@ Total: 231 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-29 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+28 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+base64'>base64</a> | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+clear'>clear</a> | effacement terminal |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) |  | NI |
@@ -290,9 +289,9 @@ Total: 231 commandes
 | <a href='https://www.google.fr/search?q=linux+date'>date</a> | affiche date & heure |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+eval'>eval</a> | exécute la commande passée en argument |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+export'>export</a> | exportation de variable dans un sous-shell |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fmt'>fmt</a> | text formatter |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur en mode "console" |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+pv'>pv</a> | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) |  | NI |
@@ -392,16 +391,17 @@ Total: 231 commandes
 ## 18 - catégorie: Interface avec bureau
 <a name='cat18'></a>
 
-6 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+display'>display</a> | affichage d'une image sur serveur X |  | NI |
 | <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau |  | NI |
-| <a href='https://www.google.fr/search?q=linux+wl-paste'>wl-paste</a> | Copie presse-papier (Wayland) |  | NI |
+| <a href='https://www.google.fr/search?q=linux+wl-paste'>wl-paste</a> | copie presse-papier (Wayland) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
-| <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | Ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xinput'>xinput</a> | _utility to configure and test X input devices_ |  | NI |
-| <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | Génération de dialogues GUI via CLI |  | NI |
+| <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | génération de dialogues GUI via CLI |  | NI |
 
 ## 19 - catégorie: Compression
 <a name='cat19'></a>
@@ -418,6 +418,20 @@ Total: 231 commandes
 | <a href='https://www.google.fr/search?q=linux+unzip'>unzip</a> | décompression zip | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [gzip,unzip](linux_cmds_list_alpha.md#g) | _installed_ |
 
+## 20 - catégorie: en/de-codage, générateurs
+<a name='cat20'></a>
 
-_MAJ: 2026-04-15T10:02:57+0000_,
+6 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+
+| Nom | Description | Voir aussi | Statut |
+|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+base64'>base64</a> | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+jo'>jo</a> | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | NI |
+| <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+qrencode'>qrencode</a> | génération de qrcodes |  | NI |
+| <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
+
+
+_MAJ: 2026-04-16T11:23:55+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
