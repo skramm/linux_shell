@@ -34,8 +34,6 @@ pkill;12;stoppe un process par nom;kill
 killall;12;stoppe tous les process par nom
 
 fmt;7;text formatter
-md5sum;7;calcul de hash MD5
-base64;7;encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a>
 
 fdisk;2;_manipulate disk partition table_
 fsck;2;Vérification et correction système de fichier
@@ -60,7 +58,6 @@ ldconfig;6;_configure dynamic linker run-time bindings_
 pkg-config;6;outil de paramétrage de compilation, renvoie les infos sur librairies installées
 cmake;6;outil de _build_ multi OS
 
-pango-view;7;_convert text to image_
 history;4;historique des commandes
 lsb_release;4;version distribution;uname
 uname;4;version noyau;lsb_release
@@ -178,6 +175,7 @@ tee;7;modif redirection (stdout, stderr)
 clear;7;effacement terminal
 uptime;7;durée fonctionnement système
 set;7;paramétrage du shell
+export;7;exportation de variable dans un sous-shell
 shuf;8;permutation aléatoire de lignes;sort
 cowsay;7;[lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg)
 
@@ -188,7 +186,6 @@ cut;8;suppression de texte dans des lignes
 paste;8;fusion de lignes de texte de plusieurs fichiers
 uniq;8;suppression lignes identiques
 jq;8;traitement de chaines JSON;jo
-jo;8;génération de JSON;jq
 split;8;Découpage d'un fichier en plusieurs morceaux
 look;8;_display lines beginning with a given string_
 
@@ -255,10 +252,11 @@ sysdig;17-13;_Cloud-Native Application Protection Platform_;falco
 
 xclip;18;transfert vers le presse-papier X
 notify-send;18;Envoi de notification au bureau
-wl-paste;18;Copie presse-papier (Wayland)
+wl-paste;18;copie presse-papier (Wayland)
 xinput;18;_utility to configure and test X input devices_
-zenity;18;Génération de dialogues GUI via CLI
-xdg-open;18;Ouverture fichier avec application GUI associée au type par défaut
+zenity;18;génération de dialogues GUI via CLI
+xdg-open;18;ouverture fichier avec application GUI associée au type par défaut
+display;18;affichage d'une image sur serveur X
 
 losetup;1;_set up and control loop devices_;lsblk
 snap;10;utilitaire de controle des "snap" (Ubuntu)
@@ -269,3 +267,10 @@ nmon;1;_dashboard_ système;htop
 
 exiftool;11;manipulation métadonnées fichier image, audio, etc.
 
+pango-view;7;_convert text to image_
+qrencode;20;génération de qrcodes
+md5sum;20;calcul de hash MD5
+base64;20;encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a>
+shasum;20;calcul de hash SHA (256,512,...);sha256sum
+sha256sum;20;calcul de hash SHA256
+jo;20;génération de JSON;jq
