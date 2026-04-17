@@ -16,12 +16,16 @@ free;1;état RAM utilisée/libre;vmstat
 vmstat;1;état mémoire virtuelle;free
 swapon;1;gestion mémoire _swap_;swapoff
 swapoff;1;gestion mémoire _swap_;swapon
-
+acpi;1;details sur alimentation (batterie ou secteur)
 lstopo;1;architecture CPU (coeurs, RAM cache, ...)
 sudo;1;exécution d'une commande admin;su
 su;1;changement temporaire de _user_;sudo
+hwclock;1;accès horloge interne;time
+
 top;12;_dashboard_ système & process;htop
 htop;12;top en mieux;top,nmon
+iotop;12;liste process avec leur utilisation I/O disque
+
 shutdown;1;Comme son nom l'indique...;reboot,halt
 reboot;1;reboot;shutdown,halt
 halt;1;;shutdown,reboot
@@ -32,6 +36,7 @@ pidof;12; donne le PID d'un process;ps
 kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill
 pkill;12;stoppe un process par nom;kill
 killall;12;stoppe tous les process par nom
+chrt;12;manipulation attributs d'un process
 
 fmt;7;text formatter
 
@@ -44,8 +49,9 @@ dd;2;utilitaire de copie bas niveau
 find;5;_search for files, folders,_ ...
 convert;7;conversion format d'image
 fc-list;7;_list available fonts_;pango-list
-cron;7;planification de tâches
+cron;7;planification de tâches;at
 pango-list;7;liste des polices de caractères installées;fc-list
+at;7;planification de tâches;cron
 
 git;6;**LE** gestionnaire de versions de fichiers source
 make;6;construction d'une cible en fonction des dépendances
@@ -62,6 +68,7 @@ cmake;6;outil de _build_ multi OS
 history;4;historique des commandes
 lsb_release;4;version distribution;uname
 uname;4;version noyau;lsb_release
+arch;4;architecture processeur;uname
 
 cp;11;copie fichier(s);mv
 mv;11;déplacement/renommage;cp
@@ -84,6 +91,7 @@ whatis;4;que fait cette commande?
 pwd;4;_print working directory_
 locate;4;localise un programme dans le système;which
 man;4;manuel;help
+info;4;aide sur commande;man
 help;4;liste commandes "_builtin_" et aide;man
 grep;8;recherche de chaîne;ripgrep
 ripgrep;8;(rg) grep récursif;grep
@@ -105,6 +113,7 @@ od;14;visualisation en hexa ou octal;xxd
 
 file;14;nature d'un fichier
 touch;14;création ou MAJ date d'un fichier
+shred;14;effacement en profondeur de fichier
 
 zip;19;compression zip;gzip,unzip
 unzip;19;décompression zip;zip
@@ -113,6 +122,7 @@ gzip;19;compression zip;zip,gunzip
 gunzip;19;decompression zip;gzip
 bzip2;19;compression
 7z;19;compression/décompression
+cpio;19;manipulation d'archive
 
 sort;8;tri de texte
 chmod;5;chgt permissions fichier
@@ -135,10 +145,18 @@ env;7;liste var. environnement
 
 hostname;3;nom de la machine
 ip;3;
-ping;3;
+ping;3;envoi d'un trame ICMP
 wget;3;client http CLI;curl
 curl;3;client multiprotocoles (wget en mieux);wget
 dig;3;requete DNS;nslookup
+host;3;requete DNS;dig
+
+ifup;3;activation interface réseau
+ifdown;3;désactivation interface réseau
+
+scp;3-11;tranfert de fichiers entre machines
+rsync;3-11;copie et synchronisation de fichiers entre machines
+
 nslookup;3;requete DNS (_deprecated_);dig
 netcat;3;utilitaire TCP/UDP;nc
 tcpdump;3;capture trames réseau (Wireshark en CLI)
@@ -150,11 +168,12 @@ ssh-copy-id;3;
 ufw;3; pilote CLI de Firewall 
 nmap;3;exploration réseau
 whois;3;infos/domaine
-traceroute;3;
+traceroute;3;affiche les étapes d'une requete réseau
 netstat;3;infos/reseau, routage, etc.
 nmcli;3;pilote CLI des connexions réseau
 ftp;3;transfert de fichiers
 rsync;3;transfert/backup de fichier, local ou distant
+route;3;affiche ou édite la table de routage
 
 echo;16;affichage de texte/variable;printf
 printf;16;affichage de texte/variable formatté;echo
@@ -177,6 +196,7 @@ clear;7;effacement terminal
 uptime;7;durée fonctionnement système
 set;7;paramétrage du shell
 export;7;exportation de variable dans un sous-shell
+bc;7;calculatrice CLI
 
 
 shuf;8;permutation aléatoire de lignes;sort
@@ -189,16 +209,20 @@ uniq;8;suppression lignes identiques
 jq;8;traitement de chaines JSON;jo
 split;8;Découpage d'un fichier en plusieurs morceaux
 look;8;_display lines beginning with a given string_
+fold;8;ajustement longueur de ligne
+rev;8;inversion de texte
+column;8;transformation texte en colonnes
 
-whoami;9;qui suis-je?
-who;9;qui est loggé?
+whoami;9;qui suis-je?;id
+who;9;qui est loggé?;w
+w;9;qui est loggé et que fait-il?;who
 passwd;9;changement pwd;chage
 usermod;9;modification compte utilisateur
 userdel;9;suppression compte
 adduser;9;création utilisateur
 addgroup;9;création groupe d'utilisateurs;adduser
 useradd;9;création utilisateur (bas niveau!);adduser
-id;9;affiche les infos sur un utilisateur
+id;9;affiche les infos sur un utilisateur;whoami
 groups;9;affiche les groupes existants;id
 groupadd;9;création groupe (bas niveau!);addgroup
 last;9;historique des logins & boots
@@ -209,7 +233,6 @@ which;7;localisation (chemin) d'un programme;locate
 type;7;indique si une commande est interne (_builtin_) ou externe
 tty;7;indique le terminal courant (`/dev/pts/XX`)
 seq;7;_print a sequence of numbers_
-
 
 depmod;13;_generates modules.dep and map files_
 insmod;13;_insert a module into the kernel_
@@ -228,8 +251,9 @@ zramctl;13;paramétrage et controle de la compression RAM
 yes;7;_output a string repeatedly until killed_
 tmux;7;multiplexeur de terminal;screen;terminal
 screen;7;multiplexeur de terminal;tmux;terminal
-date;7;affiche date & heure;;date
+date;7;affiche date & heure;cal;date
 pv;7;_Pipe Viewer_ (monitoring de _pipe_ ou de copie)
+cal;7;affichage calendrier;date;date
 
 if;16;
 while;16;
@@ -242,6 +266,7 @@ case;16;
 shift;16;décalage paramètres positionnels ($1, $2, ...)
 break;16;sortie de boucle "for";for
 trap;16;interception de signal POSIX
+basename;16;extraction nom à partir d'un chemin
 
 auditd;17;_Logging_ des actions système
 aa-xxx;17;ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a>
@@ -257,6 +282,7 @@ xinput;18;_utility to configure and test X input devices_
 zenity;18;génération de dialogues GUI via CLI
 xdg-open;18;ouverture fichier avec application GUI associée au type par défaut
 display;18;affichage d'une image sur serveur X
+showkey;18;affichage codes claviers en temps réel
 
 losetup;1;_set up and control loop devices_;lsblk
 snap;10;utilitaire de controle des "snap" (Ubuntu)
@@ -276,4 +302,8 @@ sha256sum;20;calcul de hash SHA256
 jo;20;génération de JSON;jq
 cowsay;20;[lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg)
 uuid;20;génération de _Universally Unique IDentifier_
+
+banner;20;affichage bannière;figlet
+figlet;20;affichage bannière;toilet
+toilet;20;affichage bannière;banner
 
