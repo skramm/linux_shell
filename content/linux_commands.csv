@@ -217,19 +217,18 @@ lsmod;13;_show the status of modules in the kernel_
 modinfo;13;_show information about a module_
 modprobe;13;_add and remove modules from the kernel_
 rmmod;13;_remove a module from the kernel_
-logger;17;écriture dans un log système
+logger;17;écriture dans un log système;;logs
 systemctl;13;gestion des services (CLI/systemd)
 loginctl;13;_Control the systemd login manager_;systemctl
 journalctl;13;outil d'accès aux logs systemd;systemctl
 dmesg;13;affichage logs kernel (buffer circulaire)
 strace;13-17;_trace system calls and signals_
+zramctl;13;paramétrage et controle de la compression RAM
 
 yes;7;_output a string repeatedly until killed_
-
-tmux;7;multiplexeur de terminal;screen
-screen;7;multiplexeur de terminal;tmux
-date;7;affiche date & heure
-uuid;7;génération de _Universally Unique IDentifier_
+tmux;7;multiplexeur de terminal;screen;terminal
+screen;7;multiplexeur de terminal;tmux;terminal
+date;7;affiche date & heure;;date
 pv;7;_Pipe Viewer_ (monitoring de _pipe_ ou de copie)
 
 if;16;
@@ -276,3 +275,5 @@ shasum;20;calcul de hash SHA (256,512,...);sha256sum
 sha256sum;20;calcul de hash SHA256
 jo;20;génération de JSON;jq
 cowsay;20;[lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg)
+uuid;20;génération de _Universally Unique IDentifier_
+

@@ -332,6 +332,7 @@ genListCat(
 
 int main( int argc, const char* argv[] )
 {
+	assert( argc > 1 );
 	auto cat = readCSV_cat( "linux_cat.csv" );
 	auto cmds = readCSV_cmd( std::string(argv[1]) );
 	genListAlpha( "../linux_cmds_list_alpha.md", cmds, cat );
