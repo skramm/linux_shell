@@ -520,5 +520,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-04-17T12:29:24+0000_,
+_MAJ: 2026-04-17T12:39:44+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

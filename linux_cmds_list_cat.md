@@ -26,7 +26,7 @@ Catégories:
 * 19 - [Compression](#cat19)
 * 20 - [en/de-codage, générateurs](#cat20)
 
-Total: 238 commandes
+Total: 239 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -420,7 +420,7 @@ Total: 238 commandes
 ## 20 - catégorie: en/de-codage, générateurs
 <a name='cat20'></a>
 
-9 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+10 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -429,11 +429,12 @@ Total: 238 commandes
 | <a href='https://www.google.fr/search?q=linux+jo'>jo</a> | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | NI |
 | <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ |  | NI |
+| <a href='https://www.google.fr/search?q=linux+pwgen'>pwgen</a> | génération de _password_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+qrencode'>qrencode</a> | génération de qrcodes |  | NI |
 | <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ |  | NI |
 
 
-_MAJ: 2026-04-17T12:29:24+0000_,
+_MAJ: 2026-04-17T12:39:44+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
