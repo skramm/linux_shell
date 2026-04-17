@@ -26,7 +26,7 @@ Catégories:
 * 19 - [Compression](#cat19)
 * 20 - [en/de-codage, générateurs](#cat20)
 
-Total: 237 commandes
+Total: 238 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -278,7 +278,7 @@ Total: 237 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-27 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+26 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -304,7 +304,6 @@ Total: 237 commandes
 | <a href='https://www.google.fr/search?q=linux+tty'>tty</a> | indique le terminal courant (`/dev/pts/XX`) |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+type'>type</a> | indique si une commande est interne (_builtin_) ou externe |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+uptime'>uptime</a> | durée fonctionnement système |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+watch'>watch</a> | exécution périodique d'une commande |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+which'>which</a> | localisation (chemin) d'un programme | [locate](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xargs'>xargs</a> |  |  | _installed_ |
@@ -354,7 +353,7 @@ Total: 237 commandes
 ## 16 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
-12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -370,6 +369,7 @@ Total: 237 commandes
 | <a href='https://www.google.fr/search?q=linux+strace'>strace</a> | _trace system calls and signals_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM |  | _installed_ |
 
 ## 17 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
@@ -420,7 +420,7 @@ Total: 237 commandes
 ## 20 - catégorie: en/de-codage, générateurs
 <a name='cat20'></a>
 
-8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+9 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -432,7 +432,8 @@ Total: 237 commandes
 | <a href='https://www.google.fr/search?q=linux+qrencode'>qrencode</a> | génération de qrcodes |  | NI |
 | <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ |  | NI |
 
 
-_MAJ: 2026-04-16T12:27:13+0000_,
+_MAJ: 2026-04-17T12:29:24+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

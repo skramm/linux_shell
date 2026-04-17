@@ -11,7 +11,7 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-235 commandes<br>
+236 commandes<br>
 
 ## 7
 <a name='7'></a>
@@ -446,7 +446,7 @@
 | <a href='https://www.google.fr/search?q=linux+useradd'>useradd</a> | création utilisateur (bas niveau!) | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [adduser](#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+userdel'>userdel</a> | suppression compte | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+usermod'>usermod</a> | modification compte utilisateur | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ | <a href='linux_cmds_list_cat.md#cat20'>en/de-codage, générateurs</a> |  | NI |
 
 ## V
 <a name='v'></a>
@@ -517,7 +517,8 @@
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | génération de dialogues GUI via CLI | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> | [gzip,unzip](#g) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-04-16T12:27:13+0000_,
+_MAJ: 2026-04-17T12:29:24+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
