@@ -12,6 +12,7 @@ Dépot public
 Pour d'autres shell ou distribution, il est possible que quelques commandes diffèrent.
 
 * Un tel répertoire est par nature arbitraire, aucune prétention d'exhaustivité.
+Sont notamment omis un certains nombre d'outils orientés "dev/système", par exemple la suite ["GNU Binutils"](https://www.gnu.org/software/binutils/).
 
 * Certaines commandes apparaissent dans plusieurs catégories, ce qui explique que le nombre de commande diffère entre la liste alphabétique et la liste par catégorie.
 

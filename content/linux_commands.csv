@@ -177,9 +177,9 @@ clear;7;effacement terminal
 uptime;7;durée fonctionnement système
 set;7;paramétrage du shell
 export;7;exportation de variable dans un sous-shell
+
+
 shuf;8;permutation aléatoire de lignes;sort
-
-
 awk;8;_pattern scanning and processing language_
 tr;8;_translate or delete characters_
 sed;8; _Stream EDitor_
@@ -202,7 +202,7 @@ id;9;affiche les infos sur un utilisateur
 groups;9;affiche les groupes existants;id
 groupadd;9;création groupe (bas niveau!);addgroup
 last;9;historique des logins & boots
-pwgen;9;génération de _password_
+pwgen;9-20;génération de _password_
 groupmod;9;modification d'un groupe d'utilisateurs
 
 which;7;localisation (chemin) d'un programme;locate
