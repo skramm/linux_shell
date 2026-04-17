@@ -26,7 +26,7 @@ Catégories:
 * 19 - [Compression](#cat19)
 * 20 - [en/de-codage, générateurs](#cat20)
 
-Total: 239 commandes
+Total: 267 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -39,13 +39,15 @@ Total: 239 commandes
 ## 1 - catégorie: Général
 <a name='cat4'></a>
 
-11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+alias'>alias</a> | composition de commandes | [unalias](linux_cmds_list_alpha.md#u) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+arch'>arch</a> | architecture processeur | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | [man](linux_cmds_list_alpha.md#m) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+history'>history</a> | historique des commandes |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | [man](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+locate'>locate</a> | localise un programme dans le système | [which](linux_cmds_list_alpha.md#w) | NI |
 | <a href='https://www.google.fr/search?q=linux+lsb_release'>lsb_release</a> | version distribution | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+man'>man</a> | manuel | [help](linux_cmds_list_alpha.md#h) | _installed_ |
@@ -58,7 +60,7 @@ Total: 239 commandes
 ## 2 - catégorie: Édition/visualisation fichiers
 <a name='cat14'></a>
 
-12 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -69,6 +71,7 @@ Total: 239 commandes
 | <a href='https://www.google.fr/search?q=linux+less'>less</a> | filtre d'affichage | [more](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+more'>more</a> | filtre d'affichage | [less](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+od'>od</a> | visualisation en hexa ou octal | [xxd](linux_cmds_list_alpha.md#x) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+shred'>shred</a> | effacement en profondeur de fichier |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+stat'>stat</a> | détails complets sur un fichier |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tac'>tac</a> | affichage fichier à l'envers | [cat](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tail'>tail</a> | dernières lignes texte | [head](linux_cmds_list_alpha.md#h) | _installed_ |
@@ -91,7 +94,7 @@ Total: 239 commandes
 ## 4 - catégorie: Manipulation fichiers
 <a name='cat11'></a>
 
-8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+10 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -103,6 +106,8 @@ Total: 239 commandes
 | <a href='https://www.google.fr/search?q=linux+ln'>ln</a> | création de lien, symbolique ou _hardlink_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mv'>mv</a> | déplacement/renommage | [cp](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rm'>rm</a> | suppression fichier | [rmdir](linux_cmds_list_alpha.md#r) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+scp'>scp</a> | tranfert de fichiers entre machines |  | _installed_ |
 
 ## 5 - catégorie: Manipulation dossiers
 <a name='cat15'></a>
@@ -123,14 +128,17 @@ Total: 239 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-22 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+28 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+curl'>curl</a> | client multiprotocoles (wget en mieux) | [wget](linux_cmds_list_alpha.md#w) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dig'>dig</a> | requete DNS | [nslookup](linux_cmds_list_alpha.md#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ftp'>ftp</a> | transfert de fichiers |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+host'>host</a> | requete DNS | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hostname'>hostname</a> | nom de la machine |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ifdown'>ifdown</a> | désactivation interface réseau |  | NI |
+| <a href='https://www.google.fr/search?q=linux+ifup'>ifup</a> | activation interface réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ip'>ip</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nc'>nc</a> | alias pour netcat | [netcat](linux_cmds_list_alpha.md#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netcat'>netcat</a> | utilitaire TCP/UDP | [nc](linux_cmds_list_alpha.md#n) | _installed_ |
@@ -138,14 +146,17 @@ Total: 239 commandes
 | <a href='https://www.google.fr/search?q=linux+nmap'>nmap</a> | exploration réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nmcli'>nmcli</a> | pilote CLI des connexions réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS (_deprecated_) | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+ping'>ping</a> |  |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ping'>ping</a> | envoi d'un trame ICMP |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+route'>route</a> | affiche ou édite la table de routage |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert/backup de fichier, local ou distant |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+scp'>scp</a> | tranfert de fichiers entre machines |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh'>ssh</a> | Connection à une machine distante |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-add'>ssh-add</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-copy-id'>ssh-copy-id</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-keygen'>ssh-keygen</a> | Génération de clés SSH |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tcpdump'>tcpdump</a> | capture trames réseau (Wireshark en CLI) |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+traceroute'>traceroute</a> |  |  | NI |
+| <a href='https://www.google.fr/search?q=linux+traceroute'>traceroute</a> | affiche les étapes d'une requete réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ufw'>ufw</a> |  pilote CLI de Firewall  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+wget'>wget</a> | client http CLI | [curl](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+whois'>whois</a> | infos/domaine |  | NI |
@@ -167,13 +178,15 @@ Total: 239 commandes
 ## 8 - catégorie: Système & _Hardware_
 <a name='cat1'></a>
 
-24 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+26 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+acpi'>acpi</a> | details sur alimentation (batterie ou secteur) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+findmnt'>findmnt</a> | _find a filesystem_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+free'>free</a> | état RAM utilisée/libre | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+halt'>halt</a> |  | [shutdown,reboot](linux_cmds_list_alpha.md#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+hwclock'>hwclock</a> | accès horloge interne | [time](linux_cmds_list_alpha.md#t) | NI |
 | <a href='https://www.google.fr/search?q=linux+losetup'>losetup</a> | _set up and control loop devices_ | [lsblk](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsblk'>lsblk</a> | liste périphs stockage "bloc" |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lscpu'>lscpu</a> | détails sur archi CPU |  | _installed_ |
@@ -218,16 +231,19 @@ Total: 239 commandes
 ## 10 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+16 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+awk'>awk</a> | _pattern scanning and processing language_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+column'>column</a> | transformation texte en colonnes |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cut'>cut</a> | suppression de texte dans des lignes |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+fold'>fold</a> | ajustement longueur de ligne |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+grep'>grep</a> | recherche de chaîne | [ripgrep](linux_cmds_list_alpha.md#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+jq'>jq</a> | traitement de chaines JSON | [jo](linux_cmds_list_alpha.md#j) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+look'>look</a> | _display lines beginning with a given string_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+paste'>paste</a> | fusion de lignes de texte de plusieurs fichiers |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+rev'>rev</a> | inversion de texte |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ripgrep'>ripgrep</a> | (rg) grep récursif | [grep](linux_cmds_list_alpha.md#g) | NI |
 | <a href='https://www.google.fr/search?q=linux+sed'>sed</a> |  _Stream EDitor_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de lignes | [sort](linux_cmds_list_alpha.md#s) | _installed_ |
@@ -239,7 +255,7 @@ Total: 239 commandes
 ## 11 - catégorie: Gestion utilisateurs
 <a name='cat9'></a>
 
-14 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+15 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -248,15 +264,16 @@ Total: 239 commandes
 | <a href='https://www.google.fr/search?q=linux+groupadd'>groupadd</a> | création groupe (bas niveau!) | [addgroup](linux_cmds_list_alpha.md#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+groupmod'>groupmod</a> | modification d'un groupe d'utilisateurs |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+groups'>groups</a> | affiche les groupes existants | [id](linux_cmds_list_alpha.md#i) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+id'>id</a> | affiche les infos sur un utilisateur |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+id'>id</a> | affiche les infos sur un utilisateur | [whoami](linux_cmds_list_alpha.md#w) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+last'>last</a> | historique des logins & boots |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+passwd'>passwd</a> | changement pwd | [chage](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pwgen'>pwgen</a> | génération de _password_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+useradd'>useradd</a> | création utilisateur (bas niveau!) | [adduser](linux_cmds_list_alpha.md#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+userdel'>userdel</a> | suppression compte |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+usermod'>usermod</a> | modification compte utilisateur |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+who'>who</a> | qui est loggé? |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+whoami'>whoami</a> | qui suis-je? |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+w'>w</a> | qui est loggé et que fait-il? | [who](linux_cmds_list_alpha.md#w) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+who'>who</a> | qui est loggé? | [w](linux_cmds_list_alpha.md#w) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+whoami'>whoami</a> | qui suis-je? | [id](linux_cmds_list_alpha.md#i) | _installed_ |
 
 ## 12 - catégorie: Installation logiciels
 <a name='cat10'></a>
@@ -278,14 +295,17 @@ Total: 239 commandes
 ## 13 - catégorie: Divers
 <a name='cat7'></a>
 
-26 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+29 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+at'>at</a> | planification de tâches | [cron](linux_cmds_list_alpha.md#c) | NI |
+| <a href='https://www.google.fr/search?q=linux+bc'>bc</a> | calculatrice CLI |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+cal'>cal</a> | affichage calendrier | [date](linux_cmds_list_alpha.md#d) | NI |
 | <a href='https://www.google.fr/search?q=linux+clear'>clear</a> | effacement terminal |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image |  | NI |
-| <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+date'>date</a> | affiche date & heure |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches | [at](linux_cmds_list_alpha.md#a) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+date'>date</a> | affiche date & heure | [cal](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+eval'>eval</a> | exécute la commande passée en argument |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+export'>export</a> | exportation de variable dans un sous-shell |  | _builtin_ |
@@ -312,13 +332,15 @@ Total: 239 commandes
 ## 14 - catégorie: Gestion des jobs & process
 <a name='cat12'></a>
 
-11 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+bg'>bg</a> | passage d'un _job_ en arrière plan (_BackGround_) | [fg](linux_cmds_list_alpha.md#f) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+chrt'>chrt</a> | manipulation attributs d'un process |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fg'>fg</a> | passage d'un _job_ au premier plan (_ForeGround_) | [bg](linux_cmds_list_alpha.md#b) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+htop'>htop</a> | top en mieux | [top,nmon](linux_cmds_list_alpha.md#t) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+iotop'>iotop</a> | liste process avec leur utilisation I/O disque |  | NI |
 | <a href='https://www.google.fr/search?q=linux+jobs'>jobs</a> | affichage des _jobs_ lancés |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+kill'>kill</a> | stoppe un process par PID (envoi d'un signal POSIX) | [pkill](linux_cmds_list_alpha.md#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+killall'>killall</a> | stoppe tous les process par nom |  | _installed_ |
@@ -331,10 +353,11 @@ Total: 239 commandes
 ## 15 - catégorie: Controle des scripts
 <a name='cat16'></a>
 
-14 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+15 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+basename'>basename</a> | extraction nom à partir d'un chemin |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+break'>break</a> | sortie de boucle "for" | [for](linux_cmds_list_alpha.md#f) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+case'>case</a> |  |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+echo'>echo</a> | affichage de texte/variable | [printf](linux_cmds_list_alpha.md#p) | _builtin_ |
@@ -390,12 +413,13 @@ Total: 239 commandes
 ## 18 - catégorie: Interface avec bureau
 <a name='cat18'></a>
 
-7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+display'>display</a> | affichage d'une image sur serveur X |  | NI |
 | <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau |  | NI |
+| <a href='https://www.google.fr/search?q=linux+showkey'>showkey</a> | affichage codes claviers en temps réel |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+wl-paste'>wl-paste</a> | copie presse-papier (Wayland) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
@@ -405,12 +429,13 @@ Total: 239 commandes
 ## 19 - catégorie: Compression
 <a name='cat19'></a>
 
-7 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+7z'>7z</a> | compression/décompression |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+bzip2'>bzip2</a> | compression |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+cpio'>cpio</a> | manipulation d'archive |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+gunzip'>gunzip</a> | decompression zip | [gzip](linux_cmds_list_alpha.md#g) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+gzip'>gzip</a> | compression zip | [zip,gunzip](linux_cmds_list_alpha.md#z) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tar'>tar</a> | utilitaire archivage | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
@@ -420,12 +445,14 @@ Total: 239 commandes
 ## 20 - catégorie: en/de-codage, générateurs
 <a name='cat20'></a>
 
-10 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+banner'>banner</a> | affichage bannière | [figlet](linux_cmds_list_alpha.md#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+base64'>base64</a> | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) |  | NI |
+| <a href='https://www.google.fr/search?q=linux+figlet'>figlet</a> | affichage bannière | [toilet](linux_cmds_list_alpha.md#t) | NI |
 | <a href='https://www.google.fr/search?q=linux+jo'>jo</a> | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | NI |
 | <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ |  | NI |
@@ -433,8 +460,9 @@ Total: 239 commandes
 | <a href='https://www.google.fr/search?q=linux+qrencode'>qrencode</a> | génération de qrcodes |  | NI |
 | <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+toilet'>toilet</a> | affichage bannière | [banner](linux_cmds_list_alpha.md#b) | NI |
 | <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ |  | NI |
 
 
-_MAJ: 2026-04-17T12:39:44+0000_,
+_MAJ: 2026-04-17T15:10:34+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
