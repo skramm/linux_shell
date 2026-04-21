@@ -24,9 +24,9 @@ Catégories:
 * 17 - [Sécurité & Performance](#cat17)
 * 18 - [Interface avec bureau](#cat18)
 * 19 - [Compression](#cat19)
-* 20 - [en/de-codage, générateurs](#cat20)
+* 20 - [Encodage/décodage, générateurs](#cat20)
 
-Total: 267 commandes
+Total: 268 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -397,17 +397,18 @@ Total: 267 commandes
 ## 17 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
-8 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+9 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+ab'>ab</a> | _Apache's server benchamarking tool_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
 | <a href='https://www.google.fr/search?q=linux+falco'>falco</a> | _kernel monitoring and detection agent_ | [sysdig](linux_cmds_list_alpha.md#s) | NI |
 | <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+strace'>strace</a> | _trace system calls and signals_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+stress'>stress</a> | Génération de charge CPU |  | NI |
+| <a href='https://www.google.fr/search?q=linux+stress'>stress</a> | génération de charge CPU |  | NI |
 | <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
 
 ## 18 - catégorie: Interface avec bureau
@@ -442,7 +443,7 @@ Total: 267 commandes
 | <a href='https://www.google.fr/search?q=linux+unzip'>unzip</a> | décompression zip | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [gzip,unzip](linux_cmds_list_alpha.md#g) | _installed_ |
 
-## 20 - catégorie: en/de-codage, générateurs
+## 20 - catégorie: Encodage/décodage, générateurs
 <a name='cat20'></a>
 
 13 commandes - <a href='#top'>Haut de page</a>- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -464,5 +465,5 @@ Total: 267 commandes
 | <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ |  | NI |
 
 
-_MAJ: 2026-04-17T15:10:34+0000_,
+_MAJ: 2026-04-21T13:33:37+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
