@@ -169,9 +169,39 @@ printAlpha( std::ofstream& f )
 }
 
 //--------------------------------------------------
+/// Return the categories to which a command belongs as
+/// a vector of pairs
+auto
+findCategories(
+	const Command& command,
+	const std::vector<std::pair<int,std::string>>& categs
+)
+{
+	std::vector<std::pair<int,std::string>> out;
+// iterate on all the categories of the command
+	for( const auto& c: command._cats )
+	{
+		auto it = std::find_if(
+			categs.begin(),
+			categs.end(),
+			[c]
+			(const auto& elem)   // lambda
+			{
+				if( elem.first == c )
+					return true;
+				return false;
+			}
+		);
+		if( it != categs.end() )
+			out.push_back( *it );
+	}
+	return out;
+}
+//--------------------------------------------------
+/// Generation of alphabetical list
 void
 genListAlpha(
-	std::string                                    fn,
+	std::string                                    fn, ///< output filename
 	std::vector<Command>                           cmds,
 	const std::vector<std::pair<int,std::string>>& categs
 )
@@ -204,8 +234,10 @@ genListAlpha(
 			first_letter = first;
 			start = false;
 		}
+#if 0		
 // Search the category of that command. If multiple, only the first is printed.
-	auto cat = std::find_if(
+// Returns a interator on the first category found
+		auto cat = std::find_if(
 			categs.begin(),
 			categs.end(), 
 			[cmd]                      // lambda
@@ -215,7 +247,6 @@ genListAlpha(
 					if( elem.first == ccat )
 						return true;
 				return false;
-//				return elem.first == cmd._cat;
 			}
 		);
 
@@ -226,6 +257,20 @@ genListAlpha(
 			<< cmd._cats.at(0) << "'>"
 			<< cat->second
 			<< "</a> | ";
+#else
+		auto commCats = findCategories( cmd, categs );
+		f << "| <a href='https://www.google.fr/search?q=linux+"
+			<< cmd._name << "'>" 
+			<< cmd._name << "</a> | " << cmd._comment 
+			<< " | ";
+		for( const auto& cat: commCats )
+			f << "<a href='linux_cmds_list_cat.md#cat"
+			<< cat.first << "'>"
+			<< cat.second
+			<< "</a> ";
+		f << "| ";
+
+#endif			
 		if( !cmd._seealso.empty() )
 		{
 			auto letter = cmd._seealso.at(0);
