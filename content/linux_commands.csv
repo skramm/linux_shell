@@ -3,13 +3,13 @@
 
 # each command should appear only once
 
-lscpu;1;détails sur archi CPU
-lsusb;1;liste périphs USB
+lscpu;1;détails sur archi CPU;;CPU
+lsusb;1;liste périphs USB;;USB
 lsblk;1;liste périphs stockage "bloc"
 lsdev;1;infos générales sur _hardware_
 lsof;1;_list open files_;ss
 ss;1;_socket statistics_;lsof
-lspci;1;_list all PCI devices_
+lspci;1;_list all PCI devices_;;PCI
 lshw;1;_list hardware_
 sensors;1;données capteurs (température, tension, etc.)
 free;1;état RAM utilisée/libre;vmstat
@@ -22,16 +22,18 @@ sudo;1;exécution d'une commande admin;su
 su;1;changement temporaire de _user_;sudo
 hwclock;1;accès horloge interne;time
 
-top;12;_dashboard_ système & process;htop
-htop;12;top en mieux;top,nmon
-iotop;12;liste process avec leur utilisation I/O disque
+top;21;_dashboard_ système & process;htop
+htop;21;top en mieux;top,nmon
+btop;21; monitoring système;htop,top
+iotop;21;liste process avec leur utilisation I/O disque
+nmon;21;_dashboard_ système;htop
+pstree;21;arborescence des process;ps
+ps;21;snapshot des process;top,pstree
 
 shutdown;1;Comme son nom l'indique...;reboot,halt
 reboot;1;reboot;shutdown,halt
 halt;1;;shutdown,reboot
 
-pstree;12;arborescence des process;ps
-ps;12;snapshot des process;top,pstree
 pidof;12; donne le PID d'un process;ps
 kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill
 pkill;12;stoppe un process par nom;kill
@@ -68,7 +70,7 @@ cmake;6;outil de _build_ multi OS
 history;4;historique des commandes
 lsb_release;4;version distribution;uname
 uname;4;version noyau;lsb_release
-arch;4;architecture processeur;uname
+arch;4;architecture processeur;uname;CPU
 
 cp;11;copie fichier(s);mv
 mv;11;déplacement/renommage;cp
@@ -132,9 +134,9 @@ chage;5;_change user password expiry information_;passwd
 umask;5;permissions par défaut;chmod
 
 
-jobs;12;affichage des _jobs_ lancés
-fg;12;passage d'un _job_ au premier plan (_ForeGround_);bg
-bg;12;passage d'un _job_ en arrière plan (_BackGround_);fg
+jobs;12;affichage des _jobs_ lancés;;jobs
+fg;12;passage d'un _job_ au premier plan (_ForeGround_);bg;jobs
+bg;12;passage d'un _job_ en arrière plan (_BackGround_);fg;jobs
 
 read;16;saisie ligne (clavier ou fichier)
 eval;7;exécute la commande passée en argument
@@ -148,8 +150,8 @@ ip;3;
 ping;3;envoi d'un trame ICMP
 wget;3;client http CLI;curl
 curl;3;client multiprotocoles (wget en mieux);wget
-dig;3;requete DNS;nslookup
-host;3;requete DNS;dig
+dig;3;requete DNS;nslookup;DNS
+host;3;requete DNS;dig;DNS
 
 ifup;3;activation interface réseau
 ifdown;3;désactivation interface réseau
@@ -157,7 +159,7 @@ ifdown;3;désactivation interface réseau
 scp;3-11;tranfert de fichiers entre machines
 rsync;3-11;copie et synchronisation de fichiers entre machines
 
-nslookup;3;requete DNS (_deprecated_);dig
+nslookup;3;requete DNS (_deprecated_);dig;DNS
 netcat;3;utilitaire TCP/UDP;nc
 tcpdump;3;capture trames réseau (Wireshark en CLI)
 nc;3;alias pour netcat;netcat
@@ -190,7 +192,7 @@ npm;10;gestionnaire de paquets Javascript
 
 nano;7;éditeur en mode "console"
 xargs;7;
-sleep;7;attente
+sleep;7;attente;time,at
 tee;7;modif redirection (stdout, stderr)
 clear;7;effacement terminal
 uptime;7;durée fonctionnement système
@@ -216,7 +218,7 @@ column;8;transformation texte en colonnes
 whoami;9;qui suis-je?;id
 who;9;qui est loggé?;w
 w;9;qui est loggé et que fait-il?;who
-passwd;9;changement pwd;chage
+passwd;9;changement pwd;chage;pwd
 usermod;9;modification compte utilisateur
 userdel;9;suppression compte
 adduser;9;création utilisateur
@@ -225,8 +227,8 @@ useradd;9;création utilisateur (bas niveau!);adduser
 id;9;affiche les infos sur un utilisateur;whoami
 groups;9;affiche les groupes existants;id
 groupadd;9;création groupe (bas niveau!);addgroup
-last;9;historique des logins & boots
-pwgen;9-20;génération de _password_
+last;9;historique des logins & boots;;boot
+pwgen;9-20;génération de _password_;;pwd
 groupmod;9;modification d'un groupe d'utilisateurs
 
 which;7;localisation (chemin) d'un programme;locate
@@ -244,9 +246,9 @@ logger;17;écriture dans un log système;;logs
 systemctl;13;gestion des services (CLI/systemd)
 loginctl;13;_Control the systemd login manager_;systemctl
 journalctl;13;outil d'accès aux logs systemd;systemctl
-dmesg;13;affichage logs kernel (buffer circulaire)
+dmesg;13;affichage logs kernel (buffer circulaire);;logs
 strace;13-17;_trace system calls and signals_
-zramctl;13;paramétrage et controle de la compression RAM
+zramctl;13;paramétrage et controle de la compression RAM;;RAM
 
 yes;7;_output a string repeatedly until killed_
 tmux;7;multiplexeur de terminal;screen;terminal
@@ -271,10 +273,10 @@ basename;16;extraction nom à partir d'un chemin
 auditd;17;_Logging_ des actions système
 aa-xxx;17;ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a>
 stress;17;génération de charge CPU
-hey;17;_HTTP load generator_
+hey;17;_HTTP load generator_;ab
 falco;17;_kernel monitoring and detection agent_;sysdig
 sysdig;17-13;_Cloud-Native Application Protection Platform_;falco
-ab;17;_Apache's server benchamarking tool_
+ab;17;_Apache's server benchmarking tool_;hey
 
 xclip;18;transfert vers le presse-papier X
 notify-send;18;Envoi de notification au bureau
@@ -290,7 +292,6 @@ snap;10;utilitaire de controle des "snap" (Ubuntu)
 findmnt;1;_find a filesystem_
 mount;1;montage de partitions;umount
 umount;1;démontage de partitions;mount
-nmon;1;_dashboard_ système;htop
 
 exiftool;11;manipulation métadonnées fichier image, audio, etc.
 
