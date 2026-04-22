@@ -11,7 +11,7 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-263 commandes<br>
+264 commandes<br>
 
 ## 7
 <a name='7'></a>
@@ -34,7 +34,7 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | NI |
-| <a href='https://www.google.fr/search?q=linux+ab'>ab</a> | _Apache's server benchamarking tool_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ab'>ab</a> | _Apache's server benchmarking tool_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> | [hey](#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+acpi'>acpi</a> | details sur alimentation (batterie ou secteur) | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+addgroup'>addgroup</a> | création groupe d'utilisateurs | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [adduser](#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+adduser'>adduser</a> | création utilisateur | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
@@ -55,13 +55,14 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+banner'>banner</a> | affichage bannière | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> | [figlet](#f) | NI |
-| <a href='https://www.google.fr/search?q=linux+base64'>base64</a> | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+banner'>banner</a> | affichage bannière | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> | [figlet](#f) | NI |
+| <a href='https://www.google.fr/search?q=linux+base64'>base64</a> | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+basename'>basename</a> | extraction nom à partir d'un chemin | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+bat'>bat</a> | cat en mieux | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [cat,tail](#c) | NI |
 | <a href='https://www.google.fr/search?q=linux+bc'>bc</a> | calculatrice CLI | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+bg'>bg</a> | passage d'un _job_ en arrière plan (_BackGround_) | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [fg](#f) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+break'>break</a> | sortie de boucle "for" | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [for](#f) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+btop'>btop</a> |  monitoring système | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [htop,top](#h) | NI |
 | <a href='https://www.google.fr/search?q=linux+bzip2'>bzip2</a> | compression | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> |  | _installed_ |
 
 ## C
@@ -89,7 +90,7 @@
 | <a href='https://www.google.fr/search?q=linux+column'>column</a> | transformation texte en colonnes | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+comm'>comm</a> | comparaison de fichiers, par ligne | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [diff](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
-| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cowsay'>cowsay</a> | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cp'>cp</a> | copie fichier(s) | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [mv](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cpio'>cpio</a> | manipulation d'archive | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [at](#a) | _installed_ |
@@ -146,7 +147,7 @@
 | <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [pango-list](#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fdisk'>fdisk</a> | _manipulate disk partition table_ | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fg'>fg</a> | passage d'un _job_ au premier plan (_ForeGround_) | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [bg](#b) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+figlet'>figlet</a> | affichage bannière | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> | [toilet](#t) | NI |
+| <a href='https://www.google.fr/search?q=linux+figlet'>figlet</a> | affichage bannière | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> | [toilet](#t) | NI |
 | <a href='https://www.google.fr/search?q=linux+file'>file</a> | nature d'un fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+find'>find</a> | _search for files, folders,_ ... | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+findmnt'>findmnt</a> | _find a filesystem_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
@@ -190,11 +191,11 @@
 | <a href='https://www.google.fr/search?q=linux+halt'>halt</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [shutdown,reboot](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+head'>head</a> | premières lignes texte | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [tail](#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [man](#m) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> | [ab](#a) | NI |
 | <a href='https://www.google.fr/search?q=linux+history'>history</a> | historique des commandes | <a href='linux_cmds_list_cat.md#cat4'>Général</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+host'>host</a> | requete DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hostname'>hostname</a> | nom de la machine | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+htop'>htop</a> | top en mieux | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [top,nmon](#t) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+htop'>htop</a> | top en mieux | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [top,nmon](#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hwclock'>hwclock</a> | accès horloge interne | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [time](#t) | NI |
 
 ## I
@@ -212,7 +213,7 @@
 | <a href='https://www.google.fr/search?q=linux+ifup'>ifup</a> | activation interface réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [man](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+insmod'>insmod</a> | _insert a module into the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+iotop'>iotop</a> | liste process avec leur utilisation I/O disque | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+iotop'>iotop</a> | liste process avec leur utilisation I/O disque | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ip'>ip</a> |  | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 
 ## J
@@ -224,7 +225,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+jo'>jo</a> | génération de JSON | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> | [jq](#j) | NI |
+| <a href='https://www.google.fr/search?q=linux+jo'>jo</a> | génération de JSON | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> | [jq](#j) | NI |
 | <a href='https://www.google.fr/search?q=linux+jobs'>jobs</a> | affichage des _jobs_ lancés | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+journalctl'>journalctl</a> | outil d'accès aux logs systemd | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> | [systemctl](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+jq'>jq</a> | traitement de chaines JSON | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> | [jo](#j) | _installed_ |
@@ -283,7 +284,7 @@
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+make'>make</a> | construction d'une cible en fonction des dépendances | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+man'>man</a> | manuel | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [help](#h) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mkdir'>mkdir</a> | _make directory_ | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modinfo'>modinfo</a> | _show information about a module_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modprobe'>modprobe</a> | _add and remove modules from the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
@@ -306,7 +307,7 @@
 | <a href='https://www.google.fr/search?q=linux+netstat'>netstat</a> | infos/reseau, routage, etc. | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nmap'>nmap</a> | exploration réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nmcli'>nmcli</a> | pilote CLI des connexions réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
-| <a href='https://www.google.fr/search?q=linux+nmon'>nmon</a> | _dashboard_ système | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [htop](#h) | NI |
+| <a href='https://www.google.fr/search?q=linux+nmon'>nmon</a> | _dashboard_ système | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [htop](#h) | NI |
 | <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+npm'>npm</a> | gestionnaire de paquets Javascript | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS (_deprecated_) | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | _installed_ |
@@ -332,7 +333,7 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+pango-list'>pango-list</a> | liste des polices de caractères installées | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [fc-list](#f) | NI |
-| <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+pango-view'>pango-view</a> | _convert text to image_ | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+passwd'>passwd</a> | changement pwd | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [chage](#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+paste'>paste</a> | fusion de lignes de texte de plusieurs fichiers | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pidof'>pidof</a> |  donne le PID d'un process | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [ps](#p) | _installed_ |
@@ -343,12 +344,12 @@
 | <a href='https://www.google.fr/search?q=linux+pkill'>pkill</a> | stoppe un process par nom | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [kill](#k) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+popd'>popd</a> | récupération dossier courant | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> | [pushd](#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+printf'>printf</a> | affichage de texte/variable formatté | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [echo](#e) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+ps'>ps</a> | snapshot des process | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [top,pstree](#t) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+pstree'>pstree</a> | arborescence des process | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [ps](#p) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ps'>ps</a> | snapshot des process | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [top,pstree](#t) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+pstree'>pstree</a> | arborescence des process | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [ps](#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pushd'>pushd</a> | chgt dossier courant avec sauvegarde | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> | [popd](#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+pv'>pv</a> | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+pwd'>pwd</a> | _print working directory_ | <a href='linux_cmds_list_cat.md#cat4'>Général</a> |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+pwgen'>pwgen</a> | génération de _password_ | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+pwgen'>pwgen</a> | génération de _password_ | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | NI |
 
 ## Q
 <a name='q'></a>
@@ -359,7 +360,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+qrencode'>qrencode</a> | génération de qrcodes | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+qrencode'>qrencode</a> | génération de qrcodes | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | NI |
 
 ## R
 <a name='r'></a>
@@ -380,8 +381,8 @@
 | <a href='https://www.google.fr/search?q=linux+rmmod'>rmmod</a> | _remove a module from the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+route'>route</a> | affiche ou édite la table de routage | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rpm'>rpm</a> | gestion paquets Fedora | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert/backup de fichier, local ou distant | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | _installed_ |
 
 ## S
 <a name='s'></a>
@@ -398,14 +399,14 @@
 | <a href='https://www.google.fr/search?q=linux+sensors'>sensors</a> | données capteurs (température, tension, etc.) | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+set'>set</a> | paramétrage du shell | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> | [sha256sum](#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> | [sha256sum](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shift'>shift</a> | décalage paramètres positionnels ($1, $2, ...) | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+showkey'>showkey</a> | affichage codes claviers en temps réel | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shred'>shred</a> | effacement en profondeur de fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de lignes | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> | [sort](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> | Comme son nom l'indique... | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [reboot,halt](#r) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [time,at](#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" (Ubuntu) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+source'>source</a> | exécution d'un script dans le même shell | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
@@ -442,8 +443,8 @@
 | <a href='https://www.google.fr/search?q=linux+tee'>tee</a> | modif redirection (stdout, stderr) | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+time'>time</a> | chronométrage de tâche | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+tmux'>tmux</a> | multiplexeur de terminal | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [screen](#s) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+toilet'>toilet</a> | affichage bannière | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> | [banner](#b) | NI |
-| <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [htop](#h) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+toilet'>toilet</a> | affichage bannière | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> | [banner](#b) | NI |
+| <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [htop](#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+touch'>touch</a> | création ou MAJ date d'un fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tr'>tr</a> | _translate or delete characters_ | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+traceroute'>traceroute</a> | affiche les étapes d'une requete réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
@@ -472,7 +473,7 @@
 | <a href='https://www.google.fr/search?q=linux+useradd'>useradd</a> | création utilisateur (bas niveau!) | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [adduser](#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+userdel'>userdel</a> | suppression compte | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+usermod'>usermod</a> | modification compte utilisateur | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage, générateurs</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | NI |
 
 ## V
 <a name='v'></a>
@@ -547,5 +548,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-04-21T13:33:37+0000_,
+_MAJ: 2026-04-22T16:10:53+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
