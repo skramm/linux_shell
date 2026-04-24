@@ -234,43 +234,24 @@ genListAlpha(
 			first_letter = first;
 			start = false;
 		}
-#if 0		
-// Search the category of that command. If multiple, only the first is printed.
-// Returns a interator on the first category found
-		auto cat = std::find_if(
-			categs.begin(),
-			categs.end(), 
-			[cmd]                      // lambda
-			(const auto& elem)
-			{
-				for( const auto& ccat: cmd._cats )
-					if( elem.first == ccat )
-						return true;
-				return false;
-			}
-		);
 
-		f << "| <a href='https://www.google.fr/search?q=linux+"
-			<< cmd._name << "'>" 
-			<< cmd._name << "</a> | " << cmd._comment 
-			<< " | <a href='linux_cmds_list_cat.md#cat"
-			<< cmd._cats.at(0) << "'>"
-			<< cat->second
-			<< "</a> | ";
-#else
 		auto commCats = findCategories( cmd, categs );
 		f << "| <a href='https://www.google.fr/search?q=linux+"
 			<< cmd._name << "'>" 
 			<< cmd._name << "</a> | " << cmd._comment 
 			<< " | ";
-		for( const auto& cat: commCats )
-			f << "<a href='linux_cmds_list_cat.md#cat"
-			<< cat.first << "'>"
-			<< cat.second
-			<< "</a> ";
-		f << "| ";
 
-#endif			
+		int t = 0;
+		for( const auto& cat: commCats )
+		{
+			if( t++ > 0 )
+				f << " - ";
+			f << "<a href='linux_cmds_list_cat.md#cat"
+				<< cat.first << "'>"
+				<< cat.second << "</a>";
+		}		
+		f << " | ";
+
 		if( !cmd._seealso.empty() )
 		{
 			auto letter = cmd._seealso.at(0);
@@ -311,7 +292,7 @@ genCat(
 	f << "\n## " << idx << " - catégorie: " << pcat.second
 		<< "\n<a name='cat" << cat << "'></a>\n\n" 
 		<< nbc << " commandes - <a href='#top'>Haut de page</a>"
-		<< "- <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>\n\n"
+		<< " - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>\n\n"
 		<< "| Nom | Description | Voir aussi | Statut |"
 		<< "\n|-----|-----|-----|-----|\n";
 
