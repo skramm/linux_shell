@@ -11,7 +11,7 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-264 commandes<br>
+265 commandes<br>
 
 ## 7
 <a name='7'></a>
@@ -349,7 +349,7 @@
 | <a href='https://www.google.fr/search?q=linux+pushd'>pushd</a> | chgt dossier courant avec sauvegarde | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> | [popd](#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+pv'>pv</a> | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+pwd'>pwd</a> | _print working directory_ | <a href='linux_cmds_list_cat.md#cat4'>Général</a> |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+pwgen'>pwgen</a> | génération de _password_ | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+pwgen'>pwgen</a> | génération de _password_ | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> - <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | NI |
 
 ## Q
 <a name='q'></a>
@@ -382,7 +382,7 @@
 | <a href='https://www.google.fr/search?q=linux+route'>route</a> | affiche ou édite la table de routage | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rpm'>rpm</a> | gestion paquets Fedora | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert/backup de fichier, local ou distant | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> - <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | _installed_ |
 
 ## S
 <a name='s'></a>
@@ -393,7 +393,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+scp'>scp</a> | tranfert de fichiers entre machines | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+scp'>scp</a> | tranfert de fichiers entre machines | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> - <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+screen'>screen</a> | multiplexeur de terminal | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [tmux](#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sed'>sed</a> |  _Stream EDitor_ | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sensors'>sensors</a> | données capteurs (température, tension, etc.) | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
@@ -417,14 +417,14 @@
 | <a href='https://www.google.fr/search?q=linux+ssh-copy-id'>ssh-copy-id</a> |  | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-keygen'>ssh-keygen</a> | Génération de clés SSH | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+stat'>stat</a> | détails complets sur un fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+strace'>strace</a> | _trace system calls and signals_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+strace'>strace</a> | _trace system calls and signals_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> - <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+stress'>stress</a> | génération de charge CPU | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+strings'>strings</a> | extraction de chaines dans des binaires | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+su'>su</a> | changement temporaire de _user_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [sudo](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sudo'>sudo</a> | exécution d'une commande admin | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [su](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapoff'>swapoff</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [swapon](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [swapoff](#s) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> | [falco](#f) | NI |
+| <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> - <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> | [falco](#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 ## T
@@ -469,6 +469,7 @@
 | <a href='https://www.google.fr/search?q=linux+uname'>uname</a> | version noyau | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [lsb_release](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+uniq'>uniq</a> | suppression lignes identiques | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+unzip'>unzip</a> | décompression zip | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> | [zip](#z) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+updatedb'>updatedb</a> | mise à jour BDD `locate` | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [locate](#l) | NI |
 | <a href='https://www.google.fr/search?q=linux+uptime'>uptime</a> | durée fonctionnement système | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+useradd'>useradd</a> | création utilisateur (bas niveau!) | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [adduser](#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+userdel'>userdel</a> | suppression compte | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
@@ -548,5 +549,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-04-22T16:10:53+0000_,
+_MAJ: 2026-04-24T13:59:00+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
