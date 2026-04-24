@@ -11,7 +11,7 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-265 commandes<br>
+267 commandes<br>
 
 ## 7
 <a name='7'></a>
@@ -130,6 +130,7 @@
 | <a href='https://www.google.fr/search?q=linux+echo'>echo</a> | affichage de texte/variable | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [printf](#p) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+eval'>eval</a> | exécute la commande passée en argument | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+evtest'>evtest</a> | affichage évènements clavier+souris | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> | [showkey,xev](#s) | NI |
 | <a href='https://www.google.fr/search?q=linux+exiftool'>exiftool</a> | manipulation métadonnées fichier image, audio, etc. | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+exit'>exit</a> | Terminaison du script et renvoi  d'une valeur à l'OS | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [return](#r) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+export'>export</a> | exportation de variable dans un sous-shell | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
@@ -402,7 +403,7 @@
 | <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> | [sha256sum](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shift'>shift</a> | décalage paramètres positionnels ($1, $2, ...) | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+showkey'>showkey</a> | affichage codes claviers en temps réel | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+showkey'>showkey</a> | affichage codes claviers en temps réel | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> | [xev](#x) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shred'>shred</a> | effacement en profondeur de fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de lignes | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> | [sort](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> | Comme son nom l'indique... | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [reboot,halt](#r) | _installed_ |
@@ -520,6 +521,7 @@
 | <a href='https://www.google.fr/search?q=linux+xargs'>xargs</a> |  | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | ouverture fichier avec application GUI associée au type par défaut | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+xev'>xev</a> | affichage évènements clavier+souris | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> | [showkey,evtest](#s) | NI |
 | <a href='https://www.google.fr/search?q=linux+xinput'>xinput</a> | _utility to configure and test X input devices_ | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xxd'>xxd</a> | visualisation en hexa | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [od](#o) | _installed_ |
 
@@ -549,5 +551,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-04-24T13:59:00+0000_,
+_MAJ: 2026-04-24T14:21:20+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

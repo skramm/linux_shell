@@ -27,7 +27,7 @@ Catégories:
 * 20 - [Encodage/décodage & générateurs](#cat20)
 * 21 - [Monitoring système](#cat21)
 
-Total: 270 commandes
+Total: 272 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -410,16 +410,18 @@ Total: 270 commandes
 ## 18 - catégorie: Interface avec bureau
 <a name='cat18'></a>
 
-8 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+display'>display</a> | affichage d'une image sur serveur X |  | NI |
+| <a href='https://www.google.fr/search?q=linux+evtest'>evtest</a> | affichage évènements clavier+souris | [showkey,xev](linux_cmds_list_alpha.md#s) | NI |
 | <a href='https://www.google.fr/search?q=linux+notify-send'>notify-send</a> | Envoi de notification au bureau |  | NI |
-| <a href='https://www.google.fr/search?q=linux+showkey'>showkey</a> | affichage codes claviers en temps réel |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+showkey'>showkey</a> | affichage codes claviers en temps réel | [xev](linux_cmds_list_alpha.md#x) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+wl-paste'>wl-paste</a> | copie presse-papier (Wayland) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xclip'>xclip</a> | transfert vers le presse-papier X |  | NI |
 | <a href='https://www.google.fr/search?q=linux+xdg-open'>xdg-open</a> | ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+xev'>xev</a> | affichage évènements clavier+souris | [showkey,evtest](linux_cmds_list_alpha.md#s) | NI |
 | <a href='https://www.google.fr/search?q=linux+xinput'>xinput</a> | _utility to configure and test X input devices_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | génération de dialogues GUI via CLI |  | NI |
 
@@ -476,5 +478,5 @@ Total: 270 commandes
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 
 
-_MAJ: 2026-04-24T13:59:00+0000_,
+_MAJ: 2026-04-24T14:21:20+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
