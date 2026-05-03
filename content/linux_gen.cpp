@@ -26,6 +26,33 @@ Utilisation:
 #include <chrono>
 #include <iomanip>
 
+/// static stuff, used to edit generated man pages with markdown section titles (`##`)
+/// source: https://man7.org/linux/man-pages/man7/man-pages.7.html
+std::vector<std::string> mantitles = {
+	"NAME"
+	,"LIBRARY"
+	,"SYNOPSIS"
+	,"CONFIGURATION"
+	,"DESCRIPTION"
+	,"OPTIONS"
+	,"EXIT STATUS"
+	,"RETURN VALUE"
+	,"ERRORS"
+	,"ENVIRONMENT"
+	,"FILES"
+	,"ATTRIBUTES"
+	,"VERSIONS"
+	,"STANDARDS"
+	,"HISTORY"
+	,"NOTES"
+	,"CAVEATS"
+	,"BUGS"
+	,"EXAMPLES"
+	,"AUTHORS"
+	,"SEE ALSO"
+};
+
+
 //--------------------------------------------------
 /// Split a line of CSV file into fields
 std::vector<std::string>
@@ -92,6 +119,73 @@ readCSV_cat( std::string filename )
 }
 
 //--------------------------------------------------
+void
+createHeader( std::string str /* "man" or "help" */, std::string name )
+{
+	std::ofstream f( "../man/" + str + "_" + name + ".md" );
+	assert( f.is_open() );
+	f << "# Manuel de `" << name << "`\n\n"
+		<< "[alpha list](../linux_cmds_list_alpha.md) - "
+		<< "[cat list](../linux_cmds_list_cat.md)\n\n"
+		<< "<a href='https://www.google.fr/search?q=linux+" << name << "'>Google search</a>\n\n---\n"; 
+	f.close();
+}
+
+//--------------------------------------------------
+/// Type of "man" page (can be the output of "help" instead, if no man available)
+enum EnManType
+{
+	MAN, HELP, NONE
+};
+
+//--------------------------------------------------
+/// Generate man (or "help") md pages
+/**
+If no `man`, an attempt is made with `help`
+
+But the default shell used with `std::system()` is `sh`, and help is not available with it, it's a bash builtin,
+so we need to explicitely use bash
+*/
+EnManType
+generateMan( std::string name )
+{
+	createHeader( "man", name );
+	
+	std::stringstream oss;
+	oss << "man " << name << " >>../man/man_" << name << ".md 2>/dev/null";
+
+	auto ret = std::system( oss.str().c_str() );
+	if( ret != 0 )
+	{                 // // if no manual, then try with 'help'
+		createHeader( "help", name );
+
+		std::stringstream oss2;
+		oss2 << "bash -c 'help " << name << "' >>../man/help_" << name << ".md 2>/dev/null";
+		auto ret2 = std::system( oss2.str().c_str() );
+		if( ret2 != 0 )
+		{
+			std::cout << "failure of:" << oss2.str() << "\n";
+			return NONE;
+		}
+		return HELP;
+	}
+	else // edit man page to improve the markdown
+	{
+		for( const auto& title: mantitles )
+		{
+			std::stringstream oss3;                 	// -i is for editing file "in place"
+			oss3 << "sed -i 's/" << title << "/## " << title << "/' ../man/man_" << name << ".md";
+			auto ret3 = std::system( oss3.str().c_str() );
+			if( ret3 != 0 )
+			{
+				std::cout << "failure of:" << oss3.str() << "\n";
+			}
+		}
+		return MAN;
+	}
+}
+
+//--------------------------------------------------
 /// Contenu d'une commande: nom, commentaire, catégorie, "voir aussi"
 struct Command
 {
@@ -101,17 +195,20 @@ struct Command
 	std::string _comment;
 	std::string _seealso;
 	std::string _type;
+	EnManType _mantype;
+	
 	Command() = default;
 	Command( const std::vector<std::string>& vin )
 	{
 //		std::cout << "#=" << vin.size() << "\n";
-		assert( vin.size() == 5 ); //|| vin.size() == 4 );
+		assert( vin.size() > 4 );
 //		std::cout << "0:" << vin[0] << " 1:" << vin[1]<< " 2:" << vin[2] << " 3:" << vin[3] << " 4:" << vin[4]  << '\n';
 		_name    = vin[0];
 //		_cat     = stoi( vin[1] );
 		_comment = vin[2];
 		_seealso = vin[3];
 		_type    = vin[4];
+		_mantype = generateMan( _name );
 
 // fill the categories
 		auto cats = split_string( vin[1], '-' );
@@ -197,6 +294,7 @@ findCategories(
 	}
 	return out;
 }
+
 //--------------------------------------------------
 /// Generation of alphabetical list
 void
@@ -220,6 +318,10 @@ genListAlpha(
 	bool start = true;
 	for( const auto& cmd: cmds )
 	{
+//		EnManType mtype = NONE;
+//		if( cmd._type != "NI" )        // generate man page
+//			mtype = generate_man( cmd._name );
+	
 		auto first = cmd._name.at(0);
 		if( first != first_letter || start )
 		{
@@ -235,12 +337,31 @@ genListAlpha(
 			start = false;
 		}
 
-		auto commCats = findCategories( cmd, categs );
-		f << "| <a href='https://www.google.fr/search?q=linux+"
+		f << "| ";
+		
+		switch( cmd._mantype )
+		{
+			case MAN:
+				f << "[" << cmd._name << "](../man/man_" << cmd._name << ".md";
+			break;
+			case HELP:
+				f << "[" << cmd._name << "](../man/help_" << cmd._name << ".md";
+			break;
+			case NONE:
+				f << cmd._name << " ( [G](https://www.google.fr/search?q=linux+" << cmd._name << ") ";
+			break;
+			default:
+				assert(0);
+		}
+		f << ") | "<< cmd._comment << " | ";
+/*		<a href='https://www.google.fr/search?q=linux+"
 			<< cmd._name << "'>" 
-			<< cmd._name << "</a> | " << cmd._comment 
+			<< cmd._name << "</a> | "
+			<< cmd._comment 
 			<< " | ";
+*/
 
+		auto commCats = findCategories( cmd, categs );
 		int t = 0;
 		for( const auto& cat: commCats )
 		{
@@ -257,7 +378,8 @@ genListAlpha(
 			auto letter = cmd._seealso.at(0);
 			f << "[" << cmd._seealso << "](#" << letter << ")";
 		}
-		f << " | " << cmd._type << " |\n";		
+		f << " | " << cmd._type << " |\n";
+
 	}
 	printfooter(f);
 }
@@ -272,9 +394,6 @@ countCateg( int cat, const std::vector<Command>& vcmd )
 		for( const auto& ccat: cmd._cats )
 			if( ccat == cat )
 				c++; 
-
-//		if( cmd._cat == cat )
-//			c++;
 	return c;
 }
 //--------------------------------------------------
@@ -355,7 +474,7 @@ genListCat(
 }
 
 //--------------------------------------------------
-
+/// argument: csv file holding commands
 int main( int argc, const char* argv[] )
 {
 	assert( argc > 1 );
