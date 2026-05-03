@@ -41,7 +41,7 @@ jobs:
           branch: main
           commit_options: '--no-verify --signoff'
           commit_author: Author <actions@github.com>
-          status_options: '--untracked-files=no'
+          status_options: '--untracked-files=yes'
           skip_dirty_check: true
 
 
