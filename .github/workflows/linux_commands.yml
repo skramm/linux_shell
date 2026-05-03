@@ -7,7 +7,7 @@ name: linux commands index generation
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dev2" ]
 
 jobs:
   job_index:
