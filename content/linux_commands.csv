@@ -47,6 +47,10 @@ fsck;2;Vérification et correction système de fichier
 df;2;_disk free_
 du;2;_disk usage_
 dd;2;utilitaire de copie bas niveau
+#smartctl;2;accès aux données <a href="https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology">SMART</a> des disques
+smartctl;2;accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques
+blkid;2;accès aux détails des _devices_ de type "bloc"
+hdparm;2;accès/édition paramètres des disques
 
 find;5;_search for files, folders,_ ...
 convert;7;conversion format d'image
