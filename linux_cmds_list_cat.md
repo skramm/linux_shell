@@ -27,7 +27,7 @@ Catégories:
 * 20 - [Encodage/décodage & générateurs](#cat20)
 * 21 - [Monitoring système](#cat21)
 
-Total: 276 commandes
+Total: 277 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -396,13 +396,14 @@ Total: 276 commandes
 ## 17 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
-10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+11 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ab'>ab</a> | _Apache's server benchmarking tool_ | [hey](linux_cmds_list_alpha.md#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cpupower'>cpupower</a> | accès/édition paramètres de puissance CPU |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+falco'>falco</a> | _kernel monitoring and detection agent_ | [sysdig](linux_cmds_list_alpha.md#s) | NI |
 | <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ | [ab](linux_cmds_list_alpha.md#a) | NI |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système |  | _installed_ |
@@ -482,5 +483,5 @@ Total: 276 commandes
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 
 
-_MAJ: 2026-05-04T11:56:07+0000_,
+_MAJ: 2026-05-04T12:02:10+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
