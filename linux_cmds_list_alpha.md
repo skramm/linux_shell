@@ -41,7 +41,7 @@
 | <a href='https://www.google.fr/search?q=linux+alias'>alias</a> | composition de commandes | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [unalias](#u) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+apt'>apt</a> | gestion paquets Debian | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+apt-get'>apt-get</a> | gestion paquets Debian (bas niveau) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+arch'>arch</a> | architecture processeur | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [uname](#u) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+arch'>arch</a> | architecture processeur | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [uname](#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+at'>at</a> | planification de tâches | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [cron](#c) | NI |
 | <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+awk'>awk</a> | _pattern scanning and processing language_ | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
@@ -61,7 +61,7 @@
 | <a href='https://www.google.fr/search?q=linux+bat'>bat</a> | cat en mieux | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [cat,tail](#c) | NI |
 | <a href='https://www.google.fr/search?q=linux+bc'>bc</a> | calculatrice CLI | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+bg'>bg</a> | passage d'un _job_ en arrière plan (_BackGround_) | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [fg](#f) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+blkid'>blkid</a> | accès aux détails des _devices_ de type "bloc" | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+blkid'>blkid</a> | accès aux détails des _devices_ de type "bloc" | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> | [lsblk](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+break'>break</a> | sortie de boucle "for" | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [for](#f) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+btop'>btop</a> |  monitoring système | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [htop,top](#h) | NI |
 | <a href='https://www.google.fr/search?q=linux+bzip2'>bzip2</a> | compression | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> |  | _installed_ |
@@ -157,7 +157,7 @@
 | <a href='https://www.google.fr/search?q=linux+fmt'>fmt</a> | text formatter | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fold'>fold</a> | ajustement longueur de ligne | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+for'>for</a> |  | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+free'>free</a> | état RAM utilisée/libre | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [vmstat](#v) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+free'>free</a> | état RAM utilisée/libre | <a href='linux_cmds_list_cat.md#cat22'>Mémoire</a> | [vmstat](#v) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fsck'>fsck</a> | Vérification et correction système de fichier | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ftp'>ftp</a> | transfert de fichiers | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+function'>function</a> | définition d'une fonction Bash | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
@@ -267,14 +267,14 @@
 | <a href='https://www.google.fr/search?q=linux+losetup'>losetup</a> | _set up and control loop devices_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [lsblk](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ls'>ls</a> | _list directory content_ | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsb_release'>lsb_release</a> | version distribution | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [uname](#u) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+lsblk'>lsblk</a> | liste périphs stockage "bloc" | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+lsblk'>lsblk</a> | liste périphs stockage "bloc" | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [blkid](#b) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lscpu'>lscpu</a> | détails sur archi CPU | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsdev'>lsdev</a> | infos générales sur _hardware_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lshw'>lshw</a> | _list hardware_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsmod'>lsmod</a> | _show the status of modules in the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsof'>lsof</a> | _list open files_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [ss](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lspci'>lspci</a> | _list all PCI devices_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> | architecture CPU (coeurs, RAM cache, ...) | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> | architecture CPU (coeurs, RAM cache, ...) | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> - <a href='linux_cmds_list_cat.md#cat22'>Mémoire</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lsusb'>lsusb</a> | liste périphs USB | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | _installed_ |
 
 ## M
@@ -293,7 +293,7 @@
 | <a href='https://www.google.fr/search?q=linux+modinfo'>modinfo</a> | _show information about a module_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+modprobe'>modprobe</a> | _add and remove modules from the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+more'>more</a> | filtre d'affichage | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [less](#l) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [umount](#u) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> | [umount](#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mtr'>mtr</a> | affiche les étapes d'une requete réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [traceroute](#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mv'>mv</a> | déplacement/renommage | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [cp](#c) | _installed_ |
 
@@ -427,8 +427,8 @@
 | <a href='https://www.google.fr/search?q=linux+strings'>strings</a> | extraction de chaines dans des binaires | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+su'>su</a> | changement temporaire de _user_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [sudo](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sudo'>sudo</a> | exécution d'une commande admin | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [su](#s) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+swapoff'>swapoff</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [swapon](#s) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [swapoff](#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+swapoff'>swapoff</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat22'>Mémoire</a> | [swapon](#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | <a href='linux_cmds_list_cat.md#cat22'>Mémoire</a> | [swapoff](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> - <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> | [falco](#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
@@ -469,7 +469,7 @@
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+ufw'>ufw</a> |  pilote CLI de Firewall  | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> - <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+umask'>umask</a> | permissions par défaut | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [chmod](#c) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+umount'>umount</a> | démontage de partitions | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [mount](#m) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+umount'>umount</a> | démontage de partitions | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> | [mount](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+unalias'>unalias</a> | suppression d'un alias | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [alias](#a) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+uname'>uname</a> | version noyau | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [lsb_release](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+uniq'>uniq</a> | suppression lignes identiques | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
@@ -490,7 +490,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [free](#f) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | <a href='linux_cmds_list_cat.md#cat22'>Mémoire</a> | [free](#f) | _installed_ |
 
 ## W
 <a name='w'></a>
@@ -555,5 +555,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-05-04T12:02:10+0000_,
+_MAJ: 2026-05-04T12:12:50+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
