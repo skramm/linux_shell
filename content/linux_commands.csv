@@ -171,7 +171,8 @@ ssh-copy-id;3;
 ufw;3; pilote CLI de Firewall 
 nmap;3;exploration réseau
 whois;3;infos/domaine
-traceroute;3;affiche les étapes d'une requete réseau
+traceroute;3;affiche les étapes d'une requete réseau;mtr
+mtr;3;affiche les étapes d'une requete réseau;traceroute
 netstat;3;infos/reseau, routage, etc.
 nmcli;3;pilote CLI des connexions réseau
 ftp;3;transfert de fichiers
