@@ -34,6 +34,7 @@ iotop;21;liste process avec leur utilisation I/O disque
 nmon;21;_dashboard_ système;htop
 pstree;21;arborescence des process;ps
 ps;21;snapshot des process;top,pstree
+inxi;21;informations système;lstopo-htop-lsdev
 
 pidof;12; donne le PID d'un process;ps
 kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill
@@ -74,7 +75,7 @@ cmake;6;outil de _build_ multi OS
 
 history;4;historique des commandes
 lsb_release;4;version distribution;uname
-uname;4;version noyau;lsb_release
+uname;4-13;version noyau;lsb_release
 
 cp;11;copie fichier(s);mv
 mv;11;déplacement/renommage;cp
@@ -137,7 +138,8 @@ chown;5;chgt propriétaire fichier;chgrp
 chgrp;5;chgt groupe propriétaire fichier;chown
 chage;5;_change user password expiry information_;passwd
 umask;5;permissions par défaut;chmod
-
+setfacl;5;modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier;getfacl
+getfacl;5;affichage des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/);setfacl
 
 jobs;12;affichage des _jobs_ lancés;;jobs
 fg;12;passage d'un _job_ au premier plan (_ForeGround_);bg;jobs
