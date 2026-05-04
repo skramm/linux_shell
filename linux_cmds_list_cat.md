@@ -27,7 +27,7 @@ Catégories:
 * 20 - [Encodage/décodage & générateurs](#cat20)
 * 21 - [Monitoring système](#cat21)
 
-Total: 273 commandes
+Total: 276 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -83,15 +83,18 @@ Total: 273 commandes
 ## 3 - catégorie: Disque & stockage
 <a name='cat2'></a>
 
-5 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+blkid'>blkid</a> | accès aux détails des _devices_ de type "bloc" |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dd'>dd</a> | utilitaire de copie bas niveau |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+df'>df</a> | _disk free_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+du'>du</a> | _disk usage_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fdisk'>fdisk</a> | _manipulate disk partition table_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fsck'>fsck</a> | Vérification et correction système de fichier |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+hdparm'>hdparm</a> | accès/édition paramètres des disques |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+smartctl'>smartctl</a> | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques |  | NI |
 
 ## 4 - catégorie: Manipulation fichiers
 <a name='cat11'></a>
@@ -479,5 +482,5 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 
 
-_MAJ: 2026-05-04T11:18:26+0000_,
+_MAJ: 2026-05-04T11:56:07+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

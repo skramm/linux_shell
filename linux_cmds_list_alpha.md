@@ -11,7 +11,7 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-267 commandes<br>
+270 commandes<br>
 
 ## 7
 <a name='7'></a>
@@ -61,6 +61,7 @@
 | <a href='https://www.google.fr/search?q=linux+bat'>bat</a> | cat en mieux | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [cat,tail](#c) | NI |
 | <a href='https://www.google.fr/search?q=linux+bc'>bc</a> | calculatrice CLI | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+bg'>bg</a> | passage d'un _job_ en arrière plan (_BackGround_) | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [fg](#f) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+blkid'>blkid</a> | accès aux détails des _devices_ de type "bloc" | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+break'>break</a> | sortie de boucle "for" | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [for](#f) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+btop'>btop</a> |  monitoring système | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [htop,top](#h) | NI |
 | <a href='https://www.google.fr/search?q=linux+bzip2'>bzip2</a> | compression | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> |  | _installed_ |
@@ -190,6 +191,7 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+halt'>halt</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [shutdown,reboot](#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+hdparm'>hdparm</a> | accès/édition paramètres des disques | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+head'>head</a> | premières lignes texte | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [tail](#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [man](#m) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> | [ab](#a) | NI |
@@ -408,6 +410,7 @@
 | <a href='https://www.google.fr/search?q=linux+shuf'>shuf</a> | permutation aléatoire de lignes | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> | [sort](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> | Comme son nom l'indique... | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [reboot,halt](#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sleep'>sleep</a> | attente | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [time,at](#t) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+smartctl'>smartctl</a> | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" (Ubuntu) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sort'>sort</a> | tri de texte | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+source'>source</a> | exécution d'un script dans le même shell | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
@@ -551,5 +554,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-05-04T11:18:26+0000_,
+_MAJ: 2026-05-04T11:56:07+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
