@@ -168,7 +168,6 @@ ssh;3;Connection à une machine distante
 ssh-keygen;3;Génération de clés SSH
 ssh-add;3;
 ssh-copy-id;3;
-ufw;3; pilote CLI de Firewall 
 nmap;3;exploration réseau
 whois;3;infos/domaine
 traceroute;3;affiche les étapes d'une requete réseau;mtr
@@ -176,7 +175,6 @@ mtr;3;affiche les étapes d'une requete réseau;traceroute
 netstat;3;infos/reseau, routage, etc.
 nmcli;3;pilote CLI des connexions réseau
 ftp;3;transfert de fichiers
-rsync;3;transfert/backup de fichier, local ou distant
 route;3;affiche ou édite la table de routage
 
 echo;16;affichage de texte/variable;printf
@@ -279,6 +277,7 @@ hey;17;_HTTP load generator_;ab
 falco;17;_kernel monitoring and detection agent_;sysdig
 sysdig;17-13;_Cloud-Native Application Protection Platform_;falco
 ab;17;_Apache's server benchmarking tool_;hey
+ufw;3-17; pilote CLI de Firewall 
 
 xclip;18;transfert vers le presse-papier X
 notify-send;18;Envoi de notification au bureau
