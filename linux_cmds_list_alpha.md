@@ -291,6 +291,7 @@
 | <a href='https://www.google.fr/search?q=linux+modprobe'>modprobe</a> | _add and remove modules from the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+more'>more</a> | filtre d'affichage | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [less](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [umount](#u) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+mtr'>mtr</a> | affiche les étapes d'une requete réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [traceroute](#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mv'>mv</a> | déplacement/renommage | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> | [cp](#c) | _installed_ |
 
 ## N
@@ -382,7 +383,6 @@
 | <a href='https://www.google.fr/search?q=linux+rmmod'>rmmod</a> | _remove a module from the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+route'>route</a> | affiche ou édite la table de routage | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rpm'>rpm</a> | gestion paquets Fedora | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert/backup de fichier, local ou distant | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> - <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | _installed_ |
 
 ## S
@@ -448,7 +448,7 @@
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [htop](#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+touch'>touch</a> | création ou MAJ date d'un fichier | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tr'>tr</a> | _translate or delete characters_ | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+traceroute'>traceroute</a> | affiche les étapes d'une requete réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+traceroute'>traceroute</a> | affiche les étapes d'une requete réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [mtr](#m) | NI |
 | <a href='https://www.google.fr/search?q=linux+trap'>trap</a> | interception de signal POSIX | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+tree'>tree</a> | affiche l'arborescence d'un dossier | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> | [ls](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tty'>tty</a> | indique le terminal courant (`/dev/pts/XX`) | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
@@ -463,7 +463,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| <a href='https://www.google.fr/search?q=linux+ufw'>ufw</a> |  pilote CLI de Firewall  | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ufw'>ufw</a> |  pilote CLI de Firewall  | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> - <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+umask'>umask</a> | permissions par défaut | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [chmod](#c) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+umount'>umount</a> | démontage de partitions | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [mount](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+unalias'>unalias</a> | suppression d'un alias | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [alias](#a) | _builtin_ |
@@ -551,5 +551,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-05-03T17:24:18+0000_,
+_MAJ: 2026-05-04T11:18:26+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
