@@ -27,7 +27,7 @@ Catégories:
 * 20 - [Encodage/décodage & générateurs](#cat20)
 * 21 - [Monitoring système](#cat21)
 
-Total: 272 commandes
+Total: 273 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -130,7 +130,7 @@ Total: 272 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-28 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+29 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -142,6 +142,7 @@ Total: 272 commandes
 | <a href='https://www.google.fr/search?q=linux+ifdown'>ifdown</a> | désactivation interface réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ifup'>ifup</a> | activation interface réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ip'>ip</a> |  |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+mtr'>mtr</a> | affiche les étapes d'une requete réseau | [traceroute](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nc'>nc</a> | alias pour netcat | [netcat](linux_cmds_list_alpha.md#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netcat'>netcat</a> | utilitaire TCP/UDP | [nc](linux_cmds_list_alpha.md#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+netstat'>netstat</a> | infos/reseau, routage, etc. |  | _installed_ |
@@ -150,15 +151,15 @@ Total: 272 commandes
 | <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS (_deprecated_) | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ping'>ping</a> | envoi d'un trame ICMP |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+route'>route</a> | affiche ou édite la table de routage |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert/backup de fichier, local ou distant |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+scp'>scp</a> | tranfert de fichiers entre machines |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh'>ssh</a> | Connection à une machine distante |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-add'>ssh-add</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-copy-id'>ssh-copy-id</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh-keygen'>ssh-keygen</a> | Génération de clés SSH |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tcpdump'>tcpdump</a> | capture trames réseau (Wireshark en CLI) |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+traceroute'>traceroute</a> | affiche les étapes d'une requete réseau |  | NI |
+| <a href='https://www.google.fr/search?q=linux+traceroute'>traceroute</a> | affiche les étapes d'une requete réseau | [mtr](linux_cmds_list_alpha.md#m) | NI |
 | <a href='https://www.google.fr/search?q=linux+ufw'>ufw</a> |  pilote CLI de Firewall  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+wget'>wget</a> | client http CLI | [curl](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+whois'>whois</a> | infos/domaine |  | NI |
@@ -478,5 +479,5 @@ Total: 272 commandes
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 
 
-_MAJ: 2026-05-03T17:24:18+0000_,
+_MAJ: 2026-05-04T11:04:07+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
