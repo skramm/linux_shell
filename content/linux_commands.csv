@@ -5,22 +5,27 @@
 
 lscpu;1;détails sur archi CPU;;CPU
 lsusb;1;liste périphs USB;;USB
-lsblk;1;liste périphs stockage "bloc"
+lsblk;1;liste périphs stockage "bloc";blkid
 lsdev;1;infos générales sur _hardware_
 lsof;1;_list open files_;ss
 ss;1;_socket statistics_;lsof
 lspci;1;_list all PCI devices_;;PCI
 lshw;1;_list hardware_
 sensors;1;données capteurs (température, tension, etc.)
-free;1;état RAM utilisée/libre;vmstat
-vmstat;1;état mémoire virtuelle;free
-swapon;1;gestion mémoire _swap_;swapoff
-swapoff;1;gestion mémoire _swap_;swapon
+free;22;état RAM utilisée/libre;vmstat
+vmstat;22;état mémoire virtuelle;free
+swapon;22;gestion mémoire _swap_;swapoff
+swapoff;22;gestion mémoire _swap_;swapon
 acpi;1;details sur alimentation (batterie ou secteur)
-lstopo;1;architecture CPU (coeurs, RAM cache, ...)
+lstopo;1-22;architecture CPU (coeurs, RAM cache, ...)
 sudo;1;exécution d'une commande admin;su
 su;1;changement temporaire de _user_;sudo
 hwclock;1;accès horloge interne;time
+arch;1;architecture processeur;uname;CPU
+
+shutdown;1;Comme son nom l'indique...;reboot,halt
+reboot;1;reboot;shutdown,halt
+halt;1;;shutdown,reboot
 
 top;21;_dashboard_ système & process;htop
 htop;21;top en mieux;top,nmon
@@ -29,10 +34,6 @@ iotop;21;liste process avec leur utilisation I/O disque
 nmon;21;_dashboard_ système;htop
 pstree;21;arborescence des process;ps
 ps;21;snapshot des process;top,pstree
-
-shutdown;1;Comme son nom l'indique...;reboot,halt
-reboot;1;reboot;shutdown,halt
-halt;1;;shutdown,reboot
 
 pidof;12; donne le PID d'un process;ps
 kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill
@@ -47,6 +48,10 @@ fsck;2;Vérification et correction système de fichier
 df;2;_disk free_
 du;2;_disk usage_
 dd;2;utilitaire de copie bas niveau
+#smartctl;2;accès aux données <a href="https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology">SMART</a> des disques
+smartctl;2;accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques
+blkid;2;accès aux détails des _devices_ de type "bloc";lsblk
+hdparm;2;accès/édition paramètres des disques
 
 find;5;_search for files, folders,_ ...
 convert;7;conversion format d'image
@@ -70,7 +75,6 @@ cmake;6;outil de _build_ multi OS
 history;4;historique des commandes
 lsb_release;4;version distribution;uname
 uname;4;version noyau;lsb_release
-arch;4;architecture processeur;uname;CPU
 
 cp;11;copie fichier(s);mv
 mv;11;déplacement/renommage;cp
@@ -278,6 +282,7 @@ falco;17;_kernel monitoring and detection agent_;sysdig
 sysdig;17-13;_Cloud-Native Application Protection Platform_;falco
 ab;17;_Apache's server benchmarking tool_;hey
 ufw;3-17; pilote CLI de Firewall 
+cpupower;17;accès/édition paramètres de puissance CPU
 
 xclip;18;transfert vers le presse-papier X
 notify-send;18;Envoi de notification au bureau
@@ -293,8 +298,9 @@ evtest;18;affichage évènements clavier+souris;showkey,xev
 losetup;1;_set up and control loop devices_;lsblk
 snap;10;utilitaire de controle des "snap" (Ubuntu)
 findmnt;1;_find a filesystem_
-mount;1;montage de partitions;umount
-umount;1;démontage de partitions;mount
+
+mount;2;montage de partitions;umount
+umount;2;démontage de partitions;mount
 
 exiftool;11;manipulation métadonnées fichier image, audio, etc.
 

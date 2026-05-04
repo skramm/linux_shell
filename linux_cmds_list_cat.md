@@ -13,21 +13,23 @@ Catégories:
 * 6 - [Réseau](#cat3)
 * 7 - [Fichiers & permissions](#cat5)
 * 8 - [Système & _Hardware_](#cat1)
-* 9 - [Dev](#cat6)
-* 10 - [Traitement données texte](#cat8)
-* 11 - [Gestion utilisateurs](#cat9)
-* 12 - [Installation logiciels](#cat10)
-* 13 - [Divers](#cat7)
-* 14 - [Gestion des jobs & process](#cat12)
-* 15 - [Controle des scripts](#cat16)
-* 16 - [Gestion Kernel](#cat13)
-* 17 - [Sécurité & Performance](#cat17)
-* 18 - [Interface avec bureau](#cat18)
-* 19 - [Compression](#cat19)
-* 20 - [Encodage/décodage & générateurs](#cat20)
-* 21 - [Monitoring système](#cat21)
+* 9 - [Mémoire](#cat22)
+* 10 - [Dev](#cat6)
+* 11 - [Traitement données texte](#cat8)
+* 12 - [Gestion utilisateurs](#cat9)
+* 13 - [Installation logiciels](#cat10)
+* 14 - [Divers](#cat7)
+* 15 - [Gestion des jobs & process](#cat12)
+* 16 - [Controle des scripts](#cat16)
+* 17 - [Gestion Kernel](#cat13)
+* 18 - [Sécurité & Performance](#cat17)
+* 19 - [Interface avec bureau](#cat18)
+* 20 - [Compression](#cat19)
+* 21 - [Encodage/décodage & générateurs](#cat20)
+* 22 - [Monitoring système](#cat21)
+* 23 - [Mémoire](#cat22)
 
-Total: 273 commandes
+Total: 278 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -40,12 +42,11 @@ Total: 273 commandes
 ## 1 - catégorie: Général
 <a name='cat4'></a>
 
-14 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+13 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+alias'>alias</a> | composition de commandes | [unalias](linux_cmds_list_alpha.md#u) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+arch'>arch</a> | architecture processeur | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | [man](linux_cmds_list_alpha.md#m) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+history'>history</a> | historique des commandes |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | [man](linux_cmds_list_alpha.md#m) | _installed_ |
@@ -83,15 +84,20 @@ Total: 273 commandes
 ## 3 - catégorie: Disque & stockage
 <a name='cat2'></a>
 
-5 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+blkid'>blkid</a> | accès aux détails des _devices_ de type "bloc" | [lsblk](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dd'>dd</a> | utilitaire de copie bas niveau |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+df'>df</a> | _disk free_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+du'>du</a> | _disk usage_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fdisk'>fdisk</a> | _manipulate disk partition table_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fsck'>fsck</a> | Vérification et correction système de fichier |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+hdparm'>hdparm</a> | accès/édition paramètres des disques |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions | [umount](linux_cmds_list_alpha.md#u) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+smartctl'>smartctl</a> | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques |  | NI |
+| <a href='https://www.google.fr/search?q=linux+umount'>umount</a> | démontage de partitions | [mount](linux_cmds_list_alpha.md#m) | _installed_ |
 
 ## 4 - catégorie: Manipulation fichiers
 <a name='cat11'></a>
@@ -180,17 +186,17 @@ Total: 273 commandes
 ## 8 - catégorie: Système & _Hardware_
 <a name='cat1'></a>
 
-25 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+20 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+acpi'>acpi</a> | details sur alimentation (batterie ou secteur) |  | NI |
+| <a href='https://www.google.fr/search?q=linux+arch'>arch</a> | architecture processeur | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+findmnt'>findmnt</a> | _find a filesystem_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+free'>free</a> | état RAM utilisée/libre | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+halt'>halt</a> |  | [shutdown,reboot](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hwclock'>hwclock</a> | accès horloge interne | [time](linux_cmds_list_alpha.md#t) | NI |
 | <a href='https://www.google.fr/search?q=linux+losetup'>losetup</a> | _set up and control loop devices_ | [lsblk](linux_cmds_list_alpha.md#l) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+lsblk'>lsblk</a> | liste périphs stockage "bloc" |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+lsblk'>lsblk</a> | liste périphs stockage "bloc" | [blkid](linux_cmds_list_alpha.md#b) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lscpu'>lscpu</a> | détails sur archi CPU |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lsdev'>lsdev</a> | infos générales sur _hardware_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lshw'>lshw</a> | _list hardware_ |  | _installed_ |
@@ -198,19 +204,27 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+lspci'>lspci</a> | _list all PCI devices_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> | architecture CPU (coeurs, RAM cache, ...) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+lsusb'>lsusb</a> | liste périphs USB |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions | [umount](linux_cmds_list_alpha.md#u) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+reboot'>reboot</a> | reboot | [shutdown,halt](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sensors'>sensors</a> | données capteurs (température, tension, etc.) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+shutdown'>shutdown</a> | Comme son nom l'indique... | [reboot,halt](linux_cmds_list_alpha.md#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _socket statistics_ | [lsof](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+su'>su</a> | changement temporaire de _user_ | [sudo](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sudo'>sudo</a> | exécution d'une commande admin | [su](linux_cmds_list_alpha.md#s) | _installed_ |
+
+## 9 - catégorie: Mémoire
+<a name='cat22'></a>
+
+5 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+
+| Nom | Description | Voir aussi | Statut |
+|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+free'>free</a> | état RAM utilisée/libre | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> | architecture CPU (coeurs, RAM cache, ...) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+swapoff'>swapoff</a> | gestion mémoire _swap_ | [swapon](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | [swapoff](linux_cmds_list_alpha.md#s) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+umount'>umount</a> | démontage de partitions | [mount](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
 
-## 9 - catégorie: Dev
+## 10 - catégorie: Dev
 <a name='cat6'></a>
 
 11 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -229,7 +243,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+pkg-config'>pkg-config</a> | outil de paramétrage de compilation, renvoie les infos sur librairies installées |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+strings'>strings</a> | extraction de chaines dans des binaires |  | _installed_ |
 
-## 10 - catégorie: Traitement données texte
+## 11 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
 16 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -253,7 +267,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+tr'>tr</a> | _translate or delete characters_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+uniq'>uniq</a> | suppression lignes identiques |  | _installed_ |
 
-## 11 - catégorie: Gestion utilisateurs
+## 12 - catégorie: Gestion utilisateurs
 <a name='cat9'></a>
 
 15 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -276,7 +290,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+who'>who</a> | qui est loggé? | [w](linux_cmds_list_alpha.md#w) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+whoami'>whoami</a> | qui suis-je? | [id](linux_cmds_list_alpha.md#i) | _installed_ |
 
-## 12 - catégorie: Installation logiciels
+## 13 - catégorie: Installation logiciels
 <a name='cat10'></a>
 
 9 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -293,7 +307,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+snap'>snap</a> | utilitaire de controle des "snap" (Ubuntu) |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+yum'>yum</a> | gestion paquets RedHat |  | NI |
 
-## 13 - catégorie: Divers
+## 14 - catégorie: Divers
 <a name='cat7'></a>
 
 29 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -330,7 +344,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+xargs'>xargs</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+yes'>yes</a> | _output a string repeatedly until killed_ |  | _installed_ |
 
-## 14 - catégorie: Gestion des jobs & process
+## 15 - catégorie: Gestion des jobs & process
 <a name='cat12'></a>
 
 8 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -346,7 +360,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+pidof'>pidof</a> |  donne le PID d'un process | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pkill'>pkill</a> | stoppe un process par nom | [kill](linux_cmds_list_alpha.md#k) | _installed_ |
 
-## 15 - catégorie: Controle des scripts
+## 16 - catégorie: Controle des scripts
 <a name='cat16'></a>
 
 15 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -369,7 +383,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+trap'>trap</a> | interception de signal POSIX |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+while'>while</a> |  |  | _builtin_ |
 
-## 16 - catégorie: Gestion Kernel
+## 17 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
 13 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -390,16 +404,17 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM |  | _installed_ |
 
-## 17 - catégorie: Sécurité & Performance
+## 18 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
-10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+11 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+aa-xxx'>aa-xxx</a> | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ab'>ab</a> | _Apache's server benchmarking tool_ | [hey](linux_cmds_list_alpha.md#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+auditd'>auditd</a> | _Logging_ des actions système |  | NI |
+| <a href='https://www.google.fr/search?q=linux+cpupower'>cpupower</a> | accès/édition paramètres de puissance CPU |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+falco'>falco</a> | _kernel monitoring and detection agent_ | [sysdig](linux_cmds_list_alpha.md#s) | NI |
 | <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ | [ab](linux_cmds_list_alpha.md#a) | NI |
 | <a href='https://www.google.fr/search?q=linux+logger'>logger</a> | écriture dans un log système |  | _installed_ |
@@ -408,7 +423,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+ufw'>ufw</a> |  pilote CLI de Firewall  |  | _installed_ |
 
-## 18 - catégorie: Interface avec bureau
+## 19 - catégorie: Interface avec bureau
 <a name='cat18'></a>
 
 10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -426,7 +441,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+xinput'>xinput</a> | _utility to configure and test X input devices_ |  | NI |
 | <a href='https://www.google.fr/search?q=linux+zenity'>zenity</a> | génération de dialogues GUI via CLI |  | NI |
 
-## 19 - catégorie: Compression
+## 20 - catégorie: Compression
 <a name='cat19'></a>
 
 8 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -442,7 +457,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+unzip'>unzip</a> | décompression zip | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+zip'>zip</a> | compression zip | [gzip,unzip](linux_cmds_list_alpha.md#g) | _installed_ |
 
-## 20 - catégorie: Encodage/décodage & générateurs
+## 21 - catégorie: Encodage/décodage & générateurs
 <a name='cat20'></a>
 
 13 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -463,7 +478,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+toilet'>toilet</a> | affichage bannière | [banner](linux_cmds_list_alpha.md#b) | NI |
 | <a href='https://www.google.fr/search?q=linux+uuid'>uuid</a> | génération de _Universally Unique IDentifier_ |  | NI |
 
-## 21 - catégorie: Monitoring système
+## 22 - catégorie: Monitoring système
 <a name='cat21'></a>
 
 7 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
@@ -478,6 +493,19 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+pstree'>pstree</a> | arborescence des process | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 
+## 23 - catégorie: Mémoire
+<a name='cat22'></a>
 
-_MAJ: 2026-05-04T11:18:26+0000_,
+5 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+
+| Nom | Description | Voir aussi | Statut |
+|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+free'>free</a> | état RAM utilisée/libre | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+lstopo'>lstopo</a> | architecture CPU (coeurs, RAM cache, ...) |  | NI |
+| <a href='https://www.google.fr/search?q=linux+swapoff'>swapoff</a> | gestion mémoire _swap_ | [swapon](linux_cmds_list_alpha.md#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | [swapoff](linux_cmds_list_alpha.md#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
+
+
+_MAJ: 2026-05-04T12:12:50+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
