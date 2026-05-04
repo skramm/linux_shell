@@ -130,7 +130,7 @@ Total: 273 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-29 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+28 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -151,7 +151,6 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS (_deprecated_) | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ping'>ping</a> | envoi d'un trame ICMP |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+route'>route</a> | affiche ou édite la table de routage |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | transfert/backup de fichier, local ou distant |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+scp'>scp</a> | tranfert de fichiers entre machines |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh'>ssh</a> | Connection à une machine distante |  | _installed_ |
@@ -394,7 +393,7 @@ Total: 273 commandes
 ## 17 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
-9 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -407,6 +406,7 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+strace'>strace</a> | _trace system calls and signals_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+stress'>stress</a> | génération de charge CPU |  | NI |
 | <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
+| <a href='https://www.google.fr/search?q=linux+ufw'>ufw</a> |  pilote CLI de Firewall  |  | _installed_ |
 
 ## 18 - catégorie: Interface avec bureau
 <a name='cat18'></a>
@@ -479,5 +479,5 @@ Total: 273 commandes
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 
 
-_MAJ: 2026-05-04T11:04:07+0000_,
+_MAJ: 2026-05-04T11:18:26+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
