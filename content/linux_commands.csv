@@ -282,6 +282,7 @@ hey;17;_HTTP load generator_;ab
 falco;17;_kernel monitoring and detection agent_;sysdig
 sysdig;17-13;_Cloud-Native Application Protection Platform_;falco
 ab;17;_Apache's server benchmarking tool_;hey
+cpupower;17;accès/édition paramètres de puissance CPU
 
 xclip;18;transfert vers le presse-papier X
 notify-send;18;Envoi de notification au bureau
