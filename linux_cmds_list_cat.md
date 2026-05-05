@@ -29,7 +29,7 @@ Catégories:
 * 22 - [Monitoring système](#cat21)
 * 23 - [Mémoire](#cat22)
 
-Total: 278 commandes
+Total: 282 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -172,7 +172,7 @@ Total: 278 commandes
 ## 7 - catégorie: Fichiers & permissions
 <a name='cat5'></a>
 
-6 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -181,6 +181,8 @@ Total: 278 commandes
 | <a href='https://www.google.fr/search?q=linux+chmod'>chmod</a> | chgt permissions fichier |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+chown'>chown</a> | chgt propriétaire fichier | [chgrp](linux_cmds_list_alpha.md#c) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+find'>find</a> | _search for files, folders,_ ... |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+getfacl'>getfacl</a> | affichage des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) | [setfacl](linux_cmds_list_alpha.md#s) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+setfacl'>setfacl</a> | modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier | [getfacl](linux_cmds_list_alpha.md#g) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+umask'>umask</a> | permissions par défaut | [chmod](linux_cmds_list_alpha.md#c) | _builtin_ |
 
 ## 8 - catégorie: Système & _Hardware_
@@ -386,7 +388,7 @@ Total: 278 commandes
 ## 17 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
-13 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+14 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -402,6 +404,7 @@ Total: 278 commandes
 | <a href='https://www.google.fr/search?q=linux+strace'>strace</a> | _trace system calls and signals_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sysdig'>sysdig</a> | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+systemctl'>systemctl</a> | gestion des services (CLI/systemd) |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+uname'>uname</a> | version noyau | [lsb_release](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM |  | _installed_ |
 
 ## 18 - catégorie: Sécurité & Performance
@@ -481,12 +484,13 @@ Total: 278 commandes
 ## 22 - catégorie: Monitoring système
 <a name='cat21'></a>
 
-7 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+btop'>btop</a> |  monitoring système | [htop,top](linux_cmds_list_alpha.md#h) | NI |
 | <a href='https://www.google.fr/search?q=linux+htop'>htop</a> | top en mieux | [top,nmon](linux_cmds_list_alpha.md#t) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+inxi'>inxi</a> | informations système | [lstopo-htop-lsdev](linux_cmds_list_alpha.md#l) | NI |
 | <a href='https://www.google.fr/search?q=linux+iotop'>iotop</a> | liste process avec leur utilisation I/O disque |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nmon'>nmon</a> | _dashboard_ système | [htop](linux_cmds_list_alpha.md#h) | NI |
 | <a href='https://www.google.fr/search?q=linux+ps'>ps</a> | snapshot des process | [top,pstree](linux_cmds_list_alpha.md#t) | _installed_ |
@@ -507,5 +511,5 @@ Total: 278 commandes
 | <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
 
 
-_MAJ: 2026-05-04T12:12:50+0000_,
+_MAJ: 2026-05-04T15:53:40+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
