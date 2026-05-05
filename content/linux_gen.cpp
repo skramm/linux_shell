@@ -15,7 +15,6 @@ Utilisation:
 */
 
 
-
 #include <string>
 #include <array>
 #include <sstream>
@@ -101,14 +100,14 @@ enum En_Type
 	T_NOTPRESENT
 }
 
-char*
+const char*
 getString( En_Type ty )
 {
 	switch( ty )
 	{
-		case T_BUILTIN:     return "_builtin_"; break; // useless, to avoir warning
-		case T_PRESENT:     return "Installed"; break;
-		case T_NOTPRESENT:  return "NI";        break;
+		case T_BUILTIN:     return "_builtin_";   break;
+		case T_PRESENT:     return "_installed_"; break;
+		case T_NOTPRESENT:  return "NI";          break;
 		default:
 			assert(0);
 }
@@ -153,7 +152,7 @@ readCSV_cmd( std::string filename )
 	auto vcmd = readCSV( filename );
 
 	std::vector<Command> vout;
-	std::array<int,3> nbt;   // default values?
+	std::array<int,3> nbt = {};   // {} to initialize to 0
 	for( const auto elems: vcmd )
 	{
 //		std::cout << "elems size=" << elems.size() << '\n';
