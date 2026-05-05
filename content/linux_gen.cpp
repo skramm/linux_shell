@@ -17,6 +17,7 @@ Utilisation:
 
 
 #include <string>
+#include <array>
 #include <sstream>
 #include <vector>
 #include <iostream>
