@@ -11,7 +11,7 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-271 commandes<br>
+274 commandes<br>
 
 ## 7
 <a name='7'></a>
@@ -174,6 +174,7 @@
 | <a href='https://www.google.fr/search?q=linux+g++'>g++</a> | compilation C++ | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+gcc'>gcc</a> | compilation C | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+gdb'>gdb</a> | déboggage pas à pas | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+getfacl'>getfacl</a> | affichage des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [setfacl](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+git'>git</a> | **LE** gestionnaire de versions de fichiers source | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+grep'>grep</a> | recherche de chaîne | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> | [ripgrep](#r) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+groupadd'>groupadd</a> | création groupe (bas niveau!) | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [addgroup](#a) | _installed_ |
@@ -217,6 +218,7 @@
 | <a href='https://www.google.fr/search?q=linux+ifup'>ifup</a> | activation interface réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [man](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+insmod'>insmod</a> | _insert a module into the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+inxi'>inxi</a> | informations système | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [lstopo-htop-lsdev](#l) | NI |
 | <a href='https://www.google.fr/search?q=linux+iotop'>iotop</a> | liste process avec leur utilisation I/O disque | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ip'>ip</a> |  | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 
@@ -403,6 +405,7 @@
 | <a href='https://www.google.fr/search?q=linux+sensors'>sensors</a> | données capteurs (température, tension, etc.) | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+set'>set</a> | paramétrage du shell | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+setfacl'>setfacl</a> | modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [getfacl](#g) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+sha256sum'>sha256sum</a> | calcul de hash SHA256 | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shasum'>shasum</a> | calcul de hash SHA (256,512,...) | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> | [sha256sum](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+shift'>shift</a> | décalage paramètres positionnels ($1, $2, ...) | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
@@ -471,7 +474,7 @@
 | <a href='https://www.google.fr/search?q=linux+umask'>umask</a> | permissions par défaut | <a href='linux_cmds_list_cat.md#cat5'>Fichiers & permissions</a> | [chmod](#c) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+umount'>umount</a> | démontage de partitions | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> | [mount](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+unalias'>unalias</a> | suppression d'un alias | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [alias](#a) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+uname'>uname</a> | version noyau | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [lsb_release](#l) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+uname'>uname</a> | version noyau | <a href='linux_cmds_list_cat.md#cat4'>Général</a> - <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> | [lsb_release](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+uniq'>uniq</a> | suppression lignes identiques | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+unzip'>unzip</a> | décompression zip | <a href='linux_cmds_list_cat.md#cat19'>Compression</a> | [zip](#z) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+updatedb'>updatedb</a> | mise à jour BDD `locate` | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [locate](#l) | NI |
@@ -555,5 +558,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-05-04T12:12:50+0000_,
+_MAJ: 2026-05-04T15:53:40+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
