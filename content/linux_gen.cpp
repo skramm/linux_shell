@@ -15,8 +15,8 @@ Utilisation:
 */
 
 
-
 #include <string>
+#include <array>
 #include <sstream>
 #include <vector>
 #include <iostream>
@@ -119,6 +119,7 @@ readCSV_cat( std::string filename )
 }
 
 //--------------------------------------------------
+<<<<<<< HEAD
 void
 createHeader( std::string str /* "man" or "help" */, std::string name )
 {
@@ -185,18 +186,40 @@ generateMan( std::string name )
 	}
 }
 
+=======
+/* !!! 20260505: WIP !!
+enum En_Type
+{
+	T_BUILTIN,
+	T_PRESENT,
+	T_NOTPRESENT
+}
+
+const char*
+getString( En_Type ty )
+{
+	switch( ty )
+	{
+		case T_BUILTIN:     return "_builtin_";   break;
+		case T_PRESENT:     return "_installed_"; break;
+		case T_NOTPRESENT:  return "NI";          break;
+		default:
+			assert(0);
+}
+*/
+
 //--------------------------------------------------
 /// Contenu d'une commande: nom, commentaire, catégorie, "voir aussi"
 struct Command
 {
-//	int         _cat;
 	std::vector<int> _cats; ///< plusieurs catégories possible pour une même commande
 	std::string _name;
 	std::string _comment;
 	std::string _seealso;
-	std::string _type;
-	EnManType _mantype;
-	
+
+//	EnManType _mantype;
+	std::string _type; ///< builtin, NI (Not Installed), installed
+
 	Command() = default;
 	Command( const std::vector<std::string>& vin )
 	{
@@ -204,7 +227,6 @@ struct Command
 		assert( vin.size() > 4 );
 //		std::cout << "0:" << vin[0] << " 1:" << vin[1]<< " 2:" << vin[2] << " 3:" << vin[3] << " 4:" << vin[4]  << '\n';
 		_name    = vin[0];
-//		_cat     = stoi( vin[1] );
 		_comment = vin[2];
 		_seealso = vin[3];
 		_type    = vin[4];
@@ -224,18 +246,37 @@ struct Command
 
 //--------------------------------------------------
 /// Read commands in input CSV file
-std::vector<Command>
+auto
 readCSV_cmd( std::string filename )
 {
 	auto vcmd = readCSV( filename );
-	std::vector<Command> vout;//( vcmd.size() );
+
+	std::vector<Command> vout;
+	std::array<int,3> nbt = {};   // {} to initialize to 0
 	for( const auto elems: vcmd )
 	{
 //		std::cout << "elems size=" << elems.size() << '\n';
 		if( elems.size() > 2 )
-			vout.emplace_back( Command( elems ) );
+		{
+			Command cmd( elems );
+			if( cmd._type == "_builtin_" )  // TODO replace with enum and switch/case
+				nbt[0]++;
+			else
+			{
+				if( cmd._type == "_installed_" )
+					nbt[1]++;
+				else
+				{
+					if( cmd._type == "NI" )
+						nbt[2]++;
+					else
+						assert(0);
+				}
+			}
+			vout.emplace_back( cmd );
+		}
 	}
-	return vout;
+	return std::make_pair( vout, nbt );
 }
 
 //--------------------------------------------------
@@ -299,9 +340,9 @@ findCategories(
 /// Generation of alphabetical list
 void
 genListAlpha(
-	std::string                                    fn, ///< output filename
-	std::vector<Command>                           cmds,
-	const std::vector<std::pair<int,std::string>>& categs
+	std::string                                         fn, ///< output filename
+	std::pair<std::vector<Command>,std::array<int,3>>&  commands,
+	const std::vector<std::pair<int,std::string>>&      categs
 )
 {
 	std::ofstream f( fn );
@@ -312,7 +353,11 @@ genListAlpha(
 
 	printHeader( f );
 
+	auto cmds          = commands.first; // can't use a reference, 'cause it needs to be sorted afterward
+	const auto& nbcmds = commands.second;	
 	f << cmds.size() << " commandes<br>\n";
+	f << nbcmds[0] << " _builtin_, " << nbcmds[1] << " _installed_, " << nbcmds[2] << " NI (_not installed_)\n\n";
+
 	std::sort( cmds.begin(), cmds.end() );
 	auto first_letter = cmds[0]._name.at(0);
 	bool start = true;
@@ -481,6 +526,6 @@ int main( int argc, const char* argv[] )
 	auto cat = readCSV_cat( "linux_cat.csv" );
 	auto cmds = readCSV_cmd( std::string(argv[1]) );
 	genListAlpha( "../linux_cmds_list_alpha.md", cmds, cat );
-	genListCat( "../linux_cmds_list_cat.md", cmds, cat );
+	genListCat( "../linux_cmds_list_cat.md", cmds.first, cat );
 }
 

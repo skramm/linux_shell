@@ -28,8 +28,10 @@ Catégories:
 * 21 - [Encodage/décodage & générateurs](#cat20)
 * 22 - [Monitoring système](#cat21)
 * 23 - [Mémoire](#cat22)
+* 24 - [Référence des commandes](#cat23)
+* 25 - [Multimédia](#cat24)
 
-Total: 282 commandes
+Total: 292 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -42,17 +44,14 @@ Total: 282 commandes
 ## 1 - catégorie: Général
 <a name='cat4'></a>
 
-13 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+alias'>alias</a> | composition de commandes | [unalias](linux_cmds_list_alpha.md#u) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | [man](linux_cmds_list_alpha.md#m) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+history'>history</a> | historique des commandes |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | [man](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+locate'>locate</a> | localise un programme dans le système | [which](linux_cmds_list_alpha.md#w) | NI |
 | <a href='https://www.google.fr/search?q=linux+lsb_release'>lsb_release</a> | version distribution | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+man'>man</a> | manuel | [help](linux_cmds_list_alpha.md#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pwd'>pwd</a> | _print working directory_ |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+unalias'>unalias</a> | suppression d'un alias | [alias](linux_cmds_list_alpha.md#a) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+uname'>uname</a> | version noyau | [lsb_release](linux_cmds_list_alpha.md#l) | _installed_ |
@@ -84,18 +83,19 @@ Total: 282 commandes
 ## 3 - catégorie: Disque & stockage
 <a name='cat2'></a>
 
-10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+11 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+blkid'>blkid</a> | accès aux détails des _devices_ de type "bloc" | [lsblk](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+dd'>dd</a> | utilitaire de copie bas niveau |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+df'>df</a> | _disk free_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+du'>du</a> | _disk usage_ |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+du'>du</a> | _disk usage_ | [ncdu](linux_cmds_list_alpha.md#n) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fdisk'>fdisk</a> | _manipulate disk partition table_ |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fsck'>fsck</a> | Vérification et correction système de fichier |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hdparm'>hdparm</a> | accès/édition paramètres des disques |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mount'>mount</a> | montage de partitions | [umount](linux_cmds_list_alpha.md#u) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ncdu'>ncdu</a> | `du` en mieux | [du](linux_cmds_list_alpha.md#d) | NI |
 | <a href='https://www.google.fr/search?q=linux+smartctl'>smartctl</a> | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques |  | NI |
 | <a href='https://www.google.fr/search?q=linux+umount'>umount</a> | démontage de partitions | [mount](linux_cmds_list_alpha.md#m) | _installed_ |
 
@@ -136,7 +136,7 @@ Total: 282 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-28 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+29 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -146,6 +146,7 @@ Total: 282 commandes
 | <a href='https://www.google.fr/search?q=linux+host'>host</a> | requete DNS | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hostname'>hostname</a> | nom de la machine |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ifdown'>ifdown</a> | désactivation interface réseau |  | NI |
+| <a href='https://www.google.fr/search?q=linux+iftop'>iftop</a> | monitoring réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ifup'>ifup</a> | activation interface réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ip'>ip</a> |  |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+mtr'>mtr</a> | affiche les étapes d'une requete réseau | [traceroute](linux_cmds_list_alpha.md#t) | _installed_ |
@@ -155,7 +156,7 @@ Total: 282 commandes
 | <a href='https://www.google.fr/search?q=linux+nmap'>nmap</a> | exploration réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nmcli'>nmcli</a> | pilote CLI des connexions réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nslookup'>nslookup</a> | requete DNS (_deprecated_) | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+ping'>ping</a> | envoi d'un trame ICMP |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+ping'>ping</a> | envoi de trames ICMP |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+route'>route</a> | affiche ou édite la table de routage |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+rsync'>rsync</a> | copie et synchronisation de fichiers entre machines |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+scp'>scp</a> | tranfert de fichiers entre machines |  | _installed_ |
@@ -484,12 +485,13 @@ Total: 282 commandes
 ## 22 - catégorie: Monitoring système
 <a name='cat21'></a>
 
-8 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+9 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+btop'>btop</a> |  monitoring système | [htop,top](linux_cmds_list_alpha.md#h) | NI |
 | <a href='https://www.google.fr/search?q=linux+htop'>htop</a> | top en mieux | [top,nmon](linux_cmds_list_alpha.md#t) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+iftop'>iftop</a> | monitoring réseau |  | NI |
 | <a href='https://www.google.fr/search?q=linux+inxi'>inxi</a> | informations système | [lstopo-htop-lsdev](linux_cmds_list_alpha.md#l) | NI |
 | <a href='https://www.google.fr/search?q=linux+iotop'>iotop</a> | liste process avec leur utilisation I/O disque |  | NI |
 | <a href='https://www.google.fr/search?q=linux+nmon'>nmon</a> | _dashboard_ système | [htop](linux_cmds_list_alpha.md#h) | NI |
@@ -510,6 +512,32 @@ Total: 282 commandes
 | <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | [swapoff](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
 
+## 24 - catégorie: Référence des commandes
+<a name='cat23'></a>
 
-_MAJ: 2026-05-04T15:53:40+0000_,
+4 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+
+| Nom | Description | Voir aussi | Statut |
+|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | [man](linux_cmds_list_alpha.md#m) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | [man](linux_cmds_list_alpha.md#m) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+man'>man</a> | manuel | [help](linux_cmds_list_alpha.md#h) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+tldr'>tldr</a> | `man` en mieux | [man](linux_cmds_list_alpha.md#m) | NI |
+
+## 25 - catégorie: Multimédia
+<a name='cat24'></a>
+
+6 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+
+| Nom | Description | Voir aussi | Statut |
+|-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+asciinema'>asciinema</a> | _screencast_ console | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
+| <a href='https://www.google.fr/search?q=linux+ffmpeg'>ffmpeg</a> | édition vidéo généraliste | [melt](linux_cmds_list_alpha.md#m) | NI |
+| <a href='https://www.google.fr/search?q=linux+melt'>melt</a> | édition vidéo | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
+| <a href='https://www.google.fr/search?q=linux+sox'>sox</a> | couteau suisse audio |  | NI |
+| <a href='https://www.google.fr/search?q=linux+soxi'>soxi</a> | détails sur fichier audio |  | NI |
+| <a href='https://www.google.fr/search?q=linux+yt-dlp'>yt-dlp</a> | téléchargement vidéos |  | NI |
+
+
+_MAJ: 2026-05-05T09:49:53+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
