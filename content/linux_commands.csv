@@ -46,7 +46,8 @@ fmt;7;text formatter
 fdisk;2;_manipulate disk partition table_
 fsck;2;Vérification et correction système de fichier
 df;2;_disk free_
-du;2;_disk usage_
+du;2;_disk usage_;ncdu
+ncdu;2;`du` en mieux;du
 dd;2;utilitaire de copie bas niveau
 #smartctl;2;accès aux données <a href="https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology">SMART</a> des disques
 smartctl;2;accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques
@@ -97,9 +98,6 @@ whatis;4;que fait cette commande?
 pwd;4;_print working directory_
 locate;4;localise un programme dans le système;which
 updatedb;4;mise à jour BDD `locate`;locate
-man;4;manuel;help
-info;4;aide sur commande;man
-help;4;liste commandes "_builtin_" et aide;man
 grep;8;recherche de chaîne;ripgrep
 ripgrep;8;(rg) grep récursif;grep
 
@@ -152,7 +150,7 @@ env;7;liste var. environnement
 
 hostname;3;nom de la machine
 ip;3;
-ping;3;envoi d'un trame ICMP
+ping;3;envoi de trames ICMP
 wget;3;client http CLI;curl
 curl;3;client multiprotocoles (wget en mieux);wget
 dig;3;requete DNS;nslookup;DNS
@@ -160,7 +158,7 @@ host;3;requete DNS;dig;DNS
 
 ifup;3;activation interface réseau
 ifdown;3;désactivation interface réseau
-
+iftop;3-21;monitoring réseau
 scp;3-11;tranfert de fichiers entre machines
 rsync;3-11;copie et synchronisation de fichiers entre machines
 
@@ -317,4 +315,16 @@ uuid;20;génération de _Universally Unique IDentifier_
 banner;20;affichage bannière;figlet
 figlet;20;affichage bannière;toilet
 toilet;20;affichage bannière;banner
+
+man;23;manuel;help
+info;23;aide sur commande;man
+help;23;liste commandes "_builtin_" et aide;man
+tldr;23;`man` en mieux;man
+
+melt;24;édition vidéo;ffmpeg
+ffmpeg;24;édition vidéo généraliste;melt
+sox;24;couteau suisse audio
+soxi;24;détails sur fichier audio
+yt-dlp;24;téléchargement vidéos
+asciinema;24;_screencast_ console;ffmpeg
 
