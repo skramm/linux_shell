@@ -152,7 +152,7 @@ readCSV_cmd( std::string filename )
 	auto vcmd = readCSV( filename );
 
 	std::vector<Command> vout;
-	std::array<int,3> nbt = {};
+	std::array<int,3> nbt;   // default values?
 	for( const auto elems: vcmd )
 	{
 //		std::cout << "elems size=" << elems.size() << '\n';
