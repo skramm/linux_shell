@@ -164,7 +164,7 @@ readCSV_cmd( std::string filename )
 				nbt[0]++;
 			else
 			{
-				if( cmd._type == "installed" )
+				if( cmd._type == "_installed_" )
 					nbt[1]++;
 				else
 				{
