@@ -12,6 +12,8 @@
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
 283 commandes<br>
+32796 _builtin_, -599479155 _installed_, 22160 NI (_not installed_)
+
 
 ## 7
 <a name='7'></a>
@@ -567,5 +569,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-05-05T09:05:27+0000_,
+_MAJ: 2026-05-05T09:49:53+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
