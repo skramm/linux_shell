@@ -28,10 +28,10 @@ Catégories:
 * 21 - [Encodage/décodage & générateurs](#cat20)
 * 22 - [Monitoring système](#cat21)
 * 23 - [Mémoire](#cat22)
-* 24 - [Référence des commandes](#cat23)
+* 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 292 commandes
+Total: 297 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -44,7 +44,7 @@ Total: 292 commandes
 ## 1 - catégorie: Général
 <a name='cat4'></a>
 
-10 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+9 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -57,7 +57,6 @@ Total: 292 commandes
 | <a href='https://www.google.fr/search?q=linux+uname'>uname</a> | version noyau | [lsb_release](linux_cmds_list_alpha.md#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+updatedb'>updatedb</a> | mise à jour BDD `locate` | [locate](linux_cmds_list_alpha.md#l) | NI |
 | <a href='https://www.google.fr/search?q=linux+wc'>wc</a> | _word count_ |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+whatis'>whatis</a> | que fait cette commande? |  | _installed_ |
 
 ## 2 - catégorie: Édition/visualisation fichiers
 <a name='cat14'></a>
@@ -313,7 +312,7 @@ Total: 292 commandes
 ## 14 - catégorie: Divers
 <a name='cat7'></a>
 
-29 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+30 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -324,13 +323,14 @@ Total: 292 commandes
 | <a href='https://www.google.fr/search?q=linux+convert'>convert</a> | conversion format d'image |  | NI |
 | <a href='https://www.google.fr/search?q=linux+cron'>cron</a> | planification de tâches | [at](linux_cmds_list_alpha.md#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+date'>date</a> | affiche date & heure | [cal](linux_cmds_list_alpha.md#c) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+env'>env</a> | exécution d'un programme en modifiant l'environnement | [printenv](linux_cmds_list_alpha.md#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+eval'>eval</a> | exécute la commande passée en argument |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+export'>export</a> | exportation de variable dans un sous-shell |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+fc-list'>fc-list</a> | _list available fonts_ | [pango-list](linux_cmds_list_alpha.md#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+fmt'>fmt</a> | text formatter |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+nano'>nano</a> | éditeur en mode "console" |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pango-list'>pango-list</a> | liste des polices de caractères installées | [fc-list](linux_cmds_list_alpha.md#f) | NI |
+| <a href='https://www.google.fr/search?q=linux+printenv'>printenv</a> | liste var. environnement | [env](linux_cmds_list_alpha.md#e) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pv'>pv</a> | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) |  | NI |
 | <a href='https://www.google.fr/search?q=linux+screen'>screen</a> | multiplexeur de terminal | [tmux](linux_cmds_list_alpha.md#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+seq'>seq</a> | _print a sequence of numbers_ |  | _installed_ |
@@ -512,32 +512,37 @@ Total: 292 commandes
 | <a href='https://www.google.fr/search?q=linux+swapon'>swapon</a> | gestion mémoire _swap_ | [swapoff](linux_cmds_list_alpha.md#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+vmstat'>vmstat</a> | état mémoire virtuelle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
 
-## 24 - catégorie: Référence des commandes
+## 24 - catégorie: Référence & aide des commandes
 <a name='cat23'></a>
 
-4 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+7 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+apropos'>apropos</a> | recherche dans les pages de manuel | [man](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | [man](linux_cmds_list_alpha.md#m) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | [man](linux_cmds_list_alpha.md#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+man'>man</a> | manuel | [help](linux_cmds_list_alpha.md#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tldr'>tldr</a> | `man` en mieux | [man](linux_cmds_list_alpha.md#m) | NI |
+| <a href='https://www.google.fr/search?q=linux+whatis'>whatis</a> | que fait cette commande? |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+whereis'>whereis</a> | indique la localisation d'une commande |  | _installed_ |
 
 ## 25 - catégorie: Multimédia
 <a name='cat24'></a>
 
-6 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
+8 commandes - <a href='#top'>Haut de page</a> - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| <a href='https://www.google.fr/search?q=linux+aplay'>aplay</a> | écoute de fichier audio |  | NI |
 | <a href='https://www.google.fr/search?q=linux+asciinema'>asciinema</a> | _screencast_ console | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+ffmpeg'>ffmpeg</a> | édition vidéo généraliste | [melt](linux_cmds_list_alpha.md#m) | NI |
 | <a href='https://www.google.fr/search?q=linux+melt'>melt</a> | édition vidéo | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+sox'>sox</a> | couteau suisse audio |  | NI |
 | <a href='https://www.google.fr/search?q=linux+soxi'>soxi</a> | détails sur fichier audio |  | NI |
+| <a href='https://www.google.fr/search?q=linux+spd-say'>spd-say</a> | synthétiseur vocal |  | NI |
 | <a href='https://www.google.fr/search?q=linux+yt-dlp'>yt-dlp</a> | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-05-05T09:54:41+0000_,
+_MAJ: 2026-05-08T21:47:17+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

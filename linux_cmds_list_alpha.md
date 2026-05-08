@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-283 commandes<br>
-32 _builtin_, 190 _installed_, 61 NI (_not installed_)
+288 commandes<br>
+32 _builtin_, 193 _installed_, 63 NI (_not installed_)
 
 
 ## 7
@@ -41,6 +41,8 @@
 | <a href='https://www.google.fr/search?q=linux+addgroup'>addgroup</a> | création groupe d'utilisateurs | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [adduser](#a) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+adduser'>adduser</a> | création utilisateur | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+alias'>alias</a> | composition de commandes | <a href='linux_cmds_list_cat.md#cat4'>Général</a> | [unalias](#u) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+aplay'>aplay</a> | écoute de fichier audio | <a href='linux_cmds_list_cat.md#cat24'>Multimédia</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+apropos'>apropos</a> | recherche dans les pages de manuel | <a href='linux_cmds_list_cat.md#cat23'>Référence & aide des commandes</a> | [man](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+apt'>apt</a> | gestion paquets Debian | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+apt-get'>apt-get</a> | gestion paquets Debian (bas niveau) | <a href='linux_cmds_list_cat.md#cat10'>Installation logiciels</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+arch'>arch</a> | architecture processeur | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [uname](#u) | _installed_ |
@@ -133,7 +135,7 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+echo'>echo</a> | affichage de texte/variable | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [printf](#p) | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+env'>env</a> | liste var. environnement | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+env'>env</a> | exécution d'un programme en modifiant l'environnement | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [printenv](#p) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+eval'>eval</a> | exécute la commande passée en argument | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+evtest'>evtest</a> | affichage évènements clavier+souris | <a href='linux_cmds_list_cat.md#cat18'>Interface avec bureau</a> | [showkey,xev](#s) | NI |
 | <a href='https://www.google.fr/search?q=linux+exiftool'>exiftool</a> | manipulation métadonnées fichier image, audio, etc. | <a href='linux_cmds_list_cat.md#cat11'>Manipulation fichiers</a> |  | NI |
@@ -199,7 +201,7 @@
 | <a href='https://www.google.fr/search?q=linux+halt'>halt</a> |  | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [shutdown,reboot](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+hdparm'>hdparm</a> | accès/édition paramètres des disques | <a href='linux_cmds_list_cat.md#cat2'>Disque & stockage</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+head'>head</a> | premières lignes texte | <a href='linux_cmds_list_cat.md#cat14'>Édition/visualisation fichiers</a> | [tail](#t) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | <a href='linux_cmds_list_cat.md#cat23'>Référence des commandes</a> | [man](#m) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+help'>help</a> | liste commandes "_builtin_" et aide | <a href='linux_cmds_list_cat.md#cat23'>Référence & aide des commandes</a> | [man](#m) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+hey'>hey</a> | _HTTP load generator_ | <a href='linux_cmds_list_cat.md#cat17'>Sécurité & Performance</a> | [ab](#a) | NI |
 | <a href='https://www.google.fr/search?q=linux+history'>history</a> | historique des commandes | <a href='linux_cmds_list_cat.md#cat4'>Général</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+host'>host</a> | requete DNS | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [dig](#d) | _installed_ |
@@ -221,7 +223,7 @@
 | <a href='https://www.google.fr/search?q=linux+ifdown'>ifdown</a> | désactivation interface réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+iftop'>iftop</a> | monitoring réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> - <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+ifup'>ifup</a> | activation interface réseau | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | NI |
-| <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | <a href='linux_cmds_list_cat.md#cat23'>Référence des commandes</a> | [man](#m) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+info'>info</a> | aide sur commande | <a href='linux_cmds_list_cat.md#cat23'>Référence & aide des commandes</a> | [man](#m) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+insmod'>insmod</a> | _insert a module into the kernel_ | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+inxi'>inxi</a> | informations système | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [lstopo-htop-lsdev](#l) | NI |
 | <a href='https://www.google.fr/search?q=linux+iotop'>iotop</a> | liste process avec leur utilisation I/O disque | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> |  | NI |
@@ -294,7 +296,7 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | <a href='https://www.google.fr/search?q=linux+make'>make</a> | construction d'une cible en fonction des dépendances | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+man'>man</a> | manuel | <a href='linux_cmds_list_cat.md#cat23'>Référence des commandes</a> | [help](#h) | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+man'>man</a> | manuel | <a href='linux_cmds_list_cat.md#cat23'>Référence & aide des commandes</a> | [help](#h) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+md5sum'>md5sum</a> | calcul de hash MD5 | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+melt'>melt</a> | édition vidéo | <a href='linux_cmds_list_cat.md#cat24'>Multimédia</a> | [ffmpeg](#f) | NI |
 | <a href='https://www.google.fr/search?q=linux+mkdir'>mkdir</a> | _make directory_ | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> |  | _installed_ |
@@ -357,6 +359,7 @@
 | <a href='https://www.google.fr/search?q=linux+pkg-config'>pkg-config</a> | outil de paramétrage de compilation, renvoie les infos sur librairies installées | <a href='linux_cmds_list_cat.md#cat6'>Dev</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pkill'>pkill</a> | stoppe un process par nom | <a href='linux_cmds_list_cat.md#cat12'>Gestion des jobs & process</a> | [kill](#k) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+popd'>popd</a> | récupération dossier courant | <a href='linux_cmds_list_cat.md#cat15'>Manipulation dossiers</a> | [pushd](#p) | _builtin_ |
+| <a href='https://www.google.fr/search?q=linux+printenv'>printenv</a> | liste var. environnement | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [env](#e) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+printf'>printf</a> | affichage de texte/variable formatté | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> | [echo](#e) | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+ps'>ps</a> | snapshot des process | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [top,pstree](#t) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+pstree'>pstree</a> | arborescence des process | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [ps](#p) | _installed_ |
@@ -427,6 +430,7 @@
 | <a href='https://www.google.fr/search?q=linux+source'>source</a> | exécution d'un script dans le même shell | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+sox'>sox</a> | couteau suisse audio | <a href='linux_cmds_list_cat.md#cat24'>Multimédia</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+soxi'>soxi</a> | détails sur fichier audio | <a href='linux_cmds_list_cat.md#cat24'>Multimédia</a> |  | NI |
+| <a href='https://www.google.fr/search?q=linux+spd-say'>spd-say</a> | synthétiseur vocal | <a href='linux_cmds_list_cat.md#cat24'>Multimédia</a> |  | NI |
 | <a href='https://www.google.fr/search?q=linux+split'>split</a> | Découpage d'un fichier en plusieurs morceaux | <a href='linux_cmds_list_cat.md#cat8'>Traitement données texte</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ss'>ss</a> | _socket statistics_ | <a href='linux_cmds_list_cat.md#cat1'>Système & _Hardware_</a> | [lsof](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+ssh'>ssh</a> | Connection à une machine distante | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
@@ -459,7 +463,7 @@
 | <a href='https://www.google.fr/search?q=linux+tcpdump'>tcpdump</a> | capture trames réseau (Wireshark en CLI) | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+tee'>tee</a> | modif redirection (stdout, stderr) | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+time'>time</a> | chronométrage de tâche | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _builtin_ |
-| <a href='https://www.google.fr/search?q=linux+tldr'>tldr</a> | `man` en mieux | <a href='linux_cmds_list_cat.md#cat23'>Référence des commandes</a> | [man](#m) | NI |
+| <a href='https://www.google.fr/search?q=linux+tldr'>tldr</a> | `man` en mieux | <a href='linux_cmds_list_cat.md#cat23'>Référence & aide des commandes</a> | [man](#m) | NI |
 | <a href='https://www.google.fr/search?q=linux+tmux'>tmux</a> | multiplexeur de terminal | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [screen](#s) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+toilet'>toilet</a> | affichage bannière | <a href='linux_cmds_list_cat.md#cat20'>Encodage/décodage & générateurs</a> | [banner](#b) | NI |
 | <a href='https://www.google.fr/search?q=linux+top'>top</a> | _dashboard_ système & process | <a href='linux_cmds_list_cat.md#cat21'>Monitoring système</a> | [htop](#h) | _installed_ |
@@ -518,7 +522,8 @@
 | <a href='https://www.google.fr/search?q=linux+watch'>watch</a> | exécution périodique d'une commande | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+wc'>wc</a> | _word count_ | <a href='linux_cmds_list_cat.md#cat4'>Général</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+wget'>wget</a> | client http CLI | <a href='linux_cmds_list_cat.md#cat3'>Réseau</a> | [curl](#c) | _installed_ |
-| <a href='https://www.google.fr/search?q=linux+whatis'>whatis</a> | que fait cette commande? | <a href='linux_cmds_list_cat.md#cat4'>Général</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+whatis'>whatis</a> | que fait cette commande? | <a href='linux_cmds_list_cat.md#cat23'>Référence & aide des commandes</a> |  | _installed_ |
+| <a href='https://www.google.fr/search?q=linux+whereis'>whereis</a> | indique la localisation d'une commande | <a href='linux_cmds_list_cat.md#cat23'>Référence & aide des commandes</a> |  | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+which'>which</a> | localisation (chemin) d'un programme | <a href='linux_cmds_list_cat.md#cat7'>Divers</a> | [locate](#l) | _installed_ |
 | <a href='https://www.google.fr/search?q=linux+while'>while</a> |  | <a href='linux_cmds_list_cat.md#cat16'>Controle des scripts</a> |  | _builtin_ |
 | <a href='https://www.google.fr/search?q=linux+who'>who</a> | qui est loggé? | <a href='linux_cmds_list_cat.md#cat9'>Gestion utilisateurs</a> | [w](#w) | _installed_ |
@@ -569,5 +574,5 @@
 | <a href='https://www.google.fr/search?q=linux+zramctl'>zramctl</a> | paramétrage et controle de la compression RAM | <a href='linux_cmds_list_cat.md#cat13'>Gestion Kernel</a> |  | _installed_ |
 
 
-_MAJ: 2026-05-05T09:54:41+0000_,
+_MAJ: 2026-05-08T21:47:17+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
