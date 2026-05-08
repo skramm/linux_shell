@@ -397,7 +397,50 @@ genListCat(
 }
 
 //--------------------------------------------------
+/*
+void
+printForType(
+	std::string                   fn,
+	const std::vector<Command>&   cmds,
+	EN_TYPE                       type
+)
+{
+	f << "| Nom | Description | Catégorie | Voir aussi |\n"
+		<< "|------|------|------|------|------|\n";
+		
+	for( const auto& cmd: cmds )
+		if( cmd._type == type )
+		{
+			f << "| " << cmd._name
+				<< " | " << cmd._cat
+				<< " |\n";
+		}
+*/
 
+void
+genListType(
+	std::string            fn,
+	std::vector<Command>   cmds
+)
+{
+	std::ofstream f( fn );
+	assert( f.is_open() );
+	f << "# Linux Shell: liste de commandes par type\n\n"
+		<< "<a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>\n\n"
+		<< "<a name='top'></a>\n\n";
+
+	std::sort( cmds.begin(), cmds.end() );
+	auto first_letter = cmds[0]._name.at(0);
+	bool start = true;
+
+/*	printForType( f, cmds, "_builtin_" );
+	printForType( f, cmds, "_installed_" );
+	printForType( f, cmds, "NI" );
+*/
+	printfooter(f);
+}
+
+//--------------------------------------------------
 int main( int argc, const char* argv[] )
 {
 	assert( argc > 1 );
@@ -405,5 +448,7 @@ int main( int argc, const char* argv[] )
 	auto cmds = readCSV_cmd( std::string(argv[1]) );
 	genListAlpha( "../linux_cmds_list_alpha.md", cmds, cat );
 	genListCat( "../linux_cmds_list_cat.md", cmds.first, cat );
+	genListType( "../linux_cmds_list_type.md", cmds.first );
 }
+
 
