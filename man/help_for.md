@@ -1,0 +1,17 @@
+# Manuel de `for`
+
+[alpha list](../linux_cmds_list_alpha.md) - [cat list](../linux_cmds_list_cat.md)
+
+<a href='https://www.google.fr/search?q=linux+for'>Google search</a>
+
+---
+for: for NAME [in WORDS ... ] ; do COMMANDS; done
+    Execute commands for each member in a list.
+    
+    The `for' loop executes a sequence of commands for each member in a
+    list of items.  If `in WORDS ...;' is not present, then `in "$@"' is
+    assumed.  For each element in WORDS, NAME is set to that element, and
+    the COMMANDS are executed.
+    
+    Exit Status:
+    Returns the status of the last command executed.
