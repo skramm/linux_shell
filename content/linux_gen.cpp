@@ -129,9 +129,9 @@ createHeader( std::string str /* "man" or "help" */, std::string name )
 	std::ofstream f( "../man/" + str + "_" + name + ".md" );
 	assert( f.is_open() );
 	f << "# Manuel de `" << name << "`\n\n"
-		<< "[alpha list](../linux_cmds_list_alpha.md) - "
-		<< "[cat list](../linux_cmds_list_cat.md)\n\n"
-		<< "<a href='https://www.google.fr/search?q=linux+" << name << "'>Google search</a>\n\n---\n"; 
+		<< "[Liste alphabétique](../linux_cmds_list_alpha.md) - "
+		<< "[Liste par catégorie](../linux_cmds_list_cat.md)\n\n"
+		<< "[Recherche Google](https://www.google.fr/search?q=linux+" << name << ")\n\n---\n"; 
 	f.close();
 }
 
@@ -155,6 +155,7 @@ generateMan( std::string name )
 {
 	std::stringstream oss;
 	oss << "man " << name << " >/tmp/manfile 2>/dev/null";
+//	std::cout << "RUN: " << oss.str() << "\n";
 	
 	auto ret = std::system( oss.str().c_str() ); // run "man"
 	if( ret != 0 )                               // if no manual, then try with 'help'

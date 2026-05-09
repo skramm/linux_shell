@@ -26,6 +26,7 @@ jobs:
       - name: Exécution
         run: cd content; ./a.out out.csv
       - run: ls -l /tmp
+      - run: cat /tmp/manfile
       - run: rm content/out.csv
 
       - name: Ajout version OS
