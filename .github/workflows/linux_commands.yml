@@ -35,7 +35,7 @@ jobs:
           echo "_OS: $NAME - ${VERSION}_">> linux_cmds_list_cat.md
 
       - name: auto commit
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Automated Change
           branch: main
