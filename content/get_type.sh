@@ -15,14 +15,14 @@ do
 		ret=$?
 		if [ $ret != 0 ]
 		then
-			echo "NI" >> $out
+			echo "0" >> $out # Not Installed
 		else
 			grep shell /tmp/commandtype 1>/dev/null
 			if [ $? = 0 ]
 			then
-				echo "_builtin_" >> $out
+				echo "1" >> $out # builtin
 			else
-				echo "_installed_" >> $out
+				echo "2" >> $out # installed, available on local machine
 			fi
 		fi
 	fi

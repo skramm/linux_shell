@@ -52,6 +52,7 @@ std::vector<std::string> mantitles = {
 	,"SEE ALSO"
 };
 
+using Categories = std::vector<std::pair<int,std::string>>;
 
 //--------------------------------------------------
 /// Split a line of CSV file into fields
@@ -107,7 +108,7 @@ auto
 readCSV_cat( std::string filename )
 {
 	auto vcat = readCSV( filename );
-	std::vector<std::pair<int,std::string>> vout;
+	Categories vout;
 	for( const auto& elems: vcat )
 		vout.push_back(
 			std::make_pair(
@@ -119,7 +120,6 @@ readCSV_cat( std::string filename )
 }
 
 //--------------------------------------------------
-<<<<<<< HEAD
 void
 createHeader( std::string str /* "man" or "help" */, std::string name )
 {
@@ -134,7 +134,7 @@ createHeader( std::string str /* "man" or "help" */, std::string name )
 
 //--------------------------------------------------
 /// Type of "man" page (can be the output of "help" instead, if no man available)
-enum EnManType
+enum En_ManType
 {
 	MAN, HELP, NONE
 };
@@ -147,7 +147,7 @@ If no `man`, an attempt is made with `help`
 But the default shell used with `std::system()` is `sh`, and help is not available with it, it's a bash builtin,
 so we need to explicitely use bash
 */
-EnManType
+En_ManType
 generateMan( std::string name )
 {
 	createHeader( "man", name );
@@ -186,27 +186,26 @@ generateMan( std::string name )
 	}
 }
 
-=======
-/* !!! 20260505: WIP !!
+/// Type of command on local machine
 enum En_Type
 {
-	T_BUILTIN,
-	T_PRESENT,
-	T_NOTPRESENT
-}
+	T_NOTPRESENT = 0,
+	T_BUILTIN    = 1,
+	T_PRESENT    = 2
+};
 
 const char*
 getString( En_Type ty )
 {
 	switch( ty )
 	{
-		case T_BUILTIN:     return "_builtin_";   break;
-		case T_PRESENT:     return "_installed_"; break;
-		case T_NOTPRESENT:  return "NI";          break;
+		case T_BUILTIN:    return "_builtin_";   break;
+		case T_PRESENT:    return "_installed_"; break;
+		case T_NOTPRESENT: return "NI";          break;
 		default:
 			assert(0);
+	}
 }
-*/
 
 //--------------------------------------------------
 /// Contenu d'une commande: nom, commentaire, catégorie, "voir aussi"
@@ -216,10 +215,9 @@ struct Command
 	std::string _name;
 	std::string _comment;
 	std::string _seealso;
-
-//	EnManType _mantype;
-	std::string _type; ///< builtin, NI (Not Installed), installed
-
+	En_Type     _type;
+	En_ManType  _mantype;
+	
 	Command() = default;
 	Command( const std::vector<std::string>& vin )
 	{
@@ -229,8 +227,8 @@ struct Command
 		_name    = vin[0];
 		_comment = vin[2];
 		_seealso = vin[3];
-		_type    = vin[4];
 		_mantype = generateMan( _name );
+		_type    = En_Type( std::stoi( vin[4] ) );
 
 // fill the categories
 		auto cats = split_string( vin[1], '-' );
@@ -259,20 +257,7 @@ readCSV_cmd( std::string filename )
 		if( elems.size() > 2 )
 		{
 			Command cmd( elems );
-			if( cmd._type == "_builtin_" )  // TODO replace with enum and switch/case
-				nbt[0]++;
-			else
-			{
-				if( cmd._type == "_installed_" )
-					nbt[1]++;
-				else
-				{
-					if( cmd._type == "NI" )
-						nbt[2]++;
-					else
-						assert(0);
-				}
-			}
+			nbt[cmd._type]++;
 			vout.emplace_back( cmd );
 		}
 	}
@@ -312,10 +297,10 @@ printAlpha( std::ofstream& f )
 auto
 findCategories(
 	const Command& command,
-	const std::vector<std::pair<int,std::string>>& categs
+	const Categories& categs
 )
 {
-	std::vector<std::pair<int,std::string>> out;
+	Categories out;
 // iterate on all the categories of the command
 	for( const auto& c: command._cats )
 	{
@@ -337,18 +322,36 @@ findCategories(
 }
 
 //--------------------------------------------------
+void 
+printCategories(
+	std::ofstream&    f,
+	Command           cmd,
+	const Categories& categs
+)
+{
+	int t = 0;
+	auto commCats = findCategories( cmd, categs );
+	for( const auto& cat: commCats )
+	{
+		if( t++ > 0 )
+			f << " - ";
+		f << "[" << cat.second << "](linux_cmds_list_cat.md#cat" << cat.first << ")";
+	}
+}
+
+//--------------------------------------------------
 /// Generation of alphabetical list
 void
 genListAlpha(
 	std::string                                         fn, ///< output filename
 	std::pair<std::vector<Command>,std::array<int,3>>&  commands,
-	const std::vector<std::pair<int,std::string>>&      categs
+	const Categories&      categs
 )
 {
 	std::ofstream f( fn );
 	assert( f.is_open() );
 	f << "# Linux Shell: liste alphabétique de commandes\n\n"
-		<< "<a href='linux_cmds_list_cat.md'>Liste par catégorie</a>\n\n"
+		<< "[Liste par catégorie](linux_cmds_list_cat.md)\n\n"
 		<< "<a name='#top'></a>\n\n";
 
 	printHeader( f );
@@ -356,7 +359,9 @@ genListAlpha(
 	auto cmds          = commands.first; // can't use a reference, 'cause it needs to be sorted afterward
 	const auto& nbcmds = commands.second;	
 	f << cmds.size() << " commandes<br>\n";
-	f << nbcmds[0] << " _builtin_, " << nbcmds[1] << " _installed_, " << nbcmds[2] << " NI (_not installed_)\n\n";
+	f << nbcmds[T_BUILTIN] << " _builtin_, "
+		<< nbcmds[T_PRESENT] << " _installed_, "
+		<< nbcmds[T_NOTPRESENT] << " NI (_not installed_)\n\n";
 
 	std::sort( cmds.begin(), cmds.end() );
 	auto first_letter = cmds[0]._name.at(0);
@@ -373,7 +378,7 @@ genListAlpha(
 			f << "\n## " << (char)std::toupper(first)
 				<< "\n<a name='" << first << "'></a>\n\n"
 				<< "<a href='#top'>Haut de page</a>"
-				<< " - <a href='linux_cmds_list_cat.md'>Liste par catégorie</a>\n\n";
+				<< " - [Liste par catégorie](linux_cmds_list_cat.md)\n\n";
 			printAlpha( f );
 				
 			f << "| Nom | Description | Catégorie | Voir aussi | Statut |\n"
@@ -399,23 +404,11 @@ genListAlpha(
 				assert(0);
 		}
 		f << ") | "<< cmd._comment << " | ";
-/*		<a href='https://www.google.fr/search?q=linux+"
-			<< cmd._name << "'>" 
-			<< cmd._name << "</a> | "
-			<< cmd._comment 
-			<< " | ";
-*/
 
-		auto commCats = findCategories( cmd, categs );
-		int t = 0;
-		for( const auto& cat: commCats )
-		{
-			if( t++ > 0 )
-				f << " - ";
-			f << "<a href='linux_cmds_list_cat.md#cat"
-				<< cat.first << "'>"
-				<< cat.second << "</a>";
-		}		
+
+		printCategories( f, cmd, categs );
+
+
 		f << " | ";
 
 		if( !cmd._seealso.empty() )
@@ -423,7 +416,7 @@ genListAlpha(
 			auto letter = cmd._seealso.at(0);
 			f << "[" << cmd._seealso << "](#" << letter << ")";
 		}
-		f << " | " << cmd._type << " |\n";
+		f << " | " << getString(cmd._type) << " |\n";		
 
 	}
 	printfooter(f);
@@ -456,7 +449,7 @@ genCat(
 	f << "\n## " << idx << " - catégorie: " << pcat.second
 		<< "\n<a name='cat" << cat << "'></a>\n\n" 
 		<< nbc << " commandes - <a href='#top'>Haut de page</a>"
-		<< " - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>\n\n"
+		<< " - [Liste alphabétique](linux_cmds_list_alpha.md)\n\n"
 		<< "| Nom | Description | Voir aussi | Statut |"
 		<< "\n|-----|-----|-----|-----|\n";
 
@@ -483,22 +476,22 @@ genCat(
 			auto letter = cmd._seealso.at(0);
 			f << "[" << cmd._seealso << "](linux_cmds_list_alpha.md#" << letter << ")";
 		}
-		f << " | " << cmd._type << " |\n";
+		f << " | " << getString(cmd._type) << " |\n";
 	}
 }
 
 //--------------------------------------------------
 void
 genListCat(
-	std::string                                    fn,
-	const std::vector<Command>&                    cmds,
-	const std::vector<std::pair<int,std::string>>& vcats
+	std::string                  fn,
+	const std::vector<Command>&  cmds,
+	const Categories&            vcats
 )
 {
 	std::ofstream f( fn );
 	assert( f.is_open() );
 	f << "# Linux Shell: liste de commandes par catégorie\n\n"
-		<< "<a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>\n\n"
+		<< "[Liste alphabétique](linux_cmds_list_alpha.md)\n\n"
 		<< "<a name='top'></a>\n\n"
 		<< "Catégories:  \n";
 
@@ -519,7 +512,62 @@ genListCat(
 }
 
 //--------------------------------------------------
-/// argument: csv file holding commands
+void
+printForType(
+	std::ofstream&               f,
+	const std::vector<Command>&  cmds,
+	const Categories&            categs,
+	En_Type                      type
+)
+{
+	f << "## Commandes \"" << getString( type ) << "\"\n\n"
+		<< "| Nom | Description | Catégorie | Voir aussi |\n"
+		<< "|-----|-------------|-----------|------------|\n";
+		
+	for( const auto& cmd: cmds )
+		if( cmd._type == type )
+		{
+			f << "| " << cmd._name
+				<< " | " << cmd._comment << " | ";
+			printCategories( f, cmd, categs );
+			f << " | ";
+			if( !cmd._seealso.empty() )
+			{
+				auto letter = cmd._seealso.at(0);
+				f << "[" << cmd._seealso << "](linux_cmds_list_alpha.md#" << letter << ")";
+			}
+			f << " |\n";
+		}
+	f << "\n";
+}
+
+//--------------------------------------------------
+void
+genListType(
+	std::string           fn,     ///< filename
+	std::vector<Command>  cmds,   ///< all the commands
+	const Categories&     categs  ///< categories
+)
+{
+	std::ofstream f( fn );
+	assert( f.is_open() );
+	f << "# Linux Shell: liste de commandes par type\n\n"
+		<< "[Liste alphabétique](linux_cmds_list_alpha.md) - "
+		<< "[Liste par catégorie](linux_cmds_list_cat.md)\n\n"
+		<< "<a name='top'></a>\n\n";
+
+	std::sort( cmds.begin(), cmds.end() );
+	auto first_letter = cmds[0]._name.at(0);
+	bool start = true;
+
+	printForType( f, cmds, categs, T_BUILTIN    );
+	printForType( f, cmds, categs, T_PRESENT    );
+	printForType( f, cmds, categs, T_NOTPRESENT );
+
+	printfooter(f);
+}
+
+//--------------------------------------------------
 int main( int argc, const char* argv[] )
 {
 	assert( argc > 1 );
@@ -527,5 +575,7 @@ int main( int argc, const char* argv[] )
 	auto cmds = readCSV_cmd( std::string(argv[1]) );
 	genListAlpha( "../linux_cmds_list_alpha.md", cmds, cat );
 	genListCat( "../linux_cmds_list_cat.md", cmds.first, cat );
+	genListType( "../linux_cmds_list_type.md", cmds.first, cat );
 }
+
 

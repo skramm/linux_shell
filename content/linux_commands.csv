@@ -95,7 +95,6 @@ cd;15;_Change Directory_;pushd
 pushd;15;chgt dossier courant avec sauvegarde;popd
 popd;15;récupération dossier courant;pushd
 
-whatis;4;que fait cette commande?
 pwd;4;_print working directory_
 locate;4;localise un programme dans le système;which
 updatedb;4;mise à jour BDD `locate`;locate
@@ -147,7 +146,8 @@ read;16;saisie ligne (clavier ou fichier)
 eval;7;exécute la commande passée en argument
 time;7;chronométrage de tâche
 watch;7;exécution périodique d'une commande
-env;7;liste var. environnement
+env;7;exécution d'un programme en modifiant l'environnement;printenv
+printenv;7;liste var. environnement;env
 
 
 hostname;3;nom de la machine
@@ -322,6 +322,9 @@ man;23;manuel;help
 info;23;aide sur commande;man
 help;23;liste commandes "_builtin_" et aide;man
 tldr;23;`man` en mieux;man
+whatis;23;que fait cette commande?
+apropos;23;recherche dans les pages de manuel;man
+whereis;23;indique la localisation d'une commande
 
 melt;24;édition vidéo;ffmpeg
 ffmpeg;24;édition vidéo généraliste;melt
@@ -329,4 +332,7 @@ sox;24;couteau suisse audio
 soxi;24;détails sur fichier audio
 yt-dlp;24;téléchargement vidéos
 asciinema;24;_screencast_ console;ffmpeg
+aplay;24;écoute de fichier audio
+spd-say;24;synthétiseur vocal
+
 
