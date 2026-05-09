@@ -7,7 +7,7 @@ name: linux commands index generation
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dev2" ]
 
 jobs:
   job_index:
@@ -35,13 +35,13 @@ jobs:
           echo "_OS: $NAME - ${VERSION}_">> linux_cmds_list_cat.md
 
       - name: auto commit
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Automated Change
           branch: main
           commit_options: '--no-verify --signoff'
           commit_author: Author <actions@github.com>
-          status_options: '--untracked-files=no'
+          status_options: '--untracked-files=yes'
           skip_dirty_check: true
 
 
