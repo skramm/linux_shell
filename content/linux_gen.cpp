@@ -36,6 +36,7 @@ std::vector<std::string> mantitles = {
 	,"DESCRIPTION"
 	,"OPTIONS"
 	,"EXIT STATUS"
+	,"EXIT VALUES"
 	,"RETURN VALUE"
 	,"ERRORS"
 	,"ENVIRONMENT"
@@ -46,6 +47,8 @@ std::vector<std::string> mantitles = {
 	,"HISTORY"
 	,"NOTES"
 	,"CAVEATS"
+	,"AVAILABILITY"
+	,"REPORTING BUGS"
 	,"BUGS"
 	,"EXAMPLES"
 	,"AUTHORS"
@@ -136,7 +139,7 @@ createHeader( std::string str /* "man" or "help" */, std::string name )
 /// Type of "man" page (can be the output of "help" instead, if no man available)
 enum En_ManType
 {
-	MAN, HELP, NONE
+	MT_MAN, MT_HELP, MT_NONE
 };
 
 //--------------------------------------------------
@@ -150,14 +153,12 @@ so we need to explicitely use bash
 En_ManType
 generateMan( std::string name )
 {
-	createHeader( "man", name );
-	
 	std::stringstream oss;
-	oss << "man " << name << " >>../man/man_" << name << ".md 2>/dev/null";
-
-	auto ret = std::system( oss.str().c_str() );
-	if( ret != 0 )
-	{                 // // if no manual, then try with 'help'
+	oss << "man " << name << " >/tmp/manfile 2>/dev/null";
+	
+	auto ret = std::system( oss.str().c_str() ); // run "man"
+	if( ret != 0 )                               // if no manual, then try with 'help'
+	{ 
 		createHeader( "help", name );
 
 		std::stringstream oss2;
@@ -166,23 +167,27 @@ generateMan( std::string name )
 		if( ret2 != 0 )
 		{
 			std::cout << "failure of:" << oss2.str() << "\n";
-			return NONE;
+			return MT_NONE;
 		}
-		return HELP;
+		return MT_HELP;
 	}
 	else // edit man page to improve the markdown
 	{
+		createHeader( "man", name );
+		std::stringstream oss3;
+		// remove first line
+		oss3 << "tail -n +2 /tmp/manfile >>../man/man_" << name << ".md";
 		for( const auto& title: mantitles )
 		{
 			std::stringstream oss3;                 	// -i is for editing file "in place"
-			oss3 << "sed -i 's/" << title << "/## " << title << "/' ../man/man_" << name << ".md";
+			oss3 << "sed -E -i 's/^" << title << "/## " << title << "/' ../man/man_" << name << ".md";
 			auto ret3 = std::system( oss3.str().c_str() );
 			if( ret3 != 0 )
 			{
 				std::cout << "failure of:" << oss3.str() << "\n";
 			}
 		}
-		return MAN;
+		return MT_MAN;
 	}
 }
 
@@ -391,13 +396,13 @@ genListAlpha(
 		
 		switch( cmd._mantype )
 		{
-			case MAN:
-				f << "[" << cmd._name << "](../man/man_" << cmd._name << ".md";
+			case MT_MAN:
+				f << "[" << cmd._name << "](man/man_" << cmd._name << ".md";
 			break;
-			case HELP:
-				f << "[" << cmd._name << "](../man/help_" << cmd._name << ".md";
+			case MT_HELP:
+				f << "[" << cmd._name << "](man/help_" << cmd._name << ".md";
 			break;
-			case NONE:
+			case MT_NONE:
 				f << cmd._name << " ( [G](https://www.google.fr/search?q=linux+" << cmd._name << ") ";
 			break;
 			default:
