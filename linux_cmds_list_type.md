@@ -7,7 +7,7 @@
 ## Commandes "_builtin_"
 
 | Nom | Description | Catégorie | Voir aussi |
-|------|------|------|------|------|
+|-----|-------------|-----------|------------|
 | alias | composition de commandes | [Général](linux_cmds_list_cat.md#cat4.md) | [unalias](linux_cmds_list_alpha.md#u) |
 | bg | passage d'un _job_ en arrière plan (_BackGround_) | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12.md) | [fg](linux_cmds_list_alpha.md#f) |
 | break | sortie de boucle "for" | [Controle des scripts](linux_cmds_list_cat.md#cat16.md) | [for](linux_cmds_list_alpha.md#f) |
@@ -44,7 +44,7 @@
 ## Commandes "_installed_"
 
 | Nom | Description | Catégorie | Voir aussi |
-|------|------|------|------|------|
+|-----|-------------|-----------|------------|
 | 7z | compression/décompression | [Compression](linux_cmds_list_cat.md#cat19.md) |  |
 | ab | _Apache's server benchmarking tool_ | [Sécurité & Performance](linux_cmds_list_cat.md#cat17.md) | [hey](linux_cmds_list_alpha.md#h) |
 | addgroup | création groupe d'utilisateurs | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9.md) | [adduser](linux_cmds_list_alpha.md#a) |
@@ -242,7 +242,7 @@
 ## Commandes "NI"
 
 | Nom | Description | Catégorie | Voir aussi |
-|------|------|------|------|------|
+|-----|-------------|-----------|------------|
 | aa-xxx | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> | [Sécurité & Performance](linux_cmds_list_cat.md#cat17.md) |  |
 | acpi | details sur alimentation (batterie ou secteur) | [Système & _Hardware_](linux_cmds_list_cat.md#cat1.md) |  |
 | aplay | écoute de fichier audio | [Multimédia](linux_cmds_list_cat.md#cat24.md) |  |
@@ -309,4 +309,4 @@
 
 
 
-_MAJ: 2026-05-09T10:12:39+0000_,
+_MAJ: 2026-05-09T10:15:33+0000_,
