@@ -26,6 +26,9 @@ Utilisation:
 #include <chrono>
 #include <iomanip>
 
+
+using Categories = std::vector<std::pair<int,std::string>>;
+
 //--------------------------------------------------
 /// Split a line of CSV file into fields
 std::vector<std::string>
@@ -80,7 +83,7 @@ auto
 readCSV_cat( std::string filename )
 {
 	auto vcat = readCSV( filename );
-	std::vector<std::pair<int,std::string>> vout;
+	Categories vout;
 	for( const auto& elems: vcat )
 		vout.push_back(
 			std::make_pair(
@@ -201,10 +204,10 @@ printAlpha( std::ofstream& f )
 auto
 findCategories(
 	const Command& command,
-	const std::vector<std::pair<int,std::string>>& categs
+	const Categories& categs
 )
 {
-	std::vector<std::pair<int,std::string>> out;
+	Categories out;
 // iterate on all the categories of the command
 	for( const auto& c: command._cats )
 	{
@@ -224,19 +227,38 @@ findCategories(
 	}
 	return out;
 }
+
+//--------------------------------------------------
+void 
+printCategories(
+	std::ofstream&    f,
+	Command           cmd,
+	const Categories& categs
+)
+{
+	int t = 0;
+	auto commCats = findCategories( cmd, categs );
+	for( const auto& cat: commCats )
+	{
+		if( t++ > 0 )
+			f << " - ";
+		f << "[" << cat.second << "](linux_cmds_list_cat.md#cat" << cat.first << ".md)";
+	}
+}
+
 //--------------------------------------------------
 /// Generation of alphabetical list
 void
 genListAlpha(
 	std::string                                         fn, ///< output filename
 	std::pair<std::vector<Command>,std::array<int,3>>&  commands,
-	const std::vector<std::pair<int,std::string>>&      categs
+	const Categories&      categs
 )
 {
 	std::ofstream f( fn );
 	assert( f.is_open() );
 	f << "# Linux Shell: liste alphabétique de commandes\n\n"
-		<< "<a href='linux_cmds_list_cat.md'>Liste par catégorie</a>\n\n"
+		<< "[Liste par catégorie](linux_cmds_list_cat.md)\n\n"
 		<< "<a name='#top'></a>\n\n";
 
 	printHeader( f );
@@ -259,7 +281,7 @@ genListAlpha(
 			f << "\n## " << (char)std::toupper(first)
 				<< "\n<a name='" << first << "'></a>\n\n"
 				<< "<a href='#top'>Haut de page</a>"
-				<< " - <a href='linux_cmds_list_cat.md'>Liste par catégorie</a>\n\n";
+				<< " - [Liste par catégorie](linux_cmds_list_cat.md)\n\n";
 			printAlpha( f );
 				
 			f << "| Nom | Description | Catégorie | Voir aussi | Statut |\n"
@@ -268,21 +290,11 @@ genListAlpha(
 			start = false;
 		}
 
-		auto commCats = findCategories( cmd, categs );
 		f << "| <a href='https://www.google.fr/search?q=linux+"
 			<< cmd._name << "'>" 
 			<< cmd._name << "</a> | " << cmd._comment 
 			<< " | ";
-
-		int t = 0;
-		for( const auto& cat: commCats )
-		{
-			if( t++ > 0 )
-				f << " - ";
-			f << "<a href='linux_cmds_list_cat.md#cat"
-				<< cat.first << "'>"
-				<< cat.second << "</a>";
-		}		
+		printCategories( f, cmd, categs );
 		f << " | ";
 
 		if( !cmd._seealso.empty() )
@@ -325,7 +337,7 @@ genCat(
 	f << "\n## " << idx << " - catégorie: " << pcat.second
 		<< "\n<a name='cat" << cat << "'></a>\n\n" 
 		<< nbc << " commandes - <a href='#top'>Haut de page</a>"
-		<< " - <a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>\n\n"
+		<< " - [Liste alphabétique](linux_cmds_list_alpha.md)\n\n"
 		<< "| Nom | Description | Voir aussi | Statut |"
 		<< "\n|-----|-----|-----|-----|\n";
 
@@ -359,15 +371,15 @@ genCat(
 //--------------------------------------------------
 void
 genListCat(
-	std::string                                    fn,
-	const std::vector<Command>&                    cmds,
-	const std::vector<std::pair<int,std::string>>& vcats
+	std::string                  fn,
+	const std::vector<Command>&  cmds,
+	const Categories&            vcats
 )
 {
 	std::ofstream f( fn );
 	assert( f.is_open() );
 	f << "# Linux Shell: liste de commandes par catégorie\n\n"
-		<< "<a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>\n\n"
+		<< "[Liste alphabétique](linux_cmds_list_alpha.md)\n\n"
 		<< "<a name='top'></a>\n\n"
 		<< "Catégories:  \n";
 
@@ -388,12 +400,12 @@ genListCat(
 }
 
 //--------------------------------------------------
-
 void
 printForType(
-	std::ofstream&                f,
-	const std::vector<Command>&   cmds,
-	En_Type                       type
+	std::ofstream&               f,
+	const std::vector<Command>&  cmds,
+	const Categories&            categs,
+	En_Type                      type
 )
 {
 	f << "## Commandes \"" << getString( type ) << "\"\n\n"
@@ -404,25 +416,31 @@ printForType(
 		if( cmd._type == type )
 		{
 			f << "| " << cmd._name
-				<< " | " << cmd._comment
-//				<< " | [" << cmd._cats[0].second
-//				<< "](linux_cmds_list_cat.md#" << cmd._cats[0].first <<") |\n";
-				<< " |\n";
+				<< " | " << cmd._comment << " | ";
+			printCategories( f, cmd, categs );
+			f << " | ";
+			if( !cmd._seealso.empty() )
+			{
+				auto letter = cmd._seealso.at(0);
+				f << "[" << cmd._seealso << "](linux_cmds_list_alpha.md#" << letter << ")";
+			}
+			f << " |\n";
 		}
 	f << "\n";
 }
 
-
+//--------------------------------------------------
 void
 genListType(
-	std::string            fn,
-	std::vector<Command>   cmds
+	std::string           fn,     ///< filename
+	std::vector<Command>  cmds,   ///< all the commands
+	const Categories&     categs  ///< categories
 )
 {
 	std::ofstream f( fn );
 	assert( f.is_open() );
 	f << "# Linux Shell: liste de commandes par type\n\n"
-		<< "<a href='linux_cmds_list_alpha.md'>Liste alphabétique</a> - "
+		<< "[Liste alphabétique](linux_cmds_list_alpha.md) - "
 		<< "[Liste par catégorie](linux_cmds_list_cat.md)\n\n"
 		<< "<a name='top'></a>\n\n";
 
@@ -430,9 +448,9 @@ genListType(
 	auto first_letter = cmds[0]._name.at(0);
 	bool start = true;
 
-	printForType( f, cmds, T_BUILTIN );
-	printForType( f, cmds, T_PRESENT );
-	printForType( f, cmds, T_NOTPRESENT );
+	printForType( f, cmds, categs, T_BUILTIN    );
+	printForType( f, cmds, categs, T_PRESENT    );
+	printForType( f, cmds, categs, T_NOTPRESENT );
 
 	printfooter(f);
 }
@@ -445,7 +463,7 @@ int main( int argc, const char* argv[] )
 	auto cmds = readCSV_cmd( std::string(argv[1]) );
 	genListAlpha( "../linux_cmds_list_alpha.md", cmds, cat );
 	genListCat( "../linux_cmds_list_cat.md", cmds.first, cat );
-	genListType( "../linux_cmds_list_type.md", cmds.first );
+	genListType( "../linux_cmds_list_type.md", cmds.first, cat );
 }
 
 
