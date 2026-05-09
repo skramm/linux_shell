@@ -1,7 +1,7 @@
 # Manuel de `screen`
 
-[alpha list](../linux_cmds_list_alpha.md) - [cat list](../linux_cmds_list_cat.md)
+[Liste alphabétique](../linux_cmds_list_alpha.md) - [Liste par catégorie](../linux_cmds_list_cat.md)
 
-<a href='https://www.google.fr/search?q=linux+screen'>Google search</a>
+[Recherche Google](https://www.google.fr/search?q=linux+screen)
 
 ---

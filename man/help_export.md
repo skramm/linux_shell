@@ -1,8 +1,8 @@
 # Manuel de `export`
 
-[alpha list](../linux_cmds_list_alpha.md) - [cat list](../linux_cmds_list_cat.md)
+[Liste alphabétique](../linux_cmds_list_alpha.md) - [Liste par catégorie](../linux_cmds_list_cat.md)
 
-<a href='https://www.google.fr/search?q=linux+export'>Google search</a>
+[Recherche Google](https://www.google.fr/search?q=linux+export)
 
 ---
 export: export [-fn] [name[=value] ...] or export -p
