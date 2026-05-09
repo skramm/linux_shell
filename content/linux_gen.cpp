@@ -180,8 +180,9 @@ generateMan( std::string name )
 		oss3 << "tail -n +2 /tmp/manfile >>../man/man_" << name << ".md";
 		for( const auto& title: mantitles )
 		{
-			std::stringstream oss3;                 	// -i is for editing file "in place"
-			oss3 << "sed -E -i 's/^" << title << "/## " << title << "/' ../man/man_" << name << ".md";
+			std::stringstream oss3;
+			// -E: extended regular expressions
+			oss3 << "sed -E 's/^" << title << "/## " << title << "/' ../man/man_" << name << ".md";
 			auto ret3 = std::system( oss3.str().c_str() );
 			if( ret3 != 0 )
 			{
