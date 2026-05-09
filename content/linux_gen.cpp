@@ -410,7 +410,7 @@ printForType(
 {
 	f << "## Commandes \"" << getString( type ) << "\"\n\n"
 		<< "| Nom | Description | Catégorie | Voir aussi |\n"
-		<< "|------|------|------|------|------|\n";
+		<< "|-----|-------------|-----------|------------|\n";
 		
 	for( const auto& cmd: cmds )
 		if( cmd._type == type )
