@@ -92,26 +92,27 @@ readCSV_cat( std::string filename )
 }
 
 //--------------------------------------------------
-/* !!! 20260505: WIP !!
+/// Type of command on local machine
 enum En_Type
 {
-	T_BUILTIN,
-	T_PRESENT,
-	T_NOTPRESENT
-}
+	T_NOTPRESENT = 0,
+	T_BUILTIN    = 1,
+	T_PRESENT    = 2
+};
 
 const char*
 getString( En_Type ty )
 {
 	switch( ty )
 	{
-		case T_BUILTIN:     return "_builtin_";   break;
-		case T_PRESENT:     return "_installed_"; break;
-		case T_NOTPRESENT:  return "NI";          break;
+		case T_BUILTIN:    return "_builtin_";   break;
+		case T_PRESENT:    return "_installed_"; break;
+		case T_NOTPRESENT: return "NI";          break;
 		default:
 			assert(0);
+	}
 }
-*/
+
 //--------------------------------------------------
 /// Contenu d'une commande: nom, commentaire, catégorie, "voir aussi"
 struct Command
@@ -120,7 +121,8 @@ struct Command
 	std::string _name;
 	std::string _comment;
 	std::string _seealso;
-	std::string _type; ///< builtin, NI (Not Installed), installed
+//	std::string _type; ///< builtin, NI (Not Installed), installed
+	En_Type     _type;
 	Command() = default;
 	Command( const std::vector<std::string>& vin )
 	{
@@ -130,7 +132,7 @@ struct Command
 		_name    = vin[0];
 		_comment = vin[2];
 		_seealso = vin[3];
-		_type    = vin[4];
+		_type    = En_Type( std::stoi( vin[4] ) );
 
 // fill the categories
 		auto cats = split_string( vin[1], '-' );
@@ -159,20 +161,7 @@ readCSV_cmd( std::string filename )
 		if( elems.size() > 2 )
 		{
 			Command cmd( elems );
-			if( cmd._type == "_builtin_" )  // TODO replace with enum and switch/case
-				nbt[0]++;
-			else
-			{
-				if( cmd._type == "_installed_" )
-					nbt[1]++;
-				else
-				{
-					if( cmd._type == "NI" )
-						nbt[2]++;
-					else
-						assert(0);
-				}
-			}
+			nbt[cmd._type]++;
 			vout.emplace_back( cmd );
 		}
 	}
@@ -255,7 +244,9 @@ genListAlpha(
 	auto cmds          = commands.first; // can't use a reference, 'cause it needs to be sorted afterward
 	const auto& nbcmds = commands.second;	
 	f << cmds.size() << " commandes<br>\n";
-	f << nbcmds[0] << " _builtin_, " << nbcmds[1] << " _installed_, " << nbcmds[2] << " NI (_not installed_)\n\n";
+	f << nbcmds[T_BUILTIN] << " _builtin_, "
+		<< nbcmds[T_PRESENT] << " _installed_, "
+		<< nbcmds[T_NOTPRESENT] << " NI (_not installed_)\n\n";
 
 	std::sort( cmds.begin(), cmds.end() );
 	auto first_letter = cmds[0]._name.at(0);
@@ -299,7 +290,7 @@ genListAlpha(
 			auto letter = cmd._seealso.at(0);
 			f << "[" << cmd._seealso << "](#" << letter << ")";
 		}
-		f << " | " << cmd._type << " |\n";		
+		f << " | " << getString(cmd._type) << " |\n";		
 	}
 	printfooter(f);
 }
@@ -361,7 +352,7 @@ genCat(
 			auto letter = cmd._seealso.at(0);
 			f << "[" << cmd._seealso << "](linux_cmds_list_alpha.md#" << letter << ")";
 		}
-		f << " | " << cmd._type << " |\n";
+		f << " | " << getString(cmd._type) << " |\n";
 	}
 }
 
@@ -397,25 +388,30 @@ genListCat(
 }
 
 //--------------------------------------------------
-/*
+
 void
 printForType(
-	std::string                   fn,
+	std::ofstream&                f,
 	const std::vector<Command>&   cmds,
-	EN_TYPE                       type
+	En_Type                       type
 )
 {
-	f << "| Nom | Description | Catégorie | Voir aussi |\n"
+	f << "## Commandes \"" << getString( type ) << "\"\n\n"
+		<< "| Nom | Description | Catégorie | Voir aussi |\n"
 		<< "|------|------|------|------|------|\n";
 		
 	for( const auto& cmd: cmds )
 		if( cmd._type == type )
 		{
 			f << "| " << cmd._name
-				<< " | " << cmd._cat
+				<< " | " << cmd._comment
+//				<< " | [" << cmd._cats[0].second
+//				<< "](linux_cmds_list_cat.md#" << cmd._cats[0].first <<") |\n";
 				<< " |\n";
 		}
-*/
+	f << "\n";
+}
+
 
 void
 genListType(
@@ -426,17 +422,18 @@ genListType(
 	std::ofstream f( fn );
 	assert( f.is_open() );
 	f << "# Linux Shell: liste de commandes par type\n\n"
-		<< "<a href='linux_cmds_list_alpha.md'>Liste alphabétique</a>\n\n"
+		<< "<a href='linux_cmds_list_alpha.md'>Liste alphabétique</a> - "
+		<< "[Liste par catégorie](linux_cmds_list_cat.md)\n\n"
 		<< "<a name='top'></a>\n\n";
 
 	std::sort( cmds.begin(), cmds.end() );
 	auto first_letter = cmds[0]._name.at(0);
 	bool start = true;
 
-/*	printForType( f, cmds, "_builtin_" );
-	printForType( f, cmds, "_installed_" );
-	printForType( f, cmds, "NI" );
-*/
+	printForType( f, cmds, T_BUILTIN );
+	printForType( f, cmds, T_PRESENT );
+	printForType( f, cmds, T_NOTPRESENT );
+
 	printfooter(f);
 }
 
