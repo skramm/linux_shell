@@ -242,7 +242,7 @@ printCategories(
 	{
 		if( t++ > 0 )
 			f << " - ";
-		f << "[" << cat.second << "](linux_cmds_list_cat.md#cat" << cat.first << ".md)";
+		f << "[" << cat.second << "](linux_cmds_list_cat.md#cat" << cat.first << ")";
 	}
 }
 
