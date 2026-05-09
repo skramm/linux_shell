@@ -25,7 +25,7 @@ jobs:
         run: cd content; g++ linux_gen.cpp
       - name: Exécution
         run: cd content; ./a.out out.csv
-
+      - run: ls -l /tmp
       - run: rm content/out.csv
 
       - name: Ajout version OS
