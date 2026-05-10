@@ -56,6 +56,9 @@ std::vector<std::string> mantitles = {
 	,"SEE ALSO"
 	,"SUMMARY"
 	,"OUTPUT"
+	,"AUTHOR"
+	,"COPYRIGHT"
+	,"COMMANDS"
 };
 
 using Categories = std::vector<std::pair<int,std::string>>;
@@ -380,7 +383,7 @@ printManLink(
 			f << "[" << cmd._name << "](man/help_" << cmd._name << ".md)";
 		break;
 		case MT_NONE:
-			f << cmd._name << " ( [G](https://www.google.fr/search?q=linux+" << cmd._name << ") ";
+			f << cmd._name << " ([G](https://www.google.fr/search?q=linux+" << cmd._name << "))";
 		break;
 		default:
 			assert(0);

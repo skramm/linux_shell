@@ -17,17 +17,18 @@ Sebastien Kramm - IUT RT Rouen
 Pour d'autres shell ou distribution, il est possible que quelques commandes diffèrent.
 
 * Un tel répertoire est par nature arbitraire, aucune prétention d'exhaustivité.
-Sont notamment omis un certains nombre d'outils orientés "dev/système", par exemple la suite ["GNU Binutils"](https://www.gnu.org/software/binutils/).
+Sont notamment omis un certains nombre d'outils orientés "dev/système", par exemple la suite ["GNU Binutils"](https://www.gnu.org/software/binutils/),
+ou des commandes "_builtin_" peu utilisées.
 
 * Certaines commandes apparaissent dans plusieurs catégories, ce qui explique que le nombre de commande diffère entre la liste alphabétique et la liste par catégorie.
 
 * Les 2 pages ci-dessous sont générées automatiquement via une intégration continue, à partir de 2 fichiers CSV
 (voir dossier [content/](content/)).
 
-* La première colonne contient un **lien** Google sur la commande en question.
-Pensez à faire un clic-droit->"ouvrir dans un nouvel onglet" pour ne pas perdre la page d'origine.
+* La première colonne contient un lien vers la page de "man" (ou "help") correspondante, générée via la CI.
 
-* La dernière colonne indique s'il s'agit d'un _builtin_ (commande native du shell) ou d'un programme externe, qui peut alors être existant ou pas sur la VM Github: _installed_ ou NI (_Not Installed_).
+* La dernière colonne indique s'il s'agit d'un _builtin_ (commande native du shell) ou d'un programme externe, qui peut alors être existant ou pas sur la VM Github:
+_installed_ ou NI (_Not Installed_).
 Dans ces derniers cas, cela signifie qu'il faille peut-être l'installer sur votre machine avant de pouvoir l'utiliser.
 
 
