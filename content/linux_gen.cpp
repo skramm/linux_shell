@@ -55,6 +55,7 @@ std::vector<std::string> mantitles = {
 	,"AUTHORS"
 	,"SEE ALSO"
 	,"SUMMARY"
+	,"OUTPUT"
 };
 
 using Categories = std::vector<std::pair<int,std::string>>;
@@ -364,6 +365,29 @@ printRelatedCommands(
 }
 
 //--------------------------------------------------
+void
+printManLink(
+	std::ofstream& f,
+	const Command& cmd
+)
+{
+	switch( cmd._mantype )
+	{
+		case MT_MAN:
+			f << "[" << cmd._name << "](man/man_" << cmd._name << ".md)";
+		break;
+		case MT_HELP:
+			f << "[" << cmd._name << "](man/help_" << cmd._name << ".md)";
+		break;
+		case MT_NONE:
+			f << cmd._name << " ( [G](https://www.google.fr/search?q=linux+" << cmd._name << ") ";
+		break;
+		default:
+			assert(0);
+	}
+}
+
+//--------------------------------------------------
 /// Generation of alphabetical list
 void
 genListAlpha(
@@ -392,10 +416,6 @@ genListAlpha(
 	bool start = true;
 	for( const auto& cmd: cmds )
 	{
-//		EnManType mtype = NONE;
-//		if( cmd._type != "NI" )        // generate man page
-//			mtype = generate_man( cmd._name );
-	
 		auto first = cmd._name.at(0);
 		if( first != first_letter || start )
 		{
@@ -412,22 +432,8 @@ genListAlpha(
 		}
 
 		f << "| ";
-		
-		switch( cmd._mantype )
-		{
-			case MT_MAN:
-				f << "[" << cmd._name << "](man/man_" << cmd._name << ".md";
-			break;
-			case MT_HELP:
-				f << "[" << cmd._name << "](man/help_" << cmd._name << ".md";
-			break;
-			case MT_NONE:
-				f << cmd._name << " ( [G](https://www.google.fr/search?q=linux+" << cmd._name << ") ";
-			break;
-			default:
-				assert(0);
-		}
-		f << ") | "<< cmd._comment << " | ";
+		printManLink( f, cmd );
+		f << " | " << cmd._comment << " | ";
 
 
 		printCategories( f, cmd, categs );
@@ -486,11 +492,9 @@ genCat(
 	
 	for( const auto& cmd: newvec )
 	{
-		f << "| <a href='https://www.google.fr/search?q=linux+"
-			<< cmd._name << "'>" 
-			<< cmd._name << "</a> | "
-			<< cmd._comment << " | ";
-
+		f << "| ":
+		printManLink( f, cmd );
+		f << " | " << cmd._comment << " | ";
 		printRelatedCommands( f, cmd );
 		f << " | " << getString(cmd._type) << " |\n";
 	}
