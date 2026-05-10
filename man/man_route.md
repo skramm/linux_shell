@@ -162,7 +162,7 @@
               This adds a IPv6 route with the specified metric to be  directly
               reachable via eth0.
 
-OUTPUT
+## OUTPUT
        The  output  of  the kernel routing table is organized in the following
        columns
 

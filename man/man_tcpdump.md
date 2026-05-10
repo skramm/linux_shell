@@ -675,7 +675,7 @@
        ping packets):
               tcpdump 'icmp[icmptype] != icmp-echo and icmp[icmptype] != icmp-echoreply'
 
-OUTPUT FORMAT
+## OUTPUT FORMAT
        The output of tcpdump is protocol dependent.   The  following  gives  a
        brief description and examples of most of the formats.
 

@@ -165,7 +165,7 @@
        -Z ciphersuite
               Specify SSL/TLS cipher suite (See openssl ciphers)
 
-OUTPUT
+## OUTPUT
        The following list describes the values returned by ab:
 
        Server Software

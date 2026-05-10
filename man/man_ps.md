@@ -261,7 +261,7 @@ PROCESS SELECTION BY LIST
               Select by effective user ID (EUID) or name.  Identical to -u and
               U.
 
-OUTPUT FORMAT CONTROL
+## OUTPUT FORMAT CONTROL
        These  options are used to choose the information displayed by ps.  The
        output may differ by personality.
 
@@ -343,7 +343,7 @@ OUTPUT FORMAT CONTROL
 
        Z      Add a column of security data.  Identical to -M (for SELinux).
 
-OUTPUT MODIFIERS
+## OUTPUT MODIFIERS
        c      Show  the  true  command name.  This is derived from the name of
               the executable file, rather than from the argv  value.   Command
               arguments  and  any  modifications  to  them are thus not shown.

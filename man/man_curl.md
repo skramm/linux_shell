@@ -128,7 +128,7 @@ VARIABLES
 
        Command line variables and expansions were added in in 8.3.0.
 
-OUTPUT
+## OUTPUT
        If not told otherwise, curl writes the received data to stdout. It  can
        be  instructed  to  instead save that data into a local file, using the
        -o, --output or -O, --remote-name options. If curl  is  given  multiple

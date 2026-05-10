@@ -1384,7 +1384,7 @@ SECURITY
        lsof's modes might confer on it from letting it read files not normally
        accessible via the authority of the real user ID.
 
-OUTPUT
+## OUTPUT
        This  section  describes the information lsof lists for each open file.
        See the OUTPUT FOR OTHER PROGRAMS section for additional information on
        output that can be processed by another program.
@@ -2044,7 +2044,7 @@ LOCKS
        BUGS section of this manual page or the lsof FAQ (The FAQ section gives
        its location.)  for more information.
 
-OUTPUT FOR OTHER PROGRAMS
+## OUTPUT FOR OTHER PROGRAMS
        When  the -F option is specified, lsof produces output that is suitable
        for processing by another program - e.g, an awk or Perl script, or a  C
        program.

@@ -145,7 +145,7 @@
    -C
        Print routing information from the route cache.
 
-OUTPUT
+## OUTPUT
    Active Internet connections (TCP, UDP, UDPLite, raw)
    Proto
        The protocol (tcp, udp, udpl, raw) used by the socket.

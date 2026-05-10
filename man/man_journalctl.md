@@ -337,7 +337,7 @@ FILTERING OPTIONS
 
            Added in version 205.
 
-OUTPUT OPTIONS
+## OUTPUT OPTIONS
        The following options control how journal records are printed:
 
        -o, --output=
