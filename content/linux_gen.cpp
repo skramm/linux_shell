@@ -492,7 +492,7 @@ genCat(
 	
 	for( const auto& cmd: newvec )
 	{
-		f << "| ":
+		f << "| ";
 		printManLink( f, cmd );
 		f << " | " << cmd._comment << " | ";
 		printRelatedCommands( f, cmd );
