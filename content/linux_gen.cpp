@@ -154,11 +154,16 @@ En_ManType
 generateMan( std::string name )
 {
 	std::stringstream oss;
-	oss << "man " << name << " >/tmp/manfile 2>/dev/null";
+	oss << "man " << name << " 1>/tmp/manfile 2>/dev/null";
 	std::cout << "RUN: " << oss.str() << "\n";
+	std::system( "echo 'ls -l /tmp'" );
+	std::system( "ls -l /tmp" );
+
+	std::system( "echo 'ls -l /tmp/man*'" );
 	std::system( "ls -l /tmp/man*" );
-	std::system( "head /tmp/manfile" );
-	
+//	std::system( "head /tmp/manfile" );
+
+#if 0
 	auto ret = std::system( oss.str().c_str() ); // run "man"
 	if( ret != 0 )                               // if no manual, then try with 'help'
 	{ 
@@ -184,7 +189,7 @@ generateMan( std::string name )
 		{
 			std::stringstream oss3;
 			// -E: extended regular expressions
-			oss3 << "sed -E 's/^" << title << "/## " << title << "/' ../man/man_" << name << ".md";
+			oss3 << "sed -i -E 's/^" << title << "/## " << title << "/' ../man/man_" << name << ".md";
 			std::cout << "RUN: " << oss3.str() << "\n";
 			auto ret3 = std::system( oss3.str().c_str() );
 			if( ret3 != 0 )
@@ -194,6 +199,8 @@ generateMan( std::string name )
 		}
 		return MT_MAN;
 	}
+#endif
+	return MT_NONE; // TMP
 }
 
 /// Type of command on local machine
@@ -226,7 +233,7 @@ struct Command
 	std::string _comment;
 	std::string _seealso;
 	En_Type     _type;
-	En_ManType  _mantype;
+	En_ManType  _mantype = MT_NONE;
 	
 	Command() = default;
 	Command( const std::vector<std::string>& vin )
