@@ -156,15 +156,17 @@ generateMan( std::string name )
 	std::stringstream oss;
 	oss << "man " << name << " 1>/tmp/manfile 2>/dev/null";
 	std::cout << "RUN: " << oss.str() << "\n" << std::flush;
+
+	auto ret = std::system( oss.str().c_str() ); // run "man"
 	std::system( "echo 'ls -l /tmp'" );
 	std::system( "ls -l /tmp" );
 
 	std::system( "echo 'ls -l /tmp/man*'" );
 	std::system( "ls -l /tmp/man*" );
-//	std::system( "head /tmp/manfile" );
+	std::system( "head /tmp/manfile" );
+
 
 #if 0
-	auto ret = std::system( oss.str().c_str() ); // run "man"
 	if( ret != 0 )                               // if no manual, then try with 'help'
 	{ 
 		createHeader( "help", name );
