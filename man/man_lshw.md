@@ -156,7 +156,7 @@ COPYING
        lshw  is distributed under the GNU GENERAL PUBLIC LICENSE (GPL) version
        2.
 
-AUTHOR
+## AUTHOR
        lshw is maintained by Lyonel Vincent <lyonel@ezix.org>.
 
 OTHER INFO

@@ -153,7 +153,7 @@ DIAGNOSTICS
        APT bug page[1]. If you wish to report a bug in APT, please see
        /usr/share/doc/debian/bug-reporting.txt or the reportbug(1) command.
 
-AUTHOR
+## AUTHOR
        APT team
 
 ## NOTES

@@ -3239,7 +3239,7 @@ COLORS
 
            https://github.com/jqlang/jq/issues
 
-AUTHOR
+## AUTHOR
        Stephen Dolan <mu@netsoc.tcd.ie>
 
                                  December 2023                           JQ(1)

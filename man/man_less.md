@@ -35,7 +35,7 @@
        decimal number, called N in the descriptions below.  The number is used
        by some commands, as indicated.
 
-COMMANDS
+## COMMANDS
        In  the following descriptions, ^X means control-X.  ESC stands for the
        ESCAPE key; for example ESC-v means the  two  character  sequence  "ES‐
        CAPE", then "v".
@@ -1822,7 +1822,7 @@ COMPATIBILITY WITH MORE
 ## SEE ALSO
        lesskey(1)
 
-COPYRIGHT
+## COPYRIGHT
        Copyright (C) 1984-2021  Mark Nudelman
 
        less  is  part of the GNU project and is free software.  You can redis‐
@@ -1840,7 +1840,7 @@ COPYRIGHT
        NESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License  for
        more details.
 
-AUTHOR
+## AUTHOR
        Mark Nudelman
        Report bugs at https://github.com/gwsw/less/issues.
        For more information, see the less homepage at

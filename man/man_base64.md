@@ -40,14 +40,14 @@
        of  the formal base64 alphabet.  Use --ignore-garbage to attempt to re‐
        cover from any other non-alphabet bytes in the encoded stream.
 
-AUTHOR
+## AUTHOR
        Written by Simon Josefsson.
 
 ## REPORTING BUGS
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report any translation bugs to <https://translationproject.org/team/>
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This  is  free  software:  you  are free to change and redistribute it.

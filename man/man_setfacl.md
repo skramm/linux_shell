@@ -227,7 +227,7 @@ CONFORMANCE TO POSIX 1003.1e DRAFT STANDARD 17
        abled.   The  ``default:''  prefix  is disabled.  The -x and -X options
        also accept permission fields (and ignore them).
 
-AUTHOR
+## AUTHOR
        Andreas Gruenbacher, <andreas.gruenbacher@gmail.com>.
 
        Please send your bug reports, suggested features and  comments  to  the

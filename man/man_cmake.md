@@ -1546,7 +1546,7 @@ VIEW HELP
 
               The Discourse Forum hosts discussion and questions about CMake.
 
-COPYRIGHT
+## COPYRIGHT
        2000-2024 Kitware, Inc. and Contributors
 
 3.31.6                           Feb 24, 2025                         CMAKE(1)

@@ -123,14 +123,14 @@ RESTRICTED DELETION FLAG OR STICKY BIT
        Each          MODE          is          of           the           form
        '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'.
 
-AUTHOR
+## AUTHOR
        Written by David MacKenzie and Jim Meyering.
 
 ## REPORTING BUGS
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report any translation bugs to <https://translationproject.org/team/>
 
-COPYRIGHT
+## COPYRIGHT
        Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This is free software: you are free  to  change  and  redistribute  it.

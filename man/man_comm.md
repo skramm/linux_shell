@@ -57,14 +57,14 @@
        comm -3 file1 file2
               Print lines in file1 not in file2, and vice versa.
 
-AUTHOR
+## AUTHOR
        Written by Richard M. Stallman and David MacKenzie.
 
 ## REPORTING BUGS
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report any translation bugs to <https://translationproject.org/team/>
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This  is  free  software:  you  are free to change and redistribute it.

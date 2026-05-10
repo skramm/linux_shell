@@ -242,7 +242,7 @@ DEBIAN SPECIFIC
 ## SEE ALSO
        crontab(1), crontab(5), run-parts(8)
 
-AUTHOR
+## AUTHOR
        Paul Vixie <paul@vix.com> is the author of cron and original creator of
        this manual page.  This page has also been modified for Debian by Steve
        Greenland, Javier Fernandez-Sanguino and Christian Kastner.

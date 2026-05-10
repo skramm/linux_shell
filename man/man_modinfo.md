@@ -64,7 +64,7 @@
            license, parm and filename arguments, to ease the transition from
            the old modutils modinfo.
 
-COPYRIGHT
+## COPYRIGHT
        This manual page originally Copyright 2003, Rusty Russell, IBM
        Corporation. Maintained by Jon Masters and others.
 

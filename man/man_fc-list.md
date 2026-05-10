@@ -63,7 +63,7 @@
        The fontconfig user's guide, in  HTML  format:  /usr/share/doc/fontcon‐
        fig/fontconfig-user.html.
 
-AUTHOR
+## AUTHOR
        This  manual  page was written by Keith Packard <keithp@keithp.com> and
        Josselin Mouette <joss@debian.org>.
 

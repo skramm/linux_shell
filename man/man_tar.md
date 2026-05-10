@@ -1160,7 +1160,7 @@ NOTE
 BUG REPORTS
        Report bugs to <bug-tar@gnu.org>.
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 2023 Free Software Foundation, Inc.
        License GPLv3+: GNU GPL version 3 or later <http://gnu.org/li‐
        censes/gpl.html>

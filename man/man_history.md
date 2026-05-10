@@ -9,7 +9,7 @@
 ## NAME
        history - GNU History Library
 
-COPYRIGHT
+## COPYRIGHT
        The GNU History Library is Copyright (C) 1989-2020 by the Free Software
        Foundation, Inc.
 

@@ -328,7 +328,7 @@ PERFORMANCE NOTES
        build  yourself  an unlimited version if you can recompile it with May‐
        beUInt64 set to be an unsigned 64-bit integer.
 
-AUTHOR
+## AUTHOR
        Julian Seward, jseward@acm.org.
 
        https://sourceware.org/bzip2/

@@ -370,7 +370,7 @@ DIAGNOSTICS
        GNU gzip home page: <https://www.gnu.org/software/gzip/>
        General help using GNU software: <https://www.gnu.org/gethelp/>
 
-COPYRIGHT NOTICE
+## COPYRIGHT NOTICE
        Copyright © 1998-1999, 2001-2002, 2012, 2015-2022 Free Software Founda‐
        tion, Inc.
        Copyright © 1992, 1993 Jean-loup Gailly

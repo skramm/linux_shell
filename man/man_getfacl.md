@@ -146,7 +146,7 @@ CONFORMANCE TO POSIX 1003.1e DRAFT STANDARD 17
        haves  as  if it was invoked as ``getfacl -''.  No flags comments indi‐
        cating the setuid, setgid, and sticky bits are generated.
 
-AUTHOR
+## AUTHOR
        Andreas Gruenbacher, <andreas.gruenbacher@gmail.com>.
 
        Please send your bug reports and comments to the above address.

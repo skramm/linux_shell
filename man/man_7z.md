@@ -179,7 +179,7 @@
 ## SEE ALSO
        7-Zip https://www.7-zip.org/
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 1999-2023 Igor Pavlov.
        Distributed under the LGPL-2.1+ license.
 

@@ -25,7 +25,7 @@
        Python 2, while pip3 is the command to use when installing packages for
        Python 3.
 
-COMMANDS
+## COMMANDS
        The  command comes before any options.  The following commands are rec‐
        ognized:
 
@@ -233,7 +233,7 @@ UNINSTALL OPTIONS
        under the terms of the GNU General Public License,  version  3  or  any
        later version published by the Free Software Foundation.
 
-AUTHOR
+## AUTHOR
        Barry Warsaw <barry@debian.org>
 
 1.5.6                             2014-06-03                            PIP(1)

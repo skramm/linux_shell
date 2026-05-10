@@ -298,7 +298,7 @@
        bug-findutils mailing list:
               <https://lists.gnu.org/mailman/listinfo/bug-findutils>
 
-COPYRIGHT
+## COPYRIGHT
        Copyright  ©  1990-2022 Free Software Foundation, Inc.  License GPLv3+:
        GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This is free software: you are free  to  change  and  redistribute  it.

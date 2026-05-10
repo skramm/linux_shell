@@ -37,7 +37,7 @@
        -V --version
            Show version of program and exit.
 
-COPYRIGHT
+## COPYRIGHT
        This manual page originally Copyright 2002, Rusty Russell, IBM
        Corporation. Maintained by Jon Masters and others.
 

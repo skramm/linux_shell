@@ -205,7 +205,7 @@
        The MODPROBE_OPTIONS environment variable can also be used to pass
        arguments to modprobe.
 
-COPYRIGHT
+## COPYRIGHT
        This manual page originally Copyright 2002, Rusty Russell, IBM
        Corporation. Maintained by Jon Masters and others.
 

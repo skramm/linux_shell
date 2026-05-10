@@ -66,14 +66,14 @@
        Note:  'uniq'  does not detect repeated lines unless they are adjacent.
        You may want to sort the input first, or use 'sort -u' without 'uniq'.
 
-AUTHOR
+## AUTHOR
        Written by Richard M. Stallman and David MacKenzie.
 
 ## REPORTING BUGS
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report any translation bugs to <https://translationproject.org/team/>
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This  is  free  software:  you  are free to change and redistribute it.

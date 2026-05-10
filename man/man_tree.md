@@ -326,7 +326,7 @@ MISC OPTIONS
        STDDATA_FD     Enable the stddata feature, optionally set descriptor to
        use.
 
-AUTHOR
+## AUTHOR
        Steve Baker (ice@mama.indstate.edu)
        HTML output hacked by Francesc Rocher (rocher@econ.udg.es)
        Charsets and OS/2 support by Kyosuke Tokoro (NBG01720@nifty.ne.jp)

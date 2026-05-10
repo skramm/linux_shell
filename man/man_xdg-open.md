@@ -72,7 +72,7 @@ EXIT CODES
        Jeremy White
            Author.
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 2006
 
 ## NOTES

@@ -119,14 +119,14 @@
        is  safe  in  GNU  systems, so you can avoid this issue in the shell by
        running LC_ALL=C tr instead of plain tr.
 
-AUTHOR
+## AUTHOR
        Written by Jim Meyering.
 
 ## REPORTING BUGS
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report any translation bugs to <https://translationproject.org/team/>
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This  is  free  software:  you  are free to change and redistribute it.

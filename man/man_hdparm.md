@@ -735,7 +735,7 @@ ATA Security Feature Set
        two  instances of hdparm consecutively and issue the two necessary com‐
        mands that way.
 
-AUTHOR
+## AUTHOR
        hdparm has been written by Mark Lord  <mlord@pobox.com>,  the  original
        primary  developer  and  maintainer of the (E)IDE driver for Linux, and
        current contributor to the libata subsystem, along with suggestions and

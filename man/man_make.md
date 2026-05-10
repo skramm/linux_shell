@@ -268,12 +268,12 @@ PARALLEL MAKE AND THE JOBSERVER
 ## BUGS
        See the chapter ``Problems and Bugs'' in The GNU Make Manual.
 
-AUTHOR
+## AUTHOR
        This  manual  page  contributed by Dennis Morse of Stanford University.
        Further updates contributed by Mike Frysinger.  It has been reworked by
        Roland McGrath.  Maintained by Paul Smith.
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 1992-1993, 1996-2016 Free Software Foundation,  Inc.   This
        file is part of GNU make.
 

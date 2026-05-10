@@ -231,7 +231,7 @@
        Linux 1.1.22. irtt support and merged with netstat  from  Bernd  Ecken‐
        fels.
 
-AUTHOR
+## AUTHOR
        Currently  maintained  by Phil Blundell <Philip.Blundell@pobox.com> and
        Bernd Eckenfels <net-tools@lina.inka.de>.
 

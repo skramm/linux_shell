@@ -56,7 +56,7 @@
 ## SEE ALSO
        lspci(8), usbview(8).
 
-AUTHOR
+## AUTHOR
        Thomas Sailer, <sailer@ife.ee.ethz.ch>.
 
 usbutils-017                   11 February 2019                       lsusb(8)

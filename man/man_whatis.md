@@ -146,7 +146,7 @@
 ## SEE ALSO
        apropos(1), man(1), mandb(8)
 
-AUTHOR
+## AUTHOR
        Wilf. (G.Wilford@ee.surrey.ac.uk).
        Fabrizio Polacco (fpolacco@debian.org).
        Colin Watson (cjwatson@debian.org).

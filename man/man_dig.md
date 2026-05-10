@@ -705,10 +705,10 @@ RETURN CODES
 ## BUGS
        There are probably too many query options.
 
-AUTHOR
+## AUTHOR
        Internet Systems Consortium
 
-COPYRIGHT
+## COPYRIGHT
        2026, Internet Systems Consortium
 
 9.18.39-0ubuntu0.24.04.3-Ubuntu   2025-08-13                            DIG(1)

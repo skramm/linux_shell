@@ -76,7 +76,7 @@
        -V, --version
            Print version and exit.
 
-COMMANDS
+## COMMANDS
        Interactive commands for more are based on vi(1). Some commands may be
        preceded by a decimal number, called k in the descriptions below. In
        the following descriptions, ^X means control-X.

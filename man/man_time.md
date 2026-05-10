@@ -203,7 +203,7 @@ DIAGNOSTICS
        value of time is the return  value  of  the  program  it  executed  and
        measured.   Otherwise,  the  return value is 128 plus the number of the
        signal which caused the program to stop or terminate.
-AUTHOR
+## AUTHOR
        time was written by David MacKenzie.  This man page was added  by  Dirk
        Eddelbuettel <edd@debian.org>, the Debian GNU/Linux maintainer, for use
        by  the  Debian  GNU/Linux  distribution  but  may of course be used by

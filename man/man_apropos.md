@@ -160,7 +160,7 @@
 ## SEE ALSO
        man(1), whatis(1), mandb(8)
 
-AUTHOR
+## AUTHOR
        Wilf. (G.Wilford@ee.surrey.ac.uk).
        Fabrizio Polacco (fpolacco@debian.org).
        Colin Watson (cjwatson@debian.org).

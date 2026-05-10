@@ -22,7 +22,7 @@
        trying to link the module is now done inside the kernel, the dmesg
        usually gives more information about errors.
 
-COPYRIGHT
+## COPYRIGHT
        This manual page originally Copyright 2002, Rusty Russell, IBM
        Corporation. Maintained by Jon Masters and others.
 

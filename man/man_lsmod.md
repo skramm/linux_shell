@@ -17,7 +17,7 @@
        lsmod is a trivial program which nicely formats the contents of the
        /proc/modules, showing what kernel modules are currently loaded.
 
-COPYRIGHT
+## COPYRIGHT
        This manual page originally Copyright 2002, Rusty Russell, IBM
        Corporation. Maintained by Jon Masters and others.
 

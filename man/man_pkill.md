@@ -225,7 +225,7 @@ OPERANDS
        ps(1), regex(7), signal(7), sigqueue(3), killall(1), skill(1), kill(1),
        kill(2), cgroups(8).
 
-AUTHOR
+## AUTHOR
        Kjetil Torgrim Homme
 
 ## REPORTING BUGS

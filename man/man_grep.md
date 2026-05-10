@@ -597,7 +597,7 @@ REGULAR EXPRESSIONS
        This man page is maintained only fitfully; the  full  documentation  is
        often more up-to-date.
 
-COPYRIGHT
+## COPYRIGHT
        Copyright 1998-2000, 2002, 2005-2023 Free Software Foundation, Inc.
 
        This is free software; see the source for copying conditions.  There is

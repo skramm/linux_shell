@@ -514,7 +514,7 @@ USAGE EXAMPLES
        ip(8),
        RFC 793 - https://tools.ietf.org/rfc/rfc793.txt (TCP states)
 
-AUTHOR
+## AUTHOR
        ss was written by Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>.
 
        This manual page was written by Michael Prokop <mika@grml.org> for  the

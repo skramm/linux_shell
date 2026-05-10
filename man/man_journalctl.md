@@ -614,7 +614,7 @@ FORWARD SECURE SEALING (FSS) OPTIONS
 
            Added in version 206.
 
-COMMANDS
+## COMMANDS
        The following commands are understood. If none is specified the default
        is to display journal records.
 

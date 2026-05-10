@@ -408,7 +408,7 @@ PARSING SYNTAX
 
              %if #{==:#{host},myhost} set -g status-style bg=red %endif
 
-COMMANDS
+## COMMANDS
        This  section  describes the commands supported by tmux.  Most commands
        accept the  optional  -t  (and  sometimes  -s)  argument  with  one  of
        target-client,  target-session,  target-window,  or target-pane.  These

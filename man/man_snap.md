@@ -19,7 +19,7 @@
        ties.
 
 ## OPTIONS
-COMMANDS
+## COMMANDS
    abort
        Abort a pending change
 

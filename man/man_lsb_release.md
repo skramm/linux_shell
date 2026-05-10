@@ -67,7 +67,7 @@
 ## SEE ALSO
        os-release(5)
 
-AUTHOR
+## AUTHOR
        Gioele Barabucci <https://gioele.io>
 
 LICENSE

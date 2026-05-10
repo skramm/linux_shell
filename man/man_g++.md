@@ -29820,12 +29820,12 @@ FOOTNOTES
        gpl(7),  gfdl(7), fsf-funding(7), cpp(1), gcov(1), as(1), ld(1), gdb(1)
        and the Info entries for gcc, cpp, as, ld, binutils and gdb.
 
-AUTHOR
+## AUTHOR
        See       the        Info        entry        for        gcc,        or
        <https://gcc.gnu.org/onlinedocs/gcc/Contributors.html>,             for
        contributors to GCC.
 
-COPYRIGHT
+## COPYRIGHT
        Copyright (c) 1988-2023 Free Software Foundation, Inc.
 
        Permission is granted to copy, distribute and/or modify  this  document

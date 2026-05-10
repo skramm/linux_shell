@@ -5004,7 +5004,7 @@ THANKS
        well and David Bell.  I've probably missed some people, my apologies if
        I have.
 
-AUTHOR
+## AUTHOR
        Rsync  was  originally  written  by Andrew Tridgell and Paul Mackerras.
        Many people have later contributed to it. It is currently maintained by
        Wayne Davison.

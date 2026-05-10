@@ -80,7 +80,7 @@
 ## SEE ALSO
        shutdown(8), init(8), halt(8), reboot(8), killall5(8)
 
-AUTHOR
+## AUTHOR
        Miquel van Smoorenburg
 
 sysvinit                          01 Sep 1998                         PIDOF(8)

@@ -17,7 +17,7 @@
        loginctl may be used to introspect and control the state of the
        systemd(1) login manager systemd-logind.service(8).
 
-COMMANDS
+## COMMANDS
        The following commands are understood:
 
    Session Commands

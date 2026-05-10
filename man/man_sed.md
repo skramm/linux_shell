@@ -285,7 +285,7 @@ REGULAR EXPRESSIONS
        E-mail bug reports to bug-sed@gnu.org.  Also, please include the output
        of ``sed --version'' in the body of your report if at all possible.
 
-AUTHOR
+## AUTHOR
        Written by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo Bonzini, Jim Mey‐
        ering, and Assaf Gordon.
 

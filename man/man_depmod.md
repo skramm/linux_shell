@@ -113,7 +113,7 @@
        -w
            Warn on duplicate dependencies, aliases, symbol versions, etc.
 
-COPYRIGHT
+## COPYRIGHT
        This manual page originally Copyright 2002, Rusty Russell, IBM
        Corporation. Portions Copyright Jon Masters, and others.
 

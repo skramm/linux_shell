@@ -174,10 +174,10 @@ IDN SUPPORT
 ## SEE ALSO
        dig(1), host(1), named(8).
 
-AUTHOR
+## AUTHOR
        Internet Systems Consortium
 
-COPYRIGHT
+## COPYRIGHT
        2026, Internet Systems Consortium
 
 9.18.39-0ubuntu0.24.04.3-Ubuntu   2025-08-13                       NSLOOKUP(1)

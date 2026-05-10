@@ -272,7 +272,7 @@ WARNINGS
 VERSION
        This manual page documents xxd version 1.7
 
-AUTHOR
+## AUTHOR
        (c) 1990-1997 by Juergen Weigert
        <jnweiger@informatik.uni-erlangen.de>
 

@@ -19,7 +19,7 @@
        introduction into the basic concepts and functionality this tool
        manages.
 
-COMMANDS
+## COMMANDS
        The following commands are understood:
 
    Unit Commands (Introspection and Modification)

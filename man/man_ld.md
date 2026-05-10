@@ -3075,7 +3075,7 @@
        ar(1),  nm(1),  objcopy(1), objdump(1), readelf(1) and the Info entries
        for binutils and ld.
 
-COPYRIGHT
+## COPYRIGHT
        Copyright (c) 1991-2024 Free Software Foundation, Inc.
 
        Permission is granted to copy, distribute and/or modify  this  document

@@ -251,7 +251,7 @@ IP - COMMAND SYNTAX
        done.   You  do not have to be subscribed to the list to send a message
        there.
 
-AUTHOR
+## AUTHOR
        Original Manpage by Michail Litvak <mci@owl.openwall.com>
 
 iproute2                          20 Dec 2011                            IP(8)

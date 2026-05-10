@@ -650,7 +650,7 @@ MEMORY SIZES
        and  <pcp@groups.io> communities, and forms part of the Performance Co-
        Pilot suite of tools.
 
-COPYRIGHT
+## COPYRIGHT
        Copyright © 2004-2019 Hisham Muhammad.
        Copyright © 2020-2024 htop dev team.
 

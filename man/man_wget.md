@@ -2094,12 +2094,12 @@
        Also  see  wget2(1),  the  updated version of GNU Wget with even better
        support for recursive downloading and modern protocols like HTTP/2.
 
-AUTHOR
+## AUTHOR
        Originally written by Hrvoje  Nikšić  <hniksic@xemacs.org>.   Currently
        maintained   by   Darshit   Shah   <darnir@gnu.org>   and   Tim  Rühsen
        <tim.ruehsen@gmx.de>.
 
-COPYRIGHT
+## COPYRIGHT
        Copyright (c) 1996--2011, 2015, 2018--2023  Free  Software  Foundation,
        Inc.
 

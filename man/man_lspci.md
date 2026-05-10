@@ -286,7 +286,7 @@ MACHINE READABLE OUTPUT
 ## SEE ALSO
        setpci(8), pci.ids(5), update-pciids(8), pcilib(7)
 
-AUTHOR
+## AUTHOR
        The PCI Utilities are maintained by Martin Mares <mj@ucw.cz>.
 
 pciutils-3.10.0                   01 May 2023                         lspci(8)

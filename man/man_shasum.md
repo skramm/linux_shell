@@ -77,7 +77,7 @@
 
                perl -e "print qq(0001100)" | shasum -0 -a 224
 
-AUTHOR
+## AUTHOR
        Copyright (C) 2003-2023 Mark Shelor <mshelor@cpan.org>.
 
 ## SEE ALSO

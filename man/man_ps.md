@@ -1262,7 +1262,7 @@ PERSONALITY
        4   X/Open System Interfaces Extension [UP XSI]
        5   ISO/IEC 9945:2003
 
-AUTHOR
+## AUTHOR
        ps was  originally  written  by  Branko Lankester.   Michael K. Johnson
        re-wrote  it  significantly  to use the proc filesystem, changing a few
        things in the process.  Michael Shields  added  the  pid-list  feature.

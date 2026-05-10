@@ -67,7 +67,7 @@ DATE STRING
        day.   The date string format is more complex than is easily documented
        here but is fully described in the info documentation.
 
-AUTHOR
+## AUTHOR
        Written by Paul Rubin, Arnold Robbins, Jim  Kingdon,  David  MacKenzie,
        and Randy Smith.
 
@@ -75,7 +75,7 @@ AUTHOR
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report any translation bugs to <https://translationproject.org/team/>
 
-COPYRIGHT
+## COPYRIGHT
        Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This is free software: you are free  to  change  and  redistribute  it.

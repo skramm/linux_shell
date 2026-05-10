@@ -800,7 +800,7 @@ DIAGNOSTICS
        Email  bug  reports  to  bug-bc@gnu.org.   Be  sure to include the word
        ``bc'' somewhere in the ``Subject:'' field.
 
-AUTHOR
+## AUTHOR
        Philip A. Nelson
        philnelson@acm.org
 

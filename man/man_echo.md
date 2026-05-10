@@ -60,14 +60,14 @@
        NOTE: printf(1) is a preferred alternative, which does not have  issues
        outputting option-like strings.
 
-AUTHOR
+## AUTHOR
        Written by Brian Fox and Chet Ramey.
 
 ## REPORTING BUGS
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report any translation bugs to <https://translationproject.org/team/>
 
-COPYRIGHT
+## COPYRIGHT
        Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This is free software: you are free  to  change  and  redistribute  it.

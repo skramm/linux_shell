@@ -71,7 +71,7 @@
        This  command  meets  appropriate  standards. The -L flag is Linux-spe‐
        cific.
 
-AUTHOR
+## AUTHOR
        Albert Cahalan wrote kill in 1999 to replace a bsdutils  one  that  was
        not standards compliant.  The util-linux one might also work correctly.
 

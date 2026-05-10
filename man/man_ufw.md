@@ -588,7 +588,7 @@ REPORTS
        ufw-framework(8),   iptables(8),   ip6tables(8),   iptables-restore(8),
        ip6tables-restore(8), sysctl(8), sysctl.conf(5)
 
-AUTHOR
+## AUTHOR
        ufw is Copyright 2008-2023, Canonical Ltd.
 
 May 2023                                                               UFW:(8)
