@@ -28,6 +28,7 @@ Utilisation:
 
 /// static stuff, used to edit generated man pages with markdown section titles (`##`)
 /// source: https://man7.org/linux/man-pages/man7/man-pages.7.html
+/// (but added some that were found, but not listed above)
 std::vector<std::string> mantitles = {
 	"NAME"
 	,"LIBRARY"
@@ -53,6 +54,7 @@ std::vector<std::string> mantitles = {
 	,"EXAMPLES"
 	,"AUTHORS"
 	,"SEE ALSO"
+	,"SUMMARY"
 };
 
 using Categories = std::vector<std::pair<int,std::string>>;
@@ -76,7 +78,7 @@ split_string( const std::string &s, char delim )
 
 
 //--------------------------------------------------
-/// read CSV file \c filename
+/// Read CSV file \c filename
 std::vector<std::vector<std::string>>
 readCSV( std::string filename )
 {
@@ -155,18 +157,8 @@ generateMan( std::string name )
 {
 	std::stringstream oss;
 	oss << "man " << name << " 1>/tmp/manfile 2>/dev/null";
-//	std::cout << "RUN: " << oss.str() << "\n" << std::flush;
-
 	auto ret = std::system( oss.str().c_str() ); // run "man"
-//	std::system( "echo 'ls -l /tmp'" );
-//	std::system( "ls -l /tmp" );
 
-//	std::system( "echo 'ls -l /tmp/man*'" );
-//	std::system( "ls -l /tmp/man*" );
-//	std::system( "head /tmp/manfile" );
-
-
-#if 1
 	std::stringstream oss2;
 	if( ret != 0 )                               // if no manual, then try with 'help'
 	{ 
@@ -191,9 +183,8 @@ generateMan( std::string name )
 		for( const auto& title: mantitles )
 		{
 			std::stringstream oss3;
-			// -E: extended regular expressions
+			// -E: extended regular expressions, -i: in place
 			oss3 << "sed -i -E 's/^" << title << "/## " << title << "/' ../man/man_" << name << ".md";
-//			std::cout << "RUN: " << oss3.str() << "\n";
 			auto ret3 = std::system( oss3.str().c_str() );
 			if( ret3 != 0 )
 			{
@@ -202,8 +193,7 @@ generateMan( std::string name )
 		}
 		return MT_MAN;
 	}
-#endif
-	return MT_NONE; // TMP
+	return MT_NONE; // to avoid a warning
 }
 
 /// Type of command on local machine
@@ -360,6 +350,20 @@ printCategories(
 }
 
 //--------------------------------------------------
+void
+printRelatedCommands(
+	std::ofstream& f,
+	const Command& cmd
+)
+{
+	if( !cmd._seealso.empty() )
+	{
+		auto letter = cmd._seealso.at(0);
+		f << "[" << cmd._seealso << "](linux_cmds_list_alpha.md#" << letter << ")";
+	}
+}
+
+//--------------------------------------------------
 /// Generation of alphabetical list
 void
 genListAlpha(
@@ -430,12 +434,7 @@ genListAlpha(
 
 
 		f << " | ";
-
-		if( !cmd._seealso.empty() )
-		{
-			auto letter = cmd._seealso.at(0);
-			f << "[" << cmd._seealso << "](#" << letter << ")";
-		}
+		printRelatedCommands( f, cmd );
 		f << " | " << getString(cmd._type) << " |\n";		
 
 	}
@@ -491,11 +490,8 @@ genCat(
 			<< cmd._name << "'>" 
 			<< cmd._name << "</a> | "
 			<< cmd._comment << " | ";
-		if( !cmd._seealso.empty() )
-		{
-			auto letter = cmd._seealso.at(0);
-			f << "[" << cmd._seealso << "](linux_cmds_list_alpha.md#" << letter << ")";
-		}
+
+		printRelatedCommands( f, cmd );
 		f << " | " << getString(cmd._type) << " |\n";
 	}
 }
@@ -551,11 +547,8 @@ printForType(
 				<< " | " << cmd._comment << " | ";
 			printCategories( f, cmd, categs );
 			f << " | ";
-			if( !cmd._seealso.empty() )
-			{
-				auto letter = cmd._seealso.at(0);
-				f << "[" << cmd._seealso << "](linux_cmds_list_alpha.md#" << letter << ")";
-			}
+
+			printRelatedCommands( f, cmd );
 			f << " |\n";
 		}
 	f << "\n";
