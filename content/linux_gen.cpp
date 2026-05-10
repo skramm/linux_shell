@@ -155,7 +155,9 @@ generateMan( std::string name )
 {
 	std::stringstream oss;
 	oss << "man " << name << " >/tmp/manfile 2>/dev/null";
-//	std::cout << "RUN: " << oss.str() << "\n";
+	std::cout << "RUN: " << oss.str() << "\n";
+	std::system( "ls -l /tmp/man*" );
+	std::system( "head /tmp/manfile" );
 	
 	auto ret = std::system( oss.str().c_str() ); // run "man"
 	if( ret != 0 )                               // if no manual, then try with 'help'
@@ -183,6 +185,7 @@ generateMan( std::string name )
 			std::stringstream oss3;
 			// -E: extended regular expressions
 			oss3 << "sed -E 's/^" << title << "/## " << title << "/' ../man/man_" << name << ".md";
+			std::cout << "RUN: " << oss3.str() << "\n";
 			auto ret3 = std::system( oss3.str().c_str() );
 			if( ret3 != 0 )
 			{
