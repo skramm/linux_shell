@@ -155,23 +155,23 @@ generateMan( std::string name )
 {
 	std::stringstream oss;
 	oss << "man " << name << " 1>/tmp/manfile 2>/dev/null";
-	std::cout << "RUN: " << oss.str() << "\n" << std::flush;
+//	std::cout << "RUN: " << oss.str() << "\n" << std::flush;
 
 	auto ret = std::system( oss.str().c_str() ); // run "man"
-	std::system( "echo 'ls -l /tmp'" );
-	std::system( "ls -l /tmp" );
+//	std::system( "echo 'ls -l /tmp'" );
+//	std::system( "ls -l /tmp" );
 
-	std::system( "echo 'ls -l /tmp/man*'" );
-	std::system( "ls -l /tmp/man*" );
-	std::system( "head /tmp/manfile" );
+//	std::system( "echo 'ls -l /tmp/man*'" );
+//	std::system( "ls -l /tmp/man*" );
+//	std::system( "head /tmp/manfile" );
 
 
-#if 0
+#if 1
+	std::stringstream oss2;
 	if( ret != 0 )                               // if no manual, then try with 'help'
 	{ 
 		createHeader( "help", name );
 
-		std::stringstream oss2;
 		oss2 << "bash -c 'help " << name << "' >>../man/help_" << name << ".md 2>/dev/null";
 		auto ret2 = std::system( oss2.str().c_str() );
 		if( ret2 != 0 )
@@ -184,15 +184,16 @@ generateMan( std::string name )
 	else // edit man page to improve the markdown
 	{
 		createHeader( "man", name );
-		std::stringstream oss3;
+
 		// remove first line
-		oss3 << "tail -n +2 /tmp/manfile >>../man/man_" << name << ".md";
+		oss2 << "tail -n +2 /tmp/manfile >>../man/man_" << name << ".md";
+		auto ret2 = std::system( oss2.str().c_str() );
 		for( const auto& title: mantitles )
 		{
 			std::stringstream oss3;
 			// -E: extended regular expressions
 			oss3 << "sed -i -E 's/^" << title << "/## " << title << "/' ../man/man_" << name << ".md";
-			std::cout << "RUN: " << oss3.str() << "\n";
+//			std::cout << "RUN: " << oss3.str() << "\n";
 			auto ret3 = std::system( oss3.str().c_str() );
 			if( ret3 != 0 )
 			{
