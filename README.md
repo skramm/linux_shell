@@ -22,14 +22,15 @@ ou des commandes "_builtin_" peu utilisées.
 
 * Certaines commandes apparaissent dans plusieurs catégories, ce qui explique que le nombre de commande diffère entre la liste alphabétique et la liste par catégorie.
 
-* Les 2 pages ci-dessous sont générées automatiquement via une intégration continue, à partir de 2 fichiers CSV
+* Les pages ci-dessus sont générées automatiquement via une intégration continue, à partir de 2 fichiers CSV
 (voir dossier [content/](content/)).
 
-* La première colonne contient un lien vers la page de "man" (ou "help") correspondante, générée via la CI.
+* La première colonne contient un lien vers la page de "man" (ou "help" pour les "_builtin_") correspondante, générée via la CI, et construite directement sur la VM de Github
+(et sous réserve que la commande soit pas présente sur cette machine, évidemment).
 
 * La dernière colonne indique s'il s'agit d'un _builtin_ (commande native du shell) ou d'un programme externe, qui peut alors être existant ou pas sur la VM Github:
 _installed_ ou NI (_Not Installed_).
 Dans ces derniers cas, cela signifie qu'il faille peut-être l'installer sur votre machine avant de pouvoir l'utiliser.
 
-
+* Historiquement, ceci a été fait dans un contexte "enseignement", d'où le choix du français.
 

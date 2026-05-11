@@ -29,6 +29,9 @@ Utilisation:
 /// static stuff, used to edit generated man pages with markdown section titles (`##`)
 /// source: https://man7.org/linux/man-pages/man7/man-pages.7.html
 /// (but added some that were found, but not listed above)
+/**
+\todo Instead of a (long & never ending) list of keywords, should instead search for all caps text on a single line with a regex !
+*/
 std::vector<std::string> mantitles = {
 	"NAME"
 	,"LIBRARY"
@@ -59,6 +62,17 @@ std::vector<std::string> mantitles = {
 	,"AUTHOR"
 	,"COPYRIGHT"
 	,"COMMANDS"
+	,"DIAGNOSTICS"
+	,"MEMORY MANAGEMENT"  // bzip2
+	,"RECOVERING DATA"    // bzip2
+	,"SOURCE OPTIONS"     // journalctl
+	,"FILTERING OPTIONS"  // journalctl
+	,"PAGER"              // journalctl
+	,"TYPES"              // jq
+	,"CONDITIONALS"       // jq
+	,"ADVANCED FEATURES"  // jq
+	,"MATH"               // jq
+	,"KNOWN BUGS"
 };
 
 using Categories = std::vector<std::pair<int,std::string>>;
@@ -229,6 +243,7 @@ struct Command
 	std::string _name;
 	std::string _comment;
 	std::string _seealso;
+//	std::vector<std::string> _seealso;
 	En_Type     _type;
 	En_ManType  _mantype = MT_NONE;
 	
@@ -243,6 +258,16 @@ struct Command
 		_seealso = vin[3];
 		_mantype = generateMan( _name );
 		_type    = En_Type( std::stoi( vin[4] ) );
+
+#if 0
+// fill the "see also"
+		if( !vin[3].empty() ) // can be empty
+		{
+			auto vsa = split_string( vin[3], '-' );
+			for( const auto& sa: vsa )
+				_seealso.emplace_back( sa );
+		}
+#endif
 
 // fill the categories
 		auto cats = split_string( vin[1], '-' );
@@ -354,6 +379,7 @@ printCategories(
 }
 
 //--------------------------------------------------
+/// WIP...
 void
 printRelatedCommands(
 	std::ofstream& f,
@@ -362,8 +388,19 @@ printRelatedCommands(
 {
 	if( !cmd._seealso.empty() )
 	{
+#if 1	
 		auto letter = cmd._seealso.at(0);
 		f << "[" << cmd._seealso << "](linux_cmds_list_alpha.md#" << letter << ")";
+#else
+		for( const auto& sa: _seealso )
+		{
+			auto sacmd = findCommand( sa );
+			if( sacmd._mantype == MT_HELP )
+				f << "[" << sacmd._name << "](man/help_" << sacmd._name << ".md)";
+			else
+				f << "[" << sacmd._name << "](man/man_" << sacmd._name << ".md)";
+		}
+#endif
 	}
 }
 
@@ -550,11 +587,11 @@ printForType(
 	for( const auto& cmd: cmds )
 		if( cmd._type == type )
 		{
-			f << "| " << cmd._name
-				<< " | " << cmd._comment << " | ";
+			f << "| ";
+			printManLink( f, cmd );
+			f << " | " << cmd._comment << " | ";
 			printCategories( f, cmd, categs );
 			f << " | ";
-
 			printRelatedCommands( f, cmd );
 			f << " |\n";
 		}
