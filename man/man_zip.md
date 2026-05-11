@@ -1888,7 +1888,7 @@ PATTERN MATCHING
 ## SEE ALSO
        compress(1), shar(1), tar(1), unzip(1), gzip(1)
 
-DIAGNOSTICS
+## DIAGNOSTICS
        The exit status (or error level) approximates the exit codes defined by
        PKWARE and takes on the following values, except under VMS:
 

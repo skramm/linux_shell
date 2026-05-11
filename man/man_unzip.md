@@ -765,7 +765,7 @@ TIPS
        able  to  ``-aL''  and  is  tempted to add ``-C'' as well.  His ZIPINFO
        variable is set to ``-z''.
 
-DIAGNOSTICS
+## DIAGNOSTICS
        The exit status (or error level) approximates the exit codes defined by
        PKWARE and takes on the following values, except under VMS:
 

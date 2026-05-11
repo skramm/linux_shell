@@ -1056,7 +1056,7 @@
        The described format is used for -O, -e inject=delay_enter, and -e  in‐
        ject=delay_exit options.
 
-DIAGNOSTICS
+## DIAGNOSTICS
        When command exits, strace exits with the same exit status.  If command
        is  terminated by a signal, strace terminates itself with the same sig‐
        nal, so that strace can be used as a wrapper process transparent to the

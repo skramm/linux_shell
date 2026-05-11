@@ -146,7 +146,7 @@ SCRIPT USAGE AND DIFFERENCES FROM OTHER APT TOOLS
        apt-patterns(7), The APT User's guide in /usr/share/doc/apt-doc/,
        apt_preferences(5), the APT Howto.
 
-DIAGNOSTICS
+## DIAGNOSTICS
        apt returns zero on normal operation, decimal 100 on error.
 
 ## BUGS

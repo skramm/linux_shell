@@ -2597,7 +2597,7 @@ MODIFIED PERSONAL DEVICE CACHE PATH
        entirely.  Consult the output of the -D?  option  for  the  environment
        variable's name and the HASPERSDC format specification.
 
-DIAGNOSTICS
+## DIAGNOSTICS
        Errors are identified with messages on the standard error file.
 
        Lsof returns a one (1) if any error was detected, including the failure

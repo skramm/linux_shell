@@ -660,7 +660,7 @@ SECURITY NOTES
 
            $ sudo sh -c "cd /home ; du -s * | sort -rn > USAGE"
 
-DIAGNOSTICS
+## DIAGNOSTICS
        Error messages produced by sudo include:
 
        editing files in a writable directory is not permitted

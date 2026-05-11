@@ -92,7 +92,7 @@
        see systemd-journald.service(8). In addition, systemd-cat(1) may be
        used to send messages to the journal directly.
 
-SOURCE OPTIONS
+## SOURCE OPTIONS
        The following options control where to read journal records from:
 
        --system, --user
@@ -177,7 +177,7 @@ SOURCE OPTIONS
 
            Added in version 245.
 
-FILTERING OPTIONS
+## FILTERING OPTIONS
        The following options control how to filter journal records:
 
        -S, --since=, -U, --until=
@@ -574,7 +574,7 @@ FILTERING OPTIONS
            ...", "-- Reboot --"), any warning messages regarding inaccessible
            system journals when run as a normal user.
 
-PAGER CONTROL OPTIONS
+## PAGER CONTROL OPTIONS
        The following options control page support:
 
        --no-pager

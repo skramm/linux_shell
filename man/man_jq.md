@@ -555,7 +555,7 @@ BASIC FILTERS
               1
            => 15
 
-TYPES AND VALUES
+## TYPES AND VALUES
        jq  supports  the  same  set  of  datatypes as JSON - numbers, strings,
        booleans, arrays, objects (which in JSON-speak  are  hashes  with  only
        string keys), and "null".
@@ -1988,7 +1988,7 @@ BUILTIN OPERATORS AND FUNCTIONS
        rate functions, all/0, all/1, and all/2 would all  be  present  in  the
        list.
 
-CONDITIONALS AND COMPARISONS
+## CONDITIONALS AND COMPARISONS
    ==, !=
        The  expression ´a == b´ will produce ´true´ if the results of evaluat‐
        ing a and b are equal (that is, if they represent equivalent JSON  val‐
@@ -2376,7 +2376,7 @@ REGULAR EXPRESSIONS
               "p"
            => ["a","b"]
 
-ADVANCED FEATURES
+## ADVANCED FEATURES
        Variables  are an absolute necessity in most programming languages, but
        they´re relegated to an "advanced feature" in jq.
 
@@ -2770,7 +2770,7 @@ ADVANCED FEATURES
               1
            => [1,2,4,8,16,32,64]
 
-MATH
+## MATH
        jq currently only has IEEE754 double-precision (64-bit) floating  point
        number support.
 

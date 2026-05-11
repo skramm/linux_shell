@@ -197,7 +197,7 @@ ACCURACY
        `real'  I/O  reported by `%I' and `%O' may be muddled for workstations,
        especially diskless ones.
 
-DIAGNOSTICS
+## DIAGNOSTICS
        The  time  command  returns  when  the  program  exits,  stops,  or  is
        terminated  by  a  signal.   If the program exited normally, the return
        value of time is the return  value  of  the  program  it  executed  and

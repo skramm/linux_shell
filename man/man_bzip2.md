@@ -191,7 +191,7 @@
               0.9.5  and  above have an improved algorithm which renders these
               flags irrelevant.
 
-MEMORY MANAGEMENT
+## MEMORY MANAGEMENT
        bzip2 compresses large files in blocks.  The block  size  affects  both
        the  compression  ratio  achieved,  and the amount of memory needed for
        compression and decompression.  The flags -1  through  -9  specify  the
@@ -256,7 +256,7 @@ MEMORY MANAGEMENT
             -8      6800k      3300k        2100k      828642
             -9      7600k      3700k        2350k      828642
 
-RECOVERING DATA FROM DAMAGED FILES
+## RECOVERING DATA FROM DAMAGED FILES
        bzip2 compresses files in blocks, usually 900 kbytes long.  Each  block
        is  handled  independently.   If a media or transmission error causes a
        multi-block .bz2 file to become damaged, it may be possible to  recover

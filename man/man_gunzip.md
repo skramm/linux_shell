@@ -306,7 +306,7 @@ ADVANCED USAGE
        Deutsch,  DEFLATE  Compressed  Data  Format  Specification version 1.3,
        <https://www.ietf.org/rfc/rfc1951.txt>, Internet RFC 1951 (May 1996).
 
-DIAGNOSTICS
+## DIAGNOSTICS
        Exit status is normally 0; if an error occurs, exit status is 1.  If  a
        warning occurs, exit status is 2.
 

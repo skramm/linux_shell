@@ -636,7 +636,7 @@
        patterns(7), apt-config(8), apt-secure(8), The APT User's guide in
        /usr/share/doc/apt-doc/, apt_preferences(5), the APT Howto.
 
-DIAGNOSTICS
+## DIAGNOSTICS
        apt-get returns zero on normal operation, decimal 100 on error.
 
 ## BUGS

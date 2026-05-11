@@ -4776,7 +4776,7 @@ SYMBOLIC LINKS
        that  already  exists on the receiving side.  See that option's section
        for a warning.
 
-DIAGNOSTICS
+## DIAGNOSTICS
        Rsync occasionally produces error messages that may seem a little cryp‐
        tic.  The one that seems to cause the most confusion is "protocol  ver‐
        sion mismatch -- is your shell clean?".

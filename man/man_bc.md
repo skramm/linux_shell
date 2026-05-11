@@ -789,7 +789,7 @@ SYNTAX
               of  zero  disables  the  multi-line feature.  Any other value of
               this variable that is less than 3 sets the line length to 70.
 
-DIAGNOSTICS
+## DIAGNOSTICS
        If any file on the command line can not be opened, bc will report  that
        the file is unavailable and terminate.  Also, there are compile and run
        time diagnostics that should be self-explanatory.

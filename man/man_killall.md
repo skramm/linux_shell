@@ -112,7 +112,7 @@
 ## FILES
        /proc  location of the proc file system
 
-KNOWN BUGS
+## KNOWN BUGS
        Killing  by  file  only works for executables that are kept open during
        execution, i.e. impure executables can't be killed this way.
 
