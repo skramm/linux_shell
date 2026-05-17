@@ -31,4 +31,4 @@
        Lucas De Marchi <lucas.de.marchi@gmail.com>
            Developer
 
-kmod                              10/02/2024                          LSMOD(8)
+kmod                              04/30/2026                          LSMOD(8)

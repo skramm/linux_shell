@@ -309,4 +309,4 @@ REGULAR EXPRESSIONS
 
        should give you access to the complete manual.
 
-GNU sed 4.9                       April 2024                            SED(1)
+GNU sed 4.9                       April 2026                            SED(1)

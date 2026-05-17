@@ -1200,4 +1200,4 @@ ADDITIONAL FUNCTIONALITY
        See  /usr/share/doc/dpkg/THANKS  for  the  list  of  people  who   have
        contributed to dpkg.
 
-1.22.6                            2025-09-18                           dpkg(1)
+1.22.6                            2026-05-06                           dpkg(1)

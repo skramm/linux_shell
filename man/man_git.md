@@ -216,7 +216,10 @@
 
 GIT COMMANDS
        We divide Git into high level ("porcelain") commands and low level
-       ("plumbing") commands.
+       ("plumbing") commands. For defining command aliases, see git-config(1)
+       and look for descriptions of alias.*. For installing custom "git"
+       subcommands, see the description for the PATH environment variable in
+       this manual.
 
 HIGH-LEVEL COMMANDS (PORCELAIN)
        We separate the porcelain commands into the main commands and some
@@ -282,6 +285,9 @@ HIGH-LEVEL COMMANDS (PORCELAIN)
 
        git-gui(1)
            A portable graphical interface to Git.
+
+       git-history(1)
+           EXPERIMENTAL: Rewrite history.
 
        git-init(1)
            Create an empty Git repository or reinitialize an existing one.
@@ -743,7 +749,7 @@ LOW-LEVEL COMMANDS (PLUMBING)
            The standard helper program to use with git-merge-index.
 
        git-patch-id(1)
-           Compute unique ID for a patch.
+           Compute unique IDs for patches.
 
        git-sh-i18n(1)
            Git’s i18n setup code for shell scripts.
@@ -962,6 +968,15 @@ TERMINOLOGY
            $HOMEDRIVE$HOMEPATH if both $HOMEDRIVE and $HOMEPATH exist;
            otherwise $USERPROFILE if $USERPROFILE exists.
 
+       PATH
+           When a user runs git <command> that is not part of the core Git
+           programs (installed in GIT_EXEC_PATH), git-<command> that is
+           runnable by the user in a directory on $PATH is invoked. Argument
+           passed after the command name are passed as-is to the program. To
+           execute git <foo>, git finds command <foo> (either a core Git
+           program found in GIT_EXEC_PATH, or a custom one in a directory on
+           PATH), before trying foo as an alias.
+
    The Git Repository
        These environment variables apply to all core Git commands. Nb: it is
        worth noting that they may be used/overridden by SCMS sitting above Git
@@ -1050,6 +1065,11 @@ TERMINOLOGY
            If this variable is set, the default reference backend format for
            new repositories will be set to this value. The default is "files".
            See --ref-format in git-init(1).
+
+       GIT_REFERENCE_BACKEND
+           Specify which reference backend to be used along with its URI. See
+           extensions.refStorage option in git-config(1) for more details.
+           Overrides the config variable when used.
 
    Git Commits
        GIT_AUTHOR_NAME
@@ -1648,4 +1668,4 @@ GIT
         7. git-security@googlegroups.com
            mailto:git-security@googlegroups.com
 
-Git 2.53.0                        02/04/2026                            GIT(1)
+Git 2.54.0                        04/20/2026                            GIT(1)
