@@ -163,6 +163,20 @@ enum En_ManType
 };
 
 //--------------------------------------------------
+
+/// helper function for generateMan()
+/// !!! WIP !!!
+/*
+void
+addSeeAlso( std::string name )
+{
+	std::ofstream& f;
+	printRelatedCommands(
+	std::ofstream& f,
+	const Command& cmd
+)
+*/
+//--------------------------------------------------
 /// Generate man (or "help") md pages
 /**
 If no `man`, an attempt is made with `help`
@@ -181,6 +195,7 @@ generateMan( std::string name )
 	if( ret != 0 )                               // if no manual, then try with 'help'
 	{ 
 		createHeader( "help", name );
+//     addSeeAlso( name );
 
 		oss2 << "bash -c 'help " << name << "' >>../man/help_" << name << ".md 2>/dev/null";
 		auto ret2 = std::system( oss2.str().c_str() );

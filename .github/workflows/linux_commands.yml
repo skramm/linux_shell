@@ -34,6 +34,7 @@ jobs:
           source /etc/os-release
           echo "_OS: $NAME - ${VERSION}_">> linux_cmds_list_alpha.md
           echo "_OS: $NAME - ${VERSION}_">> linux_cmds_list_cat.md
+          echo "_OS: $NAME - ${VERSION}_">> linux_cmds_list_type.md
 
       - name: auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
