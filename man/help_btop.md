@@ -1,4 +1,4 @@
-# Manuel de `btop`
+# Documentation de `btop`, générée via `help`
 
 [Liste alphabétique](../linux_cmds_list_alpha.md) - [Liste par catégorie](../linux_cmds_list_cat.md)
 
