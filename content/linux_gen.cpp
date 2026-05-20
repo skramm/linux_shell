@@ -207,6 +207,7 @@ generateMan( std::string name )
 		}
 		std::stringstream oss3;
 		oss3 << "sed -i 's/^\(" << name << ".*\\)$/`\1`/' ../man/help_" << name << ".md";
+		std::cout << oss3.str() << "\n"; // tmp, to check why this doesnt seem to work
 		auto ret3 = std::system( oss3.str().c_str() );
 		if( ret3 != 0 )
 			std::cout << "failure of:" << oss3.str() << "\n";
