@@ -33,4 +33,5 @@ _installed_ ou NI (_Not Installed_).
 Dans ces derniers cas, cela signifie qu'il faille peut-être l'installer sur votre machine avant de pouvoir l'utiliser.
 
 * Historiquement, ceci a été fait dans un contexte "enseignement", d'où le choix du français.
+Même si m'apparait aujourd'hui comme un peu curieux!
 

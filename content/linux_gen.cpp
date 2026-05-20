@@ -148,11 +148,12 @@ createHeader( std::string str /* "man" or "help" */, std::string name )
 {
 	std::ofstream f( "../man/" + str + "_" + name + ".md" );
 	assert( f.is_open() );
-	f << "# Manuel de `" << name << "`\n\n"
-		<< "[Liste alphabétique](../linux_cmds_list_alpha.md) - "
+	f << "# Documentation de `" << name
+		<< "`, générée via `" << str
+		<< "`\n\n[Liste alphabétique](../linux_cmds_list_alpha.md) - "
 		<< "[Liste par catégorie](../linux_cmds_list_cat.md)\n\n"
-		<< "[Recherche Google](https://www.google.fr/search?q=linux+" << name << ")\n\n---\n"; 
-	f.close();
+		<< "[Recherche Google](https://www.google.fr/search?q=linux+"
+		<< name << ")\n\n---\n"; 
 }
 
 //--------------------------------------------------
@@ -177,7 +178,7 @@ addSeeAlso( std::string name )
 )
 */
 //--------------------------------------------------
-/// Generate man (or "help") md pages
+/// Generate man (or "help" for builtin) md pages
 /**
 If no `man`, an attempt is made with `help`
 
@@ -204,6 +205,12 @@ generateMan( std::string name )
 			std::cout << "failure of:" << oss2.str() << "\n";
 			return MT_NONE;
 		}
+		std::stringstream oss3;
+		oss3 << "sed -i 's/^\(" << name << ".*\\)$/`\1`/' ../man/help_" << name << ".md";
+		auto ret3 = std::system( oss3.str().c_str() );
+		if( ret3 != 0 )
+			std::cout << "failure of:" << oss3.str() << "\n";
+
 		return MT_HELP;
 	}
 	else // edit man page to improve the markdown
