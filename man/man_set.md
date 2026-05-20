@@ -158,4 +158,4 @@ COMPATIBILITY
 ## SEE ALSO
        RESET(7), SHOW(7)
 
-PostgreSQL 16.13                     2026                               SET(7)
+PostgreSQL 16.14                     2026                               SET(7)
