@@ -13,7 +13,7 @@ jobs:
   job_index:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Show GCC version
         run: g++ --version
       - run: echo "shell=$SHELL"
