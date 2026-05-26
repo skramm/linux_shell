@@ -33,7 +33,7 @@ btop;21; monitoring système;htop,top
 iotop;21;liste process avec leur utilisation I/O disque
 nmon;21;_dashboard_ système;htop
 pstree;21;arborescence des process;ps
-ps;21;snapshot des process;top,pstree
+ps;21;snapshot des process;top-pstree
 inxi;21;informations système;lstopo-htop-lsdev
 
 pidof;12; donne le PID d'un process;ps
@@ -180,6 +180,7 @@ netstat;3;infos/reseau, routage, etc.
 nmcli;3;pilote CLI des connexions réseau
 ftp;3;transfert de fichiers
 route;3;affiche ou édite la table de routage
+brctl;3;gestion des "bridges" réseau;nmcli
 
 echo;16;affichage de texte/variable;printf
 printf;16;affichage de texte/variable formatté;echo
