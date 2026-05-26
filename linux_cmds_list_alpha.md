@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-288 commandes<br>
-32 _builtin_, 193 _installed_, 63 NI (_not installed_)
+289 commandes<br>
+32 _builtin_, 193 _installed_, 64 NI (_not installed_)
 
 
 ## 7
@@ -67,6 +67,7 @@
 | [bc](man/man_bc.md) | calculatrice CLI | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
 | [bg](man/help_bg.md) | passage d'un _job_ en arrière plan (_BackGround_) | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [fg](linux_cmds_list_alpha.md#f) | _builtin_ |
 | [blkid](man/man_blkid.md) | accès aux détails des _devices_ de type "bloc" | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [lsblk](linux_cmds_list_alpha.md#l) | _installed_ |
+| brctl ([G](https://www.google.fr/search?q=linux+brctl)) | gestion des "bridges" réseau | [Réseau](linux_cmds_list_cat.md#cat3) | [nmcli](linux_cmds_list_alpha.md#n) | NI |
 | [break](man/help_break.md) | sortie de boucle "for" | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [for](linux_cmds_list_alpha.md#f) | _builtin_ |
 | btop ([G](https://www.google.fr/search?q=linux+btop)) |  monitoring système | [Monitoring système](linux_cmds_list_cat.md#cat21) | [htop,top](linux_cmds_list_alpha.md#h) | NI |
 | [bzip2](man/man_bzip2.md) | compression | [Compression](linux_cmds_list_cat.md#cat19) |  | _installed_ |
@@ -361,7 +362,7 @@
 | [popd](man/help_popd.md) | récupération dossier courant | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | [printenv](man/man_printenv.md) | liste var. environnement | [Divers](linux_cmds_list_cat.md#cat7) | [env](linux_cmds_list_alpha.md#e) | _installed_ |
 | [printf](man/man_printf.md) | affichage de texte/variable formatté | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [echo](linux_cmds_list_alpha.md#e) | _builtin_ |
-| [ps](man/man_ps.md) | snapshot des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top,pstree](linux_cmds_list_alpha.md#t) | _installed_ |
+| [ps](man/man_ps.md) | snapshot des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top-pstree](linux_cmds_list_alpha.md#t) | _installed_ |
 | [pstree](man/man_pstree.md) | arborescence des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | [pushd](man/help_pushd.md) | chgt dossier courant avec sauvegarde | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [popd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | pv ([G](https://www.google.fr/search?q=linux+pv)) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) | [Divers](linux_cmds_list_cat.md#cat7) |  | NI |
@@ -574,5 +575,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-05-20T15:17:42+0000_,
+_MAJ: 2026-05-26T09:44:37+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

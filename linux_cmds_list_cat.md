@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 297 commandes
+Total: 298 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -135,10 +135,11 @@ Total: 297 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-29 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+30 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| brctl ([G](https://www.google.fr/search?q=linux+brctl)) | gestion des "bridges" réseau | [nmcli](linux_cmds_list_alpha.md#n) | NI |
 | [curl](man/man_curl.md) | client multiprotocoles (wget en mieux) | [wget](linux_cmds_list_alpha.md#w) | _installed_ |
 | [dig](man/man_dig.md) | requete DNS | [nslookup](linux_cmds_list_alpha.md#n) | _installed_ |
 | [ftp](man/man_ftp.md) | transfert de fichiers |  | _installed_ |
@@ -495,7 +496,7 @@ Total: 297 commandes
 | inxi ([G](https://www.google.fr/search?q=linux+inxi)) | informations système | [lstopo-htop-lsdev](linux_cmds_list_alpha.md#l) | NI |
 | iotop ([G](https://www.google.fr/search?q=linux+iotop)) | liste process avec leur utilisation I/O disque |  | NI |
 | nmon ([G](https://www.google.fr/search?q=linux+nmon)) | _dashboard_ système | [htop](linux_cmds_list_alpha.md#h) | NI |
-| [ps](man/man_ps.md) | snapshot des process | [top,pstree](linux_cmds_list_alpha.md#t) | _installed_ |
+| [ps](man/man_ps.md) | snapshot des process | [top-pstree](linux_cmds_list_alpha.md#t) | _installed_ |
 | [pstree](man/man_pstree.md) | arborescence des process | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | [top](man/man_top.md) | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 
@@ -544,5 +545,5 @@ Total: 297 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-05-20T15:17:42+0000_,
+_MAJ: 2026-05-26T09:44:37+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

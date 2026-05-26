@@ -164,7 +164,7 @@
 | [pkg-config](man/man_pkg-config.md) | outil de paramétrage de compilation, renvoie les infos sur librairies installées | [Dev](linux_cmds_list_cat.md#cat6) |  |
 | [pkill](man/man_pkill.md) | stoppe un process par nom | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [kill](linux_cmds_list_alpha.md#k) |
 | [printenv](man/man_printenv.md) | liste var. environnement | [Divers](linux_cmds_list_cat.md#cat7) | [env](linux_cmds_list_alpha.md#e) |
-| [ps](man/man_ps.md) | snapshot des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top,pstree](linux_cmds_list_alpha.md#t) |
+| [ps](man/man_ps.md) | snapshot des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top-pstree](linux_cmds_list_alpha.md#t) |
 | [pstree](man/man_pstree.md) | arborescence des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [ps](linux_cmds_list_alpha.md#p) |
 | [reboot](man/man_reboot.md) | reboot | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [shutdown,halt](linux_cmds_list_alpha.md#s) |
 | [rev](man/man_rev.md) | inversion de texte | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
@@ -251,6 +251,7 @@
 | auditd ([G](https://www.google.fr/search?q=linux+auditd)) | _Logging_ des actions système | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  |
 | banner ([G](https://www.google.fr/search?q=linux+banner)) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [figlet](linux_cmds_list_alpha.md#f) |
 | bat ([G](https://www.google.fr/search?q=linux+bat)) | cat en mieux | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [cat,tail](linux_cmds_list_alpha.md#c) |
+| brctl ([G](https://www.google.fr/search?q=linux+brctl)) | gestion des "bridges" réseau | [Réseau](linux_cmds_list_cat.md#cat3) | [nmcli](linux_cmds_list_alpha.md#n) |
 | btop ([G](https://www.google.fr/search?q=linux+btop)) |  monitoring système | [Monitoring système](linux_cmds_list_cat.md#cat21) | [htop,top](linux_cmds_list_alpha.md#h) |
 | [cal](man/help_cal.md) | affichage calendrier | [Divers](linux_cmds_list_cat.md#cat7) | [date](linux_cmds_list_alpha.md#d) |
 | cloc ([G](https://www.google.fr/search?q=linux+cloc)) | _Count Lines Of Code_ | [Dev](linux_cmds_list_cat.md#cat6) | [wc](linux_cmds_list_alpha.md#w) |
@@ -309,5 +310,5 @@
 
 
 
-_MAJ: 2026-05-20T15:17:42+0000_,
+_MAJ: 2026-05-26T09:44:37+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
