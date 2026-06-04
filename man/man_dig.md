@@ -711,4 +711,4 @@ RETURN CODES
 ## COPYRIGHT
        2026, Internet Systems Consortium
 
-9.18.39-0ubuntu0.24.04.3-Ubuntu   2025-08-13                            DIG(1)
+9.18.39-0ubuntu0.24.04.5-Ubuntu   2025-08-13                            DIG(1)

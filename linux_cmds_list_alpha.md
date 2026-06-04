@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-289 commandes<br>
-32 _builtin_, 193 _installed_, 64 NI (_not installed_)
+290 commandes<br>
+32 _builtin_, 193 _installed_, 65 NI (_not installed_)
 
 
 ## 7
@@ -389,6 +389,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
+| rdap ([G](https://www.google.fr/search?q=linux+rdap)) | infos/domaine | [Réseau](linux_cmds_list_cat.md#cat3) | [whois](linux_cmds_list_alpha.md#w) | NI |
 | [read](man/help_read.md) | saisie ligne (clavier ou fichier) | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | [reboot](man/man_reboot.md) | reboot | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [shutdown,halt](linux_cmds_list_alpha.md#s) | _installed_ |
 | [return](man/help_return.md) | fin de fonction | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [exit,function](linux_cmds_list_alpha.md#e) | _builtin_ |
@@ -529,7 +530,7 @@
 | [while](man/help_while.md) |  | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | [who](man/man_who.md) | qui est loggé? | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [w](linux_cmds_list_alpha.md#w) | _installed_ |
 | [whoami](man/man_whoami.md) | qui suis-je? | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [id](linux_cmds_list_alpha.md#i) | _installed_ |
-| whois ([G](https://www.google.fr/search?q=linux+whois)) | infos/domaine | [Réseau](linux_cmds_list_cat.md#cat3) |  | NI |
+| whois ([G](https://www.google.fr/search?q=linux+whois)) | infos/domaine (obsolete) | [Réseau](linux_cmds_list_cat.md#cat3) | [rdap](linux_cmds_list_alpha.md#r) | NI |
 | wl-paste ([G](https://www.google.fr/search?q=linux+wl-paste)) | copie presse-papier (Wayland) | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  | NI |
 
 ## X
@@ -575,5 +576,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-05-26T09:44:37+0000_,
+_MAJ: 2026-06-04T07:34:17+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

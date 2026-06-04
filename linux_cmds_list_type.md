@@ -286,6 +286,7 @@
 | pv ([G](https://www.google.fr/search?q=linux+pv)) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) - [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | qrencode ([G](https://www.google.fr/search?q=linux+qrencode)) | génération de qrcodes | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
+| rdap ([G](https://www.google.fr/search?q=linux+rdap)) | infos/domaine | [Réseau](linux_cmds_list_cat.md#cat3) | [whois](linux_cmds_list_alpha.md#w) |
 | ripgrep ([G](https://www.google.fr/search?q=linux+ripgrep)) | (rg) grep récursif | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [grep](linux_cmds_list_alpha.md#g) |
 | sensors ([G](https://www.google.fr/search?q=linux+sensors)) | données capteurs (température, tension, etc.) | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  |
 | smartctl ([G](https://www.google.fr/search?q=linux+smartctl)) | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  |
@@ -299,7 +300,7 @@
 | traceroute ([G](https://www.google.fr/search?q=linux+traceroute)) | affiche les étapes d'une requete réseau | [Réseau](linux_cmds_list_cat.md#cat3) | [mtr](linux_cmds_list_alpha.md#m) |
 | updatedb ([G](https://www.google.fr/search?q=linux+updatedb)) | mise à jour BDD `locate` | [Général](linux_cmds_list_cat.md#cat4) | [locate](linux_cmds_list_alpha.md#l) |
 | uuid ([G](https://www.google.fr/search?q=linux+uuid)) | génération de _Universally Unique IDentifier_ | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
-| whois ([G](https://www.google.fr/search?q=linux+whois)) | infos/domaine | [Réseau](linux_cmds_list_cat.md#cat3) |  |
+| whois ([G](https://www.google.fr/search?q=linux+whois)) | infos/domaine (obsolete) | [Réseau](linux_cmds_list_cat.md#cat3) | [rdap](linux_cmds_list_alpha.md#r) |
 | wl-paste ([G](https://www.google.fr/search?q=linux+wl-paste)) | copie presse-papier (Wayland) | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  |
 | xclip ([G](https://www.google.fr/search?q=linux+xclip)) | transfert vers le presse-papier X | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  |
 | xev ([G](https://www.google.fr/search?q=linux+xev)) | affichage évènements clavier+souris | [Interface avec bureau](linux_cmds_list_cat.md#cat18) | [showkey,evtest](linux_cmds_list_alpha.md#s) |
@@ -310,5 +311,5 @@
 
 
 
-_MAJ: 2026-05-26T09:44:37+0000_,
+_MAJ: 2026-06-04T07:34:17+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

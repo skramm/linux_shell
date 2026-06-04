@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 298 commandes
+Total: 299 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -135,7 +135,7 @@ Total: 298 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-30 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+31 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -157,6 +157,7 @@ Total: 298 commandes
 | nmcli ([G](https://www.google.fr/search?q=linux+nmcli)) | pilote CLI des connexions réseau |  | NI |
 | [nslookup](man/man_nslookup.md) | requete DNS (_deprecated_) | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
 | [ping](man/man_ping.md) | envoi de trames ICMP |  | _installed_ |
+| rdap ([G](https://www.google.fr/search?q=linux+rdap)) | infos/domaine | [whois](linux_cmds_list_alpha.md#w) | NI |
 | [route](man/man_route.md) | affiche ou édite la table de routage |  | _installed_ |
 | [rsync](man/man_rsync.md) | copie et synchronisation de fichiers entre machines |  | _installed_ |
 | [scp](man/man_scp.md) | tranfert de fichiers entre machines |  | _installed_ |
@@ -168,7 +169,7 @@ Total: 298 commandes
 | traceroute ([G](https://www.google.fr/search?q=linux+traceroute)) | affiche les étapes d'une requete réseau | [mtr](linux_cmds_list_alpha.md#m) | NI |
 | [ufw](man/man_ufw.md) |  pilote CLI de Firewall  |  | _installed_ |
 | [wget](man/man_wget.md) | client http CLI | [curl](linux_cmds_list_alpha.md#c) | _installed_ |
-| whois ([G](https://www.google.fr/search?q=linux+whois)) | infos/domaine |  | NI |
+| whois ([G](https://www.google.fr/search?q=linux+whois)) | infos/domaine (obsolete) | [rdap](linux_cmds_list_alpha.md#r) | NI |
 
 ## 7 - catégorie: Fichiers & permissions
 <a name='cat5'></a>
@@ -545,5 +546,5 @@ Total: 298 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-05-26T09:44:37+0000_,
+_MAJ: 2026-06-04T07:34:17+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

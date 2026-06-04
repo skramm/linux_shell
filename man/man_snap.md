@@ -111,13 +111,29 @@
               Check data of only specific  users  (comma-separated)  (default:
               all users)
 
+   component
+       Show detailed information about snap components
+
+       The component command shows detailed information about snap components.
+
+       You  must specify exactly one snap and one or more of its components in
+       the form <snap>+<component>+[<component>...].
+
+       Usage: snap [OPTIONS] component [component-OPTIONS]
+
+       --color <default: "auto">
+
+       --unicode <default: "auto">
+
+       --no-wait
+
    components
        List available and installed components for installed snaps
 
-       The  components  command  displays a summary of the components that are
+       The components command displays a summary of the  components  that  are
        installed and available for the set of currently installed snaps.
 
-       Components for specific installed snaps can  be  queried  by  providing
+       Components  for  specific  installed  snaps can be queried by providing
        snap names as positional arguments.
 
    connect
@@ -132,29 +148,29 @@
 
        $ snap connect <snap>:<plug> <snap>
 
-       Connects  the  specific plug to the only slot in the provided snap that
-       matches the connected interface. If more than one  potential  slot  ex‐
+       Connects the specific plug to the only slot in the provided  snap  that
+       matches  the  connected  interface. If more than one potential slot ex‐
        ists, the command fails.
 
        $ snap connect <snap>:<plug>
 
-       Connects  the  provided  plug  to the slot in the core snap with a name
+       Connects the provided plug to the slot in the core  snap  with  a  name
        matching the plug name.
 
        Usage: snap [OPTIONS] connect [connect-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
    connections
        List interface connections
 
-       The  connections  command  lists connections between plugs and slots in
+       The connections command lists connections between plugs  and  slots  in
        the system.
 
        Unless <snap> is provided, the listing is for connected plugs and slots
-       for all snaps in the system. In this mode, pass --all to also list  un‐
+       for  all snaps in the system. In this mode, pass --all to also list un‐
        connected plugs and slots.
 
        $ snap connections <snap>
@@ -168,15 +184,15 @@
    create-cohort
        Create cohort keys for a set of snaps
 
-       The  create-cohort command creates a set of cohort keys for a given set
+       The create-cohort command creates a set of cohort keys for a given  set
        of snaps.
 
-       A cohort is a view or snapshot of a snap's "channel  map"  at  a  given
-       point  in time that fixes the set of revisions for the snap given other
-       constraints (e.g. channel or architecture). The cohort is then  identi‐
+       A  cohort  is  a  view or snapshot of a snap's "channel map" at a given
+       point in time that fixes the set of revisions for the snap given  other
+       constraints  (e.g. channel or architecture). The cohort is then identi‐
        fied by an opaque per-snap key that works across systems. Installations
        or refreshes of the snap using a given cohort key would use a fixed re‐
-       vision  for  up to 90 days, after which a new set of revisions would be
+       vision for up to 90 days, after which a new set of revisions  would  be
        fixed under that same cohort key and a new 90 days window started.
 
    debug
@@ -184,7 +200,7 @@
 
        The debug command contains a selection of additional sub-commands.
 
-       Debug commands can be removed without notice and may not work  on  non-
+       Debug  commands  can be removed without notice and may not work on non-
        development systems.
 
    debug api
@@ -197,11 +213,11 @@
 
        Find snaps with name foo: $ snap debug api '/v2/find?name=foo'
 
-       Request  refresh  of snap 'some-snap': $ echo '{"action": "refresh"}' |
+       Request refresh of snap 'some-snap': $ echo '{"action":  "refresh"}'  |
        snap debug api -X POST \
              -H 'Content-Type: application/json' /v2/snaps/some-snap
 
-       Execute a request to the session agent of UID 12345: $ snap  debug  api
+       Execute  a  request to the session agent of UID 12345: $ snap debug api
        --session-agent-uid=12345 /v1/session-info
 
        Usage: snap [OPTIONS] debug api [api-OPTIONS]
@@ -216,7 +232,7 @@
               Disable authorization with data from auth.json
 
        -H, --header
-              Set  header  (can  be  repeated multiple times), header kind and
+              Set header (can be repeated multiple  times),  header  kind  and
               value are separated with ': '
 
        -X, --request
@@ -227,7 +243,7 @@
    debug confinement
        Print the confinement mode the system operates in
 
-       The confinement command will print the confinement mode  (strict,  par‐
+       The  confinement  command will print the confinement mode (strict, par‐
        tial or none) the system operates in.
 
    debug connectivity
@@ -238,7 +254,7 @@
    debug execution
        Obtain information about execution aspects of snap toolchain commands
 
-       Display  debugging  information  about aspects of snap toolchain execu‐
+       Display debugging information about aspects of  snap  toolchain  execu‐
        tion, such as reexecution, tools location etc.
 
    debug execution apparmor
@@ -253,10 +269,10 @@
    debug features
        Obtain the complete list of feature tags
 
-       Display json output that contains the complete list  of            fea‐
-       ture  tags present in snapd and snap. Feature tags are           a col‐
-       lection of data that describe significant code  paths            within
-       snapd  including  tasks, changes, interfaces,           endpoints, snap
+       Display  json  output that contains the complete list of           fea‐
+       ture tags present in snapd and snap. Feature tags are           a  col‐
+       lection  of  data that describe significant code paths           within
+       snapd including tasks, changes, interfaces,            endpoints,  snap
        commands, and ensure helper functions.
 
    debug lsm
@@ -283,7 +299,7 @@
 
        (internal) list refresh-app-awareness details
 
-       Usage: snap [OPTIONS] debug  refresh-app-awareness  [refresh-app-aware‐
+       Usage:  snap  [OPTIONS] debug refresh-app-awareness [refresh-app-aware‐
        ness-OPTIONS]
 
        --unicode <default: "auto">
@@ -320,7 +336,7 @@
               Cache directory, if different than the default location
 
        --max-items
-              Maximum  count  of cache-unique items, if different than the de‐
+              Maximum count of cache-unique items, if different than  the  de‐
               fault
 
        --all  List all entries
@@ -344,7 +360,7 @@
        Usage: snap [OPTIONS] debug state [state-OPTIONS]
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               relative times up to 60 days, then YYYY-MM-DD.
 
        --changes
@@ -362,7 +378,7 @@
               List all connections
 
        --connection
-              Show    details   of   the   matching   connections   (snap   or
+              Show   details   of   the   matching   connections   (snap    or
               snap:plug,snap:slot or snap:plug-or-slot
 
        --is-seeded
@@ -381,21 +397,21 @@
        Usage: snap [OPTIONS] debug timings [timings-OPTIONS]
 
        --last Select last change of given type (install, refresh, remove, try,
-              auto-refresh, etc.). A question mark at  the  end  of  the  type
+              auto-refresh,  etc.).  A  question  mark  at the end of the type
               means to do nothing (instead of returning an error) if no change
-              of  the  given  type is found. Note the question mark could need
+              of the given type is found. Note the question  mark  could  need
               protecting from the shell.
 
        --ensure
-              Show timings for a change related to the given  Ensure  activity
+              Show  timings  for a change related to the given Ensure activity
               (one of: auto-refresh, become-operational, refresh-catalogs, re‐
               fresh-hints, seed)
 
-       --all  Show  timings  for all executions of the given Ensure or startup
+       --all  Show timings for all executions of the given Ensure  or  startup
               activity, not just the latest
 
        --startup
-              Show timings for the startup of given subsystem (one  of:  load-
+              Show  timings  for the startup of given subsystem (one of: load-
               state, ifacemgr)
 
        --verbose
@@ -404,26 +420,26 @@
    debug validate-seed
        Validate snap seed
 
-       Validate  correctness  of snap seed located in the directory containing
+       Validate correctness of snap seed located in the  directory  containing
        seed.yaml file.
 
    disable
        Disable a snap in the system
 
-       The disable command disables a snap. The binaries and services  of  the
-       snap  will  no longer be available, but all the data is still available
+       The  disable  command disables a snap. The binaries and services of the
+       snap will no longer be available, but all the data is  still  available
        and the snap can easily be enabled again.
 
        Usage: snap [OPTIONS] disable [disable-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
    disconnect
        Disconnect a plug from a slot
 
-       The  disconnect  command  disconnects  a  plug  from a slot.  It may be
+       The disconnect command disconnects a plug  from  a  slot.   It  may  be
        called in the following ways:
 
        $ snap disconnect <snap>:<plug> <snap>:<slot>
@@ -432,18 +448,18 @@
 
        $ snap disconnect <snap>:<slot or plug>
 
-       Disconnects everything from the provided plug or slot.  The  snap  name
+       Disconnects  everything  from the provided plug or slot.  The snap name
        may be omitted for the core snap.
 
        When an automatic connection is manually disconnected, its disconnected
-       state  is retained after a snap refresh. The --forget flag can be added
+       state is retained after a snap refresh. The --forget flag can be  added
        to the disconnect command to reset this behaviour, and consequently re-
        enable an automatic reconnection after a snap refresh.
 
        Usage: snap [OPTIONS] disconnect [disconnect-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
        --forget
@@ -452,8 +468,8 @@
    download
        Download the given snap
 
-       The  download  command  downloads the given snap, components, and their
-       supporting assertions to the current directory with .snap,  .comp,  and
+       The download command downloads the given snap,  components,  and  their
+       supporting  assertions  to the current directory with .snap, .comp, and
        .assert file extensions, respectively.
 
        Usage: snap [OPTIONS] download [download-OPTIONS]
@@ -472,12 +488,12 @@
               Install from the stable channel
 
        --revision
-              Download  the  given revision of a snap. When downloading compo‐
-              nents, download the components associated with  the  given  snap
+              Download the given revision of a snap. When  downloading  compo‐
+              nents,  download  the  components associated with the given snap
               revision.
 
        --basename
-              Use  this  basename for the snap, component, and assertion files
+              Use this basename for the snap, component, and  assertion  files
               (defaults to <snap>_<revision>)
 
        --target-directory
@@ -497,19 +513,19 @@
        Usage: snap [OPTIONS] enable [enable-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
    export-key
        Export cryptographic public key
 
-       The  export-key command exports a public key assertion body that may be
+       The export-key command exports a public key assertion body that may  be
        imported by other systems.
 
        Usage: snap [OPTIONS] export-key [export-key-OPTIONS]
 
        --account
-              Format public key material as a request for an  account-key  for
+              Format  public  key material as a request for an account-key for
               this account-id
 
    export-snapshot
@@ -523,11 +539,11 @@
        The find command queries the store for available packages.
 
        With the --private flag, which requires the user to be logged-in to the
-       store  (see  'snap  help login'), it instead searches for private snaps
-       that the user has developer access to, either directly or  through  the
+       store (see 'snap help login'), it instead searches  for  private  snaps
+       that  the  user has developer access to, either directly or through the
        store's collaboration feature.
 
-       A  green check mark (given color and unicode support) after a publisher
+       A green check mark (given color and unicode support) after a  publisher
        name indicates that the publisher has been verified.
 
        Usage: snap [OPTIONS] find [find-OPTIONS]
@@ -553,19 +569,19 @@
    forget
        Delete a snapshot
 
-       The forget command deletes a snapshot. This operation can  not  be  un‐
+       The  forget  command  deletes a snapshot. This operation can not be un‐
        done.
 
-       A  snapshot  contains  archives  for the user, system and configuration
+       A snapshot contains archives for the  user,  system  and  configuration
        data of each snap included in the snapshot.
 
-       By default, this command forgets all the data in a snapshot.   Alterna‐
+       By  default, this command forgets all the data in a snapshot.  Alterna‐
        tively, you can specify the data of which snaps to forget.
 
        Usage: snap [OPTIONS] forget [forget-OPTIONS]
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
    get
@@ -627,10 +643,10 @@
 
        The info command shows detailed information about snaps.
 
-       The snaps can be specified by name or by path;  names  are  looked  for
-       both  in  the  store  and  in the installed snaps; paths can refer to a
-       .snap file, or to a directory that contains an unpacked  snap  suitable
-       for  'snap  try'  (an  example  of  this would be the 'prime' directory
+       The  snaps  can  be  specified by name or by path; names are looked for
+       both in the store and in the installed snaps;  paths  can  refer  to  a
+       .snap  file,  or to a directory that contains an unpacked snap suitable
+       for 'snap try' (an example of  this  would  be  the  'prime'  directory
        snapcraft produces).
 
        Usage: snap [OPTIONS] info [info-OPTIONS]
@@ -642,7 +658,7 @@
               Use a little bit of Unicode to improve legibility.
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               relative times up to 60 days, then YYYY-MM-DD.
 
        --verbose
@@ -653,21 +669,21 @@
 
        The install command installs the named snaps on the system.
 
-       To  install  multiple  instances of the same snap, append an underscore
+       To install multiple instances of the same snap,  append  an  underscore
        and a unique identifier (for each instance) to a snap's name.
 
-       Parallel instances are installed with --unaliased passed implicitly  to
-       avoid  conflicts  with existing installs. This behaviour can be altered
-       by passing --prefer which will enable all aliases of the given snap  in
-       preference  to  conflicting  aliases  of  other  snaps  whose automatic
+       Parallel  instances are installed with --unaliased passed implicitly to
+       avoid conflicts with existing installs. This behaviour can  be  altered
+       by  passing --prefer which will enable all aliases of the given snap in
+       preference to  conflicting  aliases  of  other  snaps  whose  automatic
        aliases will be disabled and manual aliases will be removed.
 
-       With no further options, the snaps are installed  tracking  the  stable
-       channel,  with strict security confinement. All available channels of a
+       With  no  further  options, the snaps are installed tracking the stable
+       channel, with strict security confinement. All available channels of  a
        snap are listed in its 'snap info' output.
 
-       When --revision is used, a later refresh will typically undo the  revi‐
-       sion  override,  taking  the  snap  back to the current revision of the
+       When  --revision is used, a later refresh will typically undo the revi‐
+       sion override, taking the snap back to  the  current  revision  of  the
        channel it's tracking.
 
        Use --name to set the instance name when installing from snap file.
@@ -681,7 +697,7 @@
               Use a little bit of Unicode to improve legibility.
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
        --channel
@@ -710,15 +726,15 @@
               Install the given revision of a snap
 
        --dangerous
-              Install  the  given  snap file even if there are no pre-acknowl‐
-              edged signatures for it, meaning it was not verified  and  could
+              Install the given snap file even if there  are  no  pre-acknowl‐
+              edged  signatures  for it, meaning it was not verified and could
               be dangerous (--devmode implies this)
 
        --unaliased
               Install the given snap without enabling its automatic aliases
 
        --prefer
-              Enable  all aliases of the given snap in preference to conflict‐
+              Enable all aliases of the given snap in preference to  conflict‐
               ing aliases of other snaps
 
        --name Install the snap file under the given instance name
@@ -740,8 +756,8 @@
 
        The interface command shows details of snap interfaces.
 
-       If no interface name is provided, a list of  interface  names  with  at
-       least  one connection is shown, or a list of all interfaces if --all is
+       If  no  interface  name  is provided, a list of interface names with at
+       least one connection is shown, or a list of all interfaces if --all  is
        provided.
 
        Usage: snap [OPTIONS] interface [interface-OPTIONS]
@@ -754,9 +770,9 @@
    known
        Show known assertions of the provided type
 
-       The known command shows known assertions  of  the  provided  type.   If
-       header=value  pairs  are  provided after the assertion type, the asser‐
-       tions shown must also have the specified headers matching the  provided
+       The  known  command  shows  known  assertions of the provided type.  If
+       header=value pairs are provided after the assertion  type,  the  asser‐
+       tions  shown must also have the specified headers matching the provided
        values.
 
        Usage: snap [OPTIONS] known [known-OPTIONS]
@@ -765,16 +781,16 @@
               Query the store for the assertion, via snapd if possible
 
        --direct
-              Query  the store for the assertion, without attempting to go via
+              Query the store for the assertion, without attempting to go  via
               snapd
 
    list
        List installed snaps
 
-       The list command displays a summary of snaps installed in  the  current
+       The  list  command displays a summary of snaps installed in the current
        system.
 
-       A  green check mark (given color and unicode support) after a publisher
+       A green check mark (given color and unicode support) after a  publisher
        name indicates that the publisher has been verified.
 
        Usage: snap [OPTIONS] list [list-OPTIONS]
@@ -790,13 +806,13 @@
    login
        Authenticate to snapd and the store
 
-       The login command authenticates the user to snapd and the  snap  store,
+       The  login  command authenticates the user to snapd and the snap store,
        and saves credentials into the ~/.snap/auth.json file. Further communi‐
        cation with snapd will then be made using those credentials.
 
        It's not necessary to log in to interact with snapd. Doing so, however,
-       enables  interactions without sudo, as well as some some developer-ori‐
-       ented features as detailed in the help for the find,  install  and  re‐
+       enables interactions without sudo, as well as some some  developer-ori‐
+       ented  features  as  detailed in the help for the find, install and re‐
        fresh commands.
 
        An account can be set up at https://login.ubuntu.com
@@ -809,13 +825,13 @@
    logs
        Retrieve logs for services
 
-       The  logs  command fetches logs of the given services and displays them
+       The logs command fetches logs of the given services and  displays  them
        in chronological order.
 
        Usage: snap [OPTIONS] logs [logs-OPTIONS]
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               relative times up to 60 days, then YYYY-MM-DD.
 
        -n <default: "10">
@@ -826,22 +842,22 @@
    model
        Get the active model for this device
 
-       The  model  command  returns the active model assertion information for
+       The model command returns the active model  assertion  information  for
        this device.
 
-       By default, only the essential model identification information is  in‐
+       By  default, only the essential model identification information is in‐
        cluded in the output, but this can be expanded to include all of an as‐
        sertion's non-meta headers.
 
        The verbose output is presented in a structured, yaml-like format.
 
-       Similarly,  the  active serial assertion can be used for the output in‐
+       Similarly, the active serial assertion can be used for the  output  in‐
        stead of the model assertion.
 
        Usage: snap [OPTIONS] model [model-OPTIONS]
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               relative times up to 60 days, then YYYY-MM-DD.
 
        --color <default: "auto">
@@ -870,21 +886,21 @@
    pack
        Pack the given directory as a snap
 
-       The  pack command packs the given snap-dir as a snap and writes the re‐
-       sult to target-dir. If target-dir is omitted, the result is written  to
-       current  directory.  If both source-dir and target-dir are omitted, the
+       The pack command packs the given snap-dir as a snap and writes the  re‐
+       sult  to target-dir. If target-dir is omitted, the result is written to
+       current directory. If both source-dir and target-dir are  omitted,  the
        pack command packs the current directory.
 
-       The default file name for a snap  can  be  derived  entirely  from  its
+       The  default  file  name  for  a  snap can be derived entirely from its
        snap.yaml, but in some situations it's simpler for a script to feed the
-       filename  in.  In  those cases, --filename can be given to override the
-       default. If this filename is not absolute it will be taken as  relative
+       filename in. In those cases, --filename can be given  to  override  the
+       default.  If this filename is not absolute it will be taken as relative
        to target-dir.
 
        When used with --check-skeleton, pack only checks whether snap-dir con‐
-       tains  valid  snap  metadata and raises an error otherwise. Application
-       commands listed in snap metadata file,  but  appearing  with  incorrect
-       permission  bits  result  in  an  error. Commands that are missing from
+       tains valid snap metadata and raises an  error  otherwise.  Application
+       commands  listed  in  snap  metadata file, but appearing with incorrect
+       permission bits result in an error.  Commands  that  are  missing  from
        snap-dir are listed in diagnostic messages.
 
        Usage: snap [OPTIONS] pack [pack-OPTIONS]
@@ -901,14 +917,14 @@
    prefer
        Enable aliases from a snap, disabling any conflicting aliases
 
-       The prefer command enables all aliases of the given snap in  preference
-       to  conflicting  aliases  of other snaps whose aliases will be disabled
+       The  prefer command enables all aliases of the given snap in preference
+       to conflicting aliases of other snaps whose aliases  will  be  disabled
        (or removed, for manual ones).
 
        Usage: snap [OPTIONS] prefer [prefer-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
    prepare-image
@@ -917,7 +933,7 @@
        The prepare-image command performs some of the steps necessary for cre‐
        ating device images.
 
-       For  core  images it is not invoked directly but usually via ubuntu-im‐
+       For core images it is not invoked directly but usually  via  ubuntu-im‐
        age.
 
        For preparing classic images it supports a --classic mode
@@ -931,7 +947,7 @@
               Preseed (UC20+ only)
 
        --preseed-sign-key
-              Name of the key to use to sign preseed assertion, otherwise  use
+              Name  of the key to use to sign preseed assertion, otherwise use
               the default key
 
        --apparmor-features-dir
@@ -940,14 +956,14 @@
        --sysfs-overlay
               Optional sysfs overlay to be used when running preseeding steps
 
-       --arch Specify  an  architecture for snaps for --classic when the model
+       --arch Specify an architecture for snaps for --classic when  the  model
               does not
 
        --channel
               The channel to use
 
        --snap <snap>[=<channel>]
-              Include the given snap from the store or  a  local  file  and/or
+              Include  the  given  snap  from the store or a local file and/or
               specify the channel to track for the given snap
 
        --comp <snap>+<comp>
@@ -958,16 +974,16 @@
               the provided snaps which should be installed
 
        --write-revisions [="./seed.manifest"]
-              Writes  a  manifest file containing references to the exact snap
-              revisions used for the image. A path for  the  manifest  is  op‐
+              Writes a manifest file containing references to the  exact  snap
+              revisions  used  for  the  image. A path for the manifest is op‐
               tional.
 
        --validation
-              Control  whether validations should be ignored or enforced. (de‐
+              Control whether validations should be ignored or enforced.  (de‐
               fault: ignore)
 
        --allow-snapd-kernel-mismatch
-              Whether a mismatch between versions of the snapd snap and  snapd
+              Whether  a mismatch between versions of the snapd snap and snapd
               in kernel is allowed
 
        --assert <filename>
@@ -976,8 +992,8 @@
    quota
        Show quota group for a set of snaps
 
-       The  quota command shows information about a quota group, including the
-       set of snaps and any sub-groups it contains, as well  as  its  resource
+       The quota command shows information about a quota group, including  the
+       set  of  snaps  and any sub-groups it contains, as well as its resource
        constraints and the current usage of those constrained resources.
 
    quotas
@@ -991,10 +1007,10 @@
        The reboot command reboots the system into a particular mode of the se‐
        lected recovery system.
 
-       When  called  without  a  system  label and without a mode it will just
+       When called without a system label and without  a  mode  it  will  just
        trigger a regular reboot.
 
-       When called without a label, the current system will be used for  "run"
+       When  called without a label, the current system will be used for "run"
        mode. The default recovery system will be used for "recover", "factory-
        reset" and "install" modes.
 
@@ -1018,8 +1034,8 @@
 
        The recovery command lists the available recovery systems.
 
-       With  --show-keys  it displays recovery keys that can be used to unlock
-       the encrypted partitions if  the  device-specific  automatic  unlocking
+       With --show-keys it displays recovery keys that can be used  to  unlock
+       the  encrypted  partitions  if  the device-specific automatic unlocking
        does not work.
 
        Usage: snap [OPTIONS] recovery [recovery-OPTIONS]
@@ -1031,33 +1047,33 @@
               Use a little bit of Unicode to improve legibility.
 
        --show-keys
-              Show  recovery  keys  (if  available) to unlock encrypted parti‐
+              Show recovery keys (if available)  to  unlock  encrypted  parti‐
               tions.
 
    refresh
        Refresh snaps in the system
 
-       The refresh command updates the specified snaps, or all  snaps  in  the
+       The  refresh  command  updates the specified snaps, or all snaps in the
        system if none are specified.
 
-       With  no  further options, the snaps are refreshed to the current revi‐
-       sion of the channel they're tracking, preserving their confinement  op‐
-       tions.  All  available channels of a snap are listed in its 'snap info'
+       With no further options, the snaps are refreshed to the  current  revi‐
+       sion  of the channel they're tracking, preserving their confinement op‐
+       tions. All available channels of a snap are listed in its  'snap  info'
        output.
 
-       When --revision is used, a later refresh will typically undo the  revi‐
+       When  --revision is used, a later refresh will typically undo the revi‐
        sion override.
 
-       Hold  (--hold)  is  used to postpone snap refresh updates for all snaps
+       Hold (--hold) is used to postpone snap refresh updates  for  all  snaps
        when no snaps are specified, or for the specified snaps.
 
-       When no snaps are specified --hold is only effective on  auto-refreshes
-       and  will not block either general refresh requests from 'snap refresh'
+       When  no snaps are specified --hold is only effective on auto-refreshes
+       and will not block either general refresh requests from 'snap  refresh'
        or specific snap requests from 'snap refresh target-snap'.
 
-       When snaps are specified --hold is effective  on  both  their  auto-re‐
+       When  snaps  are  specified  --hold is effective on both their auto-re‐
        freshes and general refresh requests from 'snap refresh'. However, spe‐
-       cific  snap  requests  from 'snap refresh target-snap' remain unblocked
+       cific snap requests from 'snap refresh  target-snap'  remain  unblocked
        and will proceed.
 
        Usage: snap [OPTIONS] refresh [refresh-OPTIONS]
@@ -1069,11 +1085,11 @@
               Use a little bit of Unicode to improve legibility.
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               relative times up to 60 days, then YYYY-MM-DD.
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
        --channel
@@ -1110,7 +1126,7 @@
        --leave-cohort
               Refresh the snap out of its cohort
 
-       --list Show the new versions of snaps that would be  updated  with  the
+       --list Show  the  new  versions of snaps that would be updated with the
               next refresh
 
        --time Show auto refresh information but do not perform a refresh
@@ -1134,21 +1150,21 @@
    remodel
        Remodel this device
 
-       The  remodel  command changes the model assertion of the device, either
+       The remodel command changes the model assertion of the  device,  either
        to a new revision or a full new model.
 
-       In the process it applies any implied changes to the  device:  new  re‐
+       In  the  process  it applies any implied changes to the device: new re‐
        quired snaps, new kernel or gadget etc.
 
        Snaps and assertions are downloaded from the store unless they are pro‐
-       vided  as  local  files specified by --snap and --assertion options. If
-       using these options, it is expected that all the needed snaps  and  as‐
+       vided as local files specified by --snap and  --assertion  options.  If
+       using  these  options, it is expected that all the needed snaps and as‐
        sertions are provided locally, otherwise the remodel will fail.
 
        Usage: snap [OPTIONS] remodel [remodel-OPTIONS]
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
        --snap Use one or more locally available snaps.
@@ -1157,8 +1173,8 @@
               Use one or more locally available assertion files.
 
        --offline
-              Use only pre-installed and locally  provided  snaps  and  asser‐
-              tions.  Providing  any snaps or assertions locally implies --of‐
+              Use  only  pre-installed  and  locally provided snaps and asser‐
+              tions. Providing any snaps or assertions locally  implies  --of‐
               fline.
 
    remove
@@ -1167,18 +1183,18 @@
        The remove command removes the named snap instance from the system.
 
        By default all the snap revisions are removed, including their data and
-       the common data directory. When a --revision option is passed only  the
+       the  common data directory. When a --revision option is passed only the
        specified revision is removed.
 
        Unless automatic snapshots are disabled, a snapshot of all data for the
        snap is saved upon removal, which is then available for future restora‐
-       tion  with snap restore. The --purge option disables automatically cre‐
+       tion with snap restore. The --purge option disables automatically  cre‐
        ating snapshots.
 
        Usage: snap [OPTIONS] remove [remove-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
        --revision
@@ -1188,7 +1204,7 @@
               Remove the snap without saving a snapshot of its data
 
        --terminate
-              Terminate  running  processes  associated with a snap before re‐
+              Terminate running processes associated with a  snap  before  re‐
               moval
 
    remove-quota
@@ -1196,9 +1212,9 @@
 
        The remove-quota command removes the given quota group.
 
-       Currently, only quota groups with no sub-groups can be removed. In  or‐
-       der  to remove a quota group with sub-groups, the sub-groups must first
-       be removed until there are no sub-groups for the group, then the  group
+       Currently,  only quota groups with no sub-groups can be removed. In or‐
+       der to remove a quota group with sub-groups, the sub-groups must  first
+       be  removed until there are no sub-groups for the group, then the group
        itself can be removed.
 
        Usage: snap [OPTIONS] remove-quota [remove-quota-OPTIONS]
@@ -1206,11 +1222,11 @@
        --no-wait
 
    report-issue
-       Show  contact  information  and  optionally  navigate to relevant issue
+       Show contact information and  optionally  navigate  to  relevant  issue
        tracker
 
-       The report-issue command helps with reporting a problem with a snap  by
-       listing  available contact information provided by the snap's publisher
+       The  report-issue command helps with reporting a problem with a snap by
+       listing available contact information provided by the snap's  publisher
        and optionally opens the issue reporting link in user's web browser.
 
    restart
@@ -1218,68 +1234,68 @@
 
        The restart command restarts the given services.
 
-       If the --reload option is given, for each service whose app has  a  re‐
+       If  the  --reload option is given, for each service whose app has a re‐
        load command, a reload is performed instead of a restart.
 
        Usage: snap [OPTIONS] restart [restart-OPTIONS]
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
        --system
               The operation should only affect system services.
 
-       --user The operation should only affect user services for  the  current
+       --user The  operation  should only affect user services for the current
               user.
 
        --users
-              If  provided  and set to 'all', the operation should affect ser‐
+              If provided and set to 'all', the operation should  affect  ser‐
               vices for all users.
 
        --reload
-              If the service has a reload command, use it instead of  restart‐
+              If  the service has a reload command, use it instead of restart‐
               ing.
 
    restore
        Restore a snapshot
 
        The restore command replaces the current user, system and configuration
-       data  of included snaps, with the corresponding data from the specified
+       data of included snaps, with the corresponding data from the  specified
        snapshot.
 
        By default, this command restores all the data in a snapshot.  Alterna‐
-       tively, you can specify the data of which  snaps  to  restore,  or  for
+       tively,  you  can  specify  the  data of which snaps to restore, or for
        which users, or a combination of these.
 
-       If  a snap is included in a restore operation, excluding its system and
+       If a snap is included in a restore operation, excluding its system  and
        configuration data from the restore is not currently possible. This re‐
        striction may be lifted in the future.
 
        Usage: snap [OPTIONS] restore [restore-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
        --users
-              Restore  data of only specific users (comma-separated) (default:
+              Restore data of only specific users (comma-separated)  (default:
               all users)
 
    revert
        Reverts the given snap to the previous state
 
-       The revert command reverts the given snap to its state before the  lat‐
-       est  refresh. This will reactivate the previous snap revision, and will
-       use the original data that was associated with that revision,  discard‐
-       ing  any  data changes that were done by the latest revision. As an ex‐
-       ception, data which the snap explicitly chooses to share  across  revi‐
+       The  revert command reverts the given snap to its state before the lat‐
+       est refresh. This will reactivate the previous snap revision, and  will
+       use  the original data that was associated with that revision, discard‐
+       ing any data changes that were done by the latest revision. As  an  ex‐
+       ception,  data  which the snap explicitly chooses to share across revi‐
        sions is not touched by the revert process.
 
        Usage: snap [OPTIONS] revert [revert-OPTIONS]
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
        --devmode
@@ -1309,8 +1325,8 @@
               Enable debug logging during early snap startup phases
 
        --strace [="with-strace"] <default: "no-strace">
-              Run the command  under  strace  (useful  for  debugging).  Extra
-              strace  options  can  be  specified  as well here. Pass --raw to
+              Run  the  command  under  strace  (useful  for debugging). Extra
+              strace options can be specified as  well  here.  Pass  --raw  to
               strace early snap helpers.
 
        --gdbserver [=":0"] <default: "no-gdbserver">
@@ -1322,25 +1338,25 @@
    save
        Save a snapshot of the current data
 
-       The save command creates a snapshot of the  current  user,  system  and
+       The  save  command  creates  a snapshot of the current user, system and
        configuration data for the given snaps.
 
-       By  default,  this  command  saves the data of all snaps for all users.
-       Alternatively, you can specify the data of which snaps to save, or  for
+       By default, this command saves the data of all  snaps  for  all  users.
+       Alternatively,  you can specify the data of which snaps to save, or for
        which users, or a combination of these.
 
-       If  a  snap  is  included in a save operation, excluding its system and
-       configuration data from the snapshot is not  currently  possible.  This
+       If a snap is included in a save operation,  excluding  its  system  and
+       configuration  data  from  the snapshot is not currently possible. This
        restriction may be lifted in the future.
 
        Usage: snap [OPTIONS] save [save-OPTIONS]
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               short relative times.
 
        --users
@@ -1350,13 +1366,13 @@
    saved
        List currently stored snapshots
 
-       The  saved  command displays a list of snapshots that have been created
+       The saved command displays a list of snapshots that have  been  created
        previously with the 'save' command.
 
        Usage: snap [OPTIONS] saved [saved-OPTIONS]
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               short relative times.
 
        --id   Show only a specific snapshot.
@@ -1368,33 +1384,33 @@
        about the services in all currently installed snaps.
 
        If executed as root user, the 'Startup' column of any user service will
-       be  whether  it's  globally enabled (i.e systemctl is-enabled). To view
+       be whether it's globally enabled (i.e systemctl  is-enabled).  To  view
        the actual 'Startup'|'Current' status of the user services for the root
        user itself, --user can be provided.
 
-       If executed as a non-root user, the 'Startup'|'Current' status of  user
-       services  will be the current status for the invoking user. To view the
+       If  executed as a non-root user, the 'Startup'|'Current' status of user
+       services will be the current status for the invoking user. To view  the
        global enablement status of user services, --global can be provided.
 
        Usage: snap [OPTIONS] services [services-OPTIONS]
 
        -g, --global
-              Show the global enable status for user services instead  of  the
+              Show  the  global enable status for user services instead of the
               status for the current user.
 
        -u, --user
-              Show  the  current  status  of  the user services instead of the
+              Show the current status of the  user  services  instead  of  the
               global enable status.
 
    set
        Change configuration options
 
-       The set command changes  the  provided  configuration  options  as  re‐
+       The  set  command  changes  the  provided  configuration options as re‐
        quested.
 
            $ snap set snap-name username=frank password=$PASSWORD
 
-       All  configuration  changes  are  persisted at once, and only after the
+       All configuration changes are persisted at once,  and  only  after  the
        snap's configuration hook returns successfully.
 
        Nested values may be modified via a dotted path:
@@ -1407,7 +1423,7 @@
        Usage: snap [OPTIONS] set [set-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
        -t     Parse the value strictly as JSON document
@@ -1417,61 +1433,61 @@
    set-quota
        Create or update a quota group.
 
-       The  set-quota command updates or creates a quota group with the speci‐
+       The set-quota command updates or creates a quota group with the  speci‐
        fied set of snaps.
 
        A quota group sets resource limits on the set of snaps or snap services
-       it contains.  Snaps can be at most in one quota group but quota  groups
-       can  be nested. Nested quota groups are subject to the restriction that
-       the total sum of each existing quota in sub-groups cannot  exceed  that
+       it  contains.  Snaps can be at most in one quota group but quota groups
+       can be nested. Nested quota groups are subject to the restriction  that
+       the  total  sum of each existing quota in sub-groups cannot exceed that
        of the parent group the nested groups are part of.
 
-       All  provided  snaps are appended to the group; to remove a snap from a
-       quota group, the entire group must be  removed  with  remove-quota  and
+       All provided snaps are appended to the group; to remove a snap  from  a
+       quota  group,  the  entire  group must be removed with remove-quota and
        recreated without the snap. To remove a sub-group from the quota group,
        the sub-group must be removed directly with the remove-quota command.
 
-       To  set  limits  on  individual  services,  one or more services can be
-       placed into a sub-group. The respective snap for each service must  be‐
-       long  to  the  sub-group's parent group. These sub-groups will have the
-       same limitations as nested groups which means their  combined  resource
-       usage  cannot exceed the resource limits set for the parent group. Sub-
+       To set limits on individual services,  one  or  more  services  can  be
+       placed  into a sub-group. The respective snap for each service must be‐
+       long to the sub-group's parent group. These sub-groups  will  have  the
+       same  limitations  as nested groups which means their combined resource
+       usage cannot exceed the resource limits set for the parent group.  Sub-
        groups which contain services cannot have their own journal quotas set,
-       and instead automatically inherit any journal quota their parent  quota
+       and  instead automatically inherit any journal quota their parent quota
        group may have.
 
-       The  memory limit for a quota group can be increased but not decreased.
-       To decrease the memory limit for a quota group, the entire  group  must
-       be  removed  with  the  remove-quota command and recreated with a lower
-       limit. Increasing the memory limit for a quota group does  not  restart
+       The memory limit for a quota group can be increased but not  decreased.
+       To  decrease  the memory limit for a quota group, the entire group must
+       be removed with the remove-quota command and  recreated  with  a  lower
+       limit.  Increasing  the memory limit for a quota group does not restart
        any services associated with snaps in the quota group.
 
        The CPU limit for a quota group can be both increased and decreased af‐
-       ter  being  set  on  a quota group. The CPU limit can be specified as a
-       single percentage which means that the quota group is allowed an  over‐
-       all  percentage  of the CPU resources. Setting it to 50% means that the
+       ter being set on a quota group. The CPU limit can  be  specified  as  a
+       single  percentage which means that the quota group is allowed an over‐
+       all percentage of the CPU resources. Setting it to 50% means  that  the
        quota group is allowed to use up to 50% of all CPU cores in the allowed
        CPU set. Setting the percentage to 2x100% means that the quota group is
        allowed up to 100% on two cpu cores.
 
-       The CPU set limit for a quota group can  be  modified  to  include  new
+       The  CPU  set  limit  for  a quota group can be modified to include new
        cpus, or to remove existing cpus from the quota already set.
 
        The threads limit for a quota group can be increased but not decreased.
-       To  decrease the threads limit for a quota group, the entire group must
-       be removed with the remove-quota command and  recreated  with  a  lower
+       To decrease the threads limit for a quota group, the entire group  must
+       be  removed  with  the  remove-quota command and recreated with a lower
        limit.
 
-       The  journal limits can be increased and decreased after being set on a
+       The journal limits can be increased and decreased after being set on  a
        group.  Setting a journal limit will cause the snaps in the group to be
-       put into the same journal namespace. This will affect the behaviour  of
+       put  into the same journal namespace. This will affect the behaviour of
        the log command.
 
-       New  quotas  can  be  set on existing quota groups, but existing quotas
-       cannot be removed from a quota group, without removing  and  recreating
+       New quotas can be set on existing quota  groups,  but  existing  quotas
+       cannot  be  removed from a quota group, without removing and recreating
        the entire group.
 
-       Adding  new snaps to a quota group will result in all non-disabled ser‐
+       Adding new snaps to a quota group will result in all non-disabled  ser‐
        vices in that snap being restarted.
 
        An existing sub group cannot be moved from one parent to another.
@@ -1479,7 +1495,7 @@
        Usage: snap [OPTIONS] set-quota [set-quota-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
        --memory [=]
@@ -1506,8 +1522,8 @@
    sign
        Sign an assertion
 
-       The  sign command signs an assertion using the specified key, using the
-       input for headers from a JSON mapping provided through stdin. The  body
+       The sign command signs an assertion using the specified key, using  the
+       input  for headers from a JSON mapping provided through stdin. The body
        of the assertion can be specified through a "body" pseudo-header.
 
        Usage: snap [OPTIONS] sign [sign-OPTIONS]
@@ -1530,21 +1546,21 @@
        Usage: snap [OPTIONS] start [start-OPTIONS]
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
        --system
               The operation should only affect system services.
 
-       --user The operation should only affect user services for  the  current
+       --user The  operation  should only affect user services for the current
               user.
 
        --users
-              If  provided  and set to 'all', the operation should affect ser‐
+              If provided and set to 'all', the operation should  affect  ser‐
               vices for all users.
 
        --enable
-              As well as starting the  service  now,  arrange  for  it  to  be
+              As  well  as  starting  the  service  now,  arrange for it to be
               started on boot.
 
    stop
@@ -1555,17 +1571,17 @@
        Usage: snap [OPTIONS] stop [stop-OPTIONS]
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
        --system
               The operation should only affect system services.
 
-       --user The operation should only affect user services for  the  current
+       --user The  operation  should only affect user services for the current
               user.
 
        --users
-              If  provided  and set to 'all', the operation should affect ser‐
+              If provided and set to 'all', the operation should  affect  ser‐
               vices for all users.
 
        --disable
@@ -1582,7 +1598,7 @@
        Usage: snap [OPTIONS] switch [switch-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
        --channel
@@ -1607,7 +1623,7 @@
    tasks
        List a change's tasks
 
-       The  tasks command displays a summary of tasks associated with an indi‐
+       The tasks command displays a summary of tasks associated with an  indi‐
        vidual change.
 
        Usage: snap [OPTIONS] tasks [tasks-OPTIONS]
@@ -1615,32 +1631,32 @@
        Aliases: change
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               relative times up to 60 days, then YYYY-MM-DD.
 
        --last Select last change of given type (install, refresh, remove, try,
-              auto-refresh,  etc.).  A  question  mark  at the end of the type
+              auto-refresh, etc.). A question mark at  the  end  of  the  type
               means to do nothing (instead of returning an error) if no change
-              of the given type is found. Note the question  mark  could  need
+              of  the  given  type is found. Note the question mark could need
               protecting from the shell.
 
    try
        Test an unpacked snap in the system
 
-       The  try  command installs an unpacked snap into the system for testing
-       purposes.  The unpacked snap content continues to be  used  even  after
+       The try command installs an unpacked snap into the system  for  testing
+       purposes.   The  unpacked  snap content continues to be used even after
        installation, so non-metadata changes there go live instantly. Metadata
-       changes  such  as those performed in snap.yaml will require reinstalla‐
+       changes such as those performed in snap.yaml will  require  reinstalla‐
        tion to go live.
 
-       If snap-dir argument is omitted, the try command will attempt to  infer
-       it  if either snapcraft.yaml file and prime directory or meta/snap.yaml
+       If  snap-dir argument is omitted, the try command will attempt to infer
+       it if either snapcraft.yaml file and prime directory or  meta/snap.yaml
        file can be found relative to current working directory.
 
        Usage: snap [OPTIONS] try [try-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
        --devmode
@@ -1655,25 +1671,25 @@
    unalias
        Remove a manual alias, or the aliases for an entire snap
 
-       The  unalias command removes a single alias if the provided argument is
-       a manual alias, or disables all aliases of  a  snap,  including  manual
+       The unalias command removes a single alias if the provided argument  is
+       a  manual  alias,  or  disables all aliases of a snap, including manual
        ones, if the argument is a snap name.
 
        Usage: snap [OPTIONS] unalias [unalias-OPTIONS]
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
    unset
        Remove configuration options
 
-       The unset command removes the provided  configuration  options  as  re‐
+       The  unset  command  removes  the provided configuration options as re‐
        quested.
 
             $ snap unset snap-name name address
 
-       All  configuration  changes  are  persisted at once, and only after the
+       All configuration changes are persisted at once,  and  only  after  the
        snap's configuration hook returns successfully.
 
        Nested values may be removed via a dotted path:
@@ -1683,18 +1699,18 @@
        Usage: snap [OPTIONS] unset [unset-OPTIONS]
 
        --no-wait
-              Do not wait for the operation  to  finish  but  just  print  the
+              Do  not  wait  for  the  operation  to finish but just print the
               change id.
 
    validate
        List or apply validation sets
 
-       The  validate command lists or applies validation sets that state which
-       snaps are required or permitted to be  installed  together,  optionally
+       The validate command lists or applies validation sets that state  which
+       snaps  are  required  or permitted to be installed together, optionally
        constrained to fixed revisions.
 
-       A  validation  set  can either be in monitoring mode, in which case its
-       constraints aren't enforced, or in enforcing mode, in which case  snapd
+       A validation set can either be in monitoring mode, in  which  case  its
+       constraints  aren't enforced, or in enforcing mode, in which case snapd
        will not allow operations which would result in snaps breaking the val‐
        idation set's constraints.
 
@@ -1719,13 +1735,13 @@
               Use a little bit of Unicode to improve legibility.
 
        --no-wait
-              Do  not  wait  for  the  operation  to finish but just print the
+              Do not wait for the operation  to  finish  but  just  print  the
               change id.
 
    version
        Show version details
 
-       The version command  displays  the  versions  of  the  running  client,
+       The  version  command  displays  the  versions  of  the running client,
        server, and operating system.
 
        Usage: snap [OPTIONS] version [version-OPTIONS]
@@ -1741,12 +1757,12 @@
    warnings
        List warnings
 
-       The  warnings command lists the warnings that have been reported to the
+       The warnings command lists the warnings that have been reported to  the
        system.
 
        Once warnings have been listed with 'snap warnings', 'snap okay' may be
-       used to silence them. A warning that's been silenced in this  way  will
-       not  be listed again unless it happens again, _and_ a cooldown time has
+       used  to  silence them. A warning that's been silenced in this way will
+       not be listed again unless it happens again, _and_ a cooldown time  has
        passed.
 
        Warnings expire automatically, and once expired they are forgotten.
@@ -1754,7 +1770,7 @@
        Usage: snap [OPTIONS] warnings [warnings-OPTIONS]
 
        --abs-time
-              Display absolute times (in RFC 3339 format). Otherwise,  display
+              Display  absolute times (in RFC 3339 format). Otherwise, display
               relative times up to 60 days, then YYYY-MM-DD.
 
        --unicode <default: "auto">
@@ -1768,15 +1784,15 @@
    watch
        Watch a change in progress
 
-       The  watch  command  waits  for the given change-id to finish and shows
+       The watch command waits for the given change-id  to  finish  and  shows
        progress (if available).
 
        Usage: snap [OPTIONS] watch [watch-OPTIONS]
 
        --last Select last change of given type (install, refresh, remove, try,
-              auto-refresh, etc.). A question mark at  the  end  of  the  type
+              auto-refresh,  etc.).  A  question  mark  at the end of the type
               means to do nothing (instead of returning an error) if no change
-              of  the  given  type is found. Note the question mark could need
+              of the given type is found. Note the question  mark  could  need
               protecting from the shell.
 
    whoami
@@ -1791,4 +1807,4 @@
 ## BUGS
        Please report all bugs with https://bugs.launchpad.net/snapd/+filebug
 
-                                 02 April 2026                         snap(8)
+                                 30 March 2026                         snap(8)
