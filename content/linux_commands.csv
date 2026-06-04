@@ -173,7 +173,8 @@ ssh-keygen;3;Génération de clés SSH
 ssh-add;3;
 ssh-copy-id;3;
 nmap;3;exploration réseau
-whois;3;infos/domaine
+whois;3;infos/domaine (obsolete);rdap
+rdap;3;infos/domaine;whois
 traceroute;3;affiche les étapes d'une requete réseau;mtr
 mtr;3;affiche les étapes d'une requete réseau;traceroute
 netstat;3;infos/reseau, routage, etc.
