@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 299 commandes
+Total: 301 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -190,12 +190,13 @@ Total: 299 commandes
 ## 8 - catégorie: Système & _Hardware_
 <a name='cat1'></a>
 
-20 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+22 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| acpi ([G](https://www.google.fr/search?q=linux+acpi)) | details sur alimentation (batterie ou secteur) |  | NI |
+| acpi ([G](https://www.google.fr/search?q=linux+acpi)) | details sur alimentation (batterie ou secteur) | [upower,dmidecode](linux_cmds_list_alpha.md#u) | NI |
 | [arch](man/man_arch.md) | architecture processeur | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
+| [dmidecode](man/man_dmidecode.md) | interface sur le BIOS | [acpi](linux_cmds_list_alpha.md#a) | _installed_ |
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ |  | _installed_ |
 | [halt](man/man_halt.md) |  | [shutdown,reboot](linux_cmds_list_alpha.md#s) | _installed_ |
 | hwclock ([G](https://www.google.fr/search?q=linux+hwclock)) | accès horloge interne | [time](linux_cmds_list_alpha.md#t) | NI |
@@ -214,6 +215,7 @@ Total: 299 commandes
 | [ss](man/man_ss.md) | _socket statistics_ | [lsof](linux_cmds_list_alpha.md#l) | _installed_ |
 | [su](man/man_su.md) | changement temporaire de _user_ | [sudo](linux_cmds_list_alpha.md#s) | _installed_ |
 | [sudo](man/man_sudo.md) | exécution d'une commande admin | [su](linux_cmds_list_alpha.md#s) | _installed_ |
+| upower ([G](https://www.google.fr/search?q=linux+upower)) | client du _daemon_ `upowerd`, gerant l'alimentation | [acpi](linux_cmds_list_alpha.md#a) | NI |
 
 ## 9 - catégorie: Mémoire
 <a name='cat22'></a>
@@ -546,5 +548,5 @@ Total: 299 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-06-04T07:34:17+0000_,
+_MAJ: 2026-06-15T14:35:43+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-290 commandes<br>
-32 _builtin_, 193 _installed_, 65 NI (_not installed_)
+292 commandes<br>
+32 _builtin_, 194 _installed_, 66 NI (_not installed_)
 
 
 ## 7
@@ -37,7 +37,7 @@
 |-----|-----|-----|-----|-----|
 | aa-xxx ([G](https://www.google.fr/search?q=linux+aa-xxx)) | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  | NI |
 | [ab](man/man_ab.md) | _Apache's server benchmarking tool_ | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) | [hey](linux_cmds_list_alpha.md#h) | _installed_ |
-| acpi ([G](https://www.google.fr/search?q=linux+acpi)) | details sur alimentation (batterie ou secteur) | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  | NI |
+| acpi ([G](https://www.google.fr/search?q=linux+acpi)) | details sur alimentation (batterie ou secteur) | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [upower,dmidecode](linux_cmds_list_alpha.md#u) | NI |
 | [addgroup](man/man_addgroup.md) | création groupe d'utilisateurs | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [adduser](linux_cmds_list_alpha.md#a) | _installed_ |
 | [adduser](man/man_adduser.md) | création utilisateur | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) |  | _installed_ |
 | [alias](man/help_alias.md) | composition de commandes | [Général](linux_cmds_list_cat.md#cat4) | [unalias](linux_cmds_list_alpha.md#u) | _builtin_ |
@@ -123,6 +123,7 @@
 | [dir](man/man_dir.md) | alias de ls | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [ls](linux_cmds_list_alpha.md#l) | _installed_ |
 | display ([G](https://www.google.fr/search?q=linux+display)) | affichage d'une image sur serveur X | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  | NI |
 | [dmesg](man/man_dmesg.md) | affichage logs kernel (buffer circulaire) | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
+| [dmidecode](man/man_dmidecode.md) | interface sur le BIOS | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [acpi](linux_cmds_list_alpha.md#a) | _installed_ |
 | [dpkg](man/man_dpkg.md) | utilitaire paquets Debian (.deb) | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  | _installed_ |
 | [du](man/man_du.md) | _disk usage_ | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [ncdu](linux_cmds_list_alpha.md#n) | _installed_ |
 
@@ -494,6 +495,7 @@
 | [uniq](man/man_uniq.md) | suppression lignes identiques | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [unzip](man/man_unzip.md) | décompression zip | [Compression](linux_cmds_list_cat.md#cat19) | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | updatedb ([G](https://www.google.fr/search?q=linux+updatedb)) | mise à jour BDD `locate` | [Général](linux_cmds_list_cat.md#cat4) | [locate](linux_cmds_list_alpha.md#l) | NI |
+| upower ([G](https://www.google.fr/search?q=linux+upower)) | client du _daemon_ `upowerd`, gerant l'alimentation | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [acpi](linux_cmds_list_alpha.md#a) | NI |
 | [uptime](man/man_uptime.md) | durée fonctionnement système | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
 | [useradd](man/man_useradd.md) | création utilisateur (bas niveau!) | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [adduser](linux_cmds_list_alpha.md#a) | _installed_ |
 | [userdel](man/man_userdel.md) | suppression compte | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) |  | _installed_ |
@@ -576,5 +578,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-06-04T07:34:17+0000_,
+_MAJ: 2026-06-15T14:35:43+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

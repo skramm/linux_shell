@@ -84,6 +84,7 @@
 | [dig](man/man_dig.md) | requete DNS | [Réseau](linux_cmds_list_cat.md#cat3) | [nslookup](linux_cmds_list_alpha.md#n) |
 | [dir](man/man_dir.md) | alias de ls | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [ls](linux_cmds_list_alpha.md#l) |
 | [dmesg](man/man_dmesg.md) | affichage logs kernel (buffer circulaire) | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
+| [dmidecode](man/man_dmidecode.md) | interface sur le BIOS | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [acpi](linux_cmds_list_alpha.md#a) |
 | [dpkg](man/man_dpkg.md) | utilitaire paquets Debian (.deb) | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [du](man/man_du.md) | _disk usage_ | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [ncdu](linux_cmds_list_alpha.md#n) |
 | [env](man/man_env.md) | exécution d'un programme en modifiant l'environnement | [Divers](linux_cmds_list_cat.md#cat7) | [printenv](linux_cmds_list_alpha.md#p) |
@@ -244,7 +245,7 @@
 | Nom | Description | Catégorie | Voir aussi |
 |-----|-------------|-----------|------------|
 | aa-xxx ([G](https://www.google.fr/search?q=linux+aa-xxx)) | ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a> | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  |
-| acpi ([G](https://www.google.fr/search?q=linux+acpi)) | details sur alimentation (batterie ou secteur) | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  |
+| acpi ([G](https://www.google.fr/search?q=linux+acpi)) | details sur alimentation (batterie ou secteur) | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [upower,dmidecode](linux_cmds_list_alpha.md#u) |
 | aplay ([G](https://www.google.fr/search?q=linux+aplay)) | écoute de fichier audio | [Multimédia](linux_cmds_list_cat.md#cat24) |  |
 | asciinema ([G](https://www.google.fr/search?q=linux+asciinema)) | _screencast_ console | [Multimédia](linux_cmds_list_cat.md#cat24) | [ffmpeg](linux_cmds_list_alpha.md#f) |
 | at ([G](https://www.google.fr/search?q=linux+at)) | planification de tâches | [Divers](linux_cmds_list_cat.md#cat7) | [cron](linux_cmds_list_alpha.md#c) |
@@ -299,6 +300,7 @@
 | toilet ([G](https://www.google.fr/search?q=linux+toilet)) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [banner](linux_cmds_list_alpha.md#b) |
 | traceroute ([G](https://www.google.fr/search?q=linux+traceroute)) | affiche les étapes d'une requete réseau | [Réseau](linux_cmds_list_cat.md#cat3) | [mtr](linux_cmds_list_alpha.md#m) |
 | updatedb ([G](https://www.google.fr/search?q=linux+updatedb)) | mise à jour BDD `locate` | [Général](linux_cmds_list_cat.md#cat4) | [locate](linux_cmds_list_alpha.md#l) |
+| upower ([G](https://www.google.fr/search?q=linux+upower)) | client du _daemon_ `upowerd`, gerant l'alimentation | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [acpi](linux_cmds_list_alpha.md#a) |
 | uuid ([G](https://www.google.fr/search?q=linux+uuid)) | génération de _Universally Unique IDentifier_ | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | whois ([G](https://www.google.fr/search?q=linux+whois)) | infos/domaine (obsolete) | [Réseau](linux_cmds_list_cat.md#cat3) | [rdap](linux_cmds_list_alpha.md#r) |
 | wl-paste ([G](https://www.google.fr/search?q=linux+wl-paste)) | copie presse-papier (Wayland) | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  |
@@ -311,5 +313,5 @@
 
 
 
-_MAJ: 2026-06-04T07:34:17+0000_,
+_MAJ: 2026-06-15T14:35:43+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
