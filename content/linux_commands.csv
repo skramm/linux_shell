@@ -16,7 +16,10 @@ free;22;état RAM utilisée/libre;vmstat
 vmstat;22;état mémoire virtuelle;free
 swapon;22;gestion mémoire _swap_;swapoff
 swapoff;22;gestion mémoire _swap_;swapon
-acpi;1;details sur alimentation (batterie ou secteur)
+
+acpi;1;details sur alimentation (batterie ou secteur);upower,dmidecode
+upower;1;client du _daemon_ `upowerd`, gerant l'alimentation;acpi
+dmidecode;1;interface sur le BIOS;acpi
 lstopo;1-22;architecture CPU (coeurs, RAM cache, ...)
 sudo;1;exécution d'une commande admin;su
 su;1;changement temporaire de _user_;sudo
