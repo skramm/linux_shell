@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-292 commandes<br>
-32 _builtin_, 194 _installed_, 66 NI (_not installed_)
+293 commandes<br>
+32 _builtin_, 195 _installed_, 66 NI (_not installed_)
 
 
 ## 7
@@ -302,6 +302,7 @@
 | [md5sum](man/man_md5sum.md) | calcul de hash MD5 | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  | _installed_ |
 | melt ([G](https://www.google.fr/search?q=linux+melt)) | édition vidéo | [Multimédia](linux_cmds_list_cat.md#cat24) | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
 | [mkdir](man/man_mkdir.md) | _make directory_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  | _installed_ |
+| [mktemp](man/man_mktemp.md) | création fichier out dossier temporaire, dans `/tmp` | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  | _installed_ |
 | [modinfo](man/man_modinfo.md) | _show information about a module_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 | [modprobe](man/man_modprobe.md) | _add and remove modules from the kernel_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 | [more](man/man_more.md) | filtre d'affichage | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [less](linux_cmds_list_alpha.md#l) | _installed_ |
@@ -578,5 +579,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-06-15T14:35:43+0000_,
+_MAJ: 2026-07-01T09:53:32+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 301 commandes
+Total: 302 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -119,7 +119,7 @@ Total: 301 commandes
 ## 5 - catégorie: Manipulation dossiers
 <a name='cat15'></a>
 
-8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -127,6 +127,7 @@ Total: 301 commandes
 | [dir](man/man_dir.md) | alias de ls | [ls](linux_cmds_list_alpha.md#l) | _installed_ |
 | [ls](man/man_ls.md) | _list directory content_ |  | _installed_ |
 | [mkdir](man/man_mkdir.md) | _make directory_ |  | _installed_ |
+| [mktemp](man/man_mktemp.md) | création fichier out dossier temporaire, dans `/tmp` |  | _installed_ |
 | [popd](man/help_popd.md) | récupération dossier courant | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | [pushd](man/help_pushd.md) | chgt dossier courant avec sauvegarde | [popd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | [rmdir](man/man_rmdir.md) | supression dossier | [rm](linux_cmds_list_alpha.md#r) | _installed_ |
@@ -548,5 +549,5 @@ Total: 301 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-06-15T14:35:43+0000_,
+_MAJ: 2026-07-01T09:53:32+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

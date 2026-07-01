@@ -143,6 +143,7 @@
 | [man](man/man_man.md) | manuel | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [help](linux_cmds_list_alpha.md#h) |
 | [md5sum](man/man_md5sum.md) | calcul de hash MD5 | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [mkdir](man/man_mkdir.md) | _make directory_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  |
+| [mktemp](man/man_mktemp.md) | création fichier out dossier temporaire, dans `/tmp` | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  |
 | [modinfo](man/man_modinfo.md) | _show information about a module_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [modprobe](man/man_modprobe.md) | _add and remove modules from the kernel_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [more](man/man_more.md) | filtre d'affichage | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [less](linux_cmds_list_alpha.md#l) |
@@ -313,5 +314,5 @@
 
 
 
-_MAJ: 2026-06-15T14:35:43+0000_,
+_MAJ: 2026-07-01T09:53:32+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
