@@ -92,6 +92,7 @@ diff;11;différences entre 2 fichiers, ligne par ligne;cmp
 tree;15;affiche l'arborescence d'un dossier;ls
 rmdir;15;supression dossier;rm
 mkdir;15;_make directory_
+mktemp;15;création fichier out dossier temporaire, dans `/tmp`
 ls;15;_list directory content_
 dir;15;alias de ls;ls
 cd;15;_Change Directory_;pushd
