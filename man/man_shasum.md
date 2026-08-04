@@ -83,4 +83,4 @@
 ## SEE ALSO
        shasum is implemented using the Perl module Digest::SHA.
 
-perl v5.38.2                      2025-07-25                         SHASUM(1)
+perl v5.38.2                      2026-06-12                         SHASUM(1)

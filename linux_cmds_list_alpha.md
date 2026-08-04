@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-293 commandes<br>
-32 _builtin_, 195 _installed_, 66 NI (_not installed_)
+295 commandes<br>
+32 _builtin_, 195 _installed_, 68 NI (_not installed_)
 
 
 ## 7
@@ -116,6 +116,7 @@
 |-----|-----|-----|-----|-----|
 | [date](man/man_date.md) | affiche date & heure | [Divers](linux_cmds_list_cat.md#cat7) | [cal](linux_cmds_list_alpha.md#c) | _installed_ |
 | [dd](man/man_dd.md) | utilitaire de copie bas niveau | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  | _installed_ |
+| ddrescue ([G](https://www.google.fr/search?q=linux+ddrescue)) | récupération données HDD | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [testdisk](linux_cmds_list_alpha.md#t) | NI |
 | [depmod](man/man_depmod.md) | _generates modules.dep and map files_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 | [df](man/man_df.md) | _disk free_ | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  | _installed_ |
 | [diff](man/man_diff.md) | différences entre 2 fichiers, ligne par ligne | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [cmp](linux_cmds_list_alpha.md#c) | _installed_ |
@@ -466,6 +467,7 @@
 | [tar](man/man_tar.md) | utilitaire archivage | [Compression](linux_cmds_list_cat.md#cat19) | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | [tcpdump](man/man_tcpdump.md) | capture trames réseau (Wireshark en CLI) | [Réseau](linux_cmds_list_cat.md#cat3) |  | _installed_ |
 | [tee](man/man_tee.md) | modif redirection (stdout, stderr) | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
+| testdisk ([G](https://www.google.fr/search?q=linux+testdisk)) | récupération données HDD | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [ddrescue](linux_cmds_list_alpha.md#d) | NI |
 | [time](man/man_time.md) | chronométrage de tâche | [Divers](linux_cmds_list_cat.md#cat7) |  | _builtin_ |
 | tldr ([G](https://www.google.fr/search?q=linux+tldr)) | `man` en mieux | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [man](linux_cmds_list_alpha.md#m) | NI |
 | [tmux](man/man_tmux.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [screen](linux_cmds_list_alpha.md#s) | _installed_ |
@@ -579,5 +581,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-07-01T09:53:32+0000_,
+_MAJ: 2026-08-04T08:22:08+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

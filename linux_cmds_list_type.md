@@ -259,6 +259,7 @@
 | cloc ([G](https://www.google.fr/search?q=linux+cloc)) | _Count Lines Of Code_ | [Dev](linux_cmds_list_cat.md#cat6) | [wc](linux_cmds_list_alpha.md#w) |
 | convert ([G](https://www.google.fr/search?q=linux+convert)) | conversion format d'image | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | cowsay ([G](https://www.google.fr/search?q=linux+cowsay)) | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
+| ddrescue ([G](https://www.google.fr/search?q=linux+ddrescue)) | récupération données HDD | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [testdisk](linux_cmds_list_alpha.md#t) |
 | display ([G](https://www.google.fr/search?q=linux+display)) | affichage d'une image sur serveur X | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  |
 | evtest ([G](https://www.google.fr/search?q=linux+evtest)) | affichage évènements clavier+souris | [Interface avec bureau](linux_cmds_list_cat.md#cat18) | [showkey,xev](linux_cmds_list_alpha.md#s) |
 | exiftool ([G](https://www.google.fr/search?q=linux+exiftool)) | manipulation métadonnées fichier image, audio, etc. | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) |  |
@@ -297,6 +298,7 @@
 | spd-say ([G](https://www.google.fr/search?q=linux+spd-say)) | synthétiseur vocal | [Multimédia](linux_cmds_list_cat.md#cat24) |  |
 | stress ([G](https://www.google.fr/search?q=linux+stress)) | génération de charge CPU | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  |
 | sysdig ([G](https://www.google.fr/search?q=linux+sysdig)) | _Cloud-Native Application Protection Platform_ | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) - [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [falco](linux_cmds_list_alpha.md#f) |
+| testdisk ([G](https://www.google.fr/search?q=linux+testdisk)) | récupération données HDD | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [ddrescue](linux_cmds_list_alpha.md#d) |
 | tldr ([G](https://www.google.fr/search?q=linux+tldr)) | `man` en mieux | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [man](linux_cmds_list_alpha.md#m) |
 | toilet ([G](https://www.google.fr/search?q=linux+toilet)) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [banner](linux_cmds_list_alpha.md#b) |
 | traceroute ([G](https://www.google.fr/search?q=linux+traceroute)) | affiche les étapes d'une requete réseau | [Réseau](linux_cmds_list_cat.md#cat3) | [mtr](linux_cmds_list_alpha.md#m) |
@@ -314,5 +316,5 @@
 
 
 
-_MAJ: 2026-07-01T09:53:32+0000_,
+_MAJ: 2026-08-04T08:22:08+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_

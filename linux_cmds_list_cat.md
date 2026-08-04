@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 302 commandes
+Total: 304 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -82,12 +82,13 @@ Total: 302 commandes
 ## 3 - catégorie: Disque & stockage
 <a name='cat2'></a>
 
-11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+13 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [blkid](man/man_blkid.md) | accès aux détails des _devices_ de type "bloc" | [lsblk](linux_cmds_list_alpha.md#l) | _installed_ |
 | [dd](man/man_dd.md) | utilitaire de copie bas niveau |  | _installed_ |
+| ddrescue ([G](https://www.google.fr/search?q=linux+ddrescue)) | récupération données HDD | [testdisk](linux_cmds_list_alpha.md#t) | NI |
 | [df](man/man_df.md) | _disk free_ |  | _installed_ |
 | [du](man/man_du.md) | _disk usage_ | [ncdu](linux_cmds_list_alpha.md#n) | _installed_ |
 | [fdisk](man/man_fdisk.md) | _manipulate disk partition table_ |  | _installed_ |
@@ -96,6 +97,7 @@ Total: 302 commandes
 | [mount](man/man_mount.md) | montage de partitions | [umount](linux_cmds_list_alpha.md#u) | _installed_ |
 | ncdu ([G](https://www.google.fr/search?q=linux+ncdu)) | `du` en mieux | [du](linux_cmds_list_alpha.md#d) | NI |
 | smartctl ([G](https://www.google.fr/search?q=linux+smartctl)) | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques |  | NI |
+| testdisk ([G](https://www.google.fr/search?q=linux+testdisk)) | récupération données HDD | [ddrescue](linux_cmds_list_alpha.md#d) | NI |
 | [umount](man/man_umount.md) | démontage de partitions | [mount](linux_cmds_list_alpha.md#m) | _installed_ |
 
 ## 4 - catégorie: Manipulation fichiers
@@ -549,5 +551,5 @@ Total: 302 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-07-01T09:53:32+0000_,
+_MAJ: 2026-08-04T08:22:08+0000_,
 _OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
