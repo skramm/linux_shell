@@ -136,4 +136,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/tr>
        or available locally via: info '(coreutils) tr invocation'
 
-GNU coreutils 9.4                January 2026                            TR(1)
+GNU coreutils 9.4                 August 2026                            TR(1)

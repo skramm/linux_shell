@@ -220,4 +220,4 @@ DATE STRING
        Full documentation <https://www.gnu.org/software/coreutils/date>
        or available locally via: info '(coreutils) date invocation'
 
-GNU coreutils 9.4                January 2026                          DATE(1)
+GNU coreutils 9.4                 August 2026                          DATE(1)

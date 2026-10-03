@@ -89,4 +89,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/chgrp>
        or available locally via: info '(coreutils) chgrp invocation'
 
-GNU coreutils 9.4                January 2026                         CHGRP(1)
+GNU coreutils 9.4                 August 2026                         CHGRP(1)

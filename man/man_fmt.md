@@ -65,4 +65,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/fmt>
        or available locally via: info '(coreutils) fmt invocation'
 
-GNU coreutils 9.4                January 2026                           FMT(1)
+GNU coreutils 9.4                 August 2026                           FMT(1)

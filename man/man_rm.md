@@ -104,4 +104,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/rm>
        or available locally via: info '(coreutils) rm invocation'
 
-GNU coreutils 9.4                January 2026                            RM(1)
+GNU coreutils 9.4                 August 2026                            RM(1)

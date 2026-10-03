@@ -59,4 +59,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/base64>
        or available locally via: info '(coreutils) base64 invocation'
 
-GNU coreutils 9.4                January 2026                        BASE64(1)
+GNU coreutils 9.4                 August 2026                        BASE64(1)

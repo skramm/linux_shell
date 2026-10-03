@@ -79,4 +79,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/echo>
        or available locally via: info '(coreutils) echo invocation'
 
-GNU coreutils 9.4                January 2026                          ECHO(1)
+GNU coreutils 9.4                 August 2026                          ECHO(1)

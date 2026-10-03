@@ -49,4 +49,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/rmdir>
        or available locally via: info '(coreutils) rmdir invocation'
 
-GNU coreutils 9.4                January 2026                         RMDIR(1)
+GNU coreutils 9.4                 August 2026                         RMDIR(1)

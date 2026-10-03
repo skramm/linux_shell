@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 304 commandes
+Total: 306 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -396,18 +396,20 @@ Total: 304 commandes
 ## 17 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
-14 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+16 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [depmod](man/man_depmod.md) | _generates modules.dep and map files_ |  | _installed_ |
 | [dmesg](man/man_dmesg.md) | affichage logs kernel (buffer circulaire) |  | _installed_ |
 | [insmod](man/man_insmod.md) | _insert a module into the kernel_ |  | _installed_ |
+| [iostat](man/man_iostat.md) | statistiques I/O |  | _installed_ |
 | [journalctl](man/man_journalctl.md) | outil d'accès aux logs systemd | [systemctl](linux_cmds_list_alpha.md#s) | _installed_ |
 | [loginctl](man/man_loginctl.md) | _Control the systemd login manager_ | [systemctl](linux_cmds_list_alpha.md#s) | _installed_ |
 | [lsmod](man/man_lsmod.md) | _show the status of modules in the kernel_ |  | _installed_ |
 | [modinfo](man/man_modinfo.md) | _show information about a module_ |  | _installed_ |
 | [modprobe](man/man_modprobe.md) | _add and remove modules from the kernel_ |  | _installed_ |
+| [pidstat](man/man_pidstat.md) | statistiques process |  | _installed_ |
 | [rmmod](man/man_rmmod.md) | _remove a module from the kernel_ |  | _installed_ |
 | [strace](man/man_strace.md) | _trace system calls and signals_ |  | _installed_ |
 | sysdig ([G](https://www.google.fr/search?q=linux+sysdig)) | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
@@ -551,5 +553,5 @@ Total: 304 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-08-04T08:22:08+0000_,
-_OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
+_MAJ: 2026-10-03T13:08:29+0000_,
+_OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

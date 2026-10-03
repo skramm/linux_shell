@@ -89,4 +89,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/printf>
        or available locally via: info '(coreutils) printf invocation'
 
-GNU coreutils 9.4                January 2026                        PRINTF(1)
+GNU coreutils 9.4                 August 2026                        PRINTF(1)

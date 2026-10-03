@@ -181,4 +181,4 @@
        downloaded from Linux Kernel Archive
        <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.39.3                 2026-03-06                          LSCPU(1)
+util-linux 2.39.3                 2026-08-19                          LSCPU(1)

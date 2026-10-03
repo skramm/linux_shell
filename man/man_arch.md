@@ -39,4 +39,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/arch>
        or available locally via: info '(coreutils) arch invocation'
 
-GNU coreutils 9.4                January 2026                          ARCH(1)
+GNU coreutils 9.4                 August 2026                          ARCH(1)

@@ -101,4 +101,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/tail>
        or available locally via: info '(coreutils) tail invocation'
 
-GNU coreutils 9.4                January 2026                          TAIL(1)
+GNU coreutils 9.4                 August 2026                          TAIL(1)

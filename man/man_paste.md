@@ -52,4 +52,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/paste>
        or available locally via: info '(coreutils) paste invocation'
 
-GNU coreutils 9.4                January 2026                         PASTE(1)
+GNU coreutils 9.4                 August 2026                         PASTE(1)

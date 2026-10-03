@@ -67,4 +67,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/head>
        or available locally via: info '(coreutils) head invocation'
 
-GNU coreutils 9.4                January 2026                          HEAD(1)
+GNU coreutils 9.4                 August 2026                          HEAD(1)

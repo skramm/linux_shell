@@ -117,6 +117,7 @@
 | [id](man/man_id.md) | affiche les infos sur un utilisateur | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [whoami](linux_cmds_list_alpha.md#w) |
 | [info](man/man_info.md) | aide sur commande | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [man](linux_cmds_list_alpha.md#m) |
 | [insmod](man/man_insmod.md) | _insert a module into the kernel_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
+| [iostat](man/man_iostat.md) | statistiques I/O | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [ip](man/man_ip.md) |  | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [journalctl](man/man_journalctl.md) | outil d'accès aux logs systemd | [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [systemctl](linux_cmds_list_alpha.md#s) |
 | [jq](man/man_jq.md) | traitement de chaines JSON | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [jo](linux_cmds_list_alpha.md#j) |
@@ -160,6 +161,7 @@
 | [passwd](man/man_passwd.md) | changement pwd | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [chage](linux_cmds_list_alpha.md#c) |
 | [paste](man/man_paste.md) | fusion de lignes de texte de plusieurs fichiers | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [pidof](man/man_pidof.md) |  donne le PID d'un process | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [ps](linux_cmds_list_alpha.md#p) |
+| [pidstat](man/man_pidstat.md) | statistiques process | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [ping](man/man_ping.md) | envoi de trames ICMP | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [pip](man/man_pip.md) | gestionnaire de paquets Python (2 ou 3) | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [pip3](man/man_pip3.md) | gestionnaire de paquets Python3 | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
@@ -316,5 +318,5 @@
 
 
 
-_MAJ: 2026-08-04T08:22:08+0000_,
-_OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
+_MAJ: 2026-10-03T13:08:29+0000_,
+_OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

@@ -250,4 +250,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/dir>
        or available locally via: info '(coreutils) dir invocation'
 
-GNU coreutils 9.4                January 2026                           DIR(1)
+GNU coreutils 9.4                 August 2026                           DIR(1)

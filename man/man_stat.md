@@ -183,4 +183,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/stat>
        or available locally via: info '(coreutils) stat invocation'
 
-GNU coreutils 9.4                January 2026                          STAT(1)
+GNU coreutils 9.4                 August 2026                          STAT(1)

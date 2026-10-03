@@ -119,4 +119,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/df>
        or available locally via: info '(coreutils) df invocation'
 
-GNU coreutils 9.4                January 2026                            DF(1)
+GNU coreutils 9.4                 August 2026                            DF(1)

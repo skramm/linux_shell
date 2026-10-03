@@ -81,4 +81,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/sha256sum>
        or available locally via: info '(coreutils) sha2 utilities'
 
-GNU coreutils 9.4                January 2026                     SHA256SUM(1)
+GNU coreutils 9.4                 August 2026                     SHA256SUM(1)

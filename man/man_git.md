@@ -614,6 +614,9 @@ LOW-LEVEL COMMANDS (PLUMBING)
        git-for-each-repo(1)
            Run a Git command on a list of repositories.
 
+       git-format-rev(1)
+           EXPERIMENTAL: Pretty format revisions on demand.
+
        git-get-tar-commit-id(1)
            Extract commit ID from an archive created using git-archive.
 
@@ -734,7 +737,7 @@ LOW-LEVEL COMMANDS (PLUMBING)
            Produce a merge commit message.
 
        git-hook(1)
-           Run git hooks.
+           Run Git hooks.
 
        git-interpret-trailers(1)
            Add or parse structured information in commit messages.
@@ -759,6 +762,9 @@ LOW-LEVEL COMMANDS (PLUMBING)
 
        git-stripspace(1)
            Remove unnecessary whitespace.
+
+       git-url-parse(1)
+           Parse and extract git URL components.
 
 GUIDES
        The following documentation pages are guides about Git concepts.
@@ -1668,4 +1674,4 @@ GIT
         7. git-security@googlegroups.com
            mailto:git-security@googlegroups.com
 
-Git 2.54.0                        04/20/2026                            GIT(1)
+Git 2.55.0                        08/11/2026                            GIT(1)

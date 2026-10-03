@@ -88,4 +88,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/who>
        or available locally via: info '(coreutils) who invocation'
 
-GNU coreutils 9.4                January 2026                           WHO(1)
+GNU coreutils 9.4                 August 2026                           WHO(1)

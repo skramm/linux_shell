@@ -153,4 +153,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/od>
        or available locally via: info '(coreutils) od invocation'
 
-GNU coreutils 9.4                January 2026                            OD(1)
+GNU coreutils 9.4                 August 2026                            OD(1)

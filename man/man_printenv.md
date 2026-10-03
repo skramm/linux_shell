@@ -45,4 +45,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/printenv>
        or available locally via: info '(coreutils) printenv invocation'
 
-GNU coreutils 9.4                January 2026                      PRINTENV(1)
+GNU coreutils 9.4                 August 2026                      PRINTENV(1)

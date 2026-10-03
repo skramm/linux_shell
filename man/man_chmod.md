@@ -142,4 +142,4 @@ RESTRICTED DELETION FLAG OR STICKY BIT
        Full documentation <https://www.gnu.org/software/coreutils/chmod>
        or available locally via: info '(coreutils) chmod invocation'
 
-GNU coreutils 9.4                January 2026                         CHMOD(1)
+GNU coreutils 9.4                 August 2026                         CHMOD(1)

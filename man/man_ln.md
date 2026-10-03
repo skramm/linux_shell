@@ -116,4 +116,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/ln>
        or available locally via: info '(coreutils) ln invocation'
 
-GNU coreutils 9.4                January 2026                            LN(1)
+GNU coreutils 9.4                 August 2026                            LN(1)

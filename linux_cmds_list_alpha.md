@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-295 commandes<br>
-32 _builtin_, 195 _installed_, 68 NI (_not installed_)
+297 commandes<br>
+32 _builtin_, 197 _installed_, 68 NI (_not installed_)
 
 
 ## 7
@@ -229,6 +229,7 @@
 | [info](man/man_info.md) | aide sur commande | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [man](linux_cmds_list_alpha.md#m) | _installed_ |
 | [insmod](man/man_insmod.md) | _insert a module into the kernel_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 | inxi ([G](https://www.google.fr/search?q=linux+inxi)) | informations système | [Monitoring système](linux_cmds_list_cat.md#cat21) | [lstopo-htop-lsdev](linux_cmds_list_alpha.md#l) | NI |
+| [iostat](man/man_iostat.md) | statistiques I/O | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 | iotop ([G](https://www.google.fr/search?q=linux+iotop)) | liste process avec leur utilisation I/O disque | [Monitoring système](linux_cmds_list_cat.md#cat21) |  | NI |
 | [ip](man/man_ip.md) |  | [Réseau](linux_cmds_list_cat.md#cat3) |  | _installed_ |
 
@@ -357,6 +358,7 @@
 | [passwd](man/man_passwd.md) | changement pwd | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [chage](linux_cmds_list_alpha.md#c) | _installed_ |
 | [paste](man/man_paste.md) | fusion de lignes de texte de plusieurs fichiers | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [pidof](man/man_pidof.md) |  donne le PID d'un process | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
+| [pidstat](man/man_pidstat.md) | statistiques process | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 | [ping](man/man_ping.md) | envoi de trames ICMP | [Réseau](linux_cmds_list_cat.md#cat3) |  | _installed_ |
 | [pip](man/man_pip.md) | gestionnaire de paquets Python (2 ou 3) | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  | _installed_ |
 | [pip3](man/man_pip3.md) | gestionnaire de paquets Python3 | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  | _installed_ |
@@ -581,5 +583,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-08-04T08:22:08+0000_,
-_OS: Ubuntu - 24.04.4 LTS (Noble Numbat)_
+_MAJ: 2026-10-03T13:08:29+0000_,
+_OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

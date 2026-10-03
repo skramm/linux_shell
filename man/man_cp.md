@@ -192,4 +192,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/cp>
        or available locally via: info '(coreutils) cp invocation'
 
-GNU coreutils 9.4                January 2026                            CP(1)
+GNU coreutils 9.4                 August 2026                            CP(1)

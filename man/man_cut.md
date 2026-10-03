@@ -83,4 +83,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/cut>
        or available locally via: info '(coreutils) cut invocation'
 
-GNU coreutils 9.4                January 2026                           CUT(1)
+GNU coreutils 9.4                 August 2026                           CUT(1)

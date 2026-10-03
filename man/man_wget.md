@@ -2110,4 +2110,4 @@
        Texts.   A copy of the license is included in the section entitled "GNU
        Free Documentation License".
 
-GNU Wget 1.21.4                   2026-07-10                           WGET(1)
+GNU Wget 1.21.4                   2026-08-20                           WGET(1)

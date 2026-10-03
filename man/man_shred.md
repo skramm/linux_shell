@@ -85,4 +85,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/shred>
        or available locally via: info '(coreutils) shred invocation'
 
-GNU coreutils 9.4                January 2026                         SHRED(1)
+GNU coreutils 9.4                 August 2026                         SHRED(1)

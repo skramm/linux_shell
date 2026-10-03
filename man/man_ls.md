@@ -252,4 +252,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/ls>
        or available locally via: info '(coreutils) ls invocation'
 
-GNU coreutils 9.4                January 2026                            LS(1)
+GNU coreutils 9.4                 August 2026                            LS(1)

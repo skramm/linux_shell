@@ -122,4 +122,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/env>
        or available locally via: info '(coreutils) env invocation'
 
-GNU coreutils 9.4                January 2026                           ENV(1)
+GNU coreutils 9.4                 August 2026                           ENV(1)

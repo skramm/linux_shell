@@ -74,4 +74,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/cat>
        or available locally via: info '(coreutils) cat invocation'
 
-GNU coreutils 9.4                January 2026                           CAT(1)
+GNU coreutils 9.4                 August 2026                           CAT(1)

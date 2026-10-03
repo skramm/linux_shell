@@ -69,4 +69,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/wc>
        or available locally via: info '(coreutils) wc invocation'
 
-GNU coreutils 9.4                January 2026                            WC(1)
+GNU coreutils 9.4                 August 2026                            WC(1)

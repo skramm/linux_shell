@@ -53,4 +53,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/tac>
        or available locally via: info '(coreutils) tac invocation'
 
-GNU coreutils 9.4                January 2026                           TAC(1)
+GNU coreutils 9.4                 August 2026                           TAC(1)
