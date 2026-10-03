@@ -261,6 +261,8 @@ journalctl;13;outil d'accès aux logs systemd;systemctl
 dmesg;13;affichage logs kernel (buffer circulaire);;logs
 strace;13-17;_trace system calls and signals_
 zramctl;13;paramétrage et controle de la compression RAM;;RAM
+iostat;13;statistiques I/O
+pidstat;13;statistiques process
 
 yes;7;_output a string repeatedly until killed_
 tmux;7;multiplexeur de terminal;screen;terminal
