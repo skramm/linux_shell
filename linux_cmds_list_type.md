@@ -34,11 +34,13 @@
 | [set](man/man_set.md) | paramétrage du shell | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [shift](man/help_shift.md) | décalage paramètres positionnels ($1, $2, ...) | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  |
 | [source](man/help_source.md) | exécution d'un script dans le même shell | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  |
+| [test](man/man_test.md) | test d'une condition | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  |
 | [time](man/man_time.md) | chronométrage de tâche | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [trap](man/help_trap.md) | interception de signal POSIX | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  |
 | [type](man/help_type.md) | indique si une commande est interne (_builtin_) ou externe | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [umask](man/help_umask.md) | permissions par défaut | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) | [chmod](linux_cmds_list_alpha.md#c) |
 | [unalias](man/help_unalias.md) | suppression d'un alias | [Général](linux_cmds_list_cat.md#cat4) | [alias](linux_cmds_list_alpha.md#a) |
+| [until](man/help_until.md) | exécution d'une commande tant qu'un test est vrai | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  |
 | [while](man/help_while.md) |  | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  |
 
 ## Commandes "_installed_"
@@ -318,5 +320,5 @@
 
 
 
-_MAJ: 2026-10-03T13:08:29+0000_,
+_MAJ: 2026-10-08T13:41:08+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

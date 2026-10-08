@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-297 commandes<br>
-32 _builtin_, 197 _installed_, 68 NI (_not installed_)
+299 commandes<br>
+34 _builtin_, 197 _installed_, 68 NI (_not installed_)
 
 
 ## 7
@@ -469,6 +469,7 @@
 | [tar](man/man_tar.md) | utilitaire archivage | [Compression](linux_cmds_list_cat.md#cat19) | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | [tcpdump](man/man_tcpdump.md) | capture trames réseau (Wireshark en CLI) | [Réseau](linux_cmds_list_cat.md#cat3) |  | _installed_ |
 | [tee](man/man_tee.md) | modif redirection (stdout, stderr) | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
+| [test](man/man_test.md) | test d'une condition | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | testdisk ([G](https://www.google.fr/search?q=linux+testdisk)) | récupération données HDD | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [ddrescue](linux_cmds_list_alpha.md#d) | NI |
 | [time](man/man_time.md) | chronométrage de tâche | [Divers](linux_cmds_list_cat.md#cat7) |  | _builtin_ |
 | tldr ([G](https://www.google.fr/search?q=linux+tldr)) | `man` en mieux | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [man](linux_cmds_list_alpha.md#m) | NI |
@@ -498,6 +499,7 @@
 | [unalias](man/help_unalias.md) | suppression d'un alias | [Général](linux_cmds_list_cat.md#cat4) | [alias](linux_cmds_list_alpha.md#a) | _builtin_ |
 | [uname](man/man_uname.md) | version noyau | [Général](linux_cmds_list_cat.md#cat4) - [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [lsb_release](linux_cmds_list_alpha.md#l) | _installed_ |
 | [uniq](man/man_uniq.md) | suppression lignes identiques | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
+| [until](man/help_until.md) | exécution d'une commande tant qu'un test est vrai | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | [unzip](man/man_unzip.md) | décompression zip | [Compression](linux_cmds_list_cat.md#cat19) | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
 | updatedb ([G](https://www.google.fr/search?q=linux+updatedb)) | mise à jour BDD `locate` | [Général](linux_cmds_list_cat.md#cat4) | [locate](linux_cmds_list_alpha.md#l) | NI |
 | upower ([G](https://www.google.fr/search?q=linux+upower)) | client du _daemon_ `upowerd`, gerant l'alimentation | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [acpi](linux_cmds_list_alpha.md#a) | NI |
@@ -583,5 +585,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-10-03T13:08:29+0000_,
+_MAJ: 2026-10-08T13:41:08+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
