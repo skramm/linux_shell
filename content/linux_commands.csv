@@ -283,6 +283,8 @@ shift;16;décalage paramètres positionnels ($1, $2, ...)
 break;16;sortie de boucle "for";for
 trap;16;interception de signal POSIX
 basename;16;extraction nom à partir d'un chemin
+until;16;exécution d'une commande tant qu'un test est vrai
+test;16;test d'une condition
 
 auditd;17;_Logging_ des actions système
 aa-xxx;17;ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a>
