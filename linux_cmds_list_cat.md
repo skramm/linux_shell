@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 308 commandes
+Total: 310 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -255,7 +255,7 @@ Total: 308 commandes
 ## 11 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-16 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+17 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -264,6 +264,7 @@ Total: 308 commandes
 | [cut](man/man_cut.md) | suppression de texte dans des lignes |  | _installed_ |
 | [fold](man/man_fold.md) | ajustement longueur de ligne |  | _installed_ |
 | [grep](man/man_grep.md) | recherche de chaîne | [ripgrep](linux_cmds_list_alpha.md#r) | _installed_ |
+| [join](man/man_join.md) | regroupement de fichier par colonne |  | _installed_ |
 | [jq](man/man_jq.md) | traitement de chaines JSON | [jo](linux_cmds_list_alpha.md#j) | _installed_ |
 | [look](man/man_look.md) | _display lines beginning with a given string_ |  | _installed_ |
 | [paste](man/man_paste.md) | fusion de lignes de texte de plusieurs fichiers |  | _installed_ |
@@ -373,13 +374,14 @@ Total: 308 commandes
 ## 16 - catégorie: Controle des scripts
 <a name='cat16'></a>
 
-17 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+18 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| [basename](man/man_basename.md) | extraction nom à partir d'un chemin |  | _installed_ |
+| [basename](man/man_basename.md) | extraction nom à partir d'un chemin complet | [dirname](linux_cmds_list_alpha.md#d) | _installed_ |
 | [break](man/help_break.md) | sortie de boucle "for" | [for](linux_cmds_list_alpha.md#f) | _builtin_ |
 | [case](man/help_case.md) |  |  | _builtin_ |
+| [dirname](man/man_dirname.md) | extraction du dossier à partir d'un chemin complet | [basename](linux_cmds_list_alpha.md#b) | _installed_ |
 | [echo](man/man_echo.md) | affichage de texte/variable | [printf](linux_cmds_list_alpha.md#p) | _builtin_ |
 | [exit](man/help_exit.md) | Terminaison du script et renvoi  d'une valeur à l'OS | [return](linux_cmds_list_alpha.md#r) | _builtin_ |
 | [for](man/help_for.md) |  |  | _builtin_ |
@@ -555,5 +557,5 @@ Total: 308 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-10-08T13:41:08+0000_,
+_MAJ: 2026-10-16T10:08:07+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
