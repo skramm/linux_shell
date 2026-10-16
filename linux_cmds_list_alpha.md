@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-299 commandes<br>
-34 _builtin_, 197 _installed_, 68 NI (_not installed_)
+301 commandes<br>
+34 _builtin_, 199 _installed_, 68 NI (_not installed_)
 
 
 ## 7
@@ -62,7 +62,7 @@
 |-----|-----|-----|-----|-----|
 | banner ([G](https://www.google.fr/search?q=linux+banner)) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [figlet](linux_cmds_list_alpha.md#f) | NI |
 | [base64](man/man_base64.md) | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  | _installed_ |
-| [basename](man/man_basename.md) | extraction nom à partir d'un chemin | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _installed_ |
+| [basename](man/man_basename.md) | extraction nom à partir d'un chemin complet | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [dirname](linux_cmds_list_alpha.md#d) | _installed_ |
 | bat ([G](https://www.google.fr/search?q=linux+bat)) | cat en mieux | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [cat,tail](linux_cmds_list_alpha.md#c) | NI |
 | [bc](man/man_bc.md) | calculatrice CLI | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
 | [bg](man/help_bg.md) | passage d'un _job_ en arrière plan (_BackGround_) | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [fg](linux_cmds_list_alpha.md#f) | _builtin_ |
@@ -122,6 +122,7 @@
 | [diff](man/man_diff.md) | différences entre 2 fichiers, ligne par ligne | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [cmp](linux_cmds_list_alpha.md#c) | _installed_ |
 | [dig](man/man_dig.md) | requete DNS | [Réseau](linux_cmds_list_cat.md#cat3) | [nslookup](linux_cmds_list_alpha.md#n) | _installed_ |
 | [dir](man/man_dir.md) | alias de ls | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [ls](linux_cmds_list_alpha.md#l) | _installed_ |
+| [dirname](man/man_dirname.md) | extraction du dossier à partir d'un chemin complet | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [basename](linux_cmds_list_alpha.md#b) | _installed_ |
 | display ([G](https://www.google.fr/search?q=linux+display)) | affichage d'une image sur serveur X | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  | NI |
 | [dmesg](man/man_dmesg.md) | affichage logs kernel (buffer circulaire) | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 | [dmidecode](man/man_dmidecode.md) | interface sur le BIOS | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [acpi](linux_cmds_list_alpha.md#a) | _installed_ |
@@ -244,6 +245,7 @@
 |-----|-----|-----|-----|-----|
 | [jo](man/help_jo.md) | génération de JSON | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [jq](linux_cmds_list_alpha.md#j) | NI |
 | [jobs](man/help_jobs.md) | affichage des _jobs_ lancés | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) |  | _builtin_ |
+| [join](man/man_join.md) | regroupement de fichier par colonne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [journalctl](man/man_journalctl.md) | outil d'accès aux logs systemd | [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [systemctl](linux_cmds_list_alpha.md#s) | _installed_ |
 | [jq](man/man_jq.md) | traitement de chaines JSON | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [jo](linux_cmds_list_alpha.md#j) | _installed_ |
 
@@ -585,5 +587,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-10-08T13:41:08+0000_,
+_MAJ: 2026-10-16T10:08:07+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

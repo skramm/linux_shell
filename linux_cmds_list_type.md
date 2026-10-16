@@ -57,7 +57,7 @@
 | [arch](man/man_arch.md) | architecture processeur | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [uname](linux_cmds_list_alpha.md#u) |
 | [awk](man/man_awk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [base64](man/man_base64.md) | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
-| [basename](man/man_basename.md) | extraction nom à partir d'un chemin | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  |
+| [basename](man/man_basename.md) | extraction nom à partir d'un chemin complet | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [dirname](linux_cmds_list_alpha.md#d) |
 | [bc](man/man_bc.md) | calculatrice CLI | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [blkid](man/man_blkid.md) | accès aux détails des _devices_ de type "bloc" | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [lsblk](linux_cmds_list_alpha.md#l) |
 | [bzip2](man/man_bzip2.md) | compression | [Compression](linux_cmds_list_cat.md#cat19) |  |
@@ -85,6 +85,7 @@
 | [diff](man/man_diff.md) | différences entre 2 fichiers, ligne par ligne | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [cmp](linux_cmds_list_alpha.md#c) |
 | [dig](man/man_dig.md) | requete DNS | [Réseau](linux_cmds_list_cat.md#cat3) | [nslookup](linux_cmds_list_alpha.md#n) |
 | [dir](man/man_dir.md) | alias de ls | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [ls](linux_cmds_list_alpha.md#l) |
+| [dirname](man/man_dirname.md) | extraction du dossier à partir d'un chemin complet | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [basename](linux_cmds_list_alpha.md#b) |
 | [dmesg](man/man_dmesg.md) | affichage logs kernel (buffer circulaire) | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [dmidecode](man/man_dmidecode.md) | interface sur le BIOS | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [acpi](linux_cmds_list_alpha.md#a) |
 | [dpkg](man/man_dpkg.md) | utilitaire paquets Debian (.deb) | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
@@ -121,6 +122,7 @@
 | [insmod](man/man_insmod.md) | _insert a module into the kernel_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [iostat](man/man_iostat.md) | statistiques I/O | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [ip](man/man_ip.md) |  | [Réseau](linux_cmds_list_cat.md#cat3) |  |
+| [join](man/man_join.md) | regroupement de fichier par colonne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [journalctl](man/man_journalctl.md) | outil d'accès aux logs systemd | [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [systemctl](linux_cmds_list_alpha.md#s) |
 | [jq](man/man_jq.md) | traitement de chaines JSON | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [jo](linux_cmds_list_alpha.md#j) |
 | [killall](man/man_killall.md) | stoppe tous les process par nom | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) |  |
@@ -320,5 +322,5 @@
 
 
 
-_MAJ: 2026-10-08T13:41:08+0000_,
+_MAJ: 2026-10-16T10:08:07+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
