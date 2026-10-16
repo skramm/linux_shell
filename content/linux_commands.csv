@@ -1,352 +1,351 @@
-# linux cli commands,category,description
+# linux cli commands,category,description;related commands;source projet;keywords
 # categories: see file linux_cat.csv
 
 # each command should appear only once
 
-lscpu;1;détails sur archi CPU;;CPU
-lsusb;1;liste périphs USB;;USB
-lsblk;1;liste périphs stockage "bloc";blkid
-lsdev;1;infos générales sur _hardware_
-lsof;1;_list open files_;ss
-ss;1;_socket statistics_;lsof
-lspci;1;_list all PCI devices_;;PCI
-lshw;1;_list hardware_
-sensors;1;données capteurs (température, tension, etc.)
-free;22;état RAM utilisée/libre;vmstat
-vmstat;22;état mémoire virtuelle;free
-swapon;22;gestion mémoire _swap_;swapoff
-swapoff;22;gestion mémoire _swap_;swapon
+lscpu;1;détails sur archi CPU;;;CPU
+lsusb;1;liste périphs USB;;;USB
+lsblk;1;liste périphs stockage "bloc";blkid;;?
+lsdev;1;infos générales sur _hardware_;;;hardware
+lsof;1;_list open files_;ss;;?
+ss;1;_socket statistics_;lsof;;?
+lspci;1;_list all PCI devices_;;;PCI
+lshw;1;_list hardware_;;;hardware
+sensors;1;données capteurs (température, tension, etc.);;;?
+free;22;état RAM utilisée/libre;vmstat;;?
+vmstat;22;état mémoire virtuelle;free;;?
+swapon;22;gestion mémoire _swap_;swapoff;;RAM
+swapoff;22;gestion mémoire _swap_;swapon;;RAM
 
-acpi;1;details sur alimentation (batterie ou secteur);upower,dmidecode
-upower;1;client du _daemon_ `upowerd`, gerant l'alimentation;acpi
-dmidecode;1;interface sur le BIOS;acpi
-lstopo;1-22;architecture CPU (coeurs, RAM cache, ...)
-sudo;1;exécution d'une commande admin;su
-su;1;changement temporaire de _user_;sudo
-hwclock;1;accès horloge interne;time
-arch;1;architecture processeur;uname;CPU
+acpi;1;details sur alimentation (batterie ou secteur);upower,dmidecode;;hardware
+upower;1;client du _daemon_ `upowerd`, gerant l'alimentation;acpi;;?
+dmidecode;1;interface sur le BIOS;acpi;;BIOS
+lstopo;1-22;architecture CPU (coeurs, RAM cache, ...);;;CPU
+sudo;1;exécution d'une commande admin;su;;?
+su;1;changement temporaire de _user_;sudo;;?
+hwclock;1;accès horloge interne;time;;?
+arch;1;architecture processeur;uname;;CPU
 
-shutdown;1;Comme son nom l'indique...;reboot,halt
-reboot;1;reboot;shutdown,halt
-halt;1;;shutdown,reboot
+shutdown;1;Comme son nom l'indique...;reboot,halt;;?
+reboot;1;reboot;shutdown,halt;;?
+halt;1;;shutdown,reboot;;?
 
-top;21;_dashboard_ système & process;htop
-htop;21;top en mieux;top,nmon
-btop;21; monitoring système;htop,top
-iotop;21;liste process avec leur utilisation I/O disque
-nmon;21;_dashboard_ système;htop
-pstree;21;arborescence des process;ps
-ps;21;snapshot des process;top-pstree
-inxi;21;informations système;lstopo-htop-lsdev
+top;21;_dashboard_ système & process;htop;;?
+htop;21;top en mieux;top,nmon;;?
+btop;21; monitoring système;htop,top;;?
+iotop;21;liste process avec leur utilisation I/O disque;;;?
+nmon;21;_dashboard_ système;htop;;?
+pstree;21;arborescence des process;ps;;?
+ps;21;snapshot des process;top-pstree;;?
+inxi;21;informations système;lstopo-htop-lsdev;;?
 
-pidof;12; donne le PID d'un process;ps
-kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill
-pkill;12;stoppe un process par nom;kill
-killall;12;stoppe tous les process par nom
-chrt;12;manipulation attributs d'un process
+pidof;12; donne le PID d'un process;ps;;?
+kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill;GNU;?
+pkill;12;stoppe un process par nom;kill;;?
+killall;12;stoppe tous les process par nom;;;?
+chrt;12;manipulation attributs d'un process;;;?
+fmt;7;text formatter;;;?
 
-fmt;7;text formatter
+fdisk;2;_manipulate disk partition table_;;;?
+fsck;2;Vérification et correction système de fichier;;;?
+df;2;_disk free_;;GNU;?
+du;2;_disk usage_;ncdu;GNU;?
+ncdu;2;`du` en mieux;du;;?
+dd;2;utilitaire de copie bas niveau;;GNU;?
+smartctl;2;accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques;;;hardware
+blkid;2;accès aux détails des _devices_ de type "bloc";lsblk;;?
+hdparm;2;accès/édition paramètres des disques;;;?
+ddrescue;2;récupération données HDD;testdisk;;?
+testdisk;2;récupération données HDD;ddrescue;;?
 
-fdisk;2;_manipulate disk partition table_
-fsck;2;Vérification et correction système de fichier
-df;2;_disk free_
-du;2;_disk usage_;ncdu
-ncdu;2;`du` en mieux;du
-dd;2;utilitaire de copie bas niveau
-smartctl;2;accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques
-blkid;2;accès aux détails des _devices_ de type "bloc";lsblk
-hdparm;2;accès/édition paramètres des disques
-ddrescue;2;récupération données HDD;testdisk
-testdisk;2;récupération données HDD;ddrescue
+find;5;_search for files, folders,_ ...;;GNU;?
+convert;7;conversion format d'image;;;?
+fc-list;7;_list available fonts_;pango-list;;?
+cron;7;planification de tâches;at;;?
+pango-list;7;liste des polices de caractères installées;fc-list;;?
+at;7;planification de tâches;cron;;?
 
+git;6;**LE** gestionnaire de versions de fichiers source;;;?
+make;6;construction d'une cible en fonction des dépendances;;;?
+gcc;6;compilation C;;GNU;?
+g++;6;compilation C++;;GNU;?
+strings;6;extraction de chaines dans des binaires;;;?
+gdb;6;déboggage pas à pas;;;?
+cloc;6;_Count Lines Of Code_;wc;;?
+ld;6;_linker_ de binaires;;;?
+ldconfig;6;_configure dynamic linker run-time bindings_;;;?
+pkg-config;6;outil de paramétrage de compilation, renvoie les infos sur librairies installées;;;?
+cmake;6;outil de _build_ multi OS;;;?
 
-find;5;_search for files, folders,_ ...
-convert;7;conversion format d'image
-fc-list;7;_list available fonts_;pango-list
-cron;7;planification de tâches;at
-pango-list;7;liste des polices de caractères installées;fc-list
-at;7;planification de tâches;cron
+history;4;historique des commandes;;GNU;?
+lsb_release;4;version distribution;uname;;?
+uname;4-13;version noyau;lsb_release,arch;GNU;?
 
-git;6;**LE** gestionnaire de versions de fichiers source
-make;6;construction d'une cible en fonction des dépendances
-gcc;6;compilation C
-g++;6;compilation C++
-strings;6;extraction de chaines dans des binaires
-gdb;6;déboggage pas à pas
-cloc;6;_Count Lines Of Code_;wc
-ld;6;_linker_ de binaires
-ldconfig;6;_configure dynamic linker run-time bindings_
-pkg-config;6;outil de paramétrage de compilation, renvoie les infos sur librairies installées
-cmake;6;outil de _build_ multi OS
+cp;11;copie fichier(s);mv;GNU;?
+mv;11;déplacement/renommage;cp;GNU;?
+rm;11;suppression fichier;rmdir;GNU;?
+ln;11;création de lien, symbolique ou _hardlink_;GNU;;?
+cmp;11;comparaison de fichiers, par octet;diff;;?
+comm;11;comparaison de fichiers, par ligne;diff;;?
+diff;11;différences entre 2 fichiers, ligne par ligne;cmp;;?
 
-history;4;historique des commandes
-lsb_release;4;version distribution;uname
-uname;4-13;version noyau;lsb_release
+tree;15;affiche l'arborescence d'un dossier;ls;;?
+rmdir;15;supression dossier;rm;GNU;?
+mkdir;15;_make directory_;;GNU;?
+mktemp;15;création fichier out dossier temporaire, dans `/tmp`;;;?
+ls;15;_list directory content_;dir;GNU;?
+dir;15;alias de ls;ls;GNU;?
+cd;15;_Change Directory_;pushd;GNU;?
+pushd;15;chgt dossier courant avec sauvegarde;popd;;?
+popd;15;récupération dossier courant;pushd;;?
 
-cp;11;copie fichier(s);mv
-mv;11;déplacement/renommage;cp
-rm;11;suppression fichier;rmdir
-ln;11;création de lien, symbolique ou _hardlink_
-cmp;11;comparaison de fichiers, par octet;diff
-comm;11;comparaison de fichiers, par ligne;diff
-diff;11;différences entre 2 fichiers, ligne par ligne;cmp
+bash;4;démarre un interpréteur;sh;GNU;?
+sh;4;démarre un interpréteur;bash;GNU;?
+pwd;4;_print working directory_;;GNU;?
+locate;4;localise un programme dans le système;which;GNU;?
+updatedb;4;mise à jour BDD `locate`;locate;;?
+grep;8;recherche de chaîne;ripgrep;GNU;?
+ripgrep;8;(rg) grep récursif;grep;;?
 
-tree;15;affiche l'arborescence d'un dossier;ls
-rmdir;15;supression dossier;rm
-mkdir;15;_make directory_
-mktemp;15;création fichier out dossier temporaire, dans `/tmp`
-ls;15;_list directory content_
-dir;15;alias de ls;ls
-cd;15;_Change Directory_;pushd
-pushd;15;chgt dossier courant avec sauvegarde;popd
-popd;15;récupération dossier courant;pushd
+wc;4;_word count_;;GNU;?
 
-pwd;4;_print working directory_
-locate;4;localise un programme dans le système;which
-updatedb;4;mise à jour BDD `locate`;locate
-grep;8;recherche de chaîne;ripgrep
-ripgrep;8;(rg) grep récursif;grep
+more;14;filtre d'affichage;less;;?
+less;14;filtre d'affichage;more;;?
+bat;14;cat en mieux;cat,tail;;?
+stat;14;détails complets sur un fichier;;GNU;?
+head;14;premières lignes texte;tail;GNU;?
+tail;14;dernières lignes texte;head;GNU;?
+cat;14;affiche et/ou concatene un/des fichiers;;GNU;?
+tac;14;affichage fichier à l'envers;cat;GNU;?
 
-wc;4;_word count_
-
-more;14;filtre d'affichage;less
-less;14;filtre d'affichage;more
-bat;14;cat en mieux;cat,tail
-stat;14;détails complets sur un fichier
-head;14;premières lignes texte;tail
-tail;14;dernières lignes texte;head
-cat;14;affiche et/ou concatene un/des fichiers
-tac;14;affichage fichier à l'envers;cat
-
-xxd;14;visualisation en hexa;od
-od;14;visualisation en hexa ou octal;xxd
-
-
-file;14;nature d'un fichier
-touch;14;création ou MAJ date d'un fichier
-shred;14;effacement en profondeur de fichier
-
-zip;19;compression zip;gzip,unzip
-unzip;19;décompression zip;zip
-tar;19;utilitaire archivage;zip
-gzip;19;compression zip;zip,gunzip
-gunzip;19;decompression zip;gzip
-bzip2;19;compression
-7z;19;compression/décompression
-cpio;19;manipulation d'archive
-
-sort;8;tri de texte
-chmod;5;chgt permissions fichier
-chown;5;chgt propriétaire fichier;chgrp
-chgrp;5;chgt groupe propriétaire fichier;chown
-chage;5;_change user password expiry information_;passwd
-umask;5;permissions par défaut;chmod
-setfacl;5;modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier;getfacl
-getfacl;5;affichage des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/);setfacl
-
-jobs;12;affichage des _jobs_ lancés;;jobs
-fg;12;passage d'un _job_ au premier plan (_ForeGround_);bg;jobs
-bg;12;passage d'un _job_ en arrière plan (_BackGround_);fg;jobs
-
-read;16;saisie ligne (clavier ou fichier)
-eval;7;exécute la commande passée en argument
-time;7;chronométrage de tâche
-watch;7;exécution périodique d'une commande
-env;7;exécution d'un programme en modifiant l'environnement;printenv
-printenv;7;liste var. environnement;env
+xxd;14;visualisation en hexa;od;;?
+od;14;visualisation en hexa ou octal;xxd;GNU;?
 
 
-hostname;3;nom de la machine
-ip;3;
-ping;3;envoi de trames ICMP
-wget;3;client http CLI;curl
-curl;3;client multiprotocoles (wget en mieux);wget
-dig;3;requete DNS;nslookup;DNS
-host;3;requete DNS;dig;DNS
+file;14;nature d'un fichier;;;?
+touch;14;création ou MAJ date d'un fichier;;GNU;?
+shred;14;effacement en profondeur de fichier;;GNU;?
 
-ifup;3;activation interface réseau
-ifdown;3;désactivation interface réseau
-iftop;3-21;monitoring réseau
-scp;3-11;tranfert de fichiers entre machines
-rsync;3-11;copie et synchronisation de fichiers entre machines
+zip;19;compression zip;gzip,unzip;;?
+unzip;19;décompression zip;zip;;?
+tar;19;utilitaire archivage;zip;GNU;?
+gzip;19;compression zip;zip,gunzip;;?
+gunzip;19;decompression zip;gzip;;?
+bzip2;19;compression;;;?
+7z;19;compression/décompression;;;?
+cpio;19;manipulation d'archive;;;?
 
-nslookup;3;requete DNS (_deprecated_);dig;DNS
-netcat;3;utilitaire TCP/UDP;nc
-tcpdump;3;capture trames réseau (Wireshark en CLI)
-nc;3;alias pour netcat;netcat
-ssh;3;Connection à une machine distante
-ssh-keygen;3;Génération de clés SSH
-ssh-add;3;
-ssh-copy-id;3;
-nmap;3;exploration réseau
-whois;3;infos/domaine (obsolete);rdap
-rdap;3;infos/domaine;whois
-traceroute;3;affiche les étapes d'une requete réseau;mtr
-mtr;3;affiche les étapes d'une requete réseau;traceroute
-netstat;3;infos/reseau, routage, etc.
-nmcli;3;pilote CLI des connexions réseau
-ftp;3;transfert de fichiers
-route;3;affiche ou édite la table de routage
-brctl;3;gestion des "bridges" réseau;nmcli
+sort;8;tri de texte;;GNU;?
+chmod;5;chgt permissions fichier;;GNU;?
+chown;5;chgt propriétaire fichier;chgrp;GNU;?
+chgrp;5;chgt groupe propriétaire fichier;chown;GNU;?
+chage;5;_change user password expiry information_;passwd;GNU;?
+umask;5;permissions par défaut;chmod;;?
+setfacl;5;modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier;getfacl;;?
+getfacl;5;affichage des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/);setfacl;;?
 
-echo;16;affichage de texte/variable;printf
-printf;16;affichage de texte/variable formatté;echo
-alias;4;composition de commandes;unalias
-unalias;4;suppression d'un alias;alias
-apt;10;gestion paquets Debian
-apt-get;10;gestion paquets Debian (bas niveau)
-yum;10;gestion paquets RedHat
-rpm;10;gestion paquets Fedora
-dpkg;10;utilitaire paquets Debian (.deb)
-pip3;10;gestionnaire de paquets Python3
-pip;10;gestionnaire de paquets Python (2 ou 3)
-npm;10;gestionnaire de paquets Javascript
+jobs;12;affichage des _jobs_ lancés;;jobs;?
+fg;12;passage d'un _job_ au premier plan (_ForeGround_);bg;jobs;?
+bg;12;passage d'un _job_ en arrière plan (_BackGround_);fg;jobs;?
 
-nano;7;éditeur en mode "console"
-xargs;7;
-sleep;7;attente;time,at
-tee;7;modif redirection (stdout, stderr)
-clear;7;effacement terminal
-uptime;7;durée fonctionnement système
-set;7;paramétrage du shell
-export;7;exportation de variable dans un sous-shell
-bc;7;calculatrice CLI
+read;16;saisie ligne (clavier ou fichier);;;?
+eval;7;exécute la commande passée en argument;;;?
+time;7;chronométrage de tâche;;;?
+watch;7;exécution périodique d'une commande;;;?
+env;7;exécution d'un programme en modifiant l'environnement;printenv;GNU;?
+printenv;7;liste var. environnement;env;GNU;?
 
+hostname;3;nom de la machine;;GNU;?
+ip;3;;;;
+ping;3;envoi de trames ICMP;;;?
+wget;3;client http CLI;curl;GNU;?
+curl;3;client multiprotocoles (wget en mieux);wget;;?
+dig;3;requete DNS;nslookup;DNS;?
+host;3;requete DNS;dig;DNS;?
 
-shuf;8;permutation aléatoire de lignes;sort
-awk;8;_pattern scanning and processing language_
-tr;8;_translate or delete characters_
-sed;8; _Stream EDitor_
-cut;8;suppression de texte dans des lignes
-join;8;regroupement de fichier par colonne
-paste;8;fusion de lignes de texte de plusieurs fichiers
-uniq;8;suppression lignes identiques
-jq;8;traitement de chaines JSON;jo
-split;8;Découpage d'un fichier en plusieurs morceaux
-look;8;_display lines beginning with a given string_
-fold;8;ajustement longueur de ligne
-rev;8;inversion de texte
-column;8;transformation texte en colonnes
+ifup;3;activation interface réseau;;;?
+ifdown;3;désactivation interface réseau;;;?
+iftop;3-21;monitoring réseau;;;?
+scp;3-11;tranfert de fichiers entre machines;;;?
+rsync;3-11;copie et synchronisation de fichiers entre machines;;;?
 
-whoami;9;qui suis-je?;id
-who;9;qui est loggé?;w
-w;9;qui est loggé et que fait-il?;who
-passwd;9;changement pwd;chage;pwd
-usermod;9;modification compte utilisateur
-userdel;9;suppression compte
-adduser;9;création utilisateur
-addgroup;9;création groupe d'utilisateurs;adduser
-useradd;9;création utilisateur (bas niveau!);adduser
-id;9;affiche les infos sur un utilisateur;whoami
-groups;9;affiche les groupes existants;id
-groupadd;9;création groupe (bas niveau!);addgroup
-last;9;historique des logins & boots;;boot
-pwgen;9-20;génération de _password_;;pwd
-groupmod;9;modification d'un groupe d'utilisateurs
+nslookup;3;requete DNS (_deprecated_);dig;DNS;?
+netcat;3;utilitaire TCP/UDP;nc;;?
+tcpdump;3;capture trames réseau (Wireshark en CLI);;;?
+nc;3;alias pour netcat;netcat;;?
+ssh;3;Connection à une machine distante;;;?
+ssh-keygen;3;Génération de clés SSH;;;?
+ssh-add;3;;;;
+ssh-copy-id;3;;;;
+nmap;3;exploration réseau;;;?
+whois;3;infos/domaine (obsolete);rdap;;?
+rdap;3;infos/domaine;whois;;?
+traceroute;3;affiche les étapes d'une requete réseau;mtr;;?
+mtr;3;affiche les étapes d'une requete réseau;traceroute;;?
+netstat;3;infos/reseau, routage, etc.;;;?
+nmcli;3;pilote CLI des connexions réseau;;;?
+ftp;3;transfert de fichiers;;;?
+route;3;affiche ou édite la table de routage;;;?
+brctl;3;gestion des "bridges" réseau;nmcli;;?
 
-which;7;localisation (chemin) d'un programme;locate
-type;7;indique si une commande est interne (_builtin_) ou externe
-tty;7;indique le terminal courant (`/dev/pts/XX`)
-seq;7;_print a sequence of numbers_
+echo;16;affichage de texte/variable;printf;GNU;?
+printf;16;affichage de texte/variable formatté;echo;GNU;?
+alias;4;composition de commandes;unalias;GNU;?
+unalias;4;suppression d'un alias;alias;GNU;?
+apt;10;gestion paquets Debian;;;?
+apt-get;10;gestion paquets Debian (bas niveau);;;?
+yum;10;gestion paquets RedHat;;;?
+rpm;10;gestion paquets Fedora;;;?
+dpkg;10;utilitaire paquets Debian (.deb);;;?
+pip3;10;gestionnaire de paquets Python3;;;?
+pip;10;gestionnaire de paquets Python (2 ou 3);;;?
+npm;10;gestionnaire de paquets Javascript;;;?
 
-depmod;13;_generates modules.dep and map files_
-insmod;13;_insert a module into the kernel_
-lsmod;13;_show the status of modules in the kernel_
-modinfo;13;_show information about a module_
-modprobe;13;_add and remove modules from the kernel_
-rmmod;13;_remove a module from the kernel_
-logger;17;écriture dans un log système;;logs
-systemctl;13;gestion des services (CLI/systemd)
-loginctl;13;_Control the systemd login manager_;systemctl
-journalctl;13;outil d'accès aux logs systemd;systemctl
-dmesg;13;affichage logs kernel (buffer circulaire);;logs
-strace;13-17;_trace system calls and signals_
-zramctl;13;paramétrage et controle de la compression RAM;;RAM
-iostat;13;statistiques I/O
-pidstat;13;statistiques process
+nano;7;éditeur en mode "console";;;?
+xargs;7;exécution d'une commande à partir de `stdin`;GNU;;?
+sleep;7;attente;time,at;GNU;?
+tee;7;modif redirection (stdout, stderr);;;?
+clear;7;effacement terminal;;;?
+uptime;7;durée fonctionnement système;;;?
+set;7;paramétrage du shell;;;?
+export;7;exportation de variable dans un sous-shell;;;?
+bc;7;calculatrice CLI;;;?
 
-yes;7;_output a string repeatedly until killed_
-tmux;7;multiplexeur de terminal;screen;terminal
-screen;7;multiplexeur de terminal;tmux;terminal
-date;7;affiche date & heure;cal;date
-pv;7;_Pipe Viewer_ (monitoring de _pipe_ ou de copie)
-cal;7;affichage calendrier;date;date
+shuf;8;permutation aléatoire de lignes;sort;GNU;?
+awk;8;_pattern scanning and processing language_;gawk;GNU;?
+gawk;8;_pattern scanning and processing language_;awk;GNU;?
+tr;8;_translate or delete characters_;;GNU;?
+sed;8; _Stream EDitor_;;GNU;?
+cut;8;suppression de texte dans des lignes;;GNU;?
+join;8;regroupement de fichier par colonne;;GNU;?
+paste;8;fusion de lignes de texte de plusieurs fichiers;;GNU;?
+uniq;8;suppression lignes identiques;;GNU;?
+jq;8;traitement de chaines JSON;jo;;?
+split;8;Découpage d'un fichier en plusieurs morceaux;;;?
+look;8;_display lines beginning with a given string_;;;?
+fold;8;ajustement longueur de ligne;;;?
+rev;8;inversion de texte;;;?
+column;8;transformation texte en colonnes;;;?
+fold;8;coupe les lignes trop longues;;GNU;?
 
-if;16;
-while;16;
-for;16;
-exit;16;Terminaison du script et renvoi  d'une valeur à l'OS;return
-source;16;exécution d'un script dans le même shell
-return;16;fin de fonction;exit,function
-function;16;définition d'une fonction Bash
-case;16;
-shift;16;décalage paramètres positionnels ($1, $2, ...)
-break;16;sortie de boucle "for";for
-trap;16;interception de signal POSIX
-basename;16;extraction nom à partir d'un chemin complet;dirname
-dirname;16;extraction du dossier à partir d'un chemin complet;basename
-until;16;exécution d'une commande tant qu'un test est vrai
-test;16;test d'une condition
+whoami;9;qui suis-je?;id;GNU;?
+who;9;qui est loggé?;w;GNU;?
+w;9;qui est loggé et que fait-il?;who;;?
+passwd;9;changement pwd;chage,pwd;;?
+usermod;9;modification compte utilisateur;;;?
+userdel;9;suppression compte;;;?
+adduser;9;création utilisateur;;;?
+addgroup;9;création groupe d'utilisateurs;adduser;;?
+useradd;9;création utilisateur (bas niveau!);adduser;;?
+id;9;affiche les infos sur un utilisateur;whoami;;?
+groups;9;affiche les groupes existants;id;;?
+groupadd;9;création groupe (bas niveau!);addgroup;;?
+last;9;historique des logins & boots;boot;;?
+pwgen;9-20;génération de _password_;pwd;;?
+groupmod;9;modification d'un groupe d'utilisateurs;;;?
 
-auditd;17;_Logging_ des actions système
-aa-xxx;17;ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a>
-stress;17;génération de charge CPU
-hey;17;_HTTP load generator_;ab
-falco;17;_kernel monitoring and detection agent_;sysdig
-sysdig;17-13;_Cloud-Native Application Protection Platform_;falco
-ab;17;_Apache's server benchmarking tool_;hey
-ufw;3-17; pilote CLI de Firewall 
-cpupower;17;accès/édition paramètres de puissance CPU
+which;7;localisation (chemin) d'un programme;locate;;?
+type;7;indique si une commande est interne (_builtin_) ou externe;;GNU;?
+tty;7;indique le terminal courant (`/dev/pts/XX`);;;?
+seq;7;_print a sequence of numbers_;;GNU;?
 
-xclip;18;transfert vers le presse-papier X
-notify-send;18;Envoi de notification au bureau
-wl-paste;18;copie presse-papier (Wayland)
-xinput;18;_utility to configure and test X input devices_
-zenity;18;génération de dialogues GUI via CLI
-xdg-open;18;ouverture fichier avec application GUI associée au type par défaut
-display;18;affichage d'une image sur serveur X
-showkey;18;affichage codes claviers en temps réel;xev;evtest
-xev;18;affichage évènements clavier+souris;showkey,evtest
-evtest;18;affichage évènements clavier+souris;showkey,xev
+depmod;13;_generates modules.dep and map files_;;;?
+insmod;13;_insert a module into the kernel_;;;?
+lsmod;13;_show the status of modules in the kernel_;;;?
+modinfo;13;_show information about a module_;;;?
+modprobe;13;_add and remove modules from the kernel_;;;?
+rmmod;13;_remove a module from the kernel_;;;?
+logger;17;écriture dans un log système;;;logs
+systemctl;13;gestion des services (CLI/systemd);;;?
+loginctl;13;_Control the systemd login manager_;systemctl;;?
+journalctl;13;outil d'accès aux logs systemd;systemctl;;?
+dmesg;13;affichage logs kernel (buffer circulaire);;;logs
+strace;13-17;_trace system calls and signals_;;;?
+zramctl;13;paramétrage et controle de la compression RAM;;;RAM
+iostat;13;statistiques I/O;;;?
+pidstat;13;statistiques process;;;?
 
-losetup;1;_set up and control loop devices_;lsblk
-snap;10;utilitaire de controle des "snap" (Ubuntu)
-findmnt;1;_find a filesystem_
+yes;7;_output a string repeatedly until killed_;;GNU;?
+tmux;7;multiplexeur de terminal;screen,terminal;;?
+screen;7;multiplexeur de terminal;tmux,terminal;;?
+date;7;affiche date & heure;cal;GNU;?
+pv;7;_Pipe Viewer_ (monitoring de _pipe_ ou de copie);;;?
+cal;7;affichage calendrier;date;;?
 
-mount;2;montage de partitions;umount
-umount;2;démontage de partitions;mount
+if;16;;;;?
+while;16;;;;?
+for;16;;;;?
+exit;16;Terminaison du script et renvoi  d'une valeur à l'OS;return;;?
+source;16;exécution d'un script dans le même shell;;GNU;?
+return;16;fin de fonction;exit,function;;?
+function;16;définition d'une fonction Bash;;;?
+case;16;;;;
+shift;16;décalage paramètres positionnels ($1, $2, ...);;;?
+break;16;sortie de boucle "for";for;;?
+trap;16;interception de signal POSIX;;;?
+basename;16;extraction nom à partir d'un chemin complet;dirname;GNU;?
+dirname;16;extraction du dossier à partir d'un chemin complet;basename;GNU;?
+until;16;exécution d'une commande tant qu'un test est vrai;;;?
+test;16;test d'une condition;;;?
 
-exiftool;11;manipulation métadonnées fichier image, audio, etc.
+auditd;17;_Logging_ des actions système;;;?
+aa-xxx;17;ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a>;;;?
+stress;17;génération de charge CPU;;;?
+hey;17;_HTTP load generator_;ab;;?
+falco;17;_kernel monitoring and detection agent_;sysdig;;?
+sysdig;17-13;_Cloud-Native Application Protection Platform_;falco;;?
+ab;17;_Apache's server benchmarking tool_;hey;;?
+ufw;3-17; pilote CLI de Firewall ;;;?
+cpupower;17;accès/édition paramètres de puissance CPU;;;?
 
-pango-view;20;_convert text to image_
-qrencode;20;génération de qrcodes
-md5sum;20;calcul de hash MD5
-base64;20;encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a>
-shasum;20;calcul de hash SHA (256,512,...);sha256sum
-sha256sum;20;calcul de hash SHA256
-jo;20;génération de JSON;jq
-cowsay;20;[lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg)
-uuid;20;génération de _Universally Unique IDentifier_
+xclip;18;transfert vers le presse-papier X;;;?
+notify-send;18;Envoi de notification au bureau;;;?
+wl-paste;18;copie presse-papier (Wayland);;;?
+xinput;18;_utility to configure and test X input devices_;;;?
+zenity;18;génération de dialogues GUI via CLI;;;?
+xdg-open;18;ouverture fichier avec application GUI associée au type par défaut;;;?
+display;18;affichage d'une image sur serveur X;;;?
+showkey;18;affichage codes claviers en temps réel;xev,evtest ;;?
+xev;18;affichage évènements clavier+souris;showkey,evtest;;?
+evtest;18;affichage évènements clavier+souris;showkey,xev;;?
 
-banner;20;affichage bannière;figlet
-figlet;20;affichage bannière;toilet
-toilet;20;affichage bannière;banner
+losetup;1;_set up and control loop devices_;lsblk;;?
+snap;10;utilitaire de controle des "snap" (Ubuntu);;;?
+findmnt;1;_find a filesystem_;;;?
 
-man;23;manuel;help
-info;23;aide sur commande;man
-help;23;liste commandes "_builtin_" et aide;man
-tldr;23;`man` en mieux;man
-whatis;23;que fait cette commande?
-apropos;23;recherche dans les pages de manuel;man
-whereis;23;indique la localisation d'une commande
+mount;2;montage de partitions;umount;;?
+umount;2;démontage de partitions;mount;;?
 
-melt;24;édition vidéo;ffmpeg
-ffmpeg;24;édition vidéo généraliste;melt
-sox;24;couteau suisse audio
-soxi;24;détails sur fichier audio
-yt-dlp;24;téléchargement vidéos
-asciinema;24;_screencast_ console;ffmpeg
-aplay;24;écoute de fichier audio
-spd-say;24;synthétiseur vocal
+exiftool;11;manipulation métadonnées fichier image, audio, etc.;;;?
 
+pango-view;20;_convert text to image_;;;?
+qrencode;20;génération de qrcodes;;;?
+md5sum;20;calcul de hash MD5;;;?
+base64;20;encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a>;;;?
+shasum;20;calcul de hash SHA (256,512,...);sha256sum;;?
+sha256sum;20;calcul de hash SHA256;;;?
+jo;20;génération de JSON;jq;;?
+cowsay;20;[lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg);;;?
+uuid;20;génération de _Universally Unique IDentifier_;;;?
+
+banner;20;affichage bannière;figlet;;?
+figlet;20;affichage bannière;toilet;;?
+toilet;20;affichage bannière;banner;;?
+
+man;23;manuel;help;;?
+info;23;aide sur commande;man;GNU;?
+help;23;liste commandes "_builtin_" et aide;man;;?
+tldr;23;`man` en mieux;man;;?
+whatis;23;que fait cette commande?;;;?
+apropos;23;recherche dans les pages de manuel;man;;?
+whereis;23;indique la localisation d'une commande;;;?
+
+melt;24;édition vidéo;ffmpeg;;?
+ffmpeg;24;édition vidéo généraliste;melt;;?
+sox;24;couteau suisse audio;;;?
+soxi;24;détails sur fichier audio;;;?
+yt-dlp;24;téléchargement vidéos;;;?
+asciinema;24;_screencast_ console;ffmpeg;;?
+aplay;24;écoute de fichier audio;;;?
+spd-say;24;synthétiseur vocal;;;?
 
