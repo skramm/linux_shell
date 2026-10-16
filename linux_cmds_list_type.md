@@ -55,9 +55,10 @@
 | [apt](man/man_apt.md) | gestion paquets Debian | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [apt-get](man/man_apt-get.md) | gestion paquets Debian (bas niveau) | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [arch](man/man_arch.md) | architecture processeur | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [uname](linux_cmds_list_alpha.md#u) |
-| [awk](man/man_awk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
+| [awk](man/man_awk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [gawk](linux_cmds_list_alpha.md#g) |
 | [base64](man/man_base64.md) | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [basename](man/man_basename.md) | extraction nom à partir d'un chemin complet | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [dirname](linux_cmds_list_alpha.md#d) |
+| [bash](man/man_bash.md) | démarre un interpréteur | [Général](linux_cmds_list_cat.md#cat4) | [sh](linux_cmds_list_alpha.md#s) |
 | [bc](man/man_bc.md) | calculatrice CLI | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [blkid](man/man_blkid.md) | accès aux détails des _devices_ de type "bloc" | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [lsblk](linux_cmds_list_alpha.md#l) |
 | [bzip2](man/man_bzip2.md) | compression | [Compression](linux_cmds_list_cat.md#cat19) |  |
@@ -98,10 +99,12 @@
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  |
 | [fmt](man/man_fmt.md) | text formatter | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
+| [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [free](man/man_free.md) | état RAM utilisée/libre | [Mémoire](linux_cmds_list_cat.md#cat22) | [vmstat](linux_cmds_list_alpha.md#v) |
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  |
 | [ftp](man/man_ftp.md) | transfert de fichiers | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [g++](man/man_g++.md) | compilation C++ | [Dev](linux_cmds_list_cat.md#cat6) |  |
+| [gawk](man/man_gawk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [awk](linux_cmds_list_alpha.md#a) |
 | [gcc](man/man_gcc.md) | compilation C | [Dev](linux_cmds_list_cat.md#cat6) |  |
 | [getfacl](man/man_getfacl.md) | affichage des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) | [setfacl](linux_cmds_list_alpha.md#s) |
 | [git](man/man_git.md) | **LE** gestionnaire de versions de fichiers source | [Dev](linux_cmds_list_cat.md#cat6) |  |
@@ -126,16 +129,16 @@
 | [journalctl](man/man_journalctl.md) | outil d'accès aux logs systemd | [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [systemctl](linux_cmds_list_alpha.md#s) |
 | [jq](man/man_jq.md) | traitement de chaines JSON | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [jo](linux_cmds_list_alpha.md#j) |
 | [killall](man/man_killall.md) | stoppe tous les process par nom | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) |  |
-| [last](man/man_last.md) | historique des logins & boots | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) |  |
+| [last](man/man_last.md) | historique des logins & boots | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [boot](linux_cmds_list_alpha.md#b) |
 | [ld](man/man_ld.md) | _linker_ de binaires | [Dev](linux_cmds_list_cat.md#cat6) |  |
 | [ldconfig](man/man_ldconfig.md) | _configure dynamic linker run-time bindings_ | [Dev](linux_cmds_list_cat.md#cat6) |  |
 | [less](man/man_less.md) | filtre d'affichage | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [more](linux_cmds_list_alpha.md#m) |
-| [ln](man/man_ln.md) | création de lien, symbolique ou _hardlink_ | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) |  |
+| [ln](man/man_ln.md) | création de lien, symbolique ou _hardlink_ | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [GNU](linux_cmds_list_alpha.md#G) |
 | [logger](man/man_logger.md) | écriture dans un log système | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  |
 | [loginctl](man/man_loginctl.md) | _Control the systemd login manager_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [systemctl](linux_cmds_list_alpha.md#s) |
 | [look](man/man_look.md) | _display lines beginning with a given string_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [losetup](man/man_losetup.md) | _set up and control loop devices_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [lsblk](linux_cmds_list_alpha.md#l) |
-| [ls](man/man_ls.md) | _list directory content_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  |
+| [ls](man/man_ls.md) | _list directory content_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [dir](linux_cmds_list_alpha.md#d) |
 | [lsb_release](man/man_lsb_release.md) | version distribution | [Général](linux_cmds_list_cat.md#cat4) | [uname](linux_cmds_list_alpha.md#u) |
 | [lsblk](man/man_lsblk.md) | liste périphs stockage "bloc" | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [blkid](linux_cmds_list_alpha.md#b) |
 | [lscpu](man/man_lscpu.md) | détails sur archi CPU | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  |
@@ -162,7 +165,7 @@
 | npm ([G](https://www.google.fr/search?q=linux+npm)) | gestionnaire de paquets Javascript | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [nslookup](man/man_nslookup.md) | requete DNS (_deprecated_) | [Réseau](linux_cmds_list_cat.md#cat3) | [dig](linux_cmds_list_alpha.md#d) |
 | [od](man/man_od.md) | visualisation en hexa ou octal | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [xxd](linux_cmds_list_alpha.md#x) |
-| [passwd](man/man_passwd.md) | changement pwd | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [chage](linux_cmds_list_alpha.md#c) |
+| [passwd](man/man_passwd.md) | changement pwd | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [chage,pwd](linux_cmds_list_alpha.md#c) |
 | [paste](man/man_paste.md) | fusion de lignes de texte de plusieurs fichiers | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [pidof](man/man_pidof.md) |  donne le PID d'un process | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [ps](linux_cmds_list_alpha.md#p) |
 | [pidstat](man/man_pidstat.md) | statistiques process | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
@@ -183,13 +186,14 @@
 | [rpm](man/man_rpm.md) | gestion paquets Fedora | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [rsync](man/man_rsync.md) | copie et synchronisation de fichiers entre machines | [Réseau](linux_cmds_list_cat.md#cat3) - [Manipulation fichiers](linux_cmds_list_cat.md#cat11) |  |
 | [scp](man/man_scp.md) | tranfert de fichiers entre machines | [Réseau](linux_cmds_list_cat.md#cat3) - [Manipulation fichiers](linux_cmds_list_cat.md#cat11) |  |
-| [screen](man/man_screen.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [tmux](linux_cmds_list_alpha.md#t) |
+| [screen](man/man_screen.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [tmux,terminal](linux_cmds_list_alpha.md#t) |
 | [sed](man/man_sed.md) |  _Stream EDitor_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [seq](man/man_seq.md) | _print a sequence of numbers_ | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [setfacl](man/man_setfacl.md) | modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) | [getfacl](linux_cmds_list_alpha.md#g) |
+| [sh](man/man_sh.md) | démarre un interpréteur | [Général](linux_cmds_list_cat.md#cat4) | [bash](linux_cmds_list_alpha.md#b) |
 | [sha256sum](man/man_sha256sum.md) | calcul de hash SHA256 | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [shasum](man/man_shasum.md) | calcul de hash SHA (256,512,...) | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [sha256sum](linux_cmds_list_alpha.md#s) |
-| [showkey](man/man_showkey.md) | affichage codes claviers en temps réel | [Interface avec bureau](linux_cmds_list_cat.md#cat18) | [xev](linux_cmds_list_alpha.md#x) |
+| [showkey](man/man_showkey.md) | affichage codes claviers en temps réel | [Interface avec bureau](linux_cmds_list_cat.md#cat18) | [xev,evtest ](linux_cmds_list_alpha.md#x) |
 | [shred](man/man_shred.md) | effacement en profondeur de fichier | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) |  |
 | [shuf](man/man_shuf.md) | permutation aléatoire de lignes | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [sort](linux_cmds_list_alpha.md#s) |
 | [shutdown](man/man_shutdown.md) | Comme son nom l'indique... | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [reboot,halt](linux_cmds_list_alpha.md#r) |
@@ -215,7 +219,7 @@
 | [tar](man/man_tar.md) | utilitaire archivage | [Compression](linux_cmds_list_cat.md#cat19) | [zip](linux_cmds_list_alpha.md#z) |
 | [tcpdump](man/man_tcpdump.md) | capture trames réseau (Wireshark en CLI) | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [tee](man/man_tee.md) | modif redirection (stdout, stderr) | [Divers](linux_cmds_list_cat.md#cat7) |  |
-| [tmux](man/man_tmux.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [screen](linux_cmds_list_alpha.md#s) |
+| [tmux](man/man_tmux.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [screen,terminal](linux_cmds_list_alpha.md#s) |
 | [top](man/man_top.md) | _dashboard_ système & process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [htop](linux_cmds_list_alpha.md#h) |
 | [touch](man/man_touch.md) | création ou MAJ date d'un fichier | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) |  |
 | [tr](man/man_tr.md) | _translate or delete characters_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
@@ -223,7 +227,7 @@
 | [tty](man/man_tty.md) | indique le terminal courant (`/dev/pts/XX`) | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [ufw](man/man_ufw.md) |  pilote CLI de Firewall  | [Réseau](linux_cmds_list_cat.md#cat3) - [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  |
 | [umount](man/man_umount.md) | démontage de partitions | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [mount](linux_cmds_list_alpha.md#m) |
-| [uname](man/man_uname.md) | version noyau | [Général](linux_cmds_list_cat.md#cat4) - [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [lsb_release](linux_cmds_list_alpha.md#l) |
+| [uname](man/man_uname.md) | version noyau | [Général](linux_cmds_list_cat.md#cat4) - [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [lsb_release,arch](linux_cmds_list_alpha.md#l) |
 | [uniq](man/man_uniq.md) | suppression lignes identiques | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [unzip](man/man_unzip.md) | décompression zip | [Compression](linux_cmds_list_cat.md#cat19) | [zip](linux_cmds_list_alpha.md#z) |
 | [uptime](man/man_uptime.md) | durée fonctionnement système | [Divers](linux_cmds_list_cat.md#cat7) |  |
@@ -240,7 +244,7 @@
 | [which](man/man_which.md) | localisation (chemin) d'un programme | [Divers](linux_cmds_list_cat.md#cat7) | [locate](linux_cmds_list_alpha.md#l) |
 | [who](man/man_who.md) | qui est loggé? | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [w](linux_cmds_list_alpha.md#w) |
 | [whoami](man/man_whoami.md) | qui suis-je? | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [id](linux_cmds_list_alpha.md#i) |
-| [xargs](man/man_xargs.md) |  | [Divers](linux_cmds_list_cat.md#cat7) |  |
+| [xargs](man/man_xargs.md) | exécution d'une commande à partir de `stdin` | [Divers](linux_cmds_list_cat.md#cat7) | [GNU](linux_cmds_list_alpha.md#G) |
 | [xdg-open](man/man_xdg-open.md) | ouverture fichier avec application GUI associée au type par défaut | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  |
 | [xxd](man/man_xxd.md) | visualisation en hexa | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [od](linux_cmds_list_alpha.md#o) |
 | [yes](man/man_yes.md) | _output a string repeatedly until killed_ | [Divers](linux_cmds_list_cat.md#cat7) |  |
@@ -293,7 +297,7 @@
 | pango-list ([G](https://www.google.fr/search?q=linux+pango-list)) | liste des polices de caractères installées | [Divers](linux_cmds_list_cat.md#cat7) | [fc-list](linux_cmds_list_alpha.md#f) |
 | pango-view ([G](https://www.google.fr/search?q=linux+pango-view)) | _convert text to image_ | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | pv ([G](https://www.google.fr/search?q=linux+pv)) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) | [Divers](linux_cmds_list_cat.md#cat7) |  |
-| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) - [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
+| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) - [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [pwd](linux_cmds_list_alpha.md#p) |
 | qrencode ([G](https://www.google.fr/search?q=linux+qrencode)) | génération de qrcodes | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | rdap ([G](https://www.google.fr/search?q=linux+rdap)) | infos/domaine | [Réseau](linux_cmds_list_cat.md#cat3) | [whois](linux_cmds_list_alpha.md#w) |
 | ripgrep ([G](https://www.google.fr/search?q=linux+ripgrep)) | (rg) grep récursif | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [grep](linux_cmds_list_alpha.md#g) |
@@ -322,5 +326,5 @@
 
 
 
-_MAJ: 2026-10-16T10:08:07+0000_,
+_MAJ: 2026-10-16T12:21:53+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

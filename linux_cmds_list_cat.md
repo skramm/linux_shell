@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 310 commandes
+Total: 314 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -44,17 +44,19 @@ Total: 310 commandes
 ## 1 - catégorie: Général
 <a name='cat4'></a>
 
-9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [alias](man/help_alias.md) | composition de commandes | [unalias](linux_cmds_list_alpha.md#u) | _builtin_ |
+| [bash](man/man_bash.md) | démarre un interpréteur | [sh](linux_cmds_list_alpha.md#s) | _installed_ |
 | [history](man/man_history.md) | historique des commandes |  | _builtin_ |
 | locate ([G](https://www.google.fr/search?q=linux+locate)) | localise un programme dans le système | [which](linux_cmds_list_alpha.md#w) | NI |
 | [lsb_release](man/man_lsb_release.md) | version distribution | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
 | [pwd](man/man_pwd.md) | _print working directory_ |  | _builtin_ |
+| [sh](man/man_sh.md) | démarre un interpréteur | [bash](linux_cmds_list_alpha.md#b) | _installed_ |
 | [unalias](man/help_unalias.md) | suppression d'un alias | [alias](linux_cmds_list_alpha.md#a) | _builtin_ |
-| [uname](man/man_uname.md) | version noyau | [lsb_release](linux_cmds_list_alpha.md#l) | _installed_ |
+| [uname](man/man_uname.md) | version noyau | [lsb_release,arch](linux_cmds_list_alpha.md#l) | _installed_ |
 | updatedb ([G](https://www.google.fr/search?q=linux+updatedb)) | mise à jour BDD `locate` | [locate](linux_cmds_list_alpha.md#l) | NI |
 | [wc](man/man_wc.md) | _word count_ |  | _installed_ |
 
@@ -112,7 +114,7 @@ Total: 310 commandes
 | [cp](man/man_cp.md) | copie fichier(s) | [mv](linux_cmds_list_alpha.md#m) | _installed_ |
 | [diff](man/man_diff.md) | différences entre 2 fichiers, ligne par ligne | [cmp](linux_cmds_list_alpha.md#c) | _installed_ |
 | exiftool ([G](https://www.google.fr/search?q=linux+exiftool)) | manipulation métadonnées fichier image, audio, etc. |  | NI |
-| [ln](man/man_ln.md) | création de lien, symbolique ou _hardlink_ |  | _installed_ |
+| [ln](man/man_ln.md) | création de lien, symbolique ou _hardlink_ | [GNU](linux_cmds_list_alpha.md#G) | _installed_ |
 | [mv](man/man_mv.md) | déplacement/renommage | [cp](linux_cmds_list_alpha.md#c) | _installed_ |
 | [rm](man/man_rm.md) | suppression fichier | [rmdir](linux_cmds_list_alpha.md#r) | _installed_ |
 | [rsync](man/man_rsync.md) | copie et synchronisation de fichiers entre machines |  | _installed_ |
@@ -127,7 +129,7 @@ Total: 310 commandes
 |-----|-----|-----|-----|
 | [cd](man/help_cd.md) | _Change Directory_ | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | [dir](man/man_dir.md) | alias de ls | [ls](linux_cmds_list_alpha.md#l) | _installed_ |
-| [ls](man/man_ls.md) | _list directory content_ |  | _installed_ |
+| [ls](man/man_ls.md) | _list directory content_ | [dir](linux_cmds_list_alpha.md#d) | _installed_ |
 | [mkdir](man/man_mkdir.md) | _make directory_ |  | _installed_ |
 | [mktemp](man/man_mktemp.md) | création fichier out dossier temporaire, dans `/tmp` |  | _installed_ |
 | [popd](man/help_popd.md) | récupération dossier courant | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
@@ -255,14 +257,16 @@ Total: 310 commandes
 ## 11 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-17 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+19 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| [awk](man/man_awk.md) | _pattern scanning and processing language_ |  | _installed_ |
+| [awk](man/man_awk.md) | _pattern scanning and processing language_ | [gawk](linux_cmds_list_alpha.md#g) | _installed_ |
 | [column](man/man_column.md) | transformation texte en colonnes |  | _installed_ |
 | [cut](man/man_cut.md) | suppression de texte dans des lignes |  | _installed_ |
+| [fold](man/man_fold.md) | coupe les lignes trop longues |  | _installed_ |
 | [fold](man/man_fold.md) | ajustement longueur de ligne |  | _installed_ |
+| [gawk](man/man_gawk.md) | _pattern scanning and processing language_ | [awk](linux_cmds_list_alpha.md#a) | _installed_ |
 | [grep](man/man_grep.md) | recherche de chaîne | [ripgrep](linux_cmds_list_alpha.md#r) | _installed_ |
 | [join](man/man_join.md) | regroupement de fichier par colonne |  | _installed_ |
 | [jq](man/man_jq.md) | traitement de chaines JSON | [jo](linux_cmds_list_alpha.md#j) | _installed_ |
@@ -290,9 +294,9 @@ Total: 310 commandes
 | [groupmod](man/man_groupmod.md) | modification d'un groupe d'utilisateurs |  | _installed_ |
 | [groups](man/man_groups.md) | affiche les groupes existants | [id](linux_cmds_list_alpha.md#i) | _installed_ |
 | [id](man/man_id.md) | affiche les infos sur un utilisateur | [whoami](linux_cmds_list_alpha.md#w) | _installed_ |
-| [last](man/man_last.md) | historique des logins & boots |  | _installed_ |
-| [passwd](man/man_passwd.md) | changement pwd | [chage](linux_cmds_list_alpha.md#c) | _installed_ |
-| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ |  | NI |
+| [last](man/man_last.md) | historique des logins & boots | [boot](linux_cmds_list_alpha.md#b) | _installed_ |
+| [passwd](man/man_passwd.md) | changement pwd | [chage,pwd](linux_cmds_list_alpha.md#c) | _installed_ |
+| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [pwd](linux_cmds_list_alpha.md#p) | NI |
 | [useradd](man/man_useradd.md) | création utilisateur (bas niveau!) | [adduser](linux_cmds_list_alpha.md#a) | _installed_ |
 | [userdel](man/man_userdel.md) | suppression compte |  | _installed_ |
 | [usermod](man/man_usermod.md) | modification compte utilisateur |  | _installed_ |
@@ -340,19 +344,19 @@ Total: 310 commandes
 | pango-list ([G](https://www.google.fr/search?q=linux+pango-list)) | liste des polices de caractères installées | [fc-list](linux_cmds_list_alpha.md#f) | NI |
 | [printenv](man/man_printenv.md) | liste var. environnement | [env](linux_cmds_list_alpha.md#e) | _installed_ |
 | pv ([G](https://www.google.fr/search?q=linux+pv)) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) |  | NI |
-| [screen](man/man_screen.md) | multiplexeur de terminal | [tmux](linux_cmds_list_alpha.md#t) | _installed_ |
+| [screen](man/man_screen.md) | multiplexeur de terminal | [tmux,terminal](linux_cmds_list_alpha.md#t) | _installed_ |
 | [seq](man/man_seq.md) | _print a sequence of numbers_ |  | _installed_ |
 | [set](man/man_set.md) | paramétrage du shell |  | _builtin_ |
 | [sleep](man/man_sleep.md) | attente | [time,at](linux_cmds_list_alpha.md#t) | _installed_ |
 | [tee](man/man_tee.md) | modif redirection (stdout, stderr) |  | _installed_ |
 | [time](man/man_time.md) | chronométrage de tâche |  | _builtin_ |
-| [tmux](man/man_tmux.md) | multiplexeur de terminal | [screen](linux_cmds_list_alpha.md#s) | _installed_ |
+| [tmux](man/man_tmux.md) | multiplexeur de terminal | [screen,terminal](linux_cmds_list_alpha.md#s) | _installed_ |
 | [tty](man/man_tty.md) | indique le terminal courant (`/dev/pts/XX`) |  | _installed_ |
 | [type](man/help_type.md) | indique si une commande est interne (_builtin_) ou externe |  | _builtin_ |
 | [uptime](man/man_uptime.md) | durée fonctionnement système |  | _installed_ |
 | [watch](man/man_watch.md) | exécution périodique d'une commande |  | _installed_ |
 | [which](man/man_which.md) | localisation (chemin) d'un programme | [locate](linux_cmds_list_alpha.md#l) | _installed_ |
-| [xargs](man/man_xargs.md) |  |  | _installed_ |
+| [xargs](man/man_xargs.md) | exécution d'une commande à partir de `stdin` | [GNU](linux_cmds_list_alpha.md#G) | _installed_ |
 | [yes](man/man_yes.md) | _output a string repeatedly until killed_ |  | _installed_ |
 
 ## 15 - catégorie: Gestion des jobs & process
@@ -418,7 +422,7 @@ Total: 310 commandes
 | [strace](man/man_strace.md) | _trace system calls and signals_ |  | _installed_ |
 | sysdig ([G](https://www.google.fr/search?q=linux+sysdig)) | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
 | [systemctl](man/man_systemctl.md) | gestion des services (CLI/systemd) |  | _installed_ |
-| [uname](man/man_uname.md) | version noyau | [lsb_release](linux_cmds_list_alpha.md#l) | _installed_ |
+| [uname](man/man_uname.md) | version noyau | [lsb_release,arch](linux_cmds_list_alpha.md#l) | _installed_ |
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM |  | _installed_ |
 
 ## 18 - catégorie: Sécurité & Performance
@@ -450,7 +454,7 @@ Total: 310 commandes
 | display ([G](https://www.google.fr/search?q=linux+display)) | affichage d'une image sur serveur X |  | NI |
 | evtest ([G](https://www.google.fr/search?q=linux+evtest)) | affichage évènements clavier+souris | [showkey,xev](linux_cmds_list_alpha.md#s) | NI |
 | notify-send ([G](https://www.google.fr/search?q=linux+notify-send)) | Envoi de notification au bureau |  | NI |
-| [showkey](man/man_showkey.md) | affichage codes claviers en temps réel | [xev](linux_cmds_list_alpha.md#x) | _installed_ |
+| [showkey](man/man_showkey.md) | affichage codes claviers en temps réel | [xev,evtest ](linux_cmds_list_alpha.md#x) | _installed_ |
 | wl-paste ([G](https://www.google.fr/search?q=linux+wl-paste)) | copie presse-papier (Wayland) |  | NI |
 | xclip ([G](https://www.google.fr/search?q=linux+xclip)) | transfert vers le presse-papier X |  | NI |
 | [xdg-open](man/man_xdg-open.md) | ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
@@ -488,7 +492,7 @@ Total: 310 commandes
 | [jo](man/help_jo.md) | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | NI |
 | [md5sum](man/man_md5sum.md) | calcul de hash MD5 |  | _installed_ |
 | pango-view ([G](https://www.google.fr/search?q=linux+pango-view)) | _convert text to image_ |  | NI |
-| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ |  | NI |
+| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [pwd](linux_cmds_list_alpha.md#p) | NI |
 | qrencode ([G](https://www.google.fr/search?q=linux+qrencode)) | génération de qrcodes |  | NI |
 | [sha256sum](man/man_sha256sum.md) | calcul de hash SHA256 |  | _installed_ |
 | [shasum](man/man_shasum.md) | calcul de hash SHA (256,512,...) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
@@ -557,5 +561,5 @@ Total: 310 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-10-16T10:08:07+0000_,
+_MAJ: 2026-10-16T12:21:53+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

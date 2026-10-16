@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-301 commandes<br>
-34 _builtin_, 199 _installed_, 68 NI (_not installed_)
+305 commandes<br>
+34 _builtin_, 203 _installed_, 68 NI (_not installed_)
 
 
 ## 7
@@ -49,7 +49,7 @@
 | asciinema ([G](https://www.google.fr/search?q=linux+asciinema)) | _screencast_ console | [Multimédia](linux_cmds_list_cat.md#cat24) | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
 | at ([G](https://www.google.fr/search?q=linux+at)) | planification de tâches | [Divers](linux_cmds_list_cat.md#cat7) | [cron](linux_cmds_list_alpha.md#c) | NI |
 | auditd ([G](https://www.google.fr/search?q=linux+auditd)) | _Logging_ des actions système | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  | NI |
-| [awk](man/man_awk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
+| [awk](man/man_awk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [gawk](linux_cmds_list_alpha.md#g) | _installed_ |
 
 ## B
 <a name='b'></a>
@@ -63,6 +63,7 @@
 | banner ([G](https://www.google.fr/search?q=linux+banner)) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [figlet](linux_cmds_list_alpha.md#f) | NI |
 | [base64](man/man_base64.md) | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  | _installed_ |
 | [basename](man/man_basename.md) | extraction nom à partir d'un chemin complet | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [dirname](linux_cmds_list_alpha.md#d) | _installed_ |
+| [bash](man/man_bash.md) | démarre un interpréteur | [Général](linux_cmds_list_cat.md#cat4) | [sh](linux_cmds_list_alpha.md#s) | _installed_ |
 | bat ([G](https://www.google.fr/search?q=linux+bat)) | cat en mieux | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [cat,tail](linux_cmds_list_alpha.md#c) | NI |
 | [bc](man/man_bc.md) | calculatrice CLI | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
 | [bg](man/help_bg.md) | passage d'un _job_ en arrière plan (_BackGround_) | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [fg](linux_cmds_list_alpha.md#f) | _builtin_ |
@@ -166,6 +167,7 @@
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  | _installed_ |
 | [fmt](man/man_fmt.md) | text formatter | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
 | [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
+| [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [for](man/help_for.md) |  | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | [free](man/man_free.md) | état RAM utilisée/libre | [Mémoire](linux_cmds_list_cat.md#cat22) | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  | _installed_ |
@@ -182,6 +184,7 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | [g++](man/man_g++.md) | compilation C++ | [Dev](linux_cmds_list_cat.md#cat6) |  | _installed_ |
+| [gawk](man/man_gawk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [awk](linux_cmds_list_alpha.md#a) | _installed_ |
 | [gcc](man/man_gcc.md) | compilation C | [Dev](linux_cmds_list_cat.md#cat6) |  | _installed_ |
 | gdb ([G](https://www.google.fr/search?q=linux+gdb)) | déboggage pas à pas | [Dev](linux_cmds_list_cat.md#cat6) |  | NI |
 | [getfacl](man/man_getfacl.md) | affichage des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) | [setfacl](linux_cmds_list_alpha.md#s) | _installed_ |
@@ -270,17 +273,17 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| [last](man/man_last.md) | historique des logins & boots | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) |  | _installed_ |
+| [last](man/man_last.md) | historique des logins & boots | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [boot](linux_cmds_list_alpha.md#b) | _installed_ |
 | [ld](man/man_ld.md) | _linker_ de binaires | [Dev](linux_cmds_list_cat.md#cat6) |  | _installed_ |
 | [ldconfig](man/man_ldconfig.md) | _configure dynamic linker run-time bindings_ | [Dev](linux_cmds_list_cat.md#cat6) |  | _installed_ |
 | [less](man/man_less.md) | filtre d'affichage | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [more](linux_cmds_list_alpha.md#m) | _installed_ |
-| [ln](man/man_ln.md) | création de lien, symbolique ou _hardlink_ | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) |  | _installed_ |
+| [ln](man/man_ln.md) | création de lien, symbolique ou _hardlink_ | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [GNU](linux_cmds_list_alpha.md#G) | _installed_ |
 | locate ([G](https://www.google.fr/search?q=linux+locate)) | localise un programme dans le système | [Général](linux_cmds_list_cat.md#cat4) | [which](linux_cmds_list_alpha.md#w) | NI |
 | [logger](man/man_logger.md) | écriture dans un log système | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  | _installed_ |
 | [loginctl](man/man_loginctl.md) | _Control the systemd login manager_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [systemctl](linux_cmds_list_alpha.md#s) | _installed_ |
 | [look](man/man_look.md) | _display lines beginning with a given string_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [losetup](man/man_losetup.md) | _set up and control loop devices_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [lsblk](linux_cmds_list_alpha.md#l) | _installed_ |
-| [ls](man/man_ls.md) | _list directory content_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  | _installed_ |
+| [ls](man/man_ls.md) | _list directory content_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [dir](linux_cmds_list_alpha.md#d) | _installed_ |
 | [lsb_release](man/man_lsb_release.md) | version distribution | [Général](linux_cmds_list_cat.md#cat4) | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
 | [lsblk](man/man_lsblk.md) | liste périphs stockage "bloc" | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [blkid](linux_cmds_list_alpha.md#b) | _installed_ |
 | [lscpu](man/man_lscpu.md) | détails sur archi CPU | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  | _installed_ |
@@ -357,7 +360,7 @@
 |-----|-----|-----|-----|-----|
 | pango-list ([G](https://www.google.fr/search?q=linux+pango-list)) | liste des polices de caractères installées | [Divers](linux_cmds_list_cat.md#cat7) | [fc-list](linux_cmds_list_alpha.md#f) | NI |
 | pango-view ([G](https://www.google.fr/search?q=linux+pango-view)) | _convert text to image_ | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  | NI |
-| [passwd](man/man_passwd.md) | changement pwd | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [chage](linux_cmds_list_alpha.md#c) | _installed_ |
+| [passwd](man/man_passwd.md) | changement pwd | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [chage,pwd](linux_cmds_list_alpha.md#c) | _installed_ |
 | [paste](man/man_paste.md) | fusion de lignes de texte de plusieurs fichiers | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [pidof](man/man_pidof.md) |  donne le PID d'un process | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | [pidstat](man/man_pidstat.md) | statistiques process | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
@@ -374,7 +377,7 @@
 | [pushd](man/help_pushd.md) | chgt dossier courant avec sauvegarde | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [popd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | pv ([G](https://www.google.fr/search?q=linux+pv)) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) | [Divers](linux_cmds_list_cat.md#cat7) |  | NI |
 | [pwd](man/man_pwd.md) | _print working directory_ | [Général](linux_cmds_list_cat.md#cat4) |  | _builtin_ |
-| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) - [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  | NI |
+| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) - [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [pwd](linux_cmds_list_alpha.md#p) | NI |
 
 ## Q
 <a name='q'></a>
@@ -419,16 +422,17 @@
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
 | [scp](man/man_scp.md) | tranfert de fichiers entre machines | [Réseau](linux_cmds_list_cat.md#cat3) - [Manipulation fichiers](linux_cmds_list_cat.md#cat11) |  | _installed_ |
-| [screen](man/man_screen.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [tmux](linux_cmds_list_alpha.md#t) | _installed_ |
+| [screen](man/man_screen.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [tmux,terminal](linux_cmds_list_alpha.md#t) | _installed_ |
 | [sed](man/man_sed.md) |  _Stream EDitor_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | sensors ([G](https://www.google.fr/search?q=linux+sensors)) | données capteurs (température, tension, etc.) | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  | NI |
 | [seq](man/man_seq.md) | _print a sequence of numbers_ | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
 | [set](man/man_set.md) | paramétrage du shell | [Divers](linux_cmds_list_cat.md#cat7) |  | _builtin_ |
 | [setfacl](man/man_setfacl.md) | modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) | [getfacl](linux_cmds_list_alpha.md#g) | _installed_ |
+| [sh](man/man_sh.md) | démarre un interpréteur | [Général](linux_cmds_list_cat.md#cat4) | [bash](linux_cmds_list_alpha.md#b) | _installed_ |
 | [sha256sum](man/man_sha256sum.md) | calcul de hash SHA256 | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  | _installed_ |
 | [shasum](man/man_shasum.md) | calcul de hash SHA (256,512,...) | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
 | [shift](man/help_shift.md) | décalage paramètres positionnels ($1, $2, ...) | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
-| [showkey](man/man_showkey.md) | affichage codes claviers en temps réel | [Interface avec bureau](linux_cmds_list_cat.md#cat18) | [xev](linux_cmds_list_alpha.md#x) | _installed_ |
+| [showkey](man/man_showkey.md) | affichage codes claviers en temps réel | [Interface avec bureau](linux_cmds_list_cat.md#cat18) | [xev,evtest ](linux_cmds_list_alpha.md#x) | _installed_ |
 | [shred](man/man_shred.md) | effacement en profondeur de fichier | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) |  | _installed_ |
 | [shuf](man/man_shuf.md) | permutation aléatoire de lignes | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [sort](linux_cmds_list_alpha.md#s) | _installed_ |
 | [shutdown](man/man_shutdown.md) | Comme son nom l'indique... | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [reboot,halt](linux_cmds_list_alpha.md#r) | _installed_ |
@@ -475,7 +479,7 @@
 | testdisk ([G](https://www.google.fr/search?q=linux+testdisk)) | récupération données HDD | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [ddrescue](linux_cmds_list_alpha.md#d) | NI |
 | [time](man/man_time.md) | chronométrage de tâche | [Divers](linux_cmds_list_cat.md#cat7) |  | _builtin_ |
 | tldr ([G](https://www.google.fr/search?q=linux+tldr)) | `man` en mieux | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [man](linux_cmds_list_alpha.md#m) | NI |
-| [tmux](man/man_tmux.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [screen](linux_cmds_list_alpha.md#s) | _installed_ |
+| [tmux](man/man_tmux.md) | multiplexeur de terminal | [Divers](linux_cmds_list_cat.md#cat7) | [screen,terminal](linux_cmds_list_alpha.md#s) | _installed_ |
 | toilet ([G](https://www.google.fr/search?q=linux+toilet)) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [banner](linux_cmds_list_alpha.md#b) | NI |
 | [top](man/man_top.md) | _dashboard_ système & process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 | [touch](man/man_touch.md) | création ou MAJ date d'un fichier | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) |  | _installed_ |
@@ -499,7 +503,7 @@
 | [umask](man/help_umask.md) | permissions par défaut | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) | [chmod](linux_cmds_list_alpha.md#c) | _builtin_ |
 | [umount](man/man_umount.md) | démontage de partitions | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [mount](linux_cmds_list_alpha.md#m) | _installed_ |
 | [unalias](man/help_unalias.md) | suppression d'un alias | [Général](linux_cmds_list_cat.md#cat4) | [alias](linux_cmds_list_alpha.md#a) | _builtin_ |
-| [uname](man/man_uname.md) | version noyau | [Général](linux_cmds_list_cat.md#cat4) - [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [lsb_release](linux_cmds_list_alpha.md#l) | _installed_ |
+| [uname](man/man_uname.md) | version noyau | [Général](linux_cmds_list_cat.md#cat4) - [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [lsb_release,arch](linux_cmds_list_alpha.md#l) | _installed_ |
 | [uniq](man/man_uniq.md) | suppression lignes identiques | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [until](man/help_until.md) | exécution d'une commande tant qu'un test est vrai | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | [unzip](man/man_unzip.md) | décompression zip | [Compression](linux_cmds_list_cat.md#cat19) | [zip](linux_cmds_list_alpha.md#z) | _installed_ |
@@ -553,7 +557,7 @@
 
 | Nom | Description | Catégorie | Voir aussi | Statut |
 |-----|-----|-----|-----|-----|
-| [xargs](man/man_xargs.md) |  | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
+| [xargs](man/man_xargs.md) | exécution d'une commande à partir de `stdin` | [Divers](linux_cmds_list_cat.md#cat7) | [GNU](linux_cmds_list_alpha.md#G) | _installed_ |
 | xclip ([G](https://www.google.fr/search?q=linux+xclip)) | transfert vers le presse-papier X | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  | NI |
 | [xdg-open](man/man_xdg-open.md) | ouverture fichier avec application GUI associée au type par défaut | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  | _installed_ |
 | xev ([G](https://www.google.fr/search?q=linux+xev)) | affichage évènements clavier+souris | [Interface avec bureau](linux_cmds_list_cat.md#cat18) | [showkey,evtest](linux_cmds_list_alpha.md#s) | NI |
@@ -587,5 +591,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-10-16T10:08:07+0000_,
+_MAJ: 2026-10-16T12:21:53+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
