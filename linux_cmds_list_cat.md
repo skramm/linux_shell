@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 306 commandes
+Total: 308 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -373,7 +373,7 @@ Total: 306 commandes
 ## 16 - catégorie: Controle des scripts
 <a name='cat16'></a>
 
-15 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+17 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -390,7 +390,9 @@ Total: 306 commandes
 | [return](man/help_return.md) | fin de fonction | [exit,function](linux_cmds_list_alpha.md#e) | _builtin_ |
 | [shift](man/help_shift.md) | décalage paramètres positionnels ($1, $2, ...) |  | _builtin_ |
 | [source](man/help_source.md) | exécution d'un script dans le même shell |  | _builtin_ |
+| [test](man/man_test.md) | test d'une condition |  | _builtin_ |
 | [trap](man/help_trap.md) | interception de signal POSIX |  | _builtin_ |
+| [until](man/help_until.md) | exécution d'une commande tant qu'un test est vrai |  | _builtin_ |
 | [while](man/help_while.md) |  |  | _builtin_ |
 
 ## 17 - catégorie: Gestion Kernel
@@ -553,5 +555,5 @@ Total: 306 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-10-03T13:08:29+0000_,
+_MAJ: 2026-10-08T13:41:08+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
