@@ -218,6 +218,7 @@ awk;8;_pattern scanning and processing language_
 tr;8;_translate or delete characters_
 sed;8; _Stream EDitor_
 cut;8;suppression de texte dans des lignes
+join;8;regroupement de fichier par colonne
 paste;8;fusion de lignes de texte de plusieurs fichiers
 uniq;8;suppression lignes identiques
 jq;8;traitement de chaines JSON;jo
@@ -282,7 +283,8 @@ case;16;
 shift;16;décalage paramètres positionnels ($1, $2, ...)
 break;16;sortie de boucle "for";for
 trap;16;interception de signal POSIX
-basename;16;extraction nom à partir d'un chemin
+basename;16;extraction nom à partir d'un chemin complet;dirname
+dirname;16;extraction du dossier à partir d'un chemin complet;basename
 until;16;exécution d'une commande tant qu'un test est vrai
 test;16;test d'une condition
 
