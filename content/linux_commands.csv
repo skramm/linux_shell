@@ -154,9 +154,10 @@ time;7;chronométrage de tâche;;;?
 watch;7;exécution périodique d'une commande;;;?
 env;7;exécution d'un programme en modifiant l'environnement;printenv;GNU;?
 printenv;7;liste var. environnement;env;GNU;?
+mkfifo;7;création de _pipe_ nommé;;;?
 
 hostname;3;nom de la machine;;GNU;?
-ip;3;;;;
+ip;3;affichage et édition des interfaces réseau;;;?
 ping;3;envoi de trames ICMP;;;?
 wget;3;client http CLI;curl;GNU;?
 curl;3;client multiprotocoles (wget en mieux);wget;;?
