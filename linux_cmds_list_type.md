@@ -124,7 +124,7 @@
 | [info](man/man_info.md) | aide sur commande | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [man](linux_cmds_list_alpha.md#m) |
 | [insmod](man/man_insmod.md) | _insert a module into the kernel_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [iostat](man/man_iostat.md) | statistiques I/O | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
-| [ip](man/man_ip.md) |  | [Réseau](linux_cmds_list_cat.md#cat3) |  |
+| [ip](man/man_ip.md) | affichage et édition des interfaces réseau | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [join](man/man_join.md) | regroupement de fichier par colonne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [journalctl](man/man_journalctl.md) | outil d'accès aux logs systemd | [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [systemctl](linux_cmds_list_alpha.md#s) |
 | [jq](man/man_jq.md) | traitement de chaines JSON | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [jo](linux_cmds_list_alpha.md#j) |
@@ -151,6 +151,7 @@
 | [man](man/man_man.md) | manuel | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [help](linux_cmds_list_alpha.md#h) |
 | [md5sum](man/man_md5sum.md) | calcul de hash MD5 | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [mkdir](man/man_mkdir.md) | _make directory_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  |
+| [mkfifo](man/man_mkfifo.md) | création de _pipe_ nommé | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [mktemp](man/man_mktemp.md) | création fichier out dossier temporaire, dans `/tmp` | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  |
 | [modinfo](man/man_modinfo.md) | _show information about a module_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [modprobe](man/man_modprobe.md) | _add and remove modules from the kernel_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
@@ -326,5 +327,5 @@
 
 
 
-_MAJ: 2026-10-16T12:21:53+0000_,
+_MAJ: 2026-10-20T08:50:01+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

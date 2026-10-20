@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 314 commandes
+Total: 315 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -153,7 +153,7 @@ Total: 314 commandes
 | ifdown ([G](https://www.google.fr/search?q=linux+ifdown)) | désactivation interface réseau |  | NI |
 | iftop ([G](https://www.google.fr/search?q=linux+iftop)) | monitoring réseau |  | NI |
 | ifup ([G](https://www.google.fr/search?q=linux+ifup)) | activation interface réseau |  | NI |
-| [ip](man/man_ip.md) |  |  | _installed_ |
+| [ip](man/man_ip.md) | affichage et édition des interfaces réseau |  | _installed_ |
 | [mtr](man/man_mtr.md) | affiche les étapes d'une requete réseau | [traceroute](linux_cmds_list_alpha.md#t) | _installed_ |
 | [nc](man/man_nc.md) | alias pour netcat | [netcat](linux_cmds_list_alpha.md#n) | _installed_ |
 | [netcat](man/man_netcat.md) | utilitaire TCP/UDP | [nc](linux_cmds_list_alpha.md#n) | _installed_ |
@@ -324,7 +324,7 @@ Total: 314 commandes
 ## 14 - catégorie: Divers
 <a name='cat7'></a>
 
-30 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+31 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -340,6 +340,7 @@ Total: 314 commandes
 | [export](man/help_export.md) | exportation de variable dans un sous-shell |  | _builtin_ |
 | [fc-list](man/man_fc-list.md) | _list available fonts_ | [pango-list](linux_cmds_list_alpha.md#p) | _installed_ |
 | [fmt](man/man_fmt.md) | text formatter |  | _installed_ |
+| [mkfifo](man/man_mkfifo.md) | création de _pipe_ nommé |  | _installed_ |
 | [nano](man/man_nano.md) | éditeur en mode "console" |  | _installed_ |
 | pango-list ([G](https://www.google.fr/search?q=linux+pango-list)) | liste des polices de caractères installées | [fc-list](linux_cmds_list_alpha.md#f) | NI |
 | [printenv](man/man_printenv.md) | liste var. environnement | [env](linux_cmds_list_alpha.md#e) | _installed_ |
@@ -561,5 +562,5 @@ Total: 314 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-10-16T12:21:53+0000_,
+_MAJ: 2026-10-20T08:50:01+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
