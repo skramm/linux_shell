@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-306 commandes<br>
-34 _builtin_, 204 _installed_, 68 NI (_not installed_)
+307 commandes<br>
+34 _builtin_, 205 _installed_, 68 NI (_not installed_)
 
 
 ## 7
@@ -46,6 +46,7 @@
 | [apt](man/man_apt.md) | gestion paquets Debian | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  | _installed_ |
 | [apt-get](man/man_apt-get.md) | gestion paquets Debian (bas niveau) | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  | _installed_ |
 | [arch](man/man_arch.md) | architecture processeur | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
+| [arp](man/man_arp.md) | affichage table arp | [Réseau](linux_cmds_list_cat.md#cat3) |  | _installed_ |
 | asciinema ([G](https://www.google.fr/search?q=linux+asciinema)) | _screencast_ console | [Multimédia](linux_cmds_list_cat.md#cat24) | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
 | at ([G](https://www.google.fr/search?q=linux+at)) | planification de tâches | [Divers](linux_cmds_list_cat.md#cat7) | [cron](linux_cmds_list_alpha.md#c) | NI |
 | auditd ([G](https://www.google.fr/search?q=linux+auditd)) | _Logging_ des actions système | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  | NI |
@@ -166,8 +167,8 @@
 | [find](man/man_find.md) | _search for files, folders,_ ... | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) |  | _installed_ |
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  | _installed_ |
 | [fmt](man/man_fmt.md) | text formatter | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
-| [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
+| [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [for](man/help_for.md) |  | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | [free](man/man_free.md) | état RAM utilisée/libre | [Mémoire](linux_cmds_list_cat.md#cat22) | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  | _installed_ |
@@ -592,5 +593,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-10-20T08:50:01+0000_,
+_MAJ: 2026-10-22T14:30:51+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

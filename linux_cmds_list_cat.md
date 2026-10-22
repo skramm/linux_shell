@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 315 commandes
+Total: 316 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -140,10 +140,11 @@ Total: 315 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-31 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+32 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
+| [arp](man/man_arp.md) | affichage table arp |  | _installed_ |
 | brctl ([G](https://www.google.fr/search?q=linux+brctl)) | gestion des "bridges" réseau | [nmcli](linux_cmds_list_alpha.md#n) | NI |
 | [curl](man/man_curl.md) | client multiprotocoles (wget en mieux) | [wget](linux_cmds_list_alpha.md#w) | _installed_ |
 | [dig](man/man_dig.md) | requete DNS | [nslookup](linux_cmds_list_alpha.md#n) | _installed_ |
@@ -562,5 +563,5 @@ Total: 315 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-10-20T08:50:01+0000_,
+_MAJ: 2026-10-22T14:30:51+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

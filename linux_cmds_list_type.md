@@ -55,6 +55,7 @@
 | [apt](man/man_apt.md) | gestion paquets Debian | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [apt-get](man/man_apt-get.md) | gestion paquets Debian (bas niveau) | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [arch](man/man_arch.md) | architecture processeur | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [uname](linux_cmds_list_alpha.md#u) |
+| [arp](man/man_arp.md) | affichage table arp | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [awk](man/man_awk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [gawk](linux_cmds_list_alpha.md#g) |
 | [base64](man/man_base64.md) | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [basename](man/man_basename.md) | extraction nom à partir d'un chemin complet | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [dirname](linux_cmds_list_alpha.md#d) |
@@ -98,8 +99,8 @@
 | [find](man/man_find.md) | _search for files, folders,_ ... | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) |  |
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  |
 | [fmt](man/man_fmt.md) | text formatter | [Divers](linux_cmds_list_cat.md#cat7) |  |
-| [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
+| [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [free](man/man_free.md) | état RAM utilisée/libre | [Mémoire](linux_cmds_list_cat.md#cat22) | [vmstat](linux_cmds_list_alpha.md#v) |
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  |
 | [ftp](man/man_ftp.md) | transfert de fichiers | [Réseau](linux_cmds_list_cat.md#cat3) |  |
@@ -327,5 +328,5 @@
 
 
 
-_MAJ: 2026-10-20T08:50:01+0000_,
+_MAJ: 2026-10-22T14:30:51+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
