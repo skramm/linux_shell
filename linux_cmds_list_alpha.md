@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-307 commandes<br>
-34 _builtin_, 205 _installed_, 68 NI (_not installed_)
+308 commandes<br>
+34 _builtin_, 206 _installed_, 68 NI (_not installed_)
 
 
 ## 7
@@ -167,8 +167,8 @@
 | [find](man/man_find.md) | _search for files, folders,_ ... | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) |  | _installed_ |
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  | _installed_ |
 | [fmt](man/man_fmt.md) | text formatter | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
-| [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
+| [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [for](man/help_for.md) |  | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | [free](man/man_free.md) | état RAM utilisée/libre | [Mémoire](linux_cmds_list_cat.md#cat22) | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  | _installed_ |
@@ -333,6 +333,7 @@
 | ncdu ([G](https://www.google.fr/search?q=linux+ncdu)) | `du` en mieux | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [du](linux_cmds_list_alpha.md#d) | NI |
 | [netcat](man/man_netcat.md) | utilitaire TCP/UDP | [Réseau](linux_cmds_list_cat.md#cat3) | [nc](linux_cmds_list_alpha.md#n) | _installed_ |
 | [netstat](man/man_netstat.md) | infos/reseau, routage, etc. | [Réseau](linux_cmds_list_cat.md#cat3) |  | _installed_ |
+| [nl](man/man_nl.md) | numérotation lignes d'un fichier | [Divers](linux_cmds_list_cat.md#cat7) | [bat](linux_cmds_list_alpha.md#b) | _installed_ |
 | nmap ([G](https://www.google.fr/search?q=linux+nmap)) | exploration réseau | [Réseau](linux_cmds_list_cat.md#cat3) |  | NI |
 | nmcli ([G](https://www.google.fr/search?q=linux+nmcli)) | pilote CLI des connexions réseau | [Réseau](linux_cmds_list_cat.md#cat3) |  | NI |
 | nmon ([G](https://www.google.fr/search?q=linux+nmon)) | _dashboard_ système | [Monitoring système](linux_cmds_list_cat.md#cat21) | [htop](linux_cmds_list_alpha.md#h) | NI |
@@ -374,7 +375,7 @@
 | [popd](man/help_popd.md) | récupération dossier courant | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [pushd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | [printenv](man/man_printenv.md) | liste var. environnement | [Divers](linux_cmds_list_cat.md#cat7) | [env](linux_cmds_list_alpha.md#e) | _installed_ |
 | [printf](man/man_printf.md) | affichage de texte/variable formatté | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [echo](linux_cmds_list_alpha.md#e) | _builtin_ |
-| [ps](man/man_ps.md) | snapshot des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top-pstree](linux_cmds_list_alpha.md#t) | _installed_ |
+| [ps](man/man_ps.md) | snapshot des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top,pstree](linux_cmds_list_alpha.md#t) | _installed_ |
 | [pstree](man/man_pstree.md) | arborescence des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | [pushd](man/help_pushd.md) | chgt dossier courant avec sauvegarde | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [popd](linux_cmds_list_alpha.md#p) | _builtin_ |
 | pv ([G](https://www.google.fr/search?q=linux+pv)) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) | [Divers](linux_cmds_list_cat.md#cat7) |  | NI |
@@ -593,5 +594,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-10-22T14:30:51+0000_,
+_MAJ: 2026-10-24T16:10:09+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

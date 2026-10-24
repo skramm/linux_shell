@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 316 commandes
+Total: 317 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -325,7 +325,7 @@ Total: 316 commandes
 ## 14 - catégorie: Divers
 <a name='cat7'></a>
 
-31 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+32 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -343,6 +343,7 @@ Total: 316 commandes
 | [fmt](man/man_fmt.md) | text formatter |  | _installed_ |
 | [mkfifo](man/man_mkfifo.md) | création de _pipe_ nommé |  | _installed_ |
 | [nano](man/man_nano.md) | éditeur en mode "console" |  | _installed_ |
+| [nl](man/man_nl.md) | numérotation lignes d'un fichier | [bat](linux_cmds_list_alpha.md#b) | _installed_ |
 | pango-list ([G](https://www.google.fr/search?q=linux+pango-list)) | liste des polices de caractères installées | [fc-list](linux_cmds_list_alpha.md#f) | NI |
 | [printenv](man/man_printenv.md) | liste var. environnement | [env](linux_cmds_list_alpha.md#e) | _installed_ |
 | pv ([G](https://www.google.fr/search?q=linux+pv)) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) |  | NI |
@@ -514,7 +515,7 @@ Total: 316 commandes
 | inxi ([G](https://www.google.fr/search?q=linux+inxi)) | informations système | [lstopo-htop-lsdev](linux_cmds_list_alpha.md#l) | NI |
 | iotop ([G](https://www.google.fr/search?q=linux+iotop)) | liste process avec leur utilisation I/O disque |  | NI |
 | nmon ([G](https://www.google.fr/search?q=linux+nmon)) | _dashboard_ système | [htop](linux_cmds_list_alpha.md#h) | NI |
-| [ps](man/man_ps.md) | snapshot des process | [top-pstree](linux_cmds_list_alpha.md#t) | _installed_ |
+| [ps](man/man_ps.md) | snapshot des process | [top,pstree](linux_cmds_list_alpha.md#t) | _installed_ |
 | [pstree](man/man_pstree.md) | arborescence des process | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | [top](man/man_top.md) | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 
@@ -563,5 +564,5 @@ Total: 316 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-10-22T14:30:51+0000_,
+_MAJ: 2026-10-24T16:10:09+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

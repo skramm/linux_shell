@@ -99,8 +99,8 @@
 | [find](man/man_find.md) | _search for files, folders,_ ... | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) |  |
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  |
 | [fmt](man/man_fmt.md) | text formatter | [Divers](linux_cmds_list_cat.md#cat7) |  |
-| [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
+| [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [free](man/man_free.md) | état RAM utilisée/libre | [Mémoire](linux_cmds_list_cat.md#cat22) | [vmstat](linux_cmds_list_alpha.md#v) |
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  |
 | [ftp](man/man_ftp.md) | transfert de fichiers | [Réseau](linux_cmds_list_cat.md#cat3) |  |
@@ -164,6 +164,7 @@
 | [nc](man/man_nc.md) | alias pour netcat | [Réseau](linux_cmds_list_cat.md#cat3) | [netcat](linux_cmds_list_alpha.md#n) |
 | [netcat](man/man_netcat.md) | utilitaire TCP/UDP | [Réseau](linux_cmds_list_cat.md#cat3) | [nc](linux_cmds_list_alpha.md#n) |
 | [netstat](man/man_netstat.md) | infos/reseau, routage, etc. | [Réseau](linux_cmds_list_cat.md#cat3) |  |
+| [nl](man/man_nl.md) | numérotation lignes d'un fichier | [Divers](linux_cmds_list_cat.md#cat7) | [bat](linux_cmds_list_alpha.md#b) |
 | npm ([G](https://www.google.fr/search?q=linux+npm)) | gestionnaire de paquets Javascript | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
 | [nslookup](man/man_nslookup.md) | requete DNS (_deprecated_) | [Réseau](linux_cmds_list_cat.md#cat3) | [dig](linux_cmds_list_alpha.md#d) |
 | [od](man/man_od.md) | visualisation en hexa ou octal | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) | [xxd](linux_cmds_list_alpha.md#x) |
@@ -177,7 +178,7 @@
 | [pkg-config](man/man_pkg-config.md) | outil de paramétrage de compilation, renvoie les infos sur librairies installées | [Dev](linux_cmds_list_cat.md#cat6) |  |
 | [pkill](man/man_pkill.md) | stoppe un process par nom | [Gestion des jobs & process](linux_cmds_list_cat.md#cat12) | [kill](linux_cmds_list_alpha.md#k) |
 | [printenv](man/man_printenv.md) | liste var. environnement | [Divers](linux_cmds_list_cat.md#cat7) | [env](linux_cmds_list_alpha.md#e) |
-| [ps](man/man_ps.md) | snapshot des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top-pstree](linux_cmds_list_alpha.md#t) |
+| [ps](man/man_ps.md) | snapshot des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top,pstree](linux_cmds_list_alpha.md#t) |
 | [pstree](man/man_pstree.md) | arborescence des process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [ps](linux_cmds_list_alpha.md#p) |
 | [reboot](man/man_reboot.md) | reboot | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [shutdown,halt](linux_cmds_list_alpha.md#s) |
 | [rev](man/man_rev.md) | inversion de texte | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
@@ -328,5 +329,5 @@
 
 
 
-_MAJ: 2026-10-22T14:30:51+0000_,
+_MAJ: 2026-10-24T16:10:09+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
