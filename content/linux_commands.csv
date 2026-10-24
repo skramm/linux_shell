@@ -5,15 +5,15 @@
 
 lscpu;1;détails sur archi CPU;;;CPU
 lsusb;1;liste périphs USB;;;USB
-lsblk;1;liste périphs stockage "bloc";blkid;;?
+lsblk;1;liste périphs stockage "bloc";blkid;;storage
 lsdev;1;infos générales sur _hardware_;;;hardware
 lsof;1;_list open files_;ss;;?
 ss;1;_socket statistics_;lsof;;?
 lspci;1;_list all PCI devices_;;;PCI
 lshw;1;_list hardware_;;;hardware
 sensors;1;données capteurs (température, tension, etc.);;;?
-free;22;état RAM utilisée/libre;vmstat;;?
-vmstat;22;état mémoire virtuelle;free;;?
+free;22;état RAM utilisée/libre;vmstat;;RAM
+vmstat;22;état mémoire virtuelle;free;;RAM
 swapon;22;gestion mémoire _swap_;swapoff;;RAM
 swapoff;22;gestion mémoire _swap_;swapon;;RAM
 
@@ -21,8 +21,8 @@ acpi;1;details sur alimentation (batterie ou secteur);upower,dmidecode;;hardware
 upower;1;client du _daemon_ `upowerd`, gerant l'alimentation;acpi;;?
 dmidecode;1;interface sur le BIOS;acpi;;BIOS
 lstopo;1-22;architecture CPU (coeurs, RAM cache, ...);;;CPU
-sudo;1;exécution d'une commande admin;su;;?
-su;1;changement temporaire de _user_;sudo;;?
+sudo;1;exécution d'une commande admin;su;;admin
+su;1;changement temporaire de _user_;sudo;;admin
 hwclock;1;accès horloge interne;time;;?
 arch;1;architecture processeur;uname;;CPU
 
@@ -36,8 +36,8 @@ btop;21; monitoring système;htop,top;;?
 iotop;21;liste process avec leur utilisation I/O disque;;;?
 nmon;21;_dashboard_ système;htop;;?
 pstree;21;arborescence des process;ps;;?
-ps;21;snapshot des process;top-pstree;;?
-inxi;21;informations système;lstopo-htop-lsdev;;?
+ps;21;snapshot des process;top,pstree;;process
+inxi;21;informations système;lstopo-htop-lsdev;;hardware
 
 pidof;12; donne le PID d'un process;ps;;?
 kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill;GNU;?
@@ -250,6 +250,7 @@ which;7;localisation (chemin) d'un programme;locate;;?
 type;7;indique si une commande est interne (_builtin_) ou externe;;GNU;?
 tty;7;indique le terminal courant (`/dev/pts/XX`);;;?
 seq;7;_print a sequence of numbers_;;GNU;?
+nl;7;numérotation lignes d'un fichier;bat;GNU;?
 
 depmod;13;_generates modules.dep and map files_;;;?
 insmod;13;_insert a module into the kernel_;;;?
