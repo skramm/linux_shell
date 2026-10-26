@@ -537,7 +537,7 @@ genCat(
 	f << "\n## " << idx << " - catégorie: " << pcat.second
 		<< "\n<a name='cat" << cat << "'></a>\n\n" 
 		<< nbc << " commandes - <a href='#top'>Haut de page</a>"
-		<< " - [Liste alphabétique](linux_cmds_list_alpha.md)\n\n"
+		<< " - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)\n\n"
 		<< "| Nom | Description | Voir aussi | Statut |"
 		<< "\n|-----|-----|-----|-----|\n";
 
@@ -574,7 +574,7 @@ genListCat(
 	std::ofstream f( fn );
 	assert( f.is_open() );
 	f << "# Linux Shell: liste de commandes par catégorie\n\n"
-		<< "[Liste alphabétique](linux_cmds_list_alpha.md)\n\n"
+		<< "[Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)\n\n"
 		<< "<a name='top'></a>\n\n"
 		<< "Catégories:  \n";
 
@@ -600,9 +600,13 @@ printForType(
 	std::ofstream&               f,
 	const std::vector<Command>&  cmds,
 	const Categories&            categs,
-	En_Type                      type
+	En_Type                      type,
+	bool                         printAlphaIndex=false
 )
 {
+	if( printAlphaIndex )
+		printAlpha( f );
+
 	f << "## Commandes \"" << getString( type ) << "\"\n\n"
 		<< "| Nom | Description | Catégorie | Voir aussi |\n"
 		<< "|-----|-------------|-----------|------------|\n";
@@ -642,7 +646,7 @@ genListType(
 
 	printForType( f, cmds, categs, T_BUILTIN    );
 	printForType( f, cmds, categs, T_PRESENT    );
-	printForType( f, cmds, categs, T_NOTPRESENT );
+	printForType( f, cmds, categs, T_NOTPRESENT, true );
 
 	printfooter(f);
 }
