@@ -1,6 +1,6 @@
 # Linux Shell: liste de commandes par catégorie
 
-[Liste alphabétique](linux_cmds_list_alpha.md)
+[Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 <a name='top'></a>
 
@@ -44,7 +44,7 @@ Total: 317 commandes
 ## 1 - catégorie: Général
 <a name='cat4'></a>
 
-11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -63,7 +63,7 @@ Total: 317 commandes
 ## 2 - catégorie: Édition/visualisation fichiers
 <a name='cat14'></a>
 
-13 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+13 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -84,7 +84,7 @@ Total: 317 commandes
 ## 3 - catégorie: Disque & stockage
 <a name='cat2'></a>
 
-13 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+13 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -105,7 +105,7 @@ Total: 317 commandes
 ## 4 - catégorie: Manipulation fichiers
 <a name='cat11'></a>
 
-10 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+10 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -123,7 +123,7 @@ Total: 317 commandes
 ## 5 - catégorie: Manipulation dossiers
 <a name='cat15'></a>
 
-9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -140,7 +140,7 @@ Total: 317 commandes
 ## 6 - catégorie: Réseau
 <a name='cat3'></a>
 
-32 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+32 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -180,7 +180,7 @@ Total: 317 commandes
 ## 7 - catégorie: Fichiers & permissions
 <a name='cat5'></a>
 
-8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -196,7 +196,7 @@ Total: 317 commandes
 ## 8 - catégorie: Système & _Hardware_
 <a name='cat1'></a>
 
-22 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+22 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -226,7 +226,7 @@ Total: 317 commandes
 ## 9 - catégorie: Mémoire
 <a name='cat22'></a>
 
-5 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+5 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -239,7 +239,7 @@ Total: 317 commandes
 ## 10 - catégorie: Dev
 <a name='cat6'></a>
 
-11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -258,7 +258,7 @@ Total: 317 commandes
 ## 11 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-19 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+19 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -285,7 +285,7 @@ Total: 317 commandes
 ## 12 - catégorie: Gestion utilisateurs
 <a name='cat9'></a>
 
-15 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+15 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -308,7 +308,7 @@ Total: 317 commandes
 ## 13 - catégorie: Installation logiciels
 <a name='cat10'></a>
 
-9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -325,7 +325,7 @@ Total: 317 commandes
 ## 14 - catégorie: Divers
 <a name='cat7'></a>
 
-32 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+32 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -365,7 +365,7 @@ Total: 317 commandes
 ## 15 - catégorie: Gestion des jobs & process
 <a name='cat12'></a>
 
-8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -381,7 +381,7 @@ Total: 317 commandes
 ## 16 - catégorie: Controle des scripts
 <a name='cat16'></a>
 
-18 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+18 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -407,7 +407,7 @@ Total: 317 commandes
 ## 17 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
-16 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+16 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -431,7 +431,7 @@ Total: 317 commandes
 ## 18 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
-11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -450,7 +450,7 @@ Total: 317 commandes
 ## 19 - catégorie: Interface avec bureau
 <a name='cat18'></a>
 
-10 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+10 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -468,7 +468,7 @@ Total: 317 commandes
 ## 20 - catégorie: Compression
 <a name='cat19'></a>
 
-8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -484,7 +484,7 @@ Total: 317 commandes
 ## 21 - catégorie: Encodage/décodage & générateurs
 <a name='cat20'></a>
 
-13 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+13 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -505,7 +505,7 @@ Total: 317 commandes
 ## 22 - catégorie: Monitoring système
 <a name='cat21'></a>
 
-9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -522,7 +522,7 @@ Total: 317 commandes
 ## 23 - catégorie: Mémoire
 <a name='cat22'></a>
 
-5 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+5 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -535,7 +535,7 @@ Total: 317 commandes
 ## 24 - catégorie: Référence & aide des commandes
 <a name='cat23'></a>
 
-7 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+7 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -550,7 +550,7 @@ Total: 317 commandes
 ## 25 - catégorie: Multimédia
 <a name='cat24'></a>
 
-8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md)
+8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -564,5 +564,5 @@ Total: 317 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-10-24T16:10:09+0000_,
+_MAJ: 2026-10-26T15:48:02+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
