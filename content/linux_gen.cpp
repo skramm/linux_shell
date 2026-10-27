@@ -383,7 +383,7 @@ genListAlpha(
 			f << "\n## " << (char)std::toupper(first)
 				<< "\n<a name='" << first << "'></a>\n\n"
 				<< "<a href='#top'>Haut de page</a>"
-				<< " - [Liste par catégorie](linux_cmds_list_cat.md)";
+				<< " - [Liste par catégorie](linux_cmds_list_cat.md)"
 				<< " - [Liste par type](linux_cmds_list_type.md)\n\n";
 			printAlpha( f );
 				

@@ -46,7 +46,7 @@ fmt;7;text formatter
 
 fdisk;2;_manipulate disk partition table_
 fsck;2;Vérification et correction système de fichier
-df;2;_disk free_
+df;2;_disk free_;;GNU;?
 du;2;_disk usage_;ncdu
 ncdu;2;`du` en mieux;du
 dd;2;utilitaire de copie bas niveau
