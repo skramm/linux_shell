@@ -383,7 +383,8 @@ genListAlpha(
 			f << "\n## " << (char)std::toupper(first)
 				<< "\n<a name='" << first << "'></a>\n\n"
 				<< "<a href='#top'>Haut de page</a>"
-				<< " - [Liste par catégorie](linux_cmds_list_cat.md)\n\n";
+				<< " - [Liste par catégorie](linux_cmds_list_cat.md)";
+				<< " - [Liste par type](linux_cmds_list_type.md)\n\n";
 			printAlpha( f );
 				
 			f << "| Nom | Description | Catégorie | Voir aussi | Statut |\n"
@@ -569,9 +570,9 @@ genListType(
 	auto first_letter = cmds[0]._name.at(0);
 	bool start = true;
 
-	printForType( f, cmds, categs, T_BUILTIN    );
-	printForType( f, cmds, categs, T_PRESENT    );
-	printForType( f, cmds, categs, T_NOTPRESENT, true );
+	printForType( f, cmds, categs, T_BUILTIN        );
+	printForType( f, cmds, categs, T_PRESENT, true  );
+	printForType( f, cmds, categs, T_NOTPRESENT     );
 
 	printfooter(f);
 }
