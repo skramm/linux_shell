@@ -31,7 +31,7 @@ Catégories:
 * 24 - [Référence & aide des commandes](#cat23)
 * 25 - [Multimédia](#cat24)
 
-Total: 317 commandes
+Total: 316 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -258,14 +258,13 @@ Total: 317 commandes
 ## 11 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-19 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
+18 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [awk](man/man_awk.md) | _pattern scanning and processing language_ | [gawk](linux_cmds_list_alpha.md#g) | _installed_ |
 | [column](man/man_column.md) | transformation texte en colonnes |  | _installed_ |
 | [cut](man/man_cut.md) | suppression de texte dans des lignes |  | _installed_ |
-| [fold](man/man_fold.md) | coupe les lignes trop longues |  | _installed_ |
 | [fold](man/man_fold.md) | ajustement longueur de ligne |  | _installed_ |
 | [gawk](man/man_gawk.md) | _pattern scanning and processing language_ | [awk](linux_cmds_list_alpha.md#a) | _installed_ |
 | [grep](man/man_grep.md) | recherche de chaîne | [ripgrep](linux_cmds_list_alpha.md#r) | _installed_ |
@@ -564,5 +563,5 @@ Total: 317 commandes
 | yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
 
 
-_MAJ: 2026-10-26T15:48:02+0000_,
+_MAJ: 2026-10-27T10:38:58+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

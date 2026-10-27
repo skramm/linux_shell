@@ -1,6 +1,6 @@
 # Linux Shell: liste alphabétique de commandes
 
-[Liste par catégorie](linux_cmds_list_cat.md)
+[Liste par catégorie](linux_cmds_list_cat.md) - [Liste par type](linux_cmds_list_type.md)
 
 <a name='#top'></a>
 
@@ -11,8 +11,8 @@
 
 **Note**: certaines commandes apparaissent dans plusieurs catégories
 
-308 commandes<br>
-34 _builtin_, 206 _installed_, 68 NI (_not installed_)
+307 commandes<br>
+34 _builtin_, 205 _installed_, 68 NI (_not installed_)
 
 
 ## 7
@@ -168,7 +168,6 @@
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  | _installed_ |
 | [fmt](man/man_fmt.md) | text formatter | [Divers](linux_cmds_list_cat.md#cat7) |  | _installed_ |
 | [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
-| [fold](man/man_fold.md) | coupe les lignes trop longues | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  | _installed_ |
 | [for](man/help_for.md) |  | [Controle des scripts](linux_cmds_list_cat.md#cat16) |  | _builtin_ |
 | [free](man/man_free.md) | état RAM utilisée/libre | [Mémoire](linux_cmds_list_cat.md#cat22) | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  | _installed_ |
@@ -594,5 +593,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-10-26T15:48:02+0000_,
+_MAJ: 2026-10-27T10:38:58+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
