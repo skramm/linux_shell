@@ -254,6 +254,8 @@
 | [zip](man/man_zip.md) | compression zip | [Compression](linux_cmds_list_cat.md#cat19) | [gzip,unzip](linux_cmds_list_alpha.md#g) |
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 
+[A](#a)-[B](#b)-[C](#c)-[D](#d)-[E](#e)-[F](#f)-[G](#g)-[H](#h)-[I](#i)-[J](#j)-[K](#k)-[L](#l)-[M](#m)-[N](#n)-[O](#o)-[P](#p)-[Q](#q)-[R](#r)-[S](#s)-[T](#t)-[U](#u)-[V](#v)-[W](#w)-[X](#x)-[Y](#y)-[Z](#z)-
+
 ## Commandes "NI"
 
 | Nom | Description | Catégorie | Voir aussi |
@@ -329,5 +331,5 @@
 
 
 
-_MAJ: 2026-10-24T16:10:09+0000_,
+_MAJ: 2026-10-26T15:48:02+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_

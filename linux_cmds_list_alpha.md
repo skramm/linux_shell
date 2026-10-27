@@ -594,5 +594,5 @@
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  | _installed_ |
 
 
-_MAJ: 2026-10-24T16:10:09+0000_,
+_MAJ: 2026-10-26T15:48:02+0000_,
 _OS: Ubuntu - 24.04.5 LTS (Noble Numbat)_
