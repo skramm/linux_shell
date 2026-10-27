@@ -151,7 +151,8 @@ createHeader( std::string str /* "man" or "help" */, std::string name )
 	f << "# Documentation de `" << name
 		<< "`, générée via `" << str
 		<< "`\n\n[Liste alphabétique](../linux_cmds_list_alpha.md) - "
-		<< "[Liste par catégorie](../linux_cmds_list_cat.md)\n\n"
+		<< "[Liste par catégorie](../linux_cmds_list_cat.md) - "
+		<< "[Liste par type](../linux_cmds_list_type.md)\n\n"
 		<< "[Recherche Google](https://www.google.fr/search?q=linux+"
 		<< name << ")\n\n---\n"; 
 }
@@ -462,7 +463,8 @@ genListAlpha(
 	std::ofstream f( fn );
 	assert( f.is_open() );
 	f << "# Linux Shell: liste alphabétique de commandes\n\n"
-		<< "[Liste par catégorie](linux_cmds_list_cat.md)\n\n"
+		<< "[Liste par catégorie](linux_cmds_list_cat.md) - "
+		<< "[Liste par type](linux_cmds_list_type.md)\n\n"
 		<< "<a name='#top'></a>\n\n";
 
 	printHeader( f );

@@ -24,7 +24,7 @@ lstopo;1-22;architecture CPU (coeurs, RAM cache, ...);;;CPU
 sudo;1;exécution d'une commande admin;su;;admin
 su;1;changement temporaire de _user_;sudo;;admin
 hwclock;1;accès horloge interne;time;;?
-arch;1;architecture processeur;uname;;CPU
+arch;1;architecture processeur;uname;GNU;CPU
 
 shutdown;1;Comme son nom l'indique...;reboot,halt;;?
 reboot;1;reboot;shutdown,halt;;?
@@ -85,7 +85,7 @@ cp;11;copie fichier(s);mv;GNU;?
 mv;11;déplacement/renommage;cp;GNU;?
 rm;11;suppression fichier;rmdir;GNU;?
 ln;11;création de lien, symbolique ou _hardlink_;GNU;;?
-cmp;11;comparaison de fichiers, par octet;diff;;?
+cmp;11;comparaison de fichiers, par octet;diff;GNU;?
 comm;11;comparaison de fichiers, par ligne;diff;;?
 diff;11;différences entre 2 fichiers, ligne par ligne;cmp;;?
 
@@ -133,7 +133,7 @@ gzip;19;compression zip;zip,gunzip;;?
 gunzip;19;decompression zip;gzip;;?
 bzip2;19;compression;;;?
 7z;19;compression/décompression;;;?
-cpio;19;manipulation d'archive;;;?
+cpio;19;manipulation d'archive;;GNU;?
 
 sort;8;tri de texte;;GNU;?
 chmod;5;chgt permissions fichier;;GNU;?
@@ -225,10 +225,9 @@ uniq;8;suppression lignes identiques;;GNU;?
 jq;8;traitement de chaines JSON;jo;;?
 split;8;Découpage d'un fichier en plusieurs morceaux;;;?
 look;8;_display lines beginning with a given string_;;;?
-fold;8;ajustement longueur de ligne;;;?
+fold;8;ajustement longueur de ligne;;GNU;?
 rev;8;inversion de texte;;;?
 column;8;transformation texte en colonnes;;;?
-fold;8;coupe les lignes trop longues;;GNU;?
 
 whoami;9;qui suis-je?;id;GNU;?
 who;9;qui est loggé?;w;GNU;?
@@ -324,7 +323,7 @@ exiftool;11;manipulation métadonnées fichier image, audio, etc.;;;?
 pango-view;20;_convert text to image_;;;?
 qrencode;20;génération de qrcodes;;;?
 md5sum;20;calcul de hash MD5;;;?
-base64;20;encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a>;;;?
+base64;20;encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a>;;GNU;?
 shasum;20;calcul de hash SHA (256,512,...);sha256sum;;?
 sha256sum;20;calcul de hash SHA256;;;?
 jo;20;génération de JSON;jq;;?
