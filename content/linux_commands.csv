@@ -149,7 +149,8 @@ fg;12;passage d'un _job_ au premier plan (_ForeGround_);bg;jobs;?
 bg;12;passage d'un _job_ en arrière plan (_BackGround_);fg;jobs;?
 
 read;16;saisie ligne (clavier ou fichier);;;?
-eval;7;exécute la commande passée en argument;;;?
+eval;7;exécute la commande passée en argument;exec;;?
+exec;7;exécute la commande passée en argument dans le même process;eval;;?
 time;7;chronométrage de tâche;;;?
 watch;7;exécution périodique d'une commande;;;?
 env;7;exécution d'un programme en modifiant l'environnement;printenv;GNU;?
@@ -207,7 +208,6 @@ nano;7;éditeur en mode "console";;;?
 xargs;7;exécution d'une commande à partir de `stdin`;GNU;;?
 sleep;7;attente;time,at;GNU;?
 tee;7;modif redirection (stdout, stderr);;;?
-clear;7;effacement terminal;;;?
 uptime;7;durée fonctionnement système;;;?
 set;7;paramétrage du shell;;;?
 export;7;exportation de variable dans un sous-shell;;;?
@@ -223,7 +223,7 @@ join;8;regroupement de fichier par colonne;;GNU;?
 paste;8;fusion de lignes de texte de plusieurs fichiers;;GNU;?
 uniq;8;suppression lignes identiques;;GNU;?
 jq;8;traitement de chaines JSON;jo;;?
-split;8;Découpage d'un fichier en plusieurs morceaux;;;?
+split;8;Découpage d'un fichier en plusieurs morceaux;;GNU;?
 look;8;_display lines beginning with a given string_;;;?
 fold;8;ajustement longueur de ligne;;GNU;?
 rev;8;inversion de texte;;;?
@@ -268,8 +268,6 @@ iostat;13;statistiques I/O;;;?
 pidstat;13;statistiques process;;;?
 
 yes;7;_output a string repeatedly until killed_;;GNU;?
-tmux;7;multiplexeur de terminal;screen,terminal;;?
-screen;7;multiplexeur de terminal;tmux,terminal;;?
 date;7;affiche date & heure;cal;GNU;?
 pv;7;_Pipe Viewer_ (monitoring de _pipe_ ou de copie);;;?
 cal;7;affichage calendrier;date;;?
@@ -351,3 +349,7 @@ asciinema;24;_screencast_ console;ffmpeg;;?
 aplay;24;écoute de fichier audio;;;?
 spd-say;24;synthétiseur vocal;;;?
 
+clear;25;effacement terminal;;;?
+setterm;25;paramétrage du terminal;;;?
+tmux;25;multiplexeur de terminal;screen,terminal;;?
+screen;25;multiplexeur de terminal;tmux,terminal;;?
