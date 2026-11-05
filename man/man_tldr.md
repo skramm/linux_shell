@@ -1,7 +1,41 @@
-# Manuel de `tldr`
+# Documentation de `tldr`, générée via `man`
 
-[alpha list](../linux_cmds_list_alpha.md) - [cat list](../linux_cmds_list_cat.md)
+[Liste alphabétique](../linux_cmds_list_alpha.md) - [Liste par catégorie](../linux_cmds_list_cat.md) - [Liste par type](../linux_cmds_list_type.md)
 
-<a href='https://www.google.fr/search?q=linux+tldr'>Google search</a>
+[Recherche Google](https://www.google.fr/search?q=linux+tldr)
 
 ---
+
+## NAME
+       tldr - manual page for tldr 0.6.4
+
+## SYNOPSIS
+       tldr [-v|--version]
+
+## DESCRIPTION
+       tldr - Simplified and community-driven man pages
+
+              ((-u|--update) | [-p|--platform PLATFORM] COMMAND | (-a|--about))
+
+              tldr Client program
+
+   Available options:
+       -h,--help
+              Show this help text
+
+       -v,--version
+              Show version
+
+       -u,--update
+              Update offline cache of tldr pages
+
+       -p,--platform PLATFORM
+              Prioritize specfic platform while searching. Valid values include linux, osx, windows, sunos
+
+       COMMAND
+              name of the command
+
+       -a,--about
+              About this program
+
+tldr 0.6.4                                                                     November 2021                                                                        TLDR(1)

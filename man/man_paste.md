@@ -13,13 +13,11 @@
        paste [OPTION]... [FILE]...
 
 ## DESCRIPTION
-       Write  lines  consisting  of  the sequentially corresponding lines from
-       each FILE, separated by TABs, to standard output.
+       Write lines consisting of the sequentially corresponding lines from each FILE, separated by TABs, to standard output.
 
        With no FILE, or when FILE is -, read standard input.
 
-       Mandatory arguments to long options are  mandatory  for  short  options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        -d, --delimiters=LIST
               reuse characters from LIST instead of TABs
@@ -43,13 +41,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/paste>
        or available locally via: info '(coreutils) paste invocation'
 
-GNU coreutils 9.4                 August 2026                         PASTE(1)
+GNU coreutils 8.32                                                              August 2026                                                                        PASTE(1)

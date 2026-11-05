@@ -27,6 +27,8 @@
        -H, --heading
               print line of column headings
 
+       --ips  print ips instead of hostnames. with --lookup, canonicalizes based on stored IP, if available, rather than stored hostname
+
        -l, --login
               print system login processes
 
@@ -67,9 +69,7 @@
        --version
               output version information and exit
 
-       If  FILE is not specified, use /var/run/utmp.  /var/log/wtmp as FILE is
-       common.  If ARG1 ARG2 given, -m presumed: 'am i'  or  'mom  likes'  are
-       usual.
+       If FILE is not specified, use /var/run/utmp.  /var/log/wtmp as FILE is common.  If ARG1 ARG2 given, -m presumed: 'am i' or 'mom likes' are usual.
 
 ## AUTHOR
        Written by Joseph Arceneaux, David MacKenzie, and Michael Stone.
@@ -79,13 +79,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/who>
        or available locally via: info '(coreutils) who invocation'
 
-GNU coreutils 9.4                 August 2026                           WHO(1)
+GNU coreutils 8.32                                                              August 2026                                                                          WHO(1)

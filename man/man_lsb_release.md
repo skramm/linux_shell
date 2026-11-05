@@ -7,71 +7,58 @@
 ---
 
 ## NAME
-       lsb_release - print distribution-specific information (minimal
-       implementation).
+       lsb_release - print distribution-specific information
 
 ## SYNOPSIS
        lsb_release [options]
 
 ## DESCRIPTION
-       This is a bare-bones version of the lsb_release command, implemented as
-       a tiny POSIX shell script (less than 100 lines of commented code).
+       The lsb_release command provides certain LSB (Linux Standard Base) and distribution-specific information.
 
-       Instead of using LSB packages, this version of lsb_release uses the
-       information in /etc/os-release and /usr/lib/os-release.  Nevertheless,
-       the output of this version is byte-for-byte compatible with the Python-
-       based version provided by Debian and its derivatives.
-
-       Using this implementation it is possible to avoid installing Python in
-       a base OS image while still retaining compatibility with older scripts
-       that expect lsb_release to exist.
+       If no options are given, the -v option is assumed.
 
 ## OPTIONS
-       The program follows the usual GNU command line syntax, with long
-       options starting with two dashes ("--").  A summary of options are
-       included below.
-
-       -h, --help
-           Show a help message with a list of options and exit.
+       The program follows the usual GNU command line syntax, with long options starting with two dashes (`--').
+       A summary of options are included below.
 
        -v, --version
-           Show LSB modules this system supports.
+              Show the version of the LSB against which your current installation is compliant.  The version  is
+              expressed as a colon separated list of LSB module descriptions.
 
        -i, --id
-           Show distributor ID.
+              Display the distributor's ID.
 
        -d, --description
-           Show description of this distribution.
+              Display a description of the currently installed distribution.
 
        -r, --release
-           Show release number of this distribution.
+              Display the release number of the currently installed distribution.
 
        -c, --codename
-           Show code name of this distribution.
+              Display the code name of the currently installed distribution.
 
        -a, --all
-           Show all of the above information.
+              Display all of the above information.
 
        -s, --short
-           Show requested information in short format.
+              Use  the  short  output  format  for  any  information  displayed.   This format omits the leading
+              header(s).
 
-## FILES
-       /usr/lib/os-release
-           Distribution-provided  file  with  operating  system identification
-           data.
+       -h, --help
+              Show summary of options.
 
-       /etc/os-release
-           Machine-specific file with operating  system  identification  data.
-           If present, /etc/os-release is read instead of /usr/lib/os-release.
+## NOTES
+       This is a reimplementation of the lsb_release command provided by the Free Standards Group.  Any bugs are
+       solely the responsibility of the author below.
+
+       Detection  of  systems  using  a mix of packages from various distributions or releases is something of a
+       black art; the current heuristic tends to assume that the installation is of  the  earliest  distribution
+       which is still being used by apt but that heuristic is subject to error.
 
 ## SEE ALSO
-       os-release(5)
+       lsb(8)
 
 ## AUTHOR
-       Gioele Barabucci <https://gioele.io>
+       Chris Lawrence <lawrencc@debian.org>.
 
-LICENSE
-       This  implementation of lsb_release is free software released under the
-       terms of the ISC license.
-
-lsb_release 12.0                  2023-07-05                    LSB_RELEASE(1)
+                                                                                                  lsb_release(1)

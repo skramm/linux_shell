@@ -13,13 +13,11 @@
        split [OPTION]... [FILE [PREFIX]]
 
 ## DESCRIPTION
-       Output  pieces of FILE to PREFIXaa, PREFIXab, ...; default size is 1000
-       lines, and default PREFIX is 'x'.
+       Output pieces of FILE to PREFIXaa, PREFIXab, ...; default size is 1000 lines, and default PREFIX is 'x'.
 
        With no FILE, or when FILE is -, read standard input.
 
-       Mandatory arguments to long options are  mandatory  for  short  options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        -a, --suffix-length=N
               generate suffixes of length N (default 2)
@@ -56,8 +54,7 @@
               generate CHUNKS output files; see explanation below
 
        -t, --separator=SEP
-              use  SEP instead of newline as the record separator; '\0' (zero)
-              specifies the NUL character
+              use SEP instead of newline as the record separator; '\0' (zero) specifies the NUL character
 
        -u, --unbuffered
               immediately copy input to output with '-n r/...'
@@ -70,10 +67,8 @@
        --version
               output version information and exit
 
-       The SIZE argument is an integer and  optional  unit  (example:  10K  is
-       10*1024).   Units are K,M,G,T,P,E,Z,Y,R,Q (powers of 1024) or KB,MB,...
-       (powers of 1000).  Binary prefixes can be used, too: KiB=K, MiB=M,  and
-       so on.
+       The SIZE argument is an integer and optional unit (example: 10K is 10*1024).  Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).  Binary pre‐
+       fixes can be used, too: KiB=K, MiB=M, and so on.
 
    CHUNKS may be:
        N      split into N files based on size of input
@@ -96,13 +91,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/split>
        or available locally via: info '(coreutils) split invocation'
 
-GNU coreutils 9.4                 August 2026                         SPLIT(1)
+GNU coreutils 8.32                                                              August 2026                                                                        SPLIT(1)

@@ -5,11 +5,11 @@
 [Recherche Google](https://www.google.fr/search?q=linux+while)
 
 ---
-while: while COMMANDS; do COMMANDS-2; done
+while: while COMMANDS; do COMMANDS; done
     Execute commands as long as a test succeeds.
     
-    Expand and execute COMMANDS-2 as long as the final command in COMMANDS has
-    an exit status of zero.
+    Expand and execute COMMANDS as long as the final command in the
+    `while' COMMANDS has an exit status of zero.
     
     Exit Status:
     Returns the status of the last command executed.

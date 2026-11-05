@@ -17,9 +17,8 @@
 
        When FILE1 or FILE2 (not both) is -, read standard input.
 
-       With  no  options,  produce  three-column  output.  Column one contains
-       lines unique to FILE1, column two contains lines unique to  FILE2,  and
-       column three contains lines common to both files.
+       With no options, produce three-column output.  Column one contains lines unique to FILE1, column two con‐
+       tains lines unique to FILE2, and column three contains lines common to both files.
 
        -1     suppress column 1 (lines unique to FILE1)
 
@@ -28,8 +27,7 @@
        -3     suppress column 3 (lines that appear in both files)
 
        --check-order
-              check  that  the  input  is  correctly sorted, even if all input
-              lines are pairable
+              check that the input is correctly sorted, even if all input lines are pairable
 
        --nocheck-order
               do not check that the input is correctly sorted
@@ -65,10 +63,10 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This  is  free  software:  you  are free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
+       <https://gnu.org/licenses/gpl.html>.
+       This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent
+       permitted by law.
 
 ## SEE ALSO
        join(1), uniq(1)
@@ -76,4 +74,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/comm>
        or available locally via: info '(coreutils) comm invocation'
 
-GNU coreutils 9.4                 August 2026                          COMM(1)
+GNU coreutils 8.32                                 August 2026                                           COMM(1)

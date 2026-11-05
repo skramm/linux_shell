@@ -17,8 +17,7 @@
 
        With no FILE, or when FILE is -, read standard input.
 
-       Mandatory  arguments  to  long  options are mandatory for short options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        -b, --body-numbering=STYLE
               use STYLE for numbering body lines
@@ -60,10 +59,7 @@
 
        Default options are: -bt -d'\:' -fn -hn -i1 -l1 -n'rn' -s<TAB> -v1 -w6
 
-       CC are two delimiter characters used to construct logical  page  delim‐
-       iters;  a missing second character implies ':'.  As a GNU extension one
-       can specify more than two characters, and  also  specifying  the  empty
-       string (-d '') disables section matching.
+       CC are two delimiter characters used to construct logical page delimiters; a missing second character implies ':'.
 
        STYLE is one of:
 
@@ -73,8 +69,7 @@
 
        n      number no lines
 
-       pBRE   number only lines that contain a match for the basic regular ex‐
-              pression, BRE
+       pBRE   number only lines that contain a match for the basic regular expression, BRE
 
        FORMAT is one of:
 
@@ -92,13 +87,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/nl>
        or available locally via: info '(coreutils) nl invocation'
 
-GNU coreutils 9.4                 August 2026                            NL(1)
+GNU coreutils 8.32                                                              August 2026                                                                           NL(1)

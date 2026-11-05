@@ -17,16 +17,12 @@
 ## DESCRIPTION
        Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
 
-       Mandatory  arguments  to  long  options are mandatory for short options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        --backup[=CONTROL]
               make a backup of each existing destination file
 
        -b     like --backup but does not accept an argument
-
-       --debug
-              explain how a file is copied.  Implies -v
 
        -f, --force
               do not prompt before overwriting
@@ -37,11 +33,7 @@
        -n, --no-clobber
               do not overwrite an existing file
 
-       If you specify more than one of -i, -f, -n, only the  final  one  takes
-       effect.
-
-       --no-copy
-              do not copy if renaming fails
+       If you specify more than one of -i, -f, -n, only the final one takes effect.
 
        --strip-trailing-slashes
               remove any trailing slashes from each SOURCE argument
@@ -55,11 +47,9 @@
        -T, --no-target-directory
               treat DEST as a normal file
 
-       --update[=UPDATE]
-              control     which    existing    files    are    updated;    UP‐
-              DATE={all,none,older(default)}.  See below
-
-       -u     equivalent to --update[=older]
+       -u, --update
+              move  only when the SOURCE file is newer than the destination file or when the destination file is
+              missing
 
        -v, --verbose
               explain what is being done
@@ -72,19 +62,9 @@
        --version
               output version information and exit
 
-       UPDATE controls which existing files in the destination  are  replaced.
-       'all'  is  the  default operation when an --update option is not speci‐
-       fied, and results in all existing files in the  destination  being  re‐
-       placed.  'none' is similar to the --no-clobber option, in that no files
-       in the destination are replaced, but also skipped files do not induce a
-       failure.   'older' is the default operation when --update is specified,
-       and results in files being replaced if they're older  than  the  corre‐
-       sponding source file.
-
-       The   backup   suffix   is  '~',  unless  set  with  --suffix  or  SIM‐
-       PLE_BACKUP_SUFFIX.  The version control method may be selected via  the
-       --backup  option  or  through the VERSION_CONTROL environment variable.
-       Here are the values:
+       The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.  The version  control  method
+       may  be  selected  via the --backup option or through the VERSION_CONTROL environment variable.  Here are
+       the values:
 
        none, off
               never make backups (even if --backup is given)
@@ -106,10 +86,10 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This  is  free  software:  you  are free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
+       <https://gnu.org/licenses/gpl.html>.
+       This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent
+       permitted by law.
 
 ## SEE ALSO
        rename(2)
@@ -117,4 +97,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/mv>
        or available locally via: info '(coreutils) mv invocation'
 
-GNU coreutils 9.4                 August 2026                            MV(1)
+GNU coreutils 8.32                                 August 2026                                             MV(1)

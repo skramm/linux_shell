@@ -1,7 +1,53 @@
-# Manuel de `notify-send`
+# Documentation de `notify-send`, générée via `man`
 
-[alpha list](../linux_cmds_list_alpha.md) - [cat list](../linux_cmds_list_cat.md)
+[Liste alphabétique](../linux_cmds_list_alpha.md) - [Liste par catégorie](../linux_cmds_list_cat.md) - [Liste par type](../linux_cmds_list_type.md)
 
-<a href='https://www.google.fr/search?q=linux+notify-send'>Google search</a>
+[Recherche Google](https://www.google.fr/search?q=linux+notify-send)
 
 ---
+
+## NAME
+       notify-send - a program to send desktop notifications
+
+## SYNOPSIS
+       notify-send [OPTIONS] {summary} [body]
+
+## DESCRIPTION
+       With notify-send you can send desktop notifications to the user via a notification daemon from the command line. These notifications can be used to inform the user
+       about an event or display some form of information without getting in the user’s way.
+
+## OPTIONS
+       -?, --help
+           Show help and exit.
+
+       -u, --urgency=LEVEL
+           Specifies the urgency level (low, normal, critical).
+
+       -t, --expire-time=TIME
+           The duration, in milliseconds, for the notification to appear on screen.
+
+           (Ubuntu's Notify OSD and GNOME Shell both ignore this parameter.)
+
+       -i, --icon=ICON[,ICON...]
+           Specifies an icon filename or stock icon to display.
+
+       -c, --category=TYPE[,TYPE...]
+           Specifies the notification category.
+
+       -h, --hint=TYPE:NAME:VALUE
+           Specifies basic extra data to pass. Valid types are INT, DOUBLE, STRING and BYTE.
+
+## SEE ALSO
+       The Desktop Notification Spec on http://www.galago-project.org/specs/notification/.
+
+## AUTHORS
+       Andre Filipe de Assuncao e Brito <decko@noisemakers.org>
+           Original author
+
+       Paul van Tilburg <paulvt@debian.org>
+           Original author
+
+       Riccardo Setti <giskard@debian.org>
+           Original author
+
+libnotify                                                                                                                                                    NOTIFY-SEND(1)

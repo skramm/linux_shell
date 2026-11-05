@@ -17,8 +17,7 @@
 
        With no FILE, or when FILE is -, read standard input.
 
-       Mandatory  arguments  to  long  options are mandatory for short options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        -d, --decode
               decode data
@@ -27,18 +26,15 @@
               when decoding, ignore non-alphabet characters
 
        -w, --wrap=COLS
-              wrap encoded lines after COLS character (default 76).  Use 0  to
-              disable line wrapping
+              wrap encoded lines after COLS character (default 76).  Use 0 to disable line wrapping
 
        --help display this help and exit
 
        --version
               output version information and exit
 
-       The  data are encoded as described for the base64 alphabet in RFC 4648.
-       When decoding, the input may contain newlines in addition to the  bytes
-       of  the formal base64 alphabet.  Use --ignore-garbage to attempt to re‐
-       cover from any other non-alphabet bytes in the encoded stream.
+       The  data are encoded as described for the base64 alphabet in RFC 4648.  When decoding, the input may contain newlines in addition to the bytes of the formal base64
+       alphabet.  Use --ignore-garbage to attempt to recover from any other non-alphabet bytes in the encoded stream.
 
 ## AUTHOR
        Written by Simon Josefsson.
@@ -48,15 +44,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This  is  free  software:  you  are free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
-       basenc(1)
-
        Full documentation <https://www.gnu.org/software/coreutils/base64>
        or available locally via: info '(coreutils) base64 invocation'
 
-GNU coreutils 9.4                 August 2026                        BASE64(1)
+GNU coreutils 8.32                                                              August 2026                                                                       BASE64(1)

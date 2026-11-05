@@ -13,13 +13,11 @@
        uniq [OPTION]... [INPUT [OUTPUT]]
 
 ## DESCRIPTION
-       Filter  adjacent matching lines from INPUT (or standard input), writing
-       to OUTPUT (or standard output).
+       Filter adjacent matching lines from INPUT (or standard input), writing to OUTPUT (or standard output).
 
        With no options, matching lines are merged to the first occurrence.
 
-       Mandatory arguments to long options are  mandatory  for  short  options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        -c, --count
               prefix lines by the number of occurrences
@@ -30,15 +28,13 @@
        -D     print all duplicate lines
 
        --all-repeated[=METHOD]
-              like  -D,  but  allow  separating  groups  with  an  empty line;
-              METHOD={none(default),prepend,separate}
+              like -D, but allow separating groups with an empty line; METHOD={none(default),prepend,separate}
 
        -f, --skip-fields=N
               avoid comparing the first N fields
 
        --group[=METHOD]
-              show  all  items,  separating  groups  with   an   empty   line;
-              METHOD={separate(default),prepend,append,both}
+              show all items, separating groups with an empty line; METHOD={separate(default),prepend,append,both}
 
        -i, --ignore-case
               ignore differences in case when comparing
@@ -60,11 +56,9 @@
        --version
               output version information and exit
 
-       A field is a run of blanks (usually spaces and/or TABs), then non-blank
-       characters.  Fields are skipped before chars.
+       A field is a run of blanks (usually spaces and/or TABs), then non-blank characters.  Fields are skipped before chars.
 
-       Note:  'uniq'  does not detect repeated lines unless they are adjacent.
-       You may want to sort the input first, or use 'sort -u' without 'uniq'.
+       Note: 'uniq' does not detect repeated lines unless they are adjacent.  You may want to sort the input first, or use 'sort -u' without 'uniq'.
 
 ## AUTHOR
        Written by Richard M. Stallman and David MacKenzie.
@@ -74,10 +68,8 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This  is  free  software:  you  are free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        comm(1), join(1), sort(1)
@@ -85,4 +77,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/uniq>
        or available locally via: info '(coreutils) uniq invocation'
 
-GNU coreutils 9.4                 August 2026                          UNIQ(1)
+GNU coreutils 8.32                                                              August 2026                                                                         UNIQ(1)

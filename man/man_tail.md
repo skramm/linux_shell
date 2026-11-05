@@ -13,17 +13,15 @@
        tail [OPTION]... [FILE]...
 
 ## DESCRIPTION
-       Print  the  last  10  lines of each FILE to standard output.  With more
-       than one FILE, precede each with a header giving the file name.
+       Print  the  last  10 lines of each FILE to standard output.  With more than one FILE, precede each with a
+       header giving the file name.
 
        With no FILE, or when FILE is -, read standard input.
 
-       Mandatory arguments to long options are  mandatory  for  short  options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        -c, --bytes=[+]NUM
-              output  the  last  NUM  bytes; or use -c +NUM to output starting
-              with byte NUM of each file
+              output the last NUM bytes; or use -c +NUM to output starting with byte NUM of each file
 
        -f, --follow[={name|descriptor}]
               output appended data as the file grows;
@@ -33,15 +31,13 @@
        -F     same as --follow=name --retry
 
        -n, --lines=[+]NUM
-              output the last NUM lines, instead of the last  10;  or  use  -n
-              +NUM to skip NUM-1 lines at the start
+              output the last NUM lines, instead of the last 10; or use -n +NUM to output starting with line NUM
 
        --max-unchanged-stats=N
               with --follow=name, reopen a FILE which has not
 
-              changed  size  after  N  (default 5) iterations to see if it has
-              been unlinked or renamed (this is the usual case of rotated  log
-              files); with inotify, this option is rarely useful
+              changed size after N (default 5) iterations to see if it has been unlinked or renamed (this is the
+              usual case of rotated log files); with inotify, this option is rarely useful
 
        --pid=PID
               with -f, terminate after process ID, PID dies
@@ -53,9 +49,8 @@
               keep trying to open a file if it is inaccessible
 
        -s, --sleep-interval=N
-              with -f, sleep for approximately N seconds (default 1.0) between
-              iterations;  with  inotify and --pid=P, check process P at least
-              once every N seconds
+              with  -f,  sleep  for  approximately  N seconds (default 1.0) between iterations; with inotify and
+              --pid=P, check process P at least once every N seconds
 
        -v, --verbose
               always output headers giving file names
@@ -68,32 +63,27 @@
        --version
               output version information and exit
 
-       NUM may have a multiplier suffix: b 512, kB 1000, K 1024, MB 1000*1000,
-       M 1024*1024, GB 1000*1000*1000, G 1024*1024*1024, and so on for  T,  P,
-       E,  Z, Y, R, Q.  Binary prefixes can be used, too: KiB=K, MiB=M, and so
-       on.
+       NUM may have a multiplier suffix: b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024, GB 1000*1000*1000, G
+       1024*1024*1024, and so on for T, P, E, Z, Y.  Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
 
-       With --follow (-f), tail defaults to  following  the  file  descriptor,
-       which  means that even if a tail'ed file is renamed, tail will continue
-       to track its end.  This default behavior is not desirable when you  re‐
-       ally want to track the actual name of the file, not the file descriptor
-       (e.g.,  log  rotation).   Use  --follow=name in that case.  That causes
-       tail to track the named file in a way that accommodates  renaming,  re‐
-       moval and creation.
+       With  --follow  (-f),  tail defaults to following the file descriptor, which means that even if a tail'ed
+       file is renamed, tail will continue to track its end.  This default behavior is not  desirable  when  you
+       really  want  to  track  the  actual name of the file, not the file descriptor (e.g., log rotation).  Use
+       --follow=name in that case.  That causes tail to track the named file in a way that  accommodates  renam‐
+       ing, removal and creation.
 
 ## AUTHOR
-       Written  by Paul Rubin, David MacKenzie, Ian Lance Taylor, and Jim Mey‐
-       ering.
+       Written by Paul Rubin, David MacKenzie, Ian Lance Taylor, and Jim Meyering.
 
 ## REPORTING BUGS
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This  is  free  software:  you  are free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
+       <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to  the  extent
+       permitted by law.
 
 ## SEE ALSO
        head(1)
@@ -101,4 +91,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/tail>
        or available locally via: info '(coreutils) tail invocation'
 
-GNU coreutils 9.4                 August 2026                          TAIL(1)
+GNU coreutils 8.32                                 August 2026                                           TAIL(1)

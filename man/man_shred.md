@@ -13,13 +13,12 @@
        shred [OPTION]... FILE...
 
 ## DESCRIPTION
-       Overwrite  the specified FILE(s) repeatedly, in order to make it harder
-       for even very expensive hardware probing to recover the data.
+       Overwrite  the  specified FILE(s) repeatedly, in order to make it harder for even very expensive hardware
+       probing to recover the data.
 
        If FILE is -, shred standard output.
 
-       Mandatory arguments to long options are  mandatory  for  short  options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        -f, --force
               change permissions to allow writing if necessary
@@ -54,19 +53,15 @@
        --version
               output version information and exit
 
-       Delete  FILE(s)  if  --remove (-u) is specified.  The default is not to
-       remove the files because it is common to operate on device  files  like
-       /dev/hda,  and those files usually should not be removed.  The optional
-       HOW parameter indicates how to remove a directory  entry:  'unlink'  =>
-       use  a  standard  unlink call.  'wipe' => also first obfuscate bytes in
-       the name.  'wipesync' => also sync each obfuscated byte to the  device.
+       Delete FILE(s) if --remove (-u) is specified.  The default is not to remove the files because it is  com‐
+       mon  to  operate  on  device files like /dev/hda, and those files usually should not be removed.  The op‐
+       tional HOW parameter indicates how to remove a directory entry: 'unlink' => use a standard  unlink  call.
+       'wipe'  => also first obfuscate bytes in the name.  'wipesync' => also sync each obfuscated byte to disk.
        The default mode is 'wipesync', but note it can be expensive.
 
-       CAUTION:  shred  assumes the file system and hardware overwrite data in
-       place.  Although this is  common,  many  platforms  operate  otherwise.
-       Also,  backups and mirrors may contain unremovable copies that will let
-       a shredded file be recovered later.  See the GNU coreutils  manual  for
-       details.
+       CAUTION: shred assumes the file system and hardware overwrite data in place.  Although  this  is  common,
+       many platforms operate otherwise.  Also, backups and mirrors may contain unremovable copies that will let
+       a shredded file be recovered later.  See the GNU coreutils manual for details.
 
 ## AUTHOR
        Written by Colin Plumb.
@@ -76,13 +71,13 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
+       <https://gnu.org/licenses/gpl.html>.
+       This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent
+       permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/shred>
        or available locally via: info '(coreutils) shred invocation'
 
-GNU coreutils 9.4                 August 2026                         SHRED(1)
+GNU coreutils 8.32                                 August 2026                                          SHRED(1)

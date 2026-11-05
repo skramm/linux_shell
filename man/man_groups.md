@@ -13,9 +13,7 @@
        groups [OPTION]... [USERNAME]...
 
 ## DESCRIPTION
-       Print  group memberships for each USERNAME or, if no USERNAME is speci‐
-       fied, for the current process (which may differ if the groups  database
-       has changed).
+       Print group memberships for each USERNAME or, if no USERNAME is specified, for the current process (which may differ if the groups database has changed).
 
        --help display this help and exit
 
@@ -30,10 +28,8 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        getent(1)
@@ -41,4 +37,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/groups>
        or available locally via: info '(coreutils) groups invocation'
 
-GNU coreutils 9.4                 August 2026                        GROUPS(1)
+GNU coreutils 8.32                                                              August 2026                                                                       GROUPS(1)

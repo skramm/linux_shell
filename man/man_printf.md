@@ -56,19 +56,14 @@
 
        %%     a single %
 
-       %b     ARGUMENT  as  a string with '\' escapes interpreted, except that
-              octal escapes are of the form \0 or \0NNN
+       %b     ARGUMENT as a string with '\' escapes interpreted, except that octal escapes are of the form \0 or \0NNN
 
-       %q     ARGUMENT is printed in a format that can be reused as shell  in‐
-              put,  escaping  non-printable characters with the proposed POSIX
-              $'' syntax.
+       %q     ARGUMENT is printed in a format that can be reused as shell input, escaping non-printable characters with the proposed POSIX $'' syntax.
 
-       and all C format specifications ending with one of diouxXfeEgGcs,  with
-       ARGUMENTs converted to proper type first.  Variable widths are handled.
+       and all C format specifications ending with one of diouxXfeEgGcs, with ARGUMENTs converted to proper type first.  Variable widths are handled.
 
-       NOTE:  your shell may have its own version of printf, which usually su‐
-       persedes the version described here.  Please refer to your shell's doc‐
-       umentation for details about the options it supports.
+       NOTE:  your  shell  may have its own version of printf, which usually supersedes the version described here.  Please refer to your shell's documentation for details
+       about the options it supports.
 
 ## AUTHOR
        Written by David MacKenzie.
@@ -78,10 +73,8 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This  is  free  software:  you  are free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        printf(3)
@@ -89,4 +82,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/printf>
        or available locally via: info '(coreutils) printf invocation'
 
-GNU coreutils 9.4                 August 2026                        PRINTF(1)
+GNU coreutils 8.32                                                              August 2026                                                                       PRINTF(1)

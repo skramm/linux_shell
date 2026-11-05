@@ -24,8 +24,7 @@
        --version
               output version information and exit
 
-       An omitted EXPRESSION defaults to false.  Otherwise, EXPRESSION is true
-       or false and sets exit status.  It is one of:
+       An omitted EXPRESSION defaults to false.  Otherwise, EXPRESSION is true or false and sets exit status.  It is one of:
 
        ( EXPRESSION )
               EXPRESSION is true
@@ -120,7 +119,7 @@
               FILE exists and is a named pipe
 
        -r FILE
-              FILE exists and the user has read access
+              FILE exists and read permission is granted
 
        -s FILE
               FILE exists and has a size greater than zero
@@ -134,25 +133,20 @@
               FILE exists and its set-user-ID bit is set
 
        -w FILE
-              FILE exists and the user has write access
+              FILE exists and write permission is granted
 
        -x FILE
-              FILE exists and the user has execute (or search) access
+              FILE exists and execute (or search) permission is granted
 
-       Except  for  -h  and  -L,  all  FILE-related tests dereference symbolic
-       links.  Beware that parentheses need to  be  escaped  (e.g.,  by  back‐
-       slashes) for shells.  INTEGER may also be -l STRING, which evaluates to
-       the length of STRING.
+       Except for -h and -L, all FILE-related tests dereference symbolic links.  Beware that parentheses need to be escaped (e.g., by backslashes) for shells.  INTEGER may
+       also be -l STRING, which evaluates to the length of STRING.
 
-       NOTE:  Binary  -a  and -o are inherently ambiguous.  Use 'test EXPR1 &&
-       test EXPR2' or 'test EXPR1 || test EXPR2' instead.
+       NOTE: Binary -a and -o are inherently ambiguous.  Use 'test EXPR1 && test EXPR2' or 'test EXPR1 || test EXPR2' instead.
 
-       NOTE: [ honors the --help and --version options,  but  test  does  not.
-       test treats each of those as it treats any other nonempty STRING.
+       NOTE: [ honors the --help and --version options, but test does not.  test treats each of those as it treats any other nonempty STRING.
 
-       NOTE:  your shell may have its own version of test and/or [, which usu‐
-       ally supersedes the version  described  here.   Please  refer  to  your
-       shell's documentation for details about the options it supports.
+       NOTE: your shell may have its own version of test and/or [, which usually supersedes the version described here.  Please refer to your shell's documentation for de‐
+       tails about the options it supports.
 
 ## AUTHOR
        Written by Kevin Braunsdorf and Matthew Bradburn.
@@ -162,15 +156,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
-       access(2)
-
-       Full documentation <https://www.gnu.org/software/coreutils/test>
+       Full documentation <https://www.gnu.org/software/coreutils/[>
        or available locally via: info '(coreutils) test invocation'
 
-GNU coreutils 9.4                 August 2026                          TEST(1)
+GNU coreutils 8.32                                                              August 2026                                                                         TEST(1)

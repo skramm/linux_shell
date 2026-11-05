@@ -28,9 +28,8 @@
 
        If no option is specified, -P is assumed.
 
-       NOTE:  your shell may have its own version of pwd, which usually super‐
-       sedes the version described here.  Please refer to your  shell's  docu‐
-       mentation for details about the options it supports.
+       NOTE:  your  shell  may have its own version of pwd, which usually supersedes the version described here.
+       Please refer to your shell's documentation for details about the options it supports.
 
 ## AUTHOR
        Written by Jim Meyering.
@@ -40,10 +39,10 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
+       <https://gnu.org/licenses/gpl.html>.
+       This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent
+       permitted by law.
 
 ## SEE ALSO
        getcwd(3)
@@ -51,4 +50,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/pwd>
        or available locally via: info '(coreutils) pwd invocation'
 
-GNU coreutils 9.4                 August 2026                           PWD(1)
+GNU coreutils 8.32                                 August 2026                                            PWD(1)

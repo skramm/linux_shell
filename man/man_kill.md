@@ -13,12 +13,10 @@
        kill [options] <pid> [...]
 
 ## DESCRIPTION
-       The  default  signal  for kill is TERM.  Use -l or -L to list available
-       signals.  Particularly useful signals include  HUP,  INT,  KILL,  STOP,
-       CONT,  and  0.   Alternate  signals may be specified in three ways: -9,
-       -SIGKILL or -KILL.  Negative PID values may be  used  to  choose  whole
-       process  groups; see the PGID column in ps command output.  A PID of -1
-       is special; it indicates all processes except the kill  process  itself
+       The  default  signal for kill is TERM.  Use -l or -L to list available signals.  Particularly useful sig‐
+       nals include HUP, INT, KILL, STOP, CONT, and 0.  Alternate signals may be specified in  three  ways:  -9,
+       -SIGKILL  or  -KILL.  Negative PID values may be used to choose whole process groups; see the PGID column
+       in ps command output.  A PID of -1 is special; it indicates all processes except the kill process  itself
        and init.
 
 ## OPTIONS
@@ -28,27 +26,24 @@
        -<signal>
        -s <signal>
        --signal <signal>
-              Specify  the  signal to be sent.  The signal can be specified by
-              using name or number.  The behavior of signals is  explained  in
-              signal(7) manual page.
+              Specify the signal to be sent.  The signal can be specified by using name or number.  The behavior
+              of signals is explained in signal(7) manual page.
 
        -q, --queue value
-              Use  sigqueue(3)  rather  than kill(2) and the value argument is
-              used to specify an integer to be sent with the  signal.  If  the
-              receiving  process has installed a handler for this signal using
-              the SA_SIGINFO flag to sigaction(2), then  it  can  obtain  this
-              data via the si_value field of the siginfo_t structure.
+              Use sigqueue(3) rather than kill(2) and the value argument is used to specify  an  integer  to  be
+              sent  with  the signal. If the receiving process has installed a handler for this signal using the
+              SA_SIGINFO flag to sigaction(2) , then it can obtain this data via the si_value field of the  sig‐
+              info_t structure.
 
        -l, --list [signal]
-              List  signal  names.   This  option has optional argument, which
-              will convert signal number to signal name, or other way round.
+              List  signal names.  This option has optional argument, which will convert signal number to signal
+              name, or other way round.
 
        -L, --table
               List signal names in a nice table.
 
-       NOTES  Your shell (command line interpreter) may have a  built-in  kill
-              command.   You  may  need  to  run the command described here as
-              /bin/kill to solve the conflict.
+       NOTES  Your shell (command line interpreter) may have a built-in kill command.  You may need to  run  the
+              command described here as /bin/kill to solve the conflict.
 
 ## EXAMPLES
        kill -9 -1
@@ -64,18 +59,16 @@
               Send the default signal, SIGTERM, to all those processes.
 
 ## SEE ALSO
-       kill(2),   killall(1),   nice(1),   pkill(1),   renice(1),   signal(7),
-       sigqueue(3), skill(1)
+       kill(2), killall(1), nice(1), pkill(1), renice(1), signal(7), sigqueue(3), skill(1)
 
 ## STANDARDS
-       This  command  meets  appropriate  standards. The -L flag is Linux-spe‐
-       cific.
+       This command meets appropriate standards.  The -L flag is Linux-specific.
 
 ## AUTHOR
-       Albert Cahalan wrote kill in 1999 to replace a bsdutils  one  that  was
-       not standards compliant.  The util-linux one might also work correctly.
+       Albert  Cahalan ⟨albert@users.sf.net⟩ wrote kill in 1999 to replace a bsdutils one that was not standards
+       compliant.  The util-linux one might also work correctly.
 
 ## REPORTING BUGS
-       Please send bug reports to procps@freelists.org
+       Please send bug reports to ⟨procps@freelists.org⟩
 
-procps-ng                         2023-01-16                           KILL(1)
+procps-ng                                          2020-04-24                                            KILL(1)

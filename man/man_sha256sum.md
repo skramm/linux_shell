@@ -21,7 +21,7 @@
               read in binary mode
 
        -c, --check
-              read checksums from the FILEs and check them
+              read SHA256 sums from the FILEs and check them
 
        --tag  create a BSD-style checksum
 
@@ -29,8 +29,7 @@
               read in text mode (default)
 
        -z, --zero
-              end  each  output  line  with NUL, not newline, and disable file
-              name escaping
+              end each output line with NUL, not newline, and disable file name escaping
 
    The following five options are useful only when verifying checksums:
        --ignore-missing
@@ -53,14 +52,10 @@
        --version
               output version information and exit
 
-       The sums are computed as described in FIPS-180-2.  When  checking,  the
-       input  should  be a former output of this program.  The default mode is
-       to print a line with: checksum, a space, a character  indicating  input
-       mode  ('*'  for binary, ' ' for text or where binary is insignificant),
-       and name for each FILE.
+       The  sums  are  computed  as described in FIPS-180-2.  When checking, the input should be a former output of this program.  The default mode is to print a line with
+       checksum, a space, a character indicating input mode ('*' for binary, ' ' for text or where binary is insignificant), and name for each FILE.
 
-       Note: There is no difference between binary mode and text mode  on  GNU
-       systems.
+       Note: There is no difference between binary mode and text mode on GNU systems.
 
 ## AUTHOR
        Written by Ulrich Drepper, Scott Miller, and David Madore.
@@ -70,15 +65,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
-       cksum(1)
-
        Full documentation <https://www.gnu.org/software/coreutils/sha256sum>
        or available locally via: info '(coreutils) sha2 utilities'
 
-GNU coreutils 9.4                 August 2026                     SHA256SUM(1)
+GNU coreutils 8.32                                                              August 2026                                                                    SHA256SUM(1)

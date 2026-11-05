@@ -13,49 +13,37 @@
        look [options] string [file]
 
 ## DESCRIPTION
-       The look utility displays any lines in file which contain string as a
-       prefix. As look performs a binary search, the lines in file must be
-       sorted (where sort(1) was given the same options -d and/or -f that look
-       is invoked with).
+       The look utility displays any lines in file which contain string. As look performs a binary search, the lines in file must be sorted (where sort(1) was given the
+       same options -d and/or -f that look is invoked with).
 
-       If file is not specified, the file /usr/share/dict/words is used, only
-       alphanumeric characters are compared and the case of alphabetic
-       characters is ignored.
+       If file is not specified, the file /usr/share/dict/words is used, only alphanumeric characters are compared and the case of alphabetic characters is ignored.
 
 ## OPTIONS
        -a, --alternative
            Use the alternative dictionary file.
 
        -d, --alphanum
-           Use normal dictionary character set and order, i.e., only blanks
-           and alphanumeric characters are compared. This is on by default if
-           no file is specified.
+           Use normal dictionary character set and order, i.e., only blanks and alphanumeric characters are compared. This is on by default if no file is specified.
 
-           Note that blanks have been added to dictionary character set for
-           compatibility with sort -d command since version 2.28.
+           Note that blanks have been added to dictionary character set for compatibility with sort -d command since version 2.28.
 
        -f, --ignore-case
-           Ignore the case of alphabetic characters. This is on by default if
-           no file is specified.
+           Ignore the case of alphabetic characters. This is on by default if no file is specified.
 
        -t, --terminate character
-           Specify a string termination character, i.e., only the characters
-           in string up to and including the first occurrence of character are
-           compared.
+           Specify a string termination character, i.e., only the characters in string up to and including the first occurrence of character are compared.
+
+       -V, --version
+           Display version information and exit.
 
        -h, --help
            Display help text and exit.
 
-       -V, --version
-           Print version and exit.
-
-       The look utility exits 0 if one or more lines were found and displayed,
-       1 if no lines were found, and >1 if an error occurred.
+       The look utility exits 0 if one or more lines were found and displayed, 1 if no lines were found, and >1 if an error occurred.
 
 ## ENVIRONMENT
        WORDLIST
-           Path to a dictionary file. The environment variable has greater
-           priority than the dictionary path defined in the FILES segment.
+           Path to a dictionary file. The environment variable has greater priority than the dictionary path defined in FILES segment.
 
 ## FILES
        /usr/share/dict/words
@@ -75,12 +63,9 @@
        grep(1), sort(1)
 
 ## REPORTING BUGS
-       For bug reports, use the issue tracker at
-       https://github.com/util-linux/util-linux/issues.
+       For bug reports, use the issue tracker at https://github.com/karelzak/util-linux/issues.
 
 ## AVAILABILITY
-       The look command is part of the util-linux package which can be
-       downloaded from Linux Kernel Archive
-       <https://www.kernel.org/pub/linux/utils/util-linux/>.
+       The look command is part of the util-linux package which can be downloaded from Linux Kernel Archive <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.39.3                 2023-10-23                           LOOK(1)
+util-linux 2.37.2                                                                2021-06-02                                                                         LOOK(1)

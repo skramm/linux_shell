@@ -17,27 +17,21 @@
        cpupower -h|--help
 
 ## DESCRIPTION
-       cpupower  is a collection of tools to examine and tune power saving re‐
-       lated features of your processor.
+       cpupower  is a collection of tools to examine and tune power saving related features of your processor.
 
-       The  manpages  of the commands (cpupower-<command>(1)) provide detailed
-       descriptions of  supported  features.  Run  cpupower  help  to  get  an
-       overview of supported commands.
+       The  manpages  of  the  commands (cpupower-<command>(1)) provide detailed descriptions of supported features. Run cpupower help to get an overview of supported com‐
+       mands.
 
 Options
        --help, -h
            Shows supported commands and general usage.
 
        --cpu cpulist,  -c cpulist
-           Only  show  or  set  values for specific cores.  This option is not
-           supported by all commands, details can be found in the manpages  of
-           the commands.
+           Only show or set values for specific cores.  This option is not supported by all commands, details can be found in the manpages of the commands.
 
-           Some commands access all cores (typically the *-set commands), some
-           only the first core (typically the *-info commands) by default.
+           Some commands access all cores (typically the *-set commands), some only the first core (typically the *-info commands) by default.
 
-           The  syntax  for  <cpulist>  is based on how the kernel exports CPU
-           bitmasks via sysfs files. Some examples:
+           The syntax for <cpulist> is based on how the kernel exports CPU bitmasks via sysfs files. Some examples:
 
                Input           Equivalent to
 
@@ -55,12 +49,11 @@ Options
            Print the package name and version number.
 
 ## SEE ALSO
-       cpupower-set(1),  cpupower-info(1),  cpupower-idle-info(1),   cpupower-
-       idle-set(1),   cpupower-frequency-set(1),   cpupower-frequency-info(1),
-       cpupower-monitor(1), powertop(1)
+       cpupower-set(1), cpupower-info(1), cpupower-idle-info(1), cpupower-idle-set(1), cpupower-frequency-set(1), cpupower-frequency-info(1),  cpupower-monitor(1),  power‐
+       top(1)
 
 ## AUTHORS
        --perf-bias parts written by Len Brown <len.brown@intel.com>
        Thomas Renninger <trenn@suse.de>
 
-                                  07/03/2011                       CPUPOWER(1)
+                                                                                 07/03/2011                                                                     CPUPOWER(1)

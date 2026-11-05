@@ -7,33 +7,21 @@
 ---
 
 ## NAME
-       7z - 7-Zip file archiver with a high compression ratio
+       7z - A file archiver with high compression ratio format
 
 ## SYNOPSIS
-       7z command [switches...] archive_name [file_names] [@listfile]
-
-       7zz command [switches...] archive_name [file_names] [@listfile]
-
-       7za command [switches...] archive_name [file_names] [@listfile]
-
-       7zr command [switches...] archive_name [file_names] [@listfile]
+       7z <command> [<switches>... ] <archive_name> [<file_names>... ] [<@listfiles>... ]
 
 ## DESCRIPTION
-       7-Zip file archiver with a high compression ratio
-       There are some variants for 7z executable.
+       7-Zip  is  a  file archiver supporting 7z (that implements LZMA compression algorithm featuring very high
+       compression ratio), LZMA2, XZ, ZIP, Zip64, CAB, RAR (if the non-free  p7zip-rar  package  is  installed),
+       ARJ,  GZIP, BZIP2, TAR, CPIO, RPM, ISO, most filesystem images and DEB formats.  Compression ratio in the
+       new 7z format is 30-50% better than ratio in ZIP format.
 
-       7z     Full featured with plugin support
+       7z uses plugins to handle archives, so it might be slightly slower than 7za(1) but can  handle  more  ar‐
+       chive formats.
 
-       7zz    Full featured single binary executable with no plugins support
-
-       7za    Supports  major formats only, no plugins, but smaller executable
-              size
-
-       7zr    Only supports LZMA codec and related formats (7z, lzma, xz),  no
-              plugins, but smallest executable size
-
-## OPTIONS
-   Commands
+## COMMANDS
        a      Add files to archive
 
        b      Benchmark
@@ -56,108 +44,105 @@
 
        x      eXtract files with full paths
 
-   Switches
-       --     Stop switches and @listfile parsing
+SWITCHES
+       --     Stop switches parsing
 
        -ai[r[-|0]]{@listfile|!wildcard}
               Include archives
 
        -ax[r[-|0]]{@listfile|!wildcard}
-              eXclude archives
+              Exclude archives
 
        -ao{a|s|t|u}
-              set Overwrite mode
+              Set Overwrite mode
 
-       -an    disable archive_name field
+       -an    Disable archive_name field
 
        -bb[0-3]
-              set output log level
+              Set output log level
 
-       -bd    disable progress indicator
+       -bd    Disable progress indicator
 
        -bs{o|e|p}{0|1|2}
-              set output stream for output/error/progress line
+              Set output stream for output/error/progress line
 
-       -bt    show execution time statistics
+       -bt    Show execution time statistics
 
        -i[r[-|0]]{@listfile|!wildcard}
               Include filenames
 
        -m{Parameters}
-              set compression Method
-              -mmt[N]
-                     set number of CPU threads
-              -mx[N] set compression level: -mx1 (fastest) ... -mx9 (ultra)
+              Set  Compression  Method (see /usr/share/doc/p7zip/DOC/MANUAL/cmdline/switches/method.htm from the
+              p7zip-full package for a list of methods)
 
        -o{Directory}
-              set Output directory
+              Set Output directory
 
        -p{Password}
-              set Password
+              Set Password (NOTE: this flag does not work with 7zr)
 
        -r[-|0]
-              Recurse subdirectories for name search
+              Recurse subdirectories (CAUTION: this flag does not do what you think, avoid using it)
 
        -sa{a|e|s}
-              set Archive name mode
+              Set archive name mode
 
        -scc{UTF-8|WIN|DOS}
-              set charset for for console input/output
+              Set charset for for console input/output
 
        -scs{UTF-8|UTF-16LE|UTF-16BE|WIN|DOS|{id}}
-              set charset for list files
+              Set charset for list files
 
        -scrc[CRC32|CRC64|SHA1|SHA256|*]
-              set hash function for x, e, h commands
+              Set hash function for x, e, h commands
 
-       -sdel  delete files after compression
+       -sdel  Delete files after compression
 
        -seml[.]
-              send archive by email
+              Send archive by email
 
        -sfx[{name}]
               Create SFX archive
 
        -si[{name}]
-              read data from stdin
+              Read data from stdin (e.g. tar cf - directory | 7z a -si directory.tar.7z)
 
-       -slp   set Large Pages mode
+       -slp   Set Large Pages mode
 
-       -slt   show technical information for l (List) command
+       -slt   Show technical information for l (List) command
 
-       -snh   store hard links as links
+       -snh   Store hard links as links
 
-       -snl   store symbolic links as links
+       -snl   Store symbolic links as links
 
-       -sni   store NT security information
+       -sni   Store NT security information
 
        -sns[-]
-              store NTFS alternate streams
+              Store NTFS alternate streams
 
-       -so    write data to stdout
+       -sfx[{name}]
+              Create SFX archive
 
-       -spd   disable wildcard matching for file names
+       -so    Write data to stdout (e.g. 7z x -so directory.tar.7z | tar xf -)
 
-       -spe   eliminate duplication of root folder for extract command
+       -spd   Disable wildcard matching for file names
 
-       -spf   use fully qualified file paths
+       -spe   Eliminate duplication of root folder for extract command
+
+       -spf   Use fully qualified file paths
 
        -ssc[-]
-              set sensitive case mode
+              Set sensitive case mode
 
-       -sse   stop archive creating, if it can't open some input file
+       -ssw   Compress shared files
 
-       -ssp   do not change Last Access Time of source files while archiving
-
-       -ssw   compress shared files
-
-       -stl   set archive timestamp from the most recently modified file
+       -stl   Set archive timestamp from the most recently modified file
 
        -stm{HexMask}
-              set CPU thread affinity mask (hexadecimal number)
+              Set CPU thread affinity mask (hexadecimal number)
 
        -stx{Type}
-              exclude archive type
+              Exclude archive type
 
        -t{Type}
               Set type of archive
@@ -168,19 +153,84 @@
        -v{Size}[b|k|m|g]
               Create volumes
 
-       -w[{path}]
-              assign Work directory. Empty path means a temporary directory
+       -w[path]
+              Set working directory. Empty path means a temporary directory
 
-       -x[r[-|0]]{@listfile|!wildcard}
-              eXclude filenames
+       -x[r[-|0]]]{@listfile|!wildcard}
+              Exclude filenames
 
-       -y     assume Yes on all queries
+       -y     Assume Yes on all queries
+
+## DIAGNOSTICS
+       7-Zip returns the following exit codes:
+
+              0      Normal (no errors or warnings detected)
+
+              1      Warning (Non fatal error(s)). For example, some files cannot be read during compressing, so
+                     they were not compressed
+
+              2      Fatal error
+
+              7      Bad command line parameters
+
+              8      Not enough memory for operation
+
+              255    User stopped the process with control-C (or similar)
+
+Backup and limitations
+       DO NOT USE the 7-zip format for backup purpose on Linux/Unix because :
+        - 7-zip does not store the owner/group of the file.
+
+       On Linux/Unix, in order to backup directories you must use tar :
+        - to backup a directory  : tar cf - directory | 7z a -si directory.tar.7z
+        - to restore your backup : 7z x -so directory.tar.7z | tar xf -
+
+       If you want to send files and directories (not the owner of file) to others Unix/MacOS/Windows users, you
+       can use the 7-zip format.
+
+         example : 7z a directory.7z  directory
+
+       Do not use "-r" because this flag does not do what you think.
+
+       Do not use directory/* because of ".*" files (example : "directory/*"  does  not  match  "directory/.pro‐
+       file")
+
+EXAMPLE 1
+       7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on archive.7z dir1
+              adds all files from directory "dir1" to archive archive.7z using "ultra settings"
+
+       -t7z   7z archive
+
+       -m0=lzma
+              lzma method
+
+       -mx=9  level of compression = 9 (Ultra)
+
+       -mfb=64
+              number of fast bytes for LZMA = 64
+
+       -md=32m
+              dictionary size = 32 megabytes
+
+       -ms=on solid archive = on
+
+EXAMPLE 2
+       7z a -sfx archive.exe dir1
+              add all files from directory "dir1" to SFX archive archive.exe (Remark : SFX archive MUST end with
+              ".exe")
+
+EXAMPLE 3
+       7z a -mhe=on -pmy_password archive.7z a_directory
+              add all files from directory "a_directory" to the archive "archive.7z" (with data and  header  ar‐
+              chive encryption on)
 
 ## SEE ALSO
-       7-Zip https://www.7-zip.org/
+       7zr(1), 7za(1), p7zip(1), bzip2(1), gzip(1), zip(1),
 
-## COPYRIGHT
-       Copyright © 1999-2023 Igor Pavlov.
-       Distributed under the LGPL-2.1+ license.
+HTML Documentation
+       /usr/share/doc/p7zip-full/DOC/MANUAL/start.htm
 
-22.01                              May 2023                              7z(1)
+## AUTHOR
+       Written for Debian by Mohammed Adnene Trojette. Updated by Robert Luberda.
+
+7-Zip                                            March 6th, 2016                                           7z(1)

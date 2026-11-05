@@ -16,17 +16,14 @@
        ln [OPTION]... -t DIRECTORY TARGET...
 
 ## DESCRIPTION
-       In  the  1st form, create a link to TARGET with the name LINK_NAME.  In
-       the 2nd form, create a link to TARGET in the current directory.  In the
-       3rd and 4th forms, create links to each TARGET  in  DIRECTORY.   Create
-       hard  links  by  default,  symbolic links with --symbolic.  By default,
-       each destination (name of new link) should  not  already  exist.   When
-       creating  hard  links, each TARGET must exist.  Symbolic links can hold
-       arbitrary text; if later resolved, a relative link  is  interpreted  in
-       relation to its parent directory.
+       In the 1st form, create a link to TARGET with the name LINK_NAME.  In the 2nd form, create a link to TAR‐
+       GET in the current directory.  In the 3rd and 4th forms, create links to each TARGET in DIRECTORY.   Cre‐
+       ate  hard  links  by  default, symbolic links with --symbolic.  By default, each destination (name of new
+       link) should not already exist.  When creating hard links, each TARGET must exist.   Symbolic  links  can
+       hold  arbitrary  text; if later resolved, a relative link is interpreted in relation to its parent direc‐
+       tory.
 
-       Mandatory  arguments  to  long  options are mandatory for short options
-       too.
+       Mandatory arguments to long options are mandatory for short options too.
 
        --backup[=CONTROL]
               make a backup of each existing destination file
@@ -34,9 +31,8 @@
        -b     like --backup but does not accept an argument
 
        -d, -F, --directory
-              allow the superuser to attempt to hard link  directories  (note:
-              will  probably fail due to system restrictions, even for the su‐
-              peruser)
+              allow the superuser to attempt to hard link directories (note: will probably fail  due  to  system
+              restrictions, even for the superuser)
 
        -f, --force
               remove existing destination files
@@ -48,14 +44,13 @@
               dereference TARGETs that are symbolic links
 
        -n, --no-dereference
-              treat LINK_NAME as a normal file if it is a symbolic link  to  a
-              directory
+              treat LINK_NAME as a normal file if it is a symbolic link to a directory
 
        -P, --physical
               make hard links directly to symbolic links
 
        -r, --relative
-              with -s, create links relative to link location
+              create symbolic links relative to link location
 
        -s, --symbolic
               make symbolic links instead of hard links
@@ -77,10 +72,9 @@
        --version
               output version information and exit
 
-       The   backup   suffix   is  '~',  unless  set  with  --suffix  or  SIM‐
-       PLE_BACKUP_SUFFIX.  The version control method may be selected via  the
-       --backup  option  or  through the VERSION_CONTROL environment variable.
-       Here are the values:
+       The  backup  suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.  The version control method
+       may be selected via the --backup option or through the VERSION_CONTROL environment  variable.   Here  are
+       the values:
 
        none, off
               never make backups (even if --backup is given)
@@ -94,8 +88,8 @@
        simple, never
               always make simple backups
 
-       Using -s ignores -L and -P.  Otherwise, the last option specified  con‐
-       trols behavior when a TARGET is a symbolic link, defaulting to -P.
+       Using  -s  ignores  -L and -P.  Otherwise, the last option specified controls behavior when a TARGET is a
+       symbolic link, defaulting to -P.
 
 ## AUTHOR
        Written by Mike Parker and David MacKenzie.
@@ -105,10 +99,10 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2023  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
+       <https://gnu.org/licenses/gpl.html>.
+       This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent
+       permitted by law.
 
 ## SEE ALSO
        link(2), symlink(2)
@@ -116,4 +110,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/ln>
        or available locally via: info '(coreutils) ln invocation'
 
-GNU coreutils 9.4                 August 2026                            LN(1)
+GNU coreutils 8.32                                 August 2026                                             LN(1)

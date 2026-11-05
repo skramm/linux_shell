@@ -9,7 +9,7 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     Change the shell working directory.
     
     Change the current directory to DIR.  The default DIR is the value of the
-    HOME shell variable. If DIR is "-", it is converted to $OLDPWD.
+    HOME shell variable.
     
     The variable CDPATH defines the search path for the directory containing
     DIR.  Alternative directory names in CDPATH are separated by a colon (:).

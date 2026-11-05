@@ -10,34 +10,29 @@
        tr - translate or delete characters
 
 ## SYNOPSIS
-       tr [OPTION]... STRING1 [STRING2]
+       tr [OPTION]... SET1 [SET2]
 
 ## DESCRIPTION
-       Translate, squeeze, and/or delete characters from standard input, writ‐
-       ing  to standard output.  STRING1 and STRING2 specify arrays of charac‐
-       ters ARRAY1 and ARRAY2 that control the action.
+       Translate, squeeze, and/or delete characters from standard input, writing to standard output.
 
        -c, -C, --complement
-              use the complement of ARRAY1
+              use the complement of SET1
 
        -d, --delete
-              delete characters in ARRAY1, do not translate
+              delete characters in SET1, do not translate
 
        -s, --squeeze-repeats
-              replace each sequence of a repeated character that is listed  in
-              the last specified ARRAY, with a single occurrence of that char‐
-              acter
+              replace each sequence of a repeated character that is listed in the last specified SET, with a single occurrence of that character
 
        -t, --truncate-set1
-              first truncate ARRAY1 to length of ARRAY2
+              first truncate SET1 to length of SET2
 
        --help display this help and exit
 
        --version
               output version information and exit
 
-       ARRAYs  are  specified  as strings of characters.  Most represent them‐
-       selves.  Interpreted sequences are:
+       SETs are specified as strings of characters.  Most represent themselves.  Interpreted sequences are:
 
        \NNN   character with octal value NNN (1 to 3 octal digits)
 
@@ -61,7 +56,7 @@
               all characters from CHAR1 to CHAR2 in ascending order
 
        [CHAR*]
-              in ARRAY2, copies of CHAR until length of ARRAY1
+              in SET2, copies of CHAR until length of SET1
 
        [CHAR*REPEAT]
               REPEAT copies of CHAR, REPEAT octal if starting with 0
@@ -105,19 +100,9 @@
        [=CHAR=]
               all characters which are equivalent to CHAR
 
-       Translation occurs if -d is not given and both STRING1 and STRING2  ap‐
-       pear.   -t is only significant when translating.  ARRAY2 is extended to
-       length of ARRAY1 by repeating its last character as necessary.   Excess
-       characters of ARRAY2 are ignored.  Character classes expand in unspeci‐
-       fied  order;  while translating, [:lower:] and [:upper:] may be used in
-       pairs to specify case conversion.  Squeezing occurs  after  translation
-       or deletion.
-
-## BUGS
-       Full  support  is available only for safe single-byte locales, in which
-       every possible input byte represents a single character.  The C  locale
-       is  safe  in  GNU  systems, so you can avoid this issue in the shell by
-       running LC_ALL=C tr instead of plain tr.
+       Translation  occurs  if  -d  is not given and both SET1 and SET2 appear.  -t may be used only when translating.  SET2 is extended to length of SET1 by repeating its
+       last character as necessary.  Excess characters of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to expand in ascending order; used in  SET2  while
+       translating, they may only be used in pairs to specify case conversion.  -s uses the last specified SET, and occurs after translation or deletion.
 
 ## AUTHOR
        Written by Jim Meyering.
@@ -127,13 +112,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This  is  free  software:  you  are free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/tr>
        or available locally via: info '(coreutils) tr invocation'
 
-GNU coreutils 9.4                 August 2026                            TR(1)
+GNU coreutils 8.32                                                              August 2026                                                                           TR(1)

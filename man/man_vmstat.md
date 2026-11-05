@@ -13,30 +13,24 @@
        vmstat [options] [delay [count]]
 
 ## DESCRIPTION
-       vmstat  reports  information about processes, memory, paging, block IO,
-       traps, disks and cpu activity.
+       vmstat reports information about processes, memory, paging, block IO, traps, disks and cpu activity.
 
-       The first report produced gives averages since the last reboot.   Addi‐
-       tional  reports  give information on a sampling period of length delay.
-       The process and memory reports are instantaneous in either case.
+       The first report produced gives averages since the last reboot.  Additional reports give information on a
+       sampling period of length delay.  The process and memory reports are instantaneous in either case.
 
 ## OPTIONS
-       delay  The delay between updates in seconds.  If no delay is specified,
-              only one report is printed with the average values since boot.
+       delay  The delay between updates in seconds.  If no delay is specified, only one report is  printed  with
+              the average values since boot.
 
-       count  Number of updates.  In absence of count, when delay is  defined,
-              default is infinite.
+       count  Number of updates.  In absence of count, when delay is defined, default is infinite.
 
        -a, --active
-              Display  active  and   inactive memory, given a 2.5.41 kernel or
-              better.
+              Display active and  inactive memory, given a 2.5.41 kernel or better.
 
        -f, --forks
-              The -f switch displays the number of forks since boot.  This in‐
-              cludes the fork, vfork, and clone system calls, and  is  equiva‐
-              lent to the total number of tasks created.  Each process is rep‐
-              resented  by one or more tasks, depending on thread usage.  This
-              display does not repeat.
+              The  -f  switch displays the number of forks since boot.  This includes the fork, vfork, and clone
+              system calls, and is equivalent to the total number of tasks created.  Each process is represented
+              by one or more tasks, depending on thread usage.  This display does not repeat.
 
        -m, --slabs
               Displays slabinfo.
@@ -45,8 +39,7 @@
               Display the header only once rather than periodically.
 
        -s, --stats
-              Displays a table of various event counters  and  memory  statis‐
-              tics.  This display does not repeat.
+              Displays a table of various event counters and memory statistics.  This display does not repeat.
 
        -d, --disk
               Report disk statistics (2.5.70 or above required).
@@ -58,20 +51,15 @@
               Detailed statistics about partition (2.5.70 or above required).
 
        -S, --unit character
-              Switches  outputs  between  1000  (k), 1024 (K), 1000000 (m), or
-              1048576 (M) bytes.  Note this does not change the  swap  (si/so)
-              or block (bi/bo) fields.
+              Switches  outputs  between  1000 (k), 1024 (K), 1000000 (m), or 1048576 (M) bytes.  Note this does
+              not change the block (bi/bo) fields, which are always measured in blocks.
 
        -t, --timestamp
               Append timestamp to each line
 
        -w, --wide
-              Wide  output mode (useful for systems with higher amount of mem‐
-              ory, where the default output mode suffers from unwanted  column
-              breakage).  The output is wider than 80 characters per line.
-
-       -y, --no-first
-              Omits first report with statistics since system boot.
+              Wide output mode (useful for systems with higher amount of memory, where the default  output  mode
+              suffers from unwanted column breakage).  The output is wider than 80 characters per line.
 
        -V, --version
               Display version information and exit.
@@ -99,8 +87,8 @@ FIELD DESCRIPTION FOR VM MODE
        so: Amount of memory swapped to disk (/s).
 
    IO
-       bi: Kibibyte received from a block device (KiB/s).
-       bo: Kibibyte sent to a block device (KiB/s).
+       bi: Blocks received from a block device (blocks/s).
+       bo: Blocks sent to a block device (blocks/s).
 
    System
        in: The number of interrupts per second, including the clock.
@@ -113,7 +101,6 @@ FIELD DESCRIPTION FOR VM MODE
        id: Time spent idle.  Prior to Linux 2.5.41, this includes IO-wait time.
        wa: Time spent waiting for IO.  Prior to Linux 2.5.41, included in idle.
        st: Time stolen from a virtual machine.  Prior to Linux 2.6.11, unknown.
-       gu: Time spent running KVM guest code (guest time, including guest nice).
 
 FIELD DESCRIPTION FOR DISK MODE
    Reads
@@ -139,9 +126,6 @@ FIELD DESCRIPTION FOR DISK PARTITION MODE
        requested writes: Total number of write requests made for partition
 
 FIELD DESCRIPTION FOR SLAB MODE
-       Slab  mode  shows  statistics per slab, for more information about this
-       information see slabinfo(5)
-
        cache: Cache name
        num: Number of currently active objects
        total: Total number of available objects
@@ -149,15 +133,35 @@ FIELD DESCRIPTION FOR SLAB MODE
        pages: Number of pages with at least one active object
 
 ## NOTES
-       vmstat requires read access to files under /proc. The -m requires  read
-       access  to /proc/slabinfo which may not be available to standard users.
-       Mount options for /proc such as subset=pid may also impact what is vis‐
-       ible.
+       vmstat does not require special permissions.
+
+       These  reports are intended to help identify system bottlenecks.  Linux vmstat does not count itself as a
+       running process.
+
+       All linux blocks are currently 1024 bytes.  Old kernels may report blocks as 512 bytes,  2048  bytes,  or
+       4096 bytes.
+
+       Since  procps 3.1.9, vmstat lets you choose units (k, K, m, M).  Default is K (1024 bytes) in the default
+       mode.
+
+       vmstat uses slabinfo 1.1
+
+## FILES
+       /proc/meminfo
+       /proc/stat
+       /proc/*/stat
 
 ## SEE ALSO
-       free(1), iostat(1), mpstat(1), ps(1), sar(1), top(1), slabinfo(5)
+       free(1), iostat(1), mpstat(1), ps(1), sar(1), top(1)
+
+## BUGS
+       Does not tabulate the block io per device or count the number of system calls.
+
+## AUTHORS
+       Written by Henry Ware ⟨al172@yfn.ysu.edu⟩.
+       Fabian Frédérick ⟨ffrederick@users.sourceforge.net⟩ (diskstat, slab, partitions...)
 
 ## REPORTING BUGS
-       Please send bug reports to procps@freelists.org
+       Please send bug reports to ⟨procps@freelists.org⟩
 
-procps-ng                         2023-01-18                         VMSTAT(8)
+procps-ng                                          2020-06-04                                          VMSTAT(8)

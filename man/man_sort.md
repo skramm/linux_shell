@@ -18,8 +18,7 @@
 
        With no FILE, or when FILE is -, read standard input.
 
-       Mandatory  arguments  to  long  options are mandatory for short options
-       too.  Ordering options:
+       Mandatory arguments to long options are mandatory for short options too.  Ordering options:
 
        -b, --ignore-leading-blanks
               ignore leading blanks
@@ -55,8 +54,8 @@
               reverse the result of comparisons
 
        --sort=WORD
-              sort according to WORD: general-numeric  -g,  human-numeric  -h,
-              month -M, numeric -n, random -R, version -V
+              sort  according  to  WORD:  general-numeric -g, human-numeric -h, month -M, numeric -n, random -R,
+              version -V
 
        -V, --version-sort
               natural sort of (version) numbers within text
@@ -76,12 +75,11 @@
               compress temporaries with PROG; decompress them with PROG -d
 
        --debug
-              annotate the part of the line used to sort, and warn about ques‐
-              tionable usage to stderr
+              annotate the part of the line used to sort, and warn about questionable usage to stderr
 
        --files0-from=F
-              read  input  from the files specified by NUL-terminated names in
-              file F; If F is - then read names from standard input
+              read input from the files specified by NUL-terminated names in file F; If F is - then  read  names
+              from standard input
 
        -k, --key=KEYDEF
               sort via a key; KEYDEF gives location and type
@@ -102,15 +100,13 @@
               use SEP instead of non-blank to blank transition
 
        -T, --temporary-directory=DIR
-              use DIR for temporaries, not $TMPDIR or /tmp;  multiple  options
-              specify multiple directories
+              use DIR for temporaries, not $TMPDIR or /tmp; multiple options specify multiple directories
 
        --parallel=N
               change the number of sorts run concurrently to N
 
        -u, --unique
-              with  -c, check for strict ordering; without -c, output only the
-              first of an equal run
+              with -c, check for strict ordering; without -c, output only the first of an equal run
 
        -z, --zero-terminated
               line delimiter is NUL, not newline
@@ -120,21 +116,18 @@
        --version
               output version information and exit
 
-       KEYDEF is F[.C][OPTS][,F[.C][OPTS]] for start and stop position,  where
-       F  is  a field number and C a character position in the field; both are
-       origin 1, and the stop position defaults to the line's end.  If neither
-       -t nor -b is in effect, characters in a field are counted from the  be‐
-       ginning of the preceding whitespace.  OPTS is one or more single-letter
-       ordering  options [bdfgiMhnRrV], which override global ordering options
-       for that key.  If no key is given, use the entire line as the key.  Use
-       --debug to diagnose incorrect key usage.
+       KEYDEF  is F[.C][OPTS][,F[.C][OPTS]] for start and stop position, where F is a field number and C a char‐
+       acter position in the field; both are origin 1, and the stop position defaults to  the  line's  end.   If
+       neither  -t  nor  -b  is in effect, characters in a field are counted from the beginning of the preceding
+       whitespace.  OPTS is one or more single-letter ordering options [bdfgiMhnRrV], which override global  or‐
+       dering  options  for that key.  If no key is given, use the entire line as the key.  Use --debug to diag‐
+       nose incorrect key usage.
 
-       SIZE may be followed by the following multiplicative suffixes: % 1%  of
-       memory, b 1, K 1024 (default), and so on for M, G, T, P, E, Z, Y, R, Q.
+       SIZE may be followed by the following multiplicative suffixes: % 1% of memory, b 1, K 1024 (default), and
+       so on for M, G, T, P, E, Z, Y.
 
-       ***  WARNING  ***  The locale specified by the environment affects sort
-       order.  Set LC_ALL=C to get the traditional sort order that uses native
-       byte values.
+       *** WARNING *** The locale specified by the environment affects sort order.  Set LC_ALL=C to get the tra‐
+       ditional sort order that uses native byte values.
 
 ## AUTHOR
        Written by Mike Haertel and Paul Eggert.
@@ -144,10 +137,10 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2023 Free Software Foundation, Inc.   License  GPLv3+:  GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This  is  free  software:  you  are free to change and redistribute it.
-       There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
+       <https://gnu.org/licenses/gpl.html>.
+       This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent
+       permitted by law.
 
 ## SEE ALSO
        shuf(1), uniq(1)
@@ -155,4 +148,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/sort>
        or available locally via: info '(coreutils) sort invocation'
 
-GNU coreutils 9.4                 August 2026                          SORT(1)
+GNU coreutils 8.32                                 August 2026                                           SORT(1)

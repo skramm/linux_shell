@@ -10,20 +10,15 @@
        xdg-open - opens a file or URL in the user's preferred application
 
 ## SYNOPSIS
-
        xdg-open {file | URL}
 
        xdg-open {--help | --manual | --version}
 
 ## DESCRIPTION
-       xdg-open opens a file or URL in the user's preferred application. If a
-       URL is provided the URL will be opened in the user's preferred web
-       browser. If a file is provided the file will be opened in the preferred
-       application for files of that type. xdg-open supports file, ftp, http
-       and https URLs.
+       xdg-open opens a file or URL in the user's preferred application. If a URL is provided the URL will be opened in the user's preferred web browser. If a file is
+       provided the file will be opened in the preferred application for files of that type. xdg-open supports file, ftp, http and https URLs.
 
-       xdg-open is for use inside a desktop session only. It is not
-       recommended to use xdg-open as root.
+       xdg-open is for use inside a desktop session only. It is not recommended to use xdg-open as root.
 
 ## OPTIONS
        --help
@@ -36,8 +31,7 @@
            Show the xdg-utils version information.
 
 EXIT CODES
-       An exit code of 0 indicates success while a non-zero exit code
-       indicates failure. The following failure codes can be returned:
+       An exit code of 0 indicates success while a non-zero exit code indicates failure. The following failure codes can be returned:
 
        1
            Error in command line syntax.
@@ -52,8 +46,7 @@ EXIT CODES
            The action failed.
 
 ## SEE ALSO
-       xdg-mime(1), xdg-settings(1), MIME applications associations
-       specification[1]
+       xdg-mime(1), xdg-settings(1), MIME applications associations specification[1]
 
 ## EXAMPLES
            xdg-open 'http://www.freedesktop.org/'
@@ -62,8 +55,7 @@ EXIT CODES
 
            xdg-open /tmp/foobar.png
 
-       Opens the PNG image file /tmp/foobar.png in the user's default image
-       viewing application.
+       Opens the PNG image file /tmp/foobar.png in the user's default image viewing application.
 
 ## AUTHORS
        Kevin Krammer
@@ -79,4 +71,4 @@ EXIT CODES
         1. MIME applications associations specification
            http://www.freedesktop.org/wiki/Specifications/mime-apps-spec/
 
-xdg-utils 1.0                     08/01/2022                       XDG-OPEN(1)
+xdg-utils 1.0                                                                    08/22/2022                                                                     XDG-OPEN(1)

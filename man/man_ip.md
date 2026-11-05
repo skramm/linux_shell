@@ -14,17 +14,14 @@
 
        ip [ -force ] -batch filename
 
-       OBJECT := { link | address | addrlabel | route | rule | neigh | ntable
-               | tunnel | tuntap | maddress | mroute | mrule | monitor | xfrm
-               | netns | l2tp | tcp_metrics | token | macsec | vrf | mptcp |
-               ioam | stats }
+       OBJECT := { link | address | addrlabel | route | rule | neigh | ntable | tunnel | tuntap | maddress |
+               mroute | mrule | monitor | xfrm | netns | l2tp | tcp_metrics | token | macsec | vrf | mptcp |
+               ioam }
 
-       OPTIONS := { -V[ersion] | -h[uman-readable] | -s[tatistics] |
-               -d[etails] | -r[esolve] | -iec | -f[amily] { inet | inet6 |
-               link } | -4 | -6 | -B | -0 | -l[oops] { maximum-addr-flush-at‐
-               tempts } | -o[neline] | -rc[vbuf] [size] | -t[imestamp] |
-               -ts[hort] | -n[etns] name | -N[umeric] | -a[ll] | -c[olor] |
-               -br[ief] | -j[son] | -p[retty] }
+       OPTIONS := { -V[ersion] | -h[uman-readable] | -s[tatistics] | -d[etails] | -r[esolve] | -iec | -f[amily]
+               { inet | inet6 | link } | -4 | -6 | -B | -0 | -l[oops] { maximum-addr-flush-attempts } | -o[ne‐
+               line] | -rc[vbuf] [size] | -t[imestamp] | -ts[hort] | -n[etns] name | -N[umeric] | -a[ll] |
+               -c[olor] | -br[ief] | -j[son] | -p[retty] }
 
 ## OPTIONS
        -V, -Version
@@ -34,34 +31,29 @@
               output statistics with human readable values followed by suffix.
 
        -b, -batch <FILENAME>
-              Read  commands  from  provided file or standard input and invoke
-              them.  First failure will cause termination of ip.
+              Read commands from provided file or standard input and invoke them.  First failure will cause ter‐
+              mination of ip.
 
-       -force Don't terminate ip on errors in batch mode.  If there  were  any
-              errors  during execution of the commands, the application return
-              code will be non zero.
+       -force Don't terminate ip on errors in batch mode.  If there were any errors during execution of the com‐
+              mands, the application return code will be non zero.
 
        -s, -stats, -statistics
-              Output more information. If the option appears  twice  or  more,
-              the amount of information increases.  As a rule, the information
-              is statistics or some time values.
+              Output more information. If the option appears twice or more, the amount of information increases.
+              As a rule, the information is statistics or some time values.
 
        -d, -details
               Output more detailed information.
 
        -l, -loops <COUNT>
-              Specify  maximum  number  of  loops the 'ip address flush' logic
-              will attempt before giving up. The  default  is  10.   Zero  (0)
-              means loop until all addresses are removed.
+              Specify maximum number of loops the 'ip address flush' logic will attempt before giving up. The
+              default is 10.  Zero (0) means loop until all addresses are removed.
 
        -f, -family <FAMILY>
-              Specifies  the protocol family to use. The protocol family iden‐
-              tifier can be one of inet, inet6, bridge, mpls or link.  If this
-              option is not present, the protocol family is guessed from other
-              arguments. If the rest of the command line does not give  enough
-              information  to  guess  the family, ip falls back to the default
-              one, usually inet or any.  link is a special  family  identifier
-              meaning that no networking protocol is involved.
+              Specifies the protocol family to use. The protocol family identifier can be one of inet, inet6,
+              bridge, mpls or link.  If this option is not present, the protocol family is guessed from other
+              arguments. If the rest of the command line does not give enough information to guess the family,
+              ip falls back to the default one, usually inet or any.  link is a special family identifier mean‐
+              ing that no networking protocol is involved.
 
        -4     shortcut for -family inet.
 
@@ -74,17 +66,14 @@
        -0     shortcut for -family link.
 
        -o, -oneline
-              output  each  record on a single line, replacing line feeds with
-              the '\' character. This is convenient when  you  want  to  count
-              records with wc(1) or to grep(1) the output.
+              output each record on a single line, replacing line feeds with the '\' character. This is conve‐
+              nient when you want to count records with wc(1) or to grep(1) the output.
 
        -r, -resolve
-              use  the  system's  name  resolver to print DNS names instead of
-              host addresses.
+              use the system's name resolver to print DNS names instead of host addresses.
 
        -n, -netns <NETNS>
-              switches ip to the specified network namespace NETNS.   Actually
-              it just simplifies executing of:
+              switches ip to the specified network namespace NETNS.  Actually it just simplifies executing of:
 
               ip netns exec NETNS ip [ OPTIONS ] OBJECT { COMMAND | help }
 
@@ -93,23 +82,19 @@
               ip -n[etns] NETNS [ OPTIONS ] OBJECT { COMMAND | help }
 
        -N, -Numeric
-              Print  the  number of protocol, scope, dsfield, etc directly in‐
-              stead of converting it to human readable name.
+              Print the number of protocol, scope, dsfield, etc directly instead of converting it to human read‐
+              able name.
 
        -a, -all
-              executes specified command over all objects, it depends if  com‐
-              mand supports this option.
+              executes specified command over all objects, it depends if command supports this option.
 
        -c[color][={always|auto|never}
-              Configure color output. If parameter is omitted or always, color
-              output  is  enabled  regardless of stdout state. If parameter is
-              auto, stdout is checked to be a terminal before  enabling  color
-              output.  If  parameter  is  never,  color output is disabled. If
-              specified multiple times, the last one  takes  precedence.  This
-              flag is ignored if -json is also given.
+              Configure color output. If parameter is omitted or always, color output is enabled regardless of
+              stdout state. If parameter is auto, stdout is checked to be a terminal before enabling color out‐
+              put. If parameter is never, color output is disabled. If specified multiple times, the last one
+              takes precedence. This flag is ignored if -json is also given.
 
-              Used  color  palette  can be influenced by COLORFGBG environment
-              variable (see ENVIRONMENT).
+              Used color palette can be influenced by COLORFGBG environment variable (see ENVIRONMENT).
 
        -t, -timestamp
               display current time when using monitor option.
@@ -123,19 +108,15 @@
        -iec   print human readable rates in IEC units (e.g. 1Ki = 1024).
 
        -br, -brief
-              Print only basic information in  a  tabular  format  for  better
-              readability.  This option is currently only supported by ip addr
-              show , ip link show & ip neigh show commands.
+              Print only basic information in a tabular format for better readability. This option is currently
+              only supported by ip addr show , ip link show & ip neigh show commands.
 
        -j, -json
               Output results in JavaScript Object Notation (JSON).
 
        -p, -pretty
-              The default JSON format is compact and more efficient  to  parse
-              but hard for most users to read.  This flag adds indentation for
-              readability.
-
-       -echo  Request the kernel to send the applied configuration back.
+              The default JSON format is compact and more efficient to parse but hard for most users to read.
+              This flag adds indentation for readability.
 
 IP - COMMAND SYNTAX
    OBJECT
@@ -174,8 +155,6 @@ IP - COMMAND SYNTAX
 
        rule   - rule in routing policy database.
 
-       stats  - manage and show interface statistics.
-
        tcp_metrics/tcpmetrics
               - manage TCP Metrics
 
@@ -189,35 +168,32 @@ IP - COMMAND SYNTAX
 
        xfrm   - manage IPSec policies.
 
-       The  names  of  all objects may be written in full or abbreviated form,
-       for example address can be abbreviated as addr or just a.
+       The names of all objects may be written in full or abbreviated form, for example address can be abbrevi‐
+       ated as addr or just a.
 
    COMMAND
-       Specifies the action to perform on the object.  The set of possible ac‐
-       tions depends on the object type.  As a rule, it is  possible  to  add,
-       delete  and  show (or list ) objects, but some objects do not allow all
-       of these operations or have some additional commands. The help  command
-       is  available  for  all objects. It prints out a list of available com‐
-       mands and argument syntax conventions.
+       Specifies the action to perform on the object.  The set of possible actions depends on the object type.
+       As a rule, it is possible to add, delete and show (or list ) objects, but some objects do not allow all
+       of these operations or have some additional commands. The help command is available for all objects. It
+       prints out a list of available commands and argument syntax conventions.
 
-       If no command is given, some default command is assumed.  Usually it is
-       list or, if the objects of this class cannot be listed, help.
+       If no command is given, some default command is assumed.  Usually it is list or, if the objects of this
+       class cannot be listed, help.
 
 ## ENVIRONMENT
        COLORFGBG
-              If set, it's value is used for detection whether  background  is
-              dark or light and use contrast colors for it.
+              If set, it's value is used for detection whether background is dark or light and use contrast col‐
+              ors for it.
 
-              COLORFGBG  environment  variable  usually contains either two or
-              three values separated by semicolons; we want the last value  in
-              either  case.   If this value is 0-6 or 8, chose colors suitable
+              COLORFGBG environment variable usually contains either two or three values separated by semi‐
+              colons; we want the last value in either case.  If this value is 0-6 or 8, chose colors suitable
               for dark background:
 
               COLORFGBG=";0" ip -c a
 
 ## EXIT STATUS
-       Exit status is 0 if command was successful, and 1 if there is a  syntax
-       error.  If an error was reported by the kernel exit status is 2.
+       Exit status is 0 if command was successful, and 1 if there is a syntax error.  If an error was reported
+       by the kernel exit status is 2.
 
 ## EXAMPLES
        ip addr
@@ -239,19 +215,16 @@ IP - COMMAND SYNTAX
        ip was written by Alexey N. Kuznetsov and added in Linux 2.2.
 
 ## SEE ALSO
-       ip-address(8), ip-addrlabel(8), ip-ioam(8), ip-l2tp(8), ip-link(8), ip-
-       maddress(8), ip-monitor(8), ip-mptcp(8), ip-mroute(8), ip-neighbour(8),
-       ip-netns(8),  ip-ntable(8),  ip-route(8),  ip-rule(8),  ip-stats(8) ip-
-       tcp_metrics(8), ip-token(8), ip-tunnel(8), ip-vrf(8), ip-xfrm(8)
+       ip-address(8), ip-addrlabel(8), ip-ioam(8), ip-l2tp(8), ip-link(8), ip-maddress(8), ip-monitor(8), ip-
+       mptcp(8), ip-mroute(8), ip-neighbour(8), ip-netns(8), ip-ntable(8), ip-route(8), ip-rule(8), ip-tcp_met‐
+       rics(8), ip-token(8), ip-tunnel(8), ip-vrf(8), ip-xfrm(8)
        IP Command reference ip-cref.ps
 
 ## REPORTING BUGS
-       Report  any  bugs  to  the  Network  Developers  mailing   list   <net‐
-       dev@vger.kernel.org> where the development and maintenance is primarily
-       done.   You  do not have to be subscribed to the list to send a message
-       there.
+       Report any bugs to the Network Developers mailing list <netdev@vger.kernel.org> where the development and
+       maintenance is primarily done.  You do not have to be subscribed to the list to send a message there.
 
 ## AUTHOR
        Original Manpage by Michail Litvak <mci@owl.openwall.com>
 
-iproute2                          20 Dec 2011                            IP(8)
+iproute2                                           20 Dec 2011                                             IP(8)

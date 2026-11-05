@@ -15,14 +15,12 @@
        getfacl [-aceEsRLPtpndvh] -
 
 ## DESCRIPTION
-       For  each  file,  getfacl displays the file name, owner, the group, and
-       the Access Control List (ACL). If a directory has a default  ACL,  get‐
-       facl also displays the default ACL. Non-directories cannot have default
+       For  each file, getfacl displays the file name, owner, the group, and the Access Control List (ACL). If a
+       directory has a default ACL, getfacl also displays the default ACL. Non-directories cannot  have  default
        ACLs.
 
-       If getfacl is used on a file system that does not support ACLs, getfacl
-       displays  the  access  permissions defined by the traditional file mode
-       permission bits.
+       If  getfacl  is used on a file system that does not support ACLs, getfacl displays the access permissions
+       defined by the traditional file mode permission bits.
 
        The output format of getfacl is as follows:
                1:  # file: somedir/
@@ -43,38 +41,30 @@
 
        Lines 1--3 indicate the file name, owner, and owning group.
 
-       Line 4 indicates the setuid (s), setgid (s), and sticky (t)  bits:  ei‐
-       ther  the letter representing the bit, or else a dash (-). This line is
-       included if any of those bits is set and left out otherwise, so it will
-       not be shown for most files. (See CONFORMANCE TO  POSIX  1003.1e  DRAFT
-       STANDARD 17 below.)
+       Line 4 indicates the setuid (s), setgid (s), and sticky (t) bits: either the letter representing the bit,
+       or  else a dash (-). This line is included if any of those bits is set and left out otherwise, so it will
+       not be shown for most files. (See CONFORMANCE TO POSIX 1003.1e DRAFT STANDARD 17 below.)
 
-       Lines 5, 7 and 10 correspond to the user, group and other fields of the
-       file mode permission bits. These three are called the base ACL entries.
-       Lines 6 and 8 are named user and named group entries. Line 9 is the ef‐
-       fective  rights mask. This entry limits the effective rights granted to
-       all groups and to named users. (The file owner and  others  permissions
-       are  not affected by the effective rights mask; all other entries are.)
-       Lines 11--15 display the default ACL associated  with  this  directory.
-       Directories  may have a default ACL. Regular files never have a default
-       ACL.
+       Lines 5, 7 and 10 correspond to the user, group and other fields of the file mode permission bits.  These
+       three  are  called  the base ACL entries. Lines 6 and 8 are named user and named group entries. Line 9 is
+       the effective rights mask. This entry limits the effective rights granted to  all  groups  and  to  named
+       users.  (The  file  owner and others permissions are not affected by the effective rights mask; all other
+       entries are.)  Lines 11--15 display the default ACL associated with this directory. Directories may  have
+       a default ACL. Regular files never have a default ACL.
 
-       The default behavior for getfacl is to display both the ACL and the de‐
-       fault ACL, and to include an effective rights comment for  lines  where
-       the rights of the entry differ from the effective rights.
+       The default behavior for getfacl is to display both the ACL and the default ACL, and to include an effec‐
+       tive rights comment for lines where the rights of the entry differ from the effective rights.
 
-       If  output is to a terminal, the effective rights comment is aligned to
-       column 40. Otherwise, a single tab character separates  the  ACL  entry
-       and the effective rights comment.
+       If output is to a terminal, the effective rights comment is aligned to column 40. Otherwise, a single tab
+       character separates the ACL entry and the effective rights comment.
 
-       The  ACL  listings of multiple files are separated by blank lines.  The
-       output of getfacl can also be used as input to setfacl.
+       The  ACL listings of multiple files are separated by blank lines.  The output of getfacl can also be used
+       as input to setfacl.
 
    PERMISSIONS
-       Process with search access to a file (i.e., processes with read  access
-       to  the containing directory of a file) are also granted read access to
-       the file's ACLs.  This is analogous to the permissions required for ac‐
-       cessing the file mode.
+       Process with search access to a file (i.e., processes with read access to the containing directory  of  a
+       file) are also granted read access to the file's ACLs.  This is analogous to the permissions required for
+       accessing the file mode.
 
 ## OPTIONS
        -a, --access
@@ -84,44 +74,38 @@
            Display the default access control list.
 
        -c, --omit-header
-           Do not display the comment header (the first three  lines  of  each
-           file's output).
+           Do not display the comment header (the first three lines of each file's output).
 
        -e, --all-effective
-           Print  all  effective  rights  comments,  even  if identical to the
-           rights defined by the ACL entry.
+           Print all effective rights comments, even if identical to the rights defined by the ACL entry.
 
        -E, --no-effective
            Do not print effective rights comments.
 
        -s, --skip-base
-           Skip files that only have the base ACL entries (owner, group,  oth‐
-           ers).
+           Skip files that only have the base ACL entries (owner, group, others).
 
        -R, --recursive
            List the ACLs of all files and directories recursively.
 
        -L, --logical
-           Logical walk, follow symbolic links to directories. The default be‐
-           havior  is  to  follow  symbolic  link arguments, and skip symbolic
-           links encountered in subdirectories.  Only effective in combination
-           with -R.
+           Logical walk, follow symbolic links to directories. The default behavior is to follow  symbolic  link
+           arguments, and skip symbolic links encountered in subdirectories.  Only effective in combination with
+           -R.
 
        -P, --physical
-           Physical walk, do not follow symbolic links  to  directories.  This
-           also  skips symbolic link arguments.  Only effective in combination
-           with -R.
+           Physical walk, do not follow symbolic links to directories. This also skips symbolic link  arguments.
+           Only effective in combination with -R.
 
        -t, --tabular
-           Use an alternative tabular output format. The ACL and  the  default
-           ACL  are  displayed  side by side. Permissions that are ineffective
-           due to the ACL mask entry are displayed capitalized. The entry  tag
-           names  for the ACL_USER_OBJ and ACL_GROUP_OBJ entries are also dis‐
-           played in capital letters, which helps in spotting those entries.
+           Use  an  alternative  tabular  output format. The ACL and the default ACL are displayed side by side.
+           Permissions that are ineffective due to the ACL mask entry are displayed capitalized. The  entry  tag
+           names  for  the  ACL_USER_OBJ  and ACL_GROUP_OBJ entries are also displayed in capital letters, which
+           helps in spotting those entries.
 
        -p, --absolute-names
-           Do not strip leading slash characters (`/'). The  default  behavior
-           is to strip leading slash characters.
+           Do not strip leading slash characters (`/'). The default behavior is to strip leading  slash  charac‐
+           ters.
 
        -n, --numeric
            List numeric user and group IDs
@@ -132,19 +116,17 @@
        -h, --help
            Print help explaining the command line options.
 
-       --  End  of  command  line options. All remaining parameters are inter‐
-           preted as file names, even if they start with a dash character.
+       --  End  of  command  line  options. All remaining parameters are interpreted as file names, even if they
+           start with a dash character.
 
-       -   If the file name parameter is  a  single  dash  character,  getfacl
-           reads a list of files from standard input.
+       -   If the file name parameter is a single dash character, getfacl reads a list of  files  from  standard
+           input.
 
 CONFORMANCE TO POSIX 1003.1e DRAFT STANDARD 17
-       If the environment variable POSIXLY_CORRECT is defined, the default be‐
-       havior of getfacl changes in the following ways: Unless otherwise spec‐
-       ified,  only the ACL is printed. The default ACL is only printed if the
-       -d option is given. If no command line parameter is given, getfacl  be‐
-       haves  as  if it was invoked as ``getfacl -''.  No flags comments indi‐
-       cating the setuid, setgid, and sticky bits are generated.
+       If  the  environment  variable POSIXLY_CORRECT is defined, the default behavior of getfacl changes in the
+       following ways: Unless otherwise specified, only the ACL is printed. The default ACL is only  printed  if
+       the  -d  option  is given. If no command line parameter is given, getfacl behaves as if it was invoked as
+       ``getfacl -''.  No flags comments indicating the setuid, setgid, and sticky bits are generated.
 
 ## AUTHOR
        Andreas Gruenbacher, <andreas.gruenbacher@gmail.com>.
@@ -154,4 +136,4 @@ CONFORMANCE TO POSIX 1003.1e DRAFT STANDARD 17
 ## SEE ALSO
        setfacl(1), acl(5)
 
-May 2000                      ACL File Utilities                    GETFACL(1)
+May 2000                                       ACL File Utilities                                     GETFACL(1)
