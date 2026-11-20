@@ -277,16 +277,17 @@ date;7;affiche date & heure;cal;GNU;?
 pv;7;_Pipe Viewer_ (monitoring de _pipe_ ou de copie);;;?
 cal;7;affichage calendrier;date;;?
 
-if;16;;;;?
+continue;_resume for, while, or until loops_;;;?
+if;16;test d'une condition;;;?
 while;16;;;;?
 for;16;;;;?
-exit;16;Terminaison du script et renvoi  d'une valeur à l'OS;return;;?
+exit;16;terminaison du script et renvoi  d'une valeur à l'OS;return;;?
 source;16;exécution d'un script dans le même shell;;GNU;?
 return;16;fin de fonction;exit,function;;?
 function;16;définition d'une fonction Bash;;;?
 case;16;;;;
 shift;16;décalage paramètres positionnels ($1, $2, ...);;;?
-break;16;sortie de boucle "for";for;;?
+break;16;sortie de boucle for, while;for;;?
 trap;16;interception de signal POSIX;;;?
 basename;16;extraction nom à partir d'un chemin complet;dirname;GNU;?
 dirname;16;extraction du dossier à partir d'un chemin complet;basename;GNU;?
