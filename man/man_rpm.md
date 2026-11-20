@@ -26,22 +26,28 @@
 
        rpm {--reinstall} [install-options] PACKAGE_FILE ...
 
-       rpm  {-e|--erase}  [--allmatches] [--justdb] [--nodb] [--nodeps] [--no‐
-       scripts] [--notriggers] [--test] PACKAGE_NAME ...
+       rpm  {-e|--erase}  [--allmatches]  [--justdb]  [--nodeps] [--noscripts]
+       [--notriggers] [--test] PACKAGE_NAME ...
 
    MISCELLANEOUS:
        rpm --showrc
 
-       rpm --restore [select-options]
+       rpm --setperms PACKAGE_NAME ...
+
+       rpm --setugids PACKAGE_NAME ...
+
+       rpm --setcaps PACKAGE_NAME ...
+
+       rpm --restore PACKAGE_NAME ...
 
    select-options
-       [PACKAGE_NAME] [-a,--all [SELECTOR]]  [-f,--file  FILE]  [--path  PATH]
-       [-g,--group  GROUP] [-p,--package PACKAGE_FILE] [--hdrid SHA1] [--pkgid
-       MD5] [--tid TID] [--querybynumber HDRNUM] [--triggeredby  PACKAGE_NAME]
-       [--whatprovides  CAPABILITY]  [--whatrequires CAPABILITY] [--whatrecom‐
-       mends CAPABILITY] [--whatsuggests CAPABILITY] [--whatsupplements  CAPA‐
-       BILITY]   [--whatenhances   CAPABILITY]   [--whatobsoletes  CAPABILITY]
-       [--whatconflicts CAPABILITY]
+       [PACKAGE_NAME]  [-a,--all  [SELECTOR]]  [-f,--file  FILE]   [-g,--group
+       GROUP]  [-p,--package PACKAGE_FILE] [--hdrid SHA1] [--pkgid MD5] [--tid
+       TID] [--querybynumber HDRNUM] [--triggeredby PACKAGE_NAME]  [--whatpro‐
+       vides  CAPABILITY]  [--whatrequires CAPABILITY] [--whatrecommends CAPA‐
+       BILITY]  [--whatsuggests  CAPABILITY]  [--whatsupplements   CAPABILITY]
+       [--whatenhances  CAPABILITY]  [--whatobsoletes  CAPABILITY] [--whatcon‐
+       flicts CAPABILITY]
 
    query-options
        General:  [--changelog]  [--changes]  [--dupes]  [-i,--info]   [--last]
@@ -63,12 +69,12 @@
        time] [--nomode] [--nordev] [--nocaps]
 
    install-options
-       [--allfiles]  [--badreloc]  [--excludepath   OLDPATH]   [--excludedocs]
+       [--allfiles]   [--badreloc]   [--excludepath  OLDPATH]  [--excludedocs]
        [--force] [-h,--hash] [--ignoresize] [--ignorearch] [--ignoreos] [--in‐
-       cludedocs]  [--justdb]  [–nodb]  [--nodeps]  [--nodigest] [--noplugins]
-       [--nocaps]  [--noorder]  [--noverify]   [--nosignature]   [--noscripts]
-       [--notriggers]  [--oldpackage]  [--percent] [--prefix NEWPATH] [--relo‐
-       cate OLDPATH=NEWPATH] [--replacefiles] [--replacepkgs] [--test]
+       cludedocs]  [--justdb] [--nodeps] [--nodigest] [--noplugins] [--nocaps]
+       [--noorder] [--noverify] [--nosignature]  [--noscripts]  [--notriggers]
+       [--oldpackage]  [--percent] [--prefix NEWPATH] [--relocate OLDPATH=NEW‐
+       PATH] [--replacefiles] [--replacepkgs] [--test]
 
 ## DESCRIPTION
        rpm is a powerful Package Manager, which can be used to build, install,
@@ -77,10 +83,10 @@
        erase  the  archive files.  The meta-data includes helper scripts, file
        attributes, and descriptive information about  the  package.   Packages
        come in two varieties: binary packages, used to encapsulate software to
-       be  installed,  and  source  packages,  containing  the source code and
+       be installed, and source  packages,  containing  the  source  code  and
        recipe necessary to produce binary packages.
 
-       One of the following basic modes must be selected: Query,  Verify,  In‐
+       One  of  the following basic modes must be selected: Query, Verify, In‐
        stall/Upgrade/Freshen/Reinstall,  Uninstall,  Set  Owners/Groups,  Show
        Querytags, and Show Configuration.
 
@@ -91,15 +97,15 @@
               Print a longer usage message than normal.
 
        --version
-              Print a single line containing the version number of  rpm  being
+              Print  a  single line containing the version number of rpm being
               used.
 
        --quiet
-              Print  as little as possible - normally only error messages will
+              Print as little as possible - normally only error messages  will
               be displayed.
 
        -v, --verbose
-              Print verbose information - normally routine  progress  messages
+              Print  verbose  information - normally routine progress messages
               will be displayed.
 
        -vv    Print lots of ugly debugging information.
@@ -117,9 +123,9 @@
 
        --macros FILELIST
               Replace the list of macro files to be loaded.  Each of the files
-              in  the colon separated FILELIST is read sequentially by rpm for
-              macro definitions.  Only the first file in the list must  exist,
-              and  tildes will be expanded to the value of $HOME.  The default
+              in the colon separated FILELIST is read sequentially by rpm  for
+              macro  definitions.  Only the first file in the list must exist,
+              and tildes will be expanded to the value of $HOME.  The  default
               FILELIST                                                      is
               /usr/lib/rpm/macros:/usr/lib/rpm/macros.d/macros.*:/usr/lib/rpm/plat‐
               form/%{_target}/macros:/usr/lib/rpm/fileattrs/*.at‐
@@ -131,7 +137,7 @@
               Pipes the output of rpm to the command CMD.
 
        --dbpath DIRECTORY
-              Use  the  database  in  DIRECTORY  rather  than the default path
+              Use the database in  DIRECTORY  rather  than  the  default  path
               /var/lib/rpm
 
        --root DIRECTORY
@@ -140,10 +146,6 @@
               for  dependency  checks  and any scriptlet(s) (e.g. %post if in‐
               stalling, or %prep if building, a package) will be run  after  a
               chroot(2) to DIRECTORY.
-
-              Note  that rpm assumes the environment inside the root is set up
-              by the caller, such as any mounts needed for the  operation  in‐
-              side the root directory.
 
        -D, --define='MACRO EXPR'
               Defines MACRO with value EXPR.
@@ -161,7 +163,7 @@
        In these options, PACKAGE_FILE can be either rpm binary file  or  ASCII
        package  manifest (see PACKAGE SELECTION OPTIONS), and may be specified
        as an ftp or http URL, in which case the package will be downloaded be‐
-       fore being installed.  See FTP/HTTP OPTIONS for  information  on  rpm's
+       fore  being  installed.   See FTP/HTTP OPTIONS for information on rpm's
        ftp and http client support.
 
        The general form of an rpm install command is
@@ -174,13 +176,13 @@
 
        rpm {-U|--upgrade} [install-options] PACKAGE_FILE ...
 
-       This  upgrades  or  installs the package currently installed to a newer
-       version.  This is the same as install, except all other  version(s)  of
+       This upgrades or installs the package currently installed  to  a  newer
+       version.   This  is the same as install, except all other version(s) of
        the package are removed after the new package is installed.
 
        rpm {-F|--freshen} [install-options] PACKAGE_FILE ...
 
-       This  will upgrade packages, but only ones for which an earlier version
+       This will upgrade packages, but only ones for which an earlier  version
        is installed.
 
        The general form of an rpm reinstall command is
@@ -213,11 +215,11 @@
               Same as using --replacepkgs, --replacefiles, and --oldpackage.
 
        -h, --hash
-              Print  50  hash  marks  as the package archive is unpacked.  Use
+              Print 50 hash marks as the package  archive  is  unpacked.   Use
               with -v|--verbose for a nicer display.
 
        --ignoresize
-              Don't check mount file systems for sufficient disk space  before
+              Don't  check mount file systems for sufficient disk space before
               installing this package.
 
        --ignorearch
@@ -234,8 +236,6 @@
        --justdb
               Update only the database, not the filesystem.
 
-       --nodb Update only the filesystem, not the database.
-
        --nodigest
               Don't verify package or header digests when reading.
 
@@ -246,7 +246,7 @@
               Don't verify package or header signatures when reading.
 
        --nodeps
-              Don't  do  a  dependency  check before installing or upgrading a
+              Don't do a dependency check before  installing  or  upgrading  a
               package.
 
        --nocaps
@@ -262,14 +262,14 @@
        --noplugins
               Do not load and execute plugins.
 
-       --noscripts, --nopre, --nopost, --nopreun, --nopostun, --nopretrans,
+       --noscripts, --nopre, --nopost,  --nopreun,  --nopostun,  --nopretrans,
        --noposttrans
-              Don't execute the scriptlet of the same name.   The  --noscripts
+              Don't  execute  the scriptlet of the same name.  The --noscripts
               option is equivalent to
 
        --nopre --nopost --nopreun --nopostun --nopretrans --noposttrans
 
-       and  turns  off the execution of the corresponding %pre, %post, %preun,
+       and turns off the execution of the corresponding %pre,  %post,  %preun,
        %postun %pretrans, and %posttrans scriptlet(s).
 
        --notriggers, --notriggerin, --notriggerun, --notriggerprein, --notrig‐
@@ -286,17 +286,17 @@
               Allow an upgrade to replace a newer package with an older one.
 
        --percent
-              Print  percentages  as  files  are  unpacked  from  the  package
-              archive.  This is intended to make rpm easy to  run  from  other
+              Print percentages as files are unpacked  from  the  package  ar‐
+              chive.   This  is  intended  to  make rpm easy to run from other
               tools.
 
        --prefix NEWPATH
-              For  relocatable  binary packages, translate all file paths that
-              start with the installation prefix  in  the  package  relocation
+              For relocatable binary packages, translate all file  paths  that
+              start  with  the  installation  prefix in the package relocation
               hint(s) to NEWPATH.
 
        --relocate OLDPATH=NEWPATH
-              For  relocatable  binary packages, translate all file paths that
+              For relocatable binary packages, translate all file  paths  that
               start with OLDPATH in the package relocation hint(s) to NEWPATH.
               This option can be used repeatedly if several OLDPATH's  in  the
               package are to be relocated.
@@ -363,16 +363,16 @@
        --qf|--queryformat QUERYFMT
 
        option, followed by the QUERYFMT format string.  Query formats are mod‐
-       ified  versions  of  the  standard printf(3) formatting.  The format is
-       made up of static strings (which may include standard C  character  es‐
-       capes  for  newlines, tabs, and other special characters (not including
-       \0)) and printf(3) type formatters.  As rpm already knows the  type  to
-       print,  the type specifier must be omitted however, and replaced by the
-       name of the header tag to be printed, enclosed by {}  characters.   Tag
-       names  are case insensitive, and the leading RPMTAG_ portion of the tag
-       name may be omitted as well.
+       ified versions of the standard printf(3)  formatting.   The  format  is
+       made  up  of static strings (which may include standard C character es‐
+       capes for newlines, tabs, and other special characters)  and  printf(3)
+       type  formatters.   As  rpm  already  knows the type to print, the type
+       specifier must be omitted however, and replaced  by  the  name  of  the
+       header  tag  to  be  printed, enclosed by {} characters.  Tag names are
+       case insensitive, and the leading RPMTAG_ portion of the tag  name  may
+       be omitted as well.
 
-       Alternate output formats may be requested by  following  the  tag  with
+       Alternate  output  formats  may  be requested by following the tag with
        :typetag.  Currently, the following types are supported:
 
        :armor Wrap a public key in ASCII armor.
@@ -410,11 +410,11 @@
        :octal Format in octal.
 
        :humaniec
-              Human  readable number (in IEC 80000).  The suffix K = 1024, M =
+              Human readable number (in IEC 80000).  The suffix K = 1024, M  =
               1048576, ...
 
        :humansi
-              Human readable number (in  SI).   The  suffix  K  =  1000,  M  =
+              Human  readable  number  (in  SI).   The  suffix  K  = 1000, M =
               1000000, ...
 
        :perms Format file permissions.
@@ -445,17 +445,17 @@
        For example, to print only the names of the packages queried, you could
        use  %{NAME} as the format string.  To print the packages name and dis‐
        tribution information in two columns, you could use %-30{NAME}%{DISTRI‐
-       BUTION}.  rpm will print a list of all of the tags it knows about  when
+       BUTION}.   rpm will print a list of all of the tags it knows about when
        it is invoked with the --querytags argument.
 
-       There  are  three  subsets  of options for querying: package selection,
+       There are three subsets of options  for  querying:  package  selection,
        file selection and information selection.
 
    PACKAGE SELECTION OPTIONS:
        PACKAGE_NAME
-              Query installed package  named  PACKAGE_NAME.   To  specify  the
-              package  more  precisely the package name may be followed by the
-              version or version and release both separated by a  dash  or  an
+              Query  installed  package  named  PACKAGE_NAME.   To specify the
+              package more precisely the package name may be followed  by  the
+              version  or  version  and release both separated by a dash or an
               architecture name separated by a dot.  See the output of rpm -qa
               or rpm -qp PACKAGE_FILE as an example.
 
@@ -463,14 +463,14 @@
               Query all installed packages.
 
        An optional SELECTOR in the form of tag=pattern can be provided to nar‐
-       row  the  selection, for example name="b*" to query packages whose name
+       row the selection, for example name="b*" to query packages  whose  name
        starts with "b".
 
        --dupes
               List duplicated packages.
 
        -f, --file FILE
-              Query package owning installed FILE.
+              Query package owning FILE.
 
        --filecaps
               List file names with POSIX1.e capabilities.
@@ -479,7 +479,7 @@
               List file names with their classes (libmagic classification).
 
        --filecolor
-              List file names with their colors (0 for noarch, 1 for 32bit,  2
+              List  file names with their colors (0 for noarch, 1 for 32bit, 2
               for 64 bit).
 
        --fileprovide
@@ -492,38 +492,33 @@
               Query packages with the group of GROUP.
 
        --hdrid SHA1
-              Query  package that contains a given header identifier, i.e. the
+              Query package that contains a given header identifier,  i.e. the
               SHA1 digest of the immutable header region.
 
        -p, --package PACKAGE_FILE
-              Query an (uninstalled) package PACKAGE_FILE.   The  PACKAGE_FILE
-              may  be specified as an ftp or http style URL, in which case the
+              Query  an  (uninstalled) package PACKAGE_FILE.  The PACKAGE_FILE
+              may be specified as an ftp or http style URL, in which case  the
               package header will be downloaded and queried.  See FTP/HTTP OP‐
               TIONS for information on rpm's ftp and http client support.  The
-              PACKAGE_FILE argument(s), if not a binary package, will  be  in‐
-              terpreted  as  an ASCII package manifest unless --nomanifest op‐
-              tion is used.  In manifests, comments  are  permitted,  starting
+              PACKAGE_FILE  argument(s),  if not a binary package, will be in‐
+              terpreted as an ASCII package manifest unless  --nomanifest  op‐
+              tion  is  used.   In manifests, comments are permitted, starting
               with a '#', and each line of a package manifest file may include
               white  space  separated  glob expressions, including URL's, that
               will be expanded to paths that are substituted in place  of  the
               package  manifest  as  additional  PACKAGE_FILE arguments to the
               query.
 
-       --path PATH
-              Query package(s) owning PATH, whether the file is  installed  or
-              not.   Multiple  packages  may  own a PATH, but the file is only
-              owned by the package installed last.
-
        --pkgid MD5
               Query package that contains a given package identifier, i.e. the
               MD5 digest of the combined header and payload contents.
 
        --querybynumber HDRNUM
-              Query the HDRNUMth database entry directly; this is useful  only
+              Query  the HDRNUMth database entry directly; this is useful only
               for debugging.
 
        --specfile SPECFILE
-              Parse  and query SPECFILE as if it were a package.  Although not
+              Parse and query SPECFILE as if it were a package.  Although  not
               all the information (e.g. file lists) is available, this type of
               query permits rpm to be used to extract  information  from  spec
               files without having to write a specfile parser.
@@ -531,7 +526,7 @@
        --tid TID
               Query  package(s)  that have a given TID transaction identifier.
               A unix time stamp is currently used as a transaction identifier.
-              All package(s) installed or erased within a  single  transaction
+              All  package(s)  installed or erased within a single transaction
               have a common identifier.
 
        --triggeredby PACKAGE_NAME
@@ -701,8 +696,8 @@
        --nocaps
               Don't verify file capabilities.
 
-       The format of the output is a string of 9 characters,  a  possible  at‐
-       tribute marker:
+       The format of the output is a string of 9 characters, a possible attri‐
+       bute marker:
 
               c %config configuration file.
               d %doc documentation file.
@@ -714,8 +709,8 @@
        characters denotes the result of a comparison of  attribute(s)  of  the
        file  to  the  value of those attribute(s) recorded in the database.  A
        single "." (period) means the test passed, while a single "?" (question
-       mark) indicates the test could not be performed (e.g. file  permissions
-       prevent  reading).   Otherwise, the (mnemonically emBoldened) character
+       mark)  indicates the test could not be performed (e.g. file permissions
+       prevent reading).  Otherwise, the (mnemonically  emBoldened)  character
        denotes failure of the corresponding --verify test:
 
               S file Size differs
@@ -730,18 +725,31 @@
 
    MISCELLANEOUS COMMANDS
        rpm --showrc
-              shows the values rpm will use for all of the  options  are  cur‐
+              shows  the  values  rpm will use for all of the options are cur‐
               rently set in rpmrc and macros configuration file(s).
 
-       rpm --setperms | --setugids | --setcaps PACKAGE_NAME
-              obsolete aliases for --restore
+       rpm --setperms PACKAGE_NAME
+              sets permissions of files in the given package.  Consider  using
+              --restore instead.
 
-       rpm --restore [select-options]
-              The  option  restores  file  metadata  such as timestamp, owner,
-              group, permissions and capabilities of files in packages.
+       rpm --setugids PACKAGE_NAME
+              sets  user/group  ownership of files in the given package.  This
+              command can change permissions and capabilities of files in that
+              package.  In most cases it is better to use --restore instead.
+
+       rpm --setcaps PACKAGE_NAME
+              sets capabilities of files in the given package.  Consider using
+              --restore instead.
+
+       rpm --restore PACKAGE_NAME
+              The option restores owner, group, permissions  and  capabilities
+              of files in the given package.
+
+       Options --setperms, --setugids, --setcaps and
+              --restore are mutually exclusive.
 
    FTP/HTTP OPTIONS
-       rpm can act as an FTP and/or  HTTP  client  so  that  packages  can  be
+       rpm  can  act  as  an  FTP  and/or  HTTP client so that packages can be
        queried or installed from the internet.  Package files for install, up‐
        grade,  and  query  operations may be specified as an ftp or http style
        URL:
@@ -763,14 +771,14 @@
               the macro %_httpproxy.
 
        --httpport PORT
-              The  TCP PORT number to use for the http connection on the proxy
-              http server instead of the default port.  This option  may  also
+              The TCP PORT number to use for the http connection on the  proxy
+              http  server  instead of the default port.  This option may also
               be specified by configuring the macro %_httpport.
 
 LEGACY ISSUES
    Executing rpmbuild
-       The  build  modes of rpm are now resident in the /usr/bin/rpmbuild exe‐
-       cutable.  Install the package containing rpmbuild  (usually  rpm-build)
+       The build modes of rpm are now resident in the  /usr/bin/rpmbuild  exe‐
+       cutable.   Install  the package containing rpmbuild (usually rpm-build)
        and see rpmbuild(8) for documentation of all the rpm build modes.
 
 ## FILES
@@ -805,8 +813,14 @@ LEGACY ISSUES
        /var/tmp/rpm*
 
 ## SEE ALSO
-       rpm-misc(8),  popt(3),  rpm2cpio(8), rpmbuild(8), rpmdb(8), rpmkeys(8),
-       rpmsign(8), rpmspec(8)
+              rpm-misc(8),
+              popt(3),
+              rpm2cpio(8),
+              rpmbuild(8),
+              rpmdb(8),
+              rpmkeys(8),
+              rpmsign(8),
+              rpmspec(8),
 
        rpm --help - as rpm supports customizing the options via  popt  aliases
        it's impossible to guarantee that what's described in the manual match‐

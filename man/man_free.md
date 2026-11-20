@@ -13,8 +13,10 @@
        free [options]
 
 ## DESCRIPTION
-       free  displays  the  total  amount  of free and used physical and swap memory in the system, as well as the buffers and caches used by the kernel. The information is gathered by parsing
-       /proc/meminfo. The displayed columns are:
+       free  displays the total amount of free and used physical and swap mem‐
+       ory in the system, as well as the buffers and caches used by  the  ker‐
+       nel.  The  information  is  gathered by parsing /proc/meminfo. The dis‐
+       played columns are:
 
        total  Total installed memory (MemTotal and SwapTotal in /proc/meminfo)
 
@@ -27,15 +29,20 @@
        buffers
               Memory used by kernel buffers (Buffers in /proc/meminfo)
 
-       cache  Memory used by the page cache and slabs (Cached and SReclaimable in /proc/meminfo)
+       cache  Memory used by the page cache and slabs (Cached and SReclaimable
+              in /proc/meminfo)
 
        buff/cache
               Sum of buffers and cache
 
        available
-              Estimation of how much memory is available for starting new applications, without swapping. Unlike the data provided by the cache or free fields, this field  takes  into  account
-              page  cache and also that not all reclaimable memory slabs will be reclaimed due to items being in use (MemAvailable in /proc/meminfo, available on kernels 3.14, emulated on ker‐
-              nels 2.6.27+, otherwise the same as free)
+              Estimation  of how much memory is available for starting new ap‐
+              plications, without swapping. Unlike the data  provided  by  the
+              cache  or  free fields, this field takes into account page cache
+              and also that not all reclaimable memory slabs will be reclaimed
+              due to items being in use (MemAvailable in /proc/meminfo, avail‐
+              able on kernels 3.14, emulated on kernels 2.6.27+, otherwise the
+              same as free)
 
 ## OPTIONS
        -b, --bytes
@@ -65,7 +72,9 @@
        --peta Display the amount of memory in petabytes. Implies --si.
 
        -h, --human
-              Show all output fields automatically scaled to shortest three digit unit and display the units of print out.  Following units are used.
+              Show  all  output  fields automatically scaled to shortest three
+              digit unit and display the units of print out.  Following  units
+              are used.
 
                 B = bytes
                 Ki = kibibyte
@@ -74,10 +83,14 @@
                 Ti = tebibyte
                 Pi = pebibyte
 
-              If unit is missing, and you have exbibyte of RAM or swap, the number is in tebibytes and columns might not be aligned with header.
+              If  unit  is  missing, and you have exbibyte of RAM or swap, the
+              number is in tebibytes and columns might  not  be  aligned  with
+              header.
 
        -w, --wide
-              Switch to the wide mode. The wide mode produces lines longer than 80 characters. In this mode buffers and cache are reported in two separate columns.
+              Switch  to  the  wide  mode. The wide mode produces lines longer
+              than 80 characters. In this mode buffers and cache are  reported
+              in two separate columns.
 
        -c, --count count
               Display the result count times.  Requires the -s option.
@@ -86,10 +99,13 @@
               Show detailed low and high memory statistics.
 
        -s, --seconds delay
-              Continuously display the result delay  seconds apart.  You may actually specify any floating point number for delay using either . or , for decimal point.  usleep(3) is used  for
-              microsecond resolution delay times.
+              Continuously  display  the result delay  seconds apart.  You may
+              actually specify any floating point number for delay  using  ei‐
+              ther  . or , for decimal point.  usleep(3) is used for microsec‐
+              ond resolution delay times.
 
-       --si   Use kilo, mega, giga etc (power of 1000) instead of kibi, mebi, gibi (power of 1024).
+       --si   Use kilo, mega, giga etc (power of 1000) instead of kibi,  mebi,
+              gibi (power of 1024).
 
        -t, --total
               Display a line showing the column totals.
@@ -104,7 +120,8 @@
               memory information
 
 ## BUGS
-       The value for the shared column is not available from kernels before 2.6.32 and is displayed as zero.
+       The  value  for  the shared column is not available from kernels before
+       2.6.32 and is displayed as zero.
 
        Please send bug reports to
               ⟨procps@freelists.org⟩
@@ -112,4 +129,4 @@
 ## SEE ALSO
        ps(1), slabtop(1), top(1), vmstat(8).
 
-procps-ng                                                                                  2018-05-31                                                                                    FREE(1)
+procps-ng                         2018-05-31                           FREE(1)

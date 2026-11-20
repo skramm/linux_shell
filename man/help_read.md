@@ -13,8 +13,7 @@ read: read [-ers] [-a array] [-d delim] [-i text] [-n nchars] [-N nchars] [-p pr
     splitting, and the first word is assigned to the first NAME, the second
     word to the second NAME, and so on, with any leftover words assigned to
     the last NAME.  Only the characters found in $IFS are recognized as word
-    delimiters. By default, the backslash character escapes delimiter characters
-    and newline.
+    delimiters.
     
     If no NAMEs are supplied, the line read is stored in the REPLY variable.
     

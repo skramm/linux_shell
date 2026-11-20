@@ -16,7 +16,7 @@
 
 ## DESCRIPTION
        Screen is a full-screen window manager that multiplexes a physical ter‐
-       minal  between  several processes (typically interactive shells).  Each
+       minal between several processes (typically interactive  shells).   Each
        virtual terminal provides the functions of a DEC VT100 terminal and, in
        addition, several control functions from the ISO 6429  (ECMA  48,  ANSI
        X3.64)  and ISO 2022 standards (e.g. insert/delete line and support for
@@ -24,52 +24,52 @@
        each virtual terminal and a copy-and-paste mechanism that allows moving
        text regions between windows.
 
-       When  screen  is  called, it creates a single window with a shell in it
-       (or the specified command) and then gets out of your way  so  that  you
-       can  use the program as you normally would.  Then, at any time, you can
+       When screen is called, it creates a single window with a  shell  in  it
+       (or  the  specified  command) and then gets out of your way so that you
+       can use the program as you normally would.  Then, at any time, you  can
        create new (full-screen) windows with other programs in them (including
        more shells), kill existing windows, view a list of windows, turn  out‐
        put  logging  on and off, copy-and-paste text between windows, view the
        scrollback history, switch between windows in whatever manner you wish,
-       etc. All windows run their  programs  completely  independent  of  each
+       etc.  All  windows  run  their  programs completely independent of each
        other. Programs continue to run when their window is currently not vis‐
        ible and even when the whole screen session is detached from the user's
-       terminal.   When  a  program terminates, screen (per default) kills the
-       window that contained it.  If this window was in  the  foreground,  the
-       display  switches  to the previous window; if none are left, screen ex‐
-       its. Shells usually distinguish between running as login-shell or  sub-
-       shell.   Screen  runs  them  as  sub-shells, unless told otherwise (See
+       terminal.  When a program terminates, screen (per  default)  kills  the
+       window  that  contained  it.  If this window was in the foreground, the
+       display switches to the previous window; if none are left,  screen  ex‐
+       its.  Shells usually distinguish between running as login-shell or sub-
+       shell.  Screen runs them as  sub-shells,  unless  told  otherwise  (See
        shell .screenrc command).
 
-       Everything you type is sent to the program running in the current  win‐
-       dow.   The  only exception to this is the one keystroke that is used to
+       Everything  you type is sent to the program running in the current win‐
+       dow.  The only exception to this is the one keystroke that is  used  to
        initiate a command to the window manager.  By default, each command be‐
        gins with a control-a (abbreviated C-a from now on), and is followed by
-       one other keystroke.  The command character and all  the  key  bindings
+       one  other  keystroke.   The command character and all the key bindings
        can be fully customized to be anything you like, though they are always
        two characters in length.
 
        Screen does not understand the prefix C- to mean control, although this
-       notation  is used in this manual for readability.  Please use the caret
+       notation is used in this manual for readability.  Please use the  caret
        notation (^A instead of C-a) as arguments to e.g. the escape command or
        the -e option.  Screen will also print out control characters in  caret
        notation.
 
        The standard way to create a new window is to type C-a c.  This creates
-       a  new  window running a shell and switches to that window immediately,
-       regardless of the state of the process running in the  current  window.
-       Similarly,  you  can create a new window with a custom command in it by
-       first binding the command to a keystroke (in your .screenrc file or  at
-       the  C-a : command line) and then using it just like the C-a c command.
+       a new window running a shell and switches to that  window  immediately,
+       regardless  of  the state of the process running in the current window.
+       Similarly, you can create a new window with a custom command in  it  by
+       first  binding the command to a keystroke (in your .screenrc file or at
+       the C-a : command line) and then using it just like the C-a c  command.
        In addition, new windows can be created by running a command like:
 
               screen emacs prog.c
 
-       from a shell prompt within a previously created window.  This will  not
-       run  another  copy  of screen, but will instead supply the command name
+       from  a shell prompt within a previously created window.  This will not
+       run another copy of screen, but will instead supply  the  command  name
        and its arguments to the window manager (specified in the $STY environ‐
        ment variable) who will use it to create the new window.  The above ex‐
-       ample would start the emacs editor (editing prog.c) and switch  to  its
+       ample  would  start the emacs editor (editing prog.c) and switch to its
        window. - Note that you cannot transport environment variables from the
        invoking  shell  to the application (emacs in this case), because it is
        forked from the parent screen process, not from the invoking shell.
@@ -78,16 +78,16 @@
        ten to this file for each window, and removed when the window is termi‐
        nated.  This is useful for working with talk, script, shutdown,  rsend,
        sccs and other similar programs that use the utmp file to determine who
-       you  are.  As long as screen is active on your terminal, the terminal's
+       you are. As long as screen is active on your terminal,  the  terminal's
        own record is removed from the utmp file. See also C-a L.
 
 GETTING STARTED
-       Before you begin to use screen you'll need to make sure you  have  cor‐
-       rectly  selected  your  terminal  type, just as you would for any other
+       Before  you  begin to use screen you'll need to make sure you have cor‐
+       rectly selected your terminal type, just as you  would  for  any  other
        termcap/terminfo program.  (You can do this by using test for example.)
 
-       If you're impatient and want to get started without doing  a  lot  more
-       reading,  you  should  remember this one command:  C-a ?.  Typing these
+       If  you're  impatient  and want to get started without doing a lot more
+       reading, you should remember this one command:  C-a  ?.   Typing  these
        two characters will display a list of the available screen commands and
        their bindings. Each keystroke is discussed in the section DEFAULT  KEY
        BINDINGS.  The  manual section CUSTOMIZATION deals with the contents of
@@ -95,13 +95,13 @@ GETTING STARTED
 
        If your terminal is a true auto-margin terminal (it doesn't  allow  the
        last position on the screen to be updated without scrolling the screen)
-       consider  using a version of your terminal's termcap that has automatic
-       margins turned off. This will ensure an accurate and optimal update  of
-       the  screen  in  all  circumstances. Most terminals nowadays have magic
-       margins (automatic margins plus usable last column). This is the  VT100
-       style  type  and  perfectly  suited for screen.  If all you've got is a
-       true auto-margin terminal screen will be content to use it, but  updat‐
-       ing  a  character  put  into the last position on the screen may not be
+       consider using a version of your terminal's termcap that has  automatic
+       margins  turned off. This will ensure an accurate and optimal update of
+       the screen in all circumstances. Most  terminals  nowadays  have  magic
+       margins  (automatic margins plus usable last column). This is the VT100
+       style type and perfectly suited for screen.  If all  you've  got  is  a
+       true  auto-margin terminal screen will be content to use it, but updat‐
+       ing a character put into the last position on the  screen  may  not  be
        possible until the screen scrolls or the character is moved into a safe
        position in some other way. This delay can be shortened by using a ter‐
        minal with insert-character capability.
@@ -125,7 +125,7 @@ COMMAND-LINE OPTIONS
        -d|-D [pid.tty.host]
             does  not  start screen, but detaches the elsewhere running screen
             session. It has the same effect as typing C-a d from screen's con‐
-            trolling terminal. -D is the equivalent to the power  detach  key.
+            trolling  terminal.  -D is the equivalent to the power detach key.
             If no session can be detached, this option is ignored. In combina‐
             tion with the -r/-R option more powerful effects can be achieved:
 
@@ -141,13 +141,13 @@ COMMAND-LINE OPTIONS
                first.
 
        -D -R   Attach here and now. In detail this means: If a session is run‐
-               ning, then reattach. If necessary detach  and  logout  remotely
-               first.   If  it  was not running create it and notify the user.
+               ning,  then  reattach.  If necessary detach and logout remotely
+               first.  If it was not running create it and  notify  the  user.
                This is the author's favorite.
 
        -D -RR  Attach here and now. Whatever that means, just do it.
 
-            Note: It is always a good idea to check the status  of  your  ses‐
+            Note:  It  is  always a good idea to check the status of your ses‐
             sions by means of screen -list.
 
        -e xy
@@ -174,28 +174,28 @@ COMMAND-LINE OPTIONS
             aged.
 
        -l and -ln
-            turns  login  mode  on  or off (for /run/utmp updating).  This can
+            turns login mode on or off (for  /run/utmp  updating).   This  can
             also be defined through the deflogin .screenrc command.
 
        -ls [match]
        -list [match]
-            does not start screen, but prints a list of  pid.tty.host  strings
-            and  creation  timestamps  identifying your screen sessions.  Ses‐
-            sions marked `detached' can  be  resumed  with  screen  -r.  Those
-            marked  `attached' are running and have a controlling terminal. If
+            does  not  start screen, but prints a list of pid.tty.host strings
+            and creation timestamps identifying your  screen  sessions.   Ses‐
+            sions  marked  `detached'  can  be  resumed  with screen -r. Those
+            marked `attached' are running and have a controlling terminal.  If
             the session runs in multiuser mode, it is marked `multi'. Sessions
             marked as `unreachable' either live on a  different  host  or  are
             `dead'.   An unreachable session is considered dead, when its name
-            matches either the name of the local host, or the specified  para‐
-            meter, if any.  See the -r flag for a description how to construct
-            matches.   Sessions  marked as `dead' should be thoroughly checked
-            and removed.  Ask your system administrator if you are  not  sure.
+            matches either the name of the local host, or the specified param‐
+            eter,  if any.  See the -r flag for a description how to construct
+            matches.  Sessions marked as `dead' should be  thoroughly  checked
+            and  removed.   Ask your system administrator if you are not sure.
             Remove sessions with the -wipe option.
 
        -L   tells screen to turn on automatic output logging for the windows.
 
        -Logfile file
-            By  default  logfile  name is screenlog.0. You can set new logfile
+            By default logfile name is screenlog.0. You can  set  new  logfile
             name with the -Logfile option.
 
        -m   causes screen to ignore the $STY environment variable. With screen
@@ -212,15 +212,15 @@ COMMAND-LINE OPTIONS
 
        -O   selects  an optimal output mode for your terminal rather than true
             VT100 emulation (only affects auto-margin terminals without `LP').
-            This can also be set in your .screenrc by  specifying  `OP'  in  a
+            This  can  also  be  set in your .screenrc by specifying `OP' in a
             termcap command.
 
        -p number_or_name|-|=|+
-            Preselect  a window. This is useful when you want to reattach to a
+            Preselect a window. This is useful when you want to reattach to  a
             specific window or you want to send a command via the -X option to
             a specific window. As with screen's select command, - selects  the
             blank window. As a special case for reattach, = brings up the win‐
-            dowlist  on  the blank window, while a + will create a new window.
+            dowlist on the blank window, while a + will create a  new  window.
             The command will not be executed if the specified window could not
             be found.
 
@@ -266,13 +266,13 @@ COMMAND-LINE OPTIONS
             all  other  command-line options are ignored.  If no detached ses‐
             sion exists, starts a new session  using  the  specified  options,
             just as if -R had not been specified. The option is set by default
-            if  screen  is  run as a login-shell (actually screen uses -xRR in
-            that case).  For combinations with the  -d/-D  option  see  there.
+            if screen is run as a login-shell (actually screen  uses  -xRR  in
+            that  case).   For  combinations  with the -d/-D option see there.
             Note: Time-based session selection is a Debian addition.
 
        -s program
-            sets  the  default  shell to the program specified, instead of the
-            value in the environment variable $SHELL (or /bin/sh  if  not  de‐
+            sets the default shell to the program specified,  instead  of  the
+            value  in  the  environment variable $SHELL (or /bin/sh if not de‐
             fined).  This can also be defined through the shell .screenrc com‐
             mand.  See also there.
 
@@ -283,7 +283,7 @@ COMMAND-LINE OPTIONS
             [tty.host] suffix. This name should not be longer then 80 symbols.
 
        -t name
-            sets  the  title  (a.k.a.) for the default shell or specified pro‐
+            sets the title (a.k.a.) for the default shell  or  specified  pro‐
             gram.  See also the shelltitle .screenrc command.
 
        -T term
@@ -297,19 +297,19 @@ COMMAND-LINE OPTIONS
        -v   Print version number.
 
        -wipe [match]
-            does  the  same  as screen -ls, but removes destroyed sessions in‐
-            stead of marking them as `dead'.  An unreachable session  is  con‐
-            sidered  dead,  when its name matches either the name of the local
-            host, or the explicitly given parameter, if any.  See the -r  flag
+            does the same as screen -ls, but removes  destroyed  sessions  in‐
+            stead  of  marking them as `dead'.  An unreachable session is con‐
+            sidered dead, when its name matches either the name of  the  local
+            host,  or the explicitly given parameter, if any.  See the -r flag
             for a description how to construct matches.
 
-       -x   Attach  to  a  not  detached screen session. (Multi display mode).
-            Screen refuses to attach from within itself.  But  when  cascading
+       -x   Attach to a not detached screen  session.  (Multi  display  mode).
+            Screen  refuses  to attach from within itself.  But when cascading
             multiple screens, loops are not detected; take care.
 
-       -X   Send  the  specified  command to a running screen session. You may
-            use the -S option to specify the screen session if you  have  sev‐
-            eral  screen  sessions running. You can use the -d or -r option to
+       -X   Send the specified command to a running screen  session.  You  may
+            use  the  -S option to specify the screen session if you have sev‐
+            eral screen sessions running. You can use the -d or -r  option  to
             tell screen to look only for attached or detached screen sessions.
             Note that this command doesn't work if  the  session  is  password
             protected.
@@ -329,12 +329,13 @@ DEFAULT KEY BINDINGS
        The following table shows the default key bindings. The trailing commas
        in  boxes  with  multiple keystroke entries are separators, not part of
        the bindings.
+
        ─────────────────────────────────────────────────────────
        C-a '              (select)          Prompt for a window
-                                            name or  number  to
+                                            name  or  number to
                                             switch to.
        ─────────────────────────────────────────────────────────
-       C-a "              (windowlist -b)   Present  a  list of
+       C-a "              (windowlist -b)   Present a  list  of
                                             all windows for se‐
                                             lection.
        ─────────────────────────────────────────────────────────
@@ -345,35 +346,35 @@ DEFAULT KEY BINDINGS
                                             number 0 - 9, or to
                                             the blank window.
        ─────────────────────────────────────────────────────────
-       C-a tab            (focus)           Switch  the   input
-                                            focus  to  the next
+       C-a tab            (focus)           Switch   the  input
+                                            focus to  the  next
                                             region.   See  also
                                             split,      remove,
                                             only.
        ─────────────────────────────────────────────────────────
-       C-a C-a            (other)           Toggle to the  win‐
-                                            dow  displayed pre‐
+       C-a C-a            (other)           Toggle  to the win‐
+                                            dow displayed  pre‐
                                             viously.  Note that
                                             this  binding   de‐
                                             faults  to the com‐
                                             mand      character
                                             typed twice, unless
                                             overridden.     For
-                                            instance,  if   you
-                                            use    the   option
-                                            -e]x, this  command
+                                            instance,   if  you
+                                            use   the    option
+                                            -e]x,  this command
                                             becomes ]].
        ─────────────────────────────────────────────────────────
-       C-a a              (meta)            Send   the  command
-                                            character (C-a)  to
-                                            window.  See escape
+       C-a a              (meta)            Send  the   command
+                                            character  (C-a) to
+                                            window. See  escape
                                             command.
        ─────────────────────────────────────────────────────────
-       C-a A              (title)           Allow the  user  to
+       C-a A              (title)           Allow  the  user to
                                             enter  a  name  for
                                             the current window.
        ─────────────────────────────────────────────────────────
-       C-a b,             (break)           Send  a  break   to
+       C-a b,             (break)           Send   a  break  to
        C-a C-b                              window.
        ─────────────────────────────────────────────────────────
        C-a B              (pow_break)       Reopen the terminal
@@ -395,8 +396,9 @@ DEFAULT KEY BINDINGS
        C-a f,             (flow)            Toggle flow on, off
        C-a C-f                              or auto.
        ─────────────────────────────────────────────────────────
+
        C-a F              (fit)             Resize  the  window
-                                            to  the current re‐
+                                            to the current  re‐
                                             gion size.
        ─────────────────────────────────────────────────────────
        C-a C-g            (vbell)           Toggles    screen's
@@ -422,7 +424,7 @@ DEFAULT KEY BINDINGS
        C-a C-l                              rent window.
        ─────────────────────────────────────────────────────────
        C-a L              (login)           Toggle this windows
-                                            login  slot. Avail‐
+                                            login slot.  Avail‐
                                             able only if screen
                                             is  configured   to
                                             update   the   utmp
@@ -437,15 +439,15 @@ DEFAULT KEY BINDINGS
                                             of the current win‐
                                             dow.
        ─────────────────────────────────────────────────────────
-       C-a space,         (next)            Switch to the  next
+       C-a space,         (next)            Switch  to the next
        C-a n,                               window.
        C-a C-n
        ─────────────────────────────────────────────────────────
        C-a N              (number)          Show   the   number
-                                            (and title) of  the
+                                            (and  title) of the
                                             current window.
        ─────────────────────────────────────────────────────────
-       C-a backspace,     (prev)            Switch  to the pre‐
+       C-a backspace,     (prev)            Switch to the  pre‐
        C-a C-h,                             vious window (oppo‐
        C-a p,                               site of C-a n).
        C-a C-p
@@ -453,13 +455,14 @@ DEFAULT KEY BINDINGS
        C-a q,             (xon)             Send a control-q to
        C-a C-q                              the current window.
        ─────────────────────────────────────────────────────────
-       C-a Q              (only)            Delete all  regions
+       C-a Q              (only)            Delete  all regions
                                             but   the   current
-                                            one.    See    also
-                                            split,  remove, fo‐
+                                            one.     See   also
+                                            split, remove,  fo‐
                                             cus.
        ─────────────────────────────────────────────────────────
-       C-a r,             (wrap)            Toggle the  current
+
+       C-a r,             (wrap)            Toggle  the current
        C-a C-r                              window's  line-wrap
                                             setting  (turn  the
                                             current    window's
@@ -471,11 +474,11 @@ DEFAULT KEY BINDINGS
        ─────────────────────────────────────────────────────────
        C-a S              (split)           Split  the  current
                                             region horizontally
-                                            into two new  ones.
-                                            See  also only, re‐
+                                            into  two new ones.
+                                            See also only,  re‐
                                             move, focus.
        ─────────────────────────────────────────────────────────
-       C-a t,             (time)            Show system  infor‐
+       C-a t,             (time)            Show  system infor‐
        C-a C-t                              mation.
        ─────────────────────────────────────────────────────────
        C-a v              (version)         Display the version
@@ -486,17 +489,17 @@ DEFAULT KEY BINDINGS
        C-a w,             (windows)         Show a list of win‐
        C-a C-w                              dow.
        ─────────────────────────────────────────────────────────
-       C-a W              (width)           Toggle       80/132
-                                            columns.
+       C-a W              (width)           Toggle  80/132 col‐
+                                            umns.
        ─────────────────────────────────────────────────────────
        C-a x or C-a C-x   (lockscreen)      Lock this terminal.
        ─────────────────────────────────────────────────────────
-       C-a X              (remove)          Kill   the  current
+       C-a X              (remove)          Kill  the   current
                                             region.   See  also
                                             split, only, focus.
        ─────────────────────────────────────────────────────────
        C-a z,             (suspend)         Suspend     screen.
-       C-a C-z                              Your  system   must
+       C-a C-z                              Your   system  must
                                             support   BSD-style
                                             job-control.
        ─────────────────────────────────────────────────────────
@@ -504,46 +507,47 @@ DEFAULT KEY BINDINGS
                                             terminal   to   its
                                             power-on values.
        ─────────────────────────────────────────────────────────
-       C-a .              (dumptermcap)     Write out a  .term‐
+       C-a .              (dumptermcap)     Write  out a .term‐
                                             cap file.
        ─────────────────────────────────────────────────────────
        C-a ?              (help)            Show key bindings.
        ─────────────────────────────────────────────────────────
-       C-a \              (quit)            Kill   all  windows
+       C-a \              (quit)            Kill  all   windows
                                             and       terminate
                                             screen.
        ─────────────────────────────────────────────────────────
-       C-a :              (colon)           Enter  command line
+       C-a :              (colon)           Enter command  line
                                             mode.
        ─────────────────────────────────────────────────────────
        C-a [,             (copy)            Enter  copy/scroll‐
        C-a C-[,                             back mode.
        C-a esc
        ─────────────────────────────────────────────────────────
-       C-a C-],           (paste .)         Write  the contents
+       C-a C-],           (paste .)         Write the  contents
        C-a ]                                of the paste buffer
                                             to the stdin  queue
                                             of the current win‐
                                             dow.
        ─────────────────────────────────────────────────────────
+
        C-a {,             (history)         Copy  and  paste  a
        C-a }                                previous  (command)
                                             line.
        ─────────────────────────────────────────────────────────
-       C-a >              (writebuf)        Write  paste buffer
+       C-a >              (writebuf)        Write paste  buffer
                                             to a file.
        ─────────────────────────────────────────────────────────
        C-a <              (readbuf)         Reads  the  screen-
-                                            exchange  file into
+                                            exchange file  into
                                             the paste buffer.
        ─────────────────────────────────────────────────────────
-       C-a =              (removebuf)       Removes  the   file
-                                            used  by  C-a < and
+       C-a =              (removebuf)       Removes   the  file
+                                            used by C-a  <  and
                                             C-a >.
        ─────────────────────────────────────────────────────────
-       C-a ,              (license)         Shows where  screen
+       C-a ,              (license)         Shows  where screen
                                             comes  from,  where
-                                            it went to and  why
+                                            it  went to and why
                                             you can use it.
        ─────────────────────────────────────────────────────────
        C-a _              (silence)         Start/stop monitor‐
@@ -555,46 +559,46 @@ DEFAULT KEY BINDINGS
                                             region   vertically
                                             into two new ones.
        ─────────────────────────────────────────────────────────
-       C-a *              (displays)        Show a  listing  of
+       C-a *              (displays)        Show  a  listing of
                                             all  currently  at‐
                                             tached displays.
        ─────────────────────────────────────────────────────────
 
 CUSTOMIZATION
-       The socket directory defaults either  to  $HOME/.screen  or  simply  to
-       /tmp/screens  or  preferably  to /run/screen chosen at compile-time. If
-       screen is installed setuid-root, then the administrator should  compile
-       screen  with  an adequate (not NFS mounted) socket directory. If screen
+       The  socket  directory  defaults  either  to $HOME/.screen or simply to
+       /tmp/screens or preferably to /run/screen chosen  at  compile-time.  If
+       screen  is installed setuid-root, then the administrator should compile
+       screen with an adequate (not NFS mounted) socket directory.  If  screen
        is not running setuid-root, the user can specify any mode 700 directory
        in the environment variable $SCREENDIR.
 
        When screen is invoked, it executes initialization  commands  from  the
        files  /etc/screenrc and defaults that can be overridden in the follow‐
        ing ways: for the global screenrc file screen searches for the environ‐
-       ment variable $SYSSCREENRC (this override feature may  be  disabled  at
-       compile-time).   The   user  specific  screenrc  file  is  searched  in
-       $SCREENRC, then $HOME/.screenrc.  The  command  line  option  -c  takes
+       ment  variable  $SYSSCREENRC  (this override feature may be disabled at
+       compile-time).  The  user  specific  screenrc  file  is   searched   in
+       $SCREENRC,  then  $HOME/.screenrc.   The  command  line option -c takes
        precedence over the above user screenrc files.
 
-       Commands  in  these  files  are  used to set options, bind functions to
-       keys, and to automatically establish one or more windows at the  begin‐
-       ning  of  your  screen session.  Commands are listed one per line, with
+       Commands in these files are used to  set  options,  bind  functions  to
+       keys,  and to automatically establish one or more windows at the begin‐
+       ning of your screen session.  Commands are listed one  per  line,  with
        empty lines being ignored.  A command's arguments are separated by tabs
        or spaces, and may be surrounded by single or  double  quotes.   A  `#'
        turns  the rest of the line into a comment, except in quotes.  Unintel‐
        ligible lines are warned about and ignored.  Commands may contain  ref‐
        erences  to environment variables. The syntax is the shell-like "$VAR "
        or "${VAR}". Note that this causes incompatibility with previous screen
-       versions, as now the '$'-character has to be protected with '\'  if  no
-       variable  substitution shall be performed. A string in single-quotes is
+       versions,  as  now the '$'-character has to be protected with '\' if no
+       variable substitution shall be performed. A string in single-quotes  is
        also protected from variable substitution.
 
-       Two configuration files are shipped as examples with your  screen  dis‐
-       tribution:  etc/screenrc  and etc/etcscreenrc. They contain a number of
+       Two  configuration  files are shipped as examples with your screen dis‐
+       tribution: etc/screenrc and etc/etcscreenrc. They contain a  number  of
        useful examples for various commands.
 
-       Customization can also be done 'on-line'. To  enter  the  command  mode
-       type  `C-a :'. Note that commands starting with def change default val‐
+       Customization  can  also  be  done 'on-line'. To enter the command mode
+       type `C-a :'. Note that commands starting with def change default  val‐
        ues, while others change current settings.
 
        The following commands are available:
@@ -603,7 +607,7 @@ CUSTOMIZATION
 
        addacl usernames
 
-       Enable users to fully access this screen session. Usernames can be  one
+       Enable  users to fully access this screen session. Usernames can be one
        user or a comma separated list of users. This command enables to attach
        to  the screen session and performs the equivalent of `aclchg usernames
        +rwx "#?"'.  executed. To add a user with restricted  access,  use  the
@@ -616,8 +620,8 @@ CUSTOMIZATION
        chacl usernames permbits list
 
        Change permissions for a comma separated list of users. Permission bits
-       are  represented  as `r', `w' and `x'. Prefixing `+' grants the permis‐
-       sion, `-' removes it. The third parameter is a comma separated list  of
+       are represented as `r', `w' and `x'. Prefixing `+' grants  the  permis‐
+       sion,  `-' removes it. The third parameter is a comma separated list of
        commands and/or windows (specified either by number or title). The spe‐
        cial  list `#' refers to all windows, `?' to all commands. if usernames
        consists of a single `*', all known users are affected.
@@ -627,7 +631,7 @@ CUSTOMIZATION
        other user obtains a writelock for this window.  Other  bits  are  cur‐
        rently  ignored.  To withdraw the writelock from another user in window
        2: `aclchg username -w+w 2'.  To allow read-only access to the session:
-       `aclchg username -w "#"'. As soon as a user's name is known  to  screen
+       `aclchg  username  -w "#"'. As soon as a user's name is known to screen
        he can attach to the session and (per default) has full permissions for
        all  command  and  windows.  Execution permission for the acl commands,
        `at' and others should also be removed or the user may be able  to  re‐
@@ -645,8 +649,8 @@ CUSTOMIZATION
 
        Creates  groups  of  users that share common access rights. The name of
        the group is the username of the group leader. Each member of the group
-       inherits the permissions that are granted to  the  group  leader.  That
-       means,  if  a user fails an access check, another check is made for the
+       inherits  the  permissions  that  are granted to the group leader. That
+       means, if a user fails an access check, another check is made  for  the
        group leader.  A user is removed from all groups the special value none
        is used for groupname.  If the second parameter is omitted  all  groups
        the user is in are listed.
@@ -656,70 +660,70 @@ CUSTOMIZATION
        umask [[ users ] +bits | [ users ] -bits... ]
 
        This specifies the access other users have to windows that will be cre‐
-       ated  by  the  caller  of the command.  Users may be no, one or a comma
+       ated by the caller of the command.  Users may be no,  one  or  a  comma
        separated list of known usernames. If no users are specified, a list of
        all currently known users is assumed.  Bits is any combination  of  ac‐
        cess  control bits allowed defined with the aclchg command. The special
        username ? predefines the access that  not  yet  known  users  will  be
        granted  to  any  window initially.  The special username ?? predefines
        the access that not yet known users are granted to any command.  Rights
-       of the special username nobody cannot be changed (see the su  command).
+       of  the special username nobody cannot be changed (see the su command).
        `Umask' is a synonym to `aclumask'.
 
        activity message
 
-       When  any  activity  occurs  in a background window that is being moni‐
+       When any activity occurs in a background window  that  is  being  moni‐
        tored, screen displays a notification in the message line.  The notifi‐
        cation message can be re-defined by  means  of  the  activity  command.
        Each occurrence of `%' in message is replaced by the number of the win‐
-       dow  in which activity has occurred, and each occurrence of `^G' is re‐
-       placed by the definition for bell in your termcap (usually  an  audible
+       dow in which activity has occurred, and each occurrence of `^G' is  re‐
+       placed  by  the definition for bell in your termcap (usually an audible
        bell).  The default message is
 
-                   'Activity in window %n'
+                       'Activity in window %n'
 
-       Note  that monitoring is off for all windows by default, but can be al‐
+       Note that monitoring is off for all windows by default, but can be  al‐
        tered by use of the monitor command (C-a M).
 
        allpartial [ on | off ]
 
-       If set to on, only the current  cursor  line  is  refreshed  on  window
-       change.   This  affects  all  windows  and  is useful for slow terminal
-       lines. The previous setting of full/partial refresh for each window  is
-       restored  with  allpartial off.  This is a global flag that immediately
-       takes effect on all windows overriding the partial  settings.  It  does
+       If  set  to  on,  only  the  current cursor line is refreshed on window
+       change.  This affects all windows  and  is  useful  for  slow  terminal
+       lines.  The previous setting of full/partial refresh for each window is
+       restored with allpartial off.  This is a global flag  that  immediately
+       takes  effect  on  all windows overriding the partial settings. It does
        not change the default redraw behavior of newly created windows.
 
        altscreen [ on | off ]
 
-       If  set  to on, "alternate screen" support is enabled in virtual termi‐
+       If set to on, "alternate screen" support is enabled in  virtual  termi‐
        nals, just like in xterm.  Initial setting is `off'.
 
        at [identifier][#|*|%] command [args ... ]
 
-       Execute a command at other displays or windows as if it  had  been  en‐
-       tered  there.  At changes the context (the `current window' or `current
-       display' setting) of the command. If the first  parameter  describes  a
+       Execute  a  command  at other displays or windows as if it had been en‐
+       tered there.  At changes the context (the `current window' or  `current
+       display'  setting)  of  the command. If the first parameter describes a
        non-unique context, the command will be executed multiple times. If the
        first parameter is of the form `identifier*' then identifier is matched
-       against  user  names.  The command is executed once for each display of
-       the selected user(s). If the first parameter is of  the  form  `identi‐
+       against user names.  The command is executed once for each  display  of
+       the  selected  user(s).  If the first parameter is of the form `identi‐
        fier%' identifier is matched against displays. Displays are named after
        the  ttys  they attach. The prefix `/dev/' or `/dev/tty' may be omitted
        from the identifier.  If identifier has a `#' or nothing appended it is
-       matched against window numbers and titles. Omitting  an  identifier  in
-       front  of  the `#', `*' or `%'-character selects all users, displays or
-       windows because a prefix-match is performed. Note that on the  affected
-       display(s)  a  short message will describe what happened. Permission is
-       checked for initiator of the at command, not for the owners of the  af‐
-       fected  display(s).  Note that the '#' character works as a comment in‐
+       matched  against  window  numbers and titles. Omitting an identifier in
+       front of the `#', `*' or `%'-character selects all users,  displays  or
+       windows  because a prefix-match is performed. Note that on the affected
+       display(s) a short message will describe what happened.  Permission  is
+       checked  for initiator of the at command, not for the owners of the af‐
+       fected display(s).  Note that the '#' character works as a comment  in‐
        troducer when it is preceded by whitespace. This can be escaped by pre‐
        fixing a '\'.  Permission is checked for the initiator of the  at  com‐
        mand, not for the owners of the affected display(s).
 
        Caveat: When matching against windows, the command is executed at least
-       once  per window. Commands that change the internal arrangement of win‐
-       dows (like other) may be called again. In shared  windows  the  command
+       once per window. Commands that change the internal arrangement of  win‐
+       dows  (like  other)  may be called again. In shared windows the command
        will be repeated for each attached display. Beware, when issuing toggle
        commands  like login!  Some commands (e.g. process) require that a dis‐
        play is associated with the target windows.   These  commands  may  not
@@ -728,11 +732,11 @@ CUSTOMIZATION
        attrcolor attrib [attribute/color-modifier]
 
        This  command can be used to highlight attributes by changing the color
-       of the text. If the attribute attrib  is  in  use,  the  specified  at‐
-       tribute/color  modifier  is  also applied. If no modifier is given, the
-       current one is deleted. See the STRING ESCAPES chapter for  the  syntax
-       of the modifier. Screen understands two pseudo-attributes, i stands for
-       high-intensity  foreground  color  and  I for high-intensity background
+       of the text. If the attribute attrib is in use,  the  specified  attri‐
+       bute/color  modifier is also applied. If no modifier is given, the cur‐
+       rent one is deleted. See the STRING ESCAPES chapter for the  syntax  of
+       the  modifier.  Screen  understands two pseudo-attributes, i stands for
+       high-intensity foreground color and  I  for  high-intensity  background
        color.
 
        Examples:
@@ -747,7 +751,7 @@ CUSTOMIZATION
 
               attrcolor b ".I"
 
-       Use bright colors for bold text. Most terminal emulators  do  this  al‐
+       Use  bright  colors  for bold text. Most terminal emulators do this al‐
        ready.
 
               attrcolor i "+b"
@@ -756,27 +760,27 @@ CUSTOMIZATION
 
        autodetach [ on | off ]
 
-       Sets  whether screen will automatically detach upon hangup, which saves
-       all your running programs until they are resumed with a screen -r  com‐
-       mand.   When  turned off, a hangup signal will terminate screen and all
+       Sets whether screen will automatically detach upon hangup, which  saves
+       all  your running programs until they are resumed with a screen -r com‐
+       mand.  When turned off, a hangup signal will terminate screen  and  all
        the processes it contains. Autodetach is on by default.
 
        autonuke [ on | off ]
 
-       Sets whether a clear screen sequence should nuke all  the  output  that
+       Sets  whether  a  clear screen sequence should nuke all the output that
        has not been written to the terminal. See also obuflimit.
 
        backtick id lifespan autorefresh cmd args...
 
        backtick id
 
-       Program  the  backtick command with the numerical id id.  The output of
-       such a command is used for substitution of the %`  string  escape.  The
-       specified  lifespan  is  the number of seconds the output is considered
-       valid. After this time, the command is run  again  if  a  corresponding
-       string  escape  is  encountered.  The autorefresh parameter triggers an
-       automatic refresh for caption and hardstatus strings after  the  speci‐
-       fied  number  of seconds. Only the last line of output is used for sub‐
+       Program the backtick command with the numerical id id.  The  output  of
+       such  a  command  is used for substitution of the %` string escape. The
+       specified lifespan is the number of seconds the  output  is  considered
+       valid.  After  this  time,  the command is run again if a corresponding
+       string escape is encountered.  The autorefresh  parameter  triggers  an
+       automatic  refresh  for caption and hardstatus strings after the speci‐
+       fied number of seconds. Only the last line of output is used  for  sub‐
        stitution.
 
        If both the lifespan and the autorefresh parameters are zero, the back‐
@@ -791,8 +795,8 @@ CUSTOMIZATION
        bce [ on | off ]
 
        Change background-color-erase setting. If bce is set to on, all charac‐
-       ters cleared by an erase/insert/scroll/clear  operation  will  be  dis‐
-       played  in  the  current  background color. Otherwise the default back‐
+       ters  cleared  by  an  erase/insert/scroll/clear operation will be dis‐
+       played in the current background color.  Otherwise  the  default  back‐
        ground color is used.
 
        bell_msg [message]
@@ -804,9 +808,9 @@ CUSTOMIZATION
        currence of `^G' is replaced by the definition for bell in your termcap
        (usually an audible bell).  The default message is
 
-                   'Bell in window %n'
+                       'Bell in window %n'
 
-       An  empty  message  can be supplied to the bell_msg command to suppress
+       An empty message can be supplied to the bell_msg  command  to  suppress
        output of a message line (bell_msg "").  Without parameter, the current
        message is shown.
 
@@ -826,18 +830,18 @@ CUSTOMIZATION
        tion.
 
        If a command class is specified via the -c option, the key is bound for
-       the  specified class. Use the command command to activate a class. Com‐
+       the specified class. Use the command command to activate a class.  Com‐
        mand classes can be used to create multiple command keys or multi-char‐
        acter bindings.
 
        Some examples:
 
-                   bind ' ' windows
-                   bind ^k
-                   bind k
-                   bind K kill
-                   bind ^f screen telnet foobar
-                   bind \033 screen -ln -t root -h 1000 9 su
+                       bind ' ' windows
+                       bind ^k
+                       bind k
+                       bind K kill
+                       bind ^f screen telnet foobar
+                       bind \033 screen -ln -t root -h 1000 9 su
 
        would bind the space key to the command that displays a list of windows
        (so that the command usually invoked by C-a C-w would also be available
@@ -848,17 +852,17 @@ CUSTOMIZATION
        with a.k.a. root in slot #9, with a superuser shell  and  a  scrollback
        buffer of 1000 lines.
 
-                   bind -c demo1 0 select 10
-                   bind -c demo1 1 select 11
-                   bind -c demo1 2 select 12
-                   bindkey "^B" command -c demo1
+                       bind -c demo1 0 select 10
+                       bind -c demo1 1 select 11
+                       bind -c demo1 2 select 12
+                       bindkey "^B" command -c demo1
 
        makes C-b 0 select window 10, C-b 1 window 11, etc.
 
-                   bind -c demo2 0 select 10
-                   bind -c demo2 1 select 11
-                   bind -c demo2 2 select 12
-                   bind - command -c demo2
+                       bind -c demo2 0 select 10
+                       bind -c demo2 1 select 11
+                       bind -c demo2 2 select 12
+                       bind - command -c demo2
 
        makes C-a - 0 select window 10, C-a - 1 window 11, etc.
 
@@ -867,8 +871,8 @@ CUSTOMIZATION
        This  command manages screen's input translation tables. Every entry in
        one of the tables tells screen how to react if a  certain  sequence  of
        characters is encountered. There are three tables: one that should con‐
-       tain  actions  programmed by the user, one for the default actions used
-       for terminal emulation and one for screen's  copy  mode  to  do  cursor
+       tain actions programmed by the user, one for the default  actions  used
+       for  terminal  emulation  and  one  for screen's copy mode to do cursor
        movement. See section INPUT TRANSLATION for a list of default key bind‐
        ings.
 
@@ -878,22 +882,22 @@ CUSTOMIZATION
        an action is bound. This can either be a fixed string or a termcap key‐
        board capability name (selectable with the -k option).
 
-       Some keys on a VT100 terminal can send a different string  if  applica‐
-       tion  mode  is turned on (e.g the cursor keys).  Such keys have two en‐
+       Some  keys  on a VT100 terminal can send a different string if applica‐
+       tion mode is turned on (e.g the cursor keys).  Such keys have  two  en‐
        tries in the translation table. You can select the application mode en‐
        try by specifying the -a option.
 
        The -t option tells screen not to do inter-character timing. One cannot
        turn off the timing if a termcap capability is used.
 
-       Cmd can be any of screen's commands with an arbitrary number  of  args.
+       Cmd  can  be any of screen's commands with an arbitrary number of args.
        If cmd is omitted the key-binding is removed from the table.
 
        Here are some examples of keyboard bindings:
 
                bindkey -d
 
-       Show  all of the default key bindings. The application mode entries are
+       Show all of the default key bindings. The application mode entries  are
        marked with [A].
 
                bindkey -k k1 select 1
@@ -919,7 +923,7 @@ CUSTOMIZATION
        break [duration]
 
        Send a break signal for duration*0.25 seconds to this window.  For non-
-       Posix  systems  the  time  interval  may be rounded up to full seconds.
+       Posix systems the time interval may be  rounded  up  to  full  seconds.
        Most useful if a character device is attached to the window rather than
        a shell process (See also chapter WINDOW TYPES). The  maximum  duration
        of a break signal is limited to 15 seconds.
@@ -936,13 +940,13 @@ CUSTOMIZATION
        blankerprg [program-args]
 
        Defines a blanker program. Disables the blanker program if an empty ar‐
-       gument is given. Shows the currently set blanker program  if  no  argu‐
+       gument  is  given.  Shows the currently set blanker program if no argu‐
        ments are given.
 
        breaktype [tcsendbreak|TIOCSBRK|TCSBRK]
 
-       Choose  one  of  the available methods of generating a break signal for
-       terminal devices. This command should affect the current  window  only.
+       Choose one of the available methods of generating a  break  signal  for
+       terminal  devices.  This command should affect the current window only.
        But it still behaves identical to defbreaktype. This will be changed in
        the  future.   Calling  breaktype  with no parameter displays the break
        method for the current window.
@@ -950,14 +954,14 @@ CUSTOMIZATION
        bufferfile [exchange-file]
 
        Change the filename used for reading and writing with the paste buffer.
-       If the optional argument to the bufferfile command is omitted, the  de‐
+       If  the optional argument to the bufferfile command is omitted, the de‐
        fault setting (/tmp/screen-exchange) is reactivated.  The following ex‐
        ample will paste the system's password file into the screen window (us‐
        ing the paste buffer, where a copy remains):
 
-                   C-a : bufferfile /etc/passwd
-                   C-a < C-a ]
-                   C-a : bufferfile
+                       C-a : bufferfile /etc/passwd
+                       C-a < C-a ]
+                       C-a : bufferfile
 
        bumpleft
 
@@ -969,7 +973,7 @@ CUSTOMIZATION
 
        c1 [ on | off ]
 
-       Change  c1 code processing. C1 on tells screen to treat the input char‐
+       Change c1 code processing. C1 on tells screen to treat the input  char‐
        acters between 128 and 159 as control functions.  Such an 8-bit code is
        normally the same as ESC followed by the corresponding 7-bit code.  The
        default  setting  is  to  process  c1 codes and can be changed with the
@@ -1010,15 +1014,15 @@ CUSTOMIZATION
 
        Change the current directory of screen to the specified  directory  or,
        if called without an argument, to your home directory (the value of the
-       environment  variable $HOME).  All windows that are created by means of
-       the screen command from within .screenrc or by means of  C-a  :  screen
-       ...   or  C-a  c  use this as their default directory.  Without a chdir
+       environment variable $HOME).  All windows that are created by means  of
+       the  screen  command  from within .screenrc or by means of C-a : screen
+       ...  or C-a c use this as their default  directory.   Without  a  chdir
        command, this would be the directory from which screen was invoked.
 
-       Hardcopy and log files are always written to the window's  default  di‐
-       rectory,  not  the current directory of the process running in the win‐
-       dow.  You can use this command multiple  times  in  your  .screenrc  to
-       start  various  windows  in different default directories, but the last
+       Hardcopy  and  log files are always written to the window's default di‐
+       rectory, not the current directory of the process running in  the  win‐
+       dow.   You  can  use  this  command multiple times in your .screenrc to
+       start various windows in different default directories,  but  the  last
        chdir value will affect all the windows you create interactively.
 
        cjkwidth [ on | off ]
@@ -1038,7 +1042,7 @@ CUSTOMIZATION
        Allows you to enter .screenrc command lines. Useful for on-the-fly mod‐
        ification of key bindings, specific window creation and  changing  set‐
        tings. Note that the set keyword no longer exists! Usually commands af‐
-       fect  the  current  window rather than default settings for future win‐
+       fect the current window rather than default settings  for  future  win‐
        dows. Change defaults with commands starting with 'def...'.
 
        If you consider this as the `Ex command mode' of screen, you may regard
@@ -1052,12 +1056,12 @@ CUSTOMIZATION
 
        compacthist [ on | off ]
 
-       This  tells  screen  whether  to  suppress  trailing  blank  lines when
+       This tells  screen  whether  to  suppress  trailing  blank  lines  when
        scrolling up text into the history buffer.
 
        console [ on | off ]
 
-       Grabs or un-grabs the machines console output to a window.  Note:  Only
+       Grabs  or un-grabs the machines console output to a window.  Note: Only
        the owner of /dev/console can grab the console output.  This command is
        only available if the machine supports the ioctl TIOCCONS.
 
@@ -1075,6 +1079,7 @@ CUSTOMIZATION
        j, C-n,        move the cursor down.
        down arrow
        ────────────────────────────────────────────────────────────────
+
        k, C-p,        move the cursor up.
        up arrow
        ────────────────────────────────────────────────────────────────
@@ -1127,24 +1132,24 @@ CUSTOMIZATION
 
        Some keys are defined to do mark and replace operations.
 
-       The  copy  range  is  specified  by setting two marks. The text between
+       The copy range is specified by setting  two  marks.  The  text  between
        these marks will be highlighted. Press:
 
-              space or enter to set the first or second mark respectively.  If
-              mousetrack  is  set  to  `on',  marks can also be set using left
+              space  or enter to set the first or second mark respectively. If
+              mousetrack is set to `on', marks can  also  be  set  using  left
               mouse click.
 
-              Y and y used to mark one whole line or to  mark  from  start  of
+              Y  and  y  used  to mark one whole line or to mark from start of
               line.
 
               W marks exactly one word.
 
-       Any  of  these  commands  can be prefixed with a repeat count number by
+       Any of these commands can be prefixed with a  repeat  count  number  by
        pressing digits
 
               0..9 which is taken as a repeat count.
 
-       Example: C-a C-[ H 10 j 5 Y will copy lines 11 to  15  into  the  paste
+       Example:  C-a  C-[  H  10 j 5 Y will copy lines 11 to 15 into the paste
        buffer.
 
        The following search keys are defined:
@@ -1161,18 +1166,18 @@ CUSTOMIZATION
 
               N Find previous search pattern.
 
-       There  are  however some keys that act differently than in vi.  Vi does
-       not allow one to yank rectangular blocks  of  text,  but  screen  does.
-       Press:  c  or C to set the left or right margin respectively. If no re‐
+       There are however some keys that act differently than in vi.   Vi  does
+       not  allow  one  to  yank  rectangular blocks of text, but screen does.
+       Press: c or C to set the left or right margin respectively. If  no  re‐
        peat count is given, both default to the current cursor position.
 
        Example: Try this on a rather full text screen:
 
               C-a [ M 20 l SPACE c 10 l 5 j C SPACE.
 
-       This moves one to the middle line of the screen, moves  in  20  columns
-       left,  marks  the  beginning of the paste buffer, sets the left column,
-       moves 5 columns down, sets the right column, and then marks the end  of
+       This  moves  one  to the middle line of the screen, moves in 20 columns
+       left, marks the beginning of the paste buffer, sets  the  left  column,
+       moves  5 columns down, sets the right column, and then marks the end of
        the paste buffer. Now try:
 
               C-a [ M 20 l SPACE 10 l 5 j SPACE
@@ -1194,15 +1199,15 @@ CUSTOMIZATION
        A toggles in append mode and sets a (second) mark.
 
        > sets the (second) mark and writes the contents of the paste buffer to
-       the screen-exchange file (/tmp/screen-exchange per default) once  copy-
+       the  screen-exchange file (/tmp/screen-exchange per default) once copy-
        mode is finished.
 
-       This  example  demonstrates  how to dump the whole scrollback buffer to
+       This example demonstrates how to dump the whole  scrollback  buffer  to
        that file: C-A [ g SPACE G $ >.
 
        C-g gives information about the current line and column.
 
-       x or o exchanges the first mark and the current  cursor  position.  You
+       x  or  o  exchanges the first mark and the current cursor position. You
        can use this to adjust an already placed mark.
 
        C-l ('el') will redraw the screen.
@@ -1217,9 +1222,9 @@ CUSTOMIZATION
 
        crlf [ on | off ]
 
-       This  affects  the copying of text regions with the `C-a [' command. If
-       it is set to `on', lines will be separated by  the  two  character  se‐
-       quence  `CR'  -  `LF'.  Otherwise (default) only `LF' is used.  When no
+       This affects the copying of text regions with the `C-a ['  command.  If
+       it  is  set  to  `on', lines will be separated by the two character se‐
+       quence `CR' - `LF'.  Otherwise (default) only `LF' is  used.   When  no
        parameter is given, the state is toggled.
 
        debug [ on | off ]
@@ -1249,18 +1254,18 @@ CUSTOMIZATION
 
        defbreaktype [tcsendbreak|TIOCSBRK|TCSBRK]
 
-       Choose  one  of  the available methods of generating a break signal for
-       terminal devices. The preferred methods are tcsendbreak  and  TIOCSBRK.
-       The  third, TCSBRK, blocks the complete screen session for the duration
-       of the break, but it may be the only way to generate long breaks.   Tc‐
-       sendbreak  and  TIOCSBRK may or may not produce long breaks with spikes
-       (e.g. 4 per second). This is not only system-dependent, this also  dif‐
-       fers  between serial board drivers.  Calling defbreaktype with no para‐
-       meter displays the current setting.
+       Choose one of the available methods of generating a  break  signal  for
+       terminal  devices.  The preferred methods are tcsendbreak and TIOCSBRK.
+       The third, TCSBRK, blocks the complete screen session for the  duration
+       of  the break, but it may be the only way to generate long breaks.  Tc‐
+       sendbreak and TIOCSBRK may or may not produce long breaks  with  spikes
+       (e.g.  4 per second). This is not only system-dependent, this also dif‐
+       fers between serial board drivers.  Calling defbreaktype with no param‐
+       eter displays the current setting.
 
        defcharset [set]
 
-       Like the charset command except that the default setting for  new  win‐
+       Like  the  charset command except that the default setting for new win‐
        dows is changed. Shows current default if called without argument.
 
        defdynamictitle [ on | off ]
@@ -1271,9 +1276,9 @@ CUSTOMIZATION
 
        defescape xy
 
-       Set  the  default  command characters. This is equivalent to the escape
-       except that it is useful multiuser sessions only. In a  multiuser  ses‐
-       sion  escape  changes  the command character of the calling user, where
+       Set the default command characters. This is equivalent  to  the  escape
+       except  that  it is useful multiuser sessions only. In a multiuser ses‐
+       sion escape changes the command character of the  calling  user,  where
        defescape changes the default command characters for users that will be
        added later.
 
@@ -1295,13 +1300,13 @@ CUSTOMIZATION
        the  window  number  or title or the like.  Status may contain the same
        directives as in the window messages, but the directive escape  charac‐
        ter is '^E' (octal 005) instead of '%'.  This was done to make a misin‐
-       terpretation  of program generated hardstatus lines impossible.  If the
-       parameter status is omitted, the current default string  is  displayed.
+       terpretation of program generated hardstatus lines impossible.  If  the
+       parameter  status  is omitted, the current default string is displayed.
        Per default the hardstatus line of new windows is empty.
 
        defencoding enc
 
-       Same  as  the  encoding command except that the default setting for new
+       Same as the encoding command except that the default  setting  for  new
        windows is changed. Initial setting is the encoding taken from the ter‐
        minal.
 
@@ -1312,7 +1317,7 @@ CUSTOMIZATION
 
        deflogin [ on | off ]
 
-       Same as the login command except that the default setting for new  win‐
+       Same  as the login command except that the default setting for new win‐
        dows is changed. This is initialized with `on' as distributed (see con‐
        fig.h.in).
 
@@ -1323,29 +1328,29 @@ CUSTOMIZATION
 
        defmonitor [ on | off]
 
-       Same  as  the  monitor  command except that the default setting for new
+       Same as the monitor command except that the  default  setting  for  new
        windows is changed. Initial setting is `off'.
 
        defmousetrack [ on | off ]
 
-       Same as the mousetrack command except that the default setting for  new
+       Same  as the mousetrack command except that the default setting for new
        windows is changed. Initial setting is `off'.
 
        defnonblock [ on | off | numsecs]
 
-       Same  as  the nonblock command except that the default setting for dis‐
+       Same as the nonblock command except that the default setting  for  dis‐
        plays is changed. Initial setting is `off'.
 
        defobuflimit limit
 
-       Same as the obuflimit command except that the default setting  for  new
-       displays  is  changed. Initial setting is 256 bytes.  Note that you can
-       use the special 'OL' terminal capability if you want to have  a  depen‐
+       Same  as  the obuflimit command except that the default setting for new
+       displays is changed. Initial setting is 256 bytes.  Note that  you  can
+       use  the  special 'OL' terminal capability if you want to have a depen‐
        dency on the terminal type.
 
        defscrollback num
 
-       Same  as the scrollback command except that the default setting for new
+       Same as the scrollback command except that the default setting for  new
        windows is changed. Initial setting is 100.
 
        defshell command
@@ -1354,17 +1359,17 @@ CUSTOMIZATION
 
        defsilence [ on | off ]
 
-       Same as the silence command except that the  default  setting  for  new
+       Same  as  the  silence  command except that the default setting for new
        windows is changed. Initial setting is `off'.
 
        defslowpaste msec
 
-       Same  as  the slowpaste command except that the default setting for new
+       Same as the slowpaste command except that the default setting  for  new
        windows is changed. Initial setting is 0 milliseconds, meaning `off'.
 
        defutf8 [ on | off ]
 
-       Same as the utf8 command except that the default setting for  new  win‐
+       Same  as  the utf8 command except that the default setting for new win‐
        dows is changed. Initial setting is `on' if screen was started with -U,
        otherwise `off'.
 
@@ -1394,7 +1399,7 @@ CUSTOMIZATION
 
        displays
 
-       Shows a tabular listing of  all  currently  connected  user  front-ends
+       Shows  a  tabular  listing  of  all currently connected user front-ends
        (displays).  This is most useful for multiuser sessions.  The following
        keys can be used in displays list:
 
@@ -1450,22 +1455,22 @@ CUSTOMIZATION
               (H) Whether the window is shared
 
               (I) Window permissions. Made up of three characters.
-              ┌─────────────────────────────────────────────────────────┐
-              │              Window permissions indicators              │
-              ├──────────────────┬──────────────────┬───────────────────┤
-              │  1st character   │  2nd character   │   3rd character   │
-              ├─────┬────────────┼─────┬────────────┼─────┬─────────────┤
-              │ -   │no read     │ -   │no write    │ -   │no execute   │
-              ├─────┼────────────┼─────┼────────────┼─────┼─────────────┤
-              │ r   │read        │ w   │write       │ x   │execute      │
-              ├─────┼────────────┼─────┼────────────┼─────┼─────────────┤
-              │     │            │ W   │own wlock   │     │             │
-              ├─────┴────────────┴─────┴────────────┴─────┴─────────────┤
-              │ Indicators of permissions suppressed by a foreign wlock │
-              ├─────┬────────────┬─────┬────────────┬─────┬─────────────┤
-              │ R   │read only   │ .   │no write    │     │             │
-              └─────┴────────────┴─────┴────────────┴─────┴─────────────┘
 
+              ┌────────────────────────────────────────────────────────┐
+              │             Window permissions indicators              │
+              ├─────────────────┬──────────────────┬───────────────────┤
+              │ 1st character   │  2nd character   │   3rd character   │
+              ├────┬────────────┼─────┬────────────┼─────┬─────────────┤
+              │-   │no read     │ -   │no write    │ -   │no execute   │
+              ├────┼────────────┼─────┼────────────┼─────┼─────────────┤
+              │r   │read        │ w   │write       │ x   │execute      │
+              ├────┼────────────┼─────┼────────────┼─────┼─────────────┤
+              │    │            │ W   │own wlock   │     │             │
+              ├────┴────────────┴─────┴────────────┴─────┴─────────────┤
+              │Indicators of permissions suppressed by a foreign wlock │
+              ├────┬────────────┬─────┬────────────┬─────┬─────────────┤
+              │R   │read only   │ .   │no write    │     │             │
+              └────┴────────────┴─────┴────────────┴─────┴─────────────┘
               displays needs a region size of at least 10 characters wide  and
               5 characters high in order to display.
 
@@ -1478,7 +1483,7 @@ CUSTOMIZATION
        is a 0 (zero), screen will treat the following characters (up to three)
        as an octal number instead.  The optional argument preset is treated as
        user input, thus one can create an umlaut key.  For example the command
-       "bindkey  ^K  digraph  '"'" enables the user to generate an a-umlaut by
+       "bindkey ^K digraph '"'" enables the user to generate  an  a-umlaut  by
        typing CTRL-K a.  When a non-zero unicode-value is specified, a new di‐
        graph is created with the specified preset. The digraph is unset  if  a
        zero value is provided for the unicode-value.
@@ -1486,7 +1491,7 @@ CUSTOMIZATION
        dumptermcap
 
        Write the termcap entry for the virtual terminal optimized for the cur‐
-       rently  active  window to the file .termcap in the user's $HOME/.screen
+       rently active window to the file .termcap in the  user's  $HOME/.screen
        directory (or wherever screen stores its sockets. See the FILES section
        below).  This termcap entry is identical to the value of  the  environ‐
        ment  variable  $TERMCAP  that is set up by screen for each window. For
@@ -1501,7 +1506,7 @@ CUSTOMIZATION
 
        echo [-n] message
 
-       The echo command may be used to annoy screen users with a  'message  of
+       The  echo  command may be used to annoy screen users with a 'message of
        the day'. Typically installed in a global /etc/screenrc.  The option -n
        may  be  used to suppress the line feed.  See also sleep.  Echo is also
        useful for online checking of environment variables.
@@ -1510,7 +1515,7 @@ CUSTOMIZATION
 
        Tell screen how to interpret the input/output. The first argument  sets
        the encoding of the current window. Each window can emulate a different
-       encoding.  The optional second parameter overwrites the encoding of the
+       encoding. The optional second parameter overwrites the encoding of  the
        connected terminal. It should never be needed as screen uses the locale
        setting to detect the encoding.  There is also a way to select a termi‐
        nal encoding depending on the terminal type by using the KJ termcap en‐
@@ -1528,9 +1533,9 @@ CUSTOMIZATION
 
        Set the command character to x and the character generating  a  literal
        command character (by triggering the meta command) to y (similar to the
-       -e  option).  Each argument is either a single character, a two-charac‐
-       ter sequence of the form ^x (meaning C-x), a backslash followed  by  an
-       octal  number  (specifying the ASCII code of the character), or a back‐
+       -e option).  Each argument is either a single character, a  two-charac‐
+       ter  sequence  of the form ^x (meaning C-x), a backslash followed by an
+       octal number (specifying the ASCII code of the character), or  a  back‐
        slash followed by a second character, such as \^ or \\.  The default is
        ^Aa.
 
@@ -1542,33 +1547,33 @@ CUSTOMIZATION
 
        Run a unix subprocess (specified by an executable path  newcommand  and
        its optional arguments) in the current window. The flow of data between
-       newcommands  stdin/stdout/stderr, the process originally started in the
-       window (let us call it "application-process") and screen  itself  (win‐
-       dow)  is controlled by the file descriptor pattern fdpat.  This pattern
-       is basically a three character sequence representing stdin, stdout  and
+       newcommands stdin/stdout/stderr, the process originally started in  the
+       window  (let  us call it "application-process") and screen itself (win‐
+       dow) is controlled by the file descriptor pattern fdpat.  This  pattern
+       is  basically a three character sequence representing stdin, stdout and
        stderr of newcommand. A dot (.) connects the file descriptor to screen.
        An  exclamation  mark (!) causes the file descriptor to be connected to
        the application-process. A colon (:) combines both.  User input will go
-       to newcommand unless newcommand receives the application-process'  out‐
-       put  (fdpats  first  character  is  `!' or `:') or a pipe symbol (|) is
+       to  newcommand unless newcommand receives the application-process' out‐
+       put (fdpats first character is `!' or `:') or  a  pipe  symbol  (|)  is
        added (as a fourth character) to the end of fdpat.
 
-       Invoking `exec' without arguments shows name and arguments of the  cur‐
-       rently  running  subprocess  in this window. Only one subprocess a time
+       Invoking  `exec' without arguments shows name and arguments of the cur‐
+       rently running subprocess in this window. Only one  subprocess  a  time
        can be running in each window.
 
-       When a subprocess is running the `kill' command will affect it  instead
+       When  a subprocess is running the `kill' command will affect it instead
        of the windows process.
 
-       Refer  to  the postscript file `doc/fdpat.ps' for a confusing illustra‐
-       tion of all 21 possible combinations. Each  drawing  shows  the  digits
-       2,1,0  representing  the  three file descriptors of newcommand. The box
-       marked `W' is the usual pty that has  the  application-process  on  its
-       slave  side.   The  box  marked  `P'  is the secondary pty that now has
+       Refer to the postscript file `doc/fdpat.ps' for a  confusing  illustra‐
+       tion  of  all  21  possible combinations. Each drawing shows the digits
+       2,1,0 representing the three file descriptors of  newcommand.  The  box
+       marked  `W'  is  the  usual pty that has the application-process on its
+       slave side.  The box marked `P' is  the  secondary  pty  that  now  has
        screen at its master side.
 
-       Abbreviations: Whitespace between the word `exec'  and  fdpat  and  the
-       command  can  be  omitted. Trailing dots and a fdpat consisting only of
+       Abbreviations:  Whitespace  between  the  word `exec' and fdpat and the
+       command can be omitted. Trailing dots and a fdpat  consisting  only  of
        dots can be omitted. A simple `|' is synonymous for the pattern `!..|';
        the word exec can be omitted here and can always be replaced by `!'.
 
@@ -1581,7 +1586,7 @@ CUSTOMIZATION
               !/bin/sh
 
                      Creates another shell in the same window, while the orig‐
-                     inal shell is still running. Output  of  both  shells  is
+                     inal  shell  is  still  running. Output of both shells is
                      displayed and user input is sent to the new /bin/sh.
 
               exec !.. stty 19200
@@ -1590,7 +1595,7 @@ CUSTOMIZATION
 
               !!stty 19200
 
-                     Set  the  speed of the window's tty. If your stty command
+                     Set the speed of the window's tty. If your  stty  command
                      operates on stdout, then add another `!'.
 
               exec !..| less
@@ -1621,7 +1626,7 @@ CUSTOMIZATION
 
        flow [ on | off | auto]
 
-       Sets the flow-control mode for this window.  Without parameters it  cy‐
+       Sets  the flow-control mode for this window.  Without parameters it cy‐
        cles the current window's flow-control setting from "automatic" to "on"
        to "off".  See the discussion on FLOW-CONTROL later on in this document
        for full details and note, that this is subject to change in future re‐
@@ -1634,25 +1639,25 @@ CUSTOMIZATION
        no  option  is  given  it defaults to `next'. The next region to be se‐
        lected is determined by how the regions  are  layered.   Normally,  the
        next region in the same layer would be selected.  However, if that next
-       region  contains  one  or  more layers, the first region in the highest
-       layer is selected first. If you are at the last region of  the  current
+       region contains one or more layers, the first  region  in  the  highest
+       layer  is  selected first. If you are at the last region of the current
        layer, `next' will move the focus to the next region in the lower layer
        (if  there is a lower layer).  `Prev' cycles in the opposite order. See
        split for more information about layers.
 
        The rest of the options (`up',  `down',  `left',  `right',  `top',  and
        `bottom') are more indifferent to layers. The option `up' will move the
-       focus  upward  to  the region that is touching the upper left corner of
-       the current region.  `Down' will move downward to the  region  that  is
+       focus upward to the region that is touching the upper  left  corner  of
+       the  current  region.   `Down' will move downward to the region that is
        touching the lower left corner of the current region. The option `left'
        will  move  the focus leftward to the region that is touching the upper
        left corner of the current region, while `right' will move rightward to
-       the region that is touching the upper right corner of the  current  re‐
-       gion.  Moving left from a left most region or moving right from a right
+       the  region  that is touching the upper right corner of the current re‐
+       gion. Moving left from a left most region or moving right from a  right
        most region will result in no action.
 
-       The option `top' will move the focus to the very first  region  in  the
-       upper  list  corner of the screen, and `bottom' will move to the region
+       The  option  `top'  will move the focus to the very first region in the
+       upper list corner of the screen, and `bottom' will move to  the  region
        in the bottom right corner of the screen. Moving up from a top most re‐
        gion or moving down from a bottom most region will result in no action.
 
@@ -1694,8 +1699,8 @@ CUSTOMIZATION
 
        hardcopy [-h] [file]
 
-       Writes out the currently displayed image to the file file,  or,  if  no
-       filename  is specified, to hardcopy.n in the default directory, where n
+       Writes  out  the  currently displayed image to the file file, or, if no
+       filename is specified, to hardcopy.n in the default directory, where  n
        is the number of the current window.  This either appends or overwrites
        the file if it exists. See below.  If the option -h is specified,  dump
        also the contents of the scrollback buffer.
@@ -1703,17 +1708,17 @@ CUSTOMIZATION
        hardcopy_append [ on | off ]
 
        If set to "on", screen will append to the "hardcopy.n" files created by
-       the  command  C-a  h,  otherwise these files are overwritten each time.
+       the command C-a h, otherwise these files  are  overwritten  each  time.
        Default is `off'.
 
        hardcopydir directory
 
-       Defines a directory where hardcopy files  will  be  placed.  If  unset,
+       Defines  a  directory  where  hardcopy  files will be placed. If unset,
        hardcopys are dumped in screen's current working directory.
 
        hardstatus [ on | off ]
 
-       hardstatus [ always ] firstline | lastline | message | ignore [ string
+       hardstatus [ always ] firstline | lastline | message | ignore [  string
        ]
 
        hardstatus string [ string ]
@@ -1735,43 +1740,43 @@ CUSTOMIZATION
 
        The third form specifies the contents of the hardstatus line.  '%h'  is
        used as default string, i.e., the stored hardstatus of the current win‐
-       dow  (settable  via ESC]0;<string>^G or ESC_<string>ESC\) is displayed.
-       You can customize this to any string you  like  including  the  escapes
-       from  the STRING ESCAPES chapter. If you leave out the argument string,
+       dow (settable via ESC]0;<string>^G or ESC_<string>ESC\)  is  displayed.
+       You  can  customize  this  to any string you like including the escapes
+       from the STRING ESCAPES chapter. If you leave out the argument  string,
        the current string is displayed.
 
-       You can mix the second and third form by providing the string as  addi‐
+       You  can mix the second and third form by providing the string as addi‐
        tional argument.
 
        height [-w|-d] [lines [cols]]
 
        Set the display height to a specified number of lines. When no argument
        is given it toggles between 24 and 42 lines display. You can also spec‐
-       ify  a  width  if  you want to change both values.  The -w option tells
-       screen to leave the display size unchanged  and  just  set  the  window
+       ify a width if you want to change both values.   The  -w  option  tells
+       screen  to  leave  the  display  size unchanged and just set the window
        size, -d vice versa.
 
        help[class]
 
-       Not  really  a  online help, but displays a help screen showing you all
-       the key bindings.  The first pages list all the internal commands  fol‐
-       lowed  by  their  current  bindings.  Subsequent pages will display the
-       custom commands, one command per key.  Press  space  when  you're  done
-       reading  each  page, or return to exit early.  All other characters are
-       ignored. If the -c option is given, display all bound commands for  the
+       Not really a online help, but displays a help screen  showing  you  all
+       the  key bindings.  The first pages list all the internal commands fol‐
+       lowed by their current bindings.  Subsequent  pages  will  display  the
+       custom  commands,  one  command  per key.  Press space when you're done
+       reading each page, or return to exit early.  All other  characters  are
+       ignored.  If the -c option is given, display all bound commands for the
        specified command class.  See also DEFAULT KEY BINDINGS section.
 
        history
 
-       Usually  users  work  with  a shell that allows easy access to previous
-       commands.  For example csh has the command !! to repeat the  last  com‐
+       Usually users work with a shell that allows  easy  access  to  previous
+       commands.   For  example csh has the command !! to repeat the last com‐
        mand executed.  Screen allows you to have a primitive way of re-calling
        the  command  that  started ...: You just type the first letter of that
        command, then hit `C-a {' and screen tries to find a previous line that
-       matches with the `prompt character' to the left  of  the  cursor.  This
-       line  is  pasted into this window's input queue.  Thus you have a crude
-       command history (made up by  the  visible  window  and  its  scrollback
-       buffer).
+       matches  with  the  `prompt  character' to the left of the cursor. This
+       line is pasted into this window's input queue.  Thus you have  a  crude
+       command  history (made up by the visible window and its scrollback buf‐
+       fer).
 
        hstatus status
 
@@ -1779,7 +1784,7 @@ CUSTOMIZATION
 
        idle [timeout[cmd-args]]
 
-       Sets  a command that is run after the specified number of seconds inac‐
+       Sets a command that is run after the specified number of seconds  inac‐
        tivity is reached. This command will normally be the blanker command to
        create a screen blanker, but it can be any screen command.  If no  com‐
        mand  is  specified, only the timeout is set. A timeout of zero (or the
@@ -1799,20 +1804,20 @@ CUSTOMIZATION
        buffer  in  lines,  like  in  (80,24)+50,  the  current state of window
        XON/XOFF flow control is shown like this (See also  section  FLOW  CON‐
        TROL):
-       ┌──────────┬──────────────────────────────────────────────────────────┐
-       │ +flow    │ automatic flow control, currently on.                    │
-       ├──────────┼──────────────────────────────────────────────────────────┤
-       │ -flow    │ automatic flow control, currently off.                   │
-       ├──────────┼──────────────────────────────────────────────────────────┤
-       │ +(+)flow │ flow control enabled. Agrees with automatic control.     │
-       ├──────────┼──────────────────────────────────────────────────────────┤
-       │ -(+)flow │ flow control disabled. Disagrees with automatic control. │
-       ├──────────┼──────────────────────────────────────────────────────────┤
-       │ +(-)flow │ flow control enabled. Disagrees with automatic control.  │
-       ├──────────┼──────────────────────────────────────────────────────────┤
-       │ -(-)flow │ flow control disabled. Agrees with automatic control.    │
-       └──────────┴──────────────────────────────────────────────────────────┘
 
+       ┌─────────┬──────────────────────────────────────────────────────────┐
+       │+flow    │ automatic flow control, currently on.                    │
+       ├─────────┼──────────────────────────────────────────────────────────┤
+       │-flow    │ automatic flow control, currently off.                   │
+       ├─────────┼──────────────────────────────────────────────────────────┤
+       │+(+)flow │ flow control enabled. Agrees with automatic control.     │
+       ├─────────┼──────────────────────────────────────────────────────────┤
+       │-(+)flow │ flow control disabled. Disagrees with automatic control. │
+       ├─────────┼──────────────────────────────────────────────────────────┤
+       │+(-)flow │ flow control enabled. Disagrees with automatic control.  │
+       ├─────────┼──────────────────────────────────────────────────────────┤
+       │-(-)flow │ flow control disabled. Agrees with automatic control.    │
+       └─────────┴──────────────────────────────────────────────────────────┘
        The  current line wrap setting (`+wrap' indicates enabled, `-wrap' not)
        is also shown. The flags `ins', `org', `app', `log', `mon'  or  `nored'
        are  displayed when the window is in insert mode, origin mode, applica‐
@@ -1860,10 +1865,10 @@ CUSTOMIZATION
 
        layout new [title]
 
-       Create  a new layout. The screen will change to one whole region and be
-       switched to the blank window. From here, you build the regions and  the
-       windows  they  show as you desire. The new layout will be numbered with
-       the smallest available integer, starting with zero. You can  optionally
+       Create a new layout. The screen will change to one whole region and  be
+       switched  to the blank window. From here, you build the regions and the
+       windows they show as you desire. The new layout will be  numbered  with
+       the  smallest available integer, starting with zero. You can optionally
        give a title to your new layout.  Otherwise, it will have a default ti‐
        tle  of layout. You can always change the title later by using the com‐
        mand layout title.
@@ -1887,30 +1892,30 @@ CUSTOMIZATION
        layout select [n|title]
 
        Select the desired layout. Either the number or the title can be speci‐
-       fied. Without either specification, screen will prompt  and  ask  which
-       screen  is  desired. To see which layouts are available, use the layout
+       fied.  Without  either  specification, screen will prompt and ask which
+       screen is desired. To see which layouts are available, use  the  layout
        show command.
 
        layout show
 
-       List on the message line the number(s) and title(s)  of  the  available
+       List  on  the  message line the number(s) and title(s) of the available
        layout(s). The current layout is flagged.
 
        layout title [title]
 
-       Change  or display the title of the current layout. A string given will
-       be used to name the layout. Without any options, the current title  and
+       Change or display the title of the current layout. A string given  will
+       be  used to name the layout. Without any options, the current title and
        number is displayed on the message line.
 
        layout number [n]
 
-       Change  or  display  the number of the current layout. An integer given
-       will be used to number the layout. Without  any  options,  the  current
+       Change or display the number of the current layout.  An  integer  given
+       will  be  used  to  number the layout. Without any options, the current
        number and title is displayed on the message line.
 
        layout attach [title|:last]
 
-       Change  or  display  which  layout  to reattach back to. The default is
+       Change or display which layout to reattach  back  to.  The  default  is
        :last, which tells screen to reattach back to the last used layout just
        before detachment. By supplying a title, You  can  instruct  screen  to
        reattach  to  a  particular layout regardless which one was used at the
@@ -1924,7 +1929,7 @@ CUSTOMIZATION
        This  arrangement  is  restored  when a screen session is reattached or
        switched back from a different layout.  If  the  session  ends  or  the
        screen  process dies, the layout arrangements are lost. The layout dump
-       command should help in this situation. If a number  or  title  is  sup‐
+       command should help in this siutation. If a number  or  title  is  sup‐
        plied,  screen will remember the arrangement of that particular layout.
        Without any options, screen will remember the current layout.
 
@@ -1933,7 +1938,7 @@ CUSTOMIZATION
 
        layout autosave [ on | off]
 
-       Change  or  display the status of automatically saving layouts. The de‐
+       Change  or  display  the status of automatcally saving layouts. The de‐
        fault is on, meaning when screen is detached or changed to a  different
        layout,  the  arrangement  of regions and windows will be remembered at
        the time of change and restored upon return.  If  autosave  is  set  to
@@ -1945,15 +1950,15 @@ CUSTOMIZATION
        layout dump [filename]
 
        Write to a file the order of splits made in the current layout. This is
-       useful to recreate the order of your regions used in your current  lay‐
-       out.  Only  the  current layout is recorded. While the order of the re‐
+       useful  to recreate the order of your regions used in your current lay‐
+       out. Only the current layout is recorded. While the order  of  the  re‐
        gions are recorded, the sizes of those regions and which windows corre‐
        spond to which regions are not. If no filename is  specified,  the  de‐
        fault  is  layout-dump,  saved in the directory that the screen process
        was started in. If the file already exists, layout dump will append  to
        that file. As an example:
 
-                   C-a : layout dump /home/user/.screenrc
+                C-a : layout dump /home/user/.screenrc
 
        will save or append the layout to the user's .screenrc file.
 
@@ -1965,14 +1970,15 @@ CUSTOMIZATION
 
        lockscreen
 
-       Lock  this display.  Call a screenlock program.  Screen does not accept
-       any command keys until this program terminates. Meanwhile processes  in
-       the  windows  may continue, as the windows are in the `detached' state.
-       The screenlock program may be changed through the environment  variable
-       $LOCKPRG  (which must be set in the shell from which screen is started)
-       and is executed with the user's uid and gid.
+       Lock  this  display.   Call  a  screenlock  program  (/local/bin/lck or
+       /usr/bin/lock or a builtin if no other is available). Screen  does  not
+       accept  any  command keys until this program terminates. Meanwhile pro‐
+       cesses in the windows may continue, as the  windows  are  in  the  `de‐
+       tached'  state. The screenlock program may be changed through the envi‐
+       ronment variable $LOCKPRG (which must be set in the  shell  from  which
+       screen is started) and is executed with the user's uid and gid.
 
-       Warning: When you leave other shells unlocked and you have no  password
+       Warning:  When you leave other shells unlocked and you have no password
        set on screen, the lock is void: One could easily re-attach from an un‐
        locked shell. This feature should rather be called `lockterminal'.
 
@@ -1980,7 +1986,7 @@ CUSTOMIZATION
 
        Start/stop  writing  output of the current window to a file screenlog.n
        in the window's default directory, where n is the number of the current
-       window. This filename can be changed with the `logfile' command. If  no
+       window.  This filename can be changed with the `logfile' command. If no
        parameter is given, the state of logging is toggled. The session log is
        appended to the previous contents of the file if it already exists. The
        current contents and the contents of the scrollback history are not in‐
@@ -1997,7 +2003,7 @@ CUSTOMIZATION
 
        login [ on | off ]
 
-       Adds  or  removes  the  entry in the utmp database file for the current
+       Adds or removes the entry in the utmp database  file  for  the  current
        window.  This controls if the window is `logged in'.  When no parameter
        is given, the login state of the window is  toggled.   Additionally  to
        that  toggle,  it  is convenient having a `log in' and a `log out' key.
@@ -2015,17 +2021,17 @@ CUSTOMIZATION
        [string]
 
        This command controls logfile time-stamp mechanism of screen.  If time-
-       stamps are turned on, screen adds a string containing the current  time
-       to  the logfile after two minutes of inactivity.  When output continues
-       and more than another two minutes have passed, a second  time-stamp  is
-       added  to document the restart of the output. You can change this time‐
-       out with the second form of the command. The third  form  is  used  for
-       customizing  the time-stamp string (`-- %n:%t -- time-stamp -- %M/%d/%y
+       stamps  are turned on, screen adds a string containing the current time
+       to the logfile after two minutes of inactivity.  When output  continues
+       and  more  than another two minutes have passed, a second time-stamp is
+       added to document the restart of the output. You can change this  time‐
+       out  with  the  second  form of the command. The third form is used for
+       customizing the time-stamp string (`-- %n:%t -- time-stamp --  %M/%d/%y
        %c:%s --\n' by default).
 
        mapdefault
 
-       Tell screen that the next input character should only be looked  up  in
+       Tell  screen  that the next input character should only be looked up in
        the default bindkey table. See also bindkey.
 
        mapnotnext
@@ -2047,8 +2053,8 @@ CUSTOMIZATION
        the  default  binding  for  `B'  and   `F'.    The   command   markkeys
        h=^B:l=^F:$=^E  would set the mode for an emacs-style binding.  If your
        terminal sends characters, that cause you to abort copy mode, then this
-       command may help by binding these characters to do nothing.  The  no-op
-       character  is  `@'  and is used like this: markkeys @=L=H if you do not
+       command  may help by binding these characters to do nothing.  The no-op
+       character is `@' and is used like this: markkeys @=L=H if  you  do  not
        want to use the `H' or `L' commands any longer.  As shown in this exam‐
        ple, multiple keys can be assigned to one function in a  single  state‐
        ment.
@@ -2061,13 +2067,13 @@ CUSTOMIZATION
 
        meta
 
-       Insert the command  character  (C-a)  in  the  current  window's  input
+       Insert  the  command  character  (C-a)  in  the  current window's input
        stream.
 
        monitor [ on | off ]
 
-       Toggles  activity  monitoring of windows.  When monitoring is turned on
-       and an affected window is switched into the background,  you  will  re‐
+       Toggles activity monitoring of windows.  When monitoring is  turned  on
+       and  an  affected  window is switched into the background, you will re‐
        ceive the activity notification message in the status line at the first
        sign  of  output  and the window will also be marked with an `@' in the
        window-status display.  Monitoring is initially off for all windows.
@@ -2093,8 +2099,8 @@ CUSTOMIZATION
        multiuser [ on | off ]
 
        Switch between singleuser and multiuser mode. Standard screen operation
-       is singleuser. In  multiuser  mode  the  commands  `acladd',  `aclchg',
-       `aclgrp'  and  `acldel' can be used to enable (and disable) other users
+       is  singleuser.  In  multiuser  mode  the  commands `acladd', `aclchg',
+       `aclgrp' and `acldel' can be used to enable (and disable)  other  users
        accessing this screen session.
 
        nethack [ on | off ]
@@ -2103,19 +2109,19 @@ CUSTOMIZATION
        iar with the game nethack, you may  enjoy  the  nethack-style  messages
        which will often blur the facts a little, but are much funnier to read.
        Anyway, standard messages often tend to be unclear as well.
-       This  option  is only available if screen was compiled with the NETHACK
+       This option is only available if screen was compiled with  the  NETHACK
        flag defined. The default setting is then determined by the presence of
        the environment variable $NETHACKOPTIONS and the file ~/.nethackrc - if
        either one is present, the default is on.
 
        next
 
-       Switch to the next window.  This command can be used repeatedly to  cy‐
+       Switch  to the next window.  This command can be used repeatedly to cy‐
        cle through the list of windows.
 
        nonblock [ on | off | numsecs ]
 
-       Tell  screen  how to deal with user interfaces (displays) that cease to
+       Tell screen how to deal with user interfaces (displays) that  cease  to
        accept output. This can happen if a user presses ^S or a TCP/modem con‐
        nection gets cut but no hangup is received. If nonblock is off (this is
        the default) screen waits until the display restarts to accept the out‐
@@ -2135,9 +2141,9 @@ CUSTOMIZATION
 
        obuflimit [limit]
 
-       If  the  output buffer contains more bytes than the specified limit, no
-       more data will be read from the windows. The default value is  256.  If
-       you  have  a  fast  display (like xterm), you can set it to some higher
+       If the output buffer contains more bytes than the specified  limit,  no
+       more  data  will be read from the windows. The default value is 256. If
+       you have a fast display (like xterm), you can set  it  to  some  higher
        value. If no argument is specified, the current setting is displayed.
 
        only
@@ -2146,7 +2152,7 @@ CUSTOMIZATION
 
        other
 
-       Switch to the window displayed  previously.  If  this  window  does  no
+       Switch  to  the  window  displayed  previously.  If this window does no
        longer exist, other has the same effect as next.
 
        partial [ on | off ]
@@ -2159,7 +2165,7 @@ CUSTOMIZATION
 
        password [crypted_pw]
 
-       Present  a  crypted password in your .screenrc file and screen will ask
+       Present a crypted password in your .screenrc file and screen  will  ask
        for it, whenever someone attempts to resume a detached.  This is useful
        if you have privileged programs running under screen and  you  want  to
        protect  your session from reattach attempts by another user masquerad‐
@@ -2176,30 +2182,30 @@ CUSTOMIZATION
        gle register to paste.  The paste buffer can be filled with  the  copy,
        history  and  readbuf commands.  Other registers can be filled with the
        register, readreg and paste commands.  If paste is called with a second
-       argument, the contents of the specified registers is  pasted  into  the
-       named  destination  register  rather than the window. If '.' is used as
-       the second argument, the displays  paste  buffer  is  the  destination.
-       Note,  that  paste  uses a wide variety of resources: Whenever a second
-       argument is specified no current window  is  needed.  When  the  source
+       argument,  the  contents  of the specified registers is pasted into the
+       named destination register rather than the window. If '.'  is  used  as
+       the  second  argument,  the  displays  paste buffer is the destination.
+       Note, that paste uses a wide variety of resources:  Whenever  a  second
+       argument  is  specified  no  current  window is needed. When the source
        specification only contains registers (not the paste buffer) then there
        need not be a current display (terminal attached), as the registers are
        a global resource. The paste buffer exists once for every user.
 
        pastefont [ on | off ]
 
-       Tell  screen  to  include font information in the paste buffer. The de‐
-       fault is not to do so. This command  is  especially  useful  for  multi
+       Tell screen to include font information in the paste  buffer.  The  de‐
+       fault  is  not  to  do  so. This command is especially useful for multi
        character fonts like kanji.
 
        pow_break
 
-       Reopen  the  window's  terminal  line  and  send a break condition. See
+       Reopen the window's terminal line  and  send  a  break  condition.  See
        `break'.
 
        pow_detach
 
-       Power detach.  Mainly the same as detach, but also sends a HANGUP  sig‐
-       nal  to  the  parent process of screen.  CAUTION: This will result in a
+       Power  detach.  Mainly the same as detach, but also sends a HANGUP sig‐
+       nal to the parent process of screen.  CAUTION: This will  result  in  a
        logout, when screen was started from your login-shell.
 
        pow_detach_msg [message]
@@ -2217,11 +2223,11 @@ CUSTOMIZATION
 
        If cmd is not an empty string, screen will not use the  terminal  capa‐
        bilities po/pf if it detects an ansi print sequence ESC [ 5 i, but pipe
-       the  output  into  cmd.   This should normally be a command like lpr or
-       printcmd without a command displays the current setting.  The ansi  se‐
-       quence ESC [ 4 i ends printing and closes the pipe.
+       the output into cmd.  This should normally be a  command  like  lpr  or
+       printcmd  without a command displays the current setting.  The ansi se‐
+       quence ESC \ ends printing and closes the pipe.
 
-       Warning:  Be careful with this command! If other user have write access
+       Warning: Be careful with this command! If other user have write  access
        to your terminal, they will be able to fire off print commands.
 
        process [key]
@@ -2234,14 +2240,14 @@ CUSTOMIZATION
        quit
 
        Kill all windows and terminate screen.  Note that on VT100-style termi‐
-       nals the keys C-4 and C-\ are identical.  This makes the default  bind‐
-       ings  dangerous:  Be  careful not to type C-a C-4 when selecting window
-       no. 4.  Use the empty bind command (as in bind '^\') to  remove  a  key
+       nals  the keys C-4 and C-\ are identical.  This makes the default bind‐
+       ings dangerous: Be careful not to type C-a C-4  when  selecting  window
+       no.  4.   Use  the empty bind command (as in bind '^\') to remove a key
        binding.
 
        readbuf [encoding] [filename]
 
-       Reads  the  contents  of the specified file into the paste buffer.  You
+       Reads the contents of the specified file into the  paste  buffer.   You
        can tell screen the encoding of the file via the -e option.  If no file
        is specified, the screen-exchange filename is used.  See  also  buffer‐
        file command.
@@ -2250,24 +2256,24 @@ CUSTOMIZATION
 
        Does  one of two things, dependent on number of arguments: with zero or
        one arguments it duplicates the paste buffer contents into the register
-       specified or entered at the prompt. With two  arguments  it  reads  the
+       specified  or  entered  at  the prompt. With two arguments it reads the
        contents of the named file into the register, just as readbuf reads the
        screen-exchange  file  into  the paste buffer.  You can tell screen the
        encoding of the file via the -e option.   The  following  example  will
        paste the system's password file into the screen window (using register
        p, where a copy remains):
 
-                   C-a : readreg p /etc/passwd
-                   C-a : paste p
+                C-a : readreg p /etc/passwd
+                C-a : paste p
 
        redisplay
 
-       Redisplay  the  current  window. Needed to get a full redisplay when in
+       Redisplay the current window. Needed to get a full  redisplay  when  in
        partial redraw mode.
 
        register [-eencoding]key-string
 
-       Save the specified string to the register key.   The  encoding  of  the
+       Save  the  specified  string  to the register key.  The encoding of the
        string can be specified via the -e option.  See also the paste command.
 
        remove
@@ -2276,30 +2282,30 @@ CUSTOMIZATION
 
        removebuf
 
-       Unlinks  the  screen-exchange  file  used  by the commands writebuf and
+       Unlinks the screen-exchange file used  by  the  commands  writebuf  and
        readbuf.
 
        rendition [ bell | monitor | silence | so ] attr [ color ]
 
-       Change the way screen renders the titles of windows that  have  monitor
-       or  bell  flags  set  in  caption  or hardstatus or windowlist. See the
-       STRING ESCAPES chapter for the syntax of the  modifiers.   The  default
-       for  monitor is currently =b  (bold, active colors), for bell =ub  (un‐
+       Change  the  way screen renders the titles of windows that have monitor
+       or bell flags set in caption  or  hardstatus  or  windowlist.  See  the
+       STRING  ESCAPES  chapter  for the syntax of the modifiers.  The default
+       for monitor is currently =b  (bold, active colors), for bell =ub   (un‐
        derline, bold and active colors), and =u for silence.
 
        reset
 
-       Reset the virtual terminal to its power-on values. Useful when  strange
-       settings  (like scroll regions or graphics character set) are left over
+       Reset  the virtual terminal to its power-on values. Useful when strange
+       settings (like scroll regions or graphics character set) are left  over
        from an application.
 
        resize [-h|-v|-b|-l|-p] [[+|-] n[%] |=|max|min|_|0]
 
-       Resize the current region. The space will be removed from or  added  to
-       the  surrounding  regions  depending  on  the order of the splits.  The
-       available options for resizing  are  `-h'(horizontal),  `-v'(vertical),
-       `-b'(both),  `-l'(local  to layer), and `-p'(perpendicular). Horizontal
-       resizes will add or remove width to a region, vertical will add or  re‐
+       Resize  the  current region. The space will be removed from or added to
+       the surrounding regions depending on the  order  of  the  splits.   The
+       available  options  for  resizing are `-h'(horizontal), `-v'(vertical),
+       `-b'(both), `-l'(local to layer), and  `-p'(perpendicular).  Horizontal
+       resizes  will add or remove width to a region, vertical will add or re‐
        move height, and both will add or remove size from both dimensions. Lo‐
        cal  and perpendicular are similar to horizontal and vertical, but they
        take in account of how a region was split.  If a  region's  last  split
@@ -2311,7 +2317,7 @@ CUSTOMIZATION
        The amount of lines to add or remove can be expressed a couple of  dif‐
        ferent  ways. By specifying a number n by itself will resize the region
        by that absolute amount. You can specify a relative amount by prefixing
-       a plus `+' or minus `-' to the amount, such as adding +n lines  or  re‐
+       a  plus  `+' or minus `-' to the amount, such as adding +n lines or re‐
        moving -n lines. Resizing can also be expressed as an absolute or rela‐
        tive  percentage  by postfixing a percent sign `%'. Using zero `0' is a
        synonym for `min' and using an underscore `_' is a synonym for `max'.
@@ -2345,45 +2351,45 @@ CUSTOMIZATION
        Without any arguments, screen will prompt for how you would like to re‐
        size the current region.
 
-       See focusminsize if you want to restrict the minimum size a region  can
+       See  focusminsize if you want to restrict the minimum size a region can
        have.
 
        screen [-opts] [n] [cmd [args]|//group]
 
-       Establish  a  new  window.  The flow-control options (-f, -fn and -fa),
-       title (a.k.a.) option (-t), login options (-l and -ln) , terminal  type
-       option  (-T <term>), the all-capability-flag (-a) and scrollback option
-       (-h <num>) may be specified with each command.  The option  (-M)  turns
+       Establish a new window.  The flow-control options (-f,  -fn  and  -fa),
+       title  (a.k.a.) option (-t), login options (-l and -ln) , terminal type
+       option (-T <term>), the all-capability-flag (-a) and scrollback  option
+       (-h  <num>)  may be specified with each command.  The option (-M) turns
        monitoring on for this window.  The option (-L) turns output logging on
        for  this  window.  If an optional number n in the range 0..MAXWIN-1 is
        given, the window number n is assigned to the newly created window (or,
-       if this number is already in-use, the next  available  number).   If  a
-       command  is  specified after screen, this command (with the given argu‐
-       ments) is started in the window; otherwise, a  shell  is  created.   If
-       //group  is supplied, a container-type window is created in which other
+       if  this  number  is  already in-use, the next available number).  If a
+       command is specified after screen, this command (with the  given  argu‐
+       ments)  is  started  in  the window; otherwise, a shell is created.  If
+       //group is supplied, a container-type window is created in which  other
        windows may be created inside it.
 
        Thus, if your .screenrc contains the lines
 
-                   # example for .screenrc:
-                   screen 1
-                   screen -fn -t foobar -L 2 telnet foobar
+                # example for .screenrc:
+                screen 1
+                screen -fn -t foobar -L 2 telnet foobar
 
        screen creates a shell window (in window #1) and a window with a TELNET
        connection to the machine foobar (with no flow-control using the  title
        foobar in window #2) and will write a logfile (screenlog.2) of the tel‐
-       net  session.   Note,  that unlike previous versions of screen no addi‐
-       tional default window is created when screen commands are  included  in
-       your  .screenrc  file.  When  the  initialization  is completed, screen
-       switches to the last window specified in your  .screenrc  file  or,  if
+       net session.  Note, that unlike previous versions of  screen  no  addi‐
+       tional  default  window is created when screen commands are included in
+       your .screenrc file.  When  the  initialization  is  completed,  screen
+       switches  to  the  last  window specified in your .screenrc file or, if
        none, opens a default window #0.
 
-       Screen  has  built  in  some  functionality of cu and telnet.  See also
+       Screen has built in some functionality of  cu  and  telnet.   See  also
        chapter WINDOW TYPES.
 
        scrollback num
 
-       Set the size of the scrollback buffer for the current  windows  to  num
+       Set  the  size  of the scrollback buffer for the current windows to num
        lines. The default scrollback is 100 lines.  See also the defscrollback
        command and use info to view the current setting. To access and use the
        contents in the scrollback buffer, use the copy command.
@@ -2391,24 +2397,23 @@ CUSTOMIZATION
        select [WindowID]
 
        Switch to the window identified by WindowID.  This can be a prefix of a
-       window  title (alphanumeric window name) or a window number.  The para‐
-       meter is optional and if omitted, you get prompted for  an  identifier.
+       window title (alphanumeric window name) or a window number.  The param‐
+       eter is optional and if omitted, you get prompted  for  an  identifier.
        When  a  new  window  is established, the first available number is as‐
        signed to this window.  Thus, the first window can be activated by  se‐
-       lect 0.  The number of windows is set by the MAXWIN configuration para‐
-       meter  (which defaults to 100), but it can be changed by using `maxwin'
-       command.  There are two special WindowIDs, - selects the internal blank
-       window and . selects the current window. The latter is useful  if  used
-       with screen's -X option.
+       lect 0.  The number of windows is limited at compile-time by the MAXWIN
+       configuration parameter (which defaults to 40).  There are two  special
+       WindowIDs,  -  selects the internal blank window and . selects the cur‐
+       rent window. The latter is useful if used with screen's -X option.
 
        sessionname [name]
 
-       Rename  the current session. Note, that for screen -list the name shows
-       up with the process-id prepended. If the argument name is omitted,  the
-       name  of this session is displayed. Caution: The $STY environment vari‐
-       ables will still reflect the old name in pre-existing shells. This  may
-       result  in confusion. Use of this command is generally discouraged. Use
-       the -S command-line option if you want to name a new session.  The  de‐
+       Rename the current session. Note, that for screen -list the name  shows
+       up  with the process-id prepended. If the argument name is omitted, the
+       name of this session is displayed. Caution: The $STY environment  vari‐
+       ables  will still reflect the old name in pre-existing shells. This may
+       result in confusion. Use of this command is generally discouraged.  Use
+       the  -S command-line option if you want to name a new session.  The de‐
        fault is constructed from the tty and host names.
 
        setenv [var [string]]
@@ -2430,11 +2435,11 @@ CUSTOMIZATION
 
        Set  the  command to be used to create a new shell.  This overrides the
        value of the environment variable $SHELL.  This is useful if you'd like
-       to run a tty-enhancer which is expecting to execute the program  speci‐
-       fied  in $SHELL.  If the command begins with a '-' character, the shell
-       will be started as a login-shell. Typical shells do only  minimal  ini‐
+       to  run a tty-enhancer which is expecting to execute the program speci‐
+       fied in $SHELL.  If the command begins with a '-' character, the  shell
+       will  be  started as a login-shell. Typical shells do only minimal ini‐
        tialization when not started as a login-shell.  E.g. Bash will not read
-       your ~/.bash_profile unless it is a login-shell.
+       your ~/.bashrc unless it is a login-shell.
 
        shelltitle title
 
@@ -2448,23 +2453,23 @@ CUSTOMIZATION
        an affected window is switched into the background,  you  will  receive
        the  silence  notification message in the status line after a specified
        period of inactivity (silence). The default timeout can be changed with
-       the `silencewait' command or by specifying a number of seconds  instead
+       the  `silencewait' command or by specifying a number of seconds instead
        of `on' or `off'.  Silence is initially off for all windows.
 
        silencewait sec
 
-       Define  the time that all windows monitored for silence should wait be‐
+       Define the time that all windows monitored for silence should wait  be‐
        fore displaying a message. Default 30 seconds.
 
        sleep num
 
-       This command will pause the execution of a .screenrc file for num  sec‐
-       onds.   Keyboard  activity  will end the sleep.  It may be used to give
+       This  command will pause the execution of a .screenrc file for num sec‐
+       onds.  Keyboard activity will end the sleep.  It may be  used  to  give
        users a chance to read the messages output by echo.
 
        slowpaste msec
 
-       Define the speed at which text is inserted into the current  window  by
+       Define  the  speed at which text is inserted into the current window by
        the paste ("C-a ]") command.  If the slowpaste value is nonzero text is
        written  character by character.  screen will make a pause of msec mil‐
        liseconds after each single character write to allow the application to
@@ -2478,7 +2483,7 @@ CUSTOMIZATION
        source file
 
        Read and execute commands from file file. Source commands may be nested
-       to a maximum recursion level of ten. If file is not  an  absolute  path
+       to  a  maximum  recursion level of ten. If file is not an absolute path
        and screen is already processing a source command, the parent directory
        of  the  running source command file is used to search for the new com‐
        mand file before screen's current directory.
@@ -2521,22 +2526,22 @@ CUSTOMIZATION
        status [ top | up | down | bottom ] [ left | right ]
 
        The status window by default is in bottom-left corner. This command can
-       move  status  messages  to any corner of the screen. top is the same as
+       move status messages to any corner of the screen. top is  the  same  as
        up, down is the same as bottom.
 
        stuff [string]
 
-       Stuff the string string in the input  buffer  of  the  current  window.
-       This  is like the paste command but with much less overhead.  Without a
-       parameter, screen will prompt for a string to stuff.  You cannot  paste
-       large  buffers  with the stuff command. It is most useful for key bind‐
+       Stuff  the  string  string  in  the input buffer of the current window.
+       This is like the paste command but with much less overhead.  Without  a
+       parameter,  screen will prompt for a string to stuff.  You cannot paste
+       large buffers with the stuff command. It is most useful for  key  bind‐
        ings. See also bindkey.
 
        su [username [password [password2]]]
 
-       Substitute the user of a display. The command prompts for  all  parame‐
-       ters  that  are omitted. If passwords are specified as parameters, they
-       have to be specified un-crypted. The first password is matched  against
+       Substitute  the  user of a display. The command prompts for all parame‐
+       ters that are omitted. If passwords are specified as  parameters,  they
+       have  to be specified un-crypted. The first password is matched against
        the systems passwd database, the second password is matched against the
        screen password as set with the commands acladd or password.  Su may be
        useful for the screen administrator to test multiuser setups.  When the
@@ -2545,8 +2550,8 @@ CUSTOMIZATION
 
        suspend
 
-       Suspend  screen.  The windows are in the `detached' state, while screen
-       is suspended. This feature relies on the shell being  able  to  do  job
+       Suspend screen.  The windows are in the `detached' state, while  screen
+       is  suspended.  This  feature  relies on the shell being able to do job
        control.
 
        term term
@@ -2558,7 +2563,7 @@ CUSTOMIZATION
        The use of the term command is  discouraged  for  non-default  purpose.
        That  is,  one  may want to specify special $TERM settings (e.g. vt100)
        for the next screen rlogin othermachine command. Use the command screen
-       -T vt100 rlogin othermachine rather than setting and resetting the  de‐
+       -T  vt100 rlogin othermachine rather than setting and resetting the de‐
        fault.
 
        termcap term terminal-tweaks[window-tweaks]
@@ -2567,17 +2572,17 @@ CUSTOMIZATION
 
        termcapinfo term terminal-tweaks[window-tweaks]
 
-       Use  this command to modify your terminal's termcap entry without going
-       through all the hassles involved in creating a  custom  termcap  entry.
-       Plus,  you  can optionally customize the termcap generated for the win‐
-       dows.  You have to place these commands in one of the screenrc  startup
+       Use this command to modify your terminal's termcap entry without  going
+       through  all  the  hassles involved in creating a custom termcap entry.
+       Plus, you can optionally customize the termcap generated for  the  win‐
+       dows.   You have to place these commands in one of the screenrc startup
        files, as they are meaningless once the terminal emulator is booted.
 
-       If  your  system uses the terminfo database rather than termcap, screen
-       will understand the `terminfo' command, which has the same  effects  as
-       the  `termcap'  command.   Two separate commands are provided, as there
-       are subtle syntactic differences,  e.g.  when  parameter  interpolation
-       (using  `%')  is  required. Note that termcap names of the capabilities
+       If your system uses the terminfo database rather than  termcap,  screen
+       will  understand  the `terminfo' command, which has the same effects as
+       the `termcap' command.  Two separate commands are  provided,  as  there
+       are  subtle  syntactic  differences,  e.g. when parameter interpolation
+       (using `%') is required. Note that termcap names  of  the  capabilities
        have to be used with the `terminfo' command.
 
        In many cases, where the arguments are valid in both terminfo and term‐
@@ -2587,10 +2592,10 @@ CUSTOMIZATION
 
        The first argument specifies which terminal(s) should  be  affected  by
        this definition.  You can specify multiple terminal names by separating
-       them  with `|'s.  Use `*' to match all terminals and `vt*' to match all
+       them with `|'s.  Use `*' to match all terminals and `vt*' to match  all
        terminals that begin with vt.
 
-       Each tweak argument contains one or more termcap defines (separated  by
+       Each  tweak argument contains one or more termcap defines (separated by
        `:'s) to be inserted at the start of the appropriate termcap entry, en‐
        hancing  it  or  overriding  existing values.  The first tweak modifies
        your terminal's termcap, and contains definitions  that  your  terminal
@@ -2606,7 +2611,7 @@ CUSTOMIZATION
        Informs screen that all terminals that begin  with  `xterm'  have  firm
        auto-margins  that  allow the last position on the screen to be updated
        (LP), but they don't really have a status line (no 'hs' - append `@' to
-       turn entries off).  Note that we assume `LP'  for  all  terminal  names
+       turn  entries  off).   Note  that we assume `LP' for all terminal names
        that start with vt, but only if you don't specify a termcap command for
        that terminal.
               termcap vt*  LP
@@ -2616,12 +2621,12 @@ CUSTOMIZATION
        Specifies  the firm-margined `LP' capability for all terminals that be‐
        gin with `vt', and the second line will also add  the  escape-sequences
        to switch into (Z0) and back out of (Z1) 132-character-per-line mode if
-       this  is a VT102 or VT220.  (You must specify Z0 and Z1 in your termcap
+       this is a VT102 or VT220.  (You must specify Z0 and Z1 in your  termcap
        to use the width-changing commands.)
 
               termcap vt100  ""  l0=PF1:l1=PF2:l2=PF3:l3=PF4
 
-       This leaves your vt100 termcap alone and adds the function  key  labels
+       This  leaves  your vt100 termcap alone and adds the function key labels
        to each window's termcap entry.
 
               termcap h19|z19  am@:im=\E@:ei=\EO  dc=\E[P
@@ -2629,22 +2634,22 @@ CUSTOMIZATION
        Takes a h19 or z19 termcap and turns off auto-margins (am@) and enables
        the  insert  mode (im) and end-insert (ei) capabilities (the `@' in the
        `im' string is after the `=', so it is part of the string).  Having the
-       `im' and `ei' definitions put into your terminal's termcap  will  cause
-       screen  to  automatically  advertise the character-insert capability in
-       each window's termcap.  Each window will also get the  delete-character
-       capability  (dc) added to its termcap, which screen will translate into
-       a line-update for the terminal (we're  pretending  it  doesn't  support
+       `im'  and  `ei' definitions put into your terminal's termcap will cause
+       screen to automatically advertise the  character-insert  capability  in
+       each  window's termcap.  Each window will also get the delete-character
+       capability (dc) added to its termcap, which screen will translate  into
+       a  line-update  for  the  terminal (we're pretending it doesn't support
        character deletion).
 
-       If  you  would  like  to fully specify each window's termcap entry, you
-       should instead set the $SCREENCAP variable  prior  to  running  screen.
-       See  the  discussion  on  the  VIRTUAL TERMINAL in this manual, and the
+       If you would like to fully specify each  window's  termcap  entry,  you
+       should  instead  set  the  $SCREENCAP variable prior to running screen.
+       See the discussion on the VIRTUAL TERMINAL  in  this  manual,  and  the
        termcap(5) man page for more information on termcap definitions.
 
        time   [string]
 
-       Uses the message line to display the time of day, the  host  name,  and
-       the  load  averages  over 1, 5, and 15 minutes (if this is available on
+       Uses  the  message  line to display the time of day, the host name, and
+       the load averages over 1, 5, and 15 minutes (if this  is  available  on
        your system).  For window specific information, use info.
 
        If a string is specified, it changes the format of the time report like
@@ -2659,7 +2664,7 @@ CUSTOMIZATION
 
        unbindall
 
-       Unbind all the bindings. This can be useful when screen is used  solely
+       Unbind  all the bindings. This can be useful when screen is used solely
        for its detaching abilities, such as when letting a console application
        run  as a daemon. If, for some reason, it is necessary to bind commands
        after this, use 'screen -X'.
@@ -2671,16 +2676,16 @@ CUSTOMIZATION
        utf8 [ on | off [ on | off ]]
 
        Change the encoding used in the current window. If utf8 is enabled, the
-       strings sent to the window will be UTF-8 encoded and vice versa.  Omit‐
+       strings  sent to the window will be UTF-8 encoded and vice versa. Omit‐
        ting the parameter toggles the setting. If a second parameter is given,
        the display's encoding is also changed (this should rather be done with
-       screen's  -U option).  See also defutf8, which changes the default set‐
+       screen's -U option).  See also defutf8, which changes the default  set‐
        ting of a new window.
 
        vbell [ on | off ]
 
-       Sets the visual bell setting for this window.  Omitting  the  parameter
-       toggles  the  setting.  If vbell is switched on, but your terminal does
+       Sets  the  visual  bell setting for this window. Omitting the parameter
+       toggles the setting. If vbell is switched on, but  your  terminal  does
        not support a visual bell, a `vbell-message' is displayed in the status
        line when the bell character (^G) is received.  Visual bell support  of
        a terminal is defined by the termcap variable `vb' (terminfo: 'flash').
@@ -2735,8 +2740,8 @@ CUSTOMIZATION
        play the windows in that group.  If the -b option is given, screen will
        switch to the blank window before presenting the list, so that the cur‐
        rent window is also selectable.  The -m option changes the order of the
-       windows, instead of sorting by window numbers screen uses its  internal
-       most-recently-used  list.   The  -g option will show the windows inside
+       windows,  instead of sorting by window numbers screen uses its internal
+       most-recently-used list.  The -g option will show  the  windows  inside
        any groups in that level and downwards.
 
        The following keys are used to navigate in windowlist:
@@ -2758,7 +2763,7 @@ CUSTOMIZATION
        ─────────────────────────────────────────────────────────────────────
        0..9               Using the number keys, move to the selected line.
        ─────────────────────────────────────────────────────────────────────
-       mouseclick         Move to the selected line. Available when  mouse‐
+       mouseclick         Move  to the selected line. Available when mouse‐
                           track is set to on
        ─────────────────────────────────────────────────────────────────────
        /                  Search.
@@ -2777,6 +2782,7 @@ CUSTOMIZATION
        ─────────────────────────────────────────────────────────────────────
        ,                  Switch numbers with the previous window.
        ─────────────────────────────────────────────────────────────────────
+
        .                  Switch numbers with the next window.
        ─────────────────────────────────────────────────────────────────────
        K                  Kill that window.
@@ -2784,25 +2790,25 @@ CUSTOMIZATION
        space or enter     Select that window.
        ─────────────────────────────────────────────────────────────────────
 
-       The  table  format can be changed with the string and title option, the
-       title is displayed as table heading, while the lines are made by  using
-       the  string setting. The default setting is Num Name%=Flags for the ti‐
-       tle and %3n %t%=%f for the lines.  See the STRING ESCAPES  chapter  for
+       The table format can be changed with the string and title  option,  the
+       title  is displayed as table heading, while the lines are made by using
+       the string setting. The default setting is Num Name%=Flags for the  ti‐
+       tle  and  %3n %t%=%f for the lines.  See the STRING ESCAPES chapter for
        more codes (e.g. color settings).
 
-       Windowlist  needs  a  region  size of at least 10 characters wide and 6
+       Windowlist needs a region size of at least 10  characters  wide  and  6
        characters high in order to display.
 
        windows [ string ]
 
-       Uses the message line to display a list of all the windows.  Each  win‐
-       dow  is listed by number with the name of process that has been started
-       in the window (or its title); the current window is marked with a  `*';
-       the  previous  window  is  marked  with a `-'; all the windows that are
-       logged in are marked with a `$'; a background window that has  received
-       a  bell  is  marked with a `!'; a background window that is being moni‐
-       tored and has had activity occur is marked with an `@'; a window  which
-       has  output logging turned on is marked with `(L)'; windows occupied by
+       Uses  the message line to display a list of all the windows.  Each win‐
+       dow is listed by number with the name of process that has been  started
+       in  the window (or its title); the current window is marked with a `*';
+       the previous window is marked with a `-';  all  the  windows  that  are
+       logged  in are marked with a `$'; a background window that has received
+       a bell is marked with a `!'; a background window that  is  being  moni‐
+       tored  and has had activity occur is marked with an `@'; a window which
+       has output logging turned on is marked with `(L)'; windows occupied  by
        other users are marked with `&'; windows in the zombie state are marked
        with `Z'.  If this list is too long to fit  on  the  terminal's  status
        line  only the portion around the current window is displayed.  The op‐
@@ -2812,9 +2818,9 @@ CUSTOMIZATION
 
        wrap [ on | off ]
 
-       Sets  the  line-wrap setting for the current window.  When line-wrap is
-       on, the second consecutive printable character output at the last  col‐
-       umn  of  a  line  will  wrap to the start of the following line.  As an
+       Sets the line-wrap setting for the current window.  When  line-wrap  is
+       on,  the second consecutive printable character output at the last col‐
+       umn of a line will wrap to the start of  the  following  line.   As  an
        added feature, backspace (^H) will also wrap through the left margin to
        the previous line.  Default is `on'. Without any options, the state  of
        wrap is toggled.
@@ -2823,9 +2829,9 @@ CUSTOMIZATION
 
        Writes  the  contents of the paste buffer to the specified file, or the
        public accessible screen-exchange file if no filename is given. This is
-       thought of as a primitive means of communication between  screen  users
-       on  the  same host. If an encoding is specified the paste buffer is re‐
-       coded on the fly to match the encoding.  The filename can be  set  with
+       thought  of  as a primitive means of communication between screen users
+       on the same host. If an encoding is specified the paste buffer  is  re‐
+       coded  on  the fly to match the encoding.  The filename can be set with
        the bufferfile command and defaults to /tmp/screen-exchange.
 
        writelock [ on | off | auto]
@@ -2834,7 +2840,7 @@ CUSTOMIZATION
        to  the  same  window at once. Per default, writelock is in `auto' mode
        and grants exclusive input permission to the user who is the  first  to
        switch to the particular window. When he leaves the window, other users
-       may  obtain the writelock (automatically). The writelock of the current
+       may obtain the writelock (automatically). The writelock of the  current
        window is disabled by the command writelock off. If the user issues the
        command writelock on he keeps  the  exclusive  write  permission  while
        switching to other windows.
@@ -2854,23 +2860,23 @@ CUSTOMIZATION
 
        Define zmodem support for  screen.  Screen  understands  two  different
        modes when it detects a zmodem request: pass and catch.  If the mode is
-       set  to  pass, screen will relay all data to the attacher until the end
-       of the transmission is reached.  In catch mode screen acts as a  zmodem
-       endpoint  and  starts  the corresponding rz/sz commands. If the mode is
-       set to auto, screen will use catch if the window is a tty (e.g. a  ser‐
-       ial line), otherwise it will use pass.
+       set to pass, screen will relay all data to the attacher until  the  end
+       of  the transmission is reached.  In catch mode screen acts as a zmodem
+       endpoint and starts the corresponding rz/sz commands. If  the  mode  is
+       set  to  auto, screen will use catch if the window is a tty (e.g. a se‐
+       rial line), otherwise it will use pass.
 
-       You  can  define the templates screen uses in catch mode via the second
+       You can define the templates screen uses in catch mode via  the  second
        and the third form.
 
        Note also that this is an experimental feature.
 
        zombie [keys[onerror]]
 
-       Per default screen windows are removed from the window list as soon  as
-       the  windows  process  (e.g. shell) exits. When a string of two keys is
-       specified to the zombie command, `dead'  windows  will  remain  in  the
-       list.   The  kill command may be used to remove such a window. Pressing
+       Per  default screen windows are removed from the window list as soon as
+       the windows process (e.g. shell) exits. When a string of  two  keys  is
+       specified  to  the  zombie  command,  `dead' windows will remain in the
+       list.  The kill command may be used to remove such a  window.  Pressing
        the first key in the dead window has the same effect. When pressing the
        second key, screen will attempt to resurrect the  window.  The  process
        that  was initially running in the window will be launched again. Call‐
@@ -2881,14 +2887,14 @@ CUSTOMIZATION
        command should probably be called defzombie, but it isn't.
 
        Optionally you can put the word onerror after the keys. This will cause
-       screen to monitor exit status of the process running in the window.  If
-       it  exits  normally  ('0'), the window disappears. Any other exit value
+       screen  to monitor exit status of the process running in the window. If
+       it exits normally ('0'), the window disappears. Any  other  exit  value
        causes the window to become a zombie.
 
        zombie_timeout[seconds]
 
-       Per default screen windows are removed from the window list as soon  as
-       the  windows  process  (e.g.  shell)  exits. If zombie keys are defined
+       Per  default screen windows are removed from the window list as soon as
+       the windows process (e.g. shell) exits.  If  zombie  keys  are  defined
        (compare with above zombie command), it is possible to also set a time‐
        out when screen tries to automatically reconnect a dead screen window.
 
@@ -2896,7 +2902,7 @@ THE MESSAGE LINE
        Screen displays informational messages and other diagnostics in a  mes‐
        sage  line.   While this line is distributed to appear at the bottom of
        the screen, it can be defined to appear at the top of the screen during
-       compilation.  If your terminal has a status line defined in  its  term‐
+       compilation.   If  your terminal has a status line defined in its term‐
        cap, screen will use this for displaying its messages, otherwise a line
        of  the  current screen will be temporarily overwritten and output will
        be momentarily interrupted. The message line is  automatically  removed
@@ -2928,64 +2934,55 @@ WINDOW TYPES
           fied  as  the first parameter, then the window is directly connected
           to this device.  This  window  type  is  similar  to  screen  cu  -l
           /dev/ttya.  Read and write access is required on the device node, an
-          exclusive  open is attempted on the node to mark the connection line
-          as busy.  An optional parameter is allowed  consisting  of  a  comma
+          exclusive open is attempted on the node to mark the connection  line
+          as  busy.   An  optional  parameter is allowed consisting of a comma
           separated list of flags in the notation used by stty(1):
 
           <baud_rate>
-                 Usually  300,  1200, 9600 or 19200. This affects transmission
+                 Usually 300, 1200, 9600 or 19200. This  affects  transmission
                  as well as receive speed.
 
           cs8 or cs7
                  Specify the transmission of eight (or seven) bits per byte.
 
-          cstopb or -cstopb
-                 Specify two stop bits per character (one with '-')
-
-          parenb or -parenb
-                 Generate parity bit in output and expect parity bit in input
-
-          parodd or -parodd
-                 Set odd parity (or even parity with '-')
-
           ixon or -ixon
-                 Enables (or disables) software  flow-control  (CTRL-S/CTRL-Q)
+                 Enables  (or  disables) software flow-control (CTRL-S/CTRL-Q)
                  for sending data.
 
           ixoff or -ixoff
-                 Enables  (or  disables)  software  flow-control for receiving
+                 Enables (or disables)  software  flow-control  for  receiving
                  data.
 
           istrip or -istrip
                  Clear (or keep) the eight bit in each received byte.
 
-          You may want to specify as many of these options as applicable.  Un‐
+          You  may want to specify as many of these options as applicable. Un‐
           specified options cause the terminal driver to make up the parameter
           values of the connection.  These values are system dependent and may
           be in defaults or values saved from a previous connection.
 
-          For  tty  windows,  the info command shows some of the modem control
-          lines in the status line. These may  include  `RTS',  `CTS',  'DTR',
-          `DSR',  `CD'  and more.  This depends on the available ioctl()'s and
-          system header files as well as the on the physical  capabilities  of
-          the  serial  board.   Signals  that  are logical low (inactive) have
+          For tty windows, the info command shows some of  the  modem  control
+          lines  in  the  status  line. These may include `RTS', `CTS', 'DTR',
+          `DSR', `CD' and more.  This depends on the available  ioctl()'s  and
+          system  header  files as well as the on the physical capabilities of
+          the serial board.  Signals that  are  logical  low  (inactive)  have
           their name preceded by an exclamation mark (!), otherwise the signal
           is logical high (active).  Signals not supported by the hardware but
           available to the ioctl() interface are usually shown low.
 
-          When the CLOCAL status bit is true, the whole set of  modem  signals
-          is  placed inside curly braces ({ and }).  When the CRTSCTS or TIOC‐
+          When  the  CLOCAL status bit is true, the whole set of modem signals
+          is placed inside curly braces ({ and }).  When the CRTSCTS or  TIOC‐
           SOFTCAR bit is set, the signals `CTS' or `CD' are shown in parenthe‐
           sis, respectively.
 
           For tty windows, the command break causes the Data transmission line
-          (TxD) to go low for a specified period of time. This is expected  to
-          be  interpreted  as break signal on the other side.  No data is sent
+          (TxD)  to go low for a specified period of time. This is expected to
+          be interpreted as break signal on the other side.  No data  is  sent
           and no modem control line is changed when a break is issued.
 
        •  If the first parameter is //telnet, the second parameter is expected
           to be a host name, and an optional third parameter may specify a TCP
-          port number (default decimal 23).  Screen will connect to  a  server
+          port  number  (default decimal 23).  Screen will connect to a server
           listening on the remote host and use the telnet protocol to communi‐
           cate with that server.
 
@@ -2996,7 +2993,7 @@ WINDOW TYPES
 
               e      ECHO. Local echo is disabled.
 
-              c      SGA.  The  connection  is  in  `character mode' (default:
+              c      SGA. The connection  is  in  `character  mode'  (default:
                      `line mode').
 
               t      TTYPE. The terminal type has been requested by the remote
@@ -3054,7 +3051,7 @@ STRING ESCAPES
        u      all other users on this window
 
        w      all window numbers and names. With '-' qualifier: up to the cur‐
-              rent window; with '+' qualifier: starting with the window  after
+              rent  window; with '+' qualifier: starting with the window after
               the current one.
 
        W      all window numbers and names except the current one
@@ -3063,16 +3060,16 @@ STRING ESCAPES
 
        X      the executed command without arguments running in this windows
 
-       ?      the  part to the next '%?' is displayed only if a '%' escape in‐
+       ?      the part to the next '%?' is displayed only if a '%' escape  in‐
               side the part expands to a non-empty string
 
        :      else part of '%?'
 
-       =      pad the string to the display's width (like TeX's hfill).  If  a
-              number  is  specified,  pad  to  the  percentage of the window's
-              width.  A '0' qualifier tells screen to treat the number as  ab‐
-              solute  position.   You  can specify to pad relative to the last
-              absolute pad position by adding a '+' qualifier or to pad  rela‐
+       =      pad  the  string to the display's width (like TeX's hfill). If a
+              number is specified, pad  to  the  percentage  of  the  window's
+              width.   A '0' qualifier tells screen to treat the number as ab‐
+              solute position.  You can specify to pad relative  to  the  last
+              absolute  pad position by adding a '+' qualifier or to pad rela‐
               tive to the right margin by using '-'. The padding truncates the
               string  if  the specified position lies before the current posi‐
               tion. Add the 'L' qualifier to change this.
@@ -3083,25 +3080,25 @@ STRING ESCAPES
               screen  needs  to do truncation, it tries to do it in a way that
               the marked position gets moved to the  specified  percentage  of
               the output area. (The area starts from the last absolute pad po‐
-              sition  and  ends  with the position specified by the truncation
-              operator.) The 'L' qualifier tells screen to mark the  truncated
+              sition and ends with the position specified  by  the  truncation
+              operator.)  The 'L' qualifier tells screen to mark the truncated
               parts with '...'.
 
        {      attribute/color modifier string terminated by the next }
 
-       `      Substitute  with  the output of a 'backtick' command. The length
+       `      Substitute with the output of a 'backtick' command.  The  length
               qualifier is misused to identify one of the commands.
 
-       The 'c' and 'C' escape may be qualified with a '0' to make  screen  use
-       zero  instead  of space as fill character. The '0' qualifier also makes
-       the '=' escape use absolute positions. The 'n' and '='  escapes  under‐
+       The  'c'  and 'C' escape may be qualified with a '0' to make screen use
+       zero instead of space as fill character. The '0' qualifier  also  makes
+       the  '='  escape use absolute positions. The 'n' and '=' escapes under‐
        stand a length qualifier (e.g. '%3n'), 'D' and 'M' can be prefixed with
        'L'  to  generate long names, 'w' and 'W' also show the window flags if
        'L' is given.
 
        An attribute/color modifier is used to change  the  attributes  or  the
        color settings. Its format is [attribute modifier] [color description].
-       The  attribute  modifier must be prefixed by a change type indicator if
+       The attribute modifier must be prefixed by a change type  indicator  if
        it can be confused with a color description. The following change types
        are known:
 
@@ -3124,7 +3121,7 @@ STRING ESCAPES
        B      blinking
 
        Colors are coded either as a hexadecimal number or two letters specify‐
-       ing  the  desired  background and foreground color (in that order). The
+       ing the desired background and foreground color (in  that  order).  The
        following colors are known:
 
        k      black
@@ -3138,12 +3135,12 @@ STRING ESCAPES
        d      default color
        .      leave color unchanged
 
-       The capitalized versions of the letter specify bright colors.  You  can
-       also  use the pseudo-color 'i' to set just the brightness and leave the
+       The  capitalized  versions of the letter specify bright colors. You can
+       also use the pseudo-color 'i' to set just the brightness and leave  the
        color unchanged.
-       A one digit/letter color description is treated as foreground or  back‐
-       ground  color  dependent  on the current attributes: if reverse mode is
-       set, the background color is changed instead of the  foreground  color.
+       A  one digit/letter color description is treated as foreground or back‐
+       ground color dependent on the current attributes: if  reverse  mode  is
+       set,  the  background color is changed instead of the foreground color.
        If you don't like this, prefix the color with a .. If you want the same
        behavior for two-letter color descriptions, also prefix them with a ..
        As  a  special  case, %{-} restores the attributes and colors that were
@@ -3156,27 +3153,27 @@ STRING ESCAPES
 
        +b r   use bold red
 
-       = yd   clear all attributes, write in default  color  on  yellow  back‐
+       = yd   clear  all  attributes,  write  in default color on yellow back‐
               ground.
 
        %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<
-              The  available  windows centered at the current window and trun‐
-              cated to the available width. The current  window  is  displayed
+              The available windows centered at the current window  and  trun‐
+              cated  to  the  available width. The current window is displayed
               white on blue.  This can be used with hardstatus alwayslastline.
 
        %?%F%{.R.}%?%3n %t%? [%h]%?
-              The  window number and title and the window's hardstatus, if one
-              is set.  Also use a red background if this is the active  focus.
+              The window number and title and the window's hardstatus, if  one
+              is  set.  Also use a red background if this is the active focus.
               Useful for caption string.
 
 FLOW-CONTROL
        Each window has a flow-control setting that determines how screen deals
        with the XON and XOFF characters (and perhaps the interrupt character).
-       When  flow-control is turned off, screen ignores the XON and XOFF char‐
-       acters, which allows the user to send them to the  current  program  by
-       simply  typing  them  (useful for the emacs editor, for instance).  The
-       trade-off is that it will take longer for output from a normal  program
-       to  pause in response to an XOFF.  With flow-control turned on, XON and
+       When flow-control is turned off, screen ignores the XON and XOFF  char‐
+       acters,  which  allows  the user to send them to the current program by
+       simply typing them (useful for the emacs editor,  for  instance).   The
+       trade-off  is that it will take longer for output from a normal program
+       to pause in response to an XOFF.  With flow-control turned on, XON  and
        XOFF characters are used to immediately pause the output of the current
        window.  You can still send these characters to  the  current  program,
        but  you  must use the appropriate two-character screen commands (typi‐
@@ -3194,24 +3191,24 @@ FLOW-CONTROL
        OCPKT  mode  (like rlogin does). If the tty driver does not support TI‐
        OCPKT, screen tries to find out the right mode  based  on  the  current
        setting of the application keypad - when it is enabled, flow-control is
-       turned  off  and visa versa.  Of course, you can still manipulate flow-
+       turned off and visa versa.  Of course, you can still  manipulate  flow-
        control manually when needed.
 
-       If you're running with flow-control enabled and find that pressing  the
-       interrupt  key  (usually  C-c) does not interrupt the display until an‐
+       If  you're running with flow-control enabled and find that pressing the
+       interrupt key (usually C-c) does not interrupt the  display  until  an‐
        other 6-8 lines have scrolled by, try running screen with the interrupt
        option (add the interrupt flag to the flow command in  your  .screenrc,
        or use the -i command-line option).  This causes the output that screen
        has accumulated from the interrupted program to be flushed.  One disad‐
        vantage  is that the virtual terminal's memory contains the non-flushed
        version of the output, which in rare cases can cause minor inaccuracies
-       in the output.  For example, if you switch screens and return,  or  up‐
-       date  the screen with C-a l you would see the version of the output you
-       would have gotten without interrupt being on.  Also, you might need  to
-       turn  off  flow-control (or use auto-flow mode to turn it off automati‐
-       cally) when running a program that expects you to  type  the  interrupt
-       character  as  input,  as it is possible to interrupt the output of the
-       virtual terminal to your physical terminal  when  flow-control  is  en‐
+       in  the  output.  For example, if you switch screens and return, or up‐
+       date the screen with C-a l you would see the version of the output  you
+       would  have gotten without interrupt being on.  Also, you might need to
+       turn off flow-control (or use auto-flow mode to turn it  off  automati‐
+       cally)  when  running  a program that expects you to type the interrupt
+       character as input, as it is possible to interrupt the  output  of  the
+       virtual  terminal  to  your  physical terminal when flow-control is en‐
        abled.  If this happens, a simple refresh of the screen with C-a l will
        restore it.  Give each mode a try, and use whichever mode you find more
        comfortable.
@@ -3221,10 +3218,10 @@ TITLES (naming windows)
        the  windows  command (C-a w)) by setting it with one of the title com‐
        mands.  Normally the name displayed is the actual command name  of  the
        program created in the window.  However, it is sometimes useful to dis‐
-       tinguish  various  programs  of the same name or to change the name on-
+       tinguish various programs of the same name or to change  the  name  on-
        the-fly to reflect the current state of the window.
 
-       The default name for all shell windows can be set with  the  shelltitle
+       The  default  name for all shell windows can be set with the shelltitle
        command in the .screenrc file, while all other windows are created with
        a  screen  command and thus can have their name set with the -t option.
        Interactively,    there    is    the    title-string    escape-sequence
@@ -3240,61 +3237,61 @@ TITLES (naming windows)
        tle escape-sequence output as a part of your prompt.  The  search  por‐
        tion  specifies  an end-of-prompt search string, while the name portion
        specifies the default shell name for the window.  If the name ends in a
-       `:' screen will add what it believes to be the current command  running
-       in  the  window  to the end of the window's shell name (e.g. name:cmd).
-       Otherwise the current command name supersedes the shell name  while  it
+       `:'  screen will add what it believes to be the current command running
+       in the window to the end of the window's shell  name  (e.g.  name:cmd).
+       Otherwise  the  current command name supersedes the shell name while it
        is running.
 
-       Here's  how  it  works:   you must modify your shell prompt to output a
-       null title-escape-sequence (<esc>k<esc>\) as a  part  of  your  prompt.
-       The  last part of your prompt must be the same as the string you speci‐
-       fied for the search portion of the title.  Once this is set up,  screen
-       will  use  the title-escape-sequence to clear the previous command name
-       and get ready for the next command.  Then, when a newline  is  received
-       from  the shell, a search is made for the end of the prompt.  If found,
-       it will grab the first word after the matched string and use it as  the
-       command  name.  If the command name begins with either '!', '%', or '^'
-       screen will use the first word on the  following  line  (if  found)  in
-       preference  to  the  just-found  name.  This helps csh users get better
+       Here's how it works:  you must modify your shell  prompt  to  output  a
+       null  title-escape-sequence  (<esc>k<esc>\)  as  a part of your prompt.
+       The last part of your prompt must be the same as the string you  speci‐
+       fied  for the search portion of the title.  Once this is set up, screen
+       will use the title-escape-sequence to clear the previous  command  name
+       and  get  ready for the next command.  Then, when a newline is received
+       from the shell, a search is made for the end of the prompt.  If  found,
+       it  will grab the first word after the matched string and use it as the
+       command name.  If the command name begins with either '!', '%', or  '^'
+       screen  will  use  the  first  word on the following line (if found) in
+       preference to the just-found name.  This helps  csh  users  get  better
        command names when using job control or history recall commands.
 
        Here's some .screenrc examples:
 
-                   screen -t top 2 nice top
+                       screen -t top 2 nice top
 
-       Adding this line to your .screenrc would start a nice-d version of  the
+       Adding  this line to your .screenrc would start a nice-d version of the
        top command in window 2 named top rather than nice.
 
-                   shelltitle '> |csh'
-                   screen 1
+                       shelltitle '> |csh'
+                       screen 1
 
-       These  commands would start a shell with the given shelltitle.  The ti‐
-       tle specified is an auto-title that would expect  the  prompt  and  the
+       These commands would start a shell with the given shelltitle.  The  ti‐
+       tle  specified  is  an  auto-title that would expect the prompt and the
        typed command to look something like the following:
 
-                   /usr/joe/src/dir> trn
+                       /usr/joe/src/dir> trn
 
-       (it  looks  after  the  '>  ' for the command name).  The window status
-       would show the name trn while the command was running,  and  revert  to
+       (it looks after the '> ' for the  command  name).   The  window  status
+       would  show  the  name trn while the command was running, and revert to
        csh upon completion.
 
-                   bind R screen -t '% |root:' su
+                       bind R screen -t '% |root:' su
 
        Having this command in your .screenrc would bind the key sequence C-a R
        to  the  su  command and give it an auto-title name of root:.  For this
        auto-title to work, the screen could look something like this:
 
-                   % !em
-                   emacs file.c
+                       % !em
+                       emacs file.c
 
        Here the user typed the csh history command !em which  ran  the  previ‐
        ously  entered  emacs command.  The window status would show root:emacs
        during the execution of the command, and revert to simply root: at  its
        completion.
 
-                   bind o title
-                   bind E title ""
-                   bind u title (unknown)
+                       bind o title
+                       bind E title ""
+                       bind u title (unknown)
 
        The  first  binding  doesn't have any arguments, so it would prompt you
        for a title when you type C-a o.  The second  binding  would  clear  an
@@ -3308,14 +3305,14 @@ TITLES (naming windows)
        sult in an incorrect display.  One way to get around this is to  use  a
        prompt like this:
 
-                   set prompt='^[[0000m^[k^[\% '
+                       set prompt='^[[0000m^[k^[\% '
 
        The  escape-sequence  <esc>[0000m not only normalizes the character at‐
        tributes, but all the zeros round the length of the  invisible  charac‐
        ters  up  to  8.   Bash users will probably want to echo the escape se‐
        quence in the PROMPT_COMMAND:
 
-                   PROMPT_COMMAND='printf "\033k\033\134"'
+                       PROMPT_COMMAND='printf "\033k\033\134"'
 
        (I used \134 to output a `\' because of a bug in bash v1.04).
 
@@ -3336,26 +3333,26 @@ THE VIRTUAL TERMINAL
 
        When  screen  tries  to figure out a terminal name for itself, it first
        looks for an entry named screen.<term>, where <term> is the contents of
-       your $TERM variable.  If no such entry exists, screen tries screen  (or
+       your  $TERM variable.  If no such entry exists, screen tries screen (or
        screen-w if the terminal is wide (132 cols or more)).  If even this en‐
        try cannot be found, vt100 is used as a substitute.
 
        The idea is that if you have a terminal which doesn't support an impor‐
-       tant  feature  (e.g.  delete  char or clear to EOS) you can build a new
-       termcap/terminfo entry for screen (named  screen.<dumbterm>)  in  which
-       this  capability  has been disabled. If this entry is installed on your
-       machines you are able to do a rlogin and still keep the  correct  term‐
-       cap/terminfo  entry.  The terminal name is put in the $TERM variable of
+       tant feature (e.g. delete char or clear to EOS) you  can  build  a  new
+       termcap/terminfo  entry  for  screen (named screen.<dumbterm>) in which
+       this capability has been disabled. If this entry is installed  on  your
+       machines  you  are able to do a rlogin and still keep the correct term‐
+       cap/terminfo entry.  The terminal name is put in the $TERM variable  of
        all new windows.  Screen also sets the $TERMCAP variable reflecting the
        capabilities of the virtual terminal emulated. Notice that, however, on
        machines using the terminfo database this variable has no effect.  Fur‐
        thermore, the variable $WINDOW is set to the window number of each win‐
        dow.
 
-       The actual set of capabilities supported by the  virtual  terminal  de‐
-       pends  on the capabilities supported by the physical terminal.  If, for
-       instance, the physical  terminal  does  not  support  underscore  mode,
-       screen  does  not  put the `us' and `ue' capabilities into the window's
+       The  actual  set  of capabilities supported by the virtual terminal de‐
+       pends on the capabilities supported by the physical terminal.  If,  for
+       instance,  the  physical  terminal  does  not  support underscore mode,
+       screen does not put the `us' and `ue' capabilities  into  the  window's
        $TERMCAP variable, accordingly.  However, a minimum number of capabili‐
        ties must be supported by a terminal in order  to  run  screen;  namely
        scrolling,  clear  screen,  and  direct cursor addressing (in addition,
@@ -3364,38 +3361,38 @@ THE VIRTUAL TERMINAL
 
        Also,  you can customize the $TERMCAP value used by screen by using the
        termcap .screenrc command, or by defining the variable $SCREENCAP prior
-       to startup.  When the latter is defined, its value will be copied  ver‐
-       batim  into  each  window's  $TERMCAP variable.  This can either be the
-       full terminal definition, or  a  filename  where  the  terminal  screen
+       to  startup.  When the latter is defined, its value will be copied ver‐
+       batim into each window's $TERMCAP variable.  This  can  either  be  the
+       full  terminal  definition,  or  a  filename  where the terminal screen
        (and/or screen-w) is defined.
 
-       Note  that  screen  honors the terminfo .screenrc command if the system
+       Note that screen honors the terminfo .screenrc command  if  the  system
        uses the terminfo database rather than termcap.
 
-       When the boolean `G0' capability is present in the  termcap  entry  for
+       When  the  boolean  `G0' capability is present in the termcap entry for
        the terminal on which screen has been called, the terminal emulation of
        screen supports multiple character sets.  This allows an application to
        make use of, for instance, the VT100 graphics character set or national
        character sets.  The following control functions from ISO 2022 are sup‐
-       ported:  lock  shift  G0  (SI), lock shift G1 (SO), lock shift G2, lock
-       shift G3, single shift G2, and single shift G3.  When a virtual  termi‐
-       nal  is  created  or reset, the ASCII character set is designated as G0
-       through G3.  When the `G0' capability is present, screen evaluates  the
-       capabilities  `S0', `E0', and `C0' if present. `S0' is the sequence the
-       terminal uses to enable and start the  graphics  character  set  rather
-       than  SI.   `E0'  is the corresponding replacement for SO. `C0' gives a
-       character by character translation string that  is  used  during  semi-
-       graphics  mode.  This string is built like the `acsc' terminfo capabil‐
+       ported: lock shift G0 (SI), lock shift G1 (SO),  lock  shift  G2,  lock
+       shift  G3, single shift G2, and single shift G3.  When a virtual termi‐
+       nal is created or reset, the ASCII character set is  designated  as  G0
+       through  G3.  When the `G0' capability is present, screen evaluates the
+       capabilities `S0', `E0', and `C0' if present. `S0' is the sequence  the
+       terminal  uses  to  enable  and start the graphics character set rather
+       than SI.  `E0' is the corresponding replacement for SO.  `C0'  gives  a
+       character  by  character  translation  string that is used during semi-
+       graphics mode. This string is built like the `acsc'  terminfo  capabil‐
        ity.
 
        When the `po' and `pf' capabilities are present in the terminal's term‐
        cap entry, applications running in a screen window can send  output  to
        the printer port of the terminal.  This allows a user to have an appli‐
-       cation  in one window sending output to a printer connected to the ter‐
-       minal, while all other windows are still active (the  printer  port  is
-       enabled  and  disabled  again for each chunk of output).  As a side-ef‐
-       fect, programs running in different windows  can  send  output  to  the
-       printer  simultaneously.   Data sent to the printer is not displayed in
+       cation in one window sending output to a printer connected to the  ter‐
+       minal,  while  all  other windows are still active (the printer port is
+       enabled and disabled again for each chunk of output).   As  a  side-ef‐
+       fect,  programs  running  in  different  windows can send output to the
+       printer simultaneously.  Data sent to the printer is not  displayed  in
        the window.  The info command displays a line starting `PRIN' while the
        printer is active.
 
@@ -3410,12 +3407,12 @@ THE VIRTUAL TERMINAL
        Some capabilities are only put into the $TERMCAP variable of  the  vir‐
        tual  terminal  if  they can be efficiently implemented by the physical
        terminal.  For instance, `dl' (delete line) is only put into the $TERM‐
-       CAP variable if the terminal supports  either  delete  line  itself  or
-       scrolling  regions. Note that this may provoke confusion, when the ses‐
-       sion is reattached on a different terminal, as the  value  of  $TERMCAP
+       CAP  variable  if  the  terminal  supports either delete line itself or
+       scrolling regions. Note that this may provoke confusion, when the  ses‐
+       sion  is  reattached  on a different terminal, as the value of $TERMCAP
        cannot be modified by parent processes.
 
-       The  "alternate  screen" capability is not enabled by default.  Set the
+       The "alternate screen" capability is not enabled by default.   Set  the
        altscreen .screenrc command to enable it.
 
        The following is a list of control sequences recognized by screen.  (V)
@@ -3465,17 +3462,17 @@ THE VIRTUAL TERMINAL
        ESC k                      A.k.a. Definition String
 
        ESC P                 (A)  Device Control String.  Outputs a string di‐
-                                  rectly  to  the host terminal without inter‐
+                                  rectly to the host terminal  without  inter‐
                                   pretation.
 
        ESC _                 (A)  Application Program Command (Hardstatus)
 
-       ESC ] 0 ; string ^G   (A)  Operating System Command (Hardstatus,  xterm
+       ESC ] 0 ; string ^G   (A)  Operating  System Command (Hardstatus, xterm
                                   title hack)
 
-       ESC ] 83 ; cmd ^G     (A)  Execute  screen  command. This only works if
-                                  multi-user support is compiled into  screen.
-                                  The  pseudo-user  :window:  is used to check
+       ESC ] 83 ; cmd ^G     (A)  Execute screen command. This only  works  if
+                                  multi-user  support is compiled into screen.
+                                  The pseudo-user :window: is  used  to  check
                                   the access control list. Use addacl :window:
                                   -rwx #? to create a user with no rights  and
                                   allow only the needed commands.
@@ -3516,7 +3513,7 @@ THE VIRTUAL TERMINAL
 
        ESC [ Pn K                 Erase in Line
 
-                                  Pn = None or 0             From  Cursor   to
+                                  Pn = None or 0             From   Cursor  to
                                                              End of Line
 
                                   Pn = 1                     From Beginning of
@@ -3644,8 +3641,8 @@ THE VIRTUAL TERMINAL
                                                              sor Keys
 
                                   Ps = ?3               (V)  Change   Terminal
-                                                             Width   to    132
-                                                             columns
+                                                             Width to 132 col‐
+                                                             umns
 
                                   Ps = ?5               (V)  Reverse Video
 
@@ -3653,7 +3650,7 @@ THE VIRTUAL TERMINAL
 
                                   Ps = ?7               (V)  Wrap Mode
 
-                                  Ps = ?9                    X10  mouse track‐
+                                  Ps = ?9                    X10 mouse  track‐
                                                              ing
 
                                   Ps = ?25              (V)  Visible Cursor
@@ -3674,20 +3671,20 @@ THE VIRTUAL TERMINAL
 
        ESC [ 4 i             (A)  Stop relay to printer (ANSI Media Copy)
 
-       ESC [ 8 ; Ph ; Pw t        Resize the window to  `Ph'  lines  and  `Pw'
+       ESC [ 8 ; Ph ; Pw t        Resize  the  window  to  `Ph' lines and `Pw'
                                   columns (SunView special)
 
        ESC [ c                    Send VT100 Identification String
 
        ESC [ x                    Send Terminal Parameter Report
 
-       ESC [ > c                  Send   VT220   Secondary  Device  Attributes
+       ESC [ > c                  Send  VT220  Secondary   Device   Attributes
                                   String
 
        ESC [ 6 n                  Send Cursor Position Report
 
 INPUT TRANSLATION
-       In order to do a full VT100 emulation screen has to detect that  a  se‐
+       In  order  to do a full VT100 emulation screen has to detect that a se‐
        quence of characters in the input stream was generated by a keypress on
        the  user's keyboard and insert the VT100 style escape sequence. Screen
        has a very flexible way of doing this by making it possible to map  ar‐
@@ -3696,104 +3693,104 @@ INPUT TRANSLATION
        buffer  of  the  window  (see also command stuff in the command table).
        Because the sequences generated by a keypress can change after a  reat‐
        tach from a different terminal type, it is possible to bind commands to
-       the  termcap  name of the keys.  Screen will insert the correct binding
+       the termcap name of the keys.  Screen will insert the  correct  binding
        after each reattach. See the bindkey command for further details on the
        syntax and examples.
 
        Here is the table of the default key bindings. The fourth is what  com‐
        mand is executed if the keyboard is switched into application mode.
 
-       ┌─────────────────┬──────────────┬──────────┬──────────┐
-       │ Key name        │ Termcap name │ Command  │ App mode │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Cursor up       │ ku           │ \033[A   │ \033OA   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Cursor down     │ kd           │ \033[B   │ \033OB   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Cursor right    │ kr           │ \033[C   │ \033OC   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Cursor left     │ kl           │ \033[D   │ \033OD   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 0  │ k0           │ \033[10~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 1  │ k1           │ \033OP   │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 2  │ k2           │ \033OQ   │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 3  │ k3           │ \033OR   │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 4  │ k4           │ \033OS   │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 5  │ k5           │ \033[15~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 6  │ k6           │ \033[17~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 7  │ k7           │ \033[18~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 8  │ k8           │ \033[19~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 9  │ k9           │ \033[20~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 10 │ k;           │ \033[21~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 11 │ F1           │ \033[23~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Function key 12 │ F2           │ \033[24~ │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Home            │ kh           │ \033[1~  │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ End             │ kH           │ \033[4~  │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Insert          │ kI           │ \033[2~  │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Delete          │ kD           │ \033[3~  │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Page up         │ kP           │ \033[5~  │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Page down       │ kN           │ \033[6~  │          │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 0        │ f0           │ 0        │ \033Op   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 1        │ f1           │ 1        │ \033Oq   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 2        │ f2           │ 2        │ \033Or   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 3        │ f3           │ 3        │ \033Os   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 4        │ f4           │ 4        │ \033Ot   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 5        │ f5           │ 5        │ \033Ou   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 6        │ f6           │ 6        │ \033Ov   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 7        │ f7           │ 7        │ \033Ow   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 8        │ f8           │ 8        │ \033Ox   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad 9        │ f9           │ 9        │ \033Oy   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad +        │ f+           │ +        │ \033Ok   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad -        │ f-           │ -        │ \033Om   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad *        │ f*           │ *        │ \033Oj   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad /        │ f/           │ /        │ \033Oo   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad =        │ fq           │ =        │ \033OX   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad .        │ f.           │ .        │ \033On   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad ,        │ f,           │ ,        │ \033Ol   │
-       ├─────────────────┼──────────────┼──────────┼──────────┤
-       │ Keypad enter    │ fe           │ \015     │ \033OM   │
-       └─────────────────┴──────────────┴──────────┴──────────┘
+       ┌────────────────┬──────────────┬──────────┬──────────┐
+       │Key name        │ Termcap name │ Command  │ App mode │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Cursor up       │ ku           │ \033[A   │ \033OA   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Cursor down     │ kd           │ \033[B   │ \033OB   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Cursor right    │ kr           │ \033[C   │ \033OC   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Cursor left     │ kl           │ \033[D   │ \033OD   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 0  │ k0           │ \033[10~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 1  │ k1           │ \033OP   │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 2  │ k2           │ \033OQ   │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 3  │ k3           │ \033OR   │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 4  │ k4           │ \033OS   │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 5  │ k5           │ \033[15~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 6  │ k6           │ \033[17~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 7  │ k7           │ \033[18~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 8  │ k8           │ \033[19~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 9  │ k9           │ \033[20~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 10 │ k;           │ \033[21~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 11 │ F1           │ \033[23~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Function key 12 │ F2           │ \033[24~ │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Home            │ kh           │ \033[1~  │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │End             │ kH           │ \033[4~  │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Insert          │ kI           │ \033[2~  │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Delete          │ kD           │ \033[3~  │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Page up         │ kP           │ \033[5~  │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Page down       │ kN           │ \033[6~  │          │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 0        │ f0           │ 0        │ \033Op   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 1        │ f1           │ 1        │ \033Oq   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 2        │ f2           │ 2        │ \033Or   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 3        │ f3           │ 3        │ \033Os   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 4        │ f4           │ 4        │ \033Ot   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 5        │ f5           │ 5        │ \033Ou   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 6        │ f6           │ 6        │ \033Ov   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 7        │ f7           │ 7        │ \033Ow   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 8        │ f8           │ 8        │ \033Ox   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad 9        │ f9           │ 9        │ \033Oy   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad +        │ f+           │ +        │ \033Ok   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad -        │ f-           │ -        │ \033Om   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad *        │ f*           │ *        │ \033Oj   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad /        │ f/           │ /        │ \033Oo   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad =        │ fq           │ =        │ \033OX   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad .        │ f.           │ .        │ \033On   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad ,        │ f,           │ ,        │ \033Ol   │
+       ├────────────────┼──────────────┼──────────┼──────────┤
+       │Keypad enter    │ fe           │ \015     │ \033OM   │
+       └────────────────┴──────────────┴──────────┴──────────┘
 
 SPECIAL TERMINAL CAPABILITIES
        The following table describes all terminal capabilities that are recog‐
-       nized  by  screen  and are not in the termcap(5) manual.  You can place
-       these capabilities in your termcap entries (in `/etc/termcap')  or  use
-       them  with the commands `termcap', `terminfo' and `termcapinfo' in your
+       nized by screen and are not in the termcap(5) manual.   You  can  place
+       these  capabilities  in your termcap entries (in `/etc/termcap') or use
+       them with the commands `termcap', `terminfo' and `termcapinfo' in  your
        screenrc files. It is often not possible to place these capabilities in
        the terminfo database.
 
@@ -3827,29 +3824,29 @@ SPECIAL TERMINAL CAPABILITIES
 
        CE   (str)   Switch cursor-keys back to normal mode.
 
-       AN   (bool)  Turn  on autonuke. See the 'autonuke' command for more de‐
+       AN   (bool)  Turn on autonuke. See the 'autonuke' command for more  de‐
                     tails.
 
-       OL   (num)   Set the output buffer limit. See the  'obuflimit'  command
+       OL   (num)   Set  the  output buffer limit. See the 'obuflimit' command
                     for more details.
 
-       KJ   (str)   Set  the encoding of the terminal. See the 'encoding' com‐
+       KJ   (str)   Set the encoding of the terminal. See the 'encoding'  com‐
                     mand for valid encodings.
 
-       AF   (str)   Change character foreground color in an ANSI conform  way.
-                    This  capability  will  almost  always be set to '\E[3%dm'
+       AF   (str)   Change  character foreground color in an ANSI conform way.
+                    This capability will almost always  be  set  to  '\E[3%dm'
                     ('\E[3%p1%dm' on terminfo machines).
 
        AB   (str)   Same as 'AF', but change background color.
 
-       AX   (bool)  Does understand ANSI set default  fg/bg  color  (\E[39m  /
+       AX   (bool)  Does  understand  ANSI  set  default fg/bg color (\E[39m /
                     \E[49m).
 
-       XC   (str)   Describe  a translation of characters to strings depending
-                    on the current font. More details follow in the next  sec‐
+       XC   (str)   Describe a translation of characters to strings  depending
+                    on  the current font. More details follow in the next sec‐
                     tion.
 
-       XT   (bool)  Terminal  understands  special xterm sequences (OSC, mouse
+       XT   (bool)  Terminal understands special xterm sequences  (OSC,  mouse
                     tracking).
 
        C8   (bool)  Terminal needs bold to display high-intensity colors (e.g.
@@ -3861,7 +3858,7 @@ SPECIAL TERMINAL CAPABILITIES
 CHARACTER TRANSLATION
        Screen  has  a  powerful mechanism to translate characters to arbitrary
        strings depending on the current font and terminal type.  Use this fea‐
-       ture if you want to work with a  common  standard  character  set  (say
+       ture  if  you  want  to  work with a common standard character set (say
        ISO8851-latin1) even on terminals that scatter the more unusual charac‐
        ters over several national language font pages.
 
@@ -3876,19 +3873,19 @@ CHARACTER TRANSLATION
        nator> ('B': Ascii, 'A': UK, 'K':  German,  etc.)   to  strings.  Every
        <mapping>  describes  to  what string a single character will be trans‐
        lated. A template mechanism is used, as most of the time the codes have
-       a lot in common (for example strings to  switch  to  and  from  another
-       charset).  Each  occurrence  of '%' in <template> gets substituted with
-       the <template-arg> specified  together  with  the  character.  If  your
-       strings  are  not  similar at all, then use '%' as a template and place
-       the full string in <template-arg>. A quoting  mechanism  was  added  to
-       make  it  possible to use a real '%'. The '\' character quotes the spe‐
+       a  lot  in  common  (for  example strings to switch to and from another
+       charset). Each occurrence of '%' in <template>  gets  substituted  with
+       the  <template-arg>  specified  together  with  the  character. If your
+       strings are not similar at all, then use '%' as a  template  and  place
+       the  full  string  in  <template-arg>. A quoting mechanism was added to
+       make it possible to use a real '%'. The '\' character quotes  the  spe‐
        cial characters '\', '%', and ','.
 
        Here is an example:
 
            termcap hp700 'XC=B\E(K%\E(B,\304[,\326\\\\,\334]'
 
-       This tells screen how to translate ISOlatin1 (charset 'B')  upper  case
+       This  tells  screen how to translate ISOlatin1 (charset 'B') upper case
        umlaut characters on a hp700 terminal that has a German charset. '\304'
        gets  translated  to  '\E(K[\E(B'  and so on.  Note that this line gets
        parsed *three* times before the internal lookup table is built,  there‐
@@ -3914,7 +3911,7 @@ CHARACTER TRANSLATION
        COLUMNS        Number of columns on the terminal (overrides termcap en‐
                       try).
        HOME           Directory in which to look for .screenrc.
-       LINES          Number  of  lines on the terminal (overrides termcap en‐
+       LINES          Number of lines on the terminal (overrides  termcap  en‐
                       try).
        LOCKPRG        Screen lock program.
        NETHACKOPTIONS Turns on nethack option.
@@ -3932,8 +3929,8 @@ CHARACTER TRANSLATION
 
 ## FILES
        .../screen-4.?.??/etc/screenrc
-       .../screen-4.?.??/etc/etcscreenrc Examples  in  the screen distribution
-                                         package for private and  global  ini‐
+       .../screen-4.?.??/etc/etcscreenrc Examples in the  screen  distribution
+                                         package  for  private and global ini‐
                                          tialization files.
        $SYSSCREENRC
        /etc/screenrc                     screen initialization commands
@@ -3949,7 +3946,7 @@ CHARACTER TRANSLATION
                                          buffer'
        hardcopy.[0-9]                    Screen images created by the hardcopy
                                          function
-       screenlog.[0-9]                   Output log files created by  the  log
+       screenlog.[0-9]                   Output  log  files created by the log
                                          function
        /usr/lib/terminfo/?/*             or
        /etc/termcap                      Terminal capability databases
@@ -3957,14 +3954,14 @@ CHARACTER TRANSLATION
        $LOCKPRG                          Program that locks a terminal.
 
 ## AUTHORS
-       Originally  created  by  Oliver Laumann. For a long time maintained and
+       Originally created by Oliver Laumann. For a long  time  maintained  and
        developed by Juergen Weigert, Michael Schroeder, Micah Cowan and Sadrul
        Habib Chowdhury. Since 2015 maintained and developed by Amadeusz  Slaw‐
        inski  <amade@asmblr.net>  and Alexander Naumov <alexander_naumov@open‐
        suse.org>.
 
 COPYLEFT
-       Copyright (c) 2018-2023
+       Copyright (c) 2018-2022
             Alexander Naumov <alexander_naumov@opensuse.org>
             Amadeusz Slawinski <amade@asmblr.net>
        Copyright (c) 2015-2017
@@ -3985,12 +3982,12 @@ COPYLEFT
        Copyright (C) 1987 Oliver Laumann
 
        This program is free software; you can redistribute it and/or modify it
-       under the terms of the GNU General Public License as published  by  the
-       Free  Software  Foundation;  either  version 3, or (at your option) any
+       under  the  terms of the GNU General Public License as published by the
+       Free Software Foundation; either version 3, or  (at  your  option)  any
        later version.
-       This program is distributed in the hope that it  will  be  useful,  but
-       WITHOUT  ANY  WARRANTY;  without  even  the  implied  warranty  of MER‐
-       CHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU  General
+       This  program  is  distributed  in the hope that it will be useful, but
+       WITHOUT ANY  WARRANTY;  without  even  the  implied  warranty  of  MER‐
+       CHANTABILITY  or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
        Public License for more details.
        You should have received a copy of the GNU General Public License along
        with  this  program  (see  the file COPYING); if not, write to the Free
@@ -3998,8 +3995,6 @@ COPYLEFT
        02111-1307, USA
 
 CONTRIBUTORS
-       Vincent Lefevre <vincent@vinc17.net>,
-       Carl Drougge <bearded@longhaired.org>,
        Maarten ter Huurne <maarten@treewalker.org>,
        Jussi Kukkonen <jussi.kukkonen@intel.com>,
        Eric S. Raymond <esr@thyrsus.com>,
@@ -4037,11 +4032,11 @@ CONTRIBUTORS
        The  latest official release of screen available via anonymous ftp from
        ftp.gnu.org/gnu/screen/ or any other GNU distribution  site.  The  home
        page of screen is https://savannah.gnu.org/projects/screen/ and the git
-       repo  is  https://git.savannah.gnu.org/cgit/screen.git.  If you want to
+       repo is https://git.savannah.gnu.org/cgit/screen.git.  If you  want  to
        help, send a note to screen-devel@gnu.org.
 
 ## BUGS
-       •  `dm' (delete mode) and `xs' are not handled correctly (they are  ig‐
+       •  `dm'  (delete mode) and `xs' are not handled correctly (they are ig‐
           nored). `xn' is treated as a magic-margin indicator.
 
        •  Screen has no clue about double-high or double-wide characters.  But
@@ -4067,21 +4062,21 @@ CONTRIBUTORS
        •  Screen may give a strange warning when your tty has no utmp entry.
 
        •  When the modem line was hung up, screen may not automatically detach
-          (or quit) unless the device driver is configured to  send  a  HANGUP
-          signal.   To  detach  a screen session use the -D or -d command line
+          (or  quit)  unless  the device driver is configured to send a HANGUP
+          signal.  To detach a screen session use the -D or  -d  command  line
           option.
 
-       •  If a password is set, the command line options -d and -D  still  de‐
+       •  If  a  password is set, the command line options -d and -D still de‐
           tach a session without asking.
 
-       •  Both  breaktype  and defbreaktype change the break generating method
-          used by all terminal devices. The first should change a window  spe‐
-          cific  setting,  where the latter should change only the default for
+       •  Both breaktype and defbreaktype change the break  generating  method
+          used  by all terminal devices. The first should change a window spe‐
+          cific setting, where the latter should change only the  default  for
           new windows.
 
-       •  When attaching to a multiuser session, the user's .screenrc file  is
-          not  sourced.  Each  user's personal settings have to be included in
-          the .screenrc file from which the session is booted, or have  to  be
+       •  When  attaching to a multiuser session, the user's .screenrc file is
+          not sourced. Each user's personal settings have to  be  included  in
+          the  .screenrc  file from which the session is booted, or have to be
           changed manually.
 
        •  A weird imagination is most useful to gain full advantage of all the
@@ -4093,4 +4088,4 @@ CONTRIBUTORS
 ## SEE ALSO
        termcap(5), utmp(5), vi(1), captoinfo(1), tic(1), tty(4), pty(7)
 
-GNU Screen 4.9.1                  2023 Aug 20                        SCREEN(1)
+GNU Screen 4.9.0                  2022 Jan 30                        SCREEN(1)

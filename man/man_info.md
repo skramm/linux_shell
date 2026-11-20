@@ -55,8 +55,11 @@
        -w, --where, --location
               print physical location of Info file
 
-       The  first non-option argument, if present, is the menu entry to start from; it is searched for in all 'dir' files along INFOPATH.  If it is not present, info merges all 'dir' files and
-       shows the result.  Any remaining arguments are treated as the names of menu items relative to the initial node visited.
+       The  first  non-option argument, if present, is the menu entry to start
+       from; it is searched for in all 'dir' files along INFOPATH.  If  it  is
+       not present, info merges all 'dir' files and shows the result.  Any re‐
+       maining arguments are treated as the names of menu  items  relative  to
+       the initial node visited.
 
        For a summary of key bindings, type H within Info.
 
@@ -88,18 +91,23 @@
               show file ./foo.info, not searching dir
 
 ## REPORTING BUGS
-       Email bug reports to bug-texinfo@gnu.org, general questions and discussion to help-texinfo@gnu.org.
+       Email bug reports to bug-texinfo@gnu.org, general questions and discus‐
+       sion to help-texinfo@gnu.org.
        Texinfo home page: http://www.gnu.org/software/texinfo/
 
 ## COPYRIGHT
-       Copyright © 2021 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2021 Free Software Foundation, Inc.   License  GPLv3+:  GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+       This  is  free  software:  you  are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
-       The full documentation for info is maintained as a Texinfo manual.  If the info program is properly installed at your site, the command
+       The full documentation for info is maintained as a Texinfo manual.   If
+       the info program is properly installed at your site, the command
 
               info info
 
-       should give you access to the complete manual.  (Or, if you have Emacs, M-x info will lead to the manual.)
+       should give you access to the complete manual.  (Or, if you have Emacs,
+       M-x info will lead to the manual.)
 
-info 6.8                                                                                    July 2021                                                                                    INFO(1)
+info 6.8                           July 2021                           INFO(1)

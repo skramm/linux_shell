@@ -13,7 +13,8 @@
        tr [OPTION]... SET1 [SET2]
 
 ## DESCRIPTION
-       Translate, squeeze, and/or delete characters from standard input, writing to standard output.
+       Translate, squeeze, and/or delete characters from standard input, writ‐
+       ing to standard output.
 
        -c, -C, --complement
               use the complement of SET1
@@ -22,7 +23,9 @@
               delete characters in SET1, do not translate
 
        -s, --squeeze-repeats
-              replace each sequence of a repeated character that is listed in the last specified SET, with a single occurrence of that character
+              replace each sequence of a repeated character that is listed  in
+              the last specified SET, with a single occurrence of that charac‐
+              ter
 
        -t, --truncate-set1
               first truncate SET1 to length of SET2
@@ -32,7 +35,8 @@
        --version
               output version information and exit
 
-       SETs are specified as strings of characters.  Most represent themselves.  Interpreted sequences are:
+       SETs are specified as strings  of  characters.   Most  represent  them‐
+       selves.  Interpreted sequences are:
 
        \NNN   character with octal value NNN (1 to 3 octal digits)
 
@@ -100,9 +104,13 @@
        [=CHAR=]
               all characters which are equivalent to CHAR
 
-       Translation occurs if -d is not given and both SET1 and SET2 appear.  -t may be used only when translating.  SET2 is extended to length of SET1 by repeating its last character as neces‐
-       sary.  Excess characters of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to expand in ascending order; used in SET2 while translating, they may only be used  in  pairs
-       to specify case conversion.  -s uses the last specified SET, and occurs after translation or deletion.
+       Translation  occurs  if  -d is not given and both SET1 and SET2 appear.
+       -t may be used only when translating.  SET2 is extended  to  length  of
+       SET1  by  repeating its last character as necessary.  Excess characters
+       of SET2 are ignored.  Only [:lower:] and [:upper:]  are  guaranteed  to
+       expand  in  ascending  order;  used in SET2 while translating, they may
+       only be used in pairs to specify case conversion.   -s  uses  the  last
+       specified SET, and occurs after translation or deletion.
 
 ## AUTHOR
        Written by Jim Meyering.
@@ -112,11 +120,13 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2020  Free Software Foundation, Inc.  License GPLv3+: GNU
+       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free  to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/tr>
        or available locally via: info '(coreutils) tr invocation'
 
-GNU coreutils 8.32                                                                         August 2026                                                                                     TR(1)
+GNU coreutils 8.32                August 2026                            TR(1)

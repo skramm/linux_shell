@@ -16,10 +16,9 @@
 ## DESCRIPTION
        The SET command changes run-time configuration parameters. Many of the
        run-time parameters listed in Chapter 20 can be changed on-the-fly with
-       SET. (Some parameters can only be changed by superusers and users who
-       have been granted SET privilege on that parameter. There are also
-       parameters that cannot be changed after server or session start.)  SET
-       only affects the value used by the current session.
+       SET. (But some require superuser privileges to change, and others
+       cannot be changed after server or session start.)  SET only affects the
+       value used by the current session.
 
        If SET (or equivalently SET SESSION) is issued within a transaction
        that is later aborted, the effects of the SET command disappear when
@@ -47,7 +46,6 @@
        will persist unless rolled back.
 
            Note
-
            In PostgreSQL versions 8.0 through 8.2, the effects of a SET LOCAL
            would be canceled by releasing an earlier savepoint, or by
            successful exit from a PL/pgSQL exception block. This behavior has
@@ -158,4 +156,4 @@ COMPATIBILITY
 ## SEE ALSO
        RESET(7), SHOW(7)
 
-PostgreSQL 16.15                     2026                               SET(7)
+PostgreSQL 14.24                     2026                               SET(7)
