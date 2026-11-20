@@ -19,9 +19,9 @@
 ## DESCRIPTION
        The  pidstat  command is used for monitoring individual tasks currently
        being managed by the Linux kernel.  It writes to standard output activ‐
-       ities for every task selected with option -p or for every task  managed
-       by  the  Linux kernel if option -p ALL has been used. Not selecting any
-       tasks is equivalent to specifying -p ALL but only active  tasks  (tasks
+       ities  for every task selected with option -p or for every task managed
+       by the Linux kernel if option -p ALL has been used. Not  selecting  any
+       tasks  is  equivalent to specifying -p ALL but only active tasks (tasks
        with non-zero statistics values) will appear in the report.
 
        The pidstat command can also be used for monitoring the child processes
@@ -36,12 +36,12 @@
        If the interval parameter is specified without the count parameter, the
        pidstat command generates reports continuously.
 
-       You  can select information about specific task activities using flags.
+       You can select information about specific task activities using  flags.
        Not specifying any flags selects only CPU activity.
 
 ## OPTIONS
        -C comm
-              Display only tasks whose command name includes the string  comm.
+              Display  only tasks whose command name includes the string comm.
               This string can be a regular expression.
 
        -d     Report I/O statistics (kernels 2.6.20 and later only).  The fol‐
@@ -91,12 +91,12 @@
               Display only processes whose command name  includes  the  string
               process_name.   This  string can be a regular expression. If op‐
               tion -t is used together with option -G then the threads belong‐
-              ing to that process are also displayed (even  if  their  command
+              ing  to  that  process are also displayed (even if their command
               name doesn't include the string process_name).
 
        -H     Display timestamp in seconds since the epoch.
 
-       -h     Display  all  activities  horizontally on a single line, with no
+       -h     Display all activities horizontally on a single  line,  with  no
               average statistics at the end of the report. This is intended to
               make it easier to be parsed by other programs.
 
@@ -105,14 +105,14 @@
               The units displayed with this option supersede any other default
               units (e.g.  kilobytes, sectors...) associated with the metrics.
 
-       -I     In  an  SMP  environment, indicate that tasks CPU usage (as dis‐
-              played by option -u) should be divided by the  total  number  of
+       -I     In an SMP environment, indicate that tasks CPU  usage  (as  dis‐
+              played  by  option  -u) should be divided by the total number of
               processors.
 
        -l     Display the process command name and all its arguments.
 
        -p { pid[,...] | SELF | ALL }
-              Select  tasks  (processes)  for  which  statistics are to be re‐
+              Select tasks (processes) for which  statistics  are  to  be  re‐
               ported.  pid is the process identification number. The SELF key‐
               word indicates that statistics are to be reported for  the  pid‐
               stat process itself, whereas the ALL keyword indicates that sta‐
@@ -122,10 +122,10 @@
        -R     Report realtime priority and scheduling policy information.  The
               following values may be displayed:
 
-              UID    The  real  user  identification  number of the task being
+              UID    The real user identification number  of  the  task  being
                      monitored.
 
-              USER   The name of the real user owning  the  task  being  moni‐
+              USER   The  name  of  the  real user owning the task being moni‐
                      tored.
 
               PID    The identification number of the task being monitored.
@@ -139,24 +139,24 @@
 
        -r     Report page faults and memory utilization.
 
-              When  reporting  statistics  for individual tasks, the following
+              When reporting statistics for individual  tasks,  the  following
               values may be displayed:
 
-              UID    The real user identification number  of  the  task  being
+              UID    The  real  user  identification  number of the task being
                      monitored.
 
-              USER   The  name  of  the  real user owning the task being moni‐
+              USER   The name of the real user owning  the  task  being  moni‐
                      tored.
 
               PID    The identification number of the task being monitored.
 
               minflt/s
-                     Total number of minor faults the task has made  per  sec‐
-                     ond,  those which have not required loading a memory page
+                     Total  number  of minor faults the task has made per sec‐
+                     ond, those which have not required loading a memory  page
                      from disk.
 
               majflt/s
-                     Total number of major faults the task has made  per  sec‐
+                     Total  number  of major faults the task has made per sec‐
                      ond, those which have required loading a memory page from
                      disk.
 
@@ -249,13 +249,13 @@
 
        -u     Report CPU utilization.
 
-              When  reporting  statistics  for individual tasks, the following
+              When reporting statistics for individual  tasks,  the  following
               values may be displayed:
 
-              UID    The real user identification number  of  the  task  being
+              UID    The  real  user  identification  number of the task being
                      monitored.
 
-              USER   The  name  of  the  real user owning the task being moni‐
+              USER   The name of the real user owning  the  task  being  moni‐
                      tored.
 
               PID    The identification number of the task being monitored.
@@ -269,14 +269,14 @@
                      Percentage of CPU used by the task while executing at the
                      system level (kernel).
 
-              %guest Percentage of CPU spent by the task  in  virtual  machine
+              %guest Percentage  of  CPU  spent by the task in virtual machine
                      (running a virtual processor).
 
               %wait  Percentage of CPU spent by the task while waiting to run.
 
-              %CPU   Total  percentage of CPU time used by the task. In an SMP
-                     environment, the task's CPU usage will be divided by  the
-                     total  number  of  CPU's if option -I has been entered on
+              %CPU   Total percentage of CPU time used by the task. In an  SMP
+                     environment,  the task's CPU usage will be divided by the
+                     total number of CPU's if option -I has  been  entered  on
                      the command line.
 
               CPU    Processor number to which the task is attached.
@@ -284,13 +284,13 @@
               Command
                      The command name of the task.
 
-              When reporting global statistics for tasks and all  their  chil‐
+              When  reporting  global statistics for tasks and all their chil‐
               dren, the following values may be displayed:
 
-              UID    The  real user identification number of the task which is
+              UID    The real user identification number of the task which  is
                      being monitored together with its children.
 
-              USER   The name of the real user owning the task which is  being
+              USER   The  name of the real user owning the task which is being
                      monitored together with its children.
 
               PID    The identification number of the task which is being mon‐
@@ -309,8 +309,8 @@
 
               guest-ms
                      Total  number  of  milliseconds spent by the task and all
-                     its  children  in  virtual  machine  (running  a  virtual
-                     processor).
+                     its children in virtual machine (running a  virtual  pro‐
+                     cessor).
 
               Command
                      The command name of the task which is being monitored to‐
@@ -356,7 +356,7 @@
 
               nvcswch/s
                      Total  number  of non voluntary context switches the task
-                     made per second.  An  involuntary  context  switch  takes
+                     made per second.   A  involuntary  context  switch  takes
                      place  when  a task executes for the duration of its time
                      slice and then is forced to relinquish the processor.
 
@@ -393,15 +393,15 @@
               M=     SGR substring for percentage values in the range from 50%
                      to 75%.
 
-              N=     SGR  substring  for  non-zero  statistics  values and for
+              N=     SGR substring for  non-zero  statistics  values  and  for
                      tasks names.
 
               Z=     SGR substring for zero values and for threads names.
 
        S_TIME_FORMAT
-              If this variable exists and its value is ISO  then  the  current
-              locale  will  be  ignored  when  printing the date in the report
-              header. The  pidstat  command  will  use  the  ISO  8601  format
+              If  this  variable  exists and its value is ISO then the current
+              locale will be ignored when printing  the  date  in  the  report
+              header.  The  pidstat  command  will  use  the  ISO  8601 format
               (YYYY-MM-DD) instead.  The timestamp will also be compliant with
               ISO 8601 format.
 

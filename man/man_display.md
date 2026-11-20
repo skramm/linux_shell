@@ -13,10 +13,14 @@
        display-im6.q16 [options] input-file
 
 OVERVIEW
-       The display-im6.q16 program is a member of the ImageMagick-ims6.q16(1) suite of tools.  Use it to display an image or image sequence on any X server.
+       The  display-im6.q16 program is a member of the ImageMagick-ims6.q16(1)
+       suite of tools.  Use it to display an image or image sequence on any  X
+       server.
 
-       For  more  information  about  the  display  command, point your browser to file:///usr/share/doc/imagemagick-6-common/html/www/display.html (on debian system you may install the image‐
-       magick-6 package) or https://www.imagemagick.org/script/display.php.
+       For  more  information about the display command, point your browser to
+       file:///usr/share/doc/imagemagick-6-common/html/www/display.html    (on
+       debian   system   you   may   install  the  imagemagick-6  package)  or
+       https://www.imagemagick.org/script/display.php.
 
 ## DESCRIPTION
        Image Settings:
@@ -47,7 +51,8 @@ OVERVIEW
          -fuzz distance       colors within this distance are considered equal
          -geometry geometry   preferred size and location of the Image window
          -gravity type        horizontal and vertical backdrop placement
-         -identify            identify the format and characteristics of the image
+         -identify            identify the format and characteristics  of  the
+       image
          -immutable           displayed image cannot be modified
          -interlace type      type of image interlacing scheme
          -interpolate method  pixel color interpolation method
@@ -65,7 +70,8 @@ OVERVIEW
          -regard-warnings     pay attention to warning messages
          -remote command      execute a command in an remote display process
          -repage geometry     size and location of an image canvas (operator)
-         -respect-parentheses settings remain in effect until parenthesis boundary
+         -respect-parentheses  settings  remain  in  effect  until parenthesis
+       boundary
          -sampling-factor geometry
                               horizontal and vertical sampling factor
          -scenes range        image scene range
@@ -73,7 +79,8 @@ OVERVIEW
          -set property value  set an image property
          -size geometry       width and height of image
          -support factor      resize support: > 1.0 is blurry, < 1.0 is sharp
-         -texture filename    name of texture to tile onto the image background
+         -texture filename    name of texture to tile  onto  the  image  back‐
+       ground
          -transparent-color color
                               transparent color
          -treedepth value     color tree depth
@@ -105,7 +112,8 @@ OVERVIEW
          -monochrome          transform image to black and white
          -negate              replace each pixel with its complementary color
          -normalize           transform image to span the full range of colors
-         -raise value         lighten/darken image edges to create a 3-D effect
+         -raise  value          lighten/darken image edges to create a 3-D ef‐
+       fect
          -resample geometry   change the resolution of an image
          -resize geometry     resize the image
          -roll geometry       roll an image vertically or horizontally
@@ -129,11 +137,16 @@ OVERVIEW
          -list type           print a list of supported option arguments
          -version             print version information
 
-       In addition to those listed above, you can specify these standard X resources as command line options:   -background,  -bordercolor,  -borderwidth,  -font,  -foreground,  -iconGeometry,
-       -iconic, -mattecolor, -name, -shared-memory, -usePixmap, or -title.
+       In addition to those listed above, you can specify these standard X re‐
+       sources  as  command line options:  -background, -bordercolor, -border‐
+       width, -font, -foreground, -iconGeometry, -iconic, -mattecolor,  -name,
+       -shared-memory, -usePixmap, or -title.
 
-       By  default, the image format of `file' is determined by its magic number.  To specify a particular image format, precede the filename with an image format name and a colon (i.e. ps:im‐
-       age) or specify the image type as the filename suffix (i.e. image.ps).  Specify 'file' as '-' for standard input or output.
+       By  default, the image format of `file' is determined by its magic num‐
+       ber.  To specify a particular image format, precede the  filename  with
+       an  image  format name and a colon (i.e. ps:image) or specify the image
+       type as the filename suffix (i.e. image.ps).  Specify 'file' as '-' for
+       standard input or output.
 
        Buttons:
          1    press to map or unmap the Command widget
@@ -141,7 +154,8 @@ OVERVIEW
          3    press to load an image from a visual image directory
 
 NOTE
-       The display program defaults to the X screen resolution.  To display vector formats at their intended size, override the default resolution:
+       The  display  program  defaults to the X screen resolution.  To display
+       vector formats at their intended size, override the default resolution:
 
          display -density 72 drawing.svg
 
@@ -149,7 +163,10 @@ NOTE
        ImageMagick-im6.q16(1)
 
 ## COPYRIGHT
-       Copyright (C) 1999-2020 ImageMagick Studio LLC. Additional copyrights and licenses apply to this software, see file:///usr/share/doc/imagemagick-6-common/html/www/license.html  (on  de‐
-       bian system you may install the imagemagick-6 package) or https://www.imagemagick.org/script/license.php
+       Copyright (C) 1999-2020 ImageMagick Studio LLC.  Additional  copyrights
+       and  licenses  apply to this software, see file:///usr/share/doc/image‐
+       magick-6-common/html/www/license.html (on debian system you may install
+       the  imagemagick-6  package)  or https://www.imagemagick.org/script/li‐
+       cense.php
 
-ImageMagick                                                                         Date: 2009/01/10 01:00:00                                                                 display-im6.q16(1)
+ImageMagick                Date: 2009/01/10 01:00:00        display-im6.q16(1)

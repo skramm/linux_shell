@@ -13,15 +13,20 @@
        lsb_release [options]
 
 ## DESCRIPTION
-       The lsb_release command provides certain LSB (Linux Standard Base) and distribution-specific information.
+       The  lsb_release command provides certain LSB (Linux Standard Base) and
+       distribution-specific information.
 
        If no options are given, the -v option is assumed.
 
 ## OPTIONS
-       The program follows the usual GNU command line syntax, with long options starting with two dashes (`--').  A summary of options are included below.
+       The program follows the usual GNU command line syntax,  with  long  op‐
+       tions  starting  with  two dashes (`--').  A summary of options are in‐
+       cluded below.
 
        -v, --version
-              Show the version of the LSB against which your current installation is compliant.  The version is expressed as a colon separated list of LSB module descriptions.
+              Show the version of the LSB against which your current installa‐
+              tion  is  compliant.   The version is expressed as a colon sepa‐
+              rated list of LSB module descriptions.
 
        -i, --id
               Display the distributor's ID.
@@ -30,7 +35,8 @@
               Display a description of the currently installed distribution.
 
        -r, --release
-              Display the release number of the currently installed distribution.
+              Display the release number of the currently installed  distribu‐
+              tion.
 
        -c, --codename
               Display the code name of the currently installed distribution.
@@ -39,16 +45,21 @@
               Display all of the above information.
 
        -s, --short
-              Use the short output format for any information displayed.  This format omits the leading header(s).
+              Use the short output format for any information displayed.  This
+              format omits the leading header(s).
 
        -h, --help
               Show summary of options.
 
 ## NOTES
-       This is a reimplementation of the lsb_release command provided by the Free Standards Group.  Any bugs are solely the responsibility of the author below.
+       This is a reimplementation of the lsb_release command provided  by  the
+       Free  Standards  Group.   Any bugs are solely the responsibility of the
+       author below.
 
-       Detection  of  systems  using a mix of packages from various distributions or releases is something of a black art; the current heuristic tends to assume that the installation is of the
-       earliest distribution which is still being used by apt but that heuristic is subject to error.
+       Detection of systems using a mix of packages from various distributions
+       or releases is something of a black art; the current heuristic tends to
+       assume that the installation is of the earliest distribution  which  is
+       still being used by apt but that heuristic is subject to error.
 
 ## SEE ALSO
        lsb(8)
@@ -56,4 +67,4 @@
 ## AUTHOR
        Chris Lawrence <lawrencc@debian.org>.
 
-                                                                                                                                                                                  lsb_release(1)
+                                                                lsb_release(1)
