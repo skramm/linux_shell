@@ -329,11 +329,14 @@ shasum;20;calcul de hash SHA (256,512,...);sha256sum;;?
 sha256sum;20;calcul de hash SHA256;;;?
 jo;20;génération de JSON;jq;;?
 cowsay;20;[lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg);;;?
+xcowsay;20;cowsay version graphique;cowsay;;?
 uuid;20;génération de _Universally Unique IDentifier_;;;?
 
-banner;20;affichage bannière;figlet;;?
-figlet;20;affichage bannière;toilet;;?
-toilet;20;affichage bannière;banner;;?
+banner;20;affichage bannière;figlet,toilet;;?
+figlet;20;affichage bannière;toilet,banner;;?
+toilet;20;affichage bannière;banner,figlet;;?
+lolcat;20;_rainbow coloring effect for text console display_;;;?
+fortune;20;affiche une maxime;;;?
 
 man;23;manuel;help;;?
 info;23;aide sur commande;man;GNU;?
