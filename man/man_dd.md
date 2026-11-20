@@ -51,12 +51,11 @@
        skip=N skip N ibs-sized blocks at start of input
 
        status=LEVEL
-              The  LEVEL  of  information  to  print to stderr; 'none' suppresses everything but error messages,
-              'noxfer' suppresses the final transfer statistics, 'progress' shows periodic transfer statistics
+              The  LEVEL of information to print to stderr; 'none' suppresses everything but error messages, 'noxfer' suppresses the final transfer statistics, 'progress' shows periodic trans‐
+              fer statistics
 
-       N and BYTES may be followed by the following multiplicative suffixes: c=1, w=2, b=512,  kB=1000,  K=1024,
-       MB=1000*1000,  M=1024*1024,  xM=M, GB=1000*1000*1000, G=1024*1024*1024, and so on for T, P, E, Z, Y.  Bi‐
-       nary prefixes can be used, too: KiB=K, MiB=M, and so on.
+       N and BYTES may be followed by the following multiplicative suffixes: c=1, w=2, b=512, kB=1000, K=1024, MB=1000*1000, M=1024*1024, xM=M, GB=1000*1000*1000, G=1024*1024*1024, and  so  on
+       for T, P, E, Z, Y.  Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
 
        Each CONV symbol may be:
 
@@ -79,8 +78,7 @@
 
        swab   swap every pair of input bytes
 
-       sync   pad every input block with NULs to ibs-size; when used with block  or  unblock,  pad  with  spaces
-              rather than NULs
+       sync   pad every input block with NULs to ibs-size; when used with block or unblock, pad with spaces rather than NULs
 
        excl   fail if the output file already exists
 
@@ -137,8 +135,7 @@
        seek_bytes
               treat 'seek=N' as a byte count (oflag only)
 
-       Sending  a USR1 signal to a running 'dd' process makes it print I/O statistics to standard error and then
-       resume copying.
+       Sending a USR1 signal to a running 'dd' process makes it print I/O statistics to standard error and then resume copying.
 
        Options are:
 
@@ -155,13 +152,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
-       <https://gnu.org/licenses/gpl.html>.
-       This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent
-       permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/dd>
        or available locally via: info '(coreutils) dd invocation'
 
-GNU coreutils 8.32                                 August 2026                                             DD(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                     DD(1)

@@ -95,8 +95,8 @@
 
 ## COPYRIGHT
        Copyright © 2002-2012 Brailcom, o.p.s.
-       This  is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; ei‐
-       ther version 2, or (at your option) any later version. Please see COPYING for more details.
+       This  is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2, or (at
+       your option) any later version. Please see COPYING for more details.
 
 ## SEE ALSO
        The full documentation for spd-say is maintained as a Texinfo manual.  If the info and spd-say programs are properly installed at your site, the command
@@ -105,4 +105,4 @@
 
        should give you access to the complete manual.
 
-spd-say 0.11.1                                                                    May 2023                                                                       SPD-SAY(1)
+spd-say 0.11.1                                                                              May 2023                                                                                  SPD-SAY(1)

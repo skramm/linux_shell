@@ -100,9 +100,9 @@
        [=CHAR=]
               all characters which are equivalent to CHAR
 
-       Translation  occurs  if  -d  is not given and both SET1 and SET2 appear.  -t may be used only when translating.  SET2 is extended to length of SET1 by repeating its
-       last character as necessary.  Excess characters of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to expand in ascending order; used in  SET2  while
-       translating, they may only be used in pairs to specify case conversion.  -s uses the last specified SET, and occurs after translation or deletion.
+       Translation occurs if -d is not given and both SET1 and SET2 appear.  -t may be used only when translating.  SET2 is extended to length of SET1 by repeating its last character as neces‐
+       sary.  Excess characters of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to expand in ascending order; used in SET2 while translating, they may only be used  in  pairs
+       to specify case conversion.  -s uses the last specified SET, and occurs after translation or deletion.
 
 ## AUTHOR
        Written by Jim Meyering.
@@ -119,4 +119,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/tr>
        or available locally via: info '(coreutils) tr invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                           TR(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                     TR(1)

@@ -50,4 +50,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/dirname>
        or available locally via: info '(coreutils) dirname invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                      DIRNAME(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                DIRNAME(1)

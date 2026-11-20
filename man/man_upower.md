@@ -10,8 +10,7 @@
        upower - UPower command line tool
 
 ## SYNOPSIS
-       upower [--dump] [--enumerate] [--monitor-detail] [--monitor] [--show-info] [--version] [--wakeups]
-              [--help]
+       upower [--dump] [--enumerate] [--monitor-detail] [--monitor] [--show-info] [--version] [--wakeups] [--help]
 
 ## DESCRIPTION
        upower is a simple command line client for the UPower(7) daemon. TODO: not fully documented.
@@ -30,10 +29,9 @@
        Written by David Zeuthen <davidz@redhat.com> with a lot of help from many others.
 
 ## BUGS
-       Please send bug reports to either the distribution or the DeviceKit mailing list, see
-       http://lists.freedesktop.org/mailman/listinfo/devkit-devel on how to subscribe.
+       Please send bug reports to either the distribution or the DeviceKit mailing list, see http://lists.freedesktop.org/mailman/listinfo/devkit-devel on how to subscribe.
 
 ## SEE ALSO
        upowerd(8), UPower(7),
 
-upower                                             April 2008                                          UPOWER(1)
+upower                                                                                     April 2008                                                                                  UPOWER(1)

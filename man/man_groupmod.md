@@ -49,21 +49,18 @@
            Apply changes in the CHROOT_DIR directory and use the configuration files from the CHROOT_DIR directory.
 
        -P, --prefix PREFIX_DIR
-           Apply changes in the PREFIX_DIR directory and use the configuration files from the PREFIX_DIR directory. This option does not chroot and is intended for
-           preparing a cross-compilation target. Some limitations: NIS and LDAP users/groups are not verified. PAM authentication is using the host files. No SELINUX
-           support.
+           Apply changes in the PREFIX_DIR directory and use the configuration files from the PREFIX_DIR directory. This option does not chroot and is intended for preparing a
+           cross-compilation target. Some limitations: NIS and LDAP users/groups are not verified. PAM authentication is using the host files. No SELINUX support.
 
 ## CONFIGURATION
        The following configuration variables in /etc/login.defs change the behavior of this tool:
 
        MAX_MEMBERS_PER_GROUP (number)
-           Maximum members per group entry. When the maximum is reached, a new group entry (line) is started in /etc/group (with the same name, same password, and same
-           GID).
+           Maximum members per group entry. When the maximum is reached, a new group entry (line) is started in /etc/group (with the same name, same password, and same GID).
 
            The default value is 0, meaning that there are no limits in the number of members in a group.
 
-           This feature (split group) permits to limit the length of lines in the group file. This is useful to make sure that lines for NIS groups are not larger than
-           1024 characters.
+           This feature (split group) permits to limit the length of lines in the group file. This is useful to make sure that lines for NIS groups are not larger than 1024 characters.
 
            If you need to enforce such limit, you can use 25.
 
@@ -118,4 +115,4 @@
 ## SEE ALSO
        chfn(1), chsh(1), passwd(1), gpasswd(8), groupadd(8), groupdel(8), login.defs(5), useradd(8), userdel(8), usermod(8).
 
-shadow-utils 4.8.1                                                               02/06/2024                                                                     GROUPMOD(8)
+shadow-utils 4.8.1                                                                         02/06/2024                                                                                GROUPMOD(8)

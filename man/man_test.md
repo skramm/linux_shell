@@ -138,15 +138,15 @@
        -x FILE
               FILE exists and execute (or search) permission is granted
 
-       Except for -h and -L, all FILE-related tests dereference symbolic links.  Beware that parentheses need to be escaped (e.g., by backslashes) for shells.  INTEGER may
-       also be -l STRING, which evaluates to the length of STRING.
+       Except  for  -h and -L, all FILE-related tests dereference symbolic links.  Beware that parentheses need to be escaped (e.g., by backslashes) for shells.  INTEGER may also be -l STRING,
+       which evaluates to the length of STRING.
 
        NOTE: Binary -a and -o are inherently ambiguous.  Use 'test EXPR1 && test EXPR2' or 'test EXPR1 || test EXPR2' instead.
 
        NOTE: [ honors the --help and --version options, but test does not.  test treats each of those as it treats any other nonempty STRING.
 
-       NOTE: your shell may have its own version of test and/or [, which usually supersedes the version described here.  Please refer to your shell's documentation for de‐
-       tails about the options it supports.
+       NOTE: your shell may have its own version of test and/or [, which usually supersedes the version described here.  Please refer to your shell's documentation for details  about  the  op‐
+       tions it supports.
 
 ## AUTHOR
        Written by Kevin Braunsdorf and Matthew Bradburn.
@@ -163,4 +163,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/[>
        or available locally via: info '(coreutils) test invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                         TEST(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                   TEST(1)

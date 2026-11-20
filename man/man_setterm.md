@@ -13,10 +13,9 @@
        setterm [options]
 
 ## DESCRIPTION
-       setterm writes to standard output a character string that will invoke the specified terminal capabilities. Where possible terminfo is consulted to find the string
-       to use. Some options however (marked "virtual consoles only" below) do not correspond to a terminfo(5) capability. In this case, if the terminal type is "con" or
-       "linux" the string that invokes the specified capabilities on the PC Minix virtual console driver is output. Options that are not implemented by the terminal are
-       ignored.
+       setterm writes to standard output a character string that will invoke the specified terminal capabilities. Where possible terminfo is consulted to find the string to use. Some options
+       however (marked "virtual consoles only" below) do not correspond to a terminfo(5) capability. In this case, if the terminal type is "con" or "linux" the string that invokes the
+       specified capabilities on the PC Minix virtual console driver is output. Options that are not implemented by the terminal are ignored.
 
 ## OPTIONS
        For boolean options (on or off), the default is on.
@@ -25,14 +24,14 @@
 
        A 16-color can be an 8-color, or grey, or bright followed by red, green, yellow, blue, magenta, cyan, or white.
 
-       The various color options may be set independently, at least on virtual consoles, though the results of setting multiple modes (for example, --underline and
-       --half-bright) are hardware-dependent.
+       The various color options may be set independently, at least on virtual consoles, though the results of setting multiple modes (for example, --underline and --half-bright) are
+       hardware-dependent.
 
        The optional arguments require '=' (equals sign) and not space between the option and the argument. For example --option=argument.
 
        --appcursorkeys on|off
-           Sets Cursor Key Application Mode on or off. When on, ESC O A, ESC O B, etc. will be sent for the cursor keys instead of ESC [ A, ESC [ B, etc. See the vi and
-           Cursor-Keys section of the Text-Terminal-HOWTO for how this can cause problems for vi users. Virtual consoles only.
+           Sets Cursor Key Application Mode on or off. When on, ESC O A, ESC O B, etc. will be sent for the cursor keys instead of ESC [ A, ESC [ B, etc. See the vi and Cursor-Keys section of
+           the Text-Terminal-HOWTO for how this can cause problems for vi users. Virtual consoles only.
 
        --append console_number
            Like --dump, but appends to the snapshot file instead of overwriting it. Only works if no --dump options are given.
@@ -41,8 +40,8 @@
            Sets the background text color.
 
        --blank[=0-60|force|poke]
-           Sets the interval of inactivity, in minutes, after which the screen will be automatically blanked (using APM if available). Without an argument, it gets the
-           blank status (returns which vt was blanked, or zero for an unblanked vt). Virtual consoles only.
+           Sets the interval of inactivity, in minutes, after which the screen will be automatically blanked (using APM if available). Without an argument, it gets the blank status (returns
+           which vt was blanked, or zero for an unblanked vt). Virtual consoles only.
 
            The force argument keeps the screen blank even if a key is pressed.
 
@@ -61,8 +60,8 @@
            urns bold (extra bright) mode on or off. Except on a virtual console, --bold off turns off all attributes (bold, half-brightness, blink, reverse).
 
        --clear[=all|rest]
-           Without an argument or with the argument all, the entire screen is cleared and the cursor is set to the home position, just like clear(1) does. With the
-           argument rest, the screen is cleared from the current cursor position to the end.
+           Without an argument or with the argument all, the entire screen is cleared and the cursor is set to the home position, just like clear(1) does. With the argument rest, the screen is
+           cleared from the current cursor position to the end.
 
        --clrtabs[=tab1 tab2 tab3 ...]
            Clears tab stops from the given horizontal cursor positions, in the range 1-160. Without arguments, it clears all tab stops. Virtual consoles only.
@@ -74,12 +73,12 @@
            Sets the terminal’s rendering options to the default values.
 
        --dump[=console_number]
-           Writes a snapshot of the virtual console with the given number to the file specified with the --file option, overwriting its contents; the default is
-           screen.dump. Without an argument, it dumps the current virtual console. This overrides --append.
+           Writes a snapshot of the virtual console with the given number to the file specified with the --file option, overwriting its contents; the default is screen.dump. Without an
+           argument, it dumps the current virtual console. This overrides --append.
 
        --file filename
-           Sets the snapshot file name for any --dump or --append options on the same command line. If this option is not present, the default is screen.dump in the
-           current directory. A path name that exceeds the system maximum will be truncated, see PATH_MAX from linux/limits.h for the value.
+           Sets the snapshot file name for any --dump or --append options on the same command line. If this option is not present, the default is screen.dump in the current directory. A path
+           name that exceeds the system maximum will be truncated, see PATH_MAX from linux/limits.h for the value.
 
        --foreground 8-color|default
            Sets the foreground text color.
@@ -103,14 +102,14 @@
            Enables or disables the sending of kernel printk() messages to the console. Virtual consoles only.
 
        --msglevel 0-8
-           Sets the console logging level for kernel printk() messages. All messages strictly more important than this will be printed, so a logging level of 0 has the
-           same effect as --msg on and a logging level of 8 will print all kernel messages. klogd(8) may be a more convenient interface to the logging of kernel messages.
+           Sets the console logging level for kernel printk() messages. All messages strictly more important than this will be printed, so a logging level of 0 has the same effect as --msg on
+           and a logging level of 8 will print all kernel messages. klogd(8) may be a more convenient interface to the logging of kernel messages.
 
            Virtual consoles only.
 
        --powerdown[=0-60]
-           Sets the VESA powerdown interval in minutes. Without an argument, it defaults to 0 (disable powerdown). If the console is blanked or the monitor is in suspend
-           mode, then the monitor will go into vsync suspend mode or powerdown mode respectively after this period of time has elapsed.
+           Sets the VESA powerdown interval in minutes. Without an argument, it defaults to 0 (disable powerdown). If the console is blanked or the monitor is in suspend mode, then the monitor
+           will go into vsync suspend mode or powerdown mode respectively after this period of time has elapsed.
 
        --powersave mode
            Valid values for mode are:
@@ -128,8 +127,7 @@
                Turns monitor VESA powersaving features.
 
        --regtabs[=1-160]
-           Clears all tab stops, then sets a regular tab stop pattern, with one tab every specified number of positions. Without an argument, it defaults to 8. Virtual
-           consoles only.
+           Clears all tab stops, then sets a regular tab stop pattern, with one tab every specified number of positions. Without an argument, it defaults to 8. Virtual consoles only.
 
        --repeat on|off
            Turns keyboard repeat on or off. Virtual consoles only.
@@ -138,8 +136,8 @@
            Displays the terminal reset string, which typically resets the terminal to its power-on state.
 
        --resize
-           Reset terminal size by assessing maximum row and column. This is useful when actual geometry and kernel terminal driver are not in sync. Most notable use case
-           is with serial consoles, that do not use ioctl(3p) but just byte streams and breaks.
+           Reset terminal size by assessing maximum row and column. This is useful when actual geometry and kernel terminal driver are not in sync. Most notable use case is with serial
+           consoles, that do not use ioctl(3p) but just byte streams and breaks.
 
        --reverse on|off
            Turns reverse video mode on or off. Except on a virtual console, --reverse off turns off all attributes (bold, half-brightness, blink, reverse).
@@ -166,9 +164,8 @@
            Displays a help text and exits.
 
 COMPATIBILITY
-       Since version 2.25 setterm has support for long options with two hyphens, for example --help, beside the historical long options with a single hyphen, for example
-       -help. In scripts it is better to use the backward-compatible single hyphen rather than the double hyphen. Currently there are no plans nor good reasons to
-       discontinue single-hyphen compatibility.
+       Since version 2.25 setterm has support for long options with two hyphens, for example --help, beside the historical long options with a single hyphen, for example -help. In scripts it
+       is better to use the backward-compatible single hyphen rather than the double hyphen. Currently there are no plans nor good reasons to discontinue single-hyphen compatibility.
 
 ## BUGS
        Differences between the Minix and Linux versions are not documented.
@@ -182,4 +179,4 @@ COMPATIBILITY
 ## AVAILABILITY
        The setterm command is part of the util-linux package which can be downloaded from Linux Kernel Archive <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.37.2                                                                2021-06-02                                                                      SETTERM(1)
+util-linux 2.37.2                                                                          2021-06-02                                                                                 SETTERM(1)

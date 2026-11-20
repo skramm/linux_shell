@@ -14,8 +14,7 @@
        chgrp [OPTION]... --reference=RFILE FILE...
 
 ## DESCRIPTION
-       Change  the  group  of  each  FILE  to GROUP.  With --reference, change the group of each FILE to that of
-       RFILE.
+       Change the group of each FILE to GROUP.  With --reference, change the group of each FILE to that of RFILE.
 
        -c, --changes
               like verbose but report only when a change is made
@@ -27,12 +26,10 @@
               output a diagnostic for every file processed
 
        --dereference
-              affect the referent of each symbolic link (this is the default), rather than the symbolic link it‐
-              self
+              affect the referent of each symbolic link (this is the default), rather than the symbolic link itself
 
        -h, --no-dereference
-              affect  symbolic  links instead of any referenced file (useful only on systems that can change the
-              ownership of a symlink)
+              affect symbolic links instead of any referenced file (useful only on systems that can change the ownership of a symlink)
 
        --no-preserve-root
               do not treat '/' specially (the default)
@@ -46,8 +43,7 @@
        -R, --recursive
               operate on files and directories recursively
 
-       The following options modify how a hierarchy is traversed when the -R option is also specified.  If  more
-       than one is specified, only the final one takes effect.
+       The following options modify how a hierarchy is traversed when the -R option is also specified.  If more than one is specified, only the final one takes effect.
 
        -H     if a command line argument is a symbolic link to a directory, traverse it
 
@@ -75,10 +71,8 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
-       <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to  the  extent
-       permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        chown(1), chown(2)
@@ -86,4 +80,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/chgrp>
        or available locally via: info '(coreutils) chgrp invocation'
 
-GNU coreutils 8.32                                 August 2026                                          CHGRP(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                  CHGRP(1)

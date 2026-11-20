@@ -61,7 +61,7 @@
 | [arp](man/man_arp.md) | affichage table arp | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [at](man/man_at.md) | planification de tâches | [Divers](linux_cmds_list_cat.md#cat7) | [cron](linux_cmds_list_alpha.md#c) |
 | [awk](man/man_awk.md) | _pattern scanning and processing language_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [gawk](linux_cmds_list_alpha.md#g) |
-| [banner](man/man_banner.md) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [figlet](linux_cmds_list_alpha.md#f) |
+| [banner](man/man_banner.md) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [figlet,toilet](linux_cmds_list_alpha.md#f) |
 | [base64](man/man_base64.md) | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [basename](man/man_basename.md) | extraction nom à partir d'un chemin complet | [Controle des scripts](linux_cmds_list_cat.md#cat16) | [dirname](linux_cmds_list_alpha.md#d) |
 | [bash](man/man_bash.md) | démarre un interpréteur | [Général](linux_cmds_list_cat.md#cat4) | [sh](linux_cmds_list_alpha.md#s) |
@@ -82,6 +82,7 @@
 | [cmp](man/man_cmp.md) | comparaison de fichiers, par octet | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [diff](linux_cmds_list_alpha.md#d) |
 | [column](man/man_column.md) | transformation texte en colonnes | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [comm](man/man_comm.md) | comparaison de fichiers, par ligne | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [diff](linux_cmds_list_alpha.md#d) |
+| [conky](man/man_conky.md) | monitoring système, paramétrable | [Monitoring système](linux_cmds_list_cat.md#cat21) | [btop,htop](linux_cmds_list_alpha.md#b) |
 | [convert](man/man_convert.md) | conversion format d'image | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [cowsay](man/man_cowsay.md) | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [cp](man/man_cp.md) | copie fichier(s) | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [mv](linux_cmds_list_alpha.md#m) |
@@ -109,12 +110,13 @@
 | [fc-list](man/man_fc-list.md) | _list available fonts_ | [Divers](linux_cmds_list_cat.md#cat7) | [pango-list](linux_cmds_list_alpha.md#p) |
 | [fdisk](man/man_fdisk.md) | _manipulate disk partition table_ | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  |
 | [ffmpeg](man/man_ffmpeg.md) | édition vidéo généraliste | [Multimédia](linux_cmds_list_cat.md#cat24) | [melt](linux_cmds_list_alpha.md#m) |
-| figlet ([G](https://www.google.fr/search?q=linux+figlet)) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [toilet](linux_cmds_list_alpha.md#t) |
+| figlet ([G](https://www.google.fr/search?q=linux+figlet)) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [toilet,banner](linux_cmds_list_alpha.md#t) |
 | [file](man/man_file.md) | nature d'un fichier | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) |  |
 | [find](man/man_find.md) | _search for files, folders,_ ... | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) |  |
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) |  |
 | [fmt](man/man_fmt.md) | text formatter | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [fold](man/man_fold.md) | ajustement longueur de ligne | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
+| [fortune](man/man_fortune.md) | affiche une maxime | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [free](man/man_free.md) | état RAM utilisée/libre | [Mémoire](linux_cmds_list_cat.md#cat22) | [vmstat](linux_cmds_list_alpha.md#v) |
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier | [Disque & stockage](linux_cmds_list_cat.md#cat2) |  |
 | [ftp](man/man_ftp.md) | transfert de fichiers | [Réseau](linux_cmds_list_cat.md#cat3) |  |
@@ -138,6 +140,7 @@
 | [hostname](man/man_hostname.md) | nom de la machine | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [htop](man/man_htop.md) | top en mieux | [Monitoring système](linux_cmds_list_cat.md#cat21) | [top,nmon](linux_cmds_list_alpha.md#t) |
 | [hwclock](man/man_hwclock.md) | accès horloge interne | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [time](linux_cmds_list_alpha.md#t) |
+| [iconv](man/man_iconv.md) | conversion encodage (UTF8, Latin-1, ISO/IEC 8859, ...) | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [id](man/man_id.md) | affiche les infos sur un utilisateur | [Gestion utilisateurs](linux_cmds_list_cat.md#cat9) | [whoami](linux_cmds_list_alpha.md#w) |
 | [ifdown](man/man_ifdown.md) | désactivation interface réseau | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [ifup](man/man_ifup.md) | activation interface réseau | [Réseau](linux_cmds_list_cat.md#cat3) |  |
@@ -158,6 +161,7 @@
 | [locate](man/man_locate.md) | localise un programme dans le système | [Général](linux_cmds_list_cat.md#cat4) | [which](linux_cmds_list_alpha.md#w) |
 | [logger](man/man_logger.md) | écriture dans un log système | [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  |
 | [loginctl](man/man_loginctl.md) | _Control the systemd login manager_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [systemctl](linux_cmds_list_alpha.md#s) |
+| [lolcat](man/man_lolcat.md) | _rainbow coloring effect for text console display_ | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [look](man/man_look.md) | _display lines beginning with a given string_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [losetup](man/man_losetup.md) | _set up and control loop devices_ | [Système & _Hardware_](linux_cmds_list_cat.md#cat1) | [lsblk](linux_cmds_list_alpha.md#l) |
 | [ls](man/man_ls.md) | _list directory content_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [dir](linux_cmds_list_alpha.md#d) |
@@ -176,7 +180,7 @@
 | [md5sum](man/man_md5sum.md) | calcul de hash MD5 | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) |  |
 | [melt](man/man_melt.md) | édition vidéo | [Multimédia](linux_cmds_list_cat.md#cat24) | [ffmpeg](linux_cmds_list_alpha.md#f) |
 | [mkdir](man/man_mkdir.md) | _make directory_ | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  |
-| [mkfifo](man/man_mkfifo.md) | création de _pipe_ nommé | [Divers](linux_cmds_list_cat.md#cat7) |  |
+| [mkfifo](man/man_mkfifo.md) | création de _pipe_ nommé | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) |  |
 | [mktemp](man/man_mktemp.md) | création fichier out dossier temporaire, dans `/tmp` | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) |  |
 | [modinfo](man/man_modinfo.md) | _show information about a module_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | [modprobe](man/man_modprobe.md) | _add and remove modules from the kernel_ | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
@@ -186,6 +190,7 @@
 | [mv](man/man_mv.md) | déplacement/renommage | [Manipulation fichiers](linux_cmds_list_cat.md#cat11) | [cp](linux_cmds_list_alpha.md#c) |
 | [nano](man/man_nano.md) | éditeur en mode "console" | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [nc](man/man_nc.md) | alias pour netcat | [Réseau](linux_cmds_list_cat.md#cat3) | [netcat](linux_cmds_list_alpha.md#n) |
+| [ncdu](man/man_ncdu.md) | `du` en mieux | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [du](linux_cmds_list_alpha.md#d) |
 | [netcat](man/man_netcat.md) | utilitaire TCP/UDP | [Réseau](linux_cmds_list_cat.md#cat3) | [nc](linux_cmds_list_alpha.md#n) |
 | [netstat](man/man_netstat.md) | infos/reseau, routage, etc. | [Réseau](linux_cmds_list_cat.md#cat3) |  |
 | [nl](man/man_nl.md) | numérotation lignes d'un fichier | [Divers](linux_cmds_list_cat.md#cat7) | [bat](linux_cmds_list_alpha.md#b) |
@@ -262,13 +267,14 @@
 | [tee](man/man_tee.md) | modif redirection (stdout, stderr) | [Divers](linux_cmds_list_cat.md#cat7) |  |
 | [tldr](man/man_tldr.md) | `man` en mieux | [Référence & aide des commandes](linux_cmds_list_cat.md#cat23) | [man](linux_cmds_list_alpha.md#m) |
 | [tmux](man/man_tmux.md) | multiplexeur de terminal | [Gestion Terminal](linux_cmds_list_cat.md#cat25) | [screen,terminal](linux_cmds_list_alpha.md#s) |
-| [toilet](man/man_toilet.md) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [banner](linux_cmds_list_alpha.md#b) |
+| [toilet](man/man_toilet.md) | affichage bannière | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [banner,figlet](linux_cmds_list_alpha.md#b) |
 | [top](man/man_top.md) | _dashboard_ système & process | [Monitoring système](linux_cmds_list_cat.md#cat21) | [htop](linux_cmds_list_alpha.md#h) |
 | [touch](man/man_touch.md) | création ou MAJ date d'un fichier | [Édition/visualisation fichiers](linux_cmds_list_cat.md#cat14) |  |
 | [tr](man/man_tr.md) | _translate or delete characters_ | [Traitement données texte](linux_cmds_list_cat.md#cat8) |  |
 | [traceroute](man/man_traceroute.md) | affiche les étapes d'une requete réseau | [Réseau](linux_cmds_list_cat.md#cat3) | [mtr](linux_cmds_list_alpha.md#m) |
 | [tree](man/man_tree.md) | affiche l'arborescence d'un dossier | [Manipulation dossiers](linux_cmds_list_cat.md#cat15) | [ls](linux_cmds_list_alpha.md#l) |
 | [tty](man/man_tty.md) | indique le terminal courant (`/dev/pts/XX`) | [Divers](linux_cmds_list_cat.md#cat7) |  |
+| [tune2fs](man/man_tune2fs.md) | paramétrage système de fichier "ext" | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) |  |
 | [ufw](man/man_ufw.md) |  pilote CLI de Firewall  | [Réseau](linux_cmds_list_cat.md#cat3) - [Sécurité & Performance](linux_cmds_list_cat.md#cat17) |  |
 | [umount](man/man_umount.md) | démontage de partitions | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [mount](linux_cmds_list_alpha.md#m) |
 | [uname](man/man_uname.md) | version noyau | [Général](linux_cmds_list_cat.md#cat4) - [Gestion Kernel](linux_cmds_list_cat.md#cat13) | [lsb_release,arch](linux_cmds_list_alpha.md#l) |
@@ -294,6 +300,7 @@
 | [whois](man/man_whois.md) | infos/domaine (obsolete) | [Réseau](linux_cmds_list_cat.md#cat3) | [rdap](linux_cmds_list_alpha.md#r) |
 | [xargs](man/man_xargs.md) | exécution d'une commande à partir de `stdin` | [Divers](linux_cmds_list_cat.md#cat7) | [GNU](linux_cmds_list_alpha.md#G) |
 | [xclip](man/man_xclip.md) | transfert vers le presse-papier X | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  |
+| [xcowsay](man/man_xcowsay.md) | cowsay version graphique | [Encodage/décodage & générateurs](linux_cmds_list_cat.md#cat20) | [cowsay](linux_cmds_list_alpha.md#c) |
 | [xdg-open](man/man_xdg-open.md) | ouverture fichier avec application GUI associée au type par défaut | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  |
 | [xev](man/man_xev.md) | affichage évènements clavier+souris | [Interface avec bureau](linux_cmds_list_cat.md#cat18) | [showkey,evtest](linux_cmds_list_alpha.md#s) |
 | [xinput](man/man_xinput.md) | _utility to configure and test X input devices_ | [Interface avec bureau](linux_cmds_list_cat.md#cat18) |  |
@@ -320,7 +327,7 @@
 | iftop ([G](https://www.google.fr/search?q=linux+iftop)) | monitoring réseau | [Réseau](linux_cmds_list_cat.md#cat3) - [Monitoring système](linux_cmds_list_cat.md#cat21) |  |
 | iostat ([G](https://www.google.fr/search?q=linux+iostat)) | statistiques I/O | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | iotop ([G](https://www.google.fr/search?q=linux+iotop)) | liste process avec leur utilisation I/O disque | [Monitoring système](linux_cmds_list_cat.md#cat21) |  |
-| ncdu ([G](https://www.google.fr/search?q=linux+ncdu)) | `du` en mieux | [Disque & stockage](linux_cmds_list_cat.md#cat2) | [du](linux_cmds_list_alpha.md#d) |
+| mknode ([G](https://www.google.fr/search?q=linux+mknode)) | création fichier spécial (périphérique _block_ ou _character_) | [Fichiers & permissions](linux_cmds_list_cat.md#cat5) |  |
 | pidstat ([G](https://www.google.fr/search?q=linux+pidstat)) | statistiques process | [Gestion Kernel](linux_cmds_list_cat.md#cat13) |  |
 | ripgrep ([G](https://www.google.fr/search?q=linux+ripgrep)) | (rg) grep récursif | [Traitement données texte](linux_cmds_list_cat.md#cat8) | [grep](linux_cmds_list_alpha.md#g) |
 | rpm ([G](https://www.google.fr/search?q=linux+rpm)) | gestion paquets Fedora | [Installation logiciels](linux_cmds_list_cat.md#cat10) |  |
@@ -332,4 +339,4 @@
 
 
 
-_MAJ: 2026-11-05T14:46:11+0100_,
+_MAJ: 2026-11-20T11:16:16+0100_,

@@ -35,4 +35,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/whoami>
        or available locally via: info '(coreutils) whoami invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                       WHOAMI(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                 WHOAMI(1)

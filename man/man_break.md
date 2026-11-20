@@ -7,8 +7,8 @@
 ---
 
 ## NAME
-       afs_syscall,  break, fattach, fdetach, ftime, getmsg, getpmsg, gtty, isastream, lock, madvise1, mpx, prof, profil, putmsg, putpmsg, security, stty, tuxcall, ulimit,
-       vserver - unimplemented system calls
+       afs_syscall,  break,  fattach,  fdetach, ftime, getmsg, getpmsg, gtty, isastream, lock, madvise1, mpx, prof, profil, putmsg, putpmsg, security, stty, tuxcall, ulimit, vserver - unimple‐
+       mented system calls
 
 ## SYNOPSIS
        Unimplemented system calls.
@@ -30,7 +30,7 @@
        syscalls(2)
 
 COLOPHON
-       This page is part of release 5.10 of the Linux man-pages project.  A description of the project, information about reporting bugs, and the latest  version  of  this
-       page, can be found at https://www.kernel.org/doc/man-pages/.
+       This page is part of release 5.10 of the Linux man-pages project.  A description of the project, information about reporting bugs, and the latest version of this page, can be  found  at
+       https://www.kernel.org/doc/man-pages/.
 
-Linux                                                                            2017-09-15                                                                UNIMPLEMENTED(2)
+Linux                                                                                      2017-09-15                                                                           UNIMPLEMENTED(2)

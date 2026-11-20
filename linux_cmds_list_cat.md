@@ -32,7 +32,7 @@ Catégories:
 * 25 - [Référence & aide des commandes](#cat23)
 * 26 - [Multimédia](#cat24)
 
-Total: 318 commandes
+Total: 325 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -98,7 +98,7 @@ Total: 318 commandes
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier |  | _installed_ |
 | [hdparm](man/man_hdparm.md) | accès/édition paramètres des disques |  | _installed_ |
 | [mount](man/man_mount.md) | montage de partitions | [umount](linux_cmds_list_alpha.md#u) | _installed_ |
-| ncdu ([G](https://www.google.fr/search?q=linux+ncdu)) | `du` en mieux | [du](linux_cmds_list_alpha.md#d) | NI |
+| [ncdu](man/man_ncdu.md) | `du` en mieux | [du](linux_cmds_list_alpha.md#d) | _installed_ |
 | [smartctl](man/man_smartctl.md) | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques |  | _installed_ |
 | testdisk ([G](https://www.google.fr/search?q=linux+testdisk)) | récupération données HDD | [ddrescue](linux_cmds_list_alpha.md#d) | NI |
 | [umount](man/man_umount.md) | démontage de partitions | [mount](linux_cmds_list_alpha.md#m) | _installed_ |
@@ -181,7 +181,7 @@ Total: 318 commandes
 ## 7 - catégorie: Fichiers & permissions
 <a name='cat5'></a>
 
-8 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
+11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -191,7 +191,10 @@ Total: 318 commandes
 | [chown](man/man_chown.md) | chgt propriétaire fichier | [chgrp](linux_cmds_list_alpha.md#c) | _installed_ |
 | [find](man/man_find.md) | _search for files, folders,_ ... |  | _installed_ |
 | [getfacl](man/man_getfacl.md) | affichage des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) | [setfacl](linux_cmds_list_alpha.md#s) | _installed_ |
+| [mkfifo](man/man_mkfifo.md) | création de _pipe_ nommé |  | _installed_ |
+| mknode ([G](https://www.google.fr/search?q=linux+mknode)) | création fichier spécial (périphérique _block_ ou _character_) |  | NI |
 | [setfacl](man/man_setfacl.md) | modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier | [getfacl](linux_cmds_list_alpha.md#g) | _installed_ |
+| [tune2fs](man/man_tune2fs.md) | paramétrage système de fichier "ext" |  | _installed_ |
 | [umask](man/man_umask.md) | permissions par défaut | [chmod](linux_cmds_list_alpha.md#c) | _builtin_ |
 
 ## 8 - catégorie: Système & _Hardware_
@@ -259,7 +262,7 @@ Total: 318 commandes
 ## 11 - catégorie: Traitement données texte
 <a name='cat8'></a>
 
-18 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
+19 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -269,6 +272,7 @@ Total: 318 commandes
 | [fold](man/man_fold.md) | ajustement longueur de ligne |  | _installed_ |
 | [gawk](man/man_gawk.md) | _pattern scanning and processing language_ | [awk](linux_cmds_list_alpha.md#a) | _installed_ |
 | [grep](man/man_grep.md) | recherche de chaîne | [ripgrep](linux_cmds_list_alpha.md#r) | _installed_ |
+| [iconv](man/man_iconv.md) | conversion encodage (UTF8, Latin-1, ISO/IEC 8859, ...) |  | _installed_ |
 | [join](man/man_join.md) | regroupement de fichier par colonne |  | _installed_ |
 | [jq](man/man_jq.md) | traitement de chaines JSON | [jo](linux_cmds_list_alpha.md#j) | _installed_ |
 | [look](man/man_look.md) | _display lines beginning with a given string_ |  | _installed_ |
@@ -325,7 +329,7 @@ Total: 318 commandes
 ## 14 - catégorie: Divers
 <a name='cat7'></a>
 
-30 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
+29 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -341,7 +345,6 @@ Total: 318 commandes
 | [export](man/help_export.md) | exportation de variable dans un sous-shell |  | _builtin_ |
 | [fc-list](man/man_fc-list.md) | _list available fonts_ | [pango-list](linux_cmds_list_alpha.md#p) | _installed_ |
 | [fmt](man/man_fmt.md) | text formatter |  | _installed_ |
-| [mkfifo](man/man_mkfifo.md) | création de _pipe_ nommé |  | _installed_ |
 | [nano](man/man_nano.md) | éditeur en mode "console" |  | _installed_ |
 | [nl](man/man_nl.md) | numérotation lignes d'un fichier | [bat](linux_cmds_list_alpha.md#b) | _installed_ |
 | pango-list ([G](https://www.google.fr/search?q=linux+pango-list)) | liste des polices de caractères installées | [fc-list](linux_cmds_list_alpha.md#f) | _installed_ |
@@ -494,32 +497,36 @@ Total: 318 commandes
 ## 22 - catégorie: Encodage/décodage & générateurs
 <a name='cat20'></a>
 
-13 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
+16 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| [banner](man/man_banner.md) | affichage bannière | [figlet](linux_cmds_list_alpha.md#f) | _installed_ |
+| [banner](man/man_banner.md) | affichage bannière | [figlet,toilet](linux_cmds_list_alpha.md#f) | _installed_ |
 | [base64](man/man_base64.md) | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> |  | _installed_ |
 | [cowsay](man/man_cowsay.md) | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) |  | _installed_ |
-| figlet ([G](https://www.google.fr/search?q=linux+figlet)) | affichage bannière | [toilet](linux_cmds_list_alpha.md#t) | _installed_ |
+| figlet ([G](https://www.google.fr/search?q=linux+figlet)) | affichage bannière | [toilet,banner](linux_cmds_list_alpha.md#t) | _installed_ |
+| [fortune](man/man_fortune.md) | affiche une maxime |  | _installed_ |
 | [jo](man/man_jo.md) | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | _installed_ |
+| [lolcat](man/man_lolcat.md) | _rainbow coloring effect for text console display_ |  | _installed_ |
 | [md5sum](man/man_md5sum.md) | calcul de hash MD5 |  | _installed_ |
 | [pango-view](man/man_pango-view.md) | _convert text to image_ |  | _installed_ |
 | [pwgen](man/man_pwgen.md) | génération de _password_ | [pwd](linux_cmds_list_alpha.md#p) | _installed_ |
 | [qrencode](man/man_qrencode.md) | génération de qrcodes |  | _installed_ |
 | [sha256sum](man/man_sha256sum.md) | calcul de hash SHA256 |  | _installed_ |
 | [shasum](man/man_shasum.md) | calcul de hash SHA (256,512,...) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
-| [toilet](man/man_toilet.md) | affichage bannière | [banner](linux_cmds_list_alpha.md#b) | _installed_ |
+| [toilet](man/man_toilet.md) | affichage bannière | [banner,figlet](linux_cmds_list_alpha.md#b) | _installed_ |
 | [uuid](man/man_uuid.md) | génération de _Universally Unique IDentifier_ |  | _installed_ |
+| [xcowsay](man/man_xcowsay.md) | cowsay version graphique | [cowsay](linux_cmds_list_alpha.md#c) | _installed_ |
 
 ## 23 - catégorie: Monitoring système
 <a name='cat21'></a>
 
-9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
+10 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [btop](man/man_btop.md) |  monitoring système | [htop,top](linux_cmds_list_alpha.md#h) | _installed_ |
+| [conky](man/man_conky.md) | monitoring système, paramétrable | [btop,htop](linux_cmds_list_alpha.md#b) | _installed_ |
 | [htop](man/man_htop.md) | top en mieux | [top,nmon](linux_cmds_list_alpha.md#t) | _installed_ |
 | iftop ([G](https://www.google.fr/search?q=linux+iftop)) | monitoring réseau |  | NI |
 | [inxi](man/man_inxi.md) | informations système | [lstopo-htop-lsdev](linux_cmds_list_alpha.md#l) | _installed_ |
@@ -574,4 +581,4 @@ Total: 318 commandes
 | [yt-dlp](man/man_yt-dlp.md) | téléchargement vidéos |  | _installed_ |
 
 
-_MAJ: 2026-11-05T14:46:11+0100_,
+_MAJ: 2026-11-20T11:16:16+0100_,

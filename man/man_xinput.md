@@ -17,15 +17,13 @@
 
 ## OPTIONS
        --version
-               Test  if  the  X Input extension is available and return the version number of the program and the version supported by the server. This option does not re‐
-               quire a device name.
+               Test if the X Input extension is available and return the version number of the program and the version supported by the server. This option does not require a device name.
 
        --list [--short || --long || --name-only || --id-only] [device]
-               If no argument is given list all the input devices. If an argument is given, show all the features of device.  If --long is provided,  the  output  includes
-               detailed  information  about  the  capabilities of each devices. Otherwise, or if --short is provided, only the device names and some minimal information is
-               listed.  If --name-only is provided, the output is limited to the device names. One device name is listed per line. Note that  the  order  the  devices  are
-               listed  is  undefined.  If --id-only is provided, the output is limited to the device IDs. One device ID is listed per line. Note that the order the devices
-               are listed is undefined.
+               If  no  argument  is given list all the input devices. If an argument is given, show all the features of device.  If --long is provided, the output includes detailed information
+               about the capabilities of each devices. Otherwise, or if --short is provided, only the device names and some minimal information is listed.  If --name-only is provided, the out‐
+               put is limited to the device names. One device name is listed per line. Note that the order the devices are listed is undefined.  If --id-only is provided, the output is limited
+               to the device IDs. One device ID is listed per line. Note that the order the devices are listed is undefined.
 
        --get-feedbacks device
                Display the feedbacks of device.
@@ -37,15 +35,15 @@
                Change the mode of device.
 
        --set-ptr-feedback device threshold num denom
-               Change the pointer acceleration (or feedback) parameters of device.  The xset(1) man page has more details. For X.Org Server 1.7 and above, there are  addi‐
-               tional device properties pertaining to pointer acceleration. These do not replace, but complement the pointer feedback setting.
+               Change the pointer acceleration (or feedback) parameters of device.  The xset(1) man page has more details. For X.Org Server 1.7 and above, there are additional  device  proper‐
+               ties pertaining to pointer acceleration. These do not replace, but complement the pointer feedback setting.
 
        --set-integer-feedback device index value
                Change the value of an integer feedback of device.
 
        --set-button-map device map_button_1 [map_button_2 [...]]
-               Change  the  button mapping of device. The buttons are specified in physical order (starting with button 1) and are mapped to the logical button provided. 0
-               disables a button. The default button mapping for a device is 1 2 3 4 5 6 etc.
+               Change the button mapping of device. The buttons are specified in physical order (starting with button 1) and are mapped to the logical button provided. 0 disables a button. The
+               default button mapping for a device is 1 2 3 4 5 6 etc.
 
        --query-state device
                Query the device state.
@@ -60,8 +58,8 @@
                Sets a float property for the device. Deprecated, use --set-prop instead.
 
        --set-prop [--type=atom|float|int] [--format=8|16|32] device property value [...]
-               Set the property to the given value(s).  If not specified, the format and type of the property are left as-is.  The arguments are interpreted  according  to
-               the property type. See Section CHANGING PROPERTIES.
+               Set the property to the given value(s).  If not specified, the format and type of the property are left as-is.  The arguments are interpreted according to the property type. See
+               Section CHANGING PROPERTIES.
 
        --watch-props device
                Prints to standard out when property changes occur.
@@ -70,22 +68,20 @@
                Delete the property from the device.
 
        --test [-proximity] device
-               Register  all extended events from device and enter an endless loop displaying events received. If the -proximity is given, ProximityIn and ProximityOut are
-               registered.
+               Register all extended events from device and enter an endless loop displaying events received. If the -proximity is given, ProximityIn and ProximityOut are registered.
 
        --test-xi2 [--root] [device]
-               Register for a number of XI2 events and display them. If a device is given, only events on this device are displayed. If --root is  given,  events  are  se‐
-               lected on the root window only. Otherwise, a new client window is created (similar to xev).
+               Register  for a number of XI2 events and display them. If a device is given, only events on this device are displayed. If --root is given, events are selected on the root window
+               only. Otherwise, a new client window is created (similar to xev).
 
        --create-master prefix [sendCore] [enable]
-               Create a new pair of master devices on an XI2-enabled server with the given prefix. The server will create one master pointer named "prefix pointer" and one
-               master keyboard named "prefix keyboard".  If sendCore is 1, this pair of master devices is set to send core events (default).  If enable is 1,  this  master
-               device pair will be enabled immediately (default).
+               Create a new pair of master devices on an XI2-enabled server with the given prefix. The server will create one master pointer named "prefix  pointer"  and  one  master  keyboard
+               named  "prefix  keyboard".   If sendCore is 1, this pair of master devices is set to send core events (default).  If enable is 1, this master device pair will be enabled immedi‐
+               ately (default).
 
        --remove-master master [Floating|AttachToMaster] [returnPointer] [returnKeyboard]
-               Remove master  and its paired master device. Attached slave devices are set floating if Floating is specified or the argument is omitted.  If the second ar‐
-               gument is AttachToMaster, returnPointer specifies the master pointer to attach all slave pointers to and returnKeyboard specifies the master keyboard to at‐
-               tach all slave keyboards to.
+               Remove master  and its paired master device. Attached slave devices are set floating if Floating is specified or the argument is omitted.  If the second argument is AttachToMas‐
+               ter, returnPointer specifies the master pointer to attach all slave pointers to and returnKeyboard specifies the master keyboard to attach all slave keyboards to.
 
        --reattach slave master
                Reattach slave to master.
@@ -97,9 +93,9 @@
                Set the ClientPointer for the client owning window to master.  master must specify a master pointer.
 
        --map-to-output device crtc
-               Restricts the movements of the absolute device to the RandR crtc. The output name must match a currently connected output (see xrandr(1)). If the NVIDIA bi‐
-               nary driver is detected or RandR 1.2 or later is not available, a Xinerama output may be specified as "HEAD-N", with N being  the  Xinerama  screen  number.
-               This option has no effect on relative devices.
+               Restricts  the  movements  of  the absolute device to the RandR crtc. The output name must match a currently connected output (see xrandr(1)). If the NVIDIA binary driver is de‐
+               tected or RandR 1.2 or later is not available, a Xinerama output may be specified as "HEAD-N", with N being the Xinerama screen number. This option has no effect on relative de‐
+               vices.
 
        --enable device
                Enable the device. This call is equivalent to xinput --set-prop device "Device Enabled" 1
@@ -116,22 +112,20 @@
        property can be the property as a string or the Atom value.
 
 CHANGING PROPERTIES
-       When  xinput  should modify an existing driver property value, it is sufficient to provide the device name and property name as string, followed by the new value(s)
-       of the property. For example:
+       When  xinput  should modify an existing driver property value, it is sufficient to provide the device name and property name as string, followed by the new value(s) of the property. For
+       example:
 
               xinput set-prop "my device" "my prop" 1 2 3
 
 XWAYLAND
-       Xwayland is an X server that uses a Wayland Compositor as backend.  Xwayland acts as translation layer between the X protocol and the Wayland protocol but does  not
-       have  direct  access  to the hardware. The X Input Extension devices created by Xwayland ("xwayland-pointer", "xwayland-keyboard", etc.) map to the Wayland protocol
-       devices, not to physical devices.
+       Xwayland is an X server that uses a Wayland Compositor as backend.  Xwayland acts as translation layer between the X protocol and the Wayland protocol but does not have direct access to
+       the hardware. The X Input Extension devices created by Xwayland ("xwayland-pointer", "xwayland-keyboard", etc.) map to the Wayland protocol devices, not to physical devices.
 
-       These X Input Extension devices are only visible to other X clients connected to the same Xwayland process. Changing properties on Xwayland devices only affects the
-       behavior  of  those clients. For example, disabling an Xwayland device with xinput does not disable the device in Wayland-native applications. Other changes may not
-       have any effect at all.
+       These  X  Input  Extension devices are only visible to other X clients connected to the same Xwayland process. Changing properties on Xwayland devices only affects the behavior of those
+       clients. For example, disabling an Xwayland device with xinput does not disable the device in Wayland-native applications. Other changes may not have any effect at all.
 
-       In most instances, using xinput with an Xwayland device is indicative of a bug in a shell script and xinput will print a warning. Use the Wayland  Compositor's  na‐
-       tive device configuration methods instead.
+       In most instances, using xinput with an Xwayland device is indicative of a bug in a shell script and xinput will print a warning. Use the Wayland Compositor's native  device  configura‐
+       tion methods instead.
 
 ## SEE ALSO
        X(7), xset(1), xrandr(1)
@@ -153,4 +147,4 @@ XWAYLAND
        Thomas Jaeger <ThJaeger@gmail.com>
        and more.
 
-X Version 11                                                                    xinput 1.6.3                                                                      xinput(1)
+X Version 11                                                                              xinput 1.6.3                                                                                 xinput(1)

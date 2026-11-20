@@ -19,8 +19,8 @@
        route  [-V] [--version] [-h] [--help]
 
 ## DESCRIPTION
-       Route  manipulates the kernel's IP routing tables.  Its primary use is to set up static routes to specific hosts or networks via an interface after it has been con‐
-       figured with the ifconfig(8) program.
+       Route manipulates the kernel's IP routing tables.  Its primary use is to set up static routes to specific hosts or networks via an interface after it has been configured with the ifcon‐
+       fig(8) program.
 
        When the add or del options are used, route modifies the routing tables.  Without these options, route displays the current contents of the routing tables.
 
@@ -34,8 +34,7 @@
 
        -v     select verbose operation.
 
-       -n     show numerical addresses instead of trying to determine symbolic host names. This is useful if you are trying to determine why the route to  your  nameserver
-              has vanished.
+       -n     show numerical addresses instead of trying to determine symbolic host names. This is useful if you are trying to determine why the route to your nameserver has vanished.
 
        -e     use netstat(8)-format for displaying the routing table.  -ee will generate a very long line with all parameters from the routing table.
 
@@ -43,8 +42,7 @@
 
        add    add a new route.
 
-       target the  destination  network or host. You can provide an addresses or symbolic network or host name. Optionally you can use /prefixlen notation instead of using
-              the netmask option.
+       target the destination network or host. You can provide an addresses or symbolic network or host name. Optionally you can use /prefixlen notation instead of using the netmask option.
 
        -net   the target is a network.
 
@@ -54,41 +52,36 @@
               when adding a network route, the netmask to be used.
 
        gw GW  route packets via a gateway.
-              NOTE: The specified gateway must be reachable first. This usually means that you have to set up a static route to the gateway beforehand. If you specify  the
-              address of one of your local interfaces, it will be used to decide about the interface to which the packets should be routed to. This is a BSDism compatibil‐
-              ity hack.
+              NOTE: The specified gateway must be reachable first. This usually means that you have to set up a static route to the gateway beforehand. If you specify the  address  of  one  of
+              your local interfaces, it will be used to decide about the interface to which the packets should be routed to. This is a BSDism compatibility hack.
 
        metric M
-              set the metric field in the routing table (used by routing daemons) to M. If this option is not specified the metric for inet6 (IPv6) address family defaults
-              to  '1',  for  inet  (IPv4)  it  defaults  to  '0'.  You should always specify an explicit metric value to not rely on those defaults - they also differ from
-              iproute2.
+              set  the  metric  field  in the routing table (used by routing daemons) to M. If this option is not specified the metric for inet6 (IPv6) address family defaults to '1', for inet
+              (IPv4) it defaults to '0'. You should always specify an explicit metric value to not rely on those defaults - they also differ from iproute2.
 
-       mss M  sets MTU (Maximum Transmission Unit) of the route to M bytes.  Note that the current implementation of the route command does not allow the option to set the
-              Maximum Segment Size (MSS).
+       mss M  sets MTU (Maximum Transmission Unit) of the route to M bytes.  Note that the current implementation of the route command does not allow the option to set the Maximum Segment Size
+              (MSS).
 
        window W
-              set  the  TCP window size for connections over this route to W bytes. This is typically only used on AX.25 networks and with drivers unable to handle back to
-              back frames.
+              set the TCP window size for connections over this route to W bytes. This is typically only used on AX.25 networks and with drivers unable to handle back to back frames.
 
-       irtt I set the initial round trip time (irtt) for TCP connections over this route to I milliseconds (1-12000). This is typically only used  on  AX.25  networks.  If
-              omitted the RFC 1122 default of 300ms is used.
+       irtt I set the initial round trip time (irtt) for TCP connections over this route to I milliseconds (1-12000). This is typically only used on AX.25 networks. If omitted the RFC 1122 de‐
+              fault of 300ms is used.
 
-       reject install a blocking route, which will force a route lookup to fail.  This is for example used to mask out networks before using the default route. This is NOT
-              for firewalling.
+       reject install a blocking route, which will force a route lookup to fail.  This is for example used to mask out networks before using the default route. This is NOT for firewalling.
 
        mod, dyn, reinstate
               install a dynamic or modified route. These flags are for diagnostic purposes, and are generally only set by routing daemons.
 
-       dev If force the route to be associated with the specified device, as the kernel will otherwise try to determine the device on its own (by checking already existing
-              routes and device specifications, and where the route is added to). In most normal networks you won't need this.
+       dev If force the route to be associated with the specified device, as the kernel will otherwise try to determine the device on its own (by checking already existing  routes  and  device
+              specifications, and where the route is added to). In most normal networks you won't need this.
 
-              If  dev  If is the last option on the command line, the word dev may be omitted, as it's the default. Otherwise the order of the route modifiers (metric net‐
-              mask gw dev) doesn't matter.
+              If  dev  If  is  the last option on the command line, the word dev may be omitted, as it's the default. Otherwise the order of the route modifiers (metric netmask gw dev) doesn't
+              matter.
 
 ## EXAMPLES
        route add -net 127.0.0.0 netmask 255.0.0.0 metric 1024 dev lo
-              adds the normal loopback entry, using netmask 255.0.0.0 and associated with the "lo" device (assuming this device was previously set up correctly with ifcon‐
-              fig(8)).
+              adds the normal loopback entry, using netmask 255.0.0.0 and associated with the "lo" device (assuming this device was previously set up correctly with ifconfig(8)).
 
        route add -net 192.56.76.0 netmask 255.255.255.0 metric 1024 dev eth0
               adds a route to the local network 192.56.76.x via "eth0".  The word "dev" can be omitted here.
@@ -97,12 +90,11 @@
               deletes the current default route, which is labeled "default" or 0.0.0.0 in the destination field of the current routing table.
 
        route del -net 192.56.76.0 netmask 255.255.255.0
-              deletes  the  route.  Since the Linux routing kernel uses classless addressing, you pretty much always have to specify the netmask that is same as as seen in
-              'route -n' listing.
+              deletes the route. Since the Linux routing kernel uses classless addressing, you pretty much always have to specify the netmask that is same as as seen in 'route -n' listing.
 
        route add default gw mango
-              adds a default route (which will be used if no other route matches).  All packets using this route will be gatewayed through the  address  of  a  node  named
-              "mango". The device which will actually be used for that route depends on how we can reach "mango" - "mango" must be on directly reachable route.
+              adds a default route (which will be used if no other route matches).  All packets using this route will be gatewayed through the address of a node named "mango". The device which
+              will actually be used for that route depends on how we can reach "mango" - "mango" must be on directly reachable route.
 
        route add mango sl0
               Adds the route to the host named "mango" via the SLIP interface (assuming that "mango" is the SLIP host).
@@ -111,8 +103,8 @@
               This command adds the net "192.57.66.x" to be gatewayed through the former route to the SLIP interface.
 
        route add -net 224.0.0.0 netmask 240.0.0.0 dev eth0
-              This  is an obscure one documented so people know how to do it. This sets all of the class D (multicast) IP routes to go via "eth0". This is the correct nor‐
-              mal configuration line with a multicasting kernel.
+              This  is an obscure one documented so people know how to do it. This sets all of the class D (multicast) IP routes to go via "eth0". This is the correct normal configuration line
+              with a multicasting kernel.
 
        route add -net 10.0.0.0 netmask 255.0.0.0 metric 1024 reject
               This installs a rejecting route for the private network "10.x.x.x."
@@ -158,8 +150,8 @@
        irtt   Initial RTT (Round Trip Time). The kernel uses this to guess about the best TCP protocol parameters without waiting on (possibly slow) answers.
 
        HH (cached only)
-              The number of ARP entries and cached routes that refer to the hardware header cache for the cached route. This will be -1 if a hardware address is not needed
-              for the interface of the cached route (e.g. lo).
+              The number of ARP entries and cached routes that refer to the hardware header cache for the cached route. This will be -1 if a hardware address is not needed for the interface of
+              the cached route (e.g. lo).
 
        Arp (cached only)
               Whether or not the hardware address for the cached route is up to date.
@@ -173,10 +165,10 @@
        ifconfig(8), netstat(8), arp(8), rarp(8), ip(8)
 
 ## HISTORY
-       Route  for  Linux was originally written by Fred N.  van Kempen, <waltje@uwalt.nl.mugnet.org> and then modified by Johannes Stille and Linus Torvalds for pl15. Alan
-       Cox added the mss and window options for Linux 1.1.22. irtt support and merged with netstat from Bernd Eckenfels.
+       Route  for Linux was originally written by Fred N.  van Kempen, <waltje@uwalt.nl.mugnet.org> and then modified by Johannes Stille and Linus Torvalds for pl15. Alan Cox added the mss and
+       window options for Linux 1.1.22. irtt support and merged with netstat from Bernd Eckenfels.
 
 ## AUTHOR
        Currently maintained by Phil Blundell <Philip.Blundell@pobox.com> and Bernd Eckenfels <net-tools@lina.inka.de>.
 
-net-tools                                                                        2014-02-17                                                                        ROUTE(8)
+net-tools                                                                                  2014-02-17                                                                                   ROUTE(8)

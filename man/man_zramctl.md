@@ -27,8 +27,8 @@
 
        If no option is given, all non-zero size zram devices are shown.
 
-       Note that zramdev node specified on command line has to already exist. The command zramctl creates a new /dev/zram<N> nodes only when --find option specified. It’s
-       possible (and common) that after system boot /dev/zram<N> nodes are not created yet.
+       Note that zramdev node specified on command line has to already exist. The command zramctl creates a new /dev/zram<N> nodes only when --find option specified. It’s possible (and common)
+       that after system boot /dev/zram<N> nodes are not created yet.
 
 ## OPTIONS
        -a, --algorithm lzo|lz4|lz4hc|deflate|842
@@ -41,8 +41,7 @@
            Do not print a header line in status output.
 
        -o, --output list
-           Define the status output columns to be used. If no output arrangement is specified, then a default set is used. Use --help to get a list of all supported
-           columns.
+           Define the status output columns to be used. If no output arrangement is specified, then a default set is used. Use --help to get a list of all supported columns.
 
        --output-all
            Output all available columns.
@@ -54,11 +53,11 @@
            Reset the options of the specified zram device(s). Zram device settings can be changed only after a reset.
 
        -s, --size size
-           Create a zram device of the specified size. Zram devices are aligned to memory pages; when the requested size is not a multiple of the page size, it will be
-           rounded up to the next multiple. When not otherwise specified, the unit of the size parameter is bytes.
+           Create a zram device of the specified size. Zram devices are aligned to memory pages; when the requested size is not a multiple of the page size, it will be rounded up to the next
+           multiple. When not otherwise specified, the unit of the size parameter is bytes.
 
-           The size argument may be followed by the multiplicative suffixes KiB (=1024), MiB (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB and YiB (the "iB" is
-           optional, e.g., "K" has the same meaning as "KiB") or the suffixes KB (=1000), MB (=1000*1000), and so on for GB, TB, PB, EB, ZB and YB.
+           The size argument may be followed by the multiplicative suffixes KiB (=1024), MiB (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB and YiB (the "iB" is optional, e.g., "K" has
+           the same meaning as "KiB") or the suffixes KB (=1000), MB (=1000*1000), and so on for GB, TB, PB, EB, ZB and YB.
 
        -t, --streams number
            Set the maximum number of compression streams that can be used for the device. The default is use all CPUs and one stream for kernels older than 4.6.
@@ -99,4 +98,4 @@ EXAMPLE
 ## AVAILABILITY
        The zramctl command is part of the util-linux package which can be downloaded from Linux Kernel Archive <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.37.2                                                                2021-06-02                                                                      ZRAMCTL(8)
+util-linux 2.37.2                                                                          2021-06-02                                                                                 ZRAMCTL(8)

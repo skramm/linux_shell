@@ -30,8 +30,7 @@
               use the specified FORMAT instead of the default; output a newline after each use of FORMAT
 
        --printf=FORMAT
-              like --format, but interpret backslash escapes, and do not output a mandatory trailing newline; if
-              you want a newline, include \n in FORMAT
+              like --format, but interpret backslash escapes, and do not output a mandatory trailing newline; if you want a newline, include \n in FORMAT
 
        -t, --terse
               print the information in terse form
@@ -41,9 +40,8 @@
        --version
               output version information and exit
 
-       The --cached MODE argument can be; always, never, or default.  `always` will  use  cached  attributes  if
-       available,  while `never` will try to synchronize with the latest attributes, and `default` will leave it
-       up to the underlying file system.
+       The  --cached  MODE  argument can be; always, never, or default.  `always` will use cached attributes if available, while `never` will try to synchronize with the latest attributes, and
+       `default` will leave it up to the underlying file system.
 
        The valid format sequences for files (without --file-system):
 
@@ -139,8 +137,8 @@
    --terse --file-system is equivalent to the following FORMAT:
               %n %i %l %t %s %S %b %f %a %c %d
 
-       NOTE: your shell may have its own version of stat, which usually supersedes the version  described  here.
-       Please refer to your shell's documentation for details about the options it supports.
+       NOTE: your shell may have its own version of stat, which usually supersedes the version described here.  Please refer to your shell's documentation for details about the options it sup‐
+       ports.
 
 ## AUTHOR
        Written by Michael Meskes.
@@ -150,10 +148,8 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
-       <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to  the  extent
-       permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        stat(2), statfs(2), statx(2)
@@ -161,4 +157,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/stat>
        or available locally via: info '(coreutils) stat invocation'
 
-GNU coreutils 8.32                                 August 2026                                           STAT(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                   STAT(1)

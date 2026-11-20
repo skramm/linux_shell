@@ -7,20 +7,17 @@
 ---
 
 ## NAME
-       convert  -  convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw
-       on, flip, join, re-sample, and much more.
+       convert - convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more.
 
 ## SYNOPSIS
        convert-im6.q16 [input-option] input-file [output-option] output-file
 
 OVERVIEW
-       The convert-im6.q16 program is a member of the ImageMagick-ims6.q16(1) suite of tools.  Use it to convert
-       between image formats as well as resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-
-       sample, and much more.
+       The  convert-im6.q16  program  is  a  member  of  the ImageMagick-ims6.q16(1) suite of tools.  Use it to convert between image formats as well as resize an image, blur, crop, despeckle,
+       dither, draw on, flip, join, re-sample, and much more.
 
-       For more information about the  convert  command,  point  your  browser  to  file:///usr/share/doc/image‐
-       magick-6-common/html/www/convert.html  (on  debian  system  you may install the imagemagick-6 package) or
-       https://www.imagemagick.org/script/convert.php.
+       For more information about the convert command, point your browser to file:///usr/share/doc/imagemagick-6-common/html/www/convert.html (on debian  system  you  may  install  the  image‐
+       magick-6 package) or https://www.imagemagick.org/script/convert.php.
 
 ## DESCRIPTION
        Image Settings:
@@ -289,8 +286,7 @@ OVERVIEW
          -clut                apply a color lookup table to the image
          -coalesce            merge a sequence of images
          -combine             combine a sequence of images
-         -compare             mathematically and visually annotate the difference between an image and  its  re‐
-       construction
+         -compare             mathematically and visually annotate the difference between an image and its reconstruction
          -complex operator    perform complex mathematics on an image sequence
          -composite           composite image
          -copy geometry offset,
@@ -304,8 +300,7 @@ OVERVIEW
          -hald-clut           apply a Hald color lookup table to the image
          -morph value         morph an image sequence
          -mosaic              create a mosaic from an image sequence
-         -poly  terms           build  a polynomial from the image sequence and the corresponding terms (coeffi‐
-       cients and degree pairs)
+         -poly terms          build a polynomial from the image sequence and the corresponding terms (coefficients and degree pairs)
          -process arguments   process the image with a custom image filter
          -separate            separate an image channel into a grayscale image
          -smush geometry      smush an image sequence together
@@ -329,20 +324,17 @@ OVERVIEW
          -list type           print a list of supported option arguments
          -version             print version information
 
-       Use any setting or operator as an output-option.  Only a limited number  of  setting  are   input-option.
-       They  include: -antialias, -caption, -density, -define, -encoding, -font, -pointsize, -size, and -texture
-       as well as any of the miscellaneous options.
+       Use  any  setting  or operator as an output-option.  Only a limited number of setting are  input-option. They include: -antialias, -caption, -density, -define, -encoding, -font, -point‐
+       size, -size, and -texture as well as any of the miscellaneous options.
 
-       By default, the image format of `file' is determined by its magic number.  To specify a particular  image
-       format,  precede  the filename with an image format name and a colon (i.e. ps:image) or specify the image
-       type as the filename suffix (i.e. image.ps).  Specify 'file' as '-' for standard input or output.
+       By default, the image format of `file' is determined by its magic number.  To specify a particular image format, precede the filename with an image format name and a colon (i.e.  ps:im‐
+       age) or specify the image type as the filename suffix (i.e. image.ps).  Specify 'file' as '-' for standard input or output.
 
 ## SEE ALSO
        ImageMagick-im6.q16(1)
 
 ## COPYRIGHT
-       Copyright (C) 1999-2020 ImageMagick Studio LLC. Additional copyrights and licenses apply  to  this  soft‐
-       ware,  see file:///usr/share/doc/imagemagick-6-common/html/www/license.html (on debian system you may in‐
-       stall the imagemagick-6 package) or https://www.imagemagick.org/script/license.php
+       Copyright  (C)  1999-2020 ImageMagick Studio LLC. Additional copyrights and licenses apply to this software, see file:///usr/share/doc/imagemagick-6-common/html/www/license.html (on de‐
+       bian system you may install the imagemagick-6 package) or https://www.imagemagick.org/script/license.php
 
-ImageMagick                                 Date: 2009/01/10 01:00:00                         convert-im6.q16(1)
+ImageMagick                                                                         Date: 2009/01/10 01:00:00                                                                 convert-im6.q16(1)

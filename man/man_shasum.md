@@ -52,8 +52,8 @@
         Report shasum bugs to mshelor@cpan.org
 
 ## DESCRIPTION
-       Running shasum is often the quickest way to compute SHA message digests.  The user simply feeds data to the script through files or standard input, and then
-       collects the results from standard output.
+       Running shasum is often the quickest way to compute SHA message digests.  The user simply feeds data to the script through files or standard input, and then collects the results from
+       standard output.
 
        The following command shows how to compute digests for typical inputs such as the NIST test vector "abc":
 
@@ -63,11 +63,10 @@
 
                perl -e "print qq(abc)" | shasum -a 256
 
-       Since shasum mimics the behavior of the combined GNU sha1sum, sha224sum, sha256sum, sha384sum, and sha512sum programs, you can install this script as a convenient
-       drop-in replacement.
+       Since shasum mimics the behavior of the combined GNU sha1sum, sha224sum, sha256sum, sha384sum, and sha512sum programs, you can install this script as a convenient drop-in replacement.
 
-       Unlike the GNU programs, shasum encompasses the full SHA standard by allowing partial-byte inputs.  This is accomplished through the BITS option (-0).  The
-       following example computes the SHA-224 digest of the 7-bit message 0001100:
+       Unlike the GNU programs, shasum encompasses the full SHA standard by allowing partial-byte inputs.  This is accomplished through the BITS option (-0).  The following example computes
+       the SHA-224 digest of the 7-bit message 0001100:
 
                perl -e "print qq(0001100)" | shasum -0 -a 224
 
@@ -77,4 +76,4 @@
 ## SEE ALSO
        shasum is implemented using the Perl module Digest::SHA.
 
-perl v5.34.0                                                                     2026-09-03                                                                       SHASUM(1)
+perl v5.34.0                                                                               2026-11-05                                                                                  SHASUM(1)

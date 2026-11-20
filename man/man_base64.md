@@ -33,8 +33,8 @@
        --version
               output version information and exit
 
-       The  data are encoded as described for the base64 alphabet in RFC 4648.  When decoding, the input may contain newlines in addition to the bytes of the formal base64
-       alphabet.  Use --ignore-garbage to attempt to recover from any other non-alphabet bytes in the encoded stream.
+       The  data are encoded as described for the base64 alphabet in RFC 4648.  When decoding, the input may contain newlines in addition to the bytes of the formal base64 alphabet.  Use --ig‐
+       nore-garbage to attempt to recover from any other non-alphabet bytes in the encoded stream.
 
 ## AUTHOR
        Written by Simon Josefsson.
@@ -51,4 +51,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/base64>
        or available locally via: info '(coreutils) base64 invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                       BASE64(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                 BASE64(1)

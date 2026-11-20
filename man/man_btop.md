@@ -13,13 +13,11 @@
        btop [-h] [-v] [-/+t] [-p <id>] [--utf-force] [--debug]
 
 ## DESCRIPTION
-       btop  is  a  modern  and colorful command line resource monitor that shows usage and stats for processor,
-       memory, disks, network and processes.
+       btop is a modern and colorful command line resource monitor that shows usage and stats for processor, memory, disks, network and processes.
 
        btop beatures:
         - Easy to use, with a game inspired menu system.
-        - Full mouse support, all buttons with a highlighted key is clickable and mouse scroll works in  process
-       list and menu boxes.
+        - Full mouse support, all buttons with a highlighted key is clickable and mouse scroll works in process list and menu boxes.
         - Fast and responsive UI with UP, DOWN keys process selection.
         - Function for showing detailed stats for selected process.
         - Ability to filter processes.
@@ -59,8 +57,7 @@ COMMAND-LINE OPTIONS
               force start even if no UTF-8 locale was detected
 
        --debug
-              start in DEBUG mode: shows microsecond timer for information collect and screen draw functions and
-              sets loglevel to DEBUG
+              start in DEBUG mode: shows microsecond timer for information collect and screen draw functions and sets loglevel to DEBUG
 
 ## SEE ALSO
        https://github.com/aristocratos/btop
@@ -68,4 +65,4 @@ COMMAND-LINE OPTIONS
 ## AUTHOR
        btop was written by Aristocratos.
 
-1.1.3                                             December 2021                                          BTOP(1)
+1.1.3                                                                                     December 2021                                                                                  BTOP(1)

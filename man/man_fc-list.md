@@ -10,19 +10,16 @@
        fc-list - list available fonts
 
 ## SYNOPSIS
-       fc-list  [  -vVh ]  [ --verbose ]  [  [ -f format ]  [ --format format ]  ]  [  [ -q ]  [ --quiet ]  ]  [
-       --version ]  [ --help ]
+       fc-list [ -vVh ]  [ --verbose ]  [  [ -f format ]  [ --format format ]  ]  [  [ -q ]  [ --quiet ]  ]  [ --version ]  [ --help ]
 
         [ pattern  [ element... ]   ]
 
 ## DESCRIPTION
-       fc-list lists fonts and styles available on the system for applications using fontconfig.   If  any  ele‐
-       ments are specified, only those are printed.  Otherwise family and style are printed, unless verbose out‐
-       put is requested.
+       fc-list  lists  fonts  and  styles  available  on  the  system for applications using fontconfig.  If any elements are specified, only those are printed.  Otherwise family and style are
+       printed, unless verbose output is requested.
 
 ## OPTIONS
-       This program follows the usual GNU command line syntax, with long options starting with two dashes (`-').
-       A summary of options is included below.
+       This program follows the usual GNU command line syntax, with long options starting with two dashes (`-'). A summary of options is included below.
 
        -v     Print verbose output of the whole font pattern for each match, or elements if any is provided.
 
@@ -48,8 +45,7 @@
               Lists font faces that cover Hindi.
 
        fc-list : family style file spacing
-              Lists  the  filename  and spacing value for each font face. ``:'' is an empty pattern that matches
-              all fonts.
+              Lists the filename and spacing value for each font face. ``:'' is an empty pattern that matches all fonts.
 
 ## SEE ALSO
        fc-match(1) FcFontList(3) FcPatternFormat(3) fc-cat(1) fc-cache(1) fc-pattern(1) fc-query(1) fc-scan(1)
@@ -59,4 +55,4 @@
 ## AUTHOR
        This manual page was written by Keith Packard <keithp@keithp.com> and Josselin Mouette <joss@debian.org>.
 
-                                                  Aug 13, 2008                                        FC-LIST(1)
+                                                                                          Aug 13, 2008                                                                                FC-LIST(1)

@@ -62,4 +62,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/basename>
        or available locally via: info '(coreutils) basename invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                     BASENAME(1)
+GNU coreutils 8.32                                                                         August 2026                                                                               BASENAME(1)

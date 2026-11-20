@@ -15,8 +15,8 @@
 OVERVIEW
        The display-im6.q16 program is a member of the ImageMagick-ims6.q16(1) suite of tools.  Use it to display an image or image sequence on any X server.
 
-       For more information about the display command, point your browser to file:///usr/share/doc/imagemagick-6-common/html/www/display.html (on debian system you may in‐
-       stall the imagemagick-6 package) or https://www.imagemagick.org/script/display.php.
+       For  more  information  about  the  display  command, point your browser to file:///usr/share/doc/imagemagick-6-common/html/www/display.html (on debian system you may install the image‐
+       magick-6 package) or https://www.imagemagick.org/script/display.php.
 
 ## DESCRIPTION
        Image Settings:
@@ -129,11 +129,11 @@ OVERVIEW
          -list type           print a list of supported option arguments
          -version             print version information
 
-       In addition to those listed above, you can specify these standard X resources as command line options:  -background, -bordercolor, -borderwidth, -font, -foreground,
-       -iconGeometry, -iconic, -mattecolor, -name, -shared-memory, -usePixmap, or -title.
+       In addition to those listed above, you can specify these standard X resources as command line options:   -background,  -bordercolor,  -borderwidth,  -font,  -foreground,  -iconGeometry,
+       -iconic, -mattecolor, -name, -shared-memory, -usePixmap, or -title.
 
-       By  default, the image format of `file' is determined by its magic number.  To specify a particular image format, precede the filename with an image format name and
-       a colon (i.e. ps:image) or specify the image type as the filename suffix (i.e. image.ps).  Specify 'file' as '-' for standard input or output.
+       By  default, the image format of `file' is determined by its magic number.  To specify a particular image format, precede the filename with an image format name and a colon (i.e. ps:im‐
+       age) or specify the image type as the filename suffix (i.e. image.ps).  Specify 'file' as '-' for standard input or output.
 
        Buttons:
          1    press to map or unmap the Command widget
@@ -149,7 +149,7 @@ NOTE
        ImageMagick-im6.q16(1)
 
 ## COPYRIGHT
-       Copyright (C) 1999-2020  ImageMagick  Studio  LLC.  Additional  copyrights  and  licenses  apply  to  this  software,  see  file:///usr/share/doc/imagemagick-6-com‐
-       mon/html/www/license.html (on debian system you may install the imagemagick-6 package) or https://www.imagemagick.org/script/license.php
+       Copyright (C) 1999-2020 ImageMagick Studio LLC. Additional copyrights and licenses apply to this software, see file:///usr/share/doc/imagemagick-6-common/html/www/license.html  (on  de‐
+       bian system you may install the imagemagick-6 package) or https://www.imagemagick.org/script/license.php
 
-ImageMagick                                                              Date: 2009/01/10 01:00:00                                                       display-im6.q16(1)
+ImageMagick                                                                         Date: 2009/01/10 01:00:00                                                                 display-im6.q16(1)

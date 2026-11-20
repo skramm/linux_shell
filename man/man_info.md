@@ -55,8 +55,8 @@
        -w, --where, --location
               print physical location of Info file
 
-       The first non-option argument, if present, is the menu entry to start from; it is searched for in all 'dir' files along INFOPATH.  If it is not present, info merges
-       all 'dir' files and shows the result.  Any remaining arguments are treated as the names of menu items relative to the initial node visited.
+       The  first non-option argument, if present, is the menu entry to start from; it is searched for in all 'dir' files along INFOPATH.  If it is not present, info merges all 'dir' files and
+       shows the result.  Any remaining arguments are treated as the names of menu items relative to the initial node visited.
 
        For a summary of key bindings, type H within Info.
 
@@ -102,4 +102,4 @@
 
        should give you access to the complete manual.  (Or, if you have Emacs, M-x info will lead to the manual.)
 
-info 6.8                                                                         July 2021                                                                          INFO(1)
+info 6.8                                                                                    July 2021                                                                                    INFO(1)

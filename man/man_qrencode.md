@@ -13,8 +13,8 @@
        qrencode [-o FILENAME] [OPTION]...  [STRING]
 
 ## DESCRIPTION
-       Libqrencode  is  a library for encoding data in a QR Code symbol, a kind of 2D symbology that can be scanned by handy terminals such as a mobile phone with CCD. The
-       capacity of QR Code is up to 7000 digits or 4000 characters, and has high robustness.
+       Libqrencode is a library for encoding data in a QR Code symbol, a kind of 2D symbology that can be scanned by handy terminals such as a mobile phone with CCD. The capacity of QR Code is
+       up to 7000 digits or 4000 characters, and has high robustness.
 
        Qrencode is a utility software using libqrencode to encode string data in a QR Code and save as a PNG or EPS image.
 
@@ -23,8 +23,8 @@
               display help message.
 
        -o FILENAME, --output=FILENAME
-              write image to FILENAME. If '-' is specified, the result will be output to standard output.  If  -S  is  given,  structured  symbols  are  written  to  FILE‐
-              NAME-01.png, FILENAME-02.png, ... (suffix is removed from FILENAME, if specified)
+              write image to FILENAME. If '-' is specified, the result will be output to standard output. If -S is given, structured symbols are written  to  FILENAME-01.png,  FILENAME-02.png,
+              ... (suffix is removed from FILENAME, if specified)
 
        -r FILENAME, --read-from=FILENAME
               read input data from FILENAME.
@@ -76,8 +76,7 @@
 
        --foreground=RRGGBB[AA]
        --background=RRGGBB[AA]
-              specify  foreground/background  color  in  hexadecimal notation.  6-digit (RGB) or 8-digit (RGBA) form are supported.  Color output support available only in
-              PNG, EPS and SVG.
+              specify foreground/background color in hexadecimal notation.  6-digit (RGB) or 8-digit (RGBA) form are supported.  Color output support available only in PNG, EPS and SVG.
 
        --strict-version
               disable automatic version number adjustment. If the input data is too large for the specified version, the program exits with the code of 1.
@@ -92,13 +91,12 @@
               input data. If it is not specified, data will be taken from standard input.
 
 SYMBOL VERSIONS
-       The symbol versions of QR Code range from Version 1 to Version 40.  Each version has a different module configuration or number of modules, ranging from  Version  1
-       (21  x  21  modules)  up  to  Version  40  (177  x 177 modules).  Each higher version number comprises 4 additional modules per side by default.  See http://www.qr‐
-       code.com/en/about/version.html for a detailed version list.
+       The  symbol  versions of QR Code range from Version 1 to Version 40.  Each version has a different module configuration or number of modules, ranging from Version 1 (21 x 21 modules) up
+       to Version 40 (177 x 177 modules).  Each higher version number comprises 4 additional modules per side by default.  See http://www.qrcode.com/en/about/version.html for a  detailed  ver‐
+       sion list.
 
 MICRO QR CODE
-       With Micro QR Code, You can embed data in a smaller area than with QR Code, but the data capacity is strongly limited. The symbol versions range from Version  1  to
-       4.
+       With Micro QR Code, You can embed data in a smaller area than with QR Code, but the data capacity is strongly limited. The symbol versions range from Version 1 to 4.
 
 ## EXAMPLES
        qrencode -l L -v 1 -o output.png 'Hello, world!'
@@ -121,4 +119,4 @@ RESOURCES
 ## COPYRIGHT
        Copyright (C) 2006-2018 Kentaro Fukuchi.
 
-qrencode 4.1.1                                                                 Aug. 28, 2020                                                                    QRENCODE(1)
+qrencode 4.1.1                                                                            Aug. 28, 2020                                                                              QRENCODE(1)

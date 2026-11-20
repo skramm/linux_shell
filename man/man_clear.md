@@ -13,16 +13,16 @@
        clear [-Ttype] [-V] [-x]
 
 ## DESCRIPTION
-       clear  clears your screen if this is possible, including its scrollback buffer (if the extended “E3” capability is defined).  clear looks in the environment for the
-       terminal type given by the environment variable TERM, and then in the terminfo database to determine how to clear the screen.
+       clear  clears  your screen if this is possible, including its scrollback buffer (if the extended “E3” capability is defined).  clear looks in the environment for the terminal type given
+       by the environment variable TERM, and then in the terminfo database to determine how to clear the screen.
 
-       clear writes to the standard output.  You can redirect the standard output to a file (which prevents clear from actually clearing the screen),  and  later  cat  the
-       file to the screen, clearing it at that point.
+       clear writes to the standard output.  You can redirect the standard output to a file (which prevents clear from actually clearing the screen), and later cat  the  file  to  the  screen,
+       clearing it at that point.
 
 ## OPTIONS
        -T type
-            indicates  the  type  of  terminal.  Normally this option is unnecessary, because the default is taken from the environment variable TERM.  If -T is specified,
-            then the shell variables LINES and COLUMNS will also be ignored.
+            indicates the type of terminal.  Normally this option is unnecessary, because the default is taken from the environment variable TERM.  If -T is specified, then the shell variables
+            LINES and COLUMNS will also be ignored.
 
        -V   reports the version of ncurses which was used in this program, and exits.  The options are as follows:
 
@@ -31,8 +31,7 @@
 ## HISTORY
        A clear command appeared in 2.79BSD dated February 24, 1979.  Later that was provided in Unix 8th edition (1985).
 
-       AT&T adapted a different BSD program (tset) to make a new command (tput), and used this to replace the clear command with a shell script  which  calls  tput  clear,
-       e.g.,
+       AT&T adapted a different BSD program (tset) to make a new command (tput), and used this to replace the clear command with a shell script which calls tput clear, e.g.,
 
            /usr/bin/tput ${1:+-T$1} clear 2> /dev/null
            exit
@@ -47,8 +46,7 @@
 
        The E3 extension came later:
 
-       •   In  June  1999,  xterm provided an extension to the standard control sequence for clearing the screen.  Rather than clearing just the visible part of the screen
-           using
+       •   In June 1999, xterm provided an extension to the standard control sequence for clearing the screen.  Rather than clearing just the visible part of the screen using
 
                printf '\033[2J'
 
@@ -60,13 +58,12 @@
 
        •   A few other terminal developers adopted the feature, e.g., PuTTY in 2006.
 
-       •   In April 2011, a Red Hat developer submitted a patch to the Linux kernel, modifying its console driver to do the same thing.  The Linux change, part of the  3.0
-           release, did not mention xterm, although it was cited in the Red Hat bug report (#683733) which led to the change.
+       •   In April 2011, a Red Hat developer submitted a patch to the Linux kernel, modifying its console driver to do the same thing.  The Linux change, part of the 3.0 release, did not men‐
+           tion xterm, although it was cited in the Red Hat bug report (#683733) which led to the change.
 
        •   Again, a few other terminal developers adopted the feature.  But the next relevant step was a change to the clear program in 2013 to incorporate this extension.
 
-       •   In  2013, the E3 extension was overlooked in tput with the “clear” parameter.  That was addressed in 2016 by reorganizing tput to share its logic with clear and
-           tset.
+       •   In 2013, the E3 extension was overlooked in tput with the “clear” parameter.  That was addressed in 2016 by reorganizing tput to share its logic with clear and tset.
 
 PORTABILITY
        Neither IEEE Std 1003.1/The Open  Group  Base  Specifications  Issue  7 (POSIX.1-2008) nor X/Open Curses Issue 7 documents tset or reset.
@@ -78,4 +75,4 @@ PORTABILITY
 
        This describes ncurses version 6.3 (patch 20211021).
 
-                                                                                                                                                                   clear(1)
+                                                                                                                                                                                        clear(1)

@@ -21,22 +21,20 @@
 
 ## OPTIONS
        -c, --config-file config-file
-              Specify  a  configuration file. If no file is specified, the libsensors default configuration file
-              is used. Use `-c /dev/null' to temporarily disable this default configuration file.
+              Specify  a  configuration  file.  If no file is specified, the libsensors default configuration file is used. Use `-c /dev/null' to temporarily disable this default configuration
+              file.
 
        -h, --help
               Print a help text and exit.
 
        -s, --set
-              Evaluate all `set' statements in the configuration file and exit. You must be `root' to  do  this.
-              If this parameter is not specified, no `set' statement is evaluated.
+              Evaluate all `set' statements in the configuration file and exit. You must be `root' to do this. If this parameter is not specified, no `set' statement is evaluated.
 
        -A, --no-adapter
               Do not show the adapter for each chip.
 
-       -u     Raw  output. This mode is suitable for debugging and for post-processing of the output by scripts.
-              It is also useful when writing a configuration file because it shows the  raw  input  names  which
-              must be referenced in the configuration file.
+       -u     Raw output. This mode is suitable for debugging and for post-processing of the output by scripts. It is also useful when writing a configuration file because it shows the raw in‐
+              put names which must be referenced in the configuration file.
 
        -j     Json output. This mode is suitable for post-processing of the output by scripts.
 
@@ -47,10 +45,8 @@
               Print the temperatures in degrees Fahrenheit instead of Celsius.
 
        --bus-list
-              Generate bus statements suitable for using in sensors.conf. Such bus statements are only needed if
-              you have several chips sharing the same address on different buses of the same type. As  bus  num‐
-              bers  are usually not guaranteed to be stable over reboots, these statements let you refer to each
-              bus by its name rather than numbers.
+              Generate  bus statements suitable for using in sensors.conf. Such bus statements are only needed if you have several chips sharing the same address on different buses of the same
+              type. As bus numbers are usually not guaranteed to be stable over reboots, these statements let you refer to each bus by its name rather than numbers.
 
 ## FILES
        /etc/sensors3.conf
@@ -63,4 +59,4 @@
 ## AUTHOR
        Frodo Looijaard and the lm_sensors group https://hwmon.wiki.kernel.org/lm_sensors
 
-lm-sensors 3                                      November 2012                                       sensors(1)
+lm-sensors 3                                                                              November 2012                                                                               sensors(1)

@@ -61,13 +61,12 @@
        --version
               output version information and exit
 
-       Unless  -t CHAR is given, leading blanks separate fields and are ignored, else fields are separated by CHAR.  Any FIELD is a field number counted from 1.  FORMAT is
-       one or more comma or blank separated specifications, each being 'FILENUM.FIELD' or '0'.  Default FORMAT outputs the join field, the remaining fields from FILE1, the
-       remaining  fields  from  FILE2, all separated by CHAR.  If FORMAT is the keyword 'auto', then the first line of each file determines the number of fields output for
-       each line.
+       Unless  -t CHAR is given, leading blanks separate fields and are ignored, else fields are separated by CHAR.  Any FIELD is a field number counted from 1.  FORMAT is one or more comma or
+       blank separated specifications, each being 'FILENUM.FIELD' or '0'.  Default FORMAT outputs the join field, the remaining fields from FILE1, the remaining fields from  FILE2,  all  sepa‐
+       rated by CHAR.  If FORMAT is the keyword 'auto', then the first line of each file determines the number of fields output for each line.
 
-       Important: FILE1 and FILE2 must be sorted on the join fields.  E.g., use "sort -k 1b,1" if 'join' has no options, or use "join -t ''"  if  'sort'  has  no  options.
-       Note, comparisons honor the rules specified by 'LC_COLLATE'.  If the input is not sorted and some lines cannot be joined, a warning message will be given.
+       Important:  FILE1 and FILE2 must be sorted on the join fields.  E.g., use "sort -k 1b,1" if 'join' has no options, or use "join -t ''" if 'sort' has no options.  Note, comparisons honor
+       the rules specified by 'LC_COLLATE'.  If the input is not sorted and some lines cannot be joined, a warning message will be given.
 
 ## AUTHOR
        Written by Mike Haertel.
@@ -86,4 +85,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/join>
        or available locally via: info '(coreutils) join invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                         JOIN(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                   JOIN(1)

@@ -13,8 +13,7 @@
        dir [OPTION]... [FILE]...
 
 ## DESCRIPTION
-       List information about the FILEs (the current directory by default).  Sort entries alphabetically if none
-       of -cftuvSUX nor --sort is specified.
+       List information about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
 
        Mandatory arguments to long options are mandatory for short options too.
 
@@ -36,14 +35,12 @@
        -B, --ignore-backups
               do not list implied entries ending with ~
 
-       -c     with -lt: sort by, and show, ctime (time of last modification of file  status  information);  with
-              -l: show ctime and sort by name; otherwise: sort by ctime, newest first
+       -c     with -lt: sort by, and show, ctime (time of last modification of file status information); with -l: show ctime and sort by name; otherwise: sort by ctime, newest first
 
        -C     list entries by columns
 
        --color[=WHEN]
-              colorize  the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info be‐
-              low
+              colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info below
 
        -d, --directory
               list directories themselves, not their contents
@@ -95,8 +92,7 @@
               hyperlink file names; WHEN can be 'always' (default if omitted), 'auto', or 'never'
 
        --indicator-style=WORD
-              append  indicator  with  style  WORD  to  entry  names:  none  (default),  slash  (-p),  file-type
-              (--file-type), classify (-F)
+              append indicator with style WORD to entry names: none (default), slash (-p), file-type (--file-type), classify (-F)
 
        -i, --inode
               print the index number of each file
@@ -110,8 +106,7 @@
        -l     use a long listing format
 
        -L, --dereference
-              when  showing  file information for a symbolic link, show information for the file the link refer‐
-              ences rather than for the link itself
+              when showing file information for a symbolic link, show information for the file the link references rather than for the link itself
 
        -m     fill width with a comma separated list of entries
 
@@ -136,8 +131,7 @@
               enclose entry names in double quotes
 
        --quoting-style=WORD
-              use quoting style WORD for  entry  names:  literal,  locale,  shell,  shell-always,  shell-escape,
-              shell-escape-always, c, escape (overrides QUOTING_STYLE environment variable)
+              use quoting style WORD for entry names: literal, locale, shell, shell-always, shell-escape, shell-escape-always, c, escape (overrides QUOTING_STYLE environment variable)
 
        -r, --reverse
               reverse order while sorting
@@ -154,8 +148,7 @@
               sort by WORD instead of name: none (-U), size (-S), time (-t), version (-v), extension (-X)
 
        --time=WORD
-              change  the default of using modification times; access time (-u): atime, access, use; change time
-              (-c): ctime, status; birth time: birth, creation;
+              change the default of using modification times; access time (-u): atime, access, use; change time (-c): ctime, status; birth time: birth, creation;
 
               with -l, WORD determines which time to show; with --sort=time, sort by WORD (newest first)
 
@@ -167,8 +160,7 @@
        -T, --tabsize=COLS
               assume tab stops at each COLS instead of 8
 
-       -u     with -lt: sort by, and show, access time; with -l: show access time and sort by  name;  otherwise:
-              sort by access time, newest first
+       -u     with -lt: sort by, and show, access time; with -l: show access time and sort by name; otherwise: sort by access time, newest first
 
        -U     do not sort; list entries in directory order
 
@@ -191,18 +183,15 @@
        --version
               output version information and exit
 
-       The  SIZE  argument is an integer and optional unit (example: 10K is 10*1024).  Units are K,M,G,T,P,E,Z,Y
-       (powers of 1024) or KB,MB,... (powers of 1000).  Binary prefixes can be used, too: KiB=K, MiB=M,  and  so
-       on.
+       The  SIZE  argument  is  an integer and optional unit (example: 10K is 10*1024).  Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).  Binary prefixes can be used,
+       too: KiB=K, MiB=M, and so on.
 
-       The  TIME_STYLE  argument can be full-iso, long-iso, iso, locale, or +FORMAT.  FORMAT is interpreted like
-       in date(1).  If FORMAT is FORMAT1<newline>FORMAT2, then FORMAT1 applies to non-recent files  and  FORMAT2
-       to recent files.  TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.  Also the
-       TIME_STYLE environment variable sets the default style to use.
+       The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.  FORMAT is interpreted like in date(1).  If  FORMAT  is  FORMAT1<newline>FORMAT2,  then  FORMAT1  applies  to
+       non-recent  files  and FORMAT2 to recent files.  TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.  Also the TIME_STYLE environment variable sets the default
+       style to use.
 
-       Using color to distinguish file  types  is  disabled  both  by  default  and  with  --color=never.   With
-       --color=auto,  ls  emits color codes only when standard output is connected to a terminal.  The LS_COLORS
-       environment variable can change the settings.  Use the dircolors command to set it.
+       Using color to distinguish file types is disabled both by default and with --color=never.  With --color=auto, ls emits color codes only when standard output is connected to a  terminal.
+       The LS_COLORS environment variable can change the settings.  Use the dircolors command to set it.
 
    Exit status:
        0      if OK,
@@ -219,13 +208,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
-       <https://gnu.org/licenses/gpl.html>.
-       This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent
-       permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/dir>
        or available locally via: info '(coreutils) dir invocation'
 
-GNU coreutils 8.32                                 August 2026                                            DIR(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                    DIR(1)

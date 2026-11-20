@@ -77,4 +77,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/uniq>
        or available locally via: info '(coreutils) uniq invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                         UNIQ(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                   UNIQ(1)

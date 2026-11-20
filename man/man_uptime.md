@@ -13,15 +13,14 @@
        uptime [options]
 
 ## DESCRIPTION
-       uptime  gives  a one line display of the following information.  The current time, how long the system has been running, how many users are currently logged on, and
-       the system load averages for the past 1, 5, and 15 minutes.
+       uptime  gives a one line display of the following information.  The current time, how long the system has been running, how many users are currently logged on, and the system load aver‐
+       ages for the past 1, 5, and 15 minutes.
 
        This is the same information contained in the header line displayed by w(1).
 
-       System load averages is the average number of processes that are either in a runnable or uninterruptable state.  A process in a runnable state is either  using  the
-       CPU  or waiting to use the CPU.  A process in uninterruptable state is waiting for some I/O access, eg waiting for disk.  The averages are taken over the three time
-       intervals.  Load averages are not normalized for the number of CPUs in a system, so a load average of 1 means a single CPU system is loaded all the time while on  a
-       4 CPU system it means it was idle 75% of the time.
+       System load averages is the average number of processes that are either in a runnable or uninterruptable state.  A process in a runnable state is either using the CPU or waiting to  use
+       the  CPU.   A process in uninterruptable state is waiting for some I/O access, eg waiting for disk.  The averages are taken over the three time intervals.  Load averages are not normal‐
+       ized for the number of CPUs in a system, so a load average of 1 means a single CPU system is loaded all the time while on a 4 CPU system it means it was idle 75% of the time.
 
 ## OPTIONS
        -p, --pretty
@@ -51,4 +50,4 @@
 ## REPORTING BUGS
        Please send bug reports to ⟨procps@freelists.org⟩
 
-procps-ng                                                                      December 2012                                                                      UPTIME(1)
+procps-ng                                                                                 December 2012                                                                                UPTIME(1)

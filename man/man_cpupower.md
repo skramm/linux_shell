@@ -19,8 +19,7 @@
 ## DESCRIPTION
        cpupower  is a collection of tools to examine and tune power saving related features of your processor.
 
-       The  manpages  of  the  commands (cpupower-<command>(1)) provide detailed descriptions of supported features. Run cpupower help to get an overview of supported com‐
-       mands.
+       The manpages of the commands (cpupower-<command>(1)) provide detailed descriptions of supported features. Run cpupower help to get an overview of supported commands.
 
 Options
        --help, -h
@@ -49,11 +48,10 @@ Options
            Print the package name and version number.
 
 ## SEE ALSO
-       cpupower-set(1), cpupower-info(1), cpupower-idle-info(1), cpupower-idle-set(1), cpupower-frequency-set(1), cpupower-frequency-info(1),  cpupower-monitor(1),  power‐
-       top(1)
+       cpupower-set(1), cpupower-info(1), cpupower-idle-info(1), cpupower-idle-set(1), cpupower-frequency-set(1), cpupower-frequency-info(1), cpupower-monitor(1), powertop(1)
 
 ## AUTHORS
        --perf-bias parts written by Len Brown <len.brown@intel.com>
        Thomas Renninger <trenn@suse.de>
 
-                                                                                 07/03/2011                                                                     CPUPOWER(1)
+                                                                                           07/03/2011                                                                                CPUPOWER(1)

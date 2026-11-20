@@ -13,19 +13,19 @@
        groupadd [options] group
 
 ## DESCRIPTION
-       The groupadd command creates a new group account using the values specified on the command line plus the default values from the system. The new group will be
-       entered into the system files as needed.
+       The groupadd command creates a new group account using the values specified on the command line plus the default values from the system. The new group will be entered into the system
+       files as needed.
 
 ## OPTIONS
        The options which apply to the groupadd command are:
 
        -f, --force
-           This option causes the command to simply exit with success status if the specified group already exists. When used with -g, and the specified GID already
-           exists, another (unique) GID is chosen (i.e.  -g is turned off).
+           This option causes the command to simply exit with success status if the specified group already exists. When used with -g, and the specified GID already exists, another (unique)
+           GID is chosen (i.e.  -g is turned off).
 
        -g, --gid GID
-           The numerical value of the group's ID. This value must be unique, unless the -o option is used. The value must be non-negative. The default is to use the
-           smallest ID value greater than or equal to GID_MIN and greater than every other group.
+           The numerical value of the group's ID. This value must be unique, unless the -o option is used. The value must be non-negative. The default is to use the smallest ID value greater
+           than or equal to GID_MIN and greater than every other group.
 
            See also the -r option and the GID_MAX description.
 
@@ -58,9 +58,8 @@
            Apply changes in the CHROOT_DIR directory and use the configuration files from the CHROOT_DIR directory.
 
        -P, --prefix PREFIX_DIR
-           Apply changes in the PREFIX_DIR directory and use the configuration files from the PREFIX_DIR directory. This option does not chroot and is intended for
-           preparing a cross-compilation target. Some limitations: NIS and LDAP users/groups are not verified. PAM authentication is using the host files. No SELINUX
-           support.
+           Apply changes in the PREFIX_DIR directory and use the configuration files from the PREFIX_DIR directory. This option does not chroot and is intended for preparing a
+           cross-compilation target. Some limitations: NIS and LDAP users/groups are not verified. PAM authentication is using the host files. No SELINUX support.
 
 ## CONFIGURATION
        The following configuration variables in /etc/login.defs change the behavior of this tool:
@@ -71,13 +70,11 @@
            The default value for GID_MIN (resp.  GID_MAX) is 1000 (resp. 60000).
 
        MAX_MEMBERS_PER_GROUP (number)
-           Maximum members per group entry. When the maximum is reached, a new group entry (line) is started in /etc/group (with the same name, same password, and same
-           GID).
+           Maximum members per group entry. When the maximum is reached, a new group entry (line) is started in /etc/group (with the same name, same password, and same GID).
 
            The default value is 0, meaning that there are no limits in the number of members in a group.
 
-           This feature (split group) permits to limit the length of lines in the group file. This is useful to make sure that lines for NIS groups are not larger than
-           1024 characters.
+           This feature (split group) permits to limit the length of lines in the group file. This is useful to make sure that lines for NIS groups are not larger than 1024 characters.
 
            If you need to enforce such limit, you can use 25.
 
@@ -99,14 +96,13 @@
            Shadow password suite configuration.
 
 ## CAVEATS
-       It is usually recommended to only use groupnames that begin with a lower case letter or an underscore, followed by lower case letters, digits, underscores, or
-       dashes. They can end with a dollar sign. In regular expression terms: [a-z_][a-z0-9_-]*[$]?
+       It is usually recommended to only use groupnames that begin with a lower case letter or an underscore, followed by lower case letters, digits, underscores, or dashes. They can end with
+       a dollar sign. In regular expression terms: [a-z_][a-z0-9_-]*[$]?
 
-       On Debian, the only constraints are that groupnames must neither start with a dash ('-') nor plus ('+') nor tilde ('~') nor contain a colon (':'), a comma (','), or
-       a whitespace (space:' ', end of line: '\n', tabulation: '\t', etc.).
+       On Debian, the only constraints are that groupnames must neither start with a dash ('-') nor plus ('+') nor tilde ('~') nor contain a colon (':'), a comma (','), or a whitespace
+       (space:' ', end of line: '\n', tabulation: '\t', etc.).
 
-       On Ubuntu, the same constraints as Debian are in place, with the additional constraint that the groupname cannot be fully numeric. This includes octal and
-       hexadecimal syntax.
+       On Ubuntu, the same constraints as Debian are in place, with the additional constraint that the groupname cannot be fully numeric. This includes octal and hexadecimal syntax.
 
        Groupnames may only be up to 32 characters long.
 
@@ -138,4 +134,4 @@
 ## SEE ALSO
        chfn(1), chsh(1), passwd(1), gpasswd(8), groupdel(8), groupmod(8), login.defs(5), useradd(8), userdel(8), usermod(8).
 
-shadow-utils 4.8.1                                                               02/06/2024                                                                     GROUPADD(8)
+shadow-utils 4.8.1                                                                         02/06/2024                                                                                GROUPADD(8)

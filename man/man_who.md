@@ -86,4 +86,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/who>
        or available locally via: info '(coreutils) who invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                          WHO(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                    WHO(1)

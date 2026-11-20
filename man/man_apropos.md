@@ -15,13 +15,13 @@
 ## DESCRIPTION
        Each manual page has a short description available within it.  apropos searches the descriptions for instances of keyword.
 
-       keyword is usually a regular expression, as if (-r) was used, or may contain wildcards (-w), or match the exact keyword (-e).  Using these options, it may be neces‐
-       sary to quote the keyword or escape (\) the special characters to stop the shell from interpreting them.
+       keyword is usually a regular expression, as if (-r) was used, or may contain wildcards (-w), or match the exact keyword (-e).  Using these options, it may be necessary to quote the key‐
+       word or escape (\) the special characters to stop the shell from interpreting them.
 
        The standard matching rules allow matches to be made against the page name and word boundaries in the description.
 
-       The database searched by apropos is updated by the mandb program.  Depending on your installation, this may be run by a periodic cron job, or may  need  to  be  run
-       manually after new manual pages have been installed.
+       The database searched by apropos is updated by the mandb program.  Depending on your installation, this may be run by a periodic cron job, or may need to be run manually after new  man‐
+       ual pages have been installed.
 
 ## OPTIONS
        -d, --debug
@@ -31,13 +31,13 @@
               Print verbose warning messages.
 
        -r, --regex
-              Interpret each keyword as a regular expression.  This is the default behaviour.  Each keyword will be matched against the page names and the descriptions in‐
-              dependently.  It can match any part of either.  The match is not limited to word boundaries.
+              Interpret  each  keyword as a regular expression.  This is the default behaviour.  Each keyword will be matched against the page names and the descriptions independently.  It can
+              match any part of either.  The match is not limited to word boundaries.
 
        -w, --wildcard
-              Interpret each keyword as a pattern containing shell style wildcards.  Each keyword will be matched against the page  names  and  the  descriptions  indepen‐
-              dently.   If  --exact  is  also used, a match will only be found if an expanded keyword matches an entire description or page name.  Otherwise the keyword is
-              also allowed to match on word boundaries in the description.
+              Interpret each keyword as a pattern containing shell style wildcards.  Each keyword will be matched against the page names and the descriptions independently.  If --exact is also
+              used,  a match will only be found if an expanded keyword matches an entire description or page name.  Otherwise the keyword is also allowed to match on word boundaries in the de‐
+              scription.
 
        -e, --exact
               Each keyword will be exactly matched against the page names and the descriptions.
@@ -49,27 +49,25 @@
               Do not trim output to the terminal width.  Normally, output will be truncated to the terminal width to avoid ugly results from poorly-written NAME sections.
 
        -s list, --sections=list, --section=list
-              Search only the given manual sections.  list is a colon- or comma-separated list of sections.  If an entry in list is a simple section, for example "3", then
-              the  displayed  list  of  descriptions  will include pages in sections "3", "3perl", "3x", and so on; while if an entry in list has an extension, for example
-              "3perl", then the list will only include pages in that exact part of the manual section.
+              Search only the given manual sections.  list is a colon- or comma-separated list of sections.  If an entry in list is a simple section, for example "3", then the  displayed  list
+              of  descriptions  will  include  pages in sections "3", "3perl", "3x", and so on; while if an entry in list has an extension, for example "3perl", then the list will only include
+              pages in that exact part of the manual section.
 
        -m system[,...], --systems=system[,...]
-              If this system has access to other operating systems' manual page descriptions, they can be searched using this option.  To search NewOS's  manual  page  de‐
-              scriptions, use the option -m NewOS.
+              If this system has access to other operating systems' manual page descriptions, they can be searched using this option.  To search NewOS's manual page descriptions, use  the  op‐
+              tion -m NewOS.
 
-              The  system  specified  can be a combination of comma-delimited operating system names.  To include a search of the native operating system's whatis descrip‐
-              tions, include the system name man in the argument string.  This option will override the $SYSTEM environment variable.
+              The system specified can be a combination of comma-delimited operating system names.  To include a search of the native operating system's whatis descriptions, include the system
+              name man in the argument string.  This option will override the $SYSTEM environment variable.
 
        -M path, --manpath=path
-              Specify an alternate set of colon-delimited manual page hierarchies to search.  By default, apropos uses the $MANPATH  environment  variable,  unless  it  is
-              empty or unset, in which case it will determine an appropriate manpath based on your $PATH environment variable.  This option overrides the contents of $MAN‐
-              PATH.
+              Specify an alternate set of colon-delimited manual page hierarchies to search.  By default, apropos uses the $MANPATH environment variable, unless it is empty or unset, in  which
+              case it will determine an appropriate manpath based on your $PATH environment variable.  This option overrides the contents of $MANPATH.
 
        -L locale, --locale=locale
-              apropos will normally determine your current locale by a call to the C function setlocale(3) which interrogates various environment variables,  possibly  in‐
-              cluding  $LC_MESSAGES  and $LANG.  To temporarily override the determined value, use this option to supply a locale string directly to apropos.  Note that it
-              will not take effect until the search for pages actually begins.  Output such as the help message will always be displayed in the  initially  determined  lo‐
-              cale.
+              apropos will normally determine your current locale by a call to the C function setlocale(3) which interrogates various environment variables, possibly including $LC_MESSAGES and
+              $LANG.  To temporarily override the determined value, use this option to supply a locale string directly to apropos.  Note that it will not take effect until the search for pages
+              actually begins.  Output such as the help message will always be displayed in the initially determined locale.
 
        -C file, --config-file=file
               Use this user configuration file rather than the default of ~/.manpath.
@@ -101,12 +99,11 @@
               See the SEARCH PATH section of manpath(5) for the default behaviour and details of how this environment variable is handled.
 
        MANWIDTH
-              If  $MANWIDTH  is  set,  its  value is used as the terminal width (see the --long option).  If it is not set, the terminal width will be calculated using the
-              value of $COLUMNS, and ioctl(2) if available, or falling back to 80 characters if all else fails.
+              If  $MANWIDTH  is  set, its value is used as the terminal width (see the --long option).  If it is not set, the terminal width will be calculated using the value of $COLUMNS, and
+              ioctl(2) if available, or falling back to 80 characters if all else fails.
 
        POSIXLY_CORRECT
-              If $POSIXLY_CORRECT is set, even to a null value, the default apropos search will be as an extended regex (-r).  Nowadays, this is the default behaviour any‐
-              way.
+              If $POSIXLY_CORRECT is set, even to a null value, the default apropos search will be as an extended regex (-r).  Nowadays, this is the default behaviour anyway.
 
 ## FILES
        /usr/share/man/index.(bt|db|dir|pag)
@@ -130,4 +127,4 @@
        https://gitlab.com/cjwatson/man-db/-/issues
        https://savannah.nongnu.org/bugs/?group=man-db
 
-2.10.2                                                                           2022-03-17                                                                      APROPOS(1)
+2.10.2                                                                                     2022-03-17                                                                                 APROPOS(1)

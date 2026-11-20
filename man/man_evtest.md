@@ -15,11 +15,11 @@
        evtest --query /dev/input/eventX <type> <value>
 
 ## DESCRIPTION
-       The first invocation type displayed above ("capture mode") causes evtest to display information about the specified input device, including all the events supported
-       by the device. It then monitors the device and displays all the events layer events generated.
+       The first invocation type displayed above ("capture mode") causes evtest to display information about the specified input device, including all the events supported by the device. It
+       then monitors the device and displays all the events layer events generated.
 
-       If the --grab flag is given in capture mode, evtest keeps an EVIOCGRAB on the device. While this grab is active, other processes will not receive events from the
-       kernel devices. The grab is released again when evtest quits.
+       If the --grab flag is given in capture mode, evtest keeps an EVIOCGRAB on the device. While this grab is active, other processes will not receive events from the kernel devices. The
+       grab is released again when evtest quits.
 
        In the second invocation type ("query mode"), evtest performs a one-shot query of the state of a specific key value of an event type.
 
@@ -27,17 +27,17 @@
 
        value can be either a decimal representation (e.g. 44), hex (e.g. 0x2c), or the constant name (e.g. KEY_Z) of the key/switch/sound/LED being queried.
 
-       If the state bit is set (key pressed, switch on, ...), evtest exits with code 10. If the state bit is unset (key depressed, switch off, ...), evtest exits with code
-       0. No other output is generated.
+       If the state bit is set (key pressed, switch on, ...), evtest exits with code 10. If the state bit is unset (key depressed, switch off, ...), evtest exits with code 0. No other output
+       is generated.
 
        evtest needs to be able to read from the device; in most cases this means it must be run as root.
 
-       evtest is commonly used to debug issues with input devices in X.Org. The output of evtest shows the information presented by the kernel; based on this information
-       it can be determined whether a bug may be a kernel or an X.Org issue.
+       evtest is commonly used to debug issues with input devices in X.Org. The output of evtest shows the information presented by the kernel; based on this information it can be determined
+       whether a bug may be a kernel or an X.Org issue.
 
 ## DIAGNOSTICS
-       If evtest does not show any events even though the device is being used, the device may be grabbed by a process (EVIOCGRAB). This is usually the case when debugging
-       a synaptics device from within X. VT switching to a TTY or shutting down the X server terminates this grab and synaptics devices can be debugged.
+       If evtest does not show any events even though the device is being used, the device may be grabbed by a process (EVIOCGRAB). This is usually the case when debugging a synaptics device
+       from within X. VT switching to a TTY or shutting down the X server terminates this grab and synaptics devices can be debugged.
 
        The following command shows the processes with an open file descriptor on the device:
 
@@ -54,8 +54,7 @@ EXIT CODE
 ## AUTHOR
        evtest was written by Vojtech Pavlik <vojtech@suse.cz[1]>.
 
-       This manual page was written by Stephen Kitt <steve@sk2.org[2]>, based on that present in the lineakd package, for the Debian GNU/Linux system (but may be used by
-       others).
+       This manual page was written by Stephen Kitt <steve@sk2.org[2]>, based on that present in the lineakd package, for the Debian GNU/Linux system (but may be used by others).
 
 ## NOTES
         1. vojtech@suse.cz
@@ -64,4 +63,4 @@ EXIT CODE
         2. steve@sk2.org
            mailto:steve@sk2.org
 
-                                                                                 08/22/2019                                                                       EVTEST(1)
+                                                                                           08/22/2019                                                                                  EVTEST(1)

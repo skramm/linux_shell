@@ -48,4 +48,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/fold>
        or available locally via: info '(coreutils) fold invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                         FOLD(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                   FOLD(1)

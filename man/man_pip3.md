@@ -15,9 +15,8 @@
        pip3 <command> [options]
 
 ## DESCRIPTION
-       pip  is  a  Python  package  installer,  recommended for installing Python packages which are not available in the Debian archive.  It can work with version control
-       repositories (currently only Git, Mercurial, and Bazaar repositories), logs output extensively, and prevents partial installs by downloading all requirements before
-       starting installation.
+       pip  is  a  Python package installer, recommended for installing Python packages which are not available in the Debian archive.  It can work with version control repositories (currently
+       only Git, Mercurial, and Bazaar repositories), logs output extensively, and prevents partial installs by downloading all requirements before starting installation.
 
        On Debian, pip is the command to use when installing packages for Python 2, while pip3 is the command to use when installing packages for Python 3.
 
@@ -43,8 +42,8 @@
        wheel  Build wheels from your requirements.
 
 GENERAL OPTIONS
-       This  list is by no means complete, and it only describes options available to all commands.  Use pip <command> --help for more details on command specific options.
-       A few command options are provided below.
+       This list is by no means complete, and it only describes options available to all commands.  Use pip <command> --help for more details on command specific options.  A  few  command  op‐
+       tions are provided below.
 
        -h, --help
               Show more detailed command help.
@@ -96,8 +95,7 @@ INSTALL OPTIONS
               Install from the given requirements file.  This option can be used multiple times.
 
        -b,--build <dir>
-              Directory to unpack packages into and build in.  The default in a virtualenv  is  "<venv  path>/build".   The  default  for  global  installs  is  "<OS  temp
-              dir>/pip_build_<username>".
+              Directory to unpack packages into and build in.  The default in a virtualenv is "<venv path>/build".  The default for global installs is "<OS temp dir>/pip_build_<username>".
 
        -t,--target <dir>
               Install packages into <dir>.
@@ -124,16 +122,16 @@ INSTALL OPTIONS
               Don't install package dependencies.
 
        --install-option <options>
-              Extra arguments to be supplied to the setup.py install command (use like --install-option ="--install-scripts=/usr/local/bin"). Use multiple --install-option
-              options to pass multiple options to setup.py install. If you are using an option with a directory path, be sure to use absolute path.
+              Extra arguments to be supplied to the setup.py install command (use like --install-option ="--install-scripts=/usr/local/bin"). Use multiple --install-option options to pass mul‐
+              tiple options to setup.py install. If you are using an option with a directory path, be sure to use absolute path.
 
        --global-option <options>
               Extra global options to be supplied to the setup.py call before the install command.
 
        --user Install using the user scheme.
 
-       --egg  Install packages as eggs, not 'flat', like pip normally does. This option is not about installing from eggs. (WARNING: Because this  option  overrides  pip's
-              normal install logic, requirements files may not behave as expected.)
+       --egg  Install packages as eggs, not 'flat', like pip normally does. This option is not about installing from eggs. (WARNING: Because this option overrides pip's normal  install  logic,
+              requirements files may not behave as expected.)
 
        --root <dir>
               Install everything relative to this alternate root directory.
@@ -164,8 +162,7 @@ INSTALL OPTIONS
               Ignore package index (only looking at --find-links URLs instead).
 
        -f,--find-links <url>
-              If  a  url or path to an html file, then parse for links to archives. If a local path or file:// url that's a directory, then look for archives in the direc‐
-              tory listing.
+              If a url or path to an html file, then parse for links to archives. If a local path or file:// url that's a directory, then look for archives in the directory listing.
 
        --allow-external <package>
               Allow the installation of externally hosted files
@@ -193,13 +190,13 @@ UNINSTALL OPTIONS
               Don't ask for confirmation of uninstall deletions.
 
 ## AUTHORS
-       This manual page was originally written by Jeff Licquia <licquia@debian.org>, later rewritten by Carl Chenet <chaica@debian.org>.  It was rewritten  again  and  the
-       source converted to reStructuredText by Barry Warsaw <barry@debian.org>.
+       This manual page was originally written by Jeff Licquia <licquia@debian.org>, later rewritten by Carl Chenet <chaica@debian.org>.  It was rewritten again and the source converted to re‐
+       StructuredText by Barry Warsaw <barry@debian.org>.
 
-       Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, version 3 or any later version published by
-       the Free Software Foundation.
+       Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, version 3 or any later version published by  the  Free  Software
+       Foundation.
 
 ## AUTHOR
        Barry Warsaw <barry@debian.org>
 
-1.5.6                                                                            2014-06-03                                                                          PIP(1)
+1.5.6                                                                                      2014-06-03                                                                                     PIP(1)

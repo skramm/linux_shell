@@ -15,12 +15,11 @@
 ## DESCRIPTION
        vmstat reports information about processes, memory, paging, block IO, traps, disks and cpu activity.
 
-       The first report produced gives averages since the last reboot.  Additional reports give information on a
-       sampling period of length delay.  The process and memory reports are instantaneous in either case.
+       The  first report produced gives averages since the last reboot.  Additional reports give information on a sampling period of length delay.  The process and memory reports are instanta‐
+       neous in either case.
 
 ## OPTIONS
-       delay  The delay between updates in seconds.  If no delay is specified, only one report is  printed  with
-              the average values since boot.
+       delay  The delay between updates in seconds.  If no delay is specified, only one report is printed with the average values since boot.
 
        count  Number of updates.  In absence of count, when delay is defined, default is infinite.
 
@@ -28,9 +27,8 @@
               Display active and  inactive memory, given a 2.5.41 kernel or better.
 
        -f, --forks
-              The  -f  switch displays the number of forks since boot.  This includes the fork, vfork, and clone
-              system calls, and is equivalent to the total number of tasks created.  Each process is represented
-              by one or more tasks, depending on thread usage.  This display does not repeat.
+              The -f switch displays the number of forks since boot.  This includes the fork, vfork, and clone system calls, and is equivalent to the  total  number  of  tasks  created.   Each
+              process is represented by one or more tasks, depending on thread usage.  This display does not repeat.
 
        -m, --slabs
               Displays slabinfo.
@@ -51,15 +49,14 @@
               Detailed statistics about partition (2.5.70 or above required).
 
        -S, --unit character
-              Switches  outputs  between  1000 (k), 1024 (K), 1000000 (m), or 1048576 (M) bytes.  Note this does
-              not change the block (bi/bo) fields, which are always measured in blocks.
+              Switches outputs between 1000 (k), 1024 (K), 1000000 (m), or 1048576 (M) bytes.  Note this does not change the block (bi/bo) fields, which are always measured in blocks.
 
        -t, --timestamp
               Append timestamp to each line
 
        -w, --wide
-              Wide output mode (useful for systems with higher amount of memory, where the default  output  mode
-              suffers from unwanted column breakage).  The output is wider than 80 characters per line.
+              Wide  output  mode (useful for systems with higher amount of memory, where the default output mode suffers from unwanted column breakage).  The output is wider than 80 characters
+              per line.
 
        -V, --version
               Display version information and exit.
@@ -135,14 +132,11 @@ FIELD DESCRIPTION FOR SLAB MODE
 ## NOTES
        vmstat does not require special permissions.
 
-       These  reports are intended to help identify system bottlenecks.  Linux vmstat does not count itself as a
-       running process.
+       These reports are intended to help identify system bottlenecks.  Linux vmstat does not count itself as a running process.
 
-       All linux blocks are currently 1024 bytes.  Old kernels may report blocks as 512 bytes,  2048  bytes,  or
-       4096 bytes.
+       All linux blocks are currently 1024 bytes.  Old kernels may report blocks as 512 bytes, 2048 bytes, or 4096 bytes.
 
-       Since  procps 3.1.9, vmstat lets you choose units (k, K, m, M).  Default is K (1024 bytes) in the default
-       mode.
+       Since procps 3.1.9, vmstat lets you choose units (k, K, m, M).  Default is K (1024 bytes) in the default mode.
 
        vmstat uses slabinfo 1.1
 
@@ -164,4 +158,4 @@ FIELD DESCRIPTION FOR SLAB MODE
 ## REPORTING BUGS
        Please send bug reports to ⟨procps@freelists.org⟩
 
-procps-ng                                          2020-06-04                                          VMSTAT(8)
+procps-ng                                                                                  2020-06-04                                                                                  VMSTAT(8)

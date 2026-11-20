@@ -62,8 +62,8 @@
 
        and all C format specifications ending with one of diouxXfeEgGcs, with ARGUMENTs converted to proper type first.  Variable widths are handled.
 
-       NOTE:  your  shell  may have its own version of printf, which usually supersedes the version described here.  Please refer to your shell's documentation for details
-       about the options it supports.
+       NOTE:  your  shell  may have its own version of printf, which usually supersedes the version described here.  Please refer to your shell's documentation for details about the options it
+       supports.
 
 ## AUTHOR
        Written by David MacKenzie.
@@ -82,4 +82,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/printf>
        or available locally via: info '(coreutils) printf invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                       PRINTF(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                 PRINTF(1)

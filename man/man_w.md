@@ -13,11 +13,10 @@
        w [options] user [...]
 
 ## DESCRIPTION
-       w  displays  information  about the users currently on the machine, and their processes.  The header shows, in this order, the current time, how long the system has
-       been running, how many users are currently logged on, and the system load averages for the past 1, 5, and 15 minutes.
+       w  displays information about the users currently on the machine, and their processes.  The header shows, in this order, the current time, how long the system has been running, how many
+       users are currently logged on, and the system load averages for the past 1, 5, and 15 minutes.
 
-       The following entries are displayed for each user: login name, the tty name, the remote host, login time, idle time, JCPU, PCPU, and the command line of their  cur‐
-       rent process.
+       The following entries are displayed for each user: login name, the tty name, the remote host, login time, idle time, JCPU, PCPU, and the command line of their current process.
 
        The JCPU time is the time used by all processes attached to the tty.  It does not include past background jobs, but does include currently running background jobs.
 
@@ -34,8 +33,8 @@ COMMAND-LINE OPTIONS
               Use the short format.  Don't print the login time, JCPU or PCPU times.
 
        -f, --from
-              Toggle  printing  the  from  (remote hostname) field.  The default as released is for the from field to not be printed, although your system administrator or
-              distribution maintainer may have compiled a version in which the from field is shown by default.
+              Toggle printing the from (remote hostname) field.  The default as released is for the from field to not be printed, although your system administrator or distribution  maintainer
+              may have compiled a version in which the from field is shown by default.
 
        --help Display help text and exit.
 
@@ -67,10 +66,9 @@ COMMAND-LINE OPTIONS
        free(1), ps(1), top(1), uptime(1), utmp(5), who(1)
 
 ## AUTHORS
-       w was re-written almost entirely by Charles Blake, based on the version by Larry Greenfield ⟨greenfie@gauss.rutgers.edu⟩ and Michael  K.  Johnson  ⟨johnsonm@redhat.
-       com⟩
+       w was re-written almost entirely by Charles Blake, based on the version by Larry Greenfield ⟨greenfie@gauss.rutgers.edu⟩ and Michael K. Johnson ⟨johnsonm@redhat.com⟩
 
 ## REPORTING BUGS
        Please send bug reports to ⟨procps@freelists.org⟩
 
-procps-ng                                                                        2020-06-04                                                                            W(1)
+procps-ng                                                                                  2020-06-04                                                                                       W(1)

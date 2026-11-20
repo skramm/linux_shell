@@ -94,4 +94,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/nl>
        or available locally via: info '(coreutils) nl invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                           NL(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                     NL(1)

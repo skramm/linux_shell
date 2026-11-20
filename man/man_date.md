@@ -28,8 +28,8 @@
               like --date; once for each line of DATEFILE
 
        -I[FMT], --iso-8601[=FMT]
-              output  date/time in ISO 8601 format.  FMT='date' for date only (the default), 'hours', 'minutes', 'seconds', or 'ns' for date and time to the indicated pre‐
-              cision.  Example: 2006-08-14T02:34:56-06:00
+              output  date/time  in  ISO  8601  format.   FMT='date' for date only (the default), 'hours', 'minutes', 'seconds', or 'ns' for date and time to the indicated precision.  Example:
+              2006-08-14T02:34:56-06:00
 
        -R, --rfc-email
               output date and time in RFC 5322 format.  Example: Mon, 14 Aug 2006 02:34:56 -0600
@@ -159,8 +159,8 @@
 
        #      use opposite case if possible
 
-       After any flags comes an optional field width, as a decimal number; then an optional modifier, which is either E to use the locale's  alternate  representations  if
-       available, or O to use the locale's alternate numeric symbols if available.
+       After any flags comes an optional field width, as a decimal number; then an optional modifier, which is either E to use the locale's alternate representations if available, or O to  use
+       the locale's alternate numeric symbols if available.
 
 ## EXAMPLES
        Convert seconds since the epoch (1970-01-01 UTC) to a date
@@ -176,9 +176,9 @@
               $ date --date='TZ="America/Los_Angeles" 09:00 next Fri'
 
 DATE STRING
-       The  --date=STRING is a mostly free format human readable date string such as "Sun, 29 Feb 2004 16:21:42 -0800" or "2004-02-29 16:21:42" or even "next Thursday".  A
-       date string may contain items indicating calendar date, time of day, time zone, day of week, relative time, relative date, and numbers.  An empty  string  indicates
-       the beginning of the day.  The date string format is more complex than is easily documented here but is fully described in the info documentation.
+       The  --date=STRING is a mostly free format human readable date string such as "Sun, 29 Feb 2004 16:21:42 -0800" or "2004-02-29 16:21:42" or even "next Thursday".  A date string may con‐
+       tain items indicating calendar date, time of day, time zone, day of week, relative time, relative date, and numbers.  An empty string indicates the  beginning  of  the  day.   The  date
+       string format is more complex than is easily documented here but is fully described in the info documentation.
 
 ## AUTHOR
        Written by David MacKenzie.
@@ -195,4 +195,4 @@ DATE STRING
        Full documentation <https://www.gnu.org/software/coreutils/date>
        or available locally via: info '(coreutils) date invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                         DATE(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                   DATE(1)

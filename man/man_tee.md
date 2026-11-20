@@ -42,8 +42,8 @@
        'exit-nopipe'
               exit on error writing to any output not a pipe
 
-       The default MODE for the -p option is 'warn-nopipe'.  The default operation when --output-error is not specified, is to exit immediately on error writing to a pipe,
-       and diagnose errors writing to non pipe outputs.
+       The  default MODE for the -p option is 'warn-nopipe'.  The default operation when --output-error is not specified, is to exit immediately on error writing to a pipe, and diagnose errors
+       writing to non pipe outputs.
 
 ## AUTHOR
        Written by Mike Parker, Richard M. Stallman, and David MacKenzie.
@@ -60,4 +60,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/tee>
        or available locally via: info '(coreutils) tee invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                          TEE(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                    TEE(1)

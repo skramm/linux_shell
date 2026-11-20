@@ -37,4 +37,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/groups>
        or available locally via: info '(coreutils) groups invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                       GROUPS(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                 GROUPS(1)

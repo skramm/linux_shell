@@ -41,10 +41,8 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
-       <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to  the  extent
-       permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        rev(1)
@@ -52,4 +50,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/tac>
        or available locally via: info '(coreutils) tac invocation'
 
-GNU coreutils 8.32                                 August 2026                                            TAC(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                    TAC(1)

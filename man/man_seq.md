@@ -33,11 +33,10 @@
        --version
               output version information and exit
 
-       If FIRST or INCREMENT is omitted, it defaults to 1.  That is, an omitted INCREMENT defaults to 1 even when LAST is smaller than FIRST.  The sequence of numbers ends
-       when the sum of the current number and INCREMENT would become greater than LAST.  FIRST, INCREMENT, and LAST are interpreted as floating point values.  INCREMENT is
-       usually  positive if FIRST is smaller than LAST, and INCREMENT is usually negative if FIRST is greater than LAST.  INCREMENT must not be 0; none of FIRST, INCREMENT
-       and LAST may be NaN.  FORMAT must be suitable for printing one argument of type 'double'; it defaults to %.PRECf if FIRST, INCREMENT, and LAST are all  fixed  point
-       decimal numbers with maximum precision PREC, and to %g otherwise.
+       If  FIRST or INCREMENT is omitted, it defaults to 1.  That is, an omitted INCREMENT defaults to 1 even when LAST is smaller than FIRST.  The sequence of numbers ends when the sum of the
+       current number and INCREMENT would become greater than LAST.  FIRST, INCREMENT, and LAST are interpreted as floating point values.  INCREMENT is usually positive  if  FIRST  is  smaller
+       than LAST, and INCREMENT is usually negative if FIRST is greater than LAST.  INCREMENT must not be 0; none of FIRST, INCREMENT and LAST may be NaN.  FORMAT must be suitable for printing
+       one argument of type 'double'; it defaults to %.PRECf if FIRST, INCREMENT, and LAST are all fixed point decimal numbers with maximum precision PREC, and to %g otherwise.
 
 ## AUTHOR
        Written by Ulrich Drepper.
@@ -54,4 +53,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/seq>
        or available locally via: info '(coreutils) seq invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                          SEQ(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                    SEQ(1)

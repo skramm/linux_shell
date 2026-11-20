@@ -15,15 +15,13 @@
        od --traditional [OPTION]... [FILE] [[+]OFFSET[.][b] [+][LABEL][.][b]]
 
 ## DESCRIPTION
-       Write  an unambiguous representation, octal bytes by default, of FILE to standard output.  With more than
-       one FILE argument, concatenate them in the listed order to form the input.
+       Write an unambiguous representation, octal bytes by default, of FILE to standard output.  With more than one FILE argument, concatenate them in the listed order to form the input.
 
        With no FILE, or when FILE is -, read standard input.
 
-       If first and second call formats both apply, the second format is assumed if the last operand begins with
-       +  or (if there are 2 operands) a digit.  An OFFSET operand means -j OFFSET.  LABEL is the pseudo-address
-       at first byte printed, incremented when dump is progressing.  For OFFSET and LABEL, a 0x or 0X prefix in‐
-       dicates hexadecimal; suffixes may be . for octal and b for multiply by 512.
+       If  first  and  second  call formats both apply, the second format is assumed if the last operand begins with + or (if there are 2 operands) a digit.  An OFFSET operand means -j OFFSET.
+       LABEL is the pseudo-address at first byte printed, incremented when dump is progressing.  For OFFSET and LABEL, a 0x or 0X prefix indicates hexadecimal; suffixes may be . for octal  and
+       b for multiply by 512.
 
        Mandatory arguments to long options are mandatory for short options too.
 
@@ -100,9 +98,8 @@
        x[SIZE]
               hexadecimal, SIZE bytes per integer
 
-       SIZE  is  a  number.  For TYPE in [doux], SIZE may also be C for sizeof(char), S for sizeof(short), I for
-       sizeof(int) or L for sizeof(long).  If TYPE is f, SIZE may also be F for sizeof(float), D for sizeof(dou‐
-       ble) or L for sizeof(long double).
+       SIZE  is  a  number.   For  TYPE  in  [doux],  SIZE  may  also be C for sizeof(char), S for sizeof(short), I for sizeof(int) or L for sizeof(long).  If TYPE is f, SIZE may also be F for
+       sizeof(float), D for sizeof(double) or L for sizeof(long double).
 
        Adding a z suffix to any type displays printable characters at the end of each output line.
 
@@ -134,13 +131,11 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright  ©  2020  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU  GPL  version  3  or  later
-       <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to  the  extent
-       permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        Full documentation <https://www.gnu.org/software/coreutils/od>
        or available locally via: info '(coreutils) od invocation'
 
-GNU coreutils 8.32                                 August 2026                                             OD(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                     OD(1)

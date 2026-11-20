@@ -36,4 +36,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/yes>
        or available locally via: info '(coreutils) yes invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                          YES(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                    YES(1)

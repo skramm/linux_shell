@@ -13,8 +13,8 @@
        look [options] string [file]
 
 ## DESCRIPTION
-       The look utility displays any lines in file which contain string. As look performs a binary search, the lines in file must be sorted (where sort(1) was given the
-       same options -d and/or -f that look is invoked with).
+       The look utility displays any lines in file which contain string. As look performs a binary search, the lines in file must be sorted (where sort(1) was given the same options -d and/or
+       -f that look is invoked with).
 
        If file is not specified, the file /usr/share/dict/words is used, only alphanumeric characters are compared and the case of alphabetic characters is ignored.
 
@@ -68,4 +68,4 @@
 ## AVAILABILITY
        The look command is part of the util-linux package which can be downloaded from Linux Kernel Archive <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.37.2                                                                2021-06-02                                                                         LOOK(1)
+util-linux 2.37.2                                                                          2021-06-02                                                                                    LOOK(1)

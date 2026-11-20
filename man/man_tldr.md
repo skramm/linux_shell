@@ -38,4 +38,4 @@
        -a,--about
               About this program
 
-tldr 0.6.4                                                                     November 2021                                                                        TLDR(1)
+tldr 0.6.4                                                                                November 2021                                                                                  TLDR(1)

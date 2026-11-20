@@ -15,36 +15,29 @@
        chrt [options] -p [priority] PID
 
 ## DESCRIPTION
-       chrt sets or retrieves the real-time scheduling attributes of an existing PID, or runs command with the
-       given attributes.
+       chrt sets or retrieves the real-time scheduling attributes of an existing PID, or runs command with the given attributes.
 
 POLICIES
        -o, --other
-           Set scheduling policy to SCHED_OTHER (time-sharing scheduling). This is the default Linux scheduling
-           policy.
+           Set scheduling policy to SCHED_OTHER (time-sharing scheduling). This is the default Linux scheduling policy.
 
        -f, --fifo
            Set scheduling policy to SCHED_FIFO (first in-first out).
 
        -r, --rr
-           Set scheduling policy to SCHED_RR (round-robin scheduling). When no policy is defined, the SCHED_RR
-           is used as the default.
+           Set scheduling policy to SCHED_RR (round-robin scheduling). When no policy is defined, the SCHED_RR is used as the default.
 
        -b, --batch
-           Set scheduling policy to SCHED_BATCH (scheduling batch processes). Linux-specific, supported since
-           2.6.16. The priority argument has to be set to zero.
+           Set scheduling policy to SCHED_BATCH (scheduling batch processes). Linux-specific, supported since 2.6.16. The priority argument has to be set to zero.
 
        -i, --idle
-           Set scheduling policy to SCHED_IDLE (scheduling very low priority jobs). Linux-specific, supported
-           since 2.6.23. The priority argument has to be set to zero.
+           Set scheduling policy to SCHED_IDLE (scheduling very low priority jobs). Linux-specific, supported since 2.6.23. The priority argument has to be set to zero.
 
        -d, --deadline
-           Set scheduling policy to SCHED_DEADLINE (sporadic task model deadline scheduling). Linux-specific,
-           supported since 3.14. The priority argument has to be set to zero. See also --sched-runtime,
-           --sched-deadline and --sched-period. The relation between the options required by the kernel is
-           runtime ⇐ deadline ⇐ period. chrt copies period to deadline if --sched-deadline is not specified and
-           deadline to runtime if --sched-runtime is not specified. It means that at least --sched-period has to
-           be specified. See sched(7) for more details.
+           Set scheduling policy to SCHED_DEADLINE (sporadic task model deadline scheduling). Linux-specific, supported since 3.14. The priority argument has to be set to zero. See also
+           --sched-runtime, --sched-deadline and --sched-period. The relation between the options required by the kernel is runtime ⇐ deadline ⇐ period. chrt copies period to deadline if
+           --sched-deadline is not specified and deadline to runtime if --sched-runtime is not specified. It means that at least --sched-period has to be specified. See sched(7) for more
+           details.
 
 SCHEDULING OPTIONS
        -T, --sched-runtime nanoseconds
@@ -59,16 +52,12 @@ SCHEDULING OPTIONS
        -R, --reset-on-fork
            Use SCHED_RESET_ON_FORK or SCHED_FLAG_RESET_ON_FORK flag. Linux-specific, supported since 2.6.31.
 
-       Each thread has a reset-on-fork scheduling flag. When this flag is set, children created by fork(2) do
-       not inherit privileged scheduling policies. After the reset-on-fork flag has been enabled, it can be
-       reset only if the thread has the CAP_SYS_NICE capability. This flag is disabled in child processes
-       created by fork(2).
+       Each thread has a reset-on-fork scheduling flag. When this flag is set, children created by fork(2) do not inherit privileged scheduling policies. After the reset-on-fork flag has been
+       enabled, it can be reset only if the thread has the CAP_SYS_NICE capability. This flag is disabled in child processes created by fork(2).
 
-       More precisely, if the reset-on-fork flag is set, the following rules apply for subsequently created
-       children:
+       More precisely, if the reset-on-fork flag is set, the following rules apply for subsequently created children:
 
-       •   If the calling thread has a scheduling policy of SCHED_FIFO or SCHED_RR, the policy is reset to
-           SCHED_OTHER in child processes.
+       •   If the calling thread has a scheduling policy of SCHED_FIFO or SCHED_RR, the policy is reset to SCHED_OTHER in child processes.
 
        •   If the calling process has a negative nice value, the nice value is reset to zero in child processes.
 
@@ -102,12 +91,10 @@ USAGE
            chrt -r -p priority PID
 
 PERMISSIONS
-       A user must possess CAP_SYS_NICE to change the scheduling attributes of a process. Any user can retrieve
-       the scheduling information.
+       A user must possess CAP_SYS_NICE to change the scheduling attributes of a process. Any user can retrieve the scheduling information.
 
 ## NOTES
-       Only SCHED_FIFO, SCHED_OTHER and SCHED_RR are part of POSIX 1003.1b Process Scheduling. The other
-       scheduling attributes may be ignored on some systems.
+       Only SCHED_FIFO, SCHED_OTHER and SCHED_RR are part of POSIX 1003.1b Process Scheduling. The other scheduling attributes may be ignored on some systems.
 
        Linux' default scheduling policy is SCHED_OTHER.
 
@@ -123,7 +110,6 @@ PERMISSIONS
        For bug reports, use the issue tracker at https://github.com/karelzak/util-linux/issues.
 
 ## AVAILABILITY
-       The chrt command is part of the util-linux package which can be downloaded from Linux Kernel Archive
-       <https://www.kernel.org/pub/linux/utils/util-linux/>.
+       The chrt command is part of the util-linux package which can be downloaded from Linux Kernel Archive <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.37.2                                  2021-06-02                                            CHRT(1)
+util-linux 2.37.2                                                                          2021-06-02                                                                                    CHRT(1)

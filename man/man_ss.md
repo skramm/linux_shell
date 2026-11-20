@@ -13,12 +13,10 @@
        ss [options] [ FILTER ]
 
 ## DESCRIPTION
-       ss  is  used to dump socket statistics. It allows showing information similar to netstat.  It can display
-       more TCP and state information than other tools.
+       ss is used to dump socket statistics. It allows showing information similar to netstat.  It can display more TCP and state information than other tools.
 
 ## OPTIONS
-       When no option is used ss displays a list of open non-listening sockets (e.g. TCP/UNIX/UDP) that have es‐
-       tablished connection.
+       When no option is used ss displays a list of open non-listening sockets (e.g. TCP/UNIX/UDP) that have established connection.
 
        -h, --help
               Show summary of options.
@@ -52,8 +50,7 @@
               <timer_name>
                      the name of the timer, there are five kind of timer names:
 
-                     on  :  means  one of these timers: TCP retrans timer, TCP early retrans timer and tail loss
-                     probe timer
+                     on : means one of these timers: TCP retrans timer, TCP early retrans timer and tail loss probe timer
 
                      keepalive: tcp keep alive timer
 
@@ -103,9 +100,8 @@
                      the total memory can be allocated for sending packet
 
               <fwd_alloc>
-                     the memory allocated by the socket as cache, but not used for receiving/sending packet yet.
-                     If  need  memory to send/receive packet, the memory in this cache will be used before allo‐
-                     cate additional memory.
+                     the  memory  allocated  by the socket as cache, but not used for receiving/sending packet yet. If need memory to send/receive packet, the memory in this cache will be used
+                     before allocate additional memory.
 
               <wmem_queued>
                      The memory allocated for sending packet (which has not been sent to layer 3)
@@ -114,9 +110,8 @@
                      The memory used for storing socket option, e.g., the key for TCP MD5 signature
 
               <back_log>
-                     The memory used for the sk backlog queue. On a process context, if the process is receiving
-                     packet,  and  a new packet is received, it will be put into the sk backlog queue, so it can
-                     be received by the process immediately
+                     The memory used for the sk backlog queue. On a process context, if the process is receiving packet, and a new packet is received, it will be put into the sk backlog queue,
+                     so it can be received by the process immediately
 
               <sock_drop>
                      the number of packets dropped before they are de-multiplexed into the socket
@@ -143,19 +138,16 @@
                      the congestion algorithm name, the default congestion algorithm is "cubic"
 
               wscale:<snd_wscale>:<rcv_wscale>
-                     if window scale option is used, this field shows the send scale factor  and  receive  scale
-                     factor
+                     if window scale option is used, this field shows the send scale factor and receive scale factor
 
               rto:<icsk_rto>
                      tcp re-transmission timeout value, the unit is millisecond
 
               backoff:<icsk_backoff>
-                     used  for  exponential backoff re-transmission, the actual re-transmission timeout value is
-                     icsk_rto << icsk_backoff
+                     used for exponential backoff re-transmission, the actual re-transmission timeout value is icsk_rto << icsk_backoff
 
               rtt:<rtt>/<rttvar>
-                     rtt is the average round trip time, rttvar is the mean deviation of rtt,  their  units  are
-                     millisecond
+                     rtt is the average round trip time, rttvar is the mean deviation of rtt, their units are millisecond
 
               ato:<ato>
                      ack timeout, unit is millisecond, used for delay ack mode
@@ -202,8 +194,7 @@
               rcv_space:<rcv_space>
                      a helper variable for TCP internal auto tuning socket receive buffer
 
-              tcp-ulp-mptcp  flags:[MmBbJjecv]  token:<rem_token(rem_id)/loc_token(loc_id)> seq:<sn> sfseq:<ssn>
-              ssnoff:<off> maplen:<maplen>
+              tcp-ulp-mptcp flags:[MmBbJjecv] token:<rem_token(rem_id)/loc_token(loc_id)> seq:<sn> sfseq:<ssn> ssnoff:<off> maplen:<maplen>
                      MPTCP subflow information
 
        --tos  Show ToS and priority information. Below fields may appear:
@@ -221,13 +212,12 @@
               cgroup Cgroup v2 pathname. This pathname is relative to the mount point of the hierarchy.
 
        -K, --kill
-              Attempts to forcibly close sockets. This option displays sockets that are successfully closed  and
-              silently skips sockets that the kernel does not support closing. It supports IPv4 and IPv6 sockets
-              only.
+              Attempts  to  forcibly  close  sockets. This option displays sockets that are successfully closed and silently skips sockets that the kernel does not support closing. It supports
+              IPv4 and IPv6 sockets only.
 
        -s, --summary
-              Print summary statistics. This option does not parse socket lists obtaining summary  from  various
-              sources. It is useful when amount of sockets is so huge that parsing /proc/net/tcp is painful.
+              Print summary statistics. This option does not parse socket lists obtaining summary from various  sources.  It  is  useful  when  amount  of  sockets  is  so  huge  that  parsing
+              /proc/net/tcp is painful.
 
        -E, --events
               Continually display sockets as they are destroyed
@@ -241,15 +231,13 @@
 
                      2.  If destination is kernel (pid = 0) show kernel initial context.
 
-                     3.  If  a  unique identifier has been allocated by the kernel or netlink user, show context
-                         as "unavailable". This will generally indicate that a process has more than one netlink
-                         socket active.
+                     3.  If  a  unique identifier has been allocated by the kernel or netlink user, show context as "unavailable". This will generally indicate that a process has more than one
+                         netlink socket active.
 
        -z, --contexts
-              As  the  -Z option but also shows the socket context. The socket context is taken from the associ‐
-              ated inode and is not the actual socket context held by the kernel. Sockets are typically  labeled
-              with  the context of the creating process, however the context shown will reflect any policy role,
-              type and/or range transition rules applied, and is therefore a useful reference.
+              As the -Z option but also shows the socket context. The socket context is taken from the associated inode and is not the actual socket context held by  the  kernel.  Sockets  are
+              typically labeled with the context of the creating process, however the context shown will reflect any policy role, type and/or range transition rules applied, and is therefore a
+              useful reference.
 
        -N NSNAME, --net=NSNAME
               Switch to the specified network namespace name.
@@ -293,34 +281,28 @@
               Display inet socket options.
 
        -f FAMILY, --family=FAMILY
-              Display sockets of type FAMILY.  Currently the  following  families  are  supported:  unix,  inet,
-              inet6, link, netlink, vsock, xdp.
+              Display sockets of type FAMILY.  Currently the following families are supported: unix, inet, inet6, link, netlink, vsock, xdp.
 
        -A QUERY, --query=QUERY, --socket=QUERY
-              List of socket tables to dump, separated by commas. The following identifiers are understood: all,
-              inet, tcp, udp, raw, unix, packet, netlink, unix_dgram, unix_stream,  unix_seqpacket,  packet_raw,
-              packet_dgram,  dccp,  sctp,  vsock_stream, vsock_dgram, xdp Any item in the list may optionally be
-              prefixed by an exclamation mark (!)  to exclude that socket table from being dumped.
+              List of socket tables to dump, separated by commas. The following identifiers are understood: all, inet, tcp, udp, raw, unix, packet, netlink, unix_dgram, unix_stream,  unix_seq‐
+              packet,  packet_raw,  packet_dgram,  dccp, sctp, vsock_stream, vsock_dgram, xdp Any item in the list may optionally be prefixed by an exclamation mark (!)  to exclude that socket
+              table from being dumped.
 
        -D FILE, --diag=FILE
-              Do not display anything, just dump raw information about TCP sockets to FILE after  applying  fil‐
-              ters. If FILE is - stdout is used.
+              Do not display anything, just dump raw information about TCP sockets to FILE after applying filters. If FILE is - stdout is used.
 
        -F FILE, --filter=FILE
-              Read  filter information from FILE.  Each line of FILE is interpreted like single command line op‐
-              tion. If FILE is - stdin is used.
+              Read filter information from FILE.  Each line of FILE is interpreted like single command line option. If FILE is - stdin is used.
 
        FILTER := [ state STATE-FILTER ] [ EXPRESSION ]
               Please take a look at the official documentation for details regarding filters.
 
 STATE-FILTER
-       STATE-FILTER allows to construct arbitrary set of states to match. Its syntax  is  sequence  of  keywords
-       state and exclude followed by identifier of state.
+       STATE-FILTER allows to construct arbitrary set of states to match. Its syntax is sequence of keywords state and exclude followed by identifier of state.
 
        Available identifiers are:
 
-              All  standard  TCP  states:  established,  syn-sent,  syn-recv, fin-wait-1, fin-wait-2, time-wait,
-              closed, close-wait, last-ack, listening and closing.
+              All standard TCP states: established, syn-sent, syn-recv, fin-wait-1, fin-wait-2, time-wait, closed, close-wait, last-ack, listening and closing.
 
               all - for all the states
 
@@ -333,10 +315,9 @@ STATE-FILTER
               big - opposite to bucket
 
 EXPRESSION
-       EXPRESSION allows filtering based on specific criteria.  EXPRESSION consists of a  series  of  predicates
-       combined  by  boolean operators. The possible operators in increasing order of precedence are or (or | or
-       ||), and (or & or &&), and not (or !). If no operator is between consecutive predicates, an implicit  and
-       operator is assumed. Subexpressions can be grouped with "(" and ")".
+       EXPRESSION allows filtering based on specific criteria.  EXPRESSION consists of a series of predicates combined by boolean operators. The  possible  operators  in  increasing  order  of
+       precedence  are  or  (or | or ||), and (or & or &&), and not (or !). If no operator is between consecutive predicates, an implicit and operator is assumed. Subexpressions can be grouped
+       with "(" and ")".
 
        The following predicates are supported:
 
@@ -344,27 +325,23 @@ EXPRESSION
               Test if the destination or source matches HOST. See HOST SYNTAX for details.
 
        {dport|sport} [OP] [FAMILY:]:PORT
-              Compare  the  destination  or source port to PORT. OP can be any of "<", "<=", "=", "!=", ">=" and
-              ">". Following normal arithmetic rules. FAMILY and PORT are as described in HOST SYNTAX below.
+              Compare the destination or source port to PORT. OP can be any of "<", "<=", "=", "!=", ">=" and ">". Following normal arithmetic rules. FAMILY and PORT are as described  in  HOST
+              SYNTAX below.
 
        dev [=|!=] DEVICE
-              Match based on the device the connection uses. DEVICE can either be a device name or the index  of
-              the interface.
+              Match based on the device the connection uses. DEVICE can either be a device name or the index of the interface.
 
        fwmark [=|!=] MASK
-              Matches  based on the fwmark value for the connection. This can either be a specific mark value or
-              a mark value followed by a "/" and a bitmask of which bits to use in the comparison.  For  example
-              "fwmark = 0x01/0x03" would match if the two least significant bits of the fwmark were 0x01.
+              Matches based on the fwmark value for the connection. This can either be a specific mark value or a mark value followed by a "/" and a bitmask of which bits to use in the compar‐
+              ison. For example "fwmark = 0x01/0x03" would match if the two least significant bits of the fwmark were 0x01.
 
        cgroup [=|!=] PATH
               Match if the connection is part of a cgroup at the given path.
 
        autobound
-              Match  if  the port or path of the source address was automatically allocated (rather than explic‐
-              itly specified).
+              Match if the port or path of the source address was automatically allocated (rather than explicitly specified).
 
-       Most operators have aliases. If no operator is supplied "=" is assumed.  Each of the following groups  of
-       operators are all equivalent:
+       Most operators have aliases. If no operator is supplied "=" is assumed.  Each of the following groups of operators are all equivalent:
 
               • = == eq
 
@@ -387,34 +364,28 @@ EXPRESSION
 HOST SYNTAX
        The general host syntax is [FAMILY:]ADDRESS[:PORT].
 
-       FAMILY  must  be  one  of the families supported by the -f option. If not given it defaults to the family
-       given with the -f option, and if that is also missing, will assume either inet or inet6.  Note  that  all
-       host  conditions  in  the  expression  should either all be the same family or be only inet and inet6. If
-       there is some other mixture of families, the results will probably be unexpected.
+       FAMILY must be one of the families supported by the -f option. If not given it defaults to the family given with the -f option, and if that is also missing, will assume either  inet  or
+       inet6. Note that all host conditions in the expression should either all be the same family or be only inet and inet6. If there is some other mixture of families, the results will prob‐
+       ably be unexpected.
 
-       The form of ADDRESS and PORT depends on the family used. "*" can be used as a wildcard for either the ad‐
-       dress or port. The details for each family are as follows:
+       The form of ADDRESS and PORT depends on the family used. "*" can be used as a wildcard for either the address or port. The details for each family are as follows:
 
-       unix   ADDRESS  is  a  glob  pattern (see fnmatch(3)) that will be matched case-insensitively against the
-              unix socket's address. Both path and abstract names are supported. Unix addresses do not support a
-              port, and "*" cannot be used as a wildcard.
+       unix   ADDRESS is a glob pattern (see fnmatch(3)) that will be matched case-insensitively against the unix socket's address. Both path and abstract names are supported.  Unix  addresses
+              do not support a port, and "*" cannot be used as a wildcard.
 
-       link   ADDRESS  is  the  case-insensitive  name of an Ethernet protocol to match. PORT is either a device
-              name or a device index for the desired link device, as seen in the output of ip link.
+       link   ADDRESS  is  the  case-insensitive  name of an Ethernet protocol to match. PORT is either a device name or a device index for the desired link device, as seen in the output of ip
+              link.
 
        netlink
-              ADDRESS is a descriptor of the netlink family. Possible values come from  /etc/iproute2/nl_protos.
-              PORT  is  the port id of the socket, which is usually the same as the owning process id. The value
-              "kernel" can be used to represent the kernel (port id of 0).
+              ADDRESS is a descriptor of the netlink family. Possible values come from /etc/iproute2/nl_protos. PORT is the port id of the socket, which is  usually  the  same  as  the  owning
+              process id. The value "kernel" can be used to represent the kernel (port id of 0).
 
        vsock  ADDRESS is an integer representing the CID address, and PORT is the port.
 
        inet and inet6
-              ADDRESS is an ip address (either v4 or v6 depending on the family) or a DNS hostname that resolves
-              to  an ip address of the required version. An ipv6 address must be enclosed in "[" and "]" to dis‐
-              ambiguate the port separator. The address may additionally have a prefix length given in CIDR  no‐
-              tation  (a slash followed by the prefix length in bits). PORT is either the numerical socket port,
-              or the service name for the port to match.
+              ADDRESS  is  an ip address (either v4 or v6 depending on the family) or a DNS hostname that resolves to an ip address of the required version. An ipv6 address must be enclosed in
+              "[" and "]" to disambiguate the port separator. The address may additionally have a prefix length given in CIDR notation (a slash followed by the prefix length in bits). PORT  is
+              either the numerical socket port, or the service name for the port to match.
 
 USAGE EXAMPLES
        ss -t -a
@@ -433,8 +404,7 @@ USAGE EXAMPLES
               Find all local processes connected to X server.
 
        ss -o state fin-wait-1 '( sport = :http or sport = :https )' dst 193.233.7/24
-              List all the tcp sockets in state FIN-WAIT-1 for our apache to network 193.233.7/24  and  look  at
-              their timers.
+              List all the tcp sockets in state FIN-WAIT-1 for our apache to network 193.233.7/24 and look at their timers.
 
        ss -a -A 'all,!tcp'
               List sockets in all states from all socket tables but TCP.
@@ -446,7 +416,6 @@ USAGE EXAMPLES
 ## AUTHOR
        ss was written by Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>.
 
-       This manual page was written by Michael Prokop <mika@grml.org> for the Debian project (but may be used by
-       others).
+       This manual page was written by Michael Prokop <mika@grml.org> for the Debian project (but may be used by others).
 
-                                                                                                           SS(8)
+                                                                                                                                                                                           SS(8)

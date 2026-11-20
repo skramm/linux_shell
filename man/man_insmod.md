@@ -13,11 +13,9 @@
        insmod [filename] [module options...]
 
 ## DESCRIPTION
-       insmod is a trivial program to insert a module into the kernel. Most users will want to use modprobe(8) instead, which is more clever and can handle module
-       dependencies.
+       insmod is a trivial program to insert a module into the kernel. Most users will want to use modprobe(8) instead, which is more clever and can handle module dependencies.
 
-       Only the most general of error messages are reported: as the work of trying to link the module is now done inside the kernel, the dmesg usually gives more
-       information about errors.
+       Only the most general of error messages are reported: as the work of trying to link the module is now done inside the kernel, the dmesg usually gives more information about errors.
 
 ## COPYRIGHT
        This manual page originally Copyright 2002, Rusty Russell, IBM Corporation. Maintained by Jon Masters and others.
@@ -32,4 +30,4 @@
        Lucas De Marchi <lucas.de.marchi@gmail.com>
            Developer
 
-kmod                                                                             04/30/2026                                                                       INSMOD(8)
+kmod                                                                                       04/30/2026                                                                                  INSMOD(8)

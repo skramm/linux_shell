@@ -14,8 +14,8 @@
        sleep OPTION
 
 ## DESCRIPTION
-       Pause  for  NUMBER seconds.  SUFFIX may be 's' for seconds (the default), 'm' for minutes, 'h' for hours or 'd' for days.  NUMBER need not be an integer.  Given two
-       or more arguments, pause for the amount of time specified by the sum of their values.
+       Pause  for  NUMBER  seconds.   SUFFIX may be 's' for seconds (the default), 'm' for minutes, 'h' for hours or 'd' for days.  NUMBER need not be an integer.  Given two or more arguments,
+       pause for the amount of time specified by the sum of their values.
 
        --help display this help and exit
 
@@ -39,4 +39,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/sleep>
        or available locally via: info '(coreutils) sleep invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                        SLEEP(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                  SLEEP(1)

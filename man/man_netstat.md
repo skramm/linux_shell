@@ -10,15 +10,12 @@
        netstat - Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
 
 ## SYNOPSIS
-       netstat  [address_family_options]  [--tcp|-t] [--udp|-u] [--udplite|-U] [--sctp|-S] [--raw|-w] [--l2cap|-2] [--rfcomm|-f] [--listening|-l] [--all|-a] [--numeric|-n]
-       [--numeric-hosts] [--numeric-ports] [--numeric-users]  [--symbolic|-N]  [--extend|-e[--extend|-e]]  [--timers|-o]  [--program|-p]  [--verbose|-v]  [--continuous|-c]
-       [--wide|-W]
+       netstat  [address_family_options]  [--tcp|-t]  [--udp|-u]  [--udplite|-U]  [--sctp|-S] [--raw|-w] [--l2cap|-2] [--rfcomm|-f] [--listening|-l] [--all|-a] [--numeric|-n] [--numeric-hosts]
+       [--numeric-ports] [--numeric-users] [--symbolic|-N] [--extend|-e[--extend|-e]] [--timers|-o] [--program|-p] [--verbose|-v] [--continuous|-c] [--wide|-W]
 
-       netstat {--route|-r} [address_family_options] [--extend|-e[--extend|-e]] [--verbose|-v] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--con‐
-       tinuous|-c]
+       netstat {--route|-r} [address_family_options] [--extend|-e[--extend|-e]] [--verbose|-v] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]
 
-       netstat {--interfaces|-i} [--all|-a] [--extend|-e[--extend|-e]] [--verbose|-v] [--program|-p] [--numeric|-n] [--numeric-hosts]  [--numeric-ports]  [--numeric-users]
-       [--continuous|-c]
+       netstat {--interfaces|-i} [--all|-a] [--extend|-e[--extend|-e]] [--verbose|-v] [--program|-p] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]
 
        netstat {--groups|-g} [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]
 
@@ -32,19 +29,18 @@
 
        address_family_options:
 
-       [-4|--inet]  [-6|--inet6]  [--protocol={inet,inet6,unix,ipx,ax25,netrom,ddp,bluetooth,  ...  } ] [--unix|-x] [--inet|--ip|--tcpip] [--ax25] [--x25] [--rose] [--ash]
-       [--bluetooth] [--ipx] [--netrom] [--ddp|--appletalk] [--econet|--ec]
+       [-4|--inet] [-6|--inet6] [--protocol={inet,inet6,unix,ipx,ax25,netrom,ddp,bluetooth, ... } ] [--unix|-x] [--inet|--ip|--tcpip] [--ax25] [--x25] [--rose]  [--ash]  [--bluetooth]  [--ipx]
+       [--netrom] [--ddp|--appletalk] [--econet|--ec]
 
 ## NOTES
-       This program is mostly obsolete.  Replacement for netstat is ss.  Replacement for netstat -r is ip route.  Replacement for netstat -i is ip  -s  link.   Replacement
-       for netstat -g is ip maddr.
+       This  program  is  mostly obsolete.  Replacement for netstat is ss.  Replacement for netstat -r is ip route.  Replacement for netstat -i is ip -s link.  Replacement for netstat -g is ip
+       maddr.
 
 ## DESCRIPTION
        Netstat prints information about the Linux networking subsystem.  The type of information printed is controlled by the first argument, as follows:
 
    (none)
-       By  default, netstat displays a list of open sockets.  If you don't specify any address families, then the active sockets of all configured address families will be
-       printed.
+       By default, netstat displays a list of open sockets.  If you don't specify any address families, then the active sockets of all configured address families will be printed.
 
    --route, -r
        Display the kernel routing tables. See the description in route(8) for details.  netstat -r and route -e produce the same output.
@@ -81,9 +77,9 @@
        shows numerical user IDs but does not affect the resolution of host or port names.
 
    --protocol=family, -A
-       Specifies the address families (perhaps better described as low level protocols) for which connections are to be shown.  family is a comma (',') separated  list  of
-       address  family  keywords  like  inet,  inet6,  unix,  ipx,  ax25, netrom, econet, ddp, and bluetooth.  This has the same effect as using the --inet|-4, --inet6|-6,
-       --unix|-x, --ipx, --ax25, --netrom, --ddp, and --bluetooth options.
+       Specifies the address families (perhaps better described as low level protocols) for which connections are to be shown.  family is a comma (',') separated list of  address  family  key‐
+       words like inet, inet6, unix, ipx, ax25, netrom, econet, ddp, and bluetooth.  This has the same effect as using the --inet|-4, --inet6|-6, --unix|-x, --ipx, --ax25, --netrom, --ddp, and
+       --bluetooth options.
 
        The address family inet (Iv4) includes raw, udp, udplite and tcp protocol sockets.
 
@@ -119,22 +115,20 @@
        The protocol (tcp, udp, udpl, raw) used by the socket.
 
    Recv-Q
-       Established: The count of bytes not copied by the user program connected to this socket.  Listening: Since Kernel 2.6.18 this column contains the current syn  back‐
-       log.
+       Established: The count of bytes not copied by the user program connected to this socket.  Listening: Since Kernel 2.6.18 this column contains the current syn backlog.
 
    Send-Q
        Established: The count of bytes not acknowledged by the remote host.  Listening: Since Kernel 2.6.18 this column contains the maximum size of the syn backlog.
 
    Local Address
-       Address  and  port  number of the local end of the socket.  Unless the --numeric (-n) option is specified, the socket address is resolved to its canonical host name
-       (FQDN), and the port number is translated into the corresponding service name.
+       Address and port number of the local end of the socket.  Unless the --numeric (-n) option is specified, the socket address is resolved to its canonical host name (FQDN),  and  the  port
+       number is translated into the corresponding service name.
 
    Foreign Address
        Address and port number of the remote end of the socket.  Analogous to "Local Address".
 
    State
-       The state of the socket. Since there are no states in raw mode and usually no states used in UDP and UDPLite, this column may be left blank. Normally  this  can  be
-       one of several values:
+       The state of the socket. Since there are no states in raw mode and usually no states used in UDP and UDPLite, this column may be left blank. Normally this can be one of several values:
 
        ESTABLISHED
               The socket has an established connection.
@@ -174,8 +168,8 @@
        The username or the user id (UID) of the owner of the socket.
 
    PID/Program name
-       Slash-separated pair of the process id (PID) and process name of the process that owns the socket.  --program causes this column to be included.  You will also need
-       superuser privileges to see this information on sockets you don't own.  This identification information is not yet available for IPX sockets.
+       Slash-separated pair of the process id (PID) and process name of the process that owns the socket.  --program causes this column to be included.  You will also need superuser privileges
+       to see this information on sockets you don't own.  This identification information is not yet available for IPX sockets.
 
    Timer
        (this needs to be written)
@@ -188,8 +182,8 @@
        The reference count (i.e. attached processes via this socket).
 
    Flags
-       The flags displayed is SO_ACCEPTON (displayed as ACC), SO_WAITDATA (W) or SO_NOSPACE (N).  SO_ACCECPTON is used on unconnected sockets if their  corresponding  pro‐
-       cesses are waiting for a connect request. The other flags are not of normal interest.
+       The flags displayed is SO_ACCEPTON (displayed as ACC), SO_WAITDATA (W) or SO_NOSPACE (N).  SO_ACCECPTON is used on unconnected sockets if their corresponding processes are waiting for a
+       connect request. The other flags are not of normal interest.
 
    Type
        There are several types of socket access:
@@ -305,8 +299,8 @@
        Occasionally strange information may appear if a socket changes as it is viewed. This is unlikely to occur.
 
 ## AUTHORS
-       The netstat user interface was written by Fred Baumgarten <dc6iq@insu1.etec.uni-karlsruhe.de>, the man page basically by Matt Welsh <mdw@tc.cornell.edu>. It was up‐
-       dated by Alan Cox <Alan.Cox@linux.org>, updated again by Tuan Hoang <tqhoang@bigfoot.com>. The man page and the command included in the net-tools package is totally
-       rewritten by Bernd Eckenfels <ecki@linux.de>.  UDPLite options were added by Brian Micek <bmicek@gmail.com>
+       The  netstat  user  interface  was  written by Fred Baumgarten <dc6iq@insu1.etec.uni-karlsruhe.de>, the man page basically by Matt Welsh <mdw@tc.cornell.edu>. It was updated by Alan Cox
+       <Alan.Cox@linux.org>, updated again by Tuan Hoang <tqhoang@bigfoot.com>. The man page and the command included  in  the  net-tools  package  is  totally  rewritten  by  Bernd  Eckenfels
+       <ecki@linux.de>.  UDPLite options were added by Brian Micek <bmicek@gmail.com>
 
-net-tools                                                                        2014-10-07                                                                      NETSTAT(8)
+net-tools                                                                                  2014-10-07                                                                                 NETSTAT(8)

@@ -15,8 +15,8 @@
 ## DESCRIPTION
        The rev utility copies the specified files to standard output, reversing the order of characters in every line. If no files are specified, standard input is read.
 
-       This utility is a line-oriented tool and it uses in-memory allocated buffer for a whole wide-char line. If the input file is huge and without line breaks than
-       allocate the memory for the file may be unsuccessful.
+       This utility is a line-oriented tool and it uses in-memory allocated buffer for a whole wide-char line. If the input file is huge and without line breaks than allocate the memory for
+       the file may be unsuccessful.
 
 ## OPTIONS
        -V, --version
@@ -34,4 +34,4 @@
 ## AVAILABILITY
        The rev command is part of the util-linux package which can be downloaded from Linux Kernel Archive <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.37.2                                                                2021-06-02                                                                          REV(1)
+util-linux 2.37.2                                                                          2021-06-02                                                                                     REV(1)

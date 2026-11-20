@@ -13,9 +13,9 @@
        sed [OPTION]... {script-only-if-no-other-script} [input-file]...
 
 ## DESCRIPTION
-       Sed  is  a  stream  editor.  A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline).  While in some ways
-       similar to an editor which permits scripted edits (such as ed), sed works by making only one pass over the input(s), and is consequently more efficient.  But it  is
-       sed's ability to filter text in a pipeline which particularly distinguishes it from other types of editors.
+       Sed  is  a  stream  editor.  A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline).  While in some ways similar to an editor
+       which permits scripted edits (such as ed), sed works by making only one pass over the input(s), and is consequently more efficient.  But it is sed's ability to filter text in a pipeline
+       which particularly distinguishes it from other types of editors.
 
        -n, --quiet, --silent
 
@@ -75,14 +75,14 @@
        --version
               output version information and exit
 
-       If  no  -e,  --expression,  -f,  or --file option is given, then the first non-option argument is taken as the sed script to interpret.  All remaining arguments are
-       names of input files; if no input files are specified, then the standard input is read.
+       If  no -e, --expression, -f, or --file option is given, then the first non-option argument is taken as the sed script to interpret.  All remaining arguments are names of input files; if
+       no input files are specified, then the standard input is read.
 
        GNU sed home page: <https://www.gnu.org/software/sed/>.  General help using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports to: <bug-sed@gnu.org>.
 
 COMMAND SYNOPSIS
-       This is just a brief synopsis of sed commands to serve as a reminder to those who already know sed; other documentation (such as the texinfo document) must be  con‐
-       sulted for fuller descriptions.
+       This is just a brief synopsis of sed commands to serve as a reminder to those who already know sed; other documentation (such as the texinfo document) must be consulted for  fuller  de‐
+       scriptions.
 
    Zero-address ``commands''
        : label
@@ -105,8 +105,8 @@ COMMAND SYNOPSIS
        text   Insert text, which has each embedded newline preceded by a backslash.
 
        q [exit-code]
-              Immediately  quit the sed script without processing any more input, except that if auto-print is not disabled the current pattern space will be printed.  The
-              exit code argument is a GNU extension.
+              Immediately quit the sed script without processing any more input, except that if auto-print is not disabled the current pattern space will be printed.  The exit code argument is
+              a GNU extension.
 
        Q [exit-code]
               Immediately quit the sed script without processing any more input.  This is a GNU extension.
@@ -129,8 +129,8 @@ COMMAND SYNOPSIS
 
        d      Delete pattern space.  Start next cycle.
 
-       D      If pattern space contains no newline, start a normal new cycle as if the d command was issued.  Otherwise, delete text in the pattern space up to  the  first
-              newline, and restart cycle with the resultant pattern space, without reading a new line of input.
+       D      If pattern space contains no newline, start a normal new cycle as if the d command was issued.  Otherwise, delete text in the pattern space up to the first newline,  and  restart
+              cycle with the resultant pattern space, without reading a new line of input.
 
        h H    Copy/append pattern space to hold space.
 
@@ -148,17 +148,16 @@ COMMAND SYNOPSIS
        P      Print up to the first embedded newline of the current pattern space.
 
        s/regexp/replacement/
-              Attempt  to  match  regexp against the pattern space.  If successful, replace that portion matched with replacement.  The replacement may contain the special
-              character & to refer to that portion of the pattern space which matched, and the special escapes \1 through \9 to refer to the corresponding matching sub-ex‐
-              pressions in the regexp.
+              Attempt to match regexp against the pattern space.  If successful, replace that portion matched with replacement.  The replacement may contain the special character & to refer to
+              that portion of the pattern space which matched, and the special escapes \1 through \9 to refer to the corresponding matching sub-expressions in the regexp.
 
        t label
-              If a s/// has done a successful substitution since the last input line was read and since the last t or T command, then branch to label; if label is omitted,
-              branch to end of script.
+              If a s/// has done a successful substitution since the last input line was read and since the last t or T command, then branch to label; if label is omitted,  branch  to  end  of
+              script.
 
        T label
-              If no s/// has done a successful substitution since the last input line was read and since the last t or T command, then branch to label; if label  is  omit‐
-              ted, branch to end of script.  This is a GNU extension.
+              If  no  s///  has done a successful substitution since the last input line was read and since the last t or T command, then branch to label; if label is omitted, branch to end of
+              script.  This is a GNU extension.
 
        w filename
               Write the current pattern space to filename.
@@ -172,29 +171,26 @@ COMMAND SYNOPSIS
               Transliterate the characters in the pattern space which appear in source to the corresponding character in dest.
 
 Addresses
-       Sed  commands  can be given with no addresses, in which case the command will be executed for all input lines; with one address, in which case the command will only
-       be executed for input lines which match that address; or with two addresses, in which case the command will be executed for all input lines which match  the  inclu‐
-       sive  range  of  lines  starting  from the first address and continuing to the second address.  Three things to note about address ranges: the syntax is addr1,addr2
-       (i.e., the addresses are separated by a comma); the line which addr1 matched will always be accepted, even if addr2 selects an earlier line; and if addr2 is a  reg‐
-       exp, it will not be tested against the line that addr1 matched.
+       Sed commands can be given with no addresses, in which case the command will be executed for all input lines; with one address, in which case the command will only be executed for  input
+       lines  which  match  that address; or with two addresses, in which case the command will be executed for all input lines which match the inclusive range of lines starting from the first
+       address and continuing to the second address.  Three things to note about address ranges: the syntax is addr1,addr2 (i.e., the addresses are separated by a comma); the line which  addr1
+       matched will always be accepted, even if addr2 selects an earlier line; and if addr2 is a regexp, it will not be tested against the line that addr1 matched.
 
-       After  the  address (or address-range), and before the command, a !  may be inserted, which specifies that the command shall only be executed if the address (or ad‐
-       dress-range) does not match.
+       After  the  address  (or address-range), and before the command, a !  may be inserted, which specifies that the command shall only be executed if the address (or address-range) does not
+       match.
 
        The following address types are supported:
 
        number Match only the specified line number (which increments cumulatively across files, unless the -s option is specified on the command line).
 
        first~step
-              Match every step'th line starting with line first.  For example, ``sed -n 1~2p'' will print all the odd-numbered lines in the input stream, and  the  address
-              2~5  will  match  every fifth line, starting with the second.  first can be zero; in this case, sed operates as if it were equal to step.  (This is an exten‐
-              sion.)
+              Match every step'th line starting with line first.  For example, ``sed -n 1~2p'' will print all the odd-numbered lines in the input stream, and the address 2~5 will  match  every
+              fifth line, starting with the second.  first can be zero; in this case, sed operates as if it were equal to step.  (This is an extension.)
 
        $      Match the last line.
 
        /regexp/
-              Match lines matching the regular expression regexp.  Matching is performed on the current pattern  space,  which  can  be  modified  with  commands  such  as
-              ``s///''.
+              Match lines matching the regular expression regexp.  Matching is performed on the current pattern space, which can be modified with commands such as ``s///''.
 
        \cregexpc
               Match lines matching the regular expression regexp.  The c may be any character.
@@ -202,9 +198,8 @@ Addresses
        GNU sed also supports some special 2-address forms:
 
        0,addr2
-              Start  out in "matched first address" state, until addr2 is found.  This is similar to 1,addr2, except that if addr2 matches the very first line of input the
-              0,addr2 form will be at the end of its range, whereas the 1,addr2 form will still be at the beginning of its range.  This works only when addr2 is a  regular
-              expression.
+              Start  out in "matched first address" state, until addr2 is found.  This is similar to 1,addr2, except that if addr2 matches the very first line of input the 0,addr2 form will be
+              at the end of its range, whereas the 1,addr2 form will still be at the beginning of its range.  This works only when addr2 is a regular expression.
 
        addr1,+N
               Will match addr1 and the N lines following addr1.
@@ -213,9 +208,8 @@ Addresses
               Will match addr1 and the lines following addr1 until the next line whose input line number is a multiple of N.
 
 REGULAR EXPRESSIONS
-       POSIX.2  BREs  should be supported, but they aren't completely because of performance problems.  The \n sequence in a regular expression matches the newline charac‐
-       ter, and similarly for \a, \t, and other sequences.  The -E option switches to using extended regular expressions instead; it has been supported for  years  by  GNU
-       sed, and is now included in POSIX.
+       POSIX.2 BREs should be supported, but they aren't completely because of performance problems.  The \n sequence in a regular expression matches the newline character, and  similarly  for
+       \a, \t, and other sequences.  The -E option switches to using extended regular expressions instead; it has been supported for years by GNU sed, and is now included in POSIX.
 
 ## BUGS
        E-mail bug reports to bug-sed@gnu.org.  Also, please include the output of ``sed --version'' in the body of your report if at all possible.
@@ -232,8 +226,7 @@ REGULAR EXPRESSIONS
        This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
-       awk(1), ed(1), grep(1), tr(1), perlre(1), sed.info, any of various books on sed, the sed FAQ (http://sed.sf.net/grabbag/tutorials/sedfaq.txt),
-       http://sed.sf.net/grabbag/.
+       awk(1), ed(1), grep(1), tr(1), perlre(1), sed.info, any of various books on sed, the sed FAQ (http://sed.sf.net/grabbag/tutorials/sedfaq.txt), http://sed.sf.net/grabbag/.
 
        The full documentation for sed is maintained as a Texinfo manual.  If the info and sed programs are properly installed at your site, the command
 
@@ -241,4 +234,4 @@ REGULAR EXPRESSIONS
 
        should give you access to the complete manual.
 
-sed 4.8                                                                         January 2020                                                                         SED(1)
+sed 4.8                                                                                   January 2020                                                                                    SED(1)

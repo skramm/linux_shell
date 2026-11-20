@@ -67,8 +67,8 @@
        --version
               output version information and exit
 
-       The SIZE argument is an integer and optional unit (example: 10K is 10*1024).  Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).  Binary pre‐
-       fixes can be used, too: KiB=K, MiB=M, and so on.
+       The  SIZE  argument  is  an integer and optional unit (example: 10K is 10*1024).  Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).  Binary prefixes can be used,
+       too: KiB=K, MiB=M, and so on.
 
    CHUNKS may be:
        N      split into N files based on size of input
@@ -98,4 +98,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/split>
        or available locally via: info '(coreutils) split invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                        SPLIT(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                  SPLIT(1)

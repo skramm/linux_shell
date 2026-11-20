@@ -52,14 +52,14 @@
        --version
               output version information and exit
 
-       The  sums  are  computed  as  described  in RFC 1321.  When checking, the input should be a former output of this program.  The default mode is to print a line with
-       checksum, a space, a character indicating input mode ('*' for binary, ' ' for text or where binary is insignificant), and name for each FILE.
+       The sums are computed as described in RFC 1321.  When checking, the input should be a former output of this program.  The default mode is to print a line with checksum, a space, a char‐
+       acter indicating input mode ('*' for binary, ' ' for text or where binary is insignificant), and name for each FILE.
 
        Note: There is no difference between binary mode and text mode on GNU systems.
 
 ## BUGS
-       Do not use the MD5 algorithm for security related purposes.  Instead, use an SHA-2 algorithm, implemented in the programs sha224sum(1), sha256sum(1),  sha384sum(1),
-       sha512sum(1), or the BLAKE2 algorithm, implemented in b2sum(1)
+       Do not use the MD5 algorithm for security related purposes.  Instead, use an SHA-2 algorithm, implemented in the programs sha224sum(1), sha256sum(1), sha384sum(1), sha512sum(1), or  the
+       BLAKE2 algorithm, implemented in b2sum(1)
 
 ## AUTHOR
        Written by Ulrich Drepper, Scott Miller, and David Madore.
@@ -76,4 +76,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/md5sum>
        or available locally via: info '(coreutils) md5sum invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                       MD5SUM(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                 MD5SUM(1)

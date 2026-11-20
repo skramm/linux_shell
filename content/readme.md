@@ -18,5 +18,18 @@ Deux étapes:
 1. Exécution du script [`get_type.sh`](get_type.sh)  
 Ce dernier va déterminer pour chaque commande si elle est de type "builtin" ou installée sous forme de programme (ou script), ou pas disponible sur la VM sur laquelle la CI s'exécute. Il produit en sortie un fichier `out.csv`.
 2. Compilation du programme C++ [`linux_gen.cpp`](linux_gen.cpp), qui produit le fichier `a.out`.
-3. Exécution du binaire généré (`a.out`) en prenant en entrée le fichier `out.csv`.
+3. Exécution du binaire généré (`a.out`) en prenant en entrée le fichier `out.csv`:
+```
+./a.out out.csv
+```
+(ceci peut être essayé en local)
+
+
+## Update novembre 2026
+- Echec de CI: la version 15 de g++ échoue à compiler sur "ubuntu_latest"
+- essai sur un docker Debian13: réussite
+- basculement VM github sur `ubuntu-22.04`
+(liste ici:
+https://docs.github.com/en/actions/reference/runners/github-hosted-runners )
+
 

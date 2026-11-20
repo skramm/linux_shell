@@ -35,28 +35,28 @@
        losetup -c loopdev
 
 ## DESCRIPTION
-       losetup is used to associate loop devices with regular files or block devices, to detach loop devices, and to query the status of a loop device. If only the loopdev
-       argument is given, the status of the corresponding loop device is shown. If no option is given, all loop devices are shown.
+       losetup is used to associate loop devices with regular files or block devices, to detach loop devices, and to query the status of a loop device. If only the loopdev argument is given,
+       the status of the corresponding loop device is shown. If no option is given, all loop devices are shown.
 
        Note that the old output format (i.e., losetup -a) with comma-delimited strings is deprecated in favour of the --list output format.
 
-       It’s possible to create more independent loop devices for the same backing file. This setup may be dangerous, can cause data loss, corruption and overwrites. Use
-       --nooverlap with --find during setup to avoid this problem.
+       It’s possible to create more independent loop devices for the same backing file. This setup may be dangerous, can cause data loss, corruption and overwrites. Use --nooverlap with --find
+       during setup to avoid this problem.
 
-       The loop device setup is not an atomic operation when used with --find, and losetup does not protect this operation by any lock. The number of attempts is
-       internally restricted to a maximum of 16. It is recommended to use for example flock1 to avoid a collision in heavily parallel use cases.
+       The loop device setup is not an atomic operation when used with --find, and losetup does not protect this operation by any lock. The number of attempts is internally restricted to a
+       maximum of 16. It is recommended to use for example flock1 to avoid a collision in heavily parallel use cases.
 
 ## OPTIONS
-       The size and offset arguments may be followed by the multiplicative suffixes KiB (=1024), MiB (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB and YiB (the "iB"
-       is optional, e.g., "K" has the same meaning as "KiB") or the suffixes KB (=1000), MB (=1000*1000), and so on for GB, TB, PB, EB, ZB and YB.
+       The size and offset arguments may be followed by the multiplicative suffixes KiB (=1024), MiB (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB and YiB (the "iB" is optional, e.g.,
+       "K" has the same meaning as "KiB") or the suffixes KB (=1000), MB (=1000*1000), and so on for GB, TB, PB, EB, ZB and YB.
 
        -a, --all
-           Show the status of all loop devices. Note that not all information is accessible for non-root users. See also --list. The old output format (as printed without
-           --list) is deprecated.
+           Show the status of all loop devices. Note that not all information is accessible for non-root users. See also --list. The old output format (as printed without --list) is
+           deprecated.
 
        -d, --detach loopdev...
-           Detach the file or device associated with the specified loop device(s). Note that since Linux v3.7 kernel uses "lazy device destruction". The detach operation
-           does not return EBUSY error anymore if device is actively used by system, but it is marked by autoclear flag and destroyed later.
+           Detach the file or device associated with the specified loop device(s). Note that since Linux v3.7 kernel uses "lazy device destruction". The detach operation does not return EBUSY
+           error anymore if device is actively used by system, but it is marked by autoclear flag and destroyed later.
 
        -D, --detach-all
            Detach all associated loop devices.
@@ -68,8 +68,8 @@
            Display the name of the assigned loop device if the -f option and a file argument are present.
 
        -L, --nooverlap
-           Check for conflicts between loop devices to avoid situation when the same backing file is shared between more loop devices. If the file is already used by
-           another device then re-use the device rather than a new one. The option makes sense only with --find.
+           Check for conflicts between loop devices to avoid situation when the same backing file is shared between more loop devices. If the file is already used by another device then re-use
+           the device rather than a new one. The option makes sense only with --find.
 
        -j, --associated file [-o offset]
            Show the status of all loop devices associated with the given file.
@@ -81,15 +81,15 @@
            The data end is set to no more than size bytes after the data start. The size may be followed by the multiplicative suffixes; see above.
 
        -b, --sector-size size
-           Set the logical sector size of the loop device in bytes (since Linux 4.14). The option may be used when create a new loop device as well as stand-alone command
-           to modify sector size of the already existing loop device.
+           Set the logical sector size of the loop device in bytes (since Linux 4.14). The option may be used when create a new loop device as well as stand-alone command to modify sector size
+           of the already existing loop device.
 
        -c, --set-capacity loopdev
            Force the loop driver to reread the size of the file associated with the specified loop device.
 
        -P, --partscan
-           Force the kernel to scan the partition table on a newly created loop device. Note that the partition table parsing depends on sector sizes. The default is
-           sector size is 512 bytes, otherwise you need to use the option --sector-size together with --partscan.
+           Force the kernel to scan the partition table on a newly created loop device. Note that the partition table parsing depends on sector sizes. The default is sector size is 512 bytes,
+           otherwise you need to use the option --sector-size together with --partscan.
 
        -r, --read-only
            Set up a read-only loop device.
@@ -101,8 +101,8 @@
            Verbose mode.
 
        -l, --list
-           If a loop device or the -a option is specified, print the default columns for either the specified loop device or all loop devices; the default is to print info
-           about all devices. See also --output, --noheadings, --raw, and --json.
+           If a loop device or the -a option is specified, print the default columns for either the specified loop device or all loop devices; the default is to print info about all devices.
+           See also --output, --noheadings, --raw, and --json.
 
        -O, --output column[,column]...
            Specify the columns that are to be printed for the --list output. Use --help to get a list of all supported columns.
@@ -129,12 +129,11 @@ ENCRYPTION
        Cryptoloop is no longer supported in favor of dm-crypt. For more details see cryptsetup(8).
 
 ## EXIT STATUS
-       losetup returns 0 on success, nonzero on failure. When losetup displays the status of a loop device, it returns 1 if the device is not configured and 2 if an error
-       occurred which prevented determining the status of the device.
+       losetup returns 0 on success, nonzero on failure. When losetup displays the status of a loop device, it returns 1 if the device is not configured and 2 if an error occurred which
+       prevented determining the status of the device.
 
 ## NOTES
-       Since version 2.37 losetup uses LOOP_CONFIGURE ioctl to setup a new loop device by one ioctl call. The old versions use LOOP_SET_FD and LOOP_SET_STATUS64 ioctls to
-       do the same.
+       Since version 2.37 losetup uses LOOP_CONFIGURE ioctl to setup a new loop device by one ioctl call. The old versions use LOOP_SET_FD and LOOP_SET_STATUS64 ioctls to do the same.
 
 ## ENVIRONMENT
        LOOPDEV_DEBUG=all
@@ -168,4 +167,4 @@ EXAMPLE
 ## AVAILABILITY
        The losetup command is part of the util-linux package which can be downloaded from Linux Kernel Archive <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.37.2                                                                2021-06-02                                                                      LOSETUP(8)
+util-linux 2.37.2                                                                          2021-06-02                                                                                 LOSETUP(8)

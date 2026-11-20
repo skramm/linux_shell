@@ -53,8 +53,8 @@
 
        \xHH   byte with hexadecimal value HH (1 to 2 digits)
 
-       NOTE:  your  shell  may  have  its own version of echo, which usually supersedes the version described here.  Please refer to your shell's documentation for details
-       about the options it supports.
+       NOTE: your shell may have its own version of echo, which usually supersedes the version described here.  Please refer to your shell's documentation for details about the options it sup‐
+       ports.
 
 ## AUTHOR
        Written by Brian Fox and Chet Ramey.
@@ -71,4 +71,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/echo>
        or available locally via: info '(coreutils) echo invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                         ECHO(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                   ECHO(1)

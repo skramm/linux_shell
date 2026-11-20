@@ -10,11 +10,11 @@
        adduser, addgroup - add a user or group to the system
 
 ## SYNOPSIS
-       adduser  [options]  [--home  DIR]  [--shell  SHELL]  [--no-create-home] [--uid ID] [--firstuid ID] [--lastuid ID] [--ingroup GROUP | --gid ID] [--disabled-password]
-       [--disabled-login] [--gecos GECOS] [--add_extra_groups] [--encrypt-home] user
+       adduser  [options]  [--home  DIR]  [--shell  SHELL]  [--no-create-home]  [--uid  ID] [--firstuid ID] [--lastuid ID] [--ingroup GROUP | --gid ID] [--disabled-password] [--disabled-login]
+       [--gecos GECOS] [--add_extra_groups] [--encrypt-home] user
 
-       adduser --system [options] [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID] [--group | --ingroup GROUP | --gid ID]  [--disabled-password]  [--disabled-lo‐
-       gin] [--gecos GECOS] user
+       adduser --system [options] [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID] [--group | --ingroup GROUP | --gid ID]  [--disabled-password]  [--disabled-login]  [--gecos  GECOS]
+       user
 
        addgroup [options] [--gid ID] group
 
@@ -26,9 +26,9 @@
        [--quiet] [--debug] [--force-badname] [--help|-h] [--version] [--conf FILE]
 
 ## DESCRIPTION
-       adduser  and  addgroup add users and groups to the system according to command line options and configuration information in /etc/adduser.conf.  They are friendlier
-       front ends to the low level tools like useradd, groupadd and usermod programs, by default choosing Debian policy conformant UID and GID values, creating a home  di‐
-       rectory with skeletal configuration, running a custom script, and other features.  adduser and addgroup can be run in one of five modes:
+       adduser  and addgroup add users and groups to the system according to command line options and configuration information in /etc/adduser.conf.  They are friendlier front ends to the low
+       level tools like useradd, groupadd and usermod programs, by default choosing Debian policy conformant UID and GID values, creating a home directory with skeletal configuration,  running
+       a custom script, and other features.  adduser and addgroup can be run in one of five modes:
 
    Add a normal user
        If called with one non-option argument and without the --system or --group options, adduser will add a normal user.
@@ -37,23 +37,21 @@
 
        The range specified in the configuration file may be overridden with the --firstuid and --lastuid options.
 
-       By default, each user in Debian GNU/Linux is given a corresponding group with the same name.  Usergroups allow group writable directories to be easily maintained by
-       placing the appropriate users in the new group, setting the set-group-ID bit in the directory, and ensuring that all users use a umask of 002.  If  this  option  is
-       turned  off by setting USERGROUPS to no, all users' GIDs are set to USERS_GID.  Users' primary groups can also be overridden from the command line with the --gid or
-       --ingroup options to set the group by id or name, respectively.  Also, users can be added to one or more groups defined in adduser.conf either  by  setting  ADD_EX‐
-       TRA_GROUPS to 1 in adduser.conf, or by passing --add_extra_groups on the commandline.
+       By  default,  each user in Debian GNU/Linux is given a corresponding group with the same name.  Usergroups allow group writable directories to be easily maintained by placing the appro‐
+       priate users in the new group, setting the set-group-ID bit in the directory, and ensuring that all users use a umask of 002.  If this option is turned off by setting USERGROUPS to  no,
+       all  users'  GIDs  are  set to USERS_GID.  Users' primary groups can also be overridden from the command line with the --gid or --ingroup options to set the group by id or name, respec‐
+       tively.  Also, users can be added to one or more groups defined in adduser.conf either by setting ADD_EXTRA_GROUPS to 1 in adduser.conf, or by passing --add_extra_groups on the command‐
+       line.
 
-       adduser  will create a home directory subject to DHOME, GROUPHOMES, and LETTERHOMES.  The home directory can be overridden from the command line with the --home op‐
-       tion, and the shell with the --shell option. The home directory's set-group-ID bit is set if USERGROUPS is yes so that any files created in the user's  home  direc‐
-       tory will have the correct group.
+       adduser  will  create  a  home directory subject to DHOME, GROUPHOMES, and LETTERHOMES.  The home directory can be overridden from the command line with the --home option, and the shell
+       with the --shell option. The home directory's set-group-ID bit is set if USERGROUPS is yes so that any files created in the user's home directory will have the correct group.
 
-       adduser  will copy files from SKEL into the home directory and prompt for finger (gecos) information and a password.  The gecos may also be set with the --gecos op‐
-       tion.  With the --disabled-login option, the account will be created but will be disabled until a password is set. The --disabled-password option  will  not  set  a
-       password,  but login is still possible (for example with SSH RSA keys).  To set up an encrypted home directory for the new user, add the --encrypt-home option.  For
-       more information, refer to the -b option of ecryptfs-setup-private(1).
+       adduser will copy files from SKEL into the home directory and prompt for finger (gecos) information and a password.  The gecos may also be set with the --gecos option.  With the  --dis‐
+       abled-login  option,  the  account will be created but will be disabled until a password is set. The --disabled-password option will not set a password, but login is still possible (for
+       example with SSH RSA keys).  To set up an encrypted home directory for the new user, add the --encrypt-home option.  For more information, refer to the -b option of  ecryptfs-setup-pri‐
+       vate(1).
 
-       If the file /usr/local/sbin/adduser.local exists, it will be executed after the user account has been set up in order to do any local setup.  The  arguments  passed
-       to adduser.local are:
+       If the file /usr/local/sbin/adduser.local exists, it will be executed after the user account has been set up in order to do any local setup.  The arguments passed to adduser.local are:
        username uid gid home-directory
        The environment variable VERBOSE is set according to the following rule:
 
@@ -67,31 +65,30 @@
               (The same applies to the variable DEBUG, but DEBUG is deprecated and will be removed in a later version of adduser.)
 
    Add a system user
-       If  called with one non-option argument and the --system option, adduser will add a system user. If a user with the same name already exists in the system uid range
-       (or, if the uid is specified, if a user with that uid already exists), adduser will exit with a warning. This warning can be suppressed by adding --quiet.
+       If  called  with  one non-option argument and the --system option, adduser will add a system user. If a user with the same name already exists in the system uid range (or, if the uid is
+       specified, if a user with that uid already exists), adduser will exit with a warning. This warning can be suppressed by adding --quiet.
 
-       adduser will choose the first available UID from the range specified for system users in the configuration file (FIRST_SYSTEM_UID and LAST_SYSTEM_UID). If you  want
-       to have a specific UID, you can specify it using the --uid option.
+       adduser will choose the first available UID from the range specified for system users in the configuration file (FIRST_SYSTEM_UID and LAST_SYSTEM_UID). If you want to  have  a  specific
+       UID, you can specify it using the --uid option.
 
-       By  default, system users are placed in the nogroup group.  To place the new system user in an already existing group, use the --gid or --ingroup options.  To place
-       the new system user in a new group with the same ID, use the --group option.
+       By  default,  system users are placed in the nogroup group.  To place the new system user in an already existing group, use the --gid or --ingroup options.  To place the new system user
+       in a new group with the same ID, use the --group option.
 
-       A home directory is created by the same rules as for normal users.  The new system user will have the shell /usr/sbin/nologin (unless overridden  with  the  --shell
-       option), and have logins disabled.  Skeletal configuration files are not copied.
+       A home directory is created by the same rules as for normal users.  The new system user will have the shell /usr/sbin/nologin (unless overridden with the --shell option), and  have  lo‐
+       gins disabled.  Skeletal configuration files are not copied.
 
    Add a user group
        If adduser is called with the --group option and without the --system option, or addgroup is called respectively, a user group will be added.
 
-       A GID will be chosen from the range specified for system GIDS in the configuration file (FIRST_GID, LAST_GID). To override that mechanism you can give the GID using
-       the --gid option.
+       A GID will be chosen from the range specified for system GIDS in the configuration file (FIRST_GID, LAST_GID). To override that mechanism you can give the GID using the --gid option.
 
        The group is created with no users.
 
    Add a system group
        If addgroup is called with the --system option, a system group will be added.
 
-       A GID will be chosen from the range specified for system GIDS in the configuration file (FIRST_SYSTEM_GID, LAST_SYSTEM_GID). To override that mechanism you can give
-       the GID using the --gid option.
+       A  GID  will  be chosen from the range specified for system GIDS in the configuration file (FIRST_SYSTEM_GID, LAST_SYSTEM_GID). To override that mechanism you can give the GID using the
+       --gid option.
 
        The group is created with no users.
 
@@ -109,9 +106,8 @@
               Like --disabled-login, but logins are still possible (for example using SSH RSA keys) but not using password authentication.
 
        --force-badname
-              By default, user and group names are checked against the configurable regular expression NAME_REGEX (or NAME_REGEX_SYSTEM if --system is specified) specified
-              in the configuration file. This option forces adduser and addgroup to apply only a weak check for validity of the  name.   NAME_REGEX  is  described  in  ad‐
-              duser.conf(5).
+              By default, user and group names are checked against the configurable regular expression NAME_REGEX (or NAME_REGEX_SYSTEM if --system is specified) specified in the configuration
+              file. This option forces adduser and addgroup to apply only a weak check for validity of the name.  NAME_REGEX is described in adduser.conf(5).
 
        --gecos GECOS
               Set the gecos field for the new entry generated.  adduser will not ask for finger information if this option is given.
@@ -120,21 +116,20 @@
               When creating a group, this option forces the new groupid to be the given number.  When creating a user, this option will put the user in that group.
 
        --group
-              When  combined with --system, a group with the same name and ID as the system user is created.  If not combined with --system, a group with the given name is
-              created.  This is the default action if the program is invoked as addgroup.
+              When combined with --system, a group with the same name and ID as the system user is created.  If not combined with --system, a group with the given name is created.  This is the
+              default action if the program is invoked as addgroup.
 
        --help Display brief instructions.
 
        --home DIR
-              Use DIR as the user's home directory, rather than the default specified by the configuration file.  If the directory does not exist, it is created and skele‐
-              ton files are copied.
+              Use DIR as the user's home directory, rather than the default specified by the configuration file.  If the directory does not exist, it is created and skeleton files are copied.
 
        --shell SHELL
               Use SHELL as the user's login shell, rather than the default specified by the configuration file.
 
        --ingroup GROUP
-              Add  the new user to GROUP instead of a usergroup or the default group defined by USERS_GID in the configuration file.  This affects the users primary group.
-              To add additional groups, see the add_extra_groups option.
+              Add the new user to GROUP instead of a usergroup or the default group defined by USERS_GID in the configuration file.  This affects the users primary group.   To  add  additional
+              groups, see the add_extra_groups option.
 
        --no-create-home
               Do not create the home directory, even if it doesn't exist.
@@ -164,11 +159,11 @@
               Display version and copyright information.
 
 ## EXIT VALUES
-       0      The user exists as specified. This can have 2 causes: The user was created by adduser or the user was already present on the system before  adduser  was  in‐
-              voked. If adduser was returning 0 , invoking adduser a second time with the same parameters as before also returns 0.
+       0      The user exists as specified. This can have 2 causes: The user was created by adduser or the user was already present on the system before adduser was invoked. If adduser was re‐
+              turning 0 , invoking adduser a second time with the same parameters as before also returns 0.
 
-       1      Creating  the user or group failed because it was already present with other UID/GID than specified. The username or groupname was rejected because of a mis‐
-              match with the configured regular expressions, see adduser.conf(5). Adduser has been aborted by a signal.
+       1      Creating the user or group failed because it was already present with other UID/GID than specified. The username or groupname was rejected because of a mismatch with the  config‐
+              ured regular expressions, see adduser.conf(5). Adduser has been aborted by a signal.
               Or for many other yet undocumented reasons which are printed to console then. You may then consider to remove --quiet to make adduser more verbose.
 
 ## FILES
@@ -186,4 +181,4 @@
        Copyright (C) 1995 Ted Hajek, with a great deal borrowed from the original Debian adduser
        Copyright (C) 1994 Ian Murdock.  adduser is free software; see the GNU General Public Licence version 2 or later for copying conditions.  There is no warranty.
 
-Debian GNU/Linux                                                            Version 3.118ubuntu5                                                                 ADDUSER(8)
+Debian GNU/Linux                                                                      Version 3.118ubuntu5                                                                            ADDUSER(8)

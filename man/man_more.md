@@ -13,16 +13,14 @@
        more [options] file ...
 
 ## DESCRIPTION
-       more is a filter for paging through text one screenful at a time. This version is especially primitive.
-       Users should realize that less(1) provides more(1) emulation plus extensive enhancements.
+       more is a filter for paging through text one screenful at a time. This version is especially primitive. Users should realize that less(1) provides more(1) emulation plus extensive
+       enhancements.
 
 ## OPTIONS
-       Options are also taken from the environment variable MORE (make sure to precede them with a dash (-)) but
-       command-line options will override those.
+       Options are also taken from the environment variable MORE (make sure to precede them with a dash (-)) but command-line options will override those.
 
        -d, --silent
-           Prompt with "[Press space to continue, 'q' to quit.]", and display "[Press 'h' for instructions.]"
-           instead of ringing the bell when an illegal key is pressed.
+           Prompt with "[Press space to continue, 'q' to quit.]", and display "[Press 'h' for instructions.]" instead of ringing the bell when an illegal key is pressed.
 
        -l, --logical
            Do not pause after any line containing a ^L (form feed).
@@ -31,12 +29,10 @@
            Count logical lines, rather than screen lines (i.e., long lines are not folded).
 
        -p, --print-over
-           Do not scroll. Instead, clear the whole screen and then display the text. Notice that this option is
-           switched on automatically if the executable is named page.
+           Do not scroll. Instead, clear the whole screen and then display the text. Notice that this option is switched on automatically if the executable is named page.
 
        -c, --clean-print
-           Do not scroll. Instead, paint each screen from the top, clearing the remainder of each line as it is
-           displayed.
+           Do not scroll. Instead, paint each screen from the top, clearing the remainder of each line as it is displayed.
 
        -s, --squeeze
            Squeeze multiple blank lines into one.
@@ -45,9 +41,8 @@
            Suppress underlining. This option is silently ignored as backwards compatibility.
 
        -n, --lines number
-           Specify the number of lines per screenful. The number argument is a positive decimal integer. The
-           --lines option shall override any values obtained from any other source, such as number of lines
-           reported by terminal.
+           Specify the number of lines per screenful. The number argument is a positive decimal integer. The --lines option shall override any values obtained from any other source, such as
+           number of lines reported by terminal.
 
        -number
            A numeric option means the same as --lines option argument.
@@ -65,8 +60,8 @@
            Display version information and exit.
 
 ## COMMANDS
-       Interactive commands for more are based on vi(1). Some commands may be preceded by a decimal number,
-       called k in the descriptions below. In the following descriptions, ^X means control-X.
+       Interactive commands for more are based on vi(1). Some commands may be preceded by a decimal number, called k in the descriptions below. In the following descriptions, ^X means
+       control-X.
 
        h or ?
            Help; display a summary of these commands. If you forget all other commands, remember this one.
@@ -111,9 +106,8 @@
            Execute command in a subshell.
 
        v
-           Start up an editor at current line. The editor is taken from the environment variable VISUAL if
-           defined, or EDITOR if VISUAL is not defined, or defaults to vi(1) if neither VISUAL nor EDITOR is
-           defined.
+           Start up an editor at current line. The editor is taken from the environment variable VISUAL if defined, or EDITOR if VISUAL is not defined, or defaults to vi(1) if neither VISUAL
+           nor EDITOR is defined.
 
        ^L
            Redraw screen.
@@ -140,8 +134,7 @@
            Current shell in use (normally set by the shell at login time).
 
        TERM
-           The terminal type used by more to get the terminal characteristics necessary to manipulate the
-           screen.
+           The terminal type used by more to get the terminal characteristics necessary to manipulate the screen.
 
        VISUAL
            The editor the user prefers. Invoked when command key v is pressed.
@@ -150,9 +143,8 @@
            The editor of choice when VISUAL is not specified.
 
 ## HISTORY
-       The more command appeared in 3.0BSD. This man page documents more version 5.19 (Berkeley 6/29/88), which
-       is currently in use in the Linux community. Documentation was produced using several other versions of
-       the man page, and extensive inspection of the source code.
+       The more command appeared in 3.0BSD. This man page documents more version 5.19 (Berkeley 6/29/88), which is currently in use in the Linux community. Documentation was produced using
+       several other versions of the man page, and extensive inspection of the source code.
 
 ## AUTHORS
        Eric Shienbrood, UC Berkeley.
@@ -168,7 +160,6 @@
        For bug reports, use the issue tracker at https://github.com/karelzak/util-linux/issues.
 
 ## AVAILABILITY
-       The more command is part of the util-linux package which can be downloaded from Linux Kernel Archive
-       <https://www.kernel.org/pub/linux/utils/util-linux/>.
+       The more command is part of the util-linux package which can be downloaded from Linux Kernel Archive <https://www.kernel.org/pub/linux/utils/util-linux/>.
 
-util-linux 2.37.2                                  2021-06-02                                            MORE(1)
+util-linux 2.37.2                                                                          2021-06-02                                                                                    MORE(1)

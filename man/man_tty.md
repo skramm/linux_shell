@@ -38,4 +38,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/tty>
        or available locally via: info '(coreutils) tty invocation'
 
-GNU coreutils 8.32                                                              August 2026                                                                          TTY(1)
+GNU coreutils 8.32                                                                         August 2026                                                                                    TTY(1)

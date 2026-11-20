@@ -147,4 +147,4 @@
        --serialize-to=FILE
               Serialize result to a file
 
-pango 1.50.6                                                                   February 2023                                                                  PANGO-VIEW(1)
+pango 1.50.6                                                                              February 2023                                                                            PANGO-VIEW(1)

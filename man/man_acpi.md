@@ -13,8 +13,7 @@
        acpi [options]
 
 ## DESCRIPTION
-       acpi  Shows information from the /proc or the /sys filesystem, such as battery status or thermal informa‐
-       tion.
+       acpi Shows information from the /proc or the /sys filesystem, such as battery status or thermal information.
 
 ## OPTIONS
        -b | --battery
@@ -61,8 +60,7 @@
                  output version information and exit
 
 ## AUTHOR
-       The original version of this manual page was written by Paul Telford <pxt@debian.org> for the Debian sys‐
-       tem. Newer additions were done by Michael Meskes <meskes@debian.org>. Permission is granted to copy, dis‐
-       tribute and/or modify this document under the terms of the GNU GPL.
+       The  original version of this manual page was written by Paul Telford <pxt@debian.org> for the Debian system. Newer additions were done by Michael Meskes <meskes@debian.org>. Permission
+       is granted to copy, distribute and/or modify this document under the terms of the GNU GPL.
 
-                                                                                                         ACPI(1)
+                                                                                                                                                                                         ACPI(1)

@@ -52,8 +52,8 @@
        --version
               output version information and exit
 
-       The  sums  are  computed  as described in FIPS-180-2.  When checking, the input should be a former output of this program.  The default mode is to print a line with
-       checksum, a space, a character indicating input mode ('*' for binary, ' ' for text or where binary is insignificant), and name for each FILE.
+       The  sums  are  computed  as described in FIPS-180-2.  When checking, the input should be a former output of this program.  The default mode is to print a line with checksum, a space, a
+       character indicating input mode ('*' for binary, ' ' for text or where binary is insignificant), and name for each FILE.
 
        Note: There is no difference between binary mode and text mode on GNU systems.
 
@@ -72,4 +72,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/sha256sum>
        or available locally via: info '(coreutils) sha2 utilities'
 
-GNU coreutils 8.32                                                              August 2026                                                                    SHA256SUM(1)
+GNU coreutils 8.32                                                                         August 2026                                                                              SHA256SUM(1)
