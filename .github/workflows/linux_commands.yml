@@ -17,7 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: g++ --version
-      - run: apt install lsb-release
+      - run: sudo apt-get update
+      - run: sudo apt-get install lsb-release
       - run: lsb_release -a
       - run: echo "shell=$SHELL"
       
