@@ -38,6 +38,7 @@ nmon;21;_dashboard_ système;htop;;?
 pstree;21;arborescence des process;ps;;?
 ps;21;snapshot des process;top,pstree;;process
 inxi;21;informations système;lstopo-htop-lsdev;;hardware
+conky;21;monitoring système, paramétrable;btop,htop;;?
 
 pidof;12; donne le PID d'un process;ps;;?
 kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill;GNU;?
@@ -231,6 +232,7 @@ look;8;_display lines beginning with a given string_;;;?
 fold;8;ajustement longueur de ligne;;GNU;?
 rev;8;inversion de texte;;;?
 column;8;transformation texte en colonnes;;;?
+iconv;8;conversion encodage (UTF8, Latin-1, ISO/IEC 8859, ...);;;?
 
 whoami;9;qui suis-je?;id;GNU;?
 who;9;qui est loggé?;w;GNU;?
