@@ -298,8 +298,6 @@ auditd;17;_Logging_ des actions système;;;?
 aa-xxx;17;ensemble de commandes de gestion de <a href="https://apparmor.net/">`Apparmor`</a>;;;?
 stress;17;génération de charge CPU;;;?
 hey;17;_HTTP load generator_;ab;;?
-falco;17;_kernel monitoring and detection agent_;sysdig;;?
-sysdig;17-13;_Cloud-Native Application Protection Platform_;falco;;?
 ab;17;_Apache's server benchmarking tool_;hey;;?
 ufw;3-17; pilote CLI de Firewall ;;;?
 cpupower;17;accès/édition paramètres de puissance CPU;;;?
