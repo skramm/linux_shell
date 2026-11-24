@@ -12,12 +12,12 @@
 ## DESCRIPTION
        This manual page documents briefly the nmon command.  This manual page was written for the Debian distribution because the original program does not have a manual page.
 
-       nmon  is  is a systems administrator, tuner, benchmark tool.  It can display the CPU, memory, network, disks (mini graphs or numbers), file systems, NFS, top processes, resources (Linux
-       version & processors) and on Power micro-partition information.
+       nmon  is  is a systems administrator, tuner, benchmark tool.  It can display the CPU, memory, network, disks (mini graphs or numbers), file systems, NFS, top processes, resources (Linux version & pro‐
+       cessors) and on Power micro-partition information.
 
 ## OPTIONS
-       nmon follow the usual GNU command line syntax, with long options starting with two dashes (`-').  nmon [-h] [-s <seconds>] [-c <count>] [-f -d <disks> -t -r <name>] [-x]  A  summary  of
-       options is included below.
+       nmon follow the usual GNU command line syntax, with long options starting with two dashes (`-').  nmon [-h] [-s <seconds>] [-c <count>] [-f -d <disks> -t -r <name>] [-x] A summary of  options  is  in‐
+       cluded below.
 
        -h     FULL help information
 
@@ -41,4 +41,4 @@
 
        This manual page was written by Giuseppe Iuculano <giuseppe@iuculano.it>, for the Debian project (but may be used by others).
 
-nmon                                                                                       August 2009                                                                                   NMON(1)
+nmon                                                                                              August 2009                                                                                           NMON(1)

@@ -22,21 +22,20 @@
               print the selection to standard out (generally for piping to a file or program)
 
        -f, -filter
-              when  xclip  is  invoked in the in mode with output level set to silent (the defaults), the filter option will cause xclip to print the text piped to standard in back to standard
-              out unmodified
+              when xclip is invoked in the in mode with output level set to silent (the defaults), the filter option will cause xclip to print the text piped to standard in back to standard out unmodified
 
        -r, -rmlastnl
-              when the last character of the selection is a newline character, remove it. Newline characters that are not the last character in the selection are not affected. If the selection
-              does  not  end with a newline character, this option has no effect. This option is useful for copying one-line output of programs like pwd to the clipboard to paste it again into
-              the command prompt without executing the line immediately due to the newline character pwd appends.
+              when  the  last character of the selection is a newline character, remove it. Newline characters that are not the last character in the selection are not affected. If the selection does not end
+              with a newline character, this option has no effect. This option is useful for copying one-line output of programs like pwd to the clipboard to paste it again into the  command  prompt  without
+              executing the line immediately due to the newline character pwd appends.
 
        -l, -loops
-              number of X selection requests (pastes into X applications) to wait for before exiting, with a value of 0 (default) causing xclip to wait for an unlimited number of requests  un‐
-              til another application (possibly another invocation of xclip) takes ownership of the selection
+              number  of  X selection requests (pastes into X applications) to wait for before exiting, with a value of 0 (default) causing xclip to wait for an unlimited number of requests until another ap‐
+              plication (possibly another invocation of xclip) takes ownership of the selection
 
        -t, -target
-              specify  a particular data format using the given target atom.  With -o the special target atom name "TARGETS" can be used to get a list of valid target atoms for this selection.
-              For more information about target atoms refer to ICCCM section 2.6.2
+              specify a particular data format using the given target atom.  With -o the special target atom name "TARGETS" can be used to get a list of valid target atoms for this selection.  For  more  in‐
+              formation about target atoms refer to ICCCM section 2.6.2
 
        -d, -display
               X display to use (e.g. "localhost:0"), xclip defaults to the value in $DISPLAY if this option is omitted
@@ -61,18 +60,17 @@
        -noutf8
               operate in legacy (i.e. non UTF-8) mode for backwards compatibility (Use this option only when really necessary, as the old behavior was broken)
 
-       xclip reads text from standard in or files and makes it available to other X applications for pasting as an X selection (traditionally with the middle mouse button). It reads  from  all
-       files specified, or from standard in if no files are specified. xclip can also print the contents of a selection to standard out with the -o option.
+       xclip reads text from standard in or files and makes it available to other X applications for pasting as an X selection (traditionally with the middle mouse button). It reads from all files specified,
+       or from standard in if no files are specified. xclip can also print the contents of a selection to standard out with the -o option.
 
-       xclip  was  designed to allow tighter integration of X applications and command line programs. The default action is to silently wait in the background for X selection requests (pastes)
-       until another X application places data in the clipboard, at which point xclip exits silently. You can use the -verbose option to see if and when xclip actually receives  selection  re‐
-       quests from other X applications.
+       xclip was designed to allow tighter integration of X applications and command line programs. The default action is to silently wait in the background for X selection requests (pastes) until another  X
+       application places data in the clipboard, at which point xclip exits silently. You can use the -verbose option to see if and when xclip actually receives selection requests from other X applications.
 
-       Options  can  be abbreviated as long as they remain unambiguous. For example, it is possible to use -d or -disp instead of -display. However, -v couldn't be used because it is ambiguous
-       (it could be short for -verbose or -version), so it would be interpreted as a filename.
+       Options  can  be  abbreviated  as long as they remain unambiguous. For example, it is possible to use -d or -disp instead of -display. However, -v couldn't be used because it is ambiguous (it could be
+       short for -verbose or -version), so it would be interpreted as a filename.
 
-       Note that only the first character of the selection specified with the -selection option is important. This means that "p", "sec" and "clip" would have the same effect  as  using  "pri‐
-       mary", "secondary" or "clipboard" respectively.
+       Note that only the first character of the selection specified with the -selection option is important. This means that "p", "sec" and "clip" would have the same effect as using "primary",  "secondary"
+       or "clipboard" respectively.
 
 ## EXAMPLES
        I hate man pages without examples!
@@ -103,4 +101,4 @@
 ## AUTHORS
        Kim Saunders <kims@debian.org> Peter Åstrand <astrand@lysator.liu.se>
 
-                                                                                                                                                                                        XCLIP(1)
+                                                                                                                                                                                                       XCLIP(1)

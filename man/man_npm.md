@@ -23,8 +23,8 @@
        Run npm help to get a list of available commands.
 
    Important
-       npm  comes  preconfigured  to  use  npm's  public  registry  at  https://registry.npmjs.org  by  default.  Use  of  the  npm  public  registry  is  subject  to terms of use available at
-       https://docs.npmjs.com/policies/terms.
+       npm  comes  preconfigured  to  use  npm's  public registry at https://registry.npmjs.org by default. Use of the npm public registry is subject to terms of use available at https://docs.npmjs.com/poli‐
+       cies/terms.
 
        You can configure npm to use any compatible registry you like, and even run your own registry. Use of someone else's registry is governed by their terms of use.
 
@@ -38,20 +38,18 @@
        Use the npm search command to show everything that's available in the public registry.  Use npm ls to show everything you've installed.
 
    Dependencies
-       If a package lists a dependency using a git URL, npm will install that dependency using the git https://github.com/git-guides/install-git command and will generate an error if it is not
-       installed.
+       If a package lists a dependency using a git URL, npm will install that dependency using the git https://github.com/git-guides/install-git command and will generate an error if it is not installed.
 
-       If  one  of  the packages npm tries to install is a native node module and requires compiling of C++ Code, npm will use node-gyp https://github.com/nodejs/node-gyp for that task.  For a
-       Unix system, node-gyp https://github.com/nodejs/node-gyp needs Python, make and a buildchain like GCC. On Windows, Python and Microsoft Visual Studio C++ are needed. For  more  informa‐
-       tion visit the node-gyp repository https://github.com/nodejs/node-gyp and the node-gyp Wiki https://github.com/nodejs/node-gyp/wiki.
+       If one of the packages npm tries to install is a native node module and requires compiling of C++ Code, npm will use node-gyp https://github.com/nodejs/node-gyp for that  task.   For  a  Unix  system,
+       node-gyp https://github.com/nodejs/node-gyp needs Python, make and a buildchain like GCC. On Windows, Python and Microsoft Visual Studio C++ are needed. For more information visit the node-gyp reposi‐
+       tory https://github.com/nodejs/node-gyp and the node-gyp Wiki https://github.com/nodejs/node-gyp/wiki.
 
    Directories
        See npm help folders to learn about where npm puts stuff.
 
        In particular, npm has two modes of operation:
 
-       • local  mode:  npm  installs  packages into the current project directory, which defaults to the current working directory.  Packages install to ./node_modules, and bins to ./node_mod‐
-         ules/.bin.
+       • local mode: npm installs packages into the current project directory, which defaults to the current working directory.  Packages install to ./node_modules, and bins to ./node_modules/.bin.
 
        • global mode: npm installs packages into the install prefix at $npm_config_prefix/lib/node_modules and bins to $npm_config_prefix/bin.
 
@@ -73,16 +71,15 @@
    Configuration
        npm is extremely configurable.  It reads its configuration options from 5 places.
 
-       • Command line switches: Set a config with --key val.  All keys take a value, even if they are booleans (the config parser doesn't know what the options are at the time of parsing).  If
-         you do not provide a value (--key) then the option is set to boolean true.
+       • Command line switches: Set a config with --key val.  All keys take a value, even if they are booleans (the config parser doesn't know what the options are at the time of parsing).   If  you  do  not
+         provide a value (--key) then the option is set to boolean true.
 
        • Environment Variables: Set any config by prefixing the name in an environment variable with npm_config_.  For example, export npm_config_key=val.
 
-       • User  Configs:  The file at $HOME/.npmrc is an ini-formatted list of configs.  If present, it is parsed.  If the userconfig option is set in the cli or env, that file will be used in‐
-         stead.
+       • User Configs: The file at $HOME/.npmrc is an ini-formatted list of configs.  If present, it is parsed.  If the userconfig option is set in the cli or env, that file will be used instead.
 
-       • Global Configs: The file found at ./etc/npmrc (relative to the global prefix will be parsed if it is found.  See npm help prefix for more info on the global prefix.  If the globalcon‐
-         fig option is set in the cli, env, or user config, then that file is parsed instead.
+       • Global  Configs:  The  file found at ./etc/npmrc (relative to the global prefix will be parsed if it is found.  See npm help prefix for more info on the global prefix.  If the globalconfig option is
+         set in the cli, env, or user config, then that file is parsed instead.
 
        • Defaults: npm's default configuration options are defined in lib/utils/config-defs.js.  These must not be changed.
 
@@ -122,4 +119,4 @@
 
        • npm help publish
 
-                                                                                          undefined NaN                                                                                   NPM(1)
+                                                                                                 undefined NaN                                                                                           NPM(1)

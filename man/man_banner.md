@@ -18,4 +18,4 @@
 ## SEE ALSO
        banner(6).
 
-Debian                                                                                  February 4, 1997                                                                               BANNER(1)
+Debian                                                                                          February 4, 1997                                                                                      BANNER(1)

@@ -13,8 +13,8 @@
        notify-send [OPTIONS] {summary} [body]
 
 ## DESCRIPTION
-       With notify-send you can send desktop notifications to the user via a notification daemon from the command line. These notifications can be used to inform the user about an event or
-       display some form of information without getting in the user’s way.
+       With notify-send you can send desktop notifications to the user via a notification daemon from the command line. These notifications can be used to inform the user about an event or display some form
+       of information without getting in the user’s way.
 
 ## OPTIONS
        -?, --help
@@ -50,4 +50,4 @@
        Riccardo Setti <giskard@debian.org>
            Original author
 
-libnotify                                                                                                                                                                         NOTIFY-SEND(1)
+libnotify                                                                                                                                                                                        NOTIFY-SEND(1)

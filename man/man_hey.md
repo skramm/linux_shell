@@ -56,4 +56,4 @@
 
        -cpus  Number of used cpu cores.  (default for current machine is 6 cores)
 
-hey 0.1.4                                                                                 December 2020                                                                                   HEY(1)
+hey 0.1.4                                                                                        December 2020                                                                                           HEY(1)

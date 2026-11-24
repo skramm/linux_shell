@@ -18,11 +18,11 @@
 ## DESCRIPTION
        umask() sets the calling process's file mode creation mask (umask) to mask & 0777 (i.e., only the file permission bits of mask are used), and returns the previous value of the mask.
 
-       The  umask  is  used by open(2), mkdir(2), and other system calls that create files to modify the permissions placed on newly created files or directories.  Specifically, permissions in
-       the umask are turned off from the mode argument to open(2) and mkdir(2).
+       The  umask  is  used  by open(2), mkdir(2), and other system calls that create files to modify the permissions placed on newly created files or directories.  Specifically, permissions in the umask are
+       turned off from the mode argument to open(2) and mkdir(2).
 
-       Alternatively, if the parent directory has a default ACL (see acl(5)), the umask is ignored, the default ACL is inherited, the permission bits are set based on the  inherited  ACL,  and
-       permission bits absent in the mode argument are turned off.  For example, the following default ACL is equivalent to a umask of 022:
+       Alternatively, if the parent directory has a default ACL (see acl(5)), the umask is ignored, the default ACL is inherited, the permission bits are set based on the inherited ACL, and  permission  bits
+       absent in the mode argument are turned off.  For example, the following default ACL is equivalent to a umask of 022:
 
            u::rwx,g::r-x,o::r-x
 
@@ -49,20 +49,20 @@ CONFORMING TO
 ## NOTES
        A child process created via fork(2) inherits its parent's umask.  The umask is left unchanged by execve(2).
 
-       It  is  impossible to use umask() to fetch a process's umask without at the same time changing it.  A second call to umask() would then be needed to restore the umask.  The nonatomicity
-       of these two steps provides the potential for races in multithreaded programs.
+       It  is  impossible  to  use umask() to fetch a process's umask without at the same time changing it.  A second call to umask() would then be needed to restore the umask.  The nonatomicity of these two
+       steps provides the potential for races in multithreaded programs.
 
-       Since Linux 4.7, the umask of any process can be viewed via the Umask field of /proc/[pid]/status.  Inspecting this field in /proc/self/status allows a process  to  retrieve  its  umask
-       without at the same time changing it.
+       Since Linux 4.7, the umask of any process can be viewed via the Umask field of /proc/[pid]/status.  Inspecting this field in /proc/self/status allows a process to retrieve its  umask  without  at  the
+       same time changing it.
 
-       The  umask setting also affects the permissions assigned to POSIX IPC objects (mq_open(3), sem_open(3), shm_open(3)), FIFOs (mkfifo(3)), and UNIX domain sockets (unix(7)) created by the
-       process.  The umask does not affect the permissions assigned to System V IPC objects created by the process (using msgget(2), semget(2), shmget(2)).
+       The  umask  setting also affects the permissions assigned to POSIX IPC objects (mq_open(3), sem_open(3), shm_open(3)), FIFOs (mkfifo(3)), and UNIX domain sockets (unix(7)) created by the process.  The
+       umask does not affect the permissions assigned to System V IPC objects created by the process (using msgget(2), semget(2), shmget(2)).
 
 ## SEE ALSO
        chmod(2), mkdir(2), open(2), stat(2), acl(5)
 
 COLOPHON
-       This page is part of release 5.10 of the Linux man-pages project.  A description of the project, information about reporting bugs, and the latest version of this page, can be  found  at
+       This page is part of release 5.10 of the Linux man-pages project.  A description of  the  project,  information  about  reporting  bugs,  and  the  latest  version  of  this  page,  can  be  found  at
        https://www.kernel.org/doc/man-pages/.
 
-Linux                                                                                      2020-08-13                                                                                   UMASK(2)
+Linux                                                                                              2020-08-13                                                                                          UMASK(2)

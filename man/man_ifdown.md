@@ -27,16 +27,16 @@
        ifquery --state [--state-dir=DIR] [--allow CLASS] [-a|IFACE...]
 
 ## DESCRIPTION
-       The  ifup  and  ifdown  commands may be used to configure (or, respectively, deconfigure) network interfaces based on interface definitions in the file /etc/network/interfaces.  ifquery
-       command may be used to parse interfaces configuration.
+       The  ifup  and  ifdown  commands may be used to configure (or, respectively, deconfigure) network interfaces based on interface definitions in the file /etc/network/interfaces.  ifquery command may be
+       used to parse interfaces configuration.
 
 ## OPTIONS
        A summary of options is included below.
 
        -a, --all
-              If given to ifup, affect all interfaces marked auto.  Interfaces are brought up in the order in which they are defined in /etc/network/interfaces.  Combined with --allow, acts on
-              all  interfaces  of a specified class instead.  If given to ifdown, affect all defined interfaces.  Interfaces are brought down in the order in which they are currently listed in
-              the state file. Only interfaces defined in /etc/network/interfaces will be brought down.
+              If given to ifup, affect all interfaces marked auto.  Interfaces are brought up in the order in which they are defined in /etc/network/interfaces.  Combined with --allow, acts on all interfaces
+              of a specified class instead.  If given to ifdown, affect all defined interfaces.  Interfaces are brought down in the order in which they are currently listed in the state file. Only interfaces
+              defined in /etc/network/interfaces will be brought down.
 
        --force
               Force configuration or deconfiguration of the interface.
@@ -57,8 +57,8 @@
               Keep interface state in DIR instead of in /run/network.
 
        -X PATTERN, --exclude=PATTERN
-              Exclude interfaces from the list of interfaces to operate on by the PATTERN.  PATTERN uses a usual shell glob syntax. If shell wildcards are not used, it must match the exact in‐
-              terface name. This option may be specified multiple times resulting in more than one pattern being excluded.
+              Exclude interfaces from the list of interfaces to operate on by the PATTERN.  PATTERN uses a usual shell glob syntax. If shell wildcards are not used, it must match the  exact  interface  name.
+              This option may be specified multiple times resulting in more than one pattern being excluded.
 
        -o OPTION=VALUE
               Set OPTION to VALUE as though it were in /etc/network/interfaces.
@@ -73,9 +73,9 @@
               Don't run any scripts under /etc/network/if-*.d/
 
        --no-loopback
-              Disable  special handling of the loopback interface. By default, the loopback interface (lo on Linux) is predefined internally as an auto interface, so it's brought up on ifup -a
-              automatically. In the case the loopback device is redefined by user, the interface is configured just once anyway. If, however, another interface is  also  defined  as  loopback,
-              it's configured as usual. Specifying this option disables this behaviour, so the loopback interface won't be configured automatically.
+              Disable  special handling of the loopback interface. By default, the loopback interface (lo on Linux) is predefined internally as an auto interface, so it's brought up on ifup -a automatically.
+              In the case the loopback device is redefined by user, the interface is configured just once anyway. If, however, another interface is also defined as loopback, it's configured as usual.  Speci‐
+              fying this option disables this behaviour, so the loopback interface won't be configured automatically.
 
        -V, --version
               Show copyright and version information.
@@ -87,9 +87,9 @@
               For ifquery, list all the interfaces which match the specified class.  If no class specified, prints all the interfaces listed as auto.
 
        --state
-              For  ifquery,  dump  the state of the interfaces. When no interfaces specified, lists all interfaces brought up together with logical interfaces assigned to them and exits with a
-              status code indicating success. If one or more interfaces specified, display state of these interfaces only; successful code is returned if all of interfaces given  as  arguments
-              are up. Otherwise, 0 is returned.
+              For ifquery, dump the state of the interfaces. When no interfaces specified, lists all interfaces brought up together with logical interfaces assigned to them and exits with a status code indi‐
+              cating success. If one or more interfaces specified, display state of these interfaces only; successful code is returned if all of interfaces given as arguments are  up.  Otherwise,  0  is  re‐
+              turned.
 
 ## EXAMPLES
        ifup -a
@@ -130,28 +130,26 @@
               current state of network interfaces
 
 CONCURRENCY
-       Ifupdown  uses per-interface locking to ensure that concurrent ifup and ifdown calls to the same interface are run in serial.  However, calls to different interfaces will be able to run
-       in parallel.
+       Ifupdown uses per-interface locking to ensure that concurrent ifup and ifdown calls to the same interface are run in serial.  However, calls to different interfaces will be able to run in parallel.
 
 ## EXIT STATUS
-       For ifup and ifdown, the exit status will be 0 if the given interface(s) have all been (de)configured successfully, 1 if there was any error.  The result of these  commands  is  idempo‐
-       tent;  running ifup on an interface that is already up will result in an exit status of 0, and similarly running ifdown on an interface that is not up will also result in an exit status
-       of 0.
+       For  ifup and ifdown, the exit status will be 0 if the given interface(s) have all been (de)configured successfully, 1 if there was any error.  The result of these commands is idempotent; running ifup
+       on an interface that is already up will result in an exit status of 0, and similarly running ifdown on an interface that is not up will also result in an exit status of 0.
 
-       ifquery will normally return with exit status 0 if an interface with a matching iface stanza, 1 if there is no matching stanza.  ifquery --state will also return with exit status  1  if
-       the given interface was known but was not up.
+       ifquery will normally return with exit status 0 if an interface with a matching iface stanza, 1 if there is no matching stanza.  ifquery --state will also return with exit status 1 if the given inter‐
+       face was known but was not up.
 
 ## KNOWN BUGS/LIMITATIONS
-       The  program  keeps  records of whether network interfaces are up or down.  Under exceptional circumstances these records can become inconsistent with the real states of the interfaces.
-       For example, an interface that was brought up using ifup and later deconfigured using ifconfig will still be recorded as up.  To fix this you can use the --force option to force ifup or
-       ifdown to run configuration or deconfiguration commands despite what it considers the current state of the interface to be.
+       The  program keeps records of whether network interfaces are up or down.  Under exceptional circumstances these records can become inconsistent with the real states of the interfaces.  For example, an
+       interface that was brought up using ifup and later deconfigured using ifconfig will still be recorded as up.  To fix this you can use the --force option to force ifup or ifdown to run configuration or
+       deconfiguration commands despite what it considers the current state of the interface to be.
 
-       The  file /run/network/ifstate must be writable for ifup or ifdown to work properly.  If that location is not writable (for example, because the root filesystem is mounted read-only for
-       system recovery) then /run/network/ifstate should be made a symbolic link to a writable location.  If that is not possible then you can use the --force option to  run  configuration  or
-       deconfiguration commands without updating the file.
+       The  file  /run/network/ifstate must be writable for ifup or ifdown to work properly.  If that location is not writable (for example, because the root filesystem is mounted read-only for system recov‐
+       ery) then /run/network/ifstate should be made a symbolic link to a writable location.  If that is not possible then you can use the --force option to  run  configuration  or  deconfiguration  commands
+       without updating the file.
 
-       Note that the program does not run automatically: ifup alone does not bring up interfaces that appear as a result of hardware being installed and ifdown alone does not bring down inter‐
-       faces that disappear as a result of hardware being removed.  To automate the configuration of network interfaces you need to install other packages such as udev(7) or ifplugd(8).
+       Note  that the program does not run automatically: ifup alone does not bring up interfaces that appear as a result of hardware being installed and ifdown alone does not bring down interfaces that dis‐
+       appear as a result of hardware being removed.  To automate the configuration of network interfaces you need to install other packages such as udev(7) or ifplugd(8).
 
 ## AUTHORS
        The ifupdown suite was created by Anthony Towns <aj@azure.humbug.org.au>, currently maintained by Santiago Ruano Rincón <santiago@debian.org> and Josue Ortega <josue@debian.org>
@@ -161,4 +159,4 @@ CONCURRENCY
 ## SEE ALSO
        interfaces(5), ip(8), ifconfig(8).
 
-IFUPDOWN                                                                                   11 Jan 2017                                                                                   ifup(8)
+IFUPDOWN                                                                                          11 Jan 2017                                                                                           ifup(8)

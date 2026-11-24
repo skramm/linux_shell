@@ -13,16 +13,16 @@
        updatedb [options]
 
 ## DESCRIPTION
-       This manual page documents the GNU version of updatedb, which updates file name databases used by GNU locate.  The file name databases contain lists of files that were in particular di‐
-       rectory trees when the databases were last updated.  The file name of the default database is determined when locate and updatedb are configured and installed.  The frequency with which
-       the databases are updated and the directories for which they contain entries depend on how often updatedb is run, and with which arguments.
+       This  manual  page  documents the GNU version of updatedb, which updates file name databases used by GNU locate.  The file name databases contain lists of files that were in particular directory trees
+       when the databases were last updated.  The file name of the default database is determined when locate and updatedb are configured and installed.  The frequency with which the  databases  are  updated
+       and the directories for which they contain entries depend on how often updatedb is run, and with which arguments.
 
-       In networked environments, it often makes sense to build a database at the root of each filesystem, containing the entries for that filesystem.  updatedb is then run for each filesystem
-       on the fileserver where that filesystem is on a local disk, to prevent thrashing the network.  Users can select which databases locate searches using an environment variable or  command
-       line option; see locate(1).  Databases cannot be concatenated together.
+       In  networked  environments, it often makes sense to build a database at the root of each filesystem, containing the entries for that filesystem.  updatedb is then run for each filesystem on the file‐
+       server where that filesystem is on a local disk, to prevent thrashing the network.  Users can select which databases locate searches using an environment variable  or  command  line  option;  see  lo‐
+       cate(1).  Databases cannot be concatenated together.
 
-       The  LOCATGE02 database format was introduced in GNU findutils version 4.0 in order to allow machines with different byte orderings to share the databases.  GNU locate can read both the
-       old and LOCATE02 database formats, though support for the old pre-4.0 database format will be removed shortly.
+       The  LOCATGE02  database  format  was introduced in GNU findutils version 4.0 in order to allow machines with different byte orderings to share the databases.  GNU locate can read both the old and LO‐
+       CATE02 database formats, though support for the old pre-4.0 database format will be removed shortly.
 
 ## OPTIONS
        --findoptions='-option1 -option2...'
@@ -35,26 +35,26 @@
               Network (NFS, AFS, RFS, etc.) directories to put in the database.  The environment variable NETPATHS also sets this value.  Default is none.
 
        --prunepaths='path1 path2...'
-              Directories to not put in the database, which would otherwise be.  Remove any trailing slashes from the path names, otherwise updatedb won't recognise the paths you want to  omit
-              (because it uses them as regular expression patterns).  The environment variable PRUNEPATHS also sets this value.  Default is /tmp /usr/tmp /var/tmp /afs.
+              Directories to not put in the database, which would otherwise be.  Remove any trailing slashes from the path names, otherwise updatedb won't recognise the paths you want  to  omit  (because  it
+              uses them as regular expression patterns).  The environment variable PRUNEPATHS also sets this value.  Default is /tmp /usr/tmp /var/tmp /afs.
 
        --prunefs='path...'
-              File systems to not put in the database, which would otherwise be.  Note that files are pruned when a file system is reached; any file system mounted under an undesired file sys‐
-              tem will be ignored.  The environment variable PRUNEFS also sets this value.  Default is nfs NFS proc.
+              File  systems to not put in the database, which would otherwise be.  Note that files are pruned when a file system is reached; any file system mounted under an undesired file system will be ig‐
+              nored.  The environment variable PRUNEFS also sets this value.  Default is nfs NFS proc.
 
        --output=dbfile
               The database file to build.  Default is system-dependent.  In Debian GNU/Linux, the default is /var/cache/locate/locatedb.
 
        --localuser=user
-              The user to search non-network directories as, using su(1).  Default is to search the non-network directories as the current user.  You can also use the environment variable  LO‐
-              CALUSER to set this user.
+              The user to search non-network directories as, using su(1).  Default is to search the non-network directories as the current user.  You can also use the environment variable  LOCALUSER  to  set
+              this user.
 
        --netuser=user
               The user to search network directories as, using su(1).  Default is daemon.  You can also use the environment variable NETUSER to set this user.
 
        --dbformat=F
-              Create  the  database  in  format F.  The default format is called LOCATE02.  Alternatively the slocate format is also supported.  When the slocate format is in use, the database
-              produced is marked as having security level 1.  If you want to build a system-wide slocate database, you may want to run updatedb as root.
+              Create the database in format F.  The default format is called LOCATE02.  Alternatively the slocate format is also supported.  When the slocate format is in use, the database produced is marked
+              as having security level 1.  If you want to build a system-wide slocate database, you may want to run updatedb as root.
 
        --version
               Print the version number of updatedb and exit.
@@ -62,8 +62,8 @@
        --help Print a summary of the options to updatedb and exit.
 
 ## BUGS
-       The updatedb program correctly handles filenames containing newlines, but only if the system's sort command has a working -z option.  If you suspect that locate may need to return file‐
-       names containing newlines, consider using its --null option.
+       The updatedb program correctly handles filenames containing newlines, but only if the system's sort command has a working -z option.  If you suspect that locate may need to return filenames containing
+       newlines, consider using its --null option.
 
 ## REPORTING BUGS
        GNU findutils online help: <https://www.gnu.org/software/findutils/#get-help>
@@ -84,4 +84,4 @@
        Full documentation <https://www.gnu.org/software/findutils/updatedb>
        or available locally via: info updatedb
 
-                                                                                                                                                                                     UPDATEDB(1)
+                                                                                                                                                                                                    UPDATEDB(1)

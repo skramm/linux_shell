@@ -13,34 +13,33 @@
        jo [-p] [-a] [-B] [-e] [-v] [-V] [-d keydelim] [–] [ [-s|-n|-b] word ...]
 
 ## DESCRIPTION
-       jo  creates a JSON string on stdout from _word_s given it as arguments or read from stdin.  Without option -a it generates an object whereby each word is a key=value (or key@value) pair
-       with key being the JSON object element and value its value.  jo attempts to guess the type of value in order to create number (using strtod(3)), string, or null values in JSON.
+       jo  creates a JSON string on stdout from _word_s given it as arguments or read from stdin.  Without option -a it generates an object whereby each word is a key=value (or key@value) pair with key being
+       the JSON object element and value its value.  jo attempts to guess the type of value in order to create number (using strtod(3)), string, or null values in JSON.
 
-       jo normally treats key as a literal string value.  If the -d option is specified, key will be interpreted as an object path, whose individual components are separated by the first char‐
-       acter of keydelim.
+       jo normally treats key as a literal string value.  If the -d option is specified, key will be interpreted as an object path, whose individual components are separated by the first character of  keyde‐
+       lim.
 
        jo normally treats value as a literal string value, unless it begins with one of the following characters:
 
        value   action
-       ─────────────────────────────────────────────────────────────────────────
+       ──────────────────────────────────────────────────────────────────────────
        @file   substitute the contents of file as-is
        %file   substitute the contents of file in base64-encoded form
-       :file   interpret  the  contents of file as JSON, and substitute the re‐
-               sult
+       :file   interpret the contents of file as JSON, and substitute the result
 
        Escape the special character with a backslash to prevent this interpretation.
 
-       jo treats key@value specifically as boolean JSON elements: if the value begins with T, t, or the numeric value is greater than zero, the result is true, else false.  A missing or  empty
-       value behind the colon results in a null JSON element.
+       jo  treats  key@value  specifically as boolean JSON elements: if the value begins with T, t, or the numeric value is greater than zero, the result is true, else false.  A missing or empty value behind
+       the colon results in a null JSON element.
 
        jo creates an array instead of an object when -a is specified.
 
-       When the := operator is used in a word, the name to the right of := is a file containing JSON which is parsed and assigned to the key left of the operator.  The file may be specified as
-       - to read from jo’s standard input.
+       When the := operator is used in a word, the name to the right of := is a file containing JSON which is parsed and assigned to the key left of the operator.  The file may be specified as - to read from
+       jo’s standard input.
 
 TYPE COERCION
-       jo’s type guesses can be overridden on a per-word basis by prefixing word with -s for string, -n for number, or -b for boolean.  The list of _word_s must be prefixed with --,  to  indi‐
-       cate to jo that there are no more global options.
+       jo’s  type  guesses  can be overridden on a per-word basis by prefixing word with -s for string, -n for number, or -b for boolean.  The list of _word_s must be prefixed with --, to indicate to jo that
+       there are no more global options.
 
        Type coercion works as follows:
 
@@ -180,8 +179,7 @@ TYPE COERCION
               $ jo -a -- -s 123 -n "This is a test" -b C_Rocks 456
               ["123",14,true,456]
 
-       Read element values from files: a value which starts with @ is read in plain whereas if it begins with a % it will be base64-encoded and if it starts with : the contents are interpreted
-       as JSON:
+       Read element values from files: a value which starts with @ is read in plain whereas if it begins with a % it will be base64-encoded and if it starts with : the contents are interpreted as JSON:
 
               $ jo program=jo authors=@AUTHORS
               {"program":"jo","authors":"Jan-Piet Mens <jpmens@gmail.com>"}
@@ -231,8 +229,7 @@ TYPE COERCION
 ## BUGS
        Probably.
 
-       If a value given to jo expands to empty in the shell, then jo produces a null in object mode, and might appear to hang in array mode; it is not hanging, rather it’s reading stdin.  This
-       is not a bug.
+       If a value given to jo expands to empty in the shell, then jo produces a null in object mode, and might appear to hang in array mode; it is not hanging, rather it’s reading stdin.  This is not a bug.
 
        Numeric values are converted to numbers which can produce undesired results.  If you quote a numeric value, jo will make it a string.  Compare the following:
 
@@ -264,4 +261,4 @@ CREDITS
 ## AUTHOR
        Jan-Piet Mens <http://jpmens.net>
 
-User Manuals                                                                                                                                                                               JO(1)
+User Manuals                                                                                                                                                                                              JO(1)

@@ -34,4 +34,4 @@
 ## SEE ALSO
        upowerd(8), UPower(7),
 
-upower                                                                                     April 2008                                                                                  UPOWER(1)
+upower                                                                                             April 2008                                                                                         UPOWER(1)

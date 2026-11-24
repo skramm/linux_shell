@@ -38,7 +38,6 @@ nmon;21;_dashboard_ système;htop;;?
 pstree;21;arborescence des process;ps;;?
 ps;21;snapshot des process;top,pstree;;process
 inxi;21;informations système;lstopo-htop-lsdev;;hardware
-conky;21;monitoring système, paramétrable;btop,htop;;?
 
 pidof;12; donne le PID d'un process;ps;;?
 kill;12;stoppe un process par PID (envoi d'un signal POSIX);pkill;GNU;?

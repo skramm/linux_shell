@@ -65,4 +65,4 @@ COMMAND-LINE OPTIONS
 ## AUTHOR
        btop was written by Aristocratos.
 
-1.1.3                                                                                     December 2021                                                                                  BTOP(1)
+1.1.3                                                                                            December 2021                                                                                          BTOP(1)

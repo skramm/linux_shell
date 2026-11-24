@@ -27,8 +27,8 @@
 
        You can use GDB to debug programs written in C, C++, Fortran and Modula-2.
 
-       GDB is invoked with the shell command "gdb".  Once started, it reads commands from the terminal until you tell it to exit with the GDB command "quit" or "exit".  You can get online help
-       from GDB itself by using the command "help".
+       GDB is invoked with the shell command "gdb".  Once started, it reads commands from the terminal until you tell it to exit with the GDB command "quit" or "exit".  You can get online help from GDB
+       itself by using the command "help".
 
        You can run "gdb" with no arguments or options; but the most usual way to start GDB is with one argument or two, specifying an executable program as the argument:
 
@@ -79,16 +79,15 @@
        exit
            Exit from GDB.
 
-       For full details on GDB, see Using GDB: A Guide to the GNU Source-Level Debugger, by Richard M. Stallman and Roland H. Pesch.  The same text is available online as the "gdb" entry in
-       the "info" program.
+       For full details on GDB, see Using GDB: A Guide to the GNU Source-Level Debugger, by Richard M. Stallman and Roland H. Pesch.  The same text is available online as the "gdb" entry in the "info"
+       program.
 
 ## OPTIONS
-       Any arguments other than options specify an executable file and core file (or process ID); that is, the first argument encountered with no associated option flag is equivalent to a --se
-       option, and the second, if any, is equivalent to a -c option if it's the name of a file.  Many options have both long and abbreviated forms; both are shown here.  The long forms are
-       also recognized if you truncate them, so long as enough of the option is present to be unambiguous.
+       Any arguments other than options specify an executable file and core file (or process ID); that is, the first argument encountered with no associated option flag is equivalent to a --se option, and
+       the second, if any, is equivalent to a -c option if it's the name of a file.  Many options have both long and abbreviated forms; both are shown here.  The long forms are also recognized if you
+       truncate them, so long as enough of the option is present to be unambiguous.
 
-       The abbreviated forms are shown here with - and long forms are shown with -- to reflect how they are shown in --help. However, GDB recognizes all of the following conventions for most
-       options:
+       The abbreviated forms are shown here with - and long forms are shown with -- to reflect how they are shown in --help. However, GDB recognizes all of the following conventions for most options:
 
        "--option=value"
        "--option value"
@@ -149,8 +148,8 @@
        -q  "Quiet".  Do not print the introductory and copyright messages.  These messages are also suppressed in batch mode.
 
        --batch
-           Run in batch mode.  Exit with status 0 after processing all the command files specified with -x (and .gdbinit, if not inhibited).  Exit with nonzero status if an error occurs in
-           executing the GDB commands in the command files.
+           Run in batch mode.  Exit with status 0 after processing all the command files specified with -x (and .gdbinit, if not inhibited).  Exit with nonzero status if an error occurs in executing the GDB
+           commands in the command files.
 
            Batch mode may be useful for running GDB as a filter, for example to download and run a program on another computer; in order to make this more useful, the message
 
@@ -159,8 +158,7 @@
            (which is ordinarily issued whenever a program running under GDB control terminates) is not issued when running in batch mode.
 
        --batch-silent
-           Run in batch mode, just like --batch, but totally silent.  All GDB output is supressed (stderr is unaffected).  This is much quieter than --silent and would be useless for an
-           interactive session.
+           Run in batch mode, just like --batch, but totally silent.  All GDB output is supressed (stderr is unaffected).  This is much quieter than --silent and would be useless for an interactive session.
 
            This is particularly useful when using targets that give Loading section messages, for example.
 
@@ -208,9 +206,9 @@
        -D  Run GDB using directory as its data directory.  The data directory is where GDB searches for its auxiliary files.
 
        --fullname
-       -f  Emacs sets this option when it runs GDB as a subprocess.  It tells GDB to output the full file name and line number in a standard, recognizable fashion each time a stack frame is
-           displayed (which includes each time the program stops).  This recognizable format looks like two \032 characters, followed by the file name, line number and character position
-           separated by colons, and a newline.  The Emacs-to-GDB interface program uses the two \032 characters as a signal to display the source code for the frame.
+       -f  Emacs sets this option when it runs GDB as a subprocess.  It tells GDB to output the full file name and line number in a standard, recognizable fashion each time a stack frame is displayed (which
+           includes each time the program stops).  This recognizable format looks like two \032 characters, followed by the file name, line number and character position separated by colons, and a newline.
+           The Emacs-to-GDB interface program uses the two \032 characters as a signal to display the source code for the frame.
 
        -b baudrate
            Set the line speed (baud rate or bits per second) of any serial interface used by GDB for remote debugging.
@@ -233,10 +231,9 @@
 ## COPYRIGHT
        Copyright (c) 1988-2022 Free Software Foundation, Inc.
 
-       Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free
-       Software Foundation; with the Invariant Sections being "Free Software" and "Free Software Needs Free Documentation", with the Front-Cover Texts being "A GNU Manual," and with the Back-
-       Cover Texts as in (a) below.
+       Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation;
+       with the Invariant Sections being "Free Software" and "Free Software Needs Free Documentation", with the Front-Cover Texts being "A GNU Manual," and with the Back-Cover Texts as in (a) below.
 
        (a) The FSF's Back-Cover Text is: "You are free to copy and modify this GNU Manual.  Buying copies from GNU Press supports the FSF in developing GNU and promoting software freedom."
 
-gdb-                                                                                       2024-06-13                                                                                     GDB(1)
+gdb-                                                                                               2024-06-13                                                                                            GDB(1)

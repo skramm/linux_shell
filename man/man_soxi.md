@@ -13,16 +13,16 @@
        soxi [-V[level]] [-T] [-t|-r|-c|-s|-d|-D|-b|-B|-p|-e|-a] infile1 ...
 
 ## DESCRIPTION
-       Displays  information  from the header of a given audio file or files.  Supported audio file types are listed and described in soxformat(7).  Note however, that soxi is intended for use
-       only with audio files with a self-describing header.
+       Displays  information from the header of a given audio file or files.  Supported audio file types are listed and described in soxformat(7).  Note however, that soxi is intended for use only with audio
+       files with a self-describing header.
 
        By default, as much information as is available is shown.  An option may be given to select just a single piece of information (perhaps for use in a script or batch-file).
 
 ## OPTIONS
        -V     Set verbosity. See sox(1) for details.
 
-       -T     Used with multiple files; changes the behaviour of -s, -d and -D to display the total across all given files.  Note that when used with -s  with  files  with  different  sampling
-              rates, this is of questionable value.
+       -T     Used with multiple files; changes the behaviour of -s, -d and -D to display the total across all given files.  Note that when used with -s with files with different sampling rates, this  is  of
+              questionable value.
 
        -t     Show detected file-type.
 
@@ -57,13 +57,13 @@
 LICENSE
        Copyright 2008-2013 by Chris Bagwell and SoX Contributors.
 
-       This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2,
-       or (at your option) any later version.
+       This  program  is  free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2, or (at your
+       option) any later version.
 
-       This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See
-       the GNU General Public License for more details.
+       This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+       Public License for more details.
 
 ## AUTHORS
        Chris Bagwell (cbagwell@users.sourceforge.net).  Other authors and contributors are listed in the ChangeLog file that is distributed with the source code.
 
-soxi                                                                                    February 1, 2013                                                                                 SoXI(1)
+soxi                                                                                            February 1, 2013                                                                                        SoXI(1)

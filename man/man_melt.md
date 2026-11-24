@@ -145,4 +145,4 @@
        Copyright © 2002-2021 Meltytech, LLC <https://www.mltframework.org/>
        This is free software; see the source for copying conditions.  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-melt 7.4.0                                                                                December 2021                                                                                  MELT(1)
+melt 7.4.0                                                                                       December 2021                                                                                          MELT(1)

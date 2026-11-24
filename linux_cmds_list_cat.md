@@ -32,7 +32,7 @@ Catégories:
 * 25 - [Référence & aide des commandes](#cat23)
 * 26 - [Multimédia](#cat24)
 
-Total: 325 commandes
+Total: 322 commandes
 
 **Statut**: 
 - _builtin_: commande intégrée au Shell
@@ -52,13 +52,13 @@ Total: 325 commandes
 | [alias](man/help_alias.md) | composition de commandes | [unalias](linux_cmds_list_alpha.md#u) | _builtin_ |
 | [bash](man/man_bash.md) | démarre un interpréteur | [sh](linux_cmds_list_alpha.md#s) | _installed_ |
 | [history](man/man_history.md) | historique des commandes |  | _builtin_ |
-| locate ([G](https://www.google.fr/search?q=linux+locate)) | localise un programme dans le système | [which](linux_cmds_list_alpha.md#w) | NI |
+| [locate](man/man_locate.md) | localise un programme dans le système | [which](linux_cmds_list_alpha.md#w) | _installed_ |
 | [lsb_release](man/man_lsb_release.md) | version distribution | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
 | [pwd](man/man_pwd.md) | _print working directory_ |  | _builtin_ |
 | [sh](man/man_sh.md) | démarre un interpréteur | [bash](linux_cmds_list_alpha.md#b) | _installed_ |
 | [unalias](man/help_unalias.md) | suppression d'un alias | [alias](linux_cmds_list_alpha.md#a) | _builtin_ |
 | [uname](man/man_uname.md) | version noyau | [lsb_release,arch](linux_cmds_list_alpha.md#l) | _installed_ |
-| updatedb ([G](https://www.google.fr/search?q=linux+updatedb)) | mise à jour BDD `locate` | [locate](linux_cmds_list_alpha.md#l) | NI |
+| [updatedb](man/man_updatedb.md) | mise à jour BDD `locate` | [locate](linux_cmds_list_alpha.md#l) | _installed_ |
 | [wc](man/man_wc.md) | _word count_ |  | _installed_ |
 
 ## 2 - catégorie: Édition/visualisation fichiers
@@ -98,8 +98,8 @@ Total: 325 commandes
 | [fsck](man/man_fsck.md) | Vérification et correction système de fichier |  | _installed_ |
 | [hdparm](man/man_hdparm.md) | accès/édition paramètres des disques |  | _installed_ |
 | [mount](man/man_mount.md) | montage de partitions | [umount](linux_cmds_list_alpha.md#u) | _installed_ |
-| ncdu ([G](https://www.google.fr/search?q=linux+ncdu)) | `du` en mieux | [du](linux_cmds_list_alpha.md#d) | NI |
-| smartctl ([G](https://www.google.fr/search?q=linux+smartctl)) | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques |  | NI |
+| [ncdu](man/man_ncdu.md) | `du` en mieux | [du](linux_cmds_list_alpha.md#d) | _installed_ |
+| [smartctl](man/man_smartctl.md) | accès aux données [SMART](https://fr.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology) des disques |  | _installed_ |
 | testdisk ([G](https://www.google.fr/search?q=linux+testdisk)) | récupération données HDD | [ddrescue](linux_cmds_list_alpha.md#d) | NI |
 | [umount](man/man_umount.md) | démontage de partitions | [mount](linux_cmds_list_alpha.md#m) | _installed_ |
 
@@ -114,7 +114,7 @@ Total: 325 commandes
 | [comm](man/man_comm.md) | comparaison de fichiers, par ligne | [diff](linux_cmds_list_alpha.md#d) | _installed_ |
 | [cp](man/man_cp.md) | copie fichier(s) | [mv](linux_cmds_list_alpha.md#m) | _installed_ |
 | [diff](man/man_diff.md) | différences entre 2 fichiers, ligne par ligne | [cmp](linux_cmds_list_alpha.md#c) | _installed_ |
-| exiftool ([G](https://www.google.fr/search?q=linux+exiftool)) | manipulation métadonnées fichier image, audio, etc. |  | NI |
+| [exiftool](man/man_exiftool.md) | manipulation métadonnées fichier image, audio, etc. |  | _installed_ |
 | [ln](man/man_ln.md) | création de lien, symbolique ou _hardlink_ | [GNU](linux_cmds_list_alpha.md#G) | _installed_ |
 | [mv](man/man_mv.md) | déplacement/renommage | [cp](linux_cmds_list_alpha.md#c) | _installed_ |
 | [rm](man/man_rm.md) | suppression fichier | [rmdir](linux_cmds_list_alpha.md#r) | _installed_ |
@@ -146,25 +146,25 @@ Total: 325 commandes
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [arp](man/man_arp.md) | affichage table arp |  | _installed_ |
-| brctl ([G](https://www.google.fr/search?q=linux+brctl)) | gestion des "bridges" réseau | [nmcli](linux_cmds_list_alpha.md#n) | NI |
+| [brctl](man/man_brctl.md) | gestion des "bridges" réseau | [nmcli](linux_cmds_list_alpha.md#n) | _installed_ |
 | [curl](man/man_curl.md) | client multiprotocoles (wget en mieux) | [wget](linux_cmds_list_alpha.md#w) | _installed_ |
 | [dig](man/man_dig.md) | requete DNS | [nslookup](linux_cmds_list_alpha.md#n) | _installed_ |
 | [ftp](man/man_ftp.md) | transfert de fichiers |  | _installed_ |
 | [host](man/man_host.md) | requete DNS | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
 | [hostname](man/man_hostname.md) | nom de la machine |  | _installed_ |
-| ifdown ([G](https://www.google.fr/search?q=linux+ifdown)) | désactivation interface réseau |  | NI |
+| [ifdown](man/man_ifdown.md) | désactivation interface réseau |  | _installed_ |
 | iftop ([G](https://www.google.fr/search?q=linux+iftop)) | monitoring réseau |  | NI |
-| ifup ([G](https://www.google.fr/search?q=linux+ifup)) | activation interface réseau |  | NI |
+| [ifup](man/man_ifup.md) | activation interface réseau |  | _installed_ |
 | [ip](man/man_ip.md) | affichage et édition des interfaces réseau |  | _installed_ |
 | [mtr](man/man_mtr.md) | affiche les étapes d'une requete réseau | [traceroute](linux_cmds_list_alpha.md#t) | _installed_ |
 | [nc](man/man_nc.md) | alias pour netcat | [netcat](linux_cmds_list_alpha.md#n) | _installed_ |
 | [netcat](man/man_netcat.md) | utilitaire TCP/UDP | [nc](linux_cmds_list_alpha.md#n) | _installed_ |
 | [netstat](man/man_netstat.md) | infos/reseau, routage, etc. |  | _installed_ |
-| nmap ([G](https://www.google.fr/search?q=linux+nmap)) | exploration réseau |  | NI |
-| nmcli ([G](https://www.google.fr/search?q=linux+nmcli)) | pilote CLI des connexions réseau |  | NI |
+| [nmap](man/man_nmap.md) | exploration réseau |  | _installed_ |
+| [nmcli](man/man_nmcli.md) | pilote CLI des connexions réseau |  | _installed_ |
 | [nslookup](man/man_nslookup.md) | requete DNS (_deprecated_) | [dig](linux_cmds_list_alpha.md#d) | _installed_ |
 | [ping](man/man_ping.md) | envoi de trames ICMP |  | _installed_ |
-| rdap ([G](https://www.google.fr/search?q=linux+rdap)) | infos/domaine | [whois](linux_cmds_list_alpha.md#w) | NI |
+| rdap ([G](https://www.google.fr/search?q=linux+rdap)) | infos/domaine | [whois](linux_cmds_list_alpha.md#w) | _installed_ |
 | [route](man/man_route.md) | affiche ou édite la table de routage |  | _installed_ |
 | [rsync](man/man_rsync.md) | copie et synchronisation de fichiers entre machines |  | _installed_ |
 | [scp](man/man_scp.md) | tranfert de fichiers entre machines |  | _installed_ |
@@ -173,10 +173,10 @@ Total: 325 commandes
 | [ssh-copy-id](man/man_ssh-copy-id.md) |  |  | _installed_ |
 | [ssh-keygen](man/man_ssh-keygen.md) | Génération de clés SSH |  | _installed_ |
 | [tcpdump](man/man_tcpdump.md) | capture trames réseau (Wireshark en CLI) |  | _installed_ |
-| traceroute ([G](https://www.google.fr/search?q=linux+traceroute)) | affiche les étapes d'une requete réseau | [mtr](linux_cmds_list_alpha.md#m) | NI |
+| [traceroute](man/man_traceroute.md) | affiche les étapes d'une requete réseau | [mtr](linux_cmds_list_alpha.md#m) | _installed_ |
 | [ufw](man/man_ufw.md) |  pilote CLI de Firewall  |  | _installed_ |
 | [wget](man/man_wget.md) | client http CLI | [curl](linux_cmds_list_alpha.md#c) | _installed_ |
-| whois ([G](https://www.google.fr/search?q=linux+whois)) | infos/domaine (obsolete) | [rdap](linux_cmds_list_alpha.md#r) | NI |
+| [whois](man/man_whois.md) | infos/domaine (obsolete) | [rdap](linux_cmds_list_alpha.md#r) | _installed_ |
 
 ## 7 - catégorie: Fichiers & permissions
 <a name='cat5'></a>
@@ -195,7 +195,7 @@ Total: 325 commandes
 | mknode ([G](https://www.google.fr/search?q=linux+mknode)) | création fichier spécial (périphérique _block_ ou _character_) |  | NI |
 | [setfacl](man/man_setfacl.md) | modification des [ACL](https://linux.goffinet.org/administration/securite-locale/access-control-lists-acls-linux/) de fichiers/dossier | [getfacl](linux_cmds_list_alpha.md#g) | _installed_ |
 | [tune2fs](man/man_tune2fs.md) | paramétrage système de fichier "ext" |  | _installed_ |
-| [umask](man/help_umask.md) | permissions par défaut | [chmod](linux_cmds_list_alpha.md#c) | _builtin_ |
+| [umask](man/man_umask.md) | permissions par défaut | [chmod](linux_cmds_list_alpha.md#c) | _builtin_ |
 
 ## 8 - catégorie: Système & _Hardware_
 <a name='cat1'></a>
@@ -204,7 +204,7 @@ Total: 325 commandes
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| acpi ([G](https://www.google.fr/search?q=linux+acpi)) | details sur alimentation (batterie ou secteur) | [upower,dmidecode](linux_cmds_list_alpha.md#u) | NI |
+| [acpi](man/man_acpi.md) | details sur alimentation (batterie ou secteur) | [upower,dmidecode](linux_cmds_list_alpha.md#u) | _installed_ |
 | [arch](man/man_arch.md) | architecture processeur | [uname](linux_cmds_list_alpha.md#u) | _installed_ |
 | [dmidecode](man/man_dmidecode.md) | interface sur le BIOS | [acpi](linux_cmds_list_alpha.md#a) | _installed_ |
 | [findmnt](man/man_findmnt.md) | _find a filesystem_ |  | _installed_ |
@@ -213,19 +213,19 @@ Total: 325 commandes
 | [losetup](man/man_losetup.md) | _set up and control loop devices_ | [lsblk](linux_cmds_list_alpha.md#l) | _installed_ |
 | [lsblk](man/man_lsblk.md) | liste périphs stockage "bloc" | [blkid](linux_cmds_list_alpha.md#b) | _installed_ |
 | [lscpu](man/man_lscpu.md) | détails sur archi CPU |  | _installed_ |
-| lsdev ([G](https://www.google.fr/search?q=linux+lsdev)) | infos générales sur _hardware_ |  | NI |
+| [lsdev](man/man_lsdev.md) | infos générales sur _hardware_ |  | _installed_ |
 | [lshw](man/man_lshw.md) | _list hardware_ |  | _installed_ |
 | [lsof](man/man_lsof.md) | _list open files_ | [ss](linux_cmds_list_alpha.md#s) | _installed_ |
 | [lspci](man/man_lspci.md) | _list all PCI devices_ |  | _installed_ |
-| lstopo ([G](https://www.google.fr/search?q=linux+lstopo)) | architecture CPU (coeurs, RAM cache, ...) |  | NI |
+| [lstopo](man/man_lstopo.md) | architecture CPU (coeurs, RAM cache, ...) |  | _installed_ |
 | [lsusb](man/man_lsusb.md) | liste périphs USB |  | _installed_ |
 | [reboot](man/man_reboot.md) | reboot | [shutdown,halt](linux_cmds_list_alpha.md#s) | _installed_ |
-| sensors ([G](https://www.google.fr/search?q=linux+sensors)) | données capteurs (température, tension, etc.) |  | NI |
+| [sensors](man/man_sensors.md) | données capteurs (température, tension, etc.) |  | _installed_ |
 | [shutdown](man/man_shutdown.md) | Comme son nom l'indique... | [reboot,halt](linux_cmds_list_alpha.md#r) | _installed_ |
 | [ss](man/man_ss.md) | _socket statistics_ | [lsof](linux_cmds_list_alpha.md#l) | _installed_ |
 | [su](man/man_su.md) | changement temporaire de _user_ | [sudo](linux_cmds_list_alpha.md#s) | _installed_ |
 | [sudo](man/man_sudo.md) | exécution d'une commande admin | [su](linux_cmds_list_alpha.md#s) | _installed_ |
-| upower ([G](https://www.google.fr/search?q=linux+upower)) | client du _daemon_ `upowerd`, gerant l'alimentation | [acpi](linux_cmds_list_alpha.md#a) | NI |
+| [upower](man/man_upower.md) | client du _daemon_ `upowerd`, gerant l'alimentation | [acpi](linux_cmds_list_alpha.md#a) | _installed_ |
 
 ## 9 - catégorie: Mémoire
 <a name='cat22'></a>
@@ -235,7 +235,7 @@ Total: 325 commandes
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [free](man/man_free.md) | état RAM utilisée/libre | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
-| lstopo ([G](https://www.google.fr/search?q=linux+lstopo)) | architecture CPU (coeurs, RAM cache, ...) |  | NI |
+| [lstopo](man/man_lstopo.md) | architecture CPU (coeurs, RAM cache, ...) |  | _installed_ |
 | [swapoff](man/man_swapoff.md) | gestion mémoire _swap_ | [swapon](linux_cmds_list_alpha.md#s) | _installed_ |
 | [swapon](man/man_swapon.md) | gestion mémoire _swap_ | [swapoff](linux_cmds_list_alpha.md#s) | _installed_ |
 | [vmstat](man/man_vmstat.md) | état mémoire virtuelle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
@@ -251,7 +251,7 @@ Total: 325 commandes
 | [cmake](man/man_cmake.md) | outil de _build_ multi OS |  | _installed_ |
 | [g++](man/man_g++.md) | compilation C++ |  | _installed_ |
 | [gcc](man/man_gcc.md) | compilation C |  | _installed_ |
-| gdb ([G](https://www.google.fr/search?q=linux+gdb)) | déboggage pas à pas |  | NI |
+| [gdb](man/man_gdb.md) | déboggage pas à pas |  | _installed_ |
 | [git](man/man_git.md) | **LE** gestionnaire de versions de fichiers source |  | _installed_ |
 | [ld](man/man_ld.md) | _linker_ de binaires |  | _installed_ |
 | [ldconfig](man/man_ldconfig.md) | _configure dynamic linker run-time bindings_ |  | _installed_ |
@@ -301,7 +301,7 @@ Total: 325 commandes
 | [id](man/man_id.md) | affiche les infos sur un utilisateur | [whoami](linux_cmds_list_alpha.md#w) | _installed_ |
 | [last](man/man_last.md) | historique des logins & boots | [boot](linux_cmds_list_alpha.md#b) | _installed_ |
 | [passwd](man/man_passwd.md) | changement pwd | [chage,pwd](linux_cmds_list_alpha.md#c) | _installed_ |
-| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [pwd](linux_cmds_list_alpha.md#p) | NI |
+| [pwgen](man/man_pwgen.md) | génération de _password_ | [pwd](linux_cmds_list_alpha.md#p) | _installed_ |
 | [useradd](man/man_useradd.md) | création utilisateur (bas niveau!) | [adduser](linux_cmds_list_alpha.md#a) | _installed_ |
 | [userdel](man/man_userdel.md) | suppression compte |  | _installed_ |
 | [usermod](man/man_usermod.md) | modification compte utilisateur |  | _installed_ |
@@ -319,10 +319,10 @@ Total: 325 commandes
 | [apt](man/man_apt.md) | gestion paquets Debian |  | _installed_ |
 | [apt-get](man/man_apt-get.md) | gestion paquets Debian (bas niveau) |  | _installed_ |
 | [dpkg](man/man_dpkg.md) | utilitaire paquets Debian (.deb) |  | _installed_ |
-| npm ([G](https://www.google.fr/search?q=linux+npm)) | gestionnaire de paquets Javascript |  | _installed_ |
+| [npm](man/man_npm.md) | gestionnaire de paquets Javascript |  | _installed_ |
 | [pip](man/man_pip.md) | gestionnaire de paquets Python (2 ou 3) |  | _installed_ |
 | [pip3](man/man_pip3.md) | gestionnaire de paquets Python3 |  | _installed_ |
-| [rpm](man/man_rpm.md) | gestion paquets Fedora |  | _installed_ |
+| rpm ([G](https://www.google.fr/search?q=linux+rpm)) | gestion paquets Fedora |  | NI |
 | [snap](man/man_snap.md) | utilitaire de controle des "snap" (Ubuntu) |  | _installed_ |
 | yum ([G](https://www.google.fr/search?q=linux+yum)) | gestion paquets RedHat |  | NI |
 
@@ -333,25 +333,25 @@ Total: 325 commandes
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| at ([G](https://www.google.fr/search?q=linux+at)) | planification de tâches | [cron](linux_cmds_list_alpha.md#c) | NI |
+| [at](man/man_at.md) | planification de tâches | [cron](linux_cmds_list_alpha.md#c) | _installed_ |
 | [bc](man/man_bc.md) | calculatrice CLI |  | _installed_ |
-| [cal](man/help_cal.md) | affichage calendrier | [date](linux_cmds_list_alpha.md#d) | NI |
+| [cal](man/man_cal.md) | affichage calendrier | [date](linux_cmds_list_alpha.md#d) | _installed_ |
 | [convert](man/man_convert.md) | conversion format d'image |  | _installed_ |
 | [cron](man/man_cron.md) | planification de tâches | [at](linux_cmds_list_alpha.md#a) | _installed_ |
 | [date](man/man_date.md) | affiche date & heure | [cal](linux_cmds_list_alpha.md#c) | _installed_ |
 | [env](man/man_env.md) | exécution d'un programme en modifiant l'environnement | [printenv](linux_cmds_list_alpha.md#p) | _installed_ |
 | [eval](man/help_eval.md) | exécute la commande passée en argument | [exec](linux_cmds_list_alpha.md#e) | _builtin_ |
-| [exec](man/help_exec.md) | exécute la commande passée en argument dans le même process | [eval](linux_cmds_list_alpha.md#e) | _builtin_ |
+| [exec](man/man_exec.md) | exécute la commande passée en argument dans le même process | [eval](linux_cmds_list_alpha.md#e) | _builtin_ |
 | [export](man/help_export.md) | exportation de variable dans un sous-shell |  | _builtin_ |
 | [fc-list](man/man_fc-list.md) | _list available fonts_ | [pango-list](linux_cmds_list_alpha.md#p) | _installed_ |
 | [fmt](man/man_fmt.md) | text formatter |  | _installed_ |
 | [nano](man/man_nano.md) | éditeur en mode "console" |  | _installed_ |
 | [nl](man/man_nl.md) | numérotation lignes d'un fichier | [bat](linux_cmds_list_alpha.md#b) | _installed_ |
-| pango-list ([G](https://www.google.fr/search?q=linux+pango-list)) | liste des polices de caractères installées | [fc-list](linux_cmds_list_alpha.md#f) | NI |
+| pango-list ([G](https://www.google.fr/search?q=linux+pango-list)) | liste des polices de caractères installées | [fc-list](linux_cmds_list_alpha.md#f) | _installed_ |
 | [printenv](man/man_printenv.md) | liste var. environnement | [env](linux_cmds_list_alpha.md#e) | _installed_ |
-| pv ([G](https://www.google.fr/search?q=linux+pv)) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) |  | NI |
+| [pv](man/man_pv.md) | _Pipe Viewer_ (monitoring de _pipe_ ou de copie) |  | _installed_ |
 | [seq](man/man_seq.md) | _print a sequence of numbers_ |  | _installed_ |
-| [set](man/man_set.md) | paramétrage du shell |  | _builtin_ |
+| [set](man/help_set.md) | paramétrage du shell |  | _builtin_ |
 | [sleep](man/man_sleep.md) | attente | [time,at](linux_cmds_list_alpha.md#t) | _installed_ |
 | [tee](man/man_tee.md) | modif redirection (stdout, stderr) |  | _installed_ |
 | [time](man/man_time.md) | chronométrage de tâche |  | _builtin_ |
@@ -371,7 +371,7 @@ Total: 325 commandes
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [clear](man/man_clear.md) | effacement terminal |  | _installed_ |
-| [screen](man/man_screen.md) | multiplexeur de terminal | [tmux,terminal](linux_cmds_list_alpha.md#t) | _installed_ |
+| screen ([G](https://www.google.fr/search?q=linux+screen)) | multiplexeur de terminal | [tmux,terminal](linux_cmds_list_alpha.md#t) | NI |
 | [setterm](man/man_setterm.md) | paramétrage du terminal |  | _installed_ |
 | [tmux](man/man_tmux.md) | multiplexeur de terminal | [screen,terminal](linux_cmds_list_alpha.md#s) | _installed_ |
 
@@ -399,16 +399,16 @@ Total: 325 commandes
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [basename](man/man_basename.md) | extraction nom à partir d'un chemin complet | [dirname](linux_cmds_list_alpha.md#d) | _installed_ |
-| [break](man/help_break.md) | sortie de boucle "for" | [for](linux_cmds_list_alpha.md#f) | _builtin_ |
+| [break](man/man_break.md) | sortie de boucle for, while | [for](linux_cmds_list_alpha.md#f) | _builtin_ |
 | [case](man/help_case.md) |  |  | _builtin_ |
 | [dirname](man/man_dirname.md) | extraction du dossier à partir d'un chemin complet | [basename](linux_cmds_list_alpha.md#b) | _installed_ |
 | [echo](man/man_echo.md) | affichage de texte/variable | [printf](linux_cmds_list_alpha.md#p) | _builtin_ |
-| [exit](man/help_exit.md) | Terminaison du script et renvoi  d'une valeur à l'OS | [return](linux_cmds_list_alpha.md#r) | _builtin_ |
+| [exit](man/man_exit.md) | terminaison du script et renvoi  d'une valeur à l'OS | [return](linux_cmds_list_alpha.md#r) | _builtin_ |
 | [for](man/help_for.md) |  |  | _builtin_ |
 | [function](man/help_function.md) | définition d'une fonction Bash |  | _builtin_ |
-| [if](man/help_if.md) |  |  | _builtin_ |
+| [if](man/help_if.md) | test d'une condition |  | _builtin_ |
 | [printf](man/man_printf.md) | affichage de texte/variable formatté | [echo](linux_cmds_list_alpha.md#e) | _builtin_ |
-| [read](man/help_read.md) | saisie ligne (clavier ou fichier) |  | _builtin_ |
+| [read](man/man_read.md) | saisie ligne (clavier ou fichier) |  | _builtin_ |
 | [return](man/help_return.md) | fin de fonction | [exit,function](linux_cmds_list_alpha.md#e) | _builtin_ |
 | [shift](man/help_shift.md) | décalage paramètres positionnels ($1, $2, ...) |  | _builtin_ |
 | [source](man/help_source.md) | exécution d'un script dans le même shell |  | _builtin_ |
@@ -420,23 +420,22 @@ Total: 325 commandes
 ## 18 - catégorie: Gestion Kernel
 <a name='cat13'></a>
 
-16 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
+15 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [depmod](man/man_depmod.md) | _generates modules.dep and map files_ |  | _installed_ |
 | [dmesg](man/man_dmesg.md) | affichage logs kernel (buffer circulaire) |  | _installed_ |
 | [insmod](man/man_insmod.md) | _insert a module into the kernel_ |  | _installed_ |
-| [iostat](man/man_iostat.md) | statistiques I/O |  | _installed_ |
+| iostat ([G](https://www.google.fr/search?q=linux+iostat)) | statistiques I/O |  | NI |
 | [journalctl](man/man_journalctl.md) | outil d'accès aux logs systemd | [systemctl](linux_cmds_list_alpha.md#s) | _installed_ |
 | [loginctl](man/man_loginctl.md) | _Control the systemd login manager_ | [systemctl](linux_cmds_list_alpha.md#s) | _installed_ |
 | [lsmod](man/man_lsmod.md) | _show the status of modules in the kernel_ |  | _installed_ |
 | [modinfo](man/man_modinfo.md) | _show information about a module_ |  | _installed_ |
 | [modprobe](man/man_modprobe.md) | _add and remove modules from the kernel_ |  | _installed_ |
-| [pidstat](man/man_pidstat.md) | statistiques process |  | _installed_ |
+| pidstat ([G](https://www.google.fr/search?q=linux+pidstat)) | statistiques process |  | NI |
 | [rmmod](man/man_rmmod.md) | _remove a module from the kernel_ |  | _installed_ |
 | [strace](man/man_strace.md) | _trace system calls and signals_ |  | _installed_ |
-| sysdig ([G](https://www.google.fr/search?q=linux+sysdig)) | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
 | [systemctl](man/man_systemctl.md) | gestion des services (CLI/systemd) |  | _installed_ |
 | [uname](man/man_uname.md) | version noyau | [lsb_release,arch](linux_cmds_list_alpha.md#l) | _installed_ |
 | [zramctl](man/man_zramctl.md) | paramétrage et controle de la compression RAM |  | _installed_ |
@@ -444,7 +443,7 @@ Total: 325 commandes
 ## 19 - catégorie: Sécurité & Performance
 <a name='cat17'></a>
 
-11 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
+9 commandes - <a href='#top'>Haut de page</a> - [Liste alphabétique](linux_cmds_list_alpha.md) - [Liste par type](linux_cmds_list_type.md)
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
@@ -452,12 +451,10 @@ Total: 325 commandes
 | [ab](man/man_ab.md) | _Apache's server benchmarking tool_ | [hey](linux_cmds_list_alpha.md#h) | _installed_ |
 | auditd ([G](https://www.google.fr/search?q=linux+auditd)) | _Logging_ des actions système |  | NI |
 | [cpupower](man/man_cpupower.md) | accès/édition paramètres de puissance CPU |  | _installed_ |
-| falco ([G](https://www.google.fr/search?q=linux+falco)) | _kernel monitoring and detection agent_ | [sysdig](linux_cmds_list_alpha.md#s) | NI |
-| hey ([G](https://www.google.fr/search?q=linux+hey)) | _HTTP load generator_ | [ab](linux_cmds_list_alpha.md#a) | NI |
+| [hey](man/man_hey.md) | _HTTP load generator_ | [ab](linux_cmds_list_alpha.md#a) | _installed_ |
 | [logger](man/man_logger.md) | écriture dans un log système |  | _installed_ |
 | [strace](man/man_strace.md) | _trace system calls and signals_ |  | _installed_ |
-| stress ([G](https://www.google.fr/search?q=linux+stress)) | génération de charge CPU |  | NI |
-| sysdig ([G](https://www.google.fr/search?q=linux+sysdig)) | _Cloud-Native Application Protection Platform_ | [falco](linux_cmds_list_alpha.md#f) | NI |
+| [stress](man/man_stress.md) | génération de charge CPU |  | _installed_ |
 | [ufw](man/man_ufw.md) |  pilote CLI de Firewall  |  | _installed_ |
 
 ## 20 - catégorie: Interface avec bureau
@@ -468,15 +465,15 @@ Total: 325 commandes
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [display](man/man_display.md) | affichage d'une image sur serveur X |  | _installed_ |
-| evtest ([G](https://www.google.fr/search?q=linux+evtest)) | affichage évènements clavier+souris | [showkey,xev](linux_cmds_list_alpha.md#s) | NI |
-| notify-send ([G](https://www.google.fr/search?q=linux+notify-send)) | Envoi de notification au bureau |  | NI |
+| [evtest](man/man_evtest.md) | affichage évènements clavier+souris | [showkey,xev](linux_cmds_list_alpha.md#s) | _installed_ |
+| [notify-send](man/man_notify-send.md) | Envoi de notification au bureau |  | _installed_ |
 | [showkey](man/man_showkey.md) | affichage codes claviers en temps réel | [xev,evtest ](linux_cmds_list_alpha.md#x) | _installed_ |
 | wl-paste ([G](https://www.google.fr/search?q=linux+wl-paste)) | copie presse-papier (Wayland) |  | NI |
-| xclip ([G](https://www.google.fr/search?q=linux+xclip)) | transfert vers le presse-papier X |  | NI |
+| [xclip](man/man_xclip.md) | transfert vers le presse-papier X |  | _installed_ |
 | [xdg-open](man/man_xdg-open.md) | ouverture fichier avec application GUI associée au type par défaut |  | _installed_ |
-| xev ([G](https://www.google.fr/search?q=linux+xev)) | affichage évènements clavier+souris | [showkey,evtest](linux_cmds_list_alpha.md#s) | NI |
-| xinput ([G](https://www.google.fr/search?q=linux+xinput)) | _utility to configure and test X input devices_ |  | NI |
-| zenity ([G](https://www.google.fr/search?q=linux+zenity)) | génération de dialogues GUI via CLI |  | NI |
+| [xev](man/man_xev.md) | affichage évènements clavier+souris | [showkey,evtest](linux_cmds_list_alpha.md#s) | _installed_ |
+| [xinput](man/man_xinput.md) | _utility to configure and test X input devices_ |  | _installed_ |
+| [zenity](man/man_zenity.md) | génération de dialogues GUI via CLI |  | _installed_ |
 
 ## 21 - catégorie: Compression
 <a name='cat19'></a>
@@ -501,22 +498,22 @@ Total: 325 commandes
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| banner ([G](https://www.google.fr/search?q=linux+banner)) | affichage bannière | [figlet,toilet](linux_cmds_list_alpha.md#f) | NI |
+| [banner](man/man_banner.md) | affichage bannière | [figlet,toilet](linux_cmds_list_alpha.md#f) | _installed_ |
 | [base64](man/man_base64.md) | encodage/décodage <a href="https://fr.wikipedia.org/wiki/Base64">base64</a> |  | _installed_ |
-| cowsay ([G](https://www.google.fr/search?q=linux+cowsay)) | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) |  | NI |
-| figlet ([G](https://www.google.fr/search?q=linux+figlet)) | affichage bannière | [toilet,banner](linux_cmds_list_alpha.md#t) | NI |
-| fortune ([G](https://www.google.fr/search?q=linux+fortune)) | affiche une maxime |  | NI |
-| [jo](man/help_jo.md) | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | NI |
-| lolcat ([G](https://www.google.fr/search?q=linux+lolcat)) | _rainbow coloring effect for text console display_ |  | NI |
+| [cowsay](man/man_cowsay.md) | [lien](https://en.wikipedia.org/wiki/Cattle#/media/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg) |  | _installed_ |
+| figlet ([G](https://www.google.fr/search?q=linux+figlet)) | affichage bannière | [toilet,banner](linux_cmds_list_alpha.md#t) | _installed_ |
+| [fortune](man/man_fortune.md) | affiche une maxime |  | _installed_ |
+| [jo](man/man_jo.md) | génération de JSON | [jq](linux_cmds_list_alpha.md#j) | _installed_ |
+| [lolcat](man/man_lolcat.md) | _rainbow coloring effect for text console display_ |  | _installed_ |
 | [md5sum](man/man_md5sum.md) | calcul de hash MD5 |  | _installed_ |
-| pango-view ([G](https://www.google.fr/search?q=linux+pango-view)) | _convert text to image_ |  | NI |
-| pwgen ([G](https://www.google.fr/search?q=linux+pwgen)) | génération de _password_ | [pwd](linux_cmds_list_alpha.md#p) | NI |
-| qrencode ([G](https://www.google.fr/search?q=linux+qrencode)) | génération de qrcodes |  | NI |
+| [pango-view](man/man_pango-view.md) | _convert text to image_ |  | _installed_ |
+| [pwgen](man/man_pwgen.md) | génération de _password_ | [pwd](linux_cmds_list_alpha.md#p) | _installed_ |
+| [qrencode](man/man_qrencode.md) | génération de qrcodes |  | _installed_ |
 | [sha256sum](man/man_sha256sum.md) | calcul de hash SHA256 |  | _installed_ |
 | [shasum](man/man_shasum.md) | calcul de hash SHA (256,512,...) | [sha256sum](linux_cmds_list_alpha.md#s) | _installed_ |
-| toilet ([G](https://www.google.fr/search?q=linux+toilet)) | affichage bannière | [banner,figlet](linux_cmds_list_alpha.md#b) | NI |
-| [uuid](man/man_uuid.md) | génération de _Universally Unique IDentifier_ |  | NI |
-| xcowsay ([G](https://www.google.fr/search?q=linux+xcowsay)) | cowsay version graphique | [cowsay](linux_cmds_list_alpha.md#c) | NI |
+| [toilet](man/man_toilet.md) | affichage bannière | [banner,figlet](linux_cmds_list_alpha.md#b) | _installed_ |
+| [uuid](man/man_uuid.md) | génération de _Universally Unique IDentifier_ |  | _installed_ |
+| [xcowsay](man/man_xcowsay.md) | cowsay version graphique | [cowsay](linux_cmds_list_alpha.md#c) | _installed_ |
 
 ## 23 - catégorie: Monitoring système
 <a name='cat21'></a>
@@ -525,13 +522,13 @@ Total: 325 commandes
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| btop ([G](https://www.google.fr/search?q=linux+btop)) |  monitoring système | [htop,top](linux_cmds_list_alpha.md#h) | NI |
-| conky ([G](https://www.google.fr/search?q=linux+conky)) | monitoring système, paramétrable | [btop,htop](linux_cmds_list_alpha.md#b) | NI |
+| [btop](man/man_btop.md) |  monitoring système | [htop,top](linux_cmds_list_alpha.md#h) | _installed_ |
+| [conky](man/man_conky.md) | monitoring système, paramétrable | [btop,htop](linux_cmds_list_alpha.md#b) | _installed_ |
 | [htop](man/man_htop.md) | top en mieux | [top,nmon](linux_cmds_list_alpha.md#t) | _installed_ |
 | iftop ([G](https://www.google.fr/search?q=linux+iftop)) | monitoring réseau |  | NI |
-| inxi ([G](https://www.google.fr/search?q=linux+inxi)) | informations système | [lstopo-htop-lsdev](linux_cmds_list_alpha.md#l) | NI |
+| [inxi](man/man_inxi.md) | informations système | [lstopo-htop-lsdev](linux_cmds_list_alpha.md#l) | _installed_ |
 | iotop ([G](https://www.google.fr/search?q=linux+iotop)) | liste process avec leur utilisation I/O disque |  | NI |
-| nmon ([G](https://www.google.fr/search?q=linux+nmon)) | _dashboard_ système | [htop](linux_cmds_list_alpha.md#h) | NI |
+| [nmon](man/man_nmon.md) | _dashboard_ système | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
 | [ps](man/man_ps.md) | snapshot des process | [top,pstree](linux_cmds_list_alpha.md#t) | _installed_ |
 | [pstree](man/man_pstree.md) | arborescence des process | [ps](linux_cmds_list_alpha.md#p) | _installed_ |
 | [top](man/man_top.md) | _dashboard_ système & process | [htop](linux_cmds_list_alpha.md#h) | _installed_ |
@@ -544,7 +541,7 @@ Total: 325 commandes
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
 | [free](man/man_free.md) | état RAM utilisée/libre | [vmstat](linux_cmds_list_alpha.md#v) | _installed_ |
-| lstopo ([G](https://www.google.fr/search?q=linux+lstopo)) | architecture CPU (coeurs, RAM cache, ...) |  | NI |
+| [lstopo](man/man_lstopo.md) | architecture CPU (coeurs, RAM cache, ...) |  | _installed_ |
 | [swapoff](man/man_swapoff.md) | gestion mémoire _swap_ | [swapon](linux_cmds_list_alpha.md#s) | _installed_ |
 | [swapon](man/man_swapon.md) | gestion mémoire _swap_ | [swapoff](linux_cmds_list_alpha.md#s) | _installed_ |
 | [vmstat](man/man_vmstat.md) | état mémoire virtuelle | [free](linux_cmds_list_alpha.md#f) | _installed_ |
@@ -560,7 +557,7 @@ Total: 325 commandes
 | [help](man/help_help.md) | liste commandes "_builtin_" et aide | [man](linux_cmds_list_alpha.md#m) | _builtin_ |
 | [info](man/man_info.md) | aide sur commande | [man](linux_cmds_list_alpha.md#m) | _installed_ |
 | [man](man/man_man.md) | manuel | [help](linux_cmds_list_alpha.md#h) | _installed_ |
-| tldr ([G](https://www.google.fr/search?q=linux+tldr)) | `man` en mieux | [man](linux_cmds_list_alpha.md#m) | NI |
+| [tldr](man/man_tldr.md) | `man` en mieux | [man](linux_cmds_list_alpha.md#m) | _installed_ |
 | [whatis](man/man_whatis.md) | que fait cette commande? |  | _installed_ |
 | [whereis](man/man_whereis.md) | indique la localisation d'une commande |  | _installed_ |
 
@@ -571,15 +568,14 @@ Total: 325 commandes
 
 | Nom | Description | Voir aussi | Statut |
 |-----|-----|-----|-----|
-| aplay ([G](https://www.google.fr/search?q=linux+aplay)) | écoute de fichier audio |  | NI |
+| [aplay](man/man_aplay.md) | écoute de fichier audio |  | _installed_ |
 | asciinema ([G](https://www.google.fr/search?q=linux+asciinema)) | _screencast_ console | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
-| ffmpeg ([G](https://www.google.fr/search?q=linux+ffmpeg)) | édition vidéo généraliste | [melt](linux_cmds_list_alpha.md#m) | NI |
-| melt ([G](https://www.google.fr/search?q=linux+melt)) | édition vidéo | [ffmpeg](linux_cmds_list_alpha.md#f) | NI |
-| sox ([G](https://www.google.fr/search?q=linux+sox)) | couteau suisse audio |  | NI |
-| soxi ([G](https://www.google.fr/search?q=linux+soxi)) | détails sur fichier audio |  | NI |
-| spd-say ([G](https://www.google.fr/search?q=linux+spd-say)) | synthétiseur vocal |  | NI |
-| yt-dlp ([G](https://www.google.fr/search?q=linux+yt-dlp)) | téléchargement vidéos |  | NI |
+| [ffmpeg](man/man_ffmpeg.md) | édition vidéo généraliste | [melt](linux_cmds_list_alpha.md#m) | _installed_ |
+| [melt](man/man_melt.md) | édition vidéo | [ffmpeg](linux_cmds_list_alpha.md#f) | _installed_ |
+| [sox](man/man_sox.md) | couteau suisse audio |  | _installed_ |
+| [soxi](man/man_soxi.md) | détails sur fichier audio |  | _installed_ |
+| [spd-say](man/man_spd-say.md) | synthétiseur vocal |  | _installed_ |
+| [yt-dlp](man/man_yt-dlp.md) | téléchargement vidéos |  | _installed_ |
 
 
-_MAJ: 2026-11-20T10:38:12+0000_,
-_OS: Ubuntu - 22.04.5 LTS (Jammy Jellyfish)_
+_MAJ: 2026-11-24T14:32:00+0100_,

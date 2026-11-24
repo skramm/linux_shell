@@ -7,7 +7,9 @@ Sebastien Kramm - IUT RT Rouen
 ![cowsay](content/linux_cowsay_400.jpg)
 
 [liste alphabétique](linux_cmds_list_alpha.md) - 
-[par catégorie](linux_cmds_list_cat.md)
+[par catégorie](linux_cmds_list_cat.md) -
+[par type](linux_cmds_list_type.md) -
+[autres](content/other_stuff.md)
 
 (voir [aussi ici](https://www.google.com/search?q=linux+cheat+sheet))
 

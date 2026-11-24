@@ -13,11 +13,11 @@
        zenity [options]
 
 ## DESCRIPTION
-       zenity  is  a  program that will display GTK+ dialogs, and return (either in the return code, or on standard output) the users input. This allows you to present information, and ask for
-       information from the user, from all manner of shell scripts.
+       zenity  is a program that will display GTK+ dialogs, and return (either in the return code, or on standard output) the users input. This allows you to present information, and ask for information from
+       the user, from all manner of shell scripts.
 
-       For example, zenity --question will return either 0, 1 or 5, depending on whether the user pressed OK, Cancel or timeout has been reached. zenity --entry will output on standard  output
-       what the user typed into the text entry field.
+       For example, zenity --question will return either 0, 1 or 5, depending on whether the user pressed OK, Cancel or timeout has been reached. zenity --entry will output on standard output what  the  user
+       typed into the text entry field.
 
        Comprehensive documentation is available in the GNOME Help Browser.
 
@@ -199,8 +199,8 @@
               Set the notification text
 
        --listen
-              Listen  for commands on stdin. Commands include 'message', 'tooltip', 'icon', and 'visible' separated by a colon. For example, 'message: Hello world', 'visible: false', or 'icon:
-              /path/to/icon'. The icon command also accepts the four stock icon: 'error', 'info', 'question', and 'warning'
+              Listen for commands on stdin. Commands include 'message', 'tooltip', 'icon', and 'visible' separated by a colon. For example, 'message: Hello world', 'visible: false', or 'icon: /path/to/icon'.
+              The icon command also accepts the four stock icon: 'error', 'info', 'question', and 'warning'
 
        Progress options
 
@@ -339,8 +339,7 @@
               zenity --help-gtk
 
 ## ENVIRONMENT
-       Normally, zenity detects the terminal window from which it was launched and keeps itself above that window.  This behavior can be disabled by unsetting the  WINDOWID  environment  vari‐
-       able.
+       Normally, zenity detects the terminal window from which it was launched and keeps itself above that window.  This behavior can be disabled by unsetting the WINDOWID environment variable.
 
 ## EXAMPLES
        Display a file selector with the title Select a file to remove. The file selected is returned on standard output.
@@ -351,8 +350,7 @@
 
               zenity  --title "Select Host" --entry --text "Select the host you would like to flood-ping"
 
-       Display  a  dialog,  asking  Microsoft  Windows has been found! Would you like to remove it?. The return code will be 0 (true in shell) if OK is selected, and 1 (false) if Cancel is se‐
-       lected.
+       Display a dialog, asking Microsoft Windows has been found! Would you like to remove it?. The return code will be 0 (true in shell) if OK is selected, and 1 (false) if Cancel is selected.
 
               zenity  --question --title "Alert"  --text "Microsoft Windows has been found! Would you like to remove it?"
 
@@ -380,4 +378,4 @@
 ## SEE ALSO
        dialog(1)
 
-                                                                                          December 2011                                                                                ZENITY(1)
+                                                                                                 December 2011                                                                                        ZENITY(1)

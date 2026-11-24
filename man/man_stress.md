@@ -15,8 +15,8 @@
 ## DESCRIPTION
        stress is a tool that imposes a configurable amount of CPU, memory, I/O, or disk stress on a POSIX-compliant operating system and reports any errors it detects.
 
-       stress is not a benchmark. It is a tool used by system administrators to evaluate how well their systems will scale, by kernel programmers to evaluate perceived performance characteris‐
-       tics, and by systems programmers to expose the classes of bugs which only or more frequently manifest themselves when the system is under heavy load.
+       stress  is  not  a  benchmark. It is a tool used by system administrators to evaluate how well their systems will scale, by kernel programmers to evaluate perceived performance characteristics, and by
+       systems programmers to expose the classes of bugs which only or more frequently manifest themselves when the system is under heavy load.
 
 ## OPTIONS
        -?, --help
@@ -70,8 +70,8 @@
        Note: Numbers may be suffixed with s,m,h,d,y (time) or B,K,M,G (size).
 
 ## EXAMPLES
-       The simple case is that you just want to bring the system load average up to an arbitrary value. The following forks 13 processes, each of which spins in a tight  loop  calculating  the
-       sqrt() of a random number acquired with rand().
+       The simple case is that you just want to bring the system load average up to an arbitrary value. The following forks 13 processes, each of which spins in a tight loop calculating the sqrt() of a  ran‐
+       dom number acquired with rand().
 
            stress -c 13
 
@@ -79,13 +79,13 @@
 
            stress --quiet --cpu 1k
 
-       To see how your system performs when it is I/O bound, use the -i switch. The following forks 4 processes, each of which spins in a tight loop calling sync(), which is a system call that
-       flushes memory buffers to disk.
+       To see how your system performs when it is I/O bound, use the -i switch. The following forks 4 processes, each of which spins in a tight loop calling sync(), which is a system call that flushes memory
+       buffers to disk.
 
            stress -i 4
 
-       Multiple hogs may be combined on the same command line. The following does everything the preceding examples did in one command, but also turns up the verbosity level as well as showing
-       how to cause the command to self-terminate after 1 minute.
+       Multiple hogs may be combined on the same command line. The following does everything the preceding examples did in one command, but also turns up the verbosity level as well as showing how  to  cause
+       the command to self-terminate after 1 minute.
 
            stress -c 13 -i 4 --verbose --timeout 1m
 
@@ -102,4 +102,4 @@
 
        Currently, source code and newer versions are available at https://github.com/resurrecting-open-source-projects/stress
 
-stress-1.0.5                                                                               01 Oct 2021                                                                                 stress(1)
+stress-1.0.5                                                                                      01 Oct 2021                                                                                         stress(1)

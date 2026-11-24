@@ -26,6 +26,15 @@ Utilisation:
 #include <chrono>
 #include <iomanip>
 
+#define STOI(a) \
+	try { \
+		stoi_val = std::stoi(a); \
+	} \
+	catch( std::exception& err ) \
+	{ \
+		std::cerr << "stoi error:\n- err=" << err.what() << "\n- value=-" << a << "-\n"; \
+	}
+
 /// static stuff, used to edit generated man pages with markdown section titles (`##`)
 /// source: https://man7.org/linux/man-pages/man7/man-pages.7.html
 /// (but added some that were found, but not listed above)
@@ -133,12 +142,13 @@ readCSV_cat( std::string filename )
 	auto vcat = readCSV( filename );
 	Categories vout;
 	for( const auto& elems: vcat )
+	{
+		int stoi_val = 0;
+		STOI(elems[0]);
 		vout.push_back(
-			std::make_pair(
-				std::stoi(elems[0]),
-				elems[1]
-			)
+			std::make_pair( stoi_val, elems[1] )
 		);
+	}
 	return vout;
 }
 
@@ -190,7 +200,7 @@ En_ManType
 generateMan( std::string name )
 {
 	std::stringstream oss;
-	oss << "man " << name << " 1>/tmp/manfile 2>/dev/null";
+	oss << "man " << name << " 1>/tmp/manfile 2>>stderr";
 	auto ret = std::system( oss.str().c_str() ); // run "man"
 
 	std::stringstream oss2;
@@ -199,7 +209,7 @@ generateMan( std::string name )
 		createHeader( "help", name );
 //     addSeeAlso( name );
 
-		oss2 << "bash -c 'help " << name << "' >>../man/help_" << name << ".md 2>/dev/null";
+		oss2 << "bash -c 'help " << name << "' >>../man/help_" << name << ".md 2>>stderr";
 		auto ret2 = std::system( oss2.str().c_str() );
 		if( ret2 != 0 )
 		{
@@ -281,7 +291,9 @@ struct Command
 		_comment = vin[2];
 		_seealso = vin[3];
 		_mantype = generateMan( _name );
-		_type    = En_Type( std::stoi( vin[4] ) );
+		int stoi_val = 0;
+		STOI( vin[4] );		
+		_type    = En_Type( stoi_val );
 
 #if 0
 // fill the "see also"
@@ -297,7 +309,11 @@ struct Command
 		auto cats = split_string( vin[1], '-' );
 		assert( !cats.empty() );
 		for( const auto& c: cats )
-			_cats.emplace_back( std::stoi( c ) );
+		{
+			int stoi_val = 0;
+			STOI( c );
+			_cats.emplace_back( stoi_val );
+		}
 	}
 	bool operator < ( const Command& other )
 	{
