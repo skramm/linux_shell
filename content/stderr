@@ -1,0 +1,203 @@
+troff: <standard input>:171: warning [p 3, 3.8i]: can't break line
+No manual entry for lsdev
+bash: line 1: help: no help topics match `lsdev'.  Try `help help' or `man -k lsdev' or `info lsdev'.
+No manual entry for sensors
+bash: line 1: help: no help topics match `sensors'.  Try `help help' or `man -k sensors' or `info sensors'.
+No manual entry for acpi
+bash: line 1: help: no help topics match `acpi'.  Try `help help' or `man -k acpi' or `info acpi'.
+No manual entry for upower
+bash: line 1: help: no help topics match `upower'.  Try `help help' or `man -k upower' or `info upower'.
+No manual entry for lstopo
+bash: line 1: help: no help topics match `lstopo'.  Try `help help' or `man -k lstopo' or `info lstopo'.
+No manual entry for btop
+bash: line 1: help: no help topics match `btop'.  Try `help help' or `man -k btop' or `info btop'.
+No manual entry for iotop
+bash: line 1: help: no help topics match `iotop'.  Try `help help' or `man -k iotop' or `info iotop'.
+No manual entry for nmon
+bash: line 1: help: no help topics match `nmon'.  Try `help help' or `man -k nmon' or `info nmon'.
+No manual entry for inxi
+bash: line 1: help: no help topics match `inxi'.  Try `help help' or `man -k inxi' or `info inxi'.
+No manual entry for ncdu
+bash: line 1: help: no help topics match `ncdu'.  Try `help help' or `man -k ncdu' or `info ncdu'.
+No manual entry for smartctl
+bash: line 1: help: no help topics match `smartctl'.  Try `help help' or `man -k smartctl' or `info smartctl'.
+No manual entry for ddrescue
+bash: line 1: help: no help topics match `ddrescue'.  Try `help help' or `man -k ddrescue' or `info ddrescue'.
+No manual entry for testdisk
+bash: line 1: help: no help topics match `testdisk'.  Try `help help' or `man -k testdisk' or `info testdisk'.
+No manual entry for pango-list
+bash: line 1: help: no help topics match `pango-list'.  Try `help help' or `man -k pango-list' or `info pango-list'.
+No manual entry for at
+bash: line 1: help: no help topics match `at'.  Try `help help' or `man -k at' or `info at'.
+troff: <standard input>:13780: warning [p 132, 4.5i]: can't break line
+troff: <standard input>:13798: warning [p 132, 7.2i]: can't break line
+troff: <standard input>:13860: warning [p 132, 17.5i]: can't break line
+troff: <standard input>:13780: warning [p 132, 4.5i]: can't break line
+troff: <standard input>:13798: warning [p 132, 7.2i]: can't break line
+troff: <standard input>:13860: warning [p 132, 17.5i]: can't break line
+No manual entry for gdb
+bash: line 1: help: no help topics match `gdb'.  Try `help help' or `man -k gdb' or `info gdb'.
+No manual entry for cloc
+bash: line 1: help: no help topics match `cloc'.  Try `help help' or `man -k cloc' or `info cloc'.
+No manual entry for cd
+No manual entry for pushd
+No manual entry for popd
+No manual entry for locate
+bash: line 1: help: no help topics match `locate'.  Try `help help' or `man -k locate' or `info locate'.
+No manual entry for updatedb
+bash: line 1: help: no help topics match `updatedb'.  Try `help help' or `man -k updatedb' or `info updatedb'.
+No manual entry for ripgrep
+bash: line 1: help: no help topics match `ripgrep'.  Try `help help' or `man -k ripgrep' or `info ripgrep'.
+troff: <standard input>:659: warning [p 10, 2.3i]: cannot adjust line
+troff: <standard input>:1157: warning [p 16, 1.5i]: cannot adjust line
+No manual entry for bat
+bash: line 1: help: no help topics match `bat'.  Try `help help' or `man -k bat' or `info bat'.
+troff: <standard input>:347: warning [p 4, 5.0i]: can't break line
+troff: <standard input>:347: warning [p 4, 5.2i]: can't break line
+No manual entry for umask
+No manual entry for jobs
+No manual entry for fg
+No manual entry for bg
+No manual entry for read
+No manual entry for eval
+No manual entry for exec
+No manual entry for mknode
+bash: line 1: help: no help topics match `mknode'.  Try `help help' or `man -k mknode' or `info mknode'.
+No manual entry for ifup
+bash: line 1: help: no help topics match `ifup'.  Try `help help' or `man -k ifup' or `info ifup'.
+No manual entry for ifdown
+bash: line 1: help: no help topics match `ifdown'.  Try `help help' or `man -k ifdown' or `info ifdown'.
+No manual entry for iftop
+bash: line 1: help: no help topics match `iftop'.  Try `help help' or `man -k iftop' or `info iftop'.
+No manual entry for nmap
+bash: line 1: help: no help topics match `nmap'.  Try `help help' or `man -k nmap' or `info nmap'.
+No manual entry for whois
+bash: line 1: help: no help topics match `whois'.  Try `help help' or `man -k whois' or `info whois'.
+No manual entry for rdap
+bash: line 1: help: no help topics match `rdap'.  Try `help help' or `man -k rdap' or `info rdap'.
+No manual entry for traceroute
+bash: line 1: help: no help topics match `traceroute'.  Try `help help' or `man -k traceroute' or `info traceroute'.
+No manual entry for nmcli
+bash: line 1: help: no help topics match `nmcli'.  Try `help help' or `man -k nmcli' or `info nmcli'.
+No manual entry for brctl
+bash: line 1: help: no help topics match `brctl'.  Try `help help' or `man -k brctl' or `info brctl'.
+No manual entry for alias
+No manual entry for unalias
+No manual entry for yum
+bash: line 1: help: no help topics match `yum'.  Try `help help' or `man -k yum' or `info yum'.
+troff: <standard input>:160: warning [p 2, 9.8i]: can't break line
+troff: <standard input>:160: warning [p 2, 10.0i]: cannot adjust line
+troff: <standard input>:160: warning [p 2, 10.2i]: cannot adjust line
+troff: <standard input>:160: warning [p 2, 10.3i]: cannot adjust line
+No manual entry for npm
+bash: line 1: help: no help topics match `npm'.  Try `help help' or `man -k npm' or `info npm'.
+No manual entry for export
+tbl:<standard input>:2170: unrecognised format 'T'
+tbl:<standard input>:2170: giving up on this table
+tbl:<standard input>:2178: unrecognised format '\'
+tbl:<standard input>:2178: giving up on this table
+tbl:<standard input>:2184: unrecognised format 'o'
+tbl:<standard input>:2184: giving up on this table
+tbl:<standard input>:2188: unrecognised format '('
+tbl:<standard input>:2188: giving up on this table
+tbl:<standard input>:2194: unrecognised format '('
+tbl:<standard input>:2194: giving up on this table
+No manual entry for pwgen
+bash: line 1: help: no help topics match `pwgen'.  Try `help help' or `man -k pwgen' or `info pwgen'.
+No manual entry for type
+troff: <standard input>:846: warning [p 10, 10.8i, div '3tbd1,1', 0.7i]: can't break line
+troff: <standard input>:846: warning [p 10, 10.8i, div '3tbd1,1', 1.0i]: can't break line
+troff: <standard input>:873: warning [p 10, 10.8i, div '3tbd6,1', 1.0i]: can't break line
+troff: <standard input>:2475: warning [p 17, 22.3i]: can't break line
+troff: <standard input>:1117: warning [p 12, 9.0i]: can't break line
+troff: <standard input>:1306: warning [p 12, 9.5i, div 'an-div', 0.0i]: cannot adjust line
+troff: <standard input>:1306: warning [p 12, 9.5i, div 'an-div', 0.2i]: cannot adjust line
+troff: <standard input>:1306: warning [p 12, 9.5i, div 'an-div', 0.3i]: cannot adjust line
+troff: <standard input>:1306: warning [p 12, 9.5i, div 'an-div', 0.5i]: can't break line
+troff: <standard input>:1308: warning [p 12, 10.2i, div 'an-div', 0.0i]: cannot adjust line
+troff: <standard input>:1308: warning [p 12, 10.2i, div 'an-div', 0.2i]: cannot adjust line
+troff: <standard input>:1308: warning [p 12, 10.2i, div 'an-div', 0.3i]: cannot adjust line
+troff: <standard input>:1308: warning [p 12, 10.2i, div 'an-div', 0.5i]: can't break line
+troff: <standard input>:150: warning [p 2, 6.5i]: can't break line
+No manual entry for pv
+bash: line 1: help: no help topics match `pv'.  Try `help help' or `man -k pv' or `info pv'.
+No manual entry for cal
+No manual entry for continue
+No manual entry for if
+No manual entry for while
+No manual entry for for
+No manual entry for exit
+No manual entry for source
+No manual entry for return
+No manual entry for function
+No manual entry for case
+No manual entry for shift
+No manual entry for break
+No manual entry for trap
+No manual entry for until
+No manual entry for auditd
+bash: line 1: help: no help topics match `auditd'.  Try `help help' or `man -k auditd' or `info auditd'.
+No manual entry for aa-xxx
+bash: line 1: help: no help topics match `aa-xxx'.  Try `help help' or `man -k aa-xxx' or `info aa-xxx'.
+No manual entry for stress
+bash: line 1: help: no help topics match `stress'.  Try `help help' or `man -k stress' or `info stress'.
+No manual entry for hey
+bash: line 1: help: no help topics match `hey'.  Try `help help' or `man -k hey' or `info hey'.
+No manual entry for xclip
+bash: line 1: help: no help topics match `xclip'.  Try `help help' or `man -k xclip' or `info xclip'.
+No manual entry for notify-send
+bash: line 1: help: no help topics match `notify-send'.  Try `help help' or `man -k notify-send' or `info notify-send'.
+No manual entry for wl-paste
+bash: line 1: help: no help topics match `wl-paste'.  Try `help help' or `man -k wl-paste' or `info wl-paste'.
+No manual entry for xinput
+bash: line 1: help: no help topics match `xinput'.  Try `help help' or `man -k xinput' or `info xinput'.
+No manual entry for zenity
+bash: line 1: help: no help topics match `zenity'.  Try `help help' or `man -k zenity' or `info zenity'.
+No manual entry for xev
+bash: line 1: help: no help topics match `xev'.  Try `help help' or `man -k xev' or `info xev'.
+No manual entry for evtest
+bash: line 1: help: no help topics match `evtest'.  Try `help help' or `man -k evtest' or `info evtest'.
+troff: <standard input>:46: warning [p 1, 3.5i]: can't break line
+troff: <standard input>:1703: warning [p 25, 8.8i]: can't break line
+No manual entry for exiftool
+bash: line 1: help: no help topics match `exiftool'.  Try `help help' or `man -k exiftool' or `info exiftool'.
+No manual entry for pango-view
+bash: line 1: help: no help topics match `pango-view'.  Try `help help' or `man -k pango-view' or `info pango-view'.
+No manual entry for qrencode
+bash: line 1: help: no help topics match `qrencode'.  Try `help help' or `man -k qrencode' or `info qrencode'.
+No manual entry for jo
+No manual entry for cowsay
+bash: line 1: help: no help topics match `cowsay'.  Try `help help' or `man -k cowsay' or `info cowsay'.
+No manual entry for xcowsay
+bash: line 1: help: no help topics match `xcowsay'.  Try `help help' or `man -k xcowsay' or `info xcowsay'.
+No manual entry for banner
+bash: line 1: help: no help topics match `banner'.  Try `help help' or `man -k banner' or `info banner'.
+No manual entry for figlet
+bash: line 1: help: no help topics match `figlet'.  Try `help help' or `man -k figlet' or `info figlet'.
+No manual entry for toilet
+bash: line 1: help: no help topics match `toilet'.  Try `help help' or `man -k toilet' or `info toilet'.
+No manual entry for lolcat
+bash: line 1: help: no help topics match `lolcat'.  Try `help help' or `man -k lolcat' or `info lolcat'.
+No manual entry for fortune
+bash: line 1: help: no help topics match `fortune'.  Try `help help' or `man -k fortune' or `info fortune'.
+No manual entry for help
+No manual entry for tldr
+bash: line 1: help: no help topics match `tldr'.  Try `help help' or `man -k tldr' or `info tldr'.
+No manual entry for melt
+bash: line 1: help: no help topics match `melt'.  Try `help help' or `man -k melt' or `info melt'.
+No manual entry for ffmpeg
+bash: line 1: help: no help topics match `ffmpeg'.  Try `help help' or `man -k ffmpeg' or `info ffmpeg'.
+No manual entry for sox
+bash: line 1: help: no help topics match `sox'.  Try `help help' or `man -k sox' or `info sox'.
+No manual entry for soxi
+bash: line 1: help: no help topics match `soxi'.  Try `help help' or `man -k soxi' or `info soxi'.
+No manual entry for yt-dlp
+bash: line 1: help: no help topics match `yt-dlp'.  Try `help help' or `man -k yt-dlp' or `info yt-dlp'.
+No manual entry for asciinema
+bash: line 1: help: no help topics match `asciinema'.  Try `help help' or `man -k asciinema' or `info asciinema'.
+No manual entry for aplay
+bash: line 1: help: no help topics match `aplay'.  Try `help help' or `man -k aplay' or `info aplay'.
+No manual entry for spd-say
+bash: line 1: help: no help topics match `spd-say'.  Try `help help' or `man -k spd-say' or `info spd-say'.
+troff: <standard input>:1675: warning [p 14, 1.8i]: can't break line
+troff: <standard input>:1714: warning [p 14, 8.3i]: can't break line

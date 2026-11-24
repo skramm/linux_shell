@@ -17,7 +17,8 @@
        reboot [OPTIONS...]
 
 ## DESCRIPTION
-       halt, poweroff, reboot may be used to halt, power-off, or reboot the machine. All three commands take the same options.
+       halt, poweroff, reboot may be used to halt, power-off, or reboot the
+       machine. All three commands take the same options.
 
 ## OPTIONS
        The following options are understood:
@@ -26,20 +27,27 @@
            Print a short help text and exit.
 
        --halt
-           Halt the machine, regardless of which one of the three commands is invoked.
+           Halt the machine, regardless of which one of the three commands is
+           invoked.
 
        -p, --poweroff
-           Power-off the machine, regardless of which one of the three commands is invoked.
+           Power-off the machine, regardless of which one of the three
+           commands is invoked.
 
        --reboot
-           Reboot the machine, regardless of which one of the three commands is invoked.
+           Reboot the machine, regardless of which one of the three commands
+           is invoked.
 
        -f, --force
-           Force immediate halt, power-off, or reboot. When specified once, this results in an immediate but clean shutdown by the system manager. When specified twice, this results in an immediate shutdown
-           without contacting the system manager. See the description of --force in systemctl(1) for more details.
+           Force immediate halt, power-off, or reboot. When specified once,
+           this results in an immediate but clean shutdown by the system
+           manager. When specified twice, this results in an immediate
+           shutdown without contacting the system manager. See the description
+           of --force in systemctl(1) for more details.
 
        -w, --wtmp-only
-           Only write wtmp shutdown entry, do not actually halt, power-off, reboot.
+           Only write wtmp shutdown entry, do not actually halt, power-off,
+           reboot.
 
        -d, --no-wtmp
            Do not write wtmp shutdown entry.
@@ -54,13 +62,18 @@
        On success, 0 is returned, a non-zero failure code otherwise.
 
 ## NOTES
-       These commands are implemented in a way that preserves basic compatibility with the original SysV commands.  systemctl(1) verbs halt, poweroff, reboot provide the same functionality with some
+       These commands are implemented in a way that preserves basic
+       compatibility with the original SysV commands.  systemctl(1) verbs
+       halt, poweroff, reboot provide the same functionality with some
        additional features.
 
-       Note that on many SysV systems halt used to be synonymous to poweroff, i.e. both commands would equally result in powering the machine off. systemd is more accurate here, and halt results in halting
-       the machine only (leaving power on), and poweroff is required to actually power it off.
+       Note that on many SysV systems halt used to be synonymous to poweroff,
+       i.e. both commands would equally result in powering the machine off.
+       systemd is more accurate here, and halt results in halting the machine
+       only (leaving power on), and poweroff is required to actually power it
+       off.
 
 ## SEE ALSO
        systemd(1), systemctl(1), shutdown(8), wall(1)
 
-systemd 249                                                                                                                                                                                             HALT(8)
+systemd 249                                                            HALT(8)

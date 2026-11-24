@@ -10,13 +10,19 @@
        7z - A file archiver with high compression ratio format
 
 ## SYNOPSIS
-       7z <command> [<switches>... ] <archive_name> [<file_names>... ] [<@listfiles>... ]
+       7z   <command>   [<switches>...  ]  <archive_name>  [<file_names>...  ]
+       [<@listfiles>... ]
 
 ## DESCRIPTION
-       7-Zip  is  a  file  archiver supporting 7z (that implements LZMA compression algorithm featuring very high compression ratio), LZMA2, XZ, ZIP, Zip64, CAB, RAR (if the non-free p7zip-rar package is in‐
-       stalled), ARJ, GZIP, BZIP2, TAR, CPIO, RPM, ISO, most filesystem images and DEB formats.  Compression ratio in the new 7z format is 30-50% better than ratio in ZIP format.
+       7-Zip is a file archiver supporting 7z (that implements  LZMA  compres‐
+       sion  algorithm featuring very high compression ratio), LZMA2, XZ, ZIP,
+       Zip64, CAB, RAR (if the non-free p7zip-rar package is installed),  ARJ,
+       GZIP,  BZIP2,  TAR, CPIO, RPM, ISO, most filesystem images and DEB for‐
+       mats.  Compression ratio in the new 7z format is 30-50% better than ra‐
+       tio in ZIP format.
 
-       7z uses plugins to handle archives, so it might be slightly slower than 7za(1) but can handle more archive formats.
+       7z uses plugins to handle archives, so it might be slightly slower than
+       7za(1) but can handle more archive formats.
 
 ## COMMANDS
        a      Add files to archive
@@ -69,7 +75,9 @@ SWITCHES
               Include filenames
 
        -m{Parameters}
-              Set Compression Method (see /usr/share/doc/p7zip/DOC/MANUAL/cmdline/switches/method.htm from the p7zip-full package for a list of methods)
+              Set Compression Method (see /usr/share/doc/p7zip/DOC/MANUAL/cmd‐
+              line/switches/method.htm  from the p7zip-full package for a list
+              of methods)
 
        -o{Directory}
               Set Output directory
@@ -78,7 +86,8 @@ SWITCHES
               Set Password (NOTE: this flag does not work with 7zr)
 
        -r[-|0]
-              Recurse subdirectories (CAUTION: this flag does not do what you think, avoid using it)
+              Recurse subdirectories (CAUTION: this flag does not do what  you
+              think, avoid using it)
 
        -sa{a|e|s}
               Set archive name mode
@@ -101,7 +110,8 @@ SWITCHES
               Create SFX archive
 
        -si[{name}]
-              Read data from stdin (e.g. tar cf - directory | 7z a -si directory.tar.7z)
+              Read  data from stdin (e.g. tar cf - directory | 7z a -si direc‐
+              tory.tar.7z)
 
        -slp   Set Large Pages mode
 
@@ -162,7 +172,9 @@ SWITCHES
 
               0      Normal (no errors or warnings detected)
 
-              1      Warning (Non fatal error(s)). For example, some files cannot be read during compressing, so they were not compressed
+              1      Warning (Non fatal error(s)).  For  example,  some  files
+                     cannot  be read during compressing, so they were not com‐
+                     pressed
 
               2      Fatal error
 
@@ -177,20 +189,24 @@ Backup and limitations
         - 7-zip does not store the owner/group of the file.
 
        On Linux/Unix, in order to backup directories you must use tar :
-        - to backup a directory  : tar cf - directory | 7z a -si directory.tar.7z
+        - to backup a directory  : tar cf  -  directory  |  7z  a  -si  direc‐
+       tory.tar.7z
         - to restore your backup : 7z x -so directory.tar.7z | tar xf -
 
-       If you want to send files and directories (not the owner of file) to others Unix/MacOS/Windows users, you can use the 7-zip format.
+       If  you  want  to send files and directories (not the owner of file) to
+       others Unix/MacOS/Windows users, you can use the 7-zip format.
 
          example : 7z a directory.7z  directory
 
        Do not use "-r" because this flag does not do what you think.
 
-       Do not use directory/* because of ".*" files (example : "directory/*" does not match "directory/.profile")
+       Do not use directory/* because of ".*" files (example  :  "directory/*"
+       does not match "directory/.profile")
 
 EXAMPLE 1
        7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on archive.7z dir1
-              adds all files from directory "dir1" to archive archive.7z using "ultra settings"
+              adds all files from directory "dir1" to archive archive.7z using
+              "ultra settings"
 
        -t7z   7z archive
 
@@ -209,11 +225,13 @@ EXAMPLE 1
 
 EXAMPLE 2
        7z a -sfx archive.exe dir1
-              add all files from directory "dir1" to SFX archive archive.exe (Remark : SFX archive MUST end with ".exe")
+              add all files from directory "dir1" to SFX  archive  archive.exe
+              (Remark : SFX archive MUST end with ".exe")
 
 EXAMPLE 3
        7z a -mhe=on -pmy_password archive.7z a_directory
-              add all files from directory "a_directory" to the archive "archive.7z" (with data and header archive encryption on)
+              add  all  files from directory "a_directory" to the archive "ar‐
+              chive.7z" (with data and header archive encryption on)
 
 ## SEE ALSO
        7zr(1), 7za(1), p7zip(1), bzip2(1), gzip(1), zip(1),
@@ -222,6 +240,7 @@ HTML Documentation
        /usr/share/doc/p7zip-full/DOC/MANUAL/start.htm
 
 ## AUTHOR
-       Written for Debian by Mohammed Adnene Trojette. Updated by Robert Luberda.
+       Written for Debian by Mohammed Adnene Trojette. Updated by  Robert  Lu‐
+       berda.
 
-7-Zip                                                                                           March 6th, 2016                                                                                           7z(1)
+7-Zip                           March 6th, 2016                          7z(1)

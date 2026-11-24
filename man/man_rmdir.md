@@ -22,7 +22,8 @@
               is non-empty
 
        -p, --parents
-              remove DIRECTORY and its ancestors; e.g., 'rmdir -p a/b/c' is similar to 'rmdir a/b/c a/b a'
+              remove  DIRECTORY  and  its ancestors; e.g., 'rmdir -p a/b/c' is
+              similar to 'rmdir a/b/c a/b a'
 
        -v, --verbose
               output a diagnostic for every directory processed
@@ -40,8 +41,10 @@
        Report any translation bugs to <https://translationproject.org/team/>
 
 ## COPYRIGHT
-       Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2020 Free Software Foundation, Inc.   License  GPLv3+:  GNU
+       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This  is  free  software:  you  are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 ## SEE ALSO
        rmdir(2)
@@ -49,4 +52,4 @@
        Full documentation <https://www.gnu.org/software/coreutils/rmdir>
        or available locally via: info '(coreutils) rmdir invocation'
 
-GNU coreutils 8.32                                                                                August 2026                                                                                          RMDIR(1)
+GNU coreutils 8.32                August 2026                         RMDIR(1)

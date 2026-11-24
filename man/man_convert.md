@@ -7,26 +7,34 @@
 ---
 
 ## NAME
-       convert - convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more.
+       convert  -  convert  between  image formats as well as resize an image,
+       blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much
+       more.
 
 ## SYNOPSIS
        convert-im6.q16 [input-option] input-file [output-option] output-file
 
 OVERVIEW
-       The  convert-im6.q16  program  is  a  member of the ImageMagick-ims6.q16(1) suite of tools.  Use it to convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw on,
-       flip, join, re-sample, and much more.
+       The  convert-im6.q16 program is a member of the ImageMagick-ims6.q16(1)
+       suite of tools.  Use it to convert between image formats as well as re‐
+       size  an image, blur, crop, despeckle, dither, draw on, flip, join, re-
+       sample, and much more.
 
-       For more information about the convert command, point your browser to file:///usr/share/doc/imagemagick-6-common/html/www/convert.html (on debian system you may install the imagemagick-6  package)  or
+       For more information about the convert command, point your  browser  to
+       file:///usr/share/doc/imagemagick-6-common/html/www/convert.html    (on
+       debian  system  you  may  install   the   imagemagick-6   package)   or
        https://www.imagemagick.org/script/convert.php.
 
 ## DESCRIPTION
        Image Settings:
          -adjoin              join images into a single multi-image file
          -affine matrix       affine transform matrix
-         -alpha option        activate, deactivate, reset, or set the alpha channel
+         -alpha  option         activate,  deactivate, reset, or set the alpha
+       channel
          -antialias           remove pixel-aliasing
          -authenticate value  decrypt image with this password
-         -attenuate value     lessen (or intensify) when adding noise to an image
+         -attenuate value     lessen (or intensify) when adding  noise  to  an
+       image
          -background color    background color
          -bias value          add bias when convolving an image
          -black-point-compensation
@@ -58,7 +66,8 @@ OVERVIEW
          -encoding type       text encoding type
          -endian type         endianness (MSB or LSB) of the image
          -family name         render text with this font family
-         -features distance   analyze image features (e.g. contrast, correlation)
+         -features  distance   analyze image features (e.g. contrast, correla‐
+       tion)
          -fill color          color to use when filling a graphic primitive
          -filter type         use this filter when resizing an image
          -flatten             flatten a sequence of images
@@ -68,7 +77,8 @@ OVERVIEW
          -gravity type        horizontal and vertical text placement
          -green-primary point chromaticity green primary point
          -intensity method    method to generate intensity value from pixel
-         -intent type         type of rendering intent when managing the image color
+         -intent type         type of rendering intent when managing the image
+       color
          -interlace type      type of image interlacing scheme
          -interline-spacing value
                               set the space between two text lines
@@ -78,11 +88,13 @@ OVERVIEW
          -kerning value       set the space between two letters
          -label string        assign a label to an image
          -limit type value    pixel cache resource limit
-         -loop iterations     add Netscape loop extension to your GIF animation
+         -loop  iterations      add Netscape loop extension to your GIF anima‐
+       tion
          -mask filename       associate a mask with the image
          -matte               store matte channel if the image has one
          -mattecolor color    frame color
-         -metric type         measure differences between images with this metric
+         -metric type         measure differences  between  images  with  this
+       metric
          -moments             report image moments
          -monitor             monitor progress
          -orient type         image orientation
@@ -95,16 +107,19 @@ OVERVIEW
          -quiet               suppress all warning messages
          -red-primary point   chromaticity red primary point
          -regard-warnings     pay attention to warning messages
-         -remap filename      transform image colors to match this set of colors
+         -remap filename      transform image colors to match this set of col‐
+       ors
          -repage geometry     size and location of an image canvas
-         -respect-parentheses settings remain in effect until parenthesis boundary
+         -respect-parentheses settings  remain  in  effect  until  parenthesis
+       boundary
          -sampling-factor geometry
                               horizontal and vertical sampling factor
          -scene value         image scene number
          -seed value          seed a new sequence of pseudo-random numbers
          -size geometry       width and height of image
          -statistic type geometry
-                              replace each pixel with corresponding statistic from the neighborhood
+                              replace  each pixel with corresponding statistic
+       from the neighborhood
          -stretch type        render text with this font stretch
          -stroke color        graphic primitive stroke color
          -strokewidth value   graphic primitive stroke width
@@ -112,7 +127,8 @@ OVERVIEW
          -support factor      resize support: > 1.0 is blurry, < 1.0 is sharp
          -synchronize         synchronize image to storage device
          -taint               declare the image as modified
-         -texture filename    name of texture to tile onto the image background
+         -texture filename    name of texture to tile  onto  the  image  back‐
+       ground
          -tile-offset geometry
                               tile offset
          -treedepth value     color tree depth
@@ -129,11 +145,14 @@ OVERVIEW
 
        Image Operators:
          -adaptive-blur geometry
-                              adaptively blur pixels; decrease effect near edges
+                              adaptively  blur  pixels;  decrease  effect near
+       edges
          -adaptive-resize geometry
-                              adaptively resize image with data dependent triangulation
+                              adaptively resize image with data dependent tri‐
+       angulation
          -adaptive-sharpen geometry
-                              adaptively sharpen pixels; increase effect near edges
+                              adaptively  sharpen pixels; increase effect near
+       edges
          -annotate geometry text
                               annotate the image with text
          -auto-gamma          automagically adjust gamma level of image
@@ -160,21 +179,24 @@ OVERVIEW
                               connected-components uniquely labeled
          -contrast            enhance or reduce the image contrast
          -contrast-stretch geometry
-                              improve contrast by `stretching' the intensity range
+                              improve contrast by `stretching'  the  intensity
+       range
          -convolve coefficients
                               apply a convolution kernel to the image
          -cycle amount        cycle the image colormap
          -deskew threshold    straighten an image
          -despeckle           reduce the speckles within an image
          -distort method args
-                               distort images according to given method and args
+                               distort  images  according  to given method and
+       args
          -draw string         annotate the image with a graphic primitive
          -edge radius         apply a filter to detect edges in the image
          -emboss radius       emboss an image
          -enhance             apply a digital filter to enhance a noisy image
          -equalize            perform histogram equalization to an image
          -evaluate operator value
-                              evaluate an arithmetic, relational, or logical expression
+                              evaluate an arithmetic, relational,  or  logical
+       expression
          -extent geometry     set the image size
          -extract geometry    extract area from image
          -fft                 implements the discrete Fourier transform (DFT)
@@ -191,24 +213,31 @@ OVERVIEW
          -grayscale method    convert image to grayscale
          -hough-lines geometry
                               identify lines in the image
-         -identify            identify the format and characteristics of the image
-         -ift                 implements the inverse discrete Fourier transform (DFT)
+         -identify             identify  the format and characteristics of the
+       image
+         -ift                 implements the inverse discrete  Fourier  trans‐
+       form (DFT)
          -implode amount      implode image pixels about the center
          -interpolative-resize geometry
-                               resize image using 'point sampled' interpolation
+                               resize  image  using 'point sampled' interpola‐
+       tion
          -lat geometry        local adaptive thresholding
          -layers method       optimize or compare image layers
          -level value         adjust the level of image contrast
          -level-colors color,color
                               level image with the given colors
          -linear-stretch geometry
-                              improve contrast by `stretching with saturation' the intensity range
+                              improve contrast by `stretching with saturation'
+       the intensity range
          -liquid-rescale geometry
                                rescale image with seam-carving
-         -magnify             double the size of the image with pixel art scaling
-         -mean-shift geometry delineate arbitrarily shaped clusters in the image
+         -magnify              double  the  size  of  the image with pixel art
+       scaling
+         -mean-shift geometry delineate arbitrarily shaped clusters in the im‐
+       age
          -median geometry     apply a median filter to the image
-         -mode geometry       make each pixel the 'predominant color' of the neighborhood
+         -mode  geometry        make each pixel the 'predominant color' of the
+       neighborhood
          -modulate value      vary the brightness, saturation, and hue
          -monochrome          transform image to black and white
          -morphology method kernel
@@ -220,17 +249,21 @@ OVERVIEW
          -normalize           transform image to span the full range of colors
          -opaque color        change this color to the fill color
          -ordered-dither NxN
-                              add a noise pattern to the image with specific amplitudes
+                              add a noise pattern to the image  with  specific
+       amplitudes
          -paint radius        simulate an oil painting
          -perceptible epsilon
-                              pixel value less than |epsilon| become epsilon or -epsilon
+                              pixel  value  less than |epsilon| become epsilon
+       or -epsilon
          -polaroid angle      simulate a Polaroid picture
-         -posterize levels    reduce the image to a limited number of color levels
+         -posterize levels    reduce the image to a limited  number  of  color
+       levels
          -print string        interpret string and print to console
          -profile filename    add, delete, or apply an image profile
          -quantize colorspace reduce colors in this colorspace
          -radial-blur angle   radial blur the image
-         -raise value         lighten/darken image edges to create a 3-D effect
+         -raise  value          lighten/darken image edges to create a 3-D ef‐
+       fect
          -random-threshold low,high
                               random threshold the image
          -region geometry     apply options to a portion of the image
@@ -243,7 +276,8 @@ OVERVIEW
          -scale geometry      scale the image
          -segment values      segment an image
          -selective-blur geometry
-                              selectively blur pixels within a contrast threshold
+                              selectively  blur  pixels  within   a   contrast
+       threshold
          -sepia-tone threshold
                               simulate a sepia-toned photo
          -set property value  set an image property
@@ -251,9 +285,11 @@ OVERVIEW
          -shadow geometry     simulate an image shadow
          -sharpen geometry    sharpen the image
          -shave geometry      shave pixels from the image edges
-         -shear geometry      slide one edge of the image along the X or Y axis
+         -shear  geometry       slide  one  edge of the image along the X or Y
+       axis
          -sigmoidal-contrast geometry
-                              lightness rescaling using sigmoidal contrast enhancement
+                              lightness rescaling using sigmoidal contrast en‐
+       hancement
          -sketch geometry     simulate a pencil sketch
          -solarize threshold  negate all pixels above the threshold level
          -sparse-color method args
@@ -277,30 +313,37 @@ OVERVIEW
          -vignette geometry   soften the edges of the image in vignette style
          -wave geometry       alter an image along a sine wave
          -wavelet-denoise threshold
-                               removes noise from the image using a wavelet transform
+                               removes  noise  from  the image using a wavelet
+       transform
          -white-threshold value
                               force all pixels above the threshold into white
 
        Image Sequence Operators:
-         -append              append an image sequence top to bottom (use +append for left to right)
+         -append              append an image sequence top to bottom (use +ap‐
+       pend for left to right)
          -clut                apply a color lookup table to the image
          -coalesce            merge a sequence of images
          -combine             combine a sequence of images
-         -compare             mathematically and visually annotate the difference between an image and its reconstruction
+         -compare             mathematically and visually annotate the differ‐
+       ence between an image and its reconstruction
          -complex operator    perform complex mathematics on an image sequence
          -composite           composite image
          -copy geometry offset,
                               copy pixels from one area of an image to another
          -crop geometry       cut out a rectangular region of the image
-         -deconstruct         break down an image sequence into constituent parts
+         -deconstruct         break down an image  sequence  into  constituent
+       parts
          -evaluate-sequence operator
-                              evaluate an arithmetic, relational, or logical expression
+                              evaluate  an  arithmetic, relational, or logical
+       expression
          -flatten             flatten a sequence of images
-         -fx expression       apply mathematical expression to an image channel(s)
+         -fx expression       apply mathematical expression to an image  chan‐
+       nel(s)
          -hald-clut           apply a Hald color lookup table to the image
          -morph value         morph an image sequence
          -mosaic              create a mosaic from an image sequence
-         -poly terms          build a polynomial from the image sequence and the corresponding terms (coefficients and degree pairs)
+         -poly  terms           build a polynomial from the image sequence and
+       the corresponding terms (coefficients and degree pairs)
          -process arguments   process the image with a custom image filter
          -separate            separate an image channel into a grayscale image
          -smush geometry      smush an image sequence together
@@ -318,23 +361,32 @@ OVERVIEW
        Miscellaneous Options:
          -debug events        display copious debugging information
          -distribute-cache port
-                              distributed pixel cache spanning one or more servers
+                              distributed pixel cache  spanning  one  or  more
+       servers
          -help                print program options
          -log format          format of debugging information
          -list type           print a list of supported option arguments
          -version             print version information
 
-       Use  any  setting  or operator as an output-option.  Only a limited number of setting are  input-option. They include: -antialias, -caption, -density, -define, -encoding, -font, -pointsize, -size, and
-       -texture as well as any of the miscellaneous options.
+       Use any setting or operator as an output-option.  Only a limited number
+       of setting are  input-option. They include: -antialias, -caption, -den‐
+       sity,  -define,  -encoding,  -font,  -pointsize, -size, and -texture as
+       well as any of the miscellaneous options.
 
-       By default, the image format of `file' is determined by its magic number.  To specify a particular image format, precede the filename with an image format name and a colon (i.e. ps:image)  or  specify
-       the image type as the filename suffix (i.e. image.ps).  Specify 'file' as '-' for standard input or output.
+       By default, the image format of `file' is determined by its magic  num‐
+       ber.   To  specify a particular image format, precede the filename with
+       an image format name and a colon (i.e. ps:image) or specify  the  image
+       type as the filename suffix (i.e. image.ps).  Specify 'file' as '-' for
+       standard input or output.
 
 ## SEE ALSO
        ImageMagick-im6.q16(1)
 
 ## COPYRIGHT
-       Copyright  (C)  1999-2020  ImageMagick Studio LLC. Additional copyrights and licenses apply to this software, see file:///usr/share/doc/imagemagick-6-common/html/www/license.html (on debian system you
-       may install the imagemagick-6 package) or https://www.imagemagick.org/script/license.php
+       Copyright (C) 1999-2020 ImageMagick Studio LLC.  Additional  copyrights
+       and  licenses  apply to this software, see file:///usr/share/doc/image‐
+       magick-6-common/html/www/license.html (on debian system you may install
+       the  imagemagick-6  package)  or https://www.imagemagick.org/script/li‐
+       cense.php
 
-ImageMagick                                                                                Date: 2009/01/10 01:00:00                                                                         convert-im6.q16(1)
+ImageMagick                Date: 2009/01/10 01:00:00        convert-im6.q16(1)
